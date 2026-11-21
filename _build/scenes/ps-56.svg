@@ -1,0 +1,221 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="能源与可持续发展：能源分类、能量耗散、可持续发展">
+<style>
+[data-scene="ps-56"] .s56-step{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="ps-56"].s1 .s56-step1,[data-scene="ps-56"].s2 .s56-step2,[data-scene="ps-56"].s3 .s56-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes s56pop{0%{transform:scale(.85);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes s56rise{from{transform:translateY(10px);opacity:0}to{transform:none;opacity:1}}
+@keyframes s56grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes s56pulse{0%,100%{opacity:.45}50%{opacity:1}}
+[data-scene="ps-56"].s1 .s56-card{animation:s56rise .5s ease both}
+[data-scene="ps-56"].s1 .s56-card2{animation-delay:.15s}
+[data-scene="ps-56"].s1 .s56-icon{transform-box:fill-box;transform-origin:center;animation:s56pop .45s ease both}
+[data-scene="ps-56"].s1 .s56-i2{animation-delay:.12s}
+[data-scene="ps-56"].s1 .s56-i3{animation-delay:.24s}
+[data-scene="ps-56"].s1 .s56-i4{animation-delay:.36s}
+[data-scene="ps-56"].s1 .s56-i5{animation-delay:.48s}
+[data-scene="ps-56"].s1 .s56-i6{animation-delay:.6s}
+[data-scene="ps-56"].s1 .s56-i7{animation-delay:.72s}
+[data-scene="ps-56"].s1 .s56-i8{animation-delay:.84s}
+[data-scene="ps-56"].s2 .s56-box{animation:s56rise .5s ease both}
+[data-scene="ps-56"].s2 .s56-b2{animation-delay:.15s}
+[data-scene="ps-56"].s2 .s56-b3{animation-delay:.3s}
+[data-scene="ps-56"].s2 .s56-q1{transform-box:fill-box;transform-origin:left center;animation:s56grow .7s ease .5s both}
+[data-scene="ps-56"].s2 .s56-q2{transform-box:fill-box;transform-origin:left center;animation:s56grow .7s ease .65s both}
+[data-scene="ps-56"].s2 .s56-q3{transform-box:fill-box;transform-origin:left center;animation:s56grow .7s ease .8s both}
+[data-scene="ps-56"].s2 .s56-spark{animation:s56pulse 1.8s ease-in-out infinite}
+[data-scene="ps-56"].s3 .s56-card3{transform-box:fill-box;transform-origin:center;animation:s56pop .5s ease both}
+[data-scene="ps-56"].s3 .s56-k2{animation-delay:.15s}
+[data-scene="ps-56"].s3 .s56-k3{animation-delay:.3s}
+[data-scene="ps-56"].s3 .s56-quote{animation:s56rise .5s ease .5s both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="532" width="900" height="88" fill="url(#gBench)"/>
+<line x1="0" y1="532" x2="900" y2="532" stroke="#cbd5e1" stroke-width="2.5"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">能源与可持续发展：总量守恒，品质会降</text>
+
+<!-- 第一步：能源分类 -->
+<g class="s56-step s56-step1" data-zone="1">
+  <text x="50" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 1 步 · 能源怎样分类</text>
+
+  <g class="s56-card">
+    <rect x="46" y="100" width="390" height="390" rx="18" fill="#ffffff" stroke="#fecaca" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="46" y="100" width="390" height="50" rx="16" fill="#fee2e2"/>
+    <text x="64" y="133" font-size="16" font-weight="900" fill="#b91c1c">不可再生能源</text>
+    <text x="418" y="133" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="end">越用越少</text>
+
+    <g class="s56-icon">
+      <polygon points="66,218 80,192 102,188 116,208 108,226 78,226" fill="#334155"/>
+    </g>
+    <text x="132" y="208" font-size="14" font-weight="900" fill="#334155">煤</text>
+    <text x="132" y="230" font-size="11" fill="#64748b">化石能源</text>
+
+    <g class="s56-icon s56-i2">
+      <path d="M90 272 C 100 288 106 296 106 306 A16 16 0 0 1 74 306 C 74 296 80 288 90 272 Z" fill="#b45309"/>
+    </g>
+    <text x="132" y="290" font-size="14" font-weight="900" fill="#92400e">石油</text>
+    <text x="132" y="312" font-size="11" fill="#64748b">化石能源</text>
+
+    <g class="s56-icon s56-i3">
+      <path d="M90 336 C 104 356 102 372 90 380 C 78 372 76 356 90 336 Z" fill="#f59e0b"/>
+    </g>
+    <text x="132" y="366" font-size="14" font-weight="900" fill="#b45309">天然气</text>
+    <text x="132" y="388" font-size="11" fill="#64748b">化石能源</text>
+
+    <g class="s56-icon s56-i4">
+      <circle cx="90" cy="438" r="9" fill="#7c3aed"/>
+      <ellipse cx="90" cy="438" rx="25" ry="9" fill="none" stroke="#7c3aed" stroke-width="1.5" transform="rotate(55 90 438)"/>
+      <ellipse cx="90" cy="438" rx="25" ry="9" fill="none" stroke="#7c3aed" stroke-width="1.5" transform="rotate(-55 90 438)"/>
+    </g>
+    <text x="132" y="434" font-size="14" font-weight="900" fill="#6d28d9">核燃料</text>
+    <text x="132" y="456" font-size="11" fill="#64748b">能量大，原料也有限</text>
+  </g>
+
+  <g class="s56-card s56-card2">
+    <rect x="456" y="100" width="398" height="390" rx="18" fill="#ffffff" stroke="#bbf7d0" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="456" y="100" width="398" height="50" rx="16" fill="#dcfce7"/>
+    <text x="474" y="133" font-size="16" font-weight="900" fill="#047857">可再生能源</text>
+    <text x="836" y="133" font-size="11.5" font-weight="800" fill="#047857" text-anchor="end">可持续补充</text>
+
+    <g class="s56-icon s56-i5">
+      <path d="M464 206 Q 474 196 484 206 T 504 206" fill="none" stroke="#0ea5e9" stroke-width="2.5"/>
+      <path d="M464 218 Q 474 208 484 218 T 504 218" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+      <path d="M464 230 Q 474 220 484 230 T 504 230" fill="none" stroke="#7dd3fc" stroke-width="2.5"/>
+    </g>
+    <text x="532" y="212" font-size="14" font-weight="900" fill="#0369a1">水能</text>
+    <text x="532" y="234" font-size="11" fill="#64748b">可重复利用</text>
+
+    <g class="s56-icon s56-i6">
+      <path d="M468 292 C 480 280 494 280 504 290" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+      <path d="M462 304 C 478 288 498 288 512 302" fill="none" stroke="#7dd3fc" stroke-width="2.5"/>
+    </g>
+    <text x="532" y="290" font-size="14" font-weight="900" fill="#0369a1">风能</text>
+    <text x="532" y="312" font-size="11" fill="#64748b">清洁无污染</text>
+
+    <g class="s56-icon s56-i7">
+      <circle cx="486" cy="372" r="15" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+      <g stroke="#f59e0b" stroke-width="2" stroke-linecap="round">
+        <line x1="486" y1="348" x2="486" y2="354"/>
+        <line x1="486" y1="390" x2="486" y2="396"/>
+        <line x1="462" y1="372" x2="468" y2="372"/>
+        <line x1="504" y1="372" x2="510" y2="372"/>
+        <line x1="469" y1="355" x2="473" y2="359"/>
+        <line x1="499" y1="385" x2="503" y2="389"/>
+        <line x1="503" y1="355" x2="499" y2="359"/>
+        <line x1="473" y1="385" x2="469" y2="389"/>
+      </g>
+    </g>
+    <text x="532" y="368" font-size="14" font-weight="900" fill="#b45309">太阳能</text>
+    <text x="532" y="390" font-size="11" fill="#64748b">取之不尽</text>
+
+    <g class="s56-icon s56-i8">
+      <path d="M476 448 C 474 424 498 410 514 414 C 512 438 496 452 476 448 Z" fill="#bbf7d0" stroke="#059669" stroke-width="2"/>
+      <line x1="484" y1="444" x2="504" y2="422" stroke="#059669" stroke-width="1.5"/>
+    </g>
+    <text x="532" y="446" font-size="14" font-weight="900" fill="#047857">生物质能</text>
+    <text x="532" y="468" font-size="11" fill="#64748b">来自植物和有机废物</text>
+  </g>
+
+  <rect x="46" y="504" width="808" height="26" rx="9" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="522" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">分类标准：能否在短期内从自然界得到补充</text>
+</g>
+
+<!-- 第二步：能量耗散 -->
+<g class="s56-step s56-step2" data-zone="2">
+  <text x="50" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 2 步 · 能量耗散：总量守恒，品质降低</text>
+
+  <g class="s56-box">
+    <rect x="60" y="140" width="190" height="90" rx="14" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="155" y="180" font-size="15" font-weight="900" fill="#1e3a8a" text-anchor="middle">电能</text>
+    <text x="155" y="206" font-size="11" fill="#1e40af" text-anchor="middle">高品质、易利用</text>
+  </g>
+  <line x1="250" y1="185" x2="296" y2="185" stroke="#1d4ed8" stroke-width="3.5" marker-end="url(#arrBlue)"/>
+
+  <g class="s56-box s56-b2">
+    <rect x="300" y="140" width="190" height="90" rx="14" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="395" y="180" font-size="15" font-weight="900" fill="#92400e" text-anchor="middle">内能</text>
+    <text x="395" y="206" font-size="11" fill="#b45309" text-anchor="middle">物体发热</text>
+  </g>
+  <line x1="490" y1="185" x2="536" y2="185" stroke="#d97706" stroke-width="3.5" marker-end="url(#arrAmber)"/>
+
+  <g class="s56-box s56-b3">
+    <rect x="540" y="140" width="240" height="90" rx="14" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="660" y="180" font-size="14" font-weight="900" fill="#b91c1c" text-anchor="middle">环境中的内能</text>
+    <text x="660" y="206" font-size="11" fill="#b91c1c" text-anchor="middle">难以再利用</text>
+  </g>
+  <text class="s56-spark" x="350" y="258" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">能量的品质逐级降低</text>
+
+  <text x="70" y="300" font-size="13.5" font-weight="800" fill="#1e3a8a">能量的品质</text>
+  <rect class="s56-q1" x="70" y="318" width="220" height="30" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect class="s56-q2" x="290" y="318" width="220" height="30" rx="6" fill="#fde68a" stroke="#f59e0b" stroke-width="1.5"/>
+  <rect class="s56-q3" x="510" y="318" width="220" height="30" rx="6" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="180" y="339" font-size="13" font-weight="800" fill="#1e40af" text-anchor="middle">高</text>
+  <text x="400" y="339" font-size="13" font-weight="800" fill="#92400e" text-anchor="middle">中</text>
+  <text x="620" y="339" font-size="13" font-weight="800" fill="#b91c1c" text-anchor="middle">低</text>
+  <text x="450" y="370" font-size="12" fill="#475569" text-anchor="middle">能量总量不变，但可被利用的品质下降了</text>
+
+  <rect x="60" y="384" width="380" height="102" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="78" y="412" font-size="13" font-weight="800" fill="#1e3a8a">总量守恒</text>
+  <text x="78" y="438" font-size="11.5" fill="#475569">能量不会凭空产生或消失</text>
+  <text x="78" y="464" font-size="11.5" fill="#475569">转化、转移中总量保持不变</text>
+
+  <rect x="460" y="384" width="380" height="102" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="478" y="412" font-size="13" font-weight="800" fill="#b45309">能量耗散</text>
+  <text x="478" y="438" font-size="11.5" fill="#475569">散失的内能不能自动聚集</text>
+  <text x="478" y="464" font-size="11.5" fill="#475569">可利用的能源因此减少</text>
+
+  <rect x="46" y="498" width="808" height="30" rx="9" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5"/>
+  <text x="450" y="518" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">能量守恒不等于可以浪费：耗散让可利用的能源越来越少</text>
+</g>
+
+<!-- 第三步：可持续发展 -->
+<g class="s56-step s56-step3" data-zone="3">
+  <text x="50" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 3 步 · 走可持续发展之路</text>
+
+  <g class="s56-card3">
+    <rect x="46" y="130" width="250" height="300" rx="18" fill="#ffffff" stroke="#bfdbfe" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="171" y="170" font-size="15" font-weight="900" fill="#1e3a8a" text-anchor="middle">节约能源</text>
+    <circle cx="171" cy="228" r="30" fill="#e8effc" stroke="#1d4ed8" stroke-width="2.5"/>
+    <text x="171" y="237" font-size="18" font-weight="900" fill="#1d4ed8" text-anchor="middle">η</text>
+    <path d="M198 206 A30 30 0 1 1 196 252" fill="none" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+    <text x="171" y="300" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">提高能源利用效率</text>
+    <text x="171" y="326" font-size="11.5" fill="#475569" text-anchor="middle">节约用电、减少浪费</text>
+    <text x="171" y="352" font-size="11.5" fill="#475569" text-anchor="middle">随手关灯、绿色出行</text>
+  </g>
+
+  <g class="s56-card3 s56-k2">
+    <rect x="325" y="130" width="250" height="300" rx="18" fill="#ffffff" stroke="#bbf7d0" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="450" y="170" font-size="15" font-weight="900" fill="#047857" text-anchor="middle">发展清洁能源</text>
+    <circle cx="434" cy="228" r="18" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <g stroke="#f59e0b" stroke-width="2" stroke-linecap="round">
+      <line x1="434" y1="200" x2="434" y2="206"/>
+      <line x1="434" y1="250" x2="434" y2="256"/>
+      <line x1="406" y1="228" x2="412" y2="228"/>
+      <line x1="456" y1="228" x2="462" y2="228"/>
+    </g>
+    <path d="M468 240 Q 478 232 488 240 T 508 240" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+    <path d="M468 254 Q 478 246 488 254 T 508 254" fill="none" stroke="#7dd3fc" stroke-width="2.5"/>
+    <text x="450" y="300" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">水能、风能、太阳能</text>
+    <text x="450" y="326" font-size="11.5" fill="#475569" text-anchor="middle">逐步减少化石能源</text>
+    <text x="450" y="352" font-size="11.5" fill="#475569" text-anchor="middle">清洁、低碳、可再生</text>
+  </g>
+
+  <g class="s56-card3 s56-k3">
+    <rect x="604" y="130" width="250" height="300" rx="18" fill="#ffffff" stroke="#fecaca" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="729" y="170" font-size="15" font-weight="900" fill="#b91c1c" text-anchor="middle">保护环境</text>
+    <path d="M715 246 C 712 222 736 208 752 212 C 750 236 734 252 715 246 Z" fill="#bbf7d0" stroke="#059669" stroke-width="2"/>
+    <line x1="722" y1="242" x2="744" y2="220" stroke="#059669" stroke-width="1.5"/>
+    <text x="729" y="300" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">减少 CO₂ 等气体排放</text>
+    <text x="729" y="326" font-size="11.5" fill="#475569" text-anchor="middle">缓解温室效应</text>
+    <text x="729" y="352" font-size="11.5" fill="#475569" text-anchor="middle">保护生态与家园</text>
+  </g>
+
+  <g class="s56-quote">
+    <rect x="46" y="452" width="808" height="56" rx="14" fill="#e8effc" stroke="#bfdbfe" stroke-width="2"/>
+    <text x="450" y="478" font-size="14" font-weight="900" fill="#1e3a8a" text-anchor="middle">可持续发展：既满足当代人的需要，又不损害后代人满足其需要的能力</text>
+    <text x="450" y="498" font-size="11.5" fill="#475569" text-anchor="middle">节约能源、提高效率、发展清洁能源，从我做起</text>
+  </g>
+</g>
+</svg>

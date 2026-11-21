@@ -1,0 +1,197 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="电源和电流：电动势、电流的微观表达式与恒定电流">
+<style>
+[data-scene="ps-48"] .s48-step1,[data-scene="ps-48"] .s48-step2,[data-scene="ps-48"] .s48-step3{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="ps-48"].s1 .s48-step1,[data-scene="ps-48"].s2 .s48-step2,[data-scene="ps-48"].s3 .s48-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes s48flow{to{stroke-dashoffset:-40}}
+@keyframes s48pop{0%{transform:scale(.9);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes s48push{0%,100%{transform:translateX(0)}50%{transform:translateX(14px)}}
+@keyframes s48drift{to{transform:translateX(-52px)}}
+@keyframes s48glow{0%,100%{opacity:.45}50%{opacity:1}}
+[data-scene="ps-48"].s1 .s48-flow{stroke-dasharray:10 10;animation:s48flow 1.3s linear infinite}
+[data-scene="ps-48"].s1 .s48-card{transform-box:fill-box;transform-origin:center;animation:s48pop .5s ease both}
+[data-scene="ps-48"].s1 .s48-push{transform-box:fill-box;transform-origin:center;animation:s48push 2s ease-in-out infinite}
+[data-scene="ps-48"].s2 .s48-card{transform-box:fill-box;transform-origin:center;animation:s48pop .5s ease both}
+[data-scene="ps-48"].s2 .s48-carrier{animation:s48drift 2.4s linear infinite}
+[data-scene="ps-48"].s2 .s48-carrier2{animation:s48drift 2.4s linear infinite;animation-delay:.8s}
+[data-scene="ps-48"].s2 .s48-carrier3{animation:s48drift 2.4s linear infinite;animation-delay:1.6s}
+[data-scene="ps-48"].s3 .s48-card{transform-box:fill-box;transform-origin:center;animation:s48pop .5s ease both}
+@keyframes s48draw{to{stroke-dashoffset:0}}
+[data-scene="ps-48"].s3 .s48-const{stroke-dasharray:280;stroke-dashoffset:280;animation:s48draw .9s ease .2s forwards}
+[data-scene="ps-48"].s3 .s48-bolt{animation:s48glow 1.8s ease-in-out infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="532" width="900" height="88" fill="url(#gBench)"/>
+<line x1="0" y1="532" x2="900" y2="532" stroke="#cbd5e1" stroke-width="2.5"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">电源和电流：非静电力、微观表达式与恒定电流</text>
+
+<!-- 第一步：电源与电动势 -->
+<g class="s48-step1" data-zone="1">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 1 步 · 电源：把其他形式的能转化为电能</text>
+
+  <g class="s48-card">
+    <rect x="40" y="104" width="430" height="350" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="255" y="132" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">闭合电路：外电路与内电路</text>
+
+    <path class="s48-flow" d="M80 170 H400 V390 H80 Z" fill="none" stroke="#1d4ed8" stroke-width="7" opacity=".2"/>
+    <path d="M80 170 H216 M264 170 H400 V390 H80 V170" fill="none" stroke="#334155" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="240" cy="170" r="24" fill="#fef3c7" stroke="#d97706" stroke-width="3"/>
+    <line x1="226" y1="156" x2="254" y2="184" stroke="#d97706" stroke-width="2"/>
+    <line x1="254" y1="156" x2="226" y2="184" stroke="#d97706" stroke-width="2"/>
+    <text x="240" y="140" font-size="12" font-weight="800" fill="#92400e" text-anchor="middle">灯 L</text>
+
+    <line x1="238" y1="372" x2="238" y2="408" stroke="#334155" stroke-width="5"/>
+    <line x1="254" y1="378" x2="254" y2="402" stroke="#334155" stroke-width="5"/>
+    <text x="238" y="364" font-size="13" font-weight="900" fill="#dc2626" text-anchor="middle">+</text>
+    <text x="254" y="422" font-size="15" font-weight="900" fill="#1d4ed8" text-anchor="middle">−</text>
+
+    <polygon points="330,164 342,170 330,176" fill="#1d4ed8"/>
+    <polygon points="394,250 400,262 406,250" fill="#1d4ed8"/>
+    <polygon points="150,384 138,390 150,396" fill="#1d4ed8"/>
+    <polygon points="74,260 80,248 86,260" fill="#1d4ed8"/>
+
+    <text x="330" y="250" font-size="12" font-weight="700" fill="#64748b" text-anchor="middle">外电路：电场力做功</text>
+    <text x="330" y="272" font-size="11" fill="#94a3b8" text-anchor="middle">电能 → 内能、光能</text>
+    <text x="150" y="432" font-size="11.5" font-weight="700" fill="#64748b" text-anchor="middle">内电路：非静电力做功</text>
+  </g>
+
+  <g class="s48-card">
+    <rect x="490" y="104" width="370" height="186" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="675" y="130" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电池内部：非静电力搬运正电荷</text>
+    <rect x="540" y="144" width="270" height="118" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+    <line x1="592" y1="160" x2="592" y2="246" stroke="#1d4ed8" stroke-width="5"/>
+    <line x1="758" y1="160" x2="758" y2="246" stroke="#dc2626" stroke-width="5"/>
+    <text x="572" y="208" font-size="15" font-weight="900" fill="#1d4ed8" text-anchor="middle">−</text>
+    <text x="780" y="208" font-size="15" font-weight="900" fill="#dc2626" text-anchor="middle">+</text>
+    <line class="s48-push" x1="606" y1="228" x2="742" y2="228" stroke="#7c3aed" stroke-width="3.5" marker-end="url(#arrBlue)"/>
+    <text x="675" y="218" font-size="12" font-weight="800" fill="#6d28d9" text-anchor="middle">F非</text>
+    <text x="675" y="252" font-size="11" fill="#475569" text-anchor="middle">把 +q 从负极搬到正极</text>
+  </g>
+
+  <g class="s48-card">
+    <rect x="490" y="304" width="370" height="150" rx="14" fill="#ffffff" stroke="#fde68a" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="675" y="330" font-size="13.5" font-weight="800" fill="#b45309" text-anchor="middle">电动势：描述电源的本领</text>
+    <text x="675" y="368" font-size="20" font-weight="900" fill="#b45309" text-anchor="middle">E = W非 / q</text>
+    <text x="675" y="396" font-size="12" fill="#334155" text-anchor="middle">单位：伏特（V）</text>
+    <text x="675" y="422" font-size="11.5" fill="#64748b" text-anchor="middle">由电源本身决定，与电路无关</text>
+  </g>
+
+  <rect x="40" y="468" width="820" height="40" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="493" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">电源的作用：维持导体两端有一定的电压，使电路中形成持续电流</text>
+
+  <text x="80" y="576" font-size="12" fill="#64748b">电池把化学能转化为电能，发电机把机械能转化为电能</text>
+</g>
+
+<!-- 第二步：电流的微观表达式 -->
+<g class="s48-step2" data-zone="2">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 2 步 · 电流的微观表达式 I = nqSv</text>
+
+  <line x1="200" y1="172" x2="340" y2="172" stroke="#dc2626" stroke-width="3" marker-end="url(#arrRed)"/>
+  <text x="350" y="177" font-size="12" font-weight="800" fill="#b91c1c">I（正电荷定向移动方向）</text>
+
+  <rect x="100" y="192" width="560" height="88" rx="10" fill="#dbeafe" stroke="#94a3b8" stroke-width="2"/>
+  <ellipse cx="660" cy="236" rx="20" ry="44" fill="#bfdbfe" stroke="#60a5fa" stroke-width="2"/>
+  <line x1="676" y1="236" x2="712" y2="236" stroke="#64748b" stroke-width="1.5"/>
+  <text x="718" y="232" font-size="11.5" font-weight="800" fill="#1e3a8a">S：横截面积</text>
+  <text x="718" y="252" font-size="11" fill="#64748b">自由电子从 S 穿过</text>
+
+  <g fill="#1d4ed8">
+    <circle class="s48-carrier" cx="180" cy="220" r="8"/>
+    <circle class="s48-carrier2" cx="260" cy="252" r="8"/>
+    <circle class="s48-carrier3" cx="340" cy="220" r="8"/>
+    <circle class="s48-carrier" cx="420" cy="252" r="8"/>
+    <circle class="s48-carrier2" cx="500" cy="220" r="8"/>
+    <circle class="s48-carrier3" cx="580" cy="252" r="8"/>
+  </g>
+  <g font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">
+    <text x="180" y="224">−</text>
+    <text x="260" y="256">−</text>
+    <text x="340" y="224">−</text>
+    <text x="420" y="256">−</text>
+    <text x="500" y="224">−</text>
+    <text x="580" y="256">−</text>
+  </g>
+
+  <line x1="470" y1="306" x2="330" y2="306" stroke="#1d4ed8" stroke-width="3" marker-end="url(#arrBlue)"/>
+  <text x="482" y="311" font-size="11.5" font-weight="800" fill="#1d4ed8">v：电子定向移动速率</text>
+  <text x="100" y="332" font-size="11" fill="#64748b">金属中自由电子带负电，定向移动方向与电流方向相反</text>
+
+  <g class="s48-card">
+    <rect x="100" y="348" width="760" height="62" rx="12" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="240" y="389" font-size="22" font-weight="900" fill="#b45309" text-anchor="middle">I = nqSv</text>
+    <text x="560" y="378" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">四个因素越大，电流就越大</text>
+    <text x="560" y="398" font-size="11" fill="#64748b" text-anchor="middle">n·q·S·v 共同决定电流大小</text>
+  </g>
+
+  <g class="s48-card">
+    <rect x="100" y="424" width="175" height="62" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="187" y="448" font-size="15" font-weight="900" fill="#1e40af" text-anchor="middle">n</text>
+    <text x="187" y="472" font-size="11" fill="#334155" text-anchor="middle">单位体积自由电荷数</text>
+  </g>
+  <g class="s48-card">
+    <rect x="295" y="424" width="175" height="62" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="382" y="448" font-size="15" font-weight="900" fill="#1e40af" text-anchor="middle">q</text>
+    <text x="382" y="472" font-size="11" fill="#334155" text-anchor="middle">每个自由电荷的电荷量</text>
+  </g>
+  <g class="s48-card">
+    <rect x="490" y="424" width="175" height="62" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="577" y="448" font-size="15" font-weight="900" fill="#1e40af" text-anchor="middle">S</text>
+    <text x="577" y="472" font-size="11" fill="#334155" text-anchor="middle">导线的横截面积</text>
+  </g>
+  <g class="s48-card">
+    <rect x="685" y="424" width="175" height="62" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="772" y="448" font-size="15" font-weight="900" fill="#1e40af" text-anchor="middle">v</text>
+    <text x="772" y="472" font-size="11" fill="#334155" text-anchor="middle">自由电荷定向移动速率</text>
+  </g>
+
+  <text x="80" y="576" font-size="12" fill="#64748b">微观表达式把“电流大小”和“电荷怎样运动”联系了起来</text>
+</g>
+
+<!-- 第三步：恒定电流 -->
+<g class="s48-step3" data-zone="3">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 3 步 · 恒定电流：大小和方向都不随时间变化</text>
+
+  <g class="s48-card">
+    <rect x="60" y="104" width="400" height="330" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="260" y="132" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">I–t 图像</text>
+    <line x1="120" y1="390" x2="430" y2="390" stroke="#334155" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+    <line x1="120" y1="390" x2="120" y2="180" stroke="#334155" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+    <line x1="140" y1="262" x2="410" y2="262" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <line x1="140" y1="302" x2="410" y2="302" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <line class="s48-const" x1="140" y1="282" x2="410" y2="282" stroke="#1d4ed8" stroke-width="4"/>
+    <text x="300" y="250" font-size="12" font-weight="800" fill="#1d4ed8" text-anchor="middle">I 恒定</text>
+    <text x="108" y="176" font-size="13" font-weight="800" fill="#334155" text-anchor="end">I</text>
+    <text x="440" y="404" font-size="13" font-weight="800" fill="#334155" text-anchor="end">t</text>
+    <text x="108" y="406" font-size="11.5" fill="#64748b" text-anchor="end">O</text>
+    <text x="260" y="424" font-size="11.5" fill="#64748b" text-anchor="middle">图像是水平直线，说明电流不随时间变化</text>
+  </g>
+
+  <g class="s48-card">
+    <rect x="480" y="104" width="380" height="330" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="670" y="132" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电流的定义式</text>
+    <text x="670" y="180" font-size="22" font-weight="900" fill="#b45309" text-anchor="middle">I = q / t</text>
+    <text x="670" y="212" font-size="13" font-weight="800" fill="#334155" text-anchor="middle">1 A = 1 C/s</text>
+    <line x1="510" y1="234" x2="830" y2="234" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="670" y="262" font-size="11.5" fill="#334155" text-anchor="middle">规定正电荷定向移动的方向为电流方向</text>
+    <text x="670" y="288" font-size="11.5" fill="#334155" text-anchor="middle">金属中自由电子带负电</text>
+    <text x="670" y="314" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">电子定向移动方向与电流方向相反</text>
+    <line x1="510" y1="332" x2="830" y2="332" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="670" y="362" font-size="12" fill="#334155" text-anchor="middle">电流是标量，但有方向</text>
+    <text x="670" y="392" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">q = It，I = nqSv</text>
+    <text x="670" y="418" font-size="11" fill="#64748b" text-anchor="middle">两个公式从不同角度描述同一个电流</text>
+  </g>
+
+  <g class="s48-bolt">
+    <rect x="60" y="450" width="800" height="62" rx="12" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+    <text x="110" y="476" font-size="13" font-weight="900" fill="#b45309">注意</text>
+    <text x="152" y="476" font-size="12" font-weight="800" fill="#b45309">电子定向移动速率很小（约 10⁻⁴ m/s）</text>
+    <text x="132" y="498" font-size="11.5" fill="#7c5a30">但电场在导体中建立的速率等于光速，开关一合，灯立刻亮</text>
+    <text x="830" y="476" font-size="12" font-weight="800" fill="#047857" text-anchor="end">电流传导靠电场，不靠电子“跑”到灯</text>
+    <text x="830" y="498" font-size="11.5" fill="#475569" text-anchor="end">这是最容易理解错的地方</text>
+  </g>
+
+  <text x="80" y="576" font-size="12" fill="#64748b">恒定电流：方向不变、大小不变；交变电流则随时间变化</text>
+</g>
+</svg>

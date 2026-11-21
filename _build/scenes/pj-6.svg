@@ -1,0 +1,177 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="运动的快慢：速度定义、匀速直线运动与平均速度">
+  <style>
+    [data-scene="pj-6"] .p6-step1,[data-scene="pj-6"] .p6-step2,[data-scene="pj-6"] .p6-step3{display:none}
+    [data-scene="pj-6"].s1 .p6-step1,[data-scene="pj-6"].s2 .p6-step2,[data-scene="pj-6"].s3 .p6-step3{display:block;animation:p6in .45s ease both}
+    @keyframes p6in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+    @keyframes p6flow{to{stroke-dashoffset:-40}}
+    @keyframes p6draw{to{stroke-dashoffset:0}}
+    [data-scene="pj-6"] .p6-move{stroke-dasharray:8 7;animation:p6flow 1.3s linear infinite}
+    [data-scene="pj-6"] .p6-guide{stroke-dasharray:6 5;animation:p6flow 1.5s linear infinite}
+    [data-scene="pj-6"] .p6-line{stroke-dasharray:640;stroke-dashoffset:640;animation:p6draw 1.4s ease forwards}
+    [data-scene="pj-6"] .p6-dot{transform-box:fill-box;transform-origin:center;animation:popIn .4s ease both}
+    [data-scene="pj-6"] .p6-card{transform-box:fill-box;transform-origin:center;animation:popIn .45s ease both}
+    [data-scene="pj-6"] .p6-bar{transform-box:fill-box;transform-origin:bottom;animation:p6grow .6s ease both}
+    @keyframes p6grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+  </style>
+
+  <rect width="900" height="620" fill="url(#gBg)"/>
+  <rect width="900" height="620" fill="url(#dotsPat)"/>
+  <rect y="500" width="900" height="120" fill="url(#gBench)"/>
+  <line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+  <text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">运动的快慢：比较路程与时间，v = s / t</text>
+
+  <!-- 第一步：速度 -->
+  <g class="p6-step1" data-zone="1">
+    <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">比较快慢：相同时间比路程，相同路程比时间</text>
+
+    <g class="p6-card">
+      <rect x="60" y="104" width="380" height="226" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <text x="250" y="132" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">相同时间比路程</text>
+      <line x1="100" y1="140" x2="100" y2="300" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="7 6"/>
+      <line x1="100" y1="202" x2="400" y2="202" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="10 8"/>
+      <line x1="100" y1="282" x2="400" y2="282" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="10 8"/>
+      <text x="180" y="152" font-size="12" font-weight="800" fill="#1e40af" text-anchor="middle">甲：20 m</text>
+      <text x="300" y="232" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">乙：36 m</text>
+      <line class="p6-move" x1="100" y1="202" x2="214" y2="202" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+      <line class="p6-move" x1="100" y1="282" x2="334" y2="282" stroke="#d97706" stroke-width="2.5" marker-end="url(#arrAmber)"/>
+      <g transform="translate(220,0)">
+        <rect x="0" y="160" width="66" height="26" rx="8" fill="#3b82f6" stroke="#1e40af" stroke-width="1.5"/>
+        <path d="M14 160 L20 146 H46 L54 160 Z" fill="#93c5fd" stroke="#1e40af" stroke-width="1.5"/>
+        <circle cx="14" cy="194" r="8" fill="#334155"/><circle cx="52" cy="194" r="8" fill="#334155"/>
+      </g>
+      <g transform="translate(340,0)">
+        <rect x="0" y="240" width="66" height="26" rx="8" fill="#f59e0b" stroke="#b45309" stroke-width="1.5"/>
+        <path d="M14 240 L20 226 H46 L54 240 Z" fill="#fcd34d" stroke="#b45309" stroke-width="1.5"/>
+        <circle cx="14" cy="274" r="8" fill="#334155"/><circle cx="52" cy="274" r="8" fill="#334155"/>
+      </g>
+      <text x="250" y="316" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">时间相同：路程长的运动快</text>
+    </g>
+
+    <g class="p6-card">
+      <rect x="460" y="104" width="380" height="226" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <text x="650" y="132" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">相同路程比时间</text>
+      <line x1="110" y1="140" x2="110" y2="300" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="7 6"/>
+      <line x1="790" y1="140" x2="790" y2="300" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="7 6"/>
+      <line x1="110" y1="202" x2="790" y2="202" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="10 8"/>
+      <line x1="110" y1="282" x2="790" y2="282" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="10 8"/>
+      <text x="690" y="152" font-size="12" font-weight="800" fill="#1e40af" text-anchor="end">甲：5 s</text>
+      <text x="690" y="232" font-size="12" font-weight="800" fill="#b45309" text-anchor="end">乙：3 s</text>
+      <g transform="translate(700,0)">
+        <rect x="0" y="160" width="66" height="26" rx="8" fill="#3b82f6" stroke="#1e40af" stroke-width="1.5"/>
+        <path d="M14 160 L20 146 H46 L54 160 Z" fill="#93c5fd" stroke="#1e40af" stroke-width="1.5"/>
+        <circle cx="14" cy="194" r="8" fill="#334155"/><circle cx="52" cy="194" r="8" fill="#334155"/>
+      </g>
+      <g transform="translate(700,0)">
+        <rect x="0" y="240" width="66" height="26" rx="8" fill="#f59e0b" stroke="#b45309" stroke-width="1.5"/>
+        <path d="M14 240 L20 226 H46 L54 240 Z" fill="#fcd34d" stroke="#b45309" stroke-width="1.5"/>
+        <circle cx="14" cy="274" r="8" fill="#334155"/><circle cx="52" cy="274" r="8" fill="#334155"/>
+      </g>
+      <text x="650" y="316" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">路程相同：时间短的更快</text>
+    </g>
+
+    <g class="p6-card">
+      <rect x="180" y="345" width="540" height="135" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <text x="450" y="398" font-size="34" font-weight="900" fill="#1e3a8a" text-anchor="middle">v = s / t</text>
+      <text x="450" y="428" font-size="12.5" font-weight="700" fill="#334155" text-anchor="middle">速度 = 路程 ÷ 时间；速度越大，运动越快</text>
+      <text x="450" y="454" font-size="12" fill="#64748b" text-anchor="middle">国际单位：m/s　·　常用单位：km/h　·　1 m/s = 3.6 km/h</text>
+    </g>
+  </g>
+
+  <!-- 第二步：匀速直线运动 -->
+  <g class="p6-step2" data-zone="2">
+    <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">匀速直线运动：速度不变，路程与时间成正比</text>
+
+    <rect x="70" y="110" width="620" height="320" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <g stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="6 6">
+      <line x1="140" y1="340" x2="640" y2="340"/><line x1="140" y1="290" x2="640" y2="290"/>
+      <line x1="140" y1="240" x2="640" y2="240"/><line x1="140" y1="190" x2="640" y2="190"/>
+      <line x1="140" y1="150" x2="640" y2="150"/>
+      <line x1="220" y1="400" x2="220" y2="150"/><line x1="300" y1="400" x2="300" y2="150"/>
+      <line x1="380" y1="400" x2="380" y2="150"/><line x1="460" y1="400" x2="460" y2="150"/>
+      <line x1="540" y1="400" x2="540" y2="150"/><line x1="620" y1="400" x2="620" y2="150"/>
+    </g>
+    <line x1="140" y1="400" x2="650" y2="400" stroke="#64748b" stroke-width="2.5"/>
+    <line x1="140" y1="400" x2="140" y2="140" stroke="#64748b" stroke-width="2.5"/>
+    <line class="p6-line" x1="140" y1="400" x2="620" y2="200" stroke="#1d4ed8" stroke-width="3.5"/>
+    <g class="p6-dot" fill="#1d4ed8">
+      <circle cx="220" cy="367" r="5"/><circle cx="300" cy="334" r="5"/><circle cx="380" cy="300" r="5"/>
+      <circle cx="460" cy="267" r="5"/><circle cx="540" cy="233" r="5"/><circle cx="620" cy="200" r="5"/>
+    </g>
+    <line class="p6-guide" x1="300" y1="334" x2="300" y2="400" stroke="#f59e0b" stroke-width="1.8"/>
+    <line class="p6-guide" x1="380" y1="300" x2="380" y2="400" stroke="#f59e0b" stroke-width="1.8"/>
+    <text x="340" y="388" font-size="11.5" font-weight="700" fill="#b45309" text-anchor="middle">Δt 相同</text>
+    <text x="404" y="312" font-size="11.5" font-weight="700" fill="#b45309">Δs 相同</text>
+    <text x="598" y="258" font-size="13" font-weight="800" fill="#047857">v 不变</text>
+    <text x="655" y="404" font-size="13" font-weight="800" fill="#475569">t/s</text>
+    <text x="122" y="150" font-size="13" font-weight="800" fill="#475569">s/m</text>
+    <text x="126" y="420" font-size="12" fill="#64748b">O</text>
+
+    <g class="p6-card">
+      <rect x="710" y="150" width="140" height="250" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <text x="780" y="180" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">匀速直线</text>
+      <g font-size="12.5" fill="#475569" text-anchor="middle">
+        <text x="780" y="218">沿直线运动</text>
+        <text x="780" y="246">速度大小不变</text>
+        <text x="780" y="274">方向不变</text>
+        <text x="780" y="302">s 与 t 成正比</text>
+        <text x="780" y="338">任意相等时间</text>
+        <text x="780" y="360">路程都相等</text>
+      </g>
+    </g>
+    <text x="450" y="462" font-size="13" font-weight="700" fill="#334155" text-anchor="middle">任意相等时间内通过的路程都相等</text>
+    <text x="450" y="486" font-size="12" fill="#64748b" text-anchor="middle">s-t 图像是一条过原点的直线，直线的倾斜程度表示速度</text>
+  </g>
+
+  <!-- 第三步：平均速度 -->
+  <g class="p6-step3" data-zone="3">
+    <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">平均速度 = 总路程 ÷ 总时间，不是速度的平均</text>
+    <text x="450" y="150" font-size="13" font-weight="700" fill="#475569" text-anchor="middle">相同时间内通过的路程不相等 → 变速运动</text>
+
+    <g class="p6-card">
+      <rect x="125" y="218" width="150" height="34" rx="10" fill="#e8effc"/>
+      <text x="200" y="240" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">30 m / 4 s</text>
+      <rect x="350" y="218" width="150" height="34" rx="10" fill="#fff7ed"/>
+      <text x="425" y="240" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">40 m / 3 s</text>
+      <rect x="600" y="218" width="150" height="34" rx="10" fill="#ecfdf5"/>
+      <text x="675" y="240" font-size="12" font-weight="800" fill="#047857" text-anchor="middle">50 m / 3 s</text>
+    </g>
+
+    <rect x="0" y="270" width="900" height="60" fill="#e8eef5"/>
+    <line x1="0" y1="270" x2="900" y2="270" stroke="#cbd5e1" stroke-width="2"/>
+    <line x1="0" y1="330" x2="900" y2="330" stroke="#cbd5e1" stroke-width="2"/>
+    <line class="p6-move" x1="30" y1="300" x2="870" y2="300" stroke="#cbd5e1" stroke-width="2.5"/>
+
+    <g transform="translate(168,0)">
+      <rect x="0" y="274" width="64" height="24" rx="8" fill="#3b82f6" stroke="#1e40af" stroke-width="1.5"/>
+      <path d="M12 274 L18 260 H44 L52 274 Z" fill="#93c5fd" stroke="#1e40af" stroke-width="1.5"/>
+      <circle cx="14" cy="304" r="7" fill="#334155"/><circle cx="50" cy="304" r="7" fill="#334155"/>
+    </g>
+    <g transform="translate(393,0)">
+      <rect x="0" y="274" width="64" height="24" rx="8" fill="#f59e0b" stroke="#b45309" stroke-width="1.5"/>
+      <path d="M12 274 L18 260 H44 L52 274 Z" fill="#fcd34d" stroke="#b45309" stroke-width="1.5"/>
+      <circle cx="14" cy="304" r="7" fill="#334155"/><circle cx="50" cy="304" r="7" fill="#334155"/>
+    </g>
+    <g transform="translate(643,0)">
+      <rect x="0" y="274" width="64" height="24" rx="8" fill="#10b981" stroke="#047857" stroke-width="1.5"/>
+      <path d="M12 274 L18 260 H44 L52 274 Z" fill="#a7f3d0" stroke="#047857" stroke-width="1.5"/>
+      <circle cx="14" cy="304" r="7" fill="#334155"/><circle cx="50" cy="304" r="7" fill="#334155"/>
+    </g>
+
+    <g stroke="#94a3b8" stroke-width="2">
+      <line x1="100" y1="330" x2="100" y2="344"/><line x1="300" y1="330" x2="300" y2="344"/>
+      <line x1="550" y1="330" x2="550" y2="344"/><line x1="800" y1="330" x2="800" y2="344"/>
+    </g>
+    <g font-size="12" font-weight="700" fill="#475569" text-anchor="middle">
+      <text x="100" y="362">0</text><text x="300" y="362">30 m</text>
+      <text x="550" y="362">70 m</text><text x="800" y="362">120 m</text>
+    </g>
+
+    <g class="p6-card">
+      <rect x="90" y="386" width="720" height="102" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <text x="450" y="410" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">全程的平均速度（用总路程和总时间）</text>
+      <text x="450" y="440" font-size="15.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">v = (30+40+50) m ÷ (4+3+3) s = 12 m/s</text>
+      <text x="450" y="466" font-size="11.5" font-weight="700" fill="#b91c1c" text-anchor="middle">不能用 (7.5+13.3+16.7) ÷ 3 计算平均速度</text>
+    </g>
+  </g>
+</svg>

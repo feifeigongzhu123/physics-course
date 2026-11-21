@@ -1,0 +1,208 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="油膜法估测油酸分子的大小：单分子油膜、d=V/S 与数量级">
+<style>
+[data-scene="ps-103"] .s103-s1,[data-scene="ps-103"] .s103-s2,[data-scene="ps-103"] .s103-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="ps-103"].s1 .s103-s1,[data-scene="ps-103"].s2 .s103-s2,[data-scene="ps-103"].s3 .s103-s3{opacity:1;visibility:visible}
+@keyframes s103fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+@keyframes s103draw{to{stroke-dashoffset:0}}
+@keyframes s103pop{0%{transform:scale(.9);opacity:0}70%{transform:scale(1.03);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s103pulse{0%,100%{opacity:.4}50%{opacity:1}}
+@keyframes s103spread{0%{transform:scale(.82);opacity:.5}70%{transform:scale(1.02);opacity:.9}100%{transform:scale(1);opacity:.85}}
+[data-scene="ps-103"].s1 .s103-layer{transform-box:fill-box;transform-origin:center bottom;animation:s103spread .9s ease .3s both}
+[data-scene="ps-103"].s1 .s103-card{transform-box:fill-box;transform-origin:center;animation:s103pop .5s ease .2s both}
+[data-scene="ps-103"].s2 .s103-film{transform-box:fill-box;transform-origin:center;animation:s103spread 1s ease .25s both}
+[data-scene="ps-103"].s2 .s103-grid{animation:s103fade .5s ease .1s both}
+[data-scene="ps-103"].s2 .s103-formula{transform-box:fill-box;transform-origin:center;animation:s103pop .55s ease .5s both}
+[data-scene="ps-103"].s2 .s103-card{transform-box:fill-box;transform-origin:center;animation:s103pop .5s ease .3s both}
+[data-scene="ps-103"].s3 .s103-axis{stroke-dasharray:470;stroke-dashoffset:470;animation:s103draw 1s ease .2s forwards}
+[data-scene="ps-103"].s3 .s103-mark{transform-box:fill-box;transform-origin:center;animation:s103pop .5s ease .7s both}
+[data-scene="ps-103"].s3 .s103-mark2{animation-delay:.85s}
+[data-scene="ps-103"].s3 .s103-mark3{animation-delay:1s}
+[data-scene="ps-103"].s3 .s103-glow{animation:s103pulse 2s ease-in-out infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">油膜法估测分子大小：单分子油膜与 d = V/S</text>
+
+<!-- 第一步：油酸单分子层 -->
+<g class="s103-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">油酸在水面展开，形成只有一层分子的油膜</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="250" height="28" rx="14" fill="#e8effc"/>
+  <text x="181" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">油酸单分子层</text>
+
+  <text x="306" y="164" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">把一滴油酸酒精溶液滴在水面上</text>
+
+  <rect x="70" y="186" width="470" height="176" rx="10" fill="#f8fbff" stroke="#94a3b8" stroke-width="2"/>
+  <rect x="74" y="246" width="462" height="112" fill="#dbeafe" opacity=".8"/>
+  <line x1="74" y1="246" x2="536" y2="246" stroke="#60a5fa" stroke-width="2"/>
+  <g class="s103-layer">
+    <g fill="#f59e0b" opacity=".85" stroke="#b45309" stroke-width="1">
+      <circle cx="88" cy="240" r="6.5"/><circle cx="102" cy="240" r="6.5"/><circle cx="116" cy="240" r="6.5"/>
+      <circle cx="130" cy="240" r="6.5"/><circle cx="144" cy="240" r="6.5"/><circle cx="158" cy="240" r="6.5"/>
+      <circle cx="172" cy="240" r="6.5"/><circle cx="186" cy="240" r="6.5"/><circle cx="200" cy="240" r="6.5"/>
+      <circle cx="214" cy="240" r="6.5"/><circle cx="228" cy="240" r="6.5"/><circle cx="242" cy="240" r="6.5"/>
+      <circle cx="256" cy="240" r="6.5"/><circle cx="270" cy="240" r="6.5"/><circle cx="284" cy="240" r="6.5"/>
+      <circle cx="298" cy="240" r="6.5"/><circle cx="312" cy="240" r="6.5"/><circle cx="326" cy="240" r="6.5"/>
+      <circle cx="340" cy="240" r="6.5"/><circle cx="354" cy="240" r="6.5"/><circle cx="368" cy="240" r="6.5"/>
+      <circle cx="382" cy="240" r="6.5"/><circle cx="396" cy="240" r="6.5"/><circle cx="410" cy="240" r="6.5"/>
+      <circle cx="424" cy="240" r="6.5"/><circle cx="438" cy="240" r="6.5"/><circle cx="452" cy="240" r="6.5"/>
+      <circle cx="466" cy="240" r="6.5"/><circle cx="480" cy="240" r="6.5"/><circle cx="494" cy="240" r="6.5"/>
+      <circle cx="508" cy="240" r="6.5"/>
+    </g>
+  </g>
+  <text x="306" y="210" font-size="11" fill="#92400e" text-anchor="middle">油酸分子一个挨一个紧密排在水面上</text>
+  <line x1="306" y1="216" x2="306" y2="232" stroke="#d97706" stroke-width="1.5" marker-end="url(#arrAmber)"/>
+
+  <text x="306" y="386" font-size="12.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">油膜厚度 = 一个分子的直径</text>
+  <text x="306" y="408" font-size="11" fill="#334155" text-anchor="middle">油酸分子可看成球形，一个挨一个排列</text>
+  <text x="306" y="428" font-size="11" fill="#64748b" text-anchor="middle">酒精溶于水，油酸在水面展开成一层</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">实验原理</text>
+
+  <circle cx="612" cy="172" r="4" fill="#1d4ed8"/>
+  <text x="628" y="176" font-size="11.5" fill="#334155">把油酸分子看成球形</text>
+  <circle cx="612" cy="202" r="4" fill="#1d4ed8"/>
+  <text x="628" y="206" font-size="11.5" fill="#334155">酒精溶于水，油酸展开</text>
+  <circle cx="612" cy="232" r="4" fill="#1d4ed8"/>
+  <text x="628" y="236" font-size="11.5" fill="#334155">在水面形成单分子油膜</text>
+  <circle cx="612" cy="262" r="4" fill="#1d4ed8"/>
+  <text x="628" y="266" font-size="11.5" fill="#334155">油膜厚度等于分子直径</text>
+
+  <g class="s103-card">
+    <rect x="596" y="286" width="248" height="68" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+    <text x="720" y="312" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">关键：油膜只有一层分子</text>
+    <text x="720" y="336" font-size="11" fill="#92400e" text-anchor="middle">所以油膜厚度就是分子直径</text>
+  </g>
+
+  <text x="720" y="382" font-size="11.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">分子直径约 10⁻¹⁰ m</text>
+  <text x="720" y="406" font-size="11" fill="#64748b" text-anchor="middle">“球形模型”是估算的基础</text>
+  <text x="720" y="428" font-size="11" fill="#64748b" text-anchor="middle">油膜法测的是分子大小的数量级</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">油酸在水面展开成单分子层，油膜的厚度就等于油酸分子的直径</text>
+</g>
+
+<!-- 第二步：d = V/S -->
+<g class="s103-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">测出一滴纯油酸的体积 V 和油膜面积 S，由 d = V/S 求直径</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="300" height="28" rx="14" fill="#e8effc"/>
+  <text x="206" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">俯视：用坐标纸数格子求面积</text>
+
+  <g class="s103-grid" stroke="#cbd5e1" stroke-width="1">
+    <line x1="70" y1="160" x2="530" y2="160"/><line x1="70" y1="206" x2="530" y2="206"/>
+    <line x1="70" y1="252" x2="530" y2="252"/><line x1="70" y1="298" x2="530" y2="298"/>
+    <line x1="70" y1="344" x2="530" y2="344"/><line x1="70" y1="390" x2="530" y2="390"/>
+    <line x1="70" y1="160" x2="70" y2="390"/><line x1="116" y1="160" x2="116" y2="390"/>
+    <line x1="162" y1="160" x2="162" y2="390"/><line x1="208" y1="160" x2="208" y2="390"/>
+    <line x1="254" y1="160" x2="254" y2="390"/><line x1="300" y1="160" x2="300" y2="390"/>
+    <line x1="346" y1="160" x2="346" y2="390"/><line x1="392" y1="160" x2="392" y2="390"/>
+    <line x1="438" y1="160" x2="438" y2="390"/><line x1="484" y1="160" x2="484" y2="390"/>
+    <line x1="530" y1="160" x2="530" y2="390"/>
+  </g>
+
+  <path class="s103-film" d="M150 250 C170 200 230 185 290 200 C350 215 400 190 450 220 C490 244 480 290 440 320 C400 350 330 340 290 325 C240 308 200 340 165 310 C135 285 130 275 150 250 Z" fill="#fde68a" fill-opacity=".55" stroke="#d97706" stroke-width="2.5"/>
+  <text x="470" y="188" font-size="11" font-weight="800" fill="#b45309" text-anchor="end">油膜轮廓</text>
+
+  <text x="306" y="414" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">数出油膜占的格子数，再乘每格面积，得到 S</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">数据处理</text>
+
+  <text x="610" y="170" font-size="11.5" fill="#334155">V滴：一滴溶液的体积</text>
+  <text x="610" y="196" font-size="11.5" fill="#334155">c：纯油酸在溶液中的浓度</text>
+
+  <rect x="596" y="212" width="248" height="54" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="720" y="236" font-size="15" font-weight="900" fill="#1e3a8a" text-anchor="middle">V = c · V滴</text>
+  <text x="720" y="256" font-size="11" fill="#475569" text-anchor="middle">求出纯油酸的体积</text>
+
+  <g class="s103-formula">
+    <rect x="596" y="278" width="248" height="78" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+    <text x="720" y="312" font-size="24" font-weight="900" fill="#b45309" text-anchor="middle">d = V / S</text>
+    <text x="720" y="338" font-size="11" fill="#92400e" text-anchor="middle">分子直径 = 油膜厚度</text>
+  </g>
+
+  <text x="610" y="378" font-size="11.5" font-weight="800" fill="#334155">数格规则：</text>
+  <text x="610" y="400" font-size="11.5" fill="#475569">不足半格舍去，多于半格算一格</text>
+  <text x="610" y="422" font-size="11" fill="#64748b">S = 格数 × 每格面积</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">纯油酸体积 V 除以油膜面积 S，就得到油酸分子的直径 d</text>
+</g>
+
+<!-- 第三步：数量级与误差 -->
+<g class="s103-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">测得分子直径约 10⁻¹⁰ m，本实验估测的是数量级</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="300" height="28" rx="14" fill="#e8effc"/>
+  <text x="206" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">分子直径的数量级（m）</text>
+
+  <line class="s103-axis" x1="80" y1="300" x2="540" y2="300" stroke="#334155" stroke-width="2" marker-end="url(#arrBlue)"/>
+
+  <line x1="130" y1="300" x2="130" y2="308" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="270" y1="300" x2="270" y2="308" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="410" y1="300" x2="410" y2="308" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="520" y1="300" x2="520" y2="308" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="130" y="326" font-size="11" fill="#475569" text-anchor="middle">10⁻¹⁰</text>
+  <text x="270" y="326" font-size="11" fill="#475569" text-anchor="middle">10⁻⁷</text>
+  <text x="410" y="326" font-size="11" fill="#475569" text-anchor="middle">10⁻⁴</text>
+  <text x="520" y="326" font-size="11" fill="#475569" text-anchor="middle">10⁰</text>
+
+  <g class="s103-mark">
+    <circle class="s103-glow" cx="130" cy="266" r="10" fill="#1d4ed8"/>
+    <text x="130" y="244" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">分子</text>
+  </g>
+  <g class="s103-mark s103-mark2">
+    <line x1="398" y1="266" x2="422" y2="266" stroke="#334155" stroke-width="5" stroke-linecap="round"/>
+    <text x="410" y="244" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">头发</text>
+  </g>
+  <g class="s103-mark s103-mark3">
+    <circle cx="520" cy="242" r="6" fill="#334155"/>
+    <line x1="520" y1="248" x2="520" y2="272" stroke="#334155" stroke-width="2.5"/>
+    <line x1="508" y1="256" x2="532" y2="256" stroke="#334155" stroke-width="2.5"/>
+    <line x1="520" y1="272" x2="512" y2="288" stroke="#334155" stroke-width="2.5"/>
+    <line x1="520" y1="272" x2="528" y2="288" stroke="#334155" stroke-width="2.5"/>
+    <text x="520" y="226" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">人</text>
+  </g>
+
+  <text x="306" y="356" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">分子直径比头发直径小约一百万倍</text>
+  <text x="306" y="380" font-size="11" fill="#64748b" text-anchor="middle">1 nm = 10⁻⁹ m，分子直径约 0.1 nm</text>
+  <text x="306" y="410" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">油膜法只估测数量级，不追求精确值</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">结果与误差</text>
+
+  <rect x="596" y="160" width="248" height="58" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="720" y="188" font-size="18" font-weight="900" fill="#1e3a8a" text-anchor="middle">d ≈ 10⁻¹⁰ m</text>
+  <text x="720" y="208" font-size="11" fill="#475569" text-anchor="middle">即 0.1 nm 的数量级</text>
+
+  <text x="610" y="244" font-size="11.5" font-weight="800" fill="#b45309">误差来源：</text>
+  <circle cx="612" cy="266" r="3.5" fill="#b45309"/>
+  <text x="626" y="270" font-size="11" fill="#92400e">痱子粉太厚，油膜展不开</text>
+  <text x="626" y="294" font-size="11" fill="#b91c1c">→ 面积 S 偏小</text>
+  <text x="626" y="318" font-size="11" font-weight="800" fill="#b91c1c">→ 直径 d 偏大</text>
+
+  <line x1="610" y1="334" x2="830" y2="334" stroke="#e2e8f0" stroke-width="1.5"/>
+  <circle cx="612" cy="356" r="3.5" fill="#1d4ed8"/>
+  <text x="626" y="360" font-size="11" fill="#334155">油膜没有完全展开</text>
+  <circle cx="612" cy="382" r="3.5" fill="#1d4ed8"/>
+  <text x="626" y="386" font-size="11" fill="#334155">数格子、量体积存在误差</text>
+
+  <rect x="596" y="400" width="248" height="30" rx="8" fill="#ecfdf5" stroke="#86efac" stroke-width="1.5"/>
+  <text x="720" y="420" font-size="11" font-weight="800" fill="#047857" text-anchor="middle">实验结果只要求数量级合理</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">油膜法估测出油酸分子的直径约为 10⁻¹⁰ m，数量级正确即可</text>
+</g>
+</svg>

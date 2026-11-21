@@ -1,0 +1,124 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="力的合成和分解：等效替代、平行四边形定则、按效果分解">
+<style>
+[data-scene="ps-15"] .s15-step{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="ps-15"].s1 .s15-step1,[data-scene="ps-15"].s2 .s15-step2,[data-scene="ps-15"].s3 .s15-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes s15draw{to{stroke-dashoffset:0}}
+@keyframes s15pop{0%{transform:scale(.9);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes s15grow{from{opacity:0}to{opacity:1}}
+[data-scene="ps-15"].s1 .s15-two{animation:s15grow .5s ease .15s both}
+[data-scene="ps-15"].s1 .s15-one{animation:s15grow .5s ease .7s both}
+[data-scene="ps-15"].s1 .s15-eq{animation:s15pop .4s ease .55s both;transform-box:fill-box;transform-origin:center}
+[data-scene="ps-15"].s1 .s15-range{animation:s15pop .5s ease .9s both;transform-box:fill-box;transform-origin:center}
+[data-scene="ps-15"].s2 .s15-f1{stroke-dasharray:300;stroke-dashoffset:300;animation:s15draw .8s ease .1s forwards}
+[data-scene="ps-15"].s2 .s15-f2{stroke-dasharray:230;stroke-dashoffset:230;animation:s15draw .7s ease .5s forwards}
+[data-scene="ps-15"].s2 .s15-par{animation:s15grow .6s ease 1s both}
+[data-scene="ps-15"].s2 .s15-res{stroke-dasharray:460;stroke-dashoffset:460;animation:s15draw .8s ease 1.3s forwards}
+[data-scene="ps-15"].s2 .s15-note{animation:s15grow .5s ease 2s both}
+[data-scene="ps-15"].s2 .s15-form{animation:s15pop .5s ease 1.9s both;transform-box:fill-box;transform-origin:center}
+[data-scene="ps-15"].s3 .s15-f{stroke-dasharray:250;stroke-dashoffset:250;animation:s15draw .6s ease .2s forwards}
+[data-scene="ps-15"].s3 .s15-c1{stroke-dasharray:200;stroke-dashoffset:200;animation:s15draw .5s ease .8s forwards}
+[data-scene="ps-15"].s3 .s15-c2{stroke-dasharray:142;stroke-dashoffset:142;animation:s15draw .5s ease 1s forwards}
+[data-scene="ps-15"].s3 .s15-dash{animation:s15grow .5s ease 1.4s both}
+[data-scene="ps-15"].s3 .s15-box{animation:s15pop .4s ease both;transform-box:fill-box;transform-origin:center}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="532" width="900" height="88" fill="url(#gBench)"/>
+<line x1="0" y1="532" x2="900" y2="532" stroke="#cbd5e1" stroke-width="2.5"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">力的合成和分解：平行四边形定则</text>
+
+<!-- 第一步：合力与等效替代 -->
+<g class="s15-step s15-step1" data-zone="1">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">第 1 步 · 合力：效果相同的等效替代</text>
+
+  <text x="255" y="130" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">两个力共同拉</text>
+  <text x="665" y="130" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">一个力单独拉</text>
+
+  <g class="s15-two">
+    <rect x="170" y="250" width="110" height="76" rx="10" fill="#fde68a" stroke="#b45309" stroke-width="2.2"/>
+    <text x="225" y="296" font-size="12" font-weight="800" fill="#7c2d12" text-anchor="middle">箱子</text>
+    <line x1="280" y1="272" x2="400" y2="222" stroke="#dc2626" stroke-width="3.2" marker-end="url(#arrRed)"/>
+    <line x1="280" y1="302" x2="400" y2="352" stroke="#059669" stroke-width="3.2" marker-end="url(#arrGreen)"/>
+    <text x="408" y="214" font-size="13" font-weight="800" fill="#b91c1c">F₁</text>
+    <text x="408" y="368" font-size="13" font-weight="800" fill="#047857">F₂</text>
+  </g>
+
+  <text class="s15-eq" x="465" y="302" font-size="30" font-weight="900" fill="#94a3b8" text-anchor="middle">=</text>
+
+  <g class="s15-one">
+    <rect x="560" y="250" width="110" height="76" rx="10" fill="#fde68a" stroke="#b45309" stroke-width="2.2"/>
+    <text x="615" y="296" font-size="12" font-weight="800" fill="#7c2d12" text-anchor="middle">箱子</text>
+    <line x1="670" y1="288" x2="790" y2="288" stroke="#7c3aed" stroke-width="3.6" marker-end="url(#arrBlue)"/>
+    <text x="798" y="280" font-size="13" font-weight="800" fill="#6d28d9">F</text>
+  </g>
+
+  <text x="255" y="398" font-size="12" fill="#475569" text-anchor="middle">两个力共同作用的效果</text>
+  <text x="665" y="398" font-size="12" fill="#475569" text-anchor="middle">效果相同，F 就叫合力</text>
+
+  <rect class="s15-range" x="110" y="428" width="680" height="76" rx="14" fill="#e8effc" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="450" y="456" font-size="15" font-weight="900" fill="#1e3a8a" text-anchor="middle">合力范围：|F₁ − F₂| ≤ F ≤ F₁ + F₂</text>
+  <text x="450" y="486" font-size="12" fill="#475569" text-anchor="middle">夹角越大，合力越小；合力可以大于、等于或小于任意一个分力</text>
+</g>
+
+<!-- 第二步：平行四边形定则 -->
+<g class="s15-step s15-step2" data-zone="2">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">第 2 步 · 平行四边形定则</text>
+
+  <text x="520" y="176" font-size="12.5" fill="#64748b" text-anchor="middle">以 F₁、F₂ 为邻边作平行四边形，对角线就是合力 F</text>
+
+  <line class="s15-par" x1="396" y1="240" x2="686" y2="240" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 6"/>
+  <line class="s15-par" x1="560" y1="420" x2="686" y2="240" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 6"/>
+
+  <line class="s15-f1" x1="270" y1="420" x2="560" y2="420" stroke="#dc2626" stroke-width="4" marker-end="url(#arrRed)"/>
+  <line class="s15-f2" x1="270" y1="420" x2="396" y2="240" stroke="#059669" stroke-width="4" marker-end="url(#arrGreen)"/>
+  <line class="s15-res" x1="270" y1="420" x2="686" y2="240" stroke="#7c3aed" stroke-width="4.6" marker-end="url(#arrBlue)"/>
+
+  <path d="M348 420 A78 78 0 0 0 314.7 356.1" fill="none" stroke="#7c3aed" stroke-width="2.2"/>
+  <text x="334" y="402" font-size="12.5" font-weight="900" fill="#6d28d9">θ</text>
+  <text x="566" y="446" font-size="13.5" font-weight="800" fill="#b91c1c">F₁</text>
+  <text x="386" y="228" font-size="13.5" font-weight="800" fill="#047857" text-anchor="end">F₂</text>
+  <text x="698" y="232" font-size="13.5" font-weight="800" fill="#6d28d9">F</text>
+  <text x="278" y="446" font-size="12" font-weight="800" fill="#475569">O</text>
+
+  <g class="s15-note">
+    <rect x="70" y="470" width="330" height="46" rx="12" fill="#ffffff" stroke="#dbe6f2" stroke-width="1.6"/>
+    <text x="235" y="490" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">θ = 90° 时</text>
+    <text x="235" y="508" font-size="12" fill="#475569" text-anchor="middle">F = √(F₁² + F₂²)，方向由 tanθ 决定</text>
+  </g>
+
+  <rect class="s15-form" x="420" y="470" width="390" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.6"/>
+  <text x="615" y="490" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">F = √(F₁² + F₂² + 2F₁F₂cosθ)</text>
+  <text x="615" y="508" font-size="11.5" fill="#475569" text-anchor="middle">三角形定则：首尾相接，从起点到终点的有向线段为合力</text>
+</g>
+
+<!-- 第三步：力的分解 -->
+<g class="s15-step s15-step3" data-zone="3">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">第 3 步 · 力的分解：按实际效果确定分力方向</text>
+
+  <text x="450" y="130" font-size="12.5" fill="#475569" text-anchor="middle">力的分解是力的合成的逆运算，同样遵循平行四边形定则</text>
+
+  <rect class="s15-box" x="250" y="300" width="150" height="105" rx="10" fill="#fde68a" stroke="#b45309" stroke-width="2.2"/>
+  <text x="325" y="358" font-size="13" font-weight="800" fill="#7c2d12" text-anchor="middle">箱子</text>
+
+  <line class="s15-f" x1="400" y1="352" x2="600" y2="212" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrBlue)"/>
+  <line class="s15-c1" x1="400" y1="352" x2="600" y2="352" stroke="#dc2626" stroke-width="3.6" marker-end="url(#arrRed)"/>
+  <line class="s15-c2" x1="400" y1="352" x2="400" y2="212" stroke="#059669" stroke-width="3.6" marker-end="url(#arrGreen)"/>
+  <line class="s15-dash" x1="600" y1="352" x2="600" y2="212" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="7 5"/>
+  <line class="s15-dash" x1="400" y1="212" x2="600" y2="212" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="7 5"/>
+
+  <path d="M462 352 A62 62 0 0 0 450.8 316.4" fill="none" stroke="#7c3aed" stroke-width="2.2"/>
+  <text x="458" y="344" font-size="12.5" font-weight="900" fill="#6d28d9">θ</text>
+  <text x="608" y="204" font-size="13.5" font-weight="800" fill="#6d28d9">F</text>
+  <text x="606" y="378" font-size="13" font-weight="800" fill="#b91c1c">F₁ = Fcosθ</text>
+  <text x="412" y="200" font-size="13" font-weight="800" fill="#047857">F₂ = Fsinθ</text>
+
+  <text x="300" y="440" font-size="12.5" font-weight="800" fill="#047857" text-anchor="middle">竖直效果：减小对地面的压力</text>
+  <text x="640" y="440" font-size="12.5" font-weight="800" fill="#b91c1c" text-anchor="middle">水平效果：拉着箱子前进</text>
+
+  <rect x="70" y="458" width="760" height="54" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="450" y="481" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">分解的关键：先看效果，再定两个分力的方向</text>
+  <text x="450" y="502" font-size="11.5" fill="#475569" text-anchor="middle">例如斜面上的重力：沿斜面下滑分力 mg sinθ、垂直斜面压分力 mg cosθ</text>
+</g>
+</svg>

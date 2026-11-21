@@ -1,0 +1,224 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="物体的浮沉条件及应用：受力判断、密度判断、轮船潜水艇和气球">
+<style>
+.p40-s1,.p40-s2,.p40-s3{opacity:0;visibility:hidden}
+.p40-s1{opacity:1;visibility:visible}
+[data-scene="pj-40"] .p40-s1,[data-scene="pj-40"] .p40-s2,[data-scene="pj-40"] .p40-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="pj-40"].s1 .p40-s1,[data-scene="pj-40"].s2 .p40-s2,[data-scene="pj-40"].s3 .p40-s3{opacity:1;visibility:visible}
+@keyframes p40bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes p40pulse{0%,100%{opacity:.42}50%{opacity:1}}
+@keyframes p40pop{0%{transform:scale(.76);opacity:0}72%{transform:scale(1.04);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes p40flow{to{stroke-dashoffset:-38}}
+@keyframes p40fill{0%,100%{opacity:.35}50%{opacity:.95}}
+[data-scene="pj-40"].s1 .p40-ball{transform-box:fill-box;transform-origin:center;animation:p40bob 2.4s ease-in-out infinite}
+[data-scene="pj-40"].s1 .p40-arrow{animation:p40pulse 1.6s ease-in-out infinite}
+[data-scene="pj-40"].s2 .p40-row{transform-box:fill-box;transform-origin:center;animation:p40pop .5s ease both}
+[data-scene="pj-40"].s2 .p40-row:nth-of-type(2){animation-delay:.12s}
+[data-scene="pj-40"].s2 .p40-row:nth-of-type(3){animation-delay:.24s}
+[data-scene="pj-40"].s3 .p40-balloon{transform-box:fill-box;transform-origin:center;animation:p40bob 2.6s ease-in-out infinite}
+[data-scene="pj-40"].s3 .p40-water{stroke-dasharray:7 5;animation:p40flow 1.3s linear infinite}
+[data-scene="pj-40"].s3 .p40-tank{animation:p40fill 1.9s ease-in-out infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="470" width="900" height="150" fill="url(#gBench)"/>
+<line x1="0" y1="470" x2="900" y2="470" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">物体的浮沉条件及应用：看力，也看密度</text>
+
+<!-- 第一步：受力判断 -->
+<g class="p40-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">受力判断：浸没时比较浮力 F浮 与重力 G 的大小</text>
+
+  <!-- 上浮 -->
+  <rect x="36" y="100" width="260" height="304" rx="16" fill="#ffffff" stroke="#bbf7d0" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="114" y="112" width="104" height="30" rx="15" fill="#d1fae5"/>
+  <text x="166" y="132" font-size="13.5" font-weight="800" fill="#047857" text-anchor="middle">上浮</text>
+  <rect x="104" y="180" width="124" height="150" rx="5" fill="#f8fbff" stroke="#64748b" stroke-width="2"/>
+  <rect x="107" y="204" width="118" height="122" fill="#dbeafe"/>
+  <line x1="107" y1="204" x2="225" y2="204" stroke="#60a5fa" stroke-width="1.5"/>
+  <g class="p40-ball">
+    <circle cx="166" cy="250" r="18" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
+    <circle cx="160" cy="244" r="5" fill="#fef3c7"/>
+  </g>
+  <line class="p40-arrow" x1="154" y1="248" x2="154" y2="196" stroke="#1d4ed8" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrBlue)"/>
+  <text x="146" y="224" font-size="12" font-weight="800" fill="#1e40af" text-anchor="end">F浮</text>
+  <line class="p40-arrow" x1="180" y1="252" x2="180" y2="296" stroke="#dc2626" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrRed)"/>
+  <text x="192" y="304" font-size="12" font-weight="800" fill="#b91c1c">G</text>
+  <text x="166" y="360" font-size="15" font-weight="900" fill="#047857" text-anchor="middle">F浮 &gt; G</text>
+  <text x="166" y="386" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">合力向上，物体上浮</text>
+
+  <!-- 下沉 -->
+  <rect x="320" y="100" width="260" height="304" rx="16" fill="#ffffff" stroke="#fecaca" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="398" y="112" width="104" height="30" rx="15" fill="#fee2e2"/>
+  <text x="450" y="132" font-size="13.5" font-weight="800" fill="#b91c1c" text-anchor="middle">下沉</text>
+  <rect x="388" y="180" width="124" height="150" rx="5" fill="#f8fbff" stroke="#64748b" stroke-width="2"/>
+  <rect x="391" y="204" width="118" height="122" fill="#dbeafe"/>
+  <line x1="391" y1="204" x2="509" y2="204" stroke="#60a5fa" stroke-width="1.5"/>
+  <g class="p40-ball">
+    <circle cx="450" cy="308" r="18" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
+    <circle cx="444" cy="302" r="5" fill="#fef3c7"/>
+  </g>
+  <line class="p40-arrow" x1="438" y1="306" x2="438" y2="272" stroke="#1d4ed8" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrBlue)"/>
+  <text x="426" y="266" font-size="12" font-weight="800" fill="#1e40af" text-anchor="end">F浮</text>
+  <line class="p40-arrow" x1="464" y1="310" x2="464" y2="346" stroke="#dc2626" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrRed)"/>
+  <text x="476" y="330" font-size="12" font-weight="800" fill="#b91c1c">G</text>
+  <text x="450" y="360" font-size="15" font-weight="900" fill="#b91c1c" text-anchor="middle">F浮 &lt; G</text>
+  <text x="450" y="386" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">合力向下，物体下沉</text>
+
+  <!-- 悬浮 -->
+  <rect x="604" y="100" width="260" height="304" rx="16" fill="#ffffff" stroke="#bfdbfe" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="682" y="112" width="104" height="30" rx="15" fill="#dbeafe"/>
+  <text x="734" y="132" font-size="13.5" font-weight="800" fill="#1e40af" text-anchor="middle">悬浮</text>
+  <rect x="672" y="180" width="124" height="150" rx="5" fill="#f8fbff" stroke="#64748b" stroke-width="2"/>
+  <rect x="675" y="204" width="118" height="122" fill="#dbeafe"/>
+  <line x1="675" y1="204" x2="793" y2="204" stroke="#60a5fa" stroke-width="1.5"/>
+  <g class="p40-ball">
+    <circle cx="734" cy="262" r="18" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
+    <circle cx="728" cy="256" r="5" fill="#fef3c7"/>
+  </g>
+  <line class="p40-arrow" x1="722" y1="260" x2="722" y2="218" stroke="#1d4ed8" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrBlue)"/>
+  <text x="710" y="212" font-size="12" font-weight="800" fill="#1e40af" text-anchor="end">F浮</text>
+  <line class="p40-arrow" x1="748" y1="264" x2="748" y2="306" stroke="#dc2626" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrRed)"/>
+  <text x="760" y="314" font-size="12" font-weight="800" fill="#b91c1c">G</text>
+  <text x="734" y="360" font-size="15" font-weight="900" fill="#1e40af" text-anchor="middle">F浮 = G</text>
+  <text x="734" y="386" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">二力平衡，悬浮在液体中</text>
+</g>
+
+<!-- 第二步：密度判断 -->
+<g class="p40-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">密度判断：实心物体可以直接比较 ρ物 与 ρ液</text>
+
+  <rect x="36" y="100" width="400" height="312" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="170" height="28" rx="14" fill="#e8effc"/>
+  <text x="141" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">实心物体：比密度</text>
+
+  <g class="p40-row">
+    <rect x="56" y="150" width="76" height="64" rx="5" fill="#f8fbff" stroke="#64748b" stroke-width="2"/>
+    <rect x="59" y="164" width="70" height="47" fill="#dbeafe"/>
+    <line x1="59" y1="164" x2="129" y2="164" stroke="#60a5fa" stroke-width="1.5"/>
+    <circle cx="94" cy="166" r="10" fill="#fbbf24" stroke="#b45309" stroke-width="1.5"/>
+    <text x="150" y="170" font-size="13.5" font-weight="800" fill="#1e3a8a">ρ物 &lt; ρ液</text>
+    <text x="150" y="190" font-size="12" font-weight="700" fill="#334155">上浮，最终漂浮</text>
+    <text x="150" y="206" font-size="11" fill="#64748b">F浮 = G，V排 &lt; V物</text>
+  </g>
+
+  <g class="p40-row">
+    <rect x="56" y="228" width="76" height="64" rx="5" fill="#f8fbff" stroke="#64748b" stroke-width="2"/>
+    <rect x="59" y="242" width="70" height="47" fill="#dbeafe"/>
+    <line x1="59" y1="242" x2="129" y2="242" stroke="#60a5fa" stroke-width="1.5"/>
+    <circle cx="94" cy="262" r="10" fill="#fbbf24" stroke="#b45309" stroke-width="1.5"/>
+    <text x="150" y="248" font-size="13.5" font-weight="800" fill="#1e3a8a">ρ物 = ρ液</text>
+    <text x="150" y="268" font-size="12" font-weight="700" fill="#334155">悬浮在液体中</text>
+    <text x="150" y="284" font-size="11" fill="#64748b">F浮 = G，V排 = V物</text>
+  </g>
+
+  <g class="p40-row">
+    <rect x="56" y="306" width="76" height="64" rx="5" fill="#f8fbff" stroke="#64748b" stroke-width="2"/>
+    <rect x="59" y="320" width="70" height="47" fill="#dbeafe"/>
+    <line x1="59" y1="320" x2="129" y2="320" stroke="#60a5fa" stroke-width="1.5"/>
+    <circle cx="94" cy="358" r="10" fill="#fbbf24" stroke="#b45309" stroke-width="1.5"/>
+    <text x="150" y="326" font-size="13.5" font-weight="800" fill="#1e3a8a">ρ物 &gt; ρ液</text>
+    <text x="150" y="346" font-size="12" font-weight="700" fill="#334155">下沉，最终沉底</text>
+    <text x="150" y="362" font-size="11" fill="#64748b">F浮 + F支 = G</text>
+  </g>
+
+  <!-- 判断表 -->
+  <rect x="456" y="100" width="408" height="312" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="476" y="116" width="150" height="28" rx="14" fill="#e8effc"/>
+  <text x="551" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">判断步骤</text>
+  <text x="480" y="172" font-size="12.5" font-weight="700" fill="#334155">① 先看物体是实心还是空心</text>
+  <text x="480" y="198" font-size="12.5" font-weight="700" fill="#334155">② 实心：直接比较 ρ物 与 ρ液</text>
+
+  <rect x="476" y="212" width="368" height="30" fill="#e8effc"/>
+  <text x="492" y="232" font-size="11.5" font-weight="800" fill="#1e3a8a">比较</text>
+  <text x="660" y="232" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">过程</text>
+  <text x="800" y="232" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">最终</text>
+
+  <rect x="476" y="242" width="368" height="34" fill="#f8fbff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="492" y="264" font-size="12" font-weight="700" fill="#047857">ρ物 &lt; ρ液</text>
+  <text x="660" y="264" font-size="12" fill="#334155" text-anchor="middle">上浮</text>
+  <text x="800" y="264" font-size="12" font-weight="700" fill="#047857" text-anchor="middle">漂浮</text>
+
+  <rect x="476" y="276" width="368" height="34" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="492" y="298" font-size="12" font-weight="700" fill="#1e40af">ρ物 = ρ液</text>
+  <text x="660" y="298" font-size="12" fill="#334155" text-anchor="middle">悬浮</text>
+  <text x="800" y="298" font-size="12" font-weight="700" fill="#1e40af" text-anchor="middle">悬浮</text>
+
+  <rect x="476" y="310" width="368" height="34" fill="#f8fbff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="492" y="332" font-size="12" font-weight="700" fill="#b91c1c">ρ物 &gt; ρ液</text>
+  <text x="660" y="332" font-size="12" fill="#334155" text-anchor="middle">下沉</text>
+  <text x="800" y="332" font-size="12" font-weight="700" fill="#b91c1c" text-anchor="middle">沉底</text>
+
+  <text x="480" y="370" font-size="12" font-weight="700" fill="#334155">③ 空心：比较物体的平均密度</text>
+  <text x="480" y="394" font-size="11.5" fill="#64748b">材料密度小，做成的空心物体也可能下沉</text>
+</g>
+
+<!-- 第三步：浮沉的应用 -->
+<g class="p40-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">浮沉的应用：改排开体积、改自重、改气体密度</text>
+
+  <!-- 轮船 -->
+  <rect x="36" y="100" width="260" height="304" rx="16" fill="#ffffff" stroke="#bfdbfe" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="80" y="112" width="172" height="30" rx="15" fill="#dbeafe"/>
+  <text x="166" y="132" font-size="12.5" font-weight="800" fill="#1e40af" text-anchor="middle">轮船 · 空心增大 V排</text>
+
+  <path d="M74 250 H258 L238 312 H94 Z" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
+  <rect x="118" y="260" width="40" height="34" rx="4" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+  <rect x="170" y="260" width="40" height="34" rx="4" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+  <text x="166" y="274" font-size="11" font-weight="700" fill="#64748b" text-anchor="middle">空心</text>
+  <path d="M66 286 H266" stroke="#60a5fa" stroke-width="3"/>
+  <text x="258" y="304" font-size="11" font-weight="700" fill="#0369a1" text-anchor="end">水线</text>
+  <line x1="132" y1="282" x2="132" y2="232" stroke="#1d4ed8" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrBlue)"/>
+  <text x="142" y="226" font-size="12" font-weight="800" fill="#1e40af">F浮</text>
+  <line x1="200" y1="284" x2="200" y2="334" stroke="#dc2626" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrRed)"/>
+  <text x="210" y="342" font-size="12" font-weight="800" fill="#b91c1c">G</text>
+
+  <text x="166" y="368" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">做成空心，V排 变大</text>
+  <text x="166" y="390" font-size="12" font-weight="700" fill="#1e40af" text-anchor="middle">漂浮时 F浮 = G</text>
+
+  <!-- 潜水艇 -->
+  <rect x="320" y="100" width="260" height="304" rx="16" fill="#ffffff" stroke="#bfdbfe" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="364" y="112" width="172" height="30" rx="15" fill="#dbeafe"/>
+  <text x="450" y="132" font-size="12.5" font-weight="800" fill="#1e40af" text-anchor="middle">潜水艇 · 改变自重</text>
+
+  <ellipse cx="450" cy="270" rx="105" ry="32" fill="#64748b" stroke="#334155" stroke-width="2"/>
+  <rect x="430" y="226" width="40" height="26" rx="6" fill="#64748b" stroke="#334155" stroke-width="2"/>
+  <rect x="446" y="214" width="8" height="14" fill="#334155"/>
+  <rect x="392" y="258" width="46" height="24" rx="5" fill="#1d4ed8" opacity=".55" class="p40-tank"/>
+  <rect x="462" y="258" width="46" height="24" rx="5" fill="#1d4ed8" opacity=".55" class="p40-tank"/>
+  <line class="p40-water" x1="405" y1="228" x2="405" y2="254" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round"/>
+  <line class="p40-water" x1="495" y1="254" x2="495" y2="228" stroke="#059669" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="376" y="222" font-size="11" font-weight="700" fill="#0369a1">充水</text>
+  <text x="514" y="222" font-size="11" font-weight="700" fill="#047857">排水</text>
+
+  <text x="450" y="340" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">充水 → G 变大 → 下潜</text>
+  <text x="450" y="364" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">排水 → G 变小 → 上浮</text>
+  <text x="450" y="388" font-size="11.5" font-weight="700" fill="#1e40af" text-anchor="middle">F浮 不变，靠改 G 实现浮沉</text>
+
+  <!-- 气球 -->
+  <rect x="604" y="100" width="260" height="304" rx="16" fill="#ffffff" stroke="#fecaca" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="648" y="112" width="172" height="30" rx="15" fill="#fee2e2"/>
+  <text x="734" y="132" font-size="12.5" font-weight="800" fill="#b91c1c" text-anchor="middle">气球 · 充密度小的气体</text>
+
+  <g class="p40-balloon">
+    <ellipse cx="710" cy="230" rx="52" ry="62" fill="#fca5a5" stroke="#dc2626" stroke-width="2"/>
+    <path d="M678 190 Q710 216 742 190" fill="none" stroke="#f87171" stroke-width="2"/>
+    <path d="M674 250 Q710 226 746 250" fill="none" stroke="#f87171" stroke-width="2"/>
+  </g>
+  <line x1="710" y1="292" x2="700" y2="300" stroke="#475569" stroke-width="1.5"/>
+  <line x1="710" y1="292" x2="720" y2="300" stroke="#475569" stroke-width="1.5"/>
+  <rect x="696" y="300" width="28" height="22" rx="4" fill="#b45309" stroke="#78350f" stroke-width="1.5"/>
+
+  <line x1="796" y1="300" x2="796" y2="210" stroke="#1d4ed8" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrBlue)"/>
+  <text x="806" y="204" font-size="12" font-weight="800" fill="#1e40af">F浮</text>
+  <line x1="812" y1="300" x2="812" y2="360" stroke="#dc2626" stroke-width="3" stroke-linecap="round" marker-end="url(#arrRed)"/>
+  <text x="822" y="372" font-size="12" font-weight="800" fill="#b91c1c">G</text>
+
+  <text x="620" y="350" font-size="12" font-weight="700" fill="#334155">ρ气 &lt; ρ空气</text>
+  <text x="620" y="374" font-size="12" font-weight="700" fill="#b91c1c">F浮 &gt; G，升空</text>
+
+  <rect x="60" y="416" width="780" height="40" rx="12" fill="#eef6ff" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="450" y="442" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">漂浮：F浮 = G；潜水艇：F浮 不变、改自重；气球：充入密度比空气小的气体</text>
+</g>
+</svg>

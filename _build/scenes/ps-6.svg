@@ -1,0 +1,149 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="速度：速度的定义、平均速度与平均速率、瞬时速度">
+<style>
+[data-scene="ps-6"] .s6-step{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="ps-6"].s1 .s6-step1,[data-scene="ps-6"].s2 .s6-step2,[data-scene="ps-6"].s3 .s6-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes s6draw{to{stroke-dashoffset:0}}
+@keyframes s6pop{0%{transform:scale(.86);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes s6grow{from{opacity:0}to{opacity:1}}
+[data-scene="ps-6"].s1 .s6-car{animation:s6grow .5s ease .1s both}
+[data-scene="ps-6"].s1 .s6-ghost{animation:s6grow .5s ease .5s both}
+[data-scene="ps-6"].s1 .s6-disp{animation:s6grow .5s ease .8s both}
+[data-scene="ps-6"].s2 .s6-path{animation:s6grow 1s ease .1s both}
+[data-scene="ps-6"].s2 .s6-disp2{animation:s6grow .5s ease .9s both}
+[data-scene="ps-6"].s3 .s6-curve{stroke-dasharray:700;stroke-dashoffset:700;animation:s6draw 1.3s ease .1s both}
+[data-scene="ps-6"].s3 .s6-secant{animation:s6grow .5s ease .9s both}
+[data-scene="ps-6"].s3 .s6-tangent{animation:s6grow .5s ease 1.15s both}
+[data-scene="ps-6"].s3 .s6-point{transform-box:fill-box;transform-origin:center;animation:s6pop .5s ease .95s both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">位置变化快慢——速度：矢量与平均、瞬时</text>
+
+<!-- 第一步：速度的定义 -->
+<g class="s6-step s6-step1" data-zone="1">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">速度 v = Δx / Δt，方向与位移方向相同</text>
+
+  <rect x="560" y="98" width="290" height="150" rx="14" fill="#ffffff" stroke="#c7d7f5" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="560" y="98" width="290" height="7" rx="3.5" fill="#1d4ed8"/>
+  <text x="705" y="134" font-size="13" font-weight="800" fill="#475569" text-anchor="middle">定义式</text>
+  <text x="705" y="166" font-size="20" font-weight="900" fill="#1e3a8a" text-anchor="middle">v = Δx / Δt</text>
+  <text x="705" y="196" font-size="12" fill="#334155" text-anchor="middle">单位：米每秒（m/s）</text>
+  <text x="705" y="220" font-size="12" fill="#334155" text-anchor="middle">矢量：方向与位移方向相同</text>
+  <text x="705" y="242" font-size="11.5" fill="#64748b" text-anchor="middle">速度的大小表示运动的快慢</text>
+
+  <line x1="70" y1="392" x2="830" y2="392" stroke="#cbd5e1" stroke-width="3"/>
+  <line x1="90" y1="392" x2="810" y2="392" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="12 10"/>
+
+  <g class="s6-car">
+    <rect x="140" y="330" width="150" height="44" rx="10" fill="#60a5fa" stroke="#1e40af" stroke-width="2"/>
+    <path d="M180 330 L196 306 L244 306 L260 330 Z" fill="#93c5fd" stroke="#1e40af" stroke-width="1.6"/>
+    <rect x="200" y="312" width="30" height="16" rx="3" fill="#dbeafe"/>
+    <circle cx="172" cy="374" r="11" fill="#1e293b"/>
+    <circle cx="258" cy="374" r="11" fill="#1e293b"/>
+    <circle cx="172" cy="374" r="4" fill="#94a3b8"/>
+    <circle cx="258" cy="374" r="4" fill="#94a3b8"/>
+    <text x="215" y="412" font-size="12" font-weight="800" fill="#1e40af" text-anchor="middle">t₁</text>
+  </g>
+
+  <g class="s6-ghost" opacity=".8">
+    <rect x="610" y="330" width="150" height="44" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" stroke-dasharray="7 5"/>
+    <path d="M650 330 L666 306 L714 306 L730 330 Z" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="6 4"/>
+    <circle cx="642" cy="374" r="11" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 4"/>
+    <circle cx="728" cy="374" r="11" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 4"/>
+    <text x="685" y="412" font-size="12" font-weight="800" fill="#64748b" text-anchor="middle">t₂</text>
+  </g>
+
+  <g class="s6-disp">
+    <line x1="295" y1="292" x2="610" y2="292" stroke="#1d4ed8" stroke-width="3.5" marker-end="url(#arrBlue)"/>
+    <text x="452" y="280" font-size="13" font-weight="900" fill="#1e3a8a" text-anchor="middle">位移 Δx</text>
+  </g>
+
+  <g>
+    <circle cx="420" cy="444" r="11" fill="#ffffff" stroke="#059669" stroke-width="2"/>
+    <line x1="420" y1="444" x2="420" y2="437" stroke="#059669" stroke-width="2"/>
+    <line x1="420" y1="444" x2="426" y2="448" stroke="#059669" stroke-width="2"/>
+    <text x="440" y="449" font-size="12.5" font-weight="800" fill="#047857">经过时间 Δt</text>
+  </g>
+  <text x="450" y="478" font-size="12" fill="#475569" text-anchor="middle">速度的方向就是物体运动的方向，与位移方向一致</text>
+</g>
+
+<!-- 第二步：平均速度与平均速率 -->
+<g class="s6-step s6-step2" data-zone="2">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">平均速度 = 位移 / 时间；平均速率 = 路程 / 时间</text>
+
+  <path class="s6-path" d="M120 350 C240 130 400 120 480 190 C560 255 660 300 760 350" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-dasharray="9 7" opacity=".9"/>
+  <text x="450" y="118" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">路程 400 m（轨迹长度）</text>
+
+  <g class="s6-disp2">
+    <line x1="134" y1="350" x2="746" y2="350" stroke="#1d4ed8" stroke-width="4" marker-end="url(#arrBlue)"/>
+    <text x="440" y="334" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">位移 100 m（A 指向 B）</text>
+  </g>
+
+  <circle cx="120" cy="350" r="7" fill="#1d4ed8"/>
+  <circle cx="760" cy="350" r="7" fill="#dc2626"/>
+  <text x="120" y="376" font-size="13" font-weight="900" fill="#1e40af" text-anchor="middle">A</text>
+  <text x="760" y="376" font-size="13" font-weight="900" fill="#b91c1c" text-anchor="middle">B</text>
+
+  <rect x="360" y="268" width="180" height="30" rx="9" fill="#ffffff" stroke="#86efac" stroke-width="1.6"/>
+  <text x="450" y="288" font-size="12" font-weight="800" fill="#047857" text-anchor="middle">总时间 t = 50 s</text>
+
+  <rect x="60" y="404" width="370" height="80" rx="13" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="245" y="428" font-size="13" font-weight="900" fill="#1e3a8a" text-anchor="middle">平均速度（矢量）</text>
+  <text x="245" y="452" font-size="12.5" fill="#334155" text-anchor="middle">= 100 m / 50 s = 2 m/s</text>
+  <text x="245" y="474" font-size="12" fill="#334155" text-anchor="middle">方向：由 A 指向 B</text>
+
+  <rect x="470" y="404" width="370" height="80" rx="13" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+  <text x="655" y="428" font-size="13" font-weight="900" fill="#b45309" text-anchor="middle">平均速率（标量）</text>
+  <text x="655" y="452" font-size="12.5" fill="#334155" text-anchor="middle">= 400 m / 50 s = 8 m/s</text>
+  <text x="655" y="474" font-size="12" fill="#334155" text-anchor="middle">只有大小，没有方向</text>
+</g>
+
+<!-- 第三步：瞬时速度 -->
+<g class="s6-step s6-step3" data-zone="3">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">瞬时速度：Δt → 0 时平均速度的极限</text>
+
+  <line x1="140" y1="430" x2="610" y2="430" stroke="#334155" stroke-width="2.4" marker-end="url(#arrBlue)"/>
+  <line x1="140" y1="430" x2="140" y2="120" stroke="#334155" stroke-width="2.4" marker-end="url(#arrBlue)"/>
+  <text x="618" y="444" font-size="12" font-weight="800" fill="#475569">t</text>
+  <text x="128" y="116" font-size="12" font-weight="800" fill="#475569">x</text>
+  <text x="126" y="448" font-size="11.5" font-weight="700" fill="#64748b">O</text>
+
+  <path class="s6-curve" d="M140 430 Q330 415 440 300 Q485 255 600 185" fill="none" stroke="#1d4ed8" stroke-width="3.5" stroke-linecap="round"/>
+
+  <g class="s6-secant">
+    <line x1="310" y1="390" x2="440" y2="300" stroke="#64748b" stroke-width="2.2" stroke-dasharray="7 5"/>
+    <circle cx="310" cy="390" r="4.5" fill="#64748b"/>
+    <text x="390" y="326" font-size="11.5" font-weight="800" fill="#475569">割线：平均速度</text>
+  </g>
+
+  <g class="s6-tangent">
+    <line x1="390" y1="352" x2="490" y2="248" stroke="#dc2626" stroke-width="3" marker-end="url(#arrRed)"/>
+    <text x="498" y="240" font-size="11.5" font-weight="800" fill="#b91c1c">切线：瞬时速度</text>
+  </g>
+
+  <g class="s6-point">
+    <circle cx="440" cy="300" r="6.5" fill="#dc2626" stroke="#ffffff" stroke-width="1.6"/>
+    <text x="426" y="292" font-size="12.5" font-weight="900" fill="#b91c1c" text-anchor="end">P</text>
+  </g>
+
+  <rect x="620" y="116" width="250" height="150" rx="13" fill="#ffffff" stroke="#c7d7f5" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="745" y="144" font-size="13" font-weight="900" fill="#1e3a8a" text-anchor="middle">从平均到瞬时</text>
+  <text x="745" y="174" font-size="11.5" fill="#334155" text-anchor="middle">Δt 越小，割线越接近切线</text>
+  <text x="745" y="200" font-size="11.5" fill="#334155" text-anchor="middle">Δt → 0 时平均速度趋近</text>
+  <text x="745" y="224" font-size="11.5" fill="#334155" text-anchor="middle">该时刻的瞬时速度</text>
+  <text x="745" y="250" font-size="11" fill="#64748b" text-anchor="middle">瞬时速度对应图像上某点的切线</text>
+
+  <rect x="620" y="286" width="250" height="150" rx="13" fill="#e8effc" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="745" y="314" font-size="13" font-weight="900" fill="#1e3a8a" text-anchor="middle">注意</text>
+  <text x="745" y="344" font-size="11.5" fill="#334155" text-anchor="middle">瞬时速度是矢量</text>
+  <text x="745" y="370" font-size="11.5" fill="#334155" text-anchor="middle">方向沿轨迹在该点的切线</text>
+  <text x="745" y="396" font-size="11.5" fill="#334155" text-anchor="middle">瞬时速度的大小叫速率</text>
+  <text x="745" y="420" font-size="11" fill="#475569" text-anchor="middle">汽车速度计显示的是速率</text>
+
+  <text x="390" y="468" font-size="12" fill="#475569" text-anchor="middle">平均速度粗略描述一段时间内的运动，瞬时速度精确描述某一时刻</text>
+</g>
+</svg>

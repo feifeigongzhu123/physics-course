@@ -1,0 +1,206 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="光的折射：空气与水的界面、折射角与入射角、筷子弯折与鱼的位置">
+  <style>
+[data-scene="pj-18"] .p18-z1,[data-scene="pj-18"] .p18-z2,[data-scene="pj-18"] .p18-z3{opacity:0;transition:opacity .45s}
+[data-scene="pj-18"].s1 .p18-z1,[data-scene="pj-18"].s2 .p18-z2,[data-scene="pj-18"].s3 .p18-z3{opacity:1}
+[data-scene="pj-18"].s1 .p18-draw{stroke-dasharray:340;stroke-dashoffset:340;animation:p18draw 1s ease forwards}
+[data-scene="pj-18"].s1 .p18-draw2{stroke-dasharray:340;stroke-dashoffset:340;animation:p18draw 1s ease .35s forwards}
+[data-scene="pj-18"] .p18-arc{opacity:0}
+[data-scene="pj-18"].s1 .p18-arc{animation:p18fade .5s ease .7s forwards}
+[data-scene="pj-18"].s2 .p18-pill{animation:popIn .5s ease both;transform-box:fill-box;transform-origin:center}
+[data-scene="pj-18"].s3 .p18-ghost{opacity:0;animation:p18fade .8s ease .4s forwards}
+[data-scene="pj-18"].s3 .p18-tip{animation:p18tip 1.6s ease-in-out infinite}
+@keyframes p18draw{to{stroke-dashoffset:0}}
+@keyframes p18fade{from{opacity:0}to{opacity:1}}
+@keyframes p18tip{0%,100%{transform:translateY(0);opacity:.85}50%{transform:translateY(7px);opacity:1}}
+  </style>
+  <rect width="900" height="620" fill="url(#gBg)"/>
+  <rect width="900" height="620" fill="url(#dotsPat)"/>
+  <rect y="470" width="900" height="150" fill="url(#gBench)"/>
+  <line x1="0" y1="470" x2="900" y2="470" stroke="#cfd9e8" stroke-width="2"/>
+  <text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">光的折射：斜射入另一种介质会偏折</text>
+
+  <!-- ===== 第 1 步：折射现象 ===== -->
+  <g class="p18-z1" data-zone="1">
+    <text x="112" y="152" font-size="13" font-weight="700" fill="#64748b">空气</text>
+    <rect x="70" y="300" width="760" height="140" fill="#cfebff" opacity=".9"/>
+    <line x1="70" y1="300" x2="830" y2="300" stroke="#60a5fa" stroke-width="3"/>
+    <g stroke="#93c5fd" stroke-width="3">
+      <line x1="70" y1="300" x2="70" y2="440"/>
+      <line x1="830" y1="300" x2="830" y2="440"/>
+      <line x1="70" y1="440" x2="830" y2="440"/>
+    </g>
+    <text x="112" y="392" font-size="13" font-weight="700" fill="#1d4ed8">水</text>
+    <text x="806" y="288" font-size="11.5" fill="#64748b" text-anchor="end">界面</text>
+
+    <line x1="450" y1="128" x2="450" y2="432" stroke="#64748b" stroke-width="2.2" stroke-dasharray="9 7"/>
+    <text x="462" y="144" font-size="12" font-weight="700" fill="#475569">法线</text>
+    <circle cx="450" cy="300" r="5" fill="#334155"/>
+    <text x="432" y="322" font-size="13" font-weight="800" fill="#334155" text-anchor="end">O</text>
+
+    <g stroke="#dc2626" stroke-width="4" fill="none" stroke-linecap="round">
+      <line class="p18-draw" x1="240" y1="130" x2="450" y2="300" marker-end="url(#arrRed)"/>
+    </g>
+    <text x="202" y="168" font-size="13" font-weight="800" fill="#b91c1c">入射光线</text>
+
+    <g stroke="#1d4ed8" stroke-width="4" fill="none" stroke-linecap="round">
+      <line class="p18-draw2" x1="450" y1="300" x2="560" y2="432" marker-end="url(#arrBlue)"/>
+    </g>
+    <text x="574" y="416" font-size="13" font-weight="800" fill="#1e40af">折射光线</text>
+
+    <g class="p18-arc" stroke="#dc2626" stroke-width="2.6" fill="none">
+      <path d="M450 215 A85 85 0 0 0 384 247"/>
+    </g>
+    <text x="412" y="238" font-size="16" font-weight="900" fill="#b91c1c">i</text>
+    <text x="381" y="212" font-size="12" font-weight="700" fill="#b91c1c">50°</text>
+
+    <g class="p18-arc" stroke="#1d4ed8" stroke-width="2.6" fill="none">
+      <path d="M450 385 A85 85 0 0 1 505 365"/>
+    </g>
+    <text x="472" y="386" font-size="16" font-weight="900" fill="#1e40af">r</text>
+    <text x="514" y="356" font-size="12" font-weight="700" fill="#1e40af">33°</text>
+
+    <text x="450" y="464" font-size="12.5" font-weight="700" fill="#1e40af" text-anchor="middle">光从空气斜射入水中，折射光线向法线偏折</text>
+  </g>
+
+  <!-- ===== 第 2 步：折射规律 ===== -->
+  <g class="p18-z2" data-zone="2">
+    <rect x="40" y="80" width="280" height="376" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2"/>
+    <text x="180" y="108" font-size="14.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">空气 → 水</text>
+    <rect x="60" y="286" width="240" height="130" fill="#cfebff" opacity=".9"/>
+    <line x1="60" y1="286" x2="300" y2="286" stroke="#60a5fa" stroke-width="2.5"/>
+    <line x1="180" y1="140" x2="180" y2="408" stroke="#64748b" stroke-width="2" stroke-dasharray="8 6"/>
+    <text x="70" y="178" font-size="11" fill="#64748b">空气</text>
+    <text x="70" y="392" font-size="11" font-weight="700" fill="#1d4ed8">水</text>
+
+    <g stroke="#dc2626" stroke-width="3" fill="none" stroke-linecap="round">
+      <line class="p18-draw" x1="112" y1="180" x2="180" y2="286" marker-end="url(#arrRed)"/>
+    </g>
+    <g stroke="#1d4ed8" stroke-width="3" fill="none" stroke-linecap="round">
+      <line class="p18-draw2" x1="180" y1="286" x2="232" y2="396" marker-end="url(#arrBlue)"/>
+    </g>
+    <path d="M180 226 A60 60 0 0 0 147 236" fill="none" stroke="#dc2626" stroke-width="2"/>
+    <text x="154" y="222" font-size="14" font-weight="900" fill="#b91c1c">i</text>
+    <path d="M180 346 A60 60 0 0 1 205 341" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="192" y="336" font-size="14" font-weight="900" fill="#1e40af">r</text>
+
+    <g class="p18-pill">
+      <rect x="212" y="216" width="96" height="28" rx="14" fill="#e8effc"/>
+      <text x="260" y="235" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">r 小于 i</text>
+    </g>
+    <text x="180" y="438" font-size="11" fill="#475569" text-anchor="middle">折射角小于入射角，光线靠近法线</text>
+
+    <!-- 水 → 空气 -->
+    <rect x="330" y="80" width="280" height="376" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2"/>
+    <text x="470" y="108" font-size="14.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">水 → 空气</text>
+    <rect x="350" y="286" width="240" height="130" fill="#cfebff" opacity=".9"/>
+    <line x1="350" y1="286" x2="590" y2="286" stroke="#60a5fa" stroke-width="2.5"/>
+    <line x1="470" y1="140" x2="470" y2="408" stroke="#64748b" stroke-width="2" stroke-dasharray="8 6"/>
+    <text x="556" y="178" font-size="11" fill="#64748b">空气</text>
+    <text x="360" y="392" font-size="11" font-weight="700" fill="#1d4ed8">水</text>
+
+    <g stroke="#dc2626" stroke-width="3" fill="none" stroke-linecap="round">
+      <line class="p18-draw" x1="410" y1="392" x2="470" y2="286" marker-end="url(#arrRed)"/>
+    </g>
+    <g stroke="#1d4ed8" stroke-width="3" fill="none" stroke-linecap="round">
+      <line class="p18-draw2" x1="470" y1="286" x2="552" y2="174" marker-end="url(#arrBlue)"/>
+    </g>
+    <path d="M470 346 A60 60 0 0 0 436 336" fill="none" stroke="#dc2626" stroke-width="2"/>
+    <text x="440" y="354" font-size="14" font-weight="900" fill="#b91c1c">i</text>
+    <path d="M470 230 A58 58 0 0 0 504 238" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="502" y="230" font-size="14" font-weight="900" fill="#1e40af">r</text>
+
+    <g class="p18-pill">
+      <rect x="356" y="216" width="96" height="28" rx="14" fill="#e8effc"/>
+      <text x="404" y="235" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">r 大于 i</text>
+    </g>
+    <text x="470" y="426" font-size="11" fill="#475569" text-anchor="middle">折射角大于入射角，光线远离法线</text>
+    <text x="470" y="444" font-size="11" font-weight="700" fill="#b45309" text-anchor="middle">折射时光路可逆</text>
+
+    <!-- 垂直入射 -->
+    <rect x="620" y="80" width="240" height="376" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2"/>
+    <text x="740" y="108" font-size="14.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">垂直入射</text>
+    <rect x="640" y="286" width="200" height="130" fill="#cfebff" opacity=".9"/>
+    <line x1="640" y1="286" x2="840" y2="286" stroke="#60a5fa" stroke-width="2.5"/>
+    <text x="650" y="178" font-size="11" fill="#64748b">空气</text>
+    <text x="650" y="392" font-size="11" font-weight="700" fill="#1d4ed8">水</text>
+
+    <line x1="740" y1="140" x2="740" y2="286" stroke="#dc2626" stroke-width="3" marker-end="url(#arrRed)"/>
+    <line x1="740" y1="286" x2="740" y2="408" stroke="#1d4ed8" stroke-width="3" marker-end="url(#arrBlue)"/>
+    <line x1="740" y1="140" x2="740" y2="408" stroke="#64748b" stroke-width="1.5" stroke-dasharray="8 6" opacity=".7"/>
+    <path d="M740 286 L756 286 L756 302" fill="none" stroke="#475569" stroke-width="2"/>
+    <circle cx="740" cy="286" r="4" fill="#334155"/>
+    <text x="766" y="222" font-size="11.5" font-weight="700" fill="#b91c1c">i = 0°</text>
+    <text x="766" y="352" font-size="11.5" font-weight="700" fill="#1e40af">r = 0°</text>
+    <text x="740" y="438" font-size="11" fill="#475569" text-anchor="middle">传播方向不改变，三线重合</text>
+    <text x="700" y="420" font-size="11" fill="#94a3b8" text-anchor="end">垂直射到界面时</text>
+  </g>
+
+  <!-- ===== 第 3 步：生活现象 ===== -->
+  <g class="p18-z3" data-zone="3">
+    <rect x="40" y="80" width="400" height="376" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2"/>
+    <text x="240" y="108" font-size="15" font-weight="900" fill="#1e3a8a" text-anchor="middle">插入水中的筷子</text>
+
+    <rect x="80" y="300" width="320" height="130" fill="#cfebff" opacity=".9"/>
+    <line x1="80" y1="300" x2="400" y2="300" stroke="#60a5fa" stroke-width="3"/>
+    <g stroke="#93c5fd" stroke-width="3">
+      <line x1="80" y1="300" x2="80" y2="430"/>
+      <line x1="400" y1="300" x2="400" y2="430"/>
+      <line x1="80" y1="430" x2="400" y2="430"/>
+    </g>
+    <text x="96" y="190" font-size="11.5" fill="#64748b">空气</text>
+    <text x="96" y="396" font-size="11.5" font-weight="700" fill="#1d4ed8">水</text>
+
+    <line x1="150" y1="156" x2="348" y2="420" stroke="#b45309" stroke-width="9" stroke-linecap="round"/>
+    <line x1="150" y1="156" x2="348" y2="420" stroke="#fcd34d" stroke-width="3" stroke-linecap="round"/>
+    <line x1="257" y1="300" x2="330" y2="352" stroke="#1d4ed8" stroke-width="3" stroke-dasharray="7 6" stroke-linecap="round"/>
+    <circle cx="257" cy="300" r="5" fill="#1d4ed8"/>
+    <text x="338" y="346" font-size="11.5" font-weight="800" fill="#1e40af">看起来的位置</text>
+
+    <text x="240" y="448" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">水中部分看起来向上弯折，池水看起来变浅</text>
+    <text x="182" y="240" font-size="11" fill="#b45309" text-anchor="end">筷子</text>
+
+    <!-- 右卡：水中的鱼 -->
+    <rect x="460" y="80" width="400" height="376" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2"/>
+    <text x="660" y="108" font-size="15" font-weight="900" fill="#1e3a8a" text-anchor="middle">水中的鱼：看到的是虚像</text>
+
+    <rect x="500" y="300" width="320" height="130" fill="#cfebff" opacity=".9"/>
+    <line x1="500" y1="300" x2="820" y2="300" stroke="#60a5fa" stroke-width="3"/>
+    <g stroke="#93c5fd" stroke-width="3">
+      <line x1="500" y1="300" x2="500" y2="430"/>
+      <line x1="820" y1="300" x2="820" y2="430"/>
+      <line x1="500" y1="430" x2="820" y2="430"/>
+    </g>
+    <text x="516" y="190" font-size="11.5" fill="#64748b">空气</text>
+    <text x="516" y="396" font-size="11.5" font-weight="700" fill="#1d4ed8">水</text>
+
+    <!-- 眼睛 -->
+    <ellipse cx="778" cy="168" rx="16" ry="10" fill="#ffffff" stroke="#334155" stroke-width="2"/>
+    <circle cx="778" cy="168" r="4" fill="#334155"/>
+    <text x="778" y="196" font-size="11" fill="#64748b" text-anchor="middle">眼睛</text>
+
+    <line x1="766" y1="178" x2="690" y2="300" stroke="#d97706" stroke-width="2.6"/>
+    <line class="p18-ghost" x1="690" y1="300" x2="664" y2="388" stroke="#1d4ed8" stroke-width="2.6"/>
+    <line x1="690" y1="300" x2="672" y2="330" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="6 5"/>
+    <text x="640" y="290" font-size="11" fill="#64748b">水面</text>
+
+    <!-- 实际鱼 -->
+    <ellipse cx="656" cy="390" rx="26" ry="14" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
+    <path d="M680 390 L704 376 L704 404 Z" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
+    <circle cx="642" cy="386" r="2.6" fill="#334155"/>
+    <text x="610" y="420" font-size="11" font-weight="700" fill="#b45309">实际</text>
+
+    <!-- 看到的鱼 -->
+    <g class="p18-ghost">
+      <ellipse cx="674" cy="330" rx="24" ry="13" fill="#fde68a" opacity=".5" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="6 5"/>
+      <path d="M696 330 L718 317 L718 343 Z" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="6 5"/>
+      <circle cx="661" cy="326" r="2.4" fill="#1d4ed8"/>
+    </g>
+    <text x="700" y="306" font-size="11" font-weight="700" fill="#1e40af">看到的鱼（虚像，偏高）</text>
+
+    <g class="p18-tip">
+      <line x1="676" y1="346" x2="662" y2="378" stroke="#dc2626" stroke-width="2.6" marker-end="url(#arrRed)"/>
+    </g>
+    <text x="700" y="366" font-size="11.5" font-weight="800" fill="#b91c1c">叉鱼瞄准下方</text>
+    <text x="660" y="448" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">鱼的实际位置比看到的更深，是折射成的虚像</text>
+  </g>
+</svg>

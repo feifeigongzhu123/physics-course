@@ -1,0 +1,153 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="弹性碰撞与非弹性碰撞：动能守恒、完全非弹性碰撞共速、一般碰撞">
+<style>
+[data-scene="ps-66"] .s66-step1,[data-scene="ps-66"] .s66-step2,[data-scene="ps-66"] .s66-step3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility 0s linear .45s}
+[data-scene="ps-66"].s1 .s66-step1,[data-scene="ps-66"].s2 .s66-step2,[data-scene="ps-66"].s3 .s66-step3{opacity:1;visibility:visible;transition:opacity .45s ease,visibility 0s}
+@keyframes s66draw{to{stroke-dashoffset:0}}
+@keyframes s66pop{0%{transform:scale(.86);opacity:0}70%{transform:scale(1.05);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s66pulse{0%,100%{opacity:.5}50%{opacity:1}}
+@keyframes s66slide{0%{transform:translateY(10px);opacity:0}100%{transform:none;opacity:1}}
+[data-scene="ps-66"].s1 .s66-v{stroke-dasharray:150;stroke-dashoffset:150;animation:s66draw .55s ease .25s forwards}
+[data-scene="ps-66"].s1 .s66-v2{animation-delay:.45s}
+[data-scene="ps-66"].s1 .s66-eq{transform-box:fill-box;transform-origin:center;animation:s66pop .5s ease .6s both}
+[data-scene="ps-66"].s1 .s66-ball{animation:s66pulse 2.2s ease-in-out infinite}
+[data-scene="ps-66"].s2 .s66-v{stroke-dasharray:150;stroke-dashoffset:150;animation:s66draw .55s ease .25s forwards}
+[data-scene="ps-66"].s2 .s66-v2{animation-delay:.5s}
+[data-scene="ps-66"].s2 .s66-stick{transform-box:fill-box;transform-origin:center;animation:s66pop .55s ease .7s both}
+[data-scene="ps-66"].s2 .s66-card{transform-box:fill-box;transform-origin:center;animation:s66pop .5s ease .35s both}
+[data-scene="ps-66"].s3 .s66-band{animation:s66slide .5s ease .15s both}
+[data-scene="ps-66"].s3 .s66-card{transform-box:fill-box;transform-origin:center;animation:s66pop .5s ease .35s both}
+[data-scene="ps-66"].s3 .s66-card:nth-of-type(2){animation-delay:.5s}
+[data-scene="ps-66"].s3 .s66-card:nth-of-type(3){animation-delay:.65s}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="532" width="900" height="88" fill="url(#gBench)"/>
+<line x1="0" y1="532" x2="900" y2="532" stroke="#cbd5e1" stroke-width="2.5"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">弹性碰撞与非弹性碰撞：动能是否损失</text>
+
+<!-- 第一步：弹性碰撞 -->
+<g class="s66-step1" data-zone="1">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 1 步 · 弹性碰撞：动量、动能都守恒</text>
+
+  <text x="70" y="175" font-size="12.5" font-weight="800" fill="#64748b">碰前</text>
+  <circle class="s66-ball" cx="190" cy="165" r="26" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="190" y="172" font-size="14" font-weight="900" fill="#1e3a8a" text-anchor="middle">m</text>
+  <line class="s66-v" x1="218" y1="165" x2="318" y2="165" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrRed)"/>
+  <text x="268" y="153" font-size="13" font-weight="800" fill="#b91c1c" text-anchor="middle">v</text>
+  <circle cx="620" cy="165" r="26" fill="#dcfce7" stroke="#059669" stroke-width="2.5"/>
+  <text x="620" y="172" font-size="14" font-weight="900" fill="#047857" text-anchor="middle">m</text>
+  <text x="620" y="216" font-size="12" fill="#64748b" text-anchor="middle">静止</text>
+
+  <text x="70" y="330" font-size="12.5" font-weight="800" fill="#64748b">碰后</text>
+  <circle cx="190" cy="320" r="26" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.5" opacity=".55"/>
+  <text x="190" y="327" font-size="14" font-weight="900" fill="#1e3a8a" text-anchor="middle">m</text>
+  <text x="190" y="370" font-size="12" fill="#64748b" text-anchor="middle">v′ = 0</text>
+  <circle cx="620" cy="320" r="26" fill="#dcfce7" stroke="#059669" stroke-width="2.5"/>
+  <text x="620" y="327" font-size="14" font-weight="900" fill="#047857" text-anchor="middle">m</text>
+  <line class="s66-v s66-v2" x1="648" y1="320" x2="748" y2="320" stroke="#059669" stroke-width="3.5" marker-end="url(#arrGreen)"/>
+  <text x="698" y="308" font-size="13" font-weight="800" fill="#047857" text-anchor="middle">v′</text>
+
+  <g class="s66-eq">
+    <rect x="70" y="382" width="760" height="132" rx="14" fill="#ffffff" stroke="#bbf7d0" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="450" y="412" font-size="13.5" font-weight="700" fill="#334155" text-anchor="middle">动量守恒：m₁v₁ + m₂v₂ = m₁v₁′ + m₂v₂′</text>
+    <text x="450" y="442" font-size="13" font-weight="700" fill="#334155" text-anchor="middle">动能守恒：½m₁v₁² + ½m₂v₂² = ½m₁v₁′² + ½m₂v₂′²</text>
+    <line x1="120" y1="458" x2="780" y2="458" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="450" y="482" font-size="13" font-weight="900" fill="#047857" text-anchor="middle">等质量两球发生弹性正碰，交换速度</text>
+    <text x="450" y="504" font-size="11.5" fill="#64748b" text-anchor="middle">弹性碰撞是理想情况，实际碰撞只能近似</text>
+  </g>
+</g>
+
+<!-- 第二步：完全非弹性碰撞 -->
+<g class="s66-step2" data-zone="2">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 2 步 · 完全非弹性碰撞：碰后共速</text>
+
+  <text x="70" y="150" font-size="12.5" font-weight="800" fill="#64748b">碰前</text>
+  <circle cx="150" cy="200" r="22" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="150" y="206" font-size="12.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">m₁</text>
+  <line class="s66-v" x1="176" y1="200" x2="276" y2="200" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrRed)"/>
+  <text x="226" y="188" font-size="13" font-weight="800" fill="#b91c1c" text-anchor="middle">v₁</text>
+  <circle cx="380" cy="200" r="30" fill="#dcfce7" stroke="#059669" stroke-width="2.5"/>
+  <text x="380" y="207" font-size="13" font-weight="900" fill="#047857" text-anchor="middle">m₂</text>
+  <text x="380" y="252" font-size="12" fill="#64748b" text-anchor="middle">静止</text>
+
+  <text x="70" y="330" font-size="12.5" font-weight="800" fill="#64748b">碰后</text>
+  <g class="s66-stick">
+    <ellipse cx="332" cy="384" rx="76" ry="46" fill="none" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="6 5"/>
+    <circle cx="310" cy="380" r="22" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.5"/>
+    <circle cx="354" cy="386" r="30" fill="#dcfce7" stroke="#059669" stroke-width="2.5"/>
+    <text x="332" y="446" font-size="12" font-weight="800" fill="#475569" text-anchor="middle">粘在一起</text>
+  </g>
+  <line class="s66-v s66-v2" x1="410" y1="384" x2="500" y2="384" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrBlue)"/>
+  <text x="455" y="372" font-size="13" font-weight="900" fill="#6d28d9" text-anchor="middle">v共</text>
+
+  <g class="s66-card">
+    <rect x="580" y="112" width="280" height="340" rx="14" fill="#ffffff" stroke="#fecaca" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="720" y="146" font-size="14" font-weight="800" fill="#b91c1c" text-anchor="middle">完全非弹性碰撞</text>
+    <text x="720" y="178" font-size="12.5" fill="#334155" text-anchor="middle">碰后两物体粘在一起</text>
+    <text x="720" y="212" font-size="13" font-weight="800" fill="#b45309" text-anchor="middle">m₁v₁ + m₂v₂</text>
+    <text x="720" y="234" font-size="13" font-weight="800" fill="#b45309" text-anchor="middle">= (m₁ + m₂)v共</text>
+    <text x="720" y="268" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">v共 = (m₁v₁ + m₂v₂) / (m₁ + m₂)</text>
+    <line x1="610" y1="288" x2="830" y2="288" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="720" y="316" font-size="13" font-weight="900" fill="#b91c1c" text-anchor="middle">动能损失最大</text>
+    <text x="720" y="344" font-size="12" fill="#334155" text-anchor="middle">动量仍然守恒</text>
+    <text x="720" y="374" font-size="11.5" fill="#64748b" text-anchor="middle">子弹打入木块并留在其中</text>
+    <text x="720" y="400" font-size="11.5" fill="#64748b" text-anchor="middle">就是完全非弹性碰撞</text>
+    <text x="720" y="430" font-size="11.5" fill="#64748b" text-anchor="middle">损失的动能转化为内能</text>
+  </g>
+
+  <rect x="60" y="464" width="500" height="50" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+  <text x="310" y="494" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">碰撞后两物体速度相同，相对速度为零</text>
+</g>
+
+<!-- 第三步：一般碰撞 -->
+<g class="s66-step3" data-zone="3">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 3 步 · 一般碰撞与碰撞分类</text>
+
+  <g class="s66-band">
+    <text x="82" y="156" font-size="11" font-weight="800" fill="#047857">ΔEk = 0</text>
+    <text x="445" y="156" font-size="11" font-weight="800" fill="#b45309" text-anchor="middle">动能减少，损失不是最大</text>
+    <text x="816" y="156" font-size="11" font-weight="800" fill="#b91c1c" text-anchor="end">ΔEk 最大</text>
+
+    <rect x="80" y="170" width="240" height="38" rx="8" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <rect x="320" y="170" width="250" height="38" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <rect x="570" y="170" width="250" height="38" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="200" y="194" font-size="13" font-weight="900" fill="#047857" text-anchor="middle">弹性碰撞</text>
+    <text x="445" y="194" font-size="13" font-weight="900" fill="#b45309" text-anchor="middle">一般非弹性碰撞</text>
+    <text x="695" y="194" font-size="13" font-weight="900" fill="#b91c1c" text-anchor="middle">完全非弹性碰撞</text>
+  </g>
+
+  <g class="s66-card">
+    <rect x="60" y="240" width="250" height="160" rx="14" fill="#ffffff" stroke="#bbf7d0" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="185" y="274" font-size="14" font-weight="800" fill="#047857" text-anchor="middle">弹性碰撞</text>
+    <text x="185" y="306" font-size="12" fill="#334155" text-anchor="middle">动量守恒</text>
+    <text x="185" y="332" font-size="12" fill="#334155" text-anchor="middle">动能守恒</text>
+    <text x="185" y="358" font-size="12" fill="#334155" text-anchor="middle">等质量正碰交换速度</text>
+    <text x="185" y="384" font-size="11.5" fill="#64748b" text-anchor="middle">ΔEk = 0</text>
+  </g>
+
+  <g class="s66-card">
+    <rect x="325" y="240" width="250" height="160" rx="14" fill="#ffffff" stroke="#fde68a" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="450" y="274" font-size="14" font-weight="800" fill="#b45309" text-anchor="middle">一般非弹性碰撞</text>
+    <text x="450" y="306" font-size="12" fill="#334155" text-anchor="middle">动量守恒</text>
+    <text x="450" y="332" font-size="12" fill="#334155" text-anchor="middle">动能减少</text>
+    <text x="450" y="358" font-size="12" fill="#334155" text-anchor="middle">损失不是最大值</text>
+    <text x="450" y="384" font-size="11.5" fill="#64748b" text-anchor="middle">0 ＜ ΔEk ＜ 最大损失</text>
+  </g>
+
+  <g class="s66-card">
+    <rect x="590" y="240" width="250" height="160" rx="14" fill="#ffffff" stroke="#fecaca" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="715" y="274" font-size="14" font-weight="800" fill="#b91c1c" text-anchor="middle">完全非弹性碰撞</text>
+    <text x="715" y="306" font-size="12" fill="#334155" text-anchor="middle">动量守恒</text>
+    <text x="715" y="332" font-size="12" fill="#334155" text-anchor="middle">动能损失最大</text>
+    <text x="715" y="358" font-size="12" fill="#334155" text-anchor="middle">碰后两物体共速</text>
+    <text x="715" y="384" font-size="11.5" fill="#64748b" text-anchor="middle">ΔEk 最大</text>
+  </g>
+
+  <rect x="60" y="420" width="780" height="96" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="448" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">碰撞的判断依据</text>
+  <text x="450" y="476" font-size="12.5" fill="#334155" text-anchor="middle">动量始终守恒，动能不一定守恒</text>
+  <text x="450" y="500" font-size="12.5" fill="#334155" text-anchor="middle">碰后总动能不会增加，最多损失到两者共速</text>
+</g>
+</svg>

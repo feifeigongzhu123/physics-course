@@ -1,0 +1,201 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="欧姆定律在串并联电路中的应用：串联总电阻与分压、并联总电阻与分流、分压分流对比">
+<style>
+.p65-s1,.p65-s2,.p65-s3{opacity:0;visibility:hidden}
+.p65-s1{opacity:1;visibility:visible}
+[data-scene="pj-65"] .p65-s1,[data-scene="pj-65"] .p65-s2,[data-scene="pj-65"] .p65-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="pj-65"].s1 .p65-s1,[data-scene="pj-65"].s2 .p65-s2,[data-scene="pj-65"].s3 .p65-s3{opacity:1;visibility:visible}
+@keyframes p65pop{0%{transform:scale(.82);opacity:0}72%{transform:scale(1.04);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes p65draw{to{stroke-dashoffset:0}}
+@keyframes p65pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes p65slide{0%{transform:translateY(8px);opacity:0}100%{transform:translateY(0);opacity:1}}
+[data-scene="pj-65"].s1 .p65-wire{stroke-dasharray:1100;stroke-dashoffset:1100;animation:p65draw 1.2s ease .1s forwards}
+[data-scene="pj-65"].s1 .p65-formula{transform-box:fill-box;transform-origin:center;animation:p65pop .55s ease .7s both}
+[data-scene="pj-65"].s1 .p65-badge{animation:p65pulse 1.8s ease-in-out infinite}
+[data-scene="pj-65"].s2 .p65-wire{stroke-dasharray:1100;stroke-dashoffset:1100;animation:p65draw 1.2s ease .1s forwards}
+[data-scene="pj-65"].s2 .p65-formula{transform-box:fill-box;transform-origin:center;animation:p65pop .55s ease .7s both}
+[data-scene="pj-65"].s2 .p65-badge{animation:p65pulse 1.8s ease-in-out infinite}
+[data-scene="pj-65"].s3 .p65-card{transform-box:fill-box;transform-origin:center;animation:p65pop .55s ease both}
+[data-scene="pj-65"].s3 .p65-card2{animation-delay:.14s}
+[data-scene="pj-65"].s3 .p65-row{animation:p65slide .5s ease both}
+[data-scene="pj-65"].s3 .p65-row2{animation-delay:.12s}
+[data-scene="pj-65"].s3 .p65-row3{animation-delay:.24s}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="470" width="900" height="150" fill="url(#gBench)"/>
+<line x1="0" y1="470" x2="900" y2="470" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">欧姆定律在串、并联电路中的应用</text>
+
+<!-- 第一步：串联电路 -->
+<g class="p65-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">串联：总电阻等于各电阻之和，电阻越大分得电压越多</text>
+
+  <rect x="36" y="100" width="520" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="180" height="28" rx="14" fill="#e8effc"/>
+  <text x="146" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">串联电路</text>
+
+  <path class="p65-wire" d="M95 200 H495 V330 H95 Z" fill="none" stroke="#334155" stroke-width="4" stroke-linejoin="round"/>
+
+  <rect x="165" y="188" width="80" height="24" rx="3" fill="#e8effc" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="205" y="205" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">R1</text>
+  <text x="205" y="178" font-size="11.5" font-weight="700" fill="#1d4ed8" text-anchor="middle">R1 = 10 Ω</text>
+
+  <rect x="315" y="188" width="80" height="24" rx="3" fill="#e8effc" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="355" y="205" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">R2</text>
+  <text x="355" y="178" font-size="11.5" font-weight="700" fill="#1d4ed8" text-anchor="middle">R2 = 20 Ω</text>
+
+  <text x="205" y="242" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">U1</text>
+  <text x="355" y="242" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">U2</text>
+
+  <circle cx="450" cy="200" r="17" fill="#ffffff" stroke="#059669" stroke-width="2.5"/>
+  <text x="450" y="205" font-size="12" font-weight="900" fill="#047857" text-anchor="middle">A</text>
+
+  <line x1="250" y1="316" x2="250" y2="344" stroke="#334155" stroke-width="4"/>
+  <line x1="264" y1="322" x2="264" y2="338" stroke="#334155" stroke-width="4"/>
+  <text x="257" y="362" font-size="11" fill="#64748b" text-anchor="middle">电源</text>
+
+  <circle cx="390" cy="330" r="4" fill="#334155"/>
+  <circle cx="420" cy="330" r="4" fill="#334155"/>
+  <line x1="390" y1="330" x2="416" y2="316" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  <text x="405" y="312" font-size="11.5" font-weight="800" fill="#64748b" text-anchor="middle">S</text>
+
+  <text x="296" y="286" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">电流只有一条路径：I = I1 = I2</text>
+  <text x="296" y="310" font-size="11.5" fill="#475569" text-anchor="middle">总电压等于各部分电压之和：U = U1 + U2</text>
+  <text x="296" y="340" font-size="11.5" font-weight="700" fill="#1e40af" text-anchor="middle">串联后总电阻变大，所以电流变小</text>
+  <text x="296" y="370" font-size="11.5" fill="#64748b" text-anchor="middle">一个位置断路，整个电路都停止工作</text>
+
+  <rect x="556" y="100" width="308" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="576" y="116" width="150" height="28" rx="14" fill="#e6f7f1"/>
+  <text x="651" y="135" font-size="12.5" font-weight="800" fill="#047857" text-anchor="middle">串联规律</text>
+
+  <g class="p65-formula">
+    <text x="710" y="184" font-size="26" font-weight="900" fill="#1e3a8a" text-anchor="middle">R = R1 + R2</text>
+  </g>
+  <text x="710" y="212" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">总电阻等于各电阻之和</text>
+
+  <text x="710" y="254" font-size="20" font-weight="900" fill="#b45309" text-anchor="middle">U1 / U2 = R1 / R2</text>
+  <text x="710" y="280" font-size="12" font-weight="700" fill="#b45309" text-anchor="middle">电阻越大，分得电压越多</text>
+
+  <rect x="576" y="300" width="268" height="82" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="710" y="324" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">例：R1=10 Ω，R2=20 Ω，U=6 V</text>
+  <text x="710" y="348" font-size="11.5" font-weight="700" fill="#1e40af" text-anchor="middle">R总 = 30 Ω，I = 0.2 A</text>
+  <text x="710" y="370" font-size="11.5" font-weight="700" fill="#1e40af" text-anchor="middle">U1 = 2 V，U2 = 4 V</text>
+</g>
+
+<!-- 第二步：并联电路 -->
+<g class="p65-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">并联：总电阻的倒数等于各支路电阻倒数之和，总电阻比任一支路都小</text>
+
+  <rect x="36" y="100" width="520" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="180" height="28" rx="14" fill="#e6f7f1"/>
+  <text x="146" y="135" font-size="12.5" font-weight="800" fill="#047857" text-anchor="middle">并联电路</text>
+
+  <path class="p65-wire" d="M110 200 H490 V330 H110 Z" fill="none" stroke="#334155" stroke-width="4" stroke-linejoin="round"/>
+  <line x1="240" y1="200" x2="240" y2="330" stroke="#334155" stroke-width="4"/>
+  <line x1="360" y1="200" x2="360" y2="330" stroke="#334155" stroke-width="4"/>
+
+  <rect x="228" y="238" width="24" height="64" rx="3" fill="#e8effc" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="220" y="274" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="end">R1</text>
+  <text x="220" y="294" font-size="11" font-weight="700" fill="#1d4ed8" text-anchor="end">10 Ω</text>
+
+  <rect x="348" y="238" width="24" height="64" rx="3" fill="#e8effc" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="380" y="274" font-size="11.5" font-weight="800" fill="#1e3a8a">R2</text>
+  <text x="380" y="294" font-size="11" font-weight="700" fill="#1d4ed8">20 Ω</text>
+
+  <text x="300" y="184" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">U1 = U2 = U</text>
+
+  <line x1="300" y1="316" x2="300" y2="344" stroke="#334155" stroke-width="4"/>
+  <line x1="314" y1="322" x2="314" y2="338" stroke="#334155" stroke-width="4"/>
+  <text x="307" y="362" font-size="11" fill="#64748b" text-anchor="middle">电源</text>
+
+  <circle cx="430" cy="330" r="4" fill="#334155"/>
+  <circle cx="460" cy="330" r="4" fill="#334155"/>
+  <line x1="430" y1="330" x2="456" y2="316" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  <text x="445" y="312" font-size="11.5" font-weight="800" fill="#64748b" text-anchor="middle">S</text>
+
+  <text x="300" y="286" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">各支路两端电压相等：U = U1 = U2</text>
+  <text x="300" y="310" font-size="11.5" fill="#475569" text-anchor="middle">干路电流等于各支路电流之和：I = I1 + I2</text>
+  <text x="300" y="340" font-size="11.5" font-weight="700" fill="#047857" text-anchor="middle">并联后总电阻变小，干路电流变大</text>
+  <text x="300" y="370" font-size="11.5" fill="#64748b" text-anchor="middle">总电阻小于任何一条支路的电阻</text>
+
+  <rect x="556" y="100" width="308" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="576" y="116" width="150" height="28" rx="14" fill="#e6f7f1"/>
+  <text x="651" y="135" font-size="12.5" font-weight="800" fill="#047857" text-anchor="middle">并联规律</text>
+
+  <g class="p65-formula">
+    <text x="710" y="182" font-size="22" font-weight="900" fill="#047857" text-anchor="middle">1/R = 1/R1 + 1/R2</text>
+  </g>
+  <text x="710" y="220" font-size="19" font-weight="900" fill="#1e3a8a" text-anchor="middle">R = R1R2 / (R1+R2)</text>
+  <text x="710" y="246" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">总电阻小于任一支路电阻</text>
+
+  <text x="710" y="286" font-size="19" font-weight="900" fill="#b45309" text-anchor="middle">I1 / I2 = R2 / R1</text>
+  <text x="710" y="310" font-size="12" font-weight="700" fill="#b45309" text-anchor="middle">电阻越小，分得电流越大</text>
+
+  <rect x="576" y="326" width="268" height="58" rx="10" fill="#e6f7f1" stroke="#a7f3d0" stroke-width="1.5"/>
+  <text x="710" y="350" font-size="11.5" font-weight="800" fill="#047857" text-anchor="middle">例：R1=10 Ω，R2=15 Ω</text>
+  <text x="710" y="372" font-size="11.5" font-weight="700" fill="#047857" text-anchor="middle">R总 = 6 Ω，I1 : I2 = 3 : 2</text>
+</g>
+
+<!-- 第三步：分压与分流 -->
+<g class="p65-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">串联分压、并联分流：电阻越大分得电压越多，电阻越小分得电流越大</text>
+
+  <g class="p65-card">
+    <rect x="36" y="100" width="400" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="56" y="116" width="180" height="28" rx="14" fill="#fff7ed"/>
+    <text x="146" y="135" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">串联分压</text>
+
+    <path class="p65-wire" d="M90 180 H390 V250 H90 Z" fill="none" stroke="#334155" stroke-width="4" stroke-linejoin="round"/>
+    <rect x="150" y="168" width="64" height="24" rx="3" fill="#fff7ed" stroke="#b45309" stroke-width="2.5"/>
+    <text x="182" y="160" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">R1</text>
+    <rect x="280" y="168" width="64" height="24" rx="3" fill="#fff7ed" stroke="#b45309" stroke-width="2.5"/>
+    <text x="312" y="160" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">R2</text>
+    <text x="182" y="216" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">U1</text>
+    <text x="312" y="216" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">U2</text>
+    <line x1="240" y1="236" x2="240" y2="264" stroke="#334155" stroke-width="4"/>
+    <line x1="254" y1="242" x2="254" y2="258" stroke="#334155" stroke-width="4"/>
+
+    <g class="p65-row">
+      <text x="236" y="292" font-size="18" font-weight="900" fill="#b45309" text-anchor="middle">U1 / U2 = R1 / R2</text>
+      <text x="236" y="320" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">电阻越大，分得电压越多</text>
+    </g>
+    <g class="p65-row p65-row2">
+      <rect x="76" y="338" width="320" height="46" rx="9" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+      <text x="236" y="357" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">10 Ω : 20 Ω</text>
+      <text x="236" y="376" font-size="11.5" font-weight="700" fill="#b45309" text-anchor="middle">2 V : 4 V</text>
+    </g>
+  </g>
+
+  <g class="p65-card p65-card2">
+    <rect x="464" y="100" width="400" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="484" y="116" width="180" height="28" rx="14" fill="#e6f7f1"/>
+    <text x="574" y="135" font-size="12.5" font-weight="800" fill="#047857" text-anchor="middle">并联分流</text>
+
+    <path class="p65-wire" d="M510 180 H810 V250 H510 Z" fill="none" stroke="#334155" stroke-width="4" stroke-linejoin="round"/>
+    <line x1="630" y1="180" x2="630" y2="250" stroke="#334155" stroke-width="4"/>
+    <line x1="710" y1="180" x2="710" y2="250" stroke="#334155" stroke-width="4"/>
+    <rect x="618" y="192" width="24" height="52" rx="3" fill="#e6f7f1" stroke="#047857" stroke-width="2.5"/>
+    <text x="610" y="216" font-size="11.5" font-weight="800" fill="#047857" text-anchor="end">R1</text>
+    <rect x="698" y="192" width="24" height="52" rx="3" fill="#e6f7f1" stroke="#047857" stroke-width="2.5"/>
+    <text x="730" y="216" font-size="11.5" font-weight="800" fill="#047857">R2</text>
+    <line x1="650" y1="236" x2="650" y2="264" stroke="#334155" stroke-width="4"/>
+    <line x1="664" y1="242" x2="664" y2="258" stroke="#334155" stroke-width="4"/>
+    <text x="660" y="170" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">U1 = U2 = U</text>
+
+    <g class="p65-row">
+      <text x="664" y="292" font-size="18" font-weight="900" fill="#047857" text-anchor="middle">I1 / I2 = R2 / R1</text>
+      <text x="664" y="320" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">电阻越小，分得电流越大</text>
+    </g>
+    <g class="p65-row p65-row2">
+      <rect x="504" y="338" width="320" height="46" rx="9" fill="#e6f7f1" stroke="#a7f3d0" stroke-width="1.5"/>
+      <text x="664" y="357" font-size="11.5" font-weight="800" fill="#047857" text-anchor="middle">10 Ω : 20 Ω</text>
+      <text x="664" y="376" font-size="11.5" font-weight="700" fill="#047857" text-anchor="middle">0.4 A : 0.2 A</text>
+    </g>
+  </g>
+
+  <rect x="60" y="416" width="780" height="40" rx="12" fill="#eef6ff" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="450" y="441" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">串联分压：大电阻分大电压；并联分流：小电阻分大电流。用欧姆定律加串并联规律联合解题</text>
+</g>
+</svg>

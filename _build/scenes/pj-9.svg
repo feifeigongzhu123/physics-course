@@ -1,0 +1,188 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="声音的特性：音调由频率决定，响度由振幅决定，音色由材料和结构决定">
+  <style>
+    .p9-s1,.p9-s2,.p9-s3{opacity:0;visibility:hidden}
+    .p9-s1{opacity:1;visibility:visible}
+    [data-scene="pj-9"] .p9-s1,[data-scene="pj-9"] .p9-s2,[data-scene="pj-9"] .p9-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+    [data-scene="pj-9"].s1 .p9-s1,[data-scene="pj-9"].s2 .p9-s2,[data-scene="pj-9"].s3 .p9-s3{opacity:1;visibility:visible}
+    @keyframes p9draw{to{stroke-dashoffset:0}}
+    @keyframes p9pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+    @keyframes p9vib{0%,100%{opacity:.3}50%{opacity:1}}
+    [data-scene="pj-9"].s1 .p9-waveA,[data-scene="pj-9"].s1 .p9-waveB{stroke-dasharray:1300;stroke-dashoffset:1300;animation:p9draw 1.4s ease forwards}
+    [data-scene="pj-9"].s1 .p9-forkArc{animation:p9vib 1s ease-in-out infinite}
+    [data-scene="pj-9"].s2 .p9-waveBig,[data-scene="pj-9"].s2 .p9-waveSmall{stroke-dasharray:1200;stroke-dashoffset:1200;animation:p9draw 1.2s ease forwards}
+    [data-scene="pj-9"].s2 .p9-drumTop{transform-box:fill-box;transform-origin:center;animation:p9pulse .6s ease-in-out infinite}
+    [data-scene="pj-9"].s2 .p9-hitStrong{animation:p9vib .8s ease-in-out infinite}
+    [data-scene="pj-9"].s3 .p9-instWave{stroke-dasharray:800;stroke-dashoffset:800;animation:p9draw 1s ease forwards}
+    [data-scene="pj-9"].s3 .p9-instWave:nth-of-type(2){animation-delay:.18s}
+    [data-scene="pj-9"].s3 .p9-instWave:nth-of-type(3){animation-delay:.36s}
+  </style>
+
+  <rect width="900" height="620" fill="url(#gBg)"/>
+  <rect width="900" height="620" fill="url(#dotsPat)"/>
+  <rect y="470" width="900" height="150" fill="url(#gBench)"/>
+  <line x1="0" y1="470" x2="900" y2="470" stroke="#cfd9e8" stroke-width="2"/>
+  <text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">声音的特性：音调 · 响度 · 音色</text>
+
+  <!-- ========== 第一步：音调 ========== -->
+  <g class="p9-s1" data-zone="1">
+    <rect x="36" y="64" width="828" height="394" rx="18" fill="#ffffff" stroke="#dbe6f2" stroke-width="2"/>
+    <rect x="56" y="80" width="186" height="30" rx="15" fill="#e8effc"/>
+    <text x="149" y="100" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">① 音调 · 由频率决定</text>
+
+    <!-- 音叉一 -->
+    <g transform="translate(52,128)">
+      <path d="M22 58 V24 Q22 10 34 10 Q46 10 46 24 V58" fill="none" stroke="#475569" stroke-width="5" stroke-linecap="round"/>
+      <line x1="34" y1="58" x2="34" y2="90" stroke="#475569" stroke-width="5"/>
+      <rect x="20" y="90" width="28" height="9" rx="4" fill="#475569"/>
+      <path class="p9-forkArc" d="M2 22 Q-6 36 2 50" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round"/>
+      <path class="p9-forkArc" d="M66 22 Q74 36 66 50" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <!-- 密波形 -->
+    <line x1="146" y1="175" x2="586" y2="175" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 6"/>
+    <path class="p9-waveA" d="M150 175 q13.4 -64 26.8 0 q13.4 64 26.8 0 q13.4 -64 26.8 0 q13.4 64 26.8 0 q13.4 -64 26.8 0 q13.4 64 26.8 0 q13.4 -64 26.8 0 q13.4 64 26.8 0 q13.4 -64 26.8 0 q13.4 64 26.8 0 q13.4 -64 26.8 0 q13.4 64 26.8 0 q13.4 -64 26.8 0 q13.4 64 26.8 0 q13.4 -64 26.8 0 q13.4 64 26.8 0" fill="none" stroke="#dc2626" stroke-width="3.2" stroke-linecap="round"/>
+    <text x="596" y="160" font-size="15" font-weight="800" fill="#b91c1c">频率高</text>
+    <text x="596" y="188" font-size="20" font-weight="900" fill="#dc2626">音调高</text>
+
+    <!-- 疏波形 -->
+    <g transform="translate(52,258)">
+      <path d="M22 58 V24 Q22 10 34 10 Q46 10 46 24 V58" fill="none" stroke="#475569" stroke-width="5" stroke-linecap="round"/>
+      <line x1="34" y1="58" x2="34" y2="90" stroke="#475569" stroke-width="5"/>
+      <rect x="20" y="90" width="28" height="9" rx="4" fill="#475569"/>
+      <path class="p9-forkArc" d="M2 22 Q-6 36 2 50" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round"/>
+      <path class="p9-forkArc" d="M66 22 Q74 36 66 50" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <line x1="146" y1="305" x2="586" y2="305" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 6"/>
+    <path class="p9-waveB" d="M150 305 q43 -64 86 0 q43 64 86 0 q43 -64 86 0 q43 64 86 0 q43 -64 86 0" fill="none" stroke="#1d4ed8" stroke-width="3.2" stroke-linecap="round"/>
+    <text x="596" y="290" font-size="15" font-weight="800" fill="#1e40af">频率低</text>
+    <text x="596" y="318" font-size="20" font-weight="900" fill="#1d4ed8">音调低</text>
+
+    <!-- 读数卡 -->
+    <rect x="662" y="86" width="188" height="252" rx="14" fill="#f8fbff" stroke="#dbe6f2" stroke-width="2"/>
+    <text x="680" y="112" font-size="12" font-weight="700" fill="#64748b">振动频率 f</text>
+    <text x="680" y="142" font-size="21" font-weight="900" fill="#dc2626">512 Hz</text>
+    <text x="680" y="164" font-size="13" font-weight="700" fill="#7f1d1d">音调：高</text>
+    <line x1="680" y1="182" x2="832" y2="182" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="680" y="208" font-size="21" font-weight="900" fill="#1d4ed8">128 Hz</text>
+    <text x="680" y="230" font-size="13" font-weight="700" fill="#1e3a8a">音调：低</text>
+    <line x1="680" y1="248" x2="832" y2="248" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="680" y="272" font-size="11.5" fill="#64748b">每秒振动次数</text>
+    <text x="680" y="292" font-size="11.5" fill="#64748b">单位：赫兹 Hz</text>
+    <text x="680" y="320" font-size="12" font-weight="800" fill="#334155">f 越大 → 音调越高</text>
+
+    <!-- 听觉范围条 -->
+    <text x="70" y="386" font-size="12" font-weight="800" fill="#334155">人耳听觉范围</text>
+    <rect x="70" y="396" width="108" height="18" rx="9" fill="#c7d2fe"/>
+    <rect x="180" y="396" width="300" height="18" rx="6" fill="#bbf7d0"/>
+    <rect x="482" y="396" width="168" height="18" rx="9" fill="#fde68a"/>
+    <text x="124" y="434" font-size="11.5" font-weight="700" fill="#4338ca" text-anchor="middle">次声波</text>
+    <text x="330" y="434" font-size="11.5" font-weight="800" fill="#047857" text-anchor="middle">20 Hz ~ 20000 Hz</text>
+    <text x="566" y="434" font-size="11.5" font-weight="700" fill="#b45309" text-anchor="middle">超声波</text>
+    <text x="690" y="408" font-size="13" font-weight="800" fill="#1e3a8a">f 越高，音调越高</text>
+    <text x="690" y="430" font-size="11.5" fill="#64748b">超声与次声人耳听不到</text>
+  </g>
+
+  <!-- ========== 第二步：响度 ========== -->
+  <g class="p9-s2" data-zone="2">
+    <rect x="36" y="64" width="828" height="394" rx="18" fill="#ffffff" stroke="#fde68a" stroke-width="2"/>
+    <rect x="56" y="80" width="196" height="30" rx="15" fill="#fef3c7"/>
+    <text x="154" y="100" font-size="13" font-weight="800" fill="#92400e" text-anchor="middle">② 响度 · 由振幅决定</text>
+
+    <!-- 鼓架 -->
+    <line x1="112" y1="316" x2="82" y2="378" stroke="#92400e" stroke-width="4" stroke-linecap="round"/>
+    <line x1="268" y1="316" x2="298" y2="378" stroke="#92400e" stroke-width="4" stroke-linecap="round"/>
+    <line x1="190" y1="330" x2="190" y2="382" stroke="#92400e" stroke-width="4" stroke-linecap="round"/>
+    <!-- 鼓身 -->
+    <path d="M98 196 V298 Q98 324 190 324 Q282 324 282 298 V196 Z" fill="#fef3c7" stroke="#b45309" stroke-width="3"/>
+    <path d="M100 232 L280 252 M100 258 L280 278 M100 284 L280 304" stroke="#f59e0b" stroke-width="2" opacity=".55"/>
+    <line x1="120" y1="206" x2="120" y2="312" stroke="#d97706" stroke-width="2" opacity=".5"/>
+    <line x1="190" y1="210" x2="190" y2="322" stroke="#d97706" stroke-width="2" opacity=".5"/>
+    <line x1="260" y1="206" x2="260" y2="312" stroke="#d97706" stroke-width="2" opacity=".5"/>
+    <ellipse class="p9-drumTop" cx="190" cy="196" rx="92" ry="24" fill="#fde68a" stroke="#b45309" stroke-width="3"/>
+    <ellipse cx="190" cy="196" rx="72" ry="16" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity=".7"/>
+    <text x="190" y="350" font-size="13" font-weight="800" fill="#92400e" text-anchor="middle">鼓面</text>
+
+    <!-- 敲击箭头 -->
+    <line class="p9-hitStrong" x1="330" y1="88" x2="232" y2="168" stroke="#dc2626" stroke-width="4" stroke-linecap="round" marker-end="url(#arrRed)"/>
+    <text x="338" y="82" font-size="13" font-weight="800" fill="#b91c1c">重敲</text>
+    <line x1="342" y1="318" x2="252" y2="244" stroke="#d97706" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrAmber)"/>
+    <text x="350" y="336" font-size="13" font-weight="800" fill="#b45309">轻敲</text>
+
+    <!-- 大振幅波 -->
+    <line x1="412" y1="190" x2="842" y2="190" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 6"/>
+    <text x="420" y="122" font-size="15" font-weight="800" fill="#b91c1c">振幅大 → 响度大</text>
+    <rect x="776" y="102" width="66" height="26" rx="13" fill="#fee2e2"/>
+    <text x="809" y="120" font-size="12.5" font-weight="800" fill="#b91c1c" text-anchor="middle">90 dB</text>
+    <path class="p9-waveBig" d="M420 190 q25.6 -90 51.2 0 q25.6 90 51.2 0 q25.6 -90 51.2 0 q25.6 90 51.2 0 q25.6 -90 51.2 0 q25.6 90 51.2 0 q25.6 -90 51.2 0 q25.6 90 51.2 0" fill="none" stroke="#dc2626" stroke-width="3.2" stroke-linecap="round"/>
+
+    <!-- 小振幅波 -->
+    <line x1="412" y1="320" x2="842" y2="320" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 6"/>
+    <text x="420" y="276" font-size="15" font-weight="800" fill="#1e40af">振幅小 → 响度小</text>
+    <rect x="776" y="256" width="66" height="26" rx="13" fill="#dbeafe"/>
+    <text x="809" y="274" font-size="12.5" font-weight="800" fill="#1e40af" text-anchor="middle">50 dB</text>
+    <path class="p9-waveSmall" d="M420 320 q25.6 -28 51.2 0 q25.6 28 51.2 0 q25.6 -28 51.2 0 q25.6 28 51.2 0 q25.6 -28 51.2 0 q25.6 28 51.2 0 q25.6 -28 51.2 0 q25.6 28 51.2 0" fill="none" stroke="#1d4ed8" stroke-width="3.2" stroke-linecap="round"/>
+
+    <!-- 结论条 -->
+    <rect x="56" y="392" width="788" height="56" rx="12" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5"/>
+    <text x="78" y="416" font-size="14.5" font-weight="800" fill="#92400e">用力敲鼓 → 鼓面振幅大 → 响度大</text>
+    <text x="78" y="438" font-size="12.5" fill="#78716c">响度还跟距离有关：离声源越远，响度越小</text>
+  </g>
+
+  <!-- ========== 第三步：音色 ========== -->
+  <g class="p9-s3" data-zone="3">
+    <rect x="36" y="64" width="828" height="394" rx="18" fill="#ffffff" stroke="#ddd6fe" stroke-width="2"/>
+    <rect x="56" y="80" width="234" height="30" rx="15" fill="#ede9fe"/>
+    <text x="173" y="100" font-size="13" font-weight="800" fill="#6d28d9" text-anchor="middle">③ 音色 · 由材料和结构决定</text>
+    <text x="848" y="100" font-size="12" fill="#64748b" text-anchor="end">同一音调、同一响度</text>
+
+    <!-- 钢琴 -->
+    <text x="88" y="142" font-size="15" font-weight="800" fill="#1e3a8a" text-anchor="middle">钢琴</text>
+    <g>
+      <rect x="130" y="105" width="84" height="64" rx="6" fill="#ffffff" stroke="#334155" stroke-width="2.5"/>
+      <line x1="142" y1="105" x2="142" y2="169" stroke="#cbd5e1" stroke-width="1.5"/>
+      <line x1="154" y1="105" x2="154" y2="169" stroke="#cbd5e1" stroke-width="1.5"/>
+      <line x1="166" y1="105" x2="166" y2="169" stroke="#cbd5e1" stroke-width="1.5"/>
+      <line x1="178" y1="105" x2="178" y2="169" stroke="#cbd5e1" stroke-width="1.5"/>
+      <line x1="190" y1="105" x2="190" y2="169" stroke="#cbd5e1" stroke-width="1.5"/>
+      <line x1="202" y1="105" x2="202" y2="169" stroke="#cbd5e1" stroke-width="1.5"/>
+      <g fill="#1e293b">
+        <rect x="145" y="105" width="7" height="34"/><rect x="157" y="105" width="7" height="34"/>
+        <rect x="181" y="105" width="7" height="34"/><rect x="193" y="105" width="7" height="34"/>
+      </g>
+    </g>
+    <line x1="222" y1="135" x2="810" y2="135" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+    <!-- 小提琴 -->
+    <text x="88" y="257" font-size="15" font-weight="800" fill="#92400e" text-anchor="middle">小提琴</text>
+    <g>
+      <line x1="170" y1="207" x2="170" y2="180" stroke="#92400e" stroke-width="4"/>
+      <circle cx="170" cy="176" r="6" fill="#92400e"/>
+      <path d="M170 206 C148 206 146 226 154 238 C144 248 146 274 170 278 C194 274 196 248 186 238 C194 226 192 206 170 206 Z" fill="#fde68a" stroke="#92400e" stroke-width="2.5"/>
+      <path d="M162 238 q-4 8 0 14 M178 238 q4 8 0 14" fill="none" stroke="#92400e" stroke-width="2"/>
+      <line x1="166" y1="182" x2="166" y2="262" stroke="#78350f" stroke-width="1.2"/>
+      <line x1="174" y1="182" x2="174" y2="262" stroke="#78350f" stroke-width="1.2"/>
+      <line x1="196" y1="216" x2="214" y2="272" stroke="#64748b" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <line x1="222" y1="250" x2="810" y2="250" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+    <!-- 长笛 -->
+    <text x="88" y="372" font-size="15" font-weight="800" fill="#1d4ed8" text-anchor="middle">长笛</text>
+    <g>
+      <rect x="128" y="352" width="88" height="14" rx="7" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.5"/>
+      <circle cx="150" cy="359" r="3.5" fill="#ffffff" stroke="#1d4ed8" stroke-width="1.5"/>
+      <circle cx="168" cy="359" r="3.5" fill="#ffffff" stroke="#1d4ed8" stroke-width="1.5"/>
+      <circle cx="186" cy="359" r="3.5" fill="#ffffff" stroke="#1d4ed8" stroke-width="1.5"/>
+      <circle cx="204" cy="359" r="3.5" fill="#ffffff" stroke="#1d4ed8" stroke-width="1.5"/>
+    </g>
+    <line x1="222" y1="365" x2="810" y2="365" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+    <!-- 三种波形 -->
+    <g>
+      <path class="p9-instWave" d="M225 135 q36.25 -62 72.5 0 q36.25 22 72.5 0 q36.25 -62 72.5 0 q36.25 22 72.5 0 q36.25 -62 72.5 0 q36.25 22 72.5 0 q36.25 -62 72.5 0 q36.25 22 72.5 0" fill="none" stroke="#7c3aed" stroke-width="2.8" stroke-linecap="round"/>
+      <path class="p9-instWave" d="M225 250 l145 -46 l0 46 l145 -46 l0 46 l145 -46 l0 46 l145 -46 l0 46" fill="none" stroke="#b45309" stroke-width="2.8" stroke-linejoin="round"/>
+      <path class="p9-instWave" d="M225 365 q36.25 -52 72.5 0 q36.25 52 72.5 0 q36.25 -52 72.5 0 q36.25 52 72.5 0 q36.25 -52 72.5 0 q36.25 52 72.5 0 q36.25 -52 72.5 0 q36.25 52 72.5 0" fill="none" stroke="#0284c7" stroke-width="2.8" stroke-linecap="round"/>
+    </g>
+
+    <rect x="56" y="410" width="788" height="38" rx="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+    <text x="450" y="434" font-size="14" font-weight="800" fill="#047857" text-anchor="middle">音调、响度相同 → 波形不同 → 音色不同</text>
+  </g>
+</svg>

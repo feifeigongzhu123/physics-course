@@ -1,0 +1,205 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="二力平衡：平衡状态、四个条件、平衡力与相互作用力的区别">
+<style>
+[data-scene="pj-32"] .p32-step1,[data-scene="pj-32"] .p32-step2,[data-scene="pj-32"] .p32-step3{display:none}
+[data-scene="pj-32"].s1 .p32-step1,[data-scene="pj-32"].s2 .p32-step2,[data-scene="pj-32"].s3 .p32-step3{display:block}
+@keyframes p32pop{0%{transform:scale(.72);opacity:0}72%{transform:scale(1.05);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes p32in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes p32draw{to{stroke-dashoffset:0}}
+@keyframes p32pulse{0%,100%{opacity:.38}50%{opacity:1}}
+@keyframes p32drive{from{transform:translateX(-24px)}to{transform:translateX(0)}}
+@keyframes p32fade{from{opacity:0}to{opacity:1}}
+[data-scene="pj-32"] .p32-card{transform-box:fill-box;transform-origin:center;animation:p32pop .55s ease .1s both}
+[data-scene="pj-32"] .p32-note{animation:p32in .55s ease .2s both}
+[data-scene="pj-32"].s1 .p32-book{transform-box:fill-box;transform-origin:center;animation:p32pop .5s ease .3s both}
+[data-scene="pj-32"].s1 .p32-car{transform-box:view-box;animation:p32drive 1s ease both}
+[data-scene="pj-32"].s1 .p32-arr{stroke-dasharray:120;stroke-dashoffset:120;animation:p32draw .8s ease .45s forwards}
+[data-scene="pj-32"].s2 .p32-arr{stroke-dasharray:180;stroke-dashoffset:180;animation:p32draw .9s ease .3s forwards}
+[data-scene="pj-32"].s2 .p32-chip{transform-box:fill-box;transform-origin:center;animation:p32pop .45s ease both}
+[data-scene="pj-32"].s2 .p32-chip2{animation-delay:.12s}
+[data-scene="pj-32"].s2 .p32-chip3{animation-delay:.24s}
+[data-scene="pj-32"].s2 .p32-chip4{animation-delay:.36s}
+[data-scene="pj-32"].s2 .p32-lead{stroke-dasharray:90;stroke-dashoffset:90;animation:p32draw .6s ease .5s forwards}
+[data-scene="pj-32"].s2 .p32-eq{animation:p32pulse 2s ease-in-out infinite}
+[data-scene="pj-32"].s3 .p32-row{animation:p32fade .45s ease both}
+[data-scene="pj-32"].s3 .p32-row2{animation-delay:.12s}
+[data-scene="pj-32"].s3 .p32-row3{animation-delay:.24s}
+[data-scene="pj-32"].s3 .p32-row4{animation-delay:.36s}
+[data-scene="pj-32"].s3 .p32-pair{animation:p32pulse 1.9s ease-in-out infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">二力平衡：等大、反向、同体、共线</text>
+
+<!-- 第一步：平衡状态 -->
+<g class="p32-step1" data-zone="1">
+  <text x="70" y="84" font-size="13.5" font-weight="800" fill="#1e3a8a">物体保持静止或匀速直线运动状态，就说明它受到的力相互平衡</text>
+
+  <!-- 静止的书 -->
+  <rect x="70" y="360" width="370" height="14" rx="3" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.8"/>
+  <rect x="100" y="374" width="18" height="48" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="390" y="374" width="18" height="48" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="90" y="352" font-size="11.5" font-weight="700" fill="#64748b">桌面</text>
+
+  <g class="p32-book">
+    <rect x="170" y="318" width="170" height="42" rx="4" fill="#e8effc" stroke="#1e3a8a" stroke-width="2.5"/>
+    <line x1="170" y1="330" x2="340" y2="330" stroke="#93c5fd" stroke-width="1.6"/>
+    <text x="205" y="352" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">物理书</text>
+  </g>
+
+  <line x1="255" y1="339" x2="255" y2="431" stroke="#ffffff" stroke-width="8"/>
+  <line class="p32-arr" x1="255" y1="339" x2="255" y2="431" stroke="#dc2626" stroke-width="3.6" stroke-linecap="round" marker-end="url(#arrRed)"/>
+  <line class="p32-arr" x1="255" y1="339" x2="255" y2="247" stroke="#1d4ed8" stroke-width="3.6" stroke-linecap="round" marker-end="url(#arrBlue)"/>
+  <text x="267" y="254" font-size="13" font-weight="900" fill="#1e40af">N</text>
+  <text x="243" y="424" font-size="13" font-weight="900" fill="#b91c1c" text-anchor="end">G</text>
+  <text x="255" y="452" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">静止：G 与 N 大小相等、方向相反</text>
+
+  <!-- 匀速的汽车 -->
+  <line x1="480" y1="418" x2="860" y2="418" stroke="#94a3b8" stroke-width="3"/>
+  <g class="p32-car">
+    <rect x="570" y="340" width="180" height="58" rx="12" fill="#e8effc" stroke="#1e3a8a" stroke-width="2.5"/>
+    <rect x="602" y="312" width="104" height="30" rx="8" fill="#cbd5e1" stroke="#475569" stroke-width="1.8"/>
+    <circle cx="606" cy="403" r="15" fill="#334155"/>
+    <circle cx="606" cy="403" r="6" fill="#cbd5e1"/>
+    <circle cx="716" cy="403" r="15" fill="#334155"/>
+    <circle cx="716" cy="403" r="6" fill="#cbd5e1"/>
+    <text x="660" y="378" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">汽车</text>
+  </g>
+  <line class="p32-arr" x1="660" y1="292" x2="794" y2="292" stroke="#047857" stroke-width="3.4" stroke-linecap="round" marker-end="url(#arrGreen)"/>
+  <line class="p32-arr" x1="660" y1="292" x2="526" y2="292" stroke="#dc2626" stroke-width="3.4" stroke-linecap="round" marker-end="url(#arrRed)"/>
+  <text x="800" y="286" font-size="12" font-weight="800" fill="#047857">F牵</text>
+  <text x="520" y="286" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="end">f阻</text>
+  <text x="660" y="452" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">匀速直线运动：F牵 与 f阻 平衡</text>
+
+  <!-- 结论 -->
+  <g class="p32-note">
+    <rect x="56" y="462" width="790" height="26" rx="8" fill="#e8effc"/>
+    <text x="451" y="480" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">平衡状态：静止 或 匀速直线运动　·　此时合力为零，运动状态保持不变</text>
+  </g>
+</g>
+
+<!-- 第二步：二力平衡的条件 -->
+<g class="p32-step2" data-zone="2">
+  <text x="70" y="84" font-size="13.5" font-weight="800" fill="#1e3a8a">二力平衡的四个条件：同一物体、大小相等、方向相反、同一直线</text>
+
+  <!-- 中心物块 -->
+  <line x1="200" y1="255" x2="700" y2="255" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 6"/>
+  <g class="p32-card">
+    <rect x="386" y="208" width="128" height="94" rx="8" fill="#e8effc" stroke="#1e3a8a" stroke-width="2.5"/>
+    <text x="450" y="262" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">物块</text>
+  </g>
+  <line class="p32-arr" x1="514" y1="255" x2="644" y2="255" stroke="#1d4ed8" stroke-width="4.5" stroke-linecap="round" marker-end="url(#arrBlue)"/>
+  <line class="p32-arr" x1="386" y1="255" x2="256" y2="255" stroke="#dc2626" stroke-width="4.5" stroke-linecap="round" marker-end="url(#arrRed)"/>
+  <text x="658" y="278" font-size="13" font-weight="900" fill="#1e40af">F₁</text>
+  <text x="244" y="278" font-size="13" font-weight="900" fill="#b91c1c" text-anchor="end">F₂</text>
+  <text x="450" y="330" font-size="12" font-weight="800" fill="#475569" text-anchor="middle">两条力的大小相等：F₁ = F₂</text>
+
+  <!-- 四个条件 -->
+  <g class="p32-chip">
+    <rect x="90" y="118" width="200" height="56" rx="12" fill="#ffffff" stroke="#bfdbfe" stroke-width="2"/>
+    <text x="190" y="142" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">① 同一物体</text>
+    <text x="190" y="162" font-size="11" fill="#64748b" text-anchor="middle">两个力作用在一个物体上</text>
+  </g>
+  <g class="p32-chip p32-chip2">
+    <rect x="610" y="118" width="200" height="56" rx="12" fill="#ffffff" stroke="#bfdbfe" stroke-width="2"/>
+    <text x="710" y="142" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">② 大小相等</text>
+    <text x="710" y="162" font-size="11" fill="#64748b" text-anchor="middle">F₁ = F₂</text>
+  </g>
+  <g class="p32-chip p32-chip3">
+    <rect x="90" y="366" width="200" height="56" rx="12" fill="#ffffff" stroke="#fecaca" stroke-width="2"/>
+    <text x="190" y="390" font-size="12.5" font-weight="800" fill="#b91c1c" text-anchor="middle">③ 方向相反</text>
+    <text x="190" y="410" font-size="11" fill="#64748b" text-anchor="middle">一个向左，一个向右</text>
+  </g>
+  <g class="p32-chip p32-chip4">
+    <rect x="610" y="366" width="200" height="56" rx="12" fill="#ffffff" stroke="#fecaca" stroke-width="2"/>
+    <text x="710" y="390" font-size="12.5" font-weight="800" fill="#b91c1c" text-anchor="middle">④ 同一直线</text>
+    <text x="710" y="410" font-size="11" fill="#64748b" text-anchor="middle">沿同一条直线</text>
+  </g>
+
+  <g stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="6 5" fill="none">
+    <line class="p32-lead" x1="290" y1="174" x2="372" y2="222"/>
+    <line class="p32-lead" x1="610" y1="174" x2="560" y2="230"/>
+    <line class="p32-lead" x1="290" y1="366" x2="340" y2="300"/>
+    <line class="p32-lead" x1="610" y1="366" x2="590" y2="262"/>
+  </g>
+
+  <g class="p32-note">
+    <rect x="56" y="440" width="790" height="48" rx="12" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+    <text x="451" y="460" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">四个条件缺一不可，同时满足时二力平衡</text>
+    <text x="451" y="480" font-size="11" fill="#7c5a30" text-anchor="middle">平衡时合力为零：F合 = F₁ − F₂ = 0，物体保持静止或匀速直线运动</text>
+  </g>
+</g>
+
+<!-- 第三步：平衡力与相互作用力 -->
+<g class="p32-step3" data-zone="3">
+  <text x="70" y="84" font-size="13.5" font-weight="800" fill="#1e3a8a">判断关键：看两个力是否作用在同一个物体上</text>
+
+  <!-- 书与桌 -->
+  <rect x="60" y="336" width="390" height="12" rx="3" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.8"/>
+  <rect x="90" y="348" width="16" height="52" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="404" y="348" width="16" height="52" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="150" y="298" width="200" height="38" rx="4" fill="#e8effc" stroke="#1e3a8a" stroke-width="2.5"/>
+  <text x="205" y="323" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">书</text>
+
+  <line x1="250" y1="317" x2="250" y2="399" stroke="#ffffff" stroke-width="8"/>
+  <line x1="250" y1="317" x2="250" y2="399" stroke="#dc2626" stroke-width="3.4" stroke-linecap="round" marker-end="url(#arrRed)"/>
+  <line x1="250" y1="317" x2="250" y2="235" stroke="#1d4ed8" stroke-width="3.4" stroke-linecap="round" marker-end="url(#arrBlue)"/>
+  <line class="p32-pair" x1="310" y1="348" x2="310" y2="399" stroke="#047857" stroke-width="3.4" stroke-linecap="round" marker-end="url(#arrGreen)"/>
+
+  <text x="262" y="242" font-size="13" font-weight="900" fill="#1e40af">N</text>
+  <text x="238" y="394" font-size="13" font-weight="900" fill="#b91c1c" text-anchor="end">G</text>
+  <text x="322" y="394" font-size="13" font-weight="900" fill="#047857">N′</text>
+
+  <text x="250" y="412" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">G 与 N：都作用在书上 → 一对平衡力</text>
+  <text x="250" y="432" font-size="11.5" font-weight="700" fill="#047857" text-anchor="middle">N 与 N′：分别作用在书和桌上 → 相互作用力</text>
+
+  <!-- 对比表 -->
+  <g class="p32-card">
+    <rect x="470" y="100" width="390" height="314" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="480" y="108" width="120" height="46" rx="8" fill="#f1f5f9"/>
+    <rect x="604" y="108" width="120" height="46" rx="8" fill="#e8effc"/>
+    <rect x="728" y="108" width="122" height="46" rx="8" fill="#e6f7f1"/>
+    <text x="540" y="137" font-size="12" font-weight="800" fill="#475569" text-anchor="middle">对比</text>
+    <text x="664" y="137" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">平衡力</text>
+    <text x="789" y="137" font-size="11.5" font-weight="800" fill="#047857" text-anchor="middle">相互作用力</text>
+
+    <line x1="480" y1="158" x2="850" y2="158" stroke="#e2e8f0"/>
+    <line x1="480" y1="220" x2="850" y2="220" stroke="#e2e8f0"/>
+    <line x1="480" y1="282" x2="850" y2="282" stroke="#e2e8f0"/>
+    <line x1="480" y1="344" x2="850" y2="344" stroke="#e2e8f0"/>
+    <line x1="480" y1="404" x2="850" y2="404" stroke="#e2e8f0"/>
+    <line x1="604" y1="108" x2="604" y2="404" stroke="#e2e8f0"/>
+    <line x1="728" y1="108" x2="728" y2="404" stroke="#e2e8f0"/>
+
+    <g class="p32-row" font-size="11.5" fill="#334155">
+      <text x="540" y="194" font-weight="800" text-anchor="middle">受力物体</text>
+      <text x="664" y="194" text-anchor="middle">同一物体</text>
+      <text x="789" y="194" text-anchor="middle">两个物体</text>
+    </g>
+    <g class="p32-row p32-row2" font-size="11.5" fill="#334155">
+      <text x="540" y="256" font-weight="800" text-anchor="middle">力的性质</text>
+      <text x="664" y="256" text-anchor="middle">可以不同</text>
+      <text x="789" y="256" text-anchor="middle">一定相同</text>
+    </g>
+    <g class="p32-row p32-row3" font-size="11.5" fill="#334155">
+      <text x="540" y="318" font-weight="800" text-anchor="middle">同时性</text>
+      <text x="664" y="318" text-anchor="middle">不一定同时消失</text>
+      <text x="789" y="318" text-anchor="middle">同时产生、同时消失</text>
+    </g>
+    <g class="p32-row p32-row4" font-size="11.5" fill="#334155">
+      <text x="540" y="380" font-weight="800" text-anchor="middle">合力</text>
+      <text x="664" y="380" text-anchor="middle">合力为零</text>
+      <text x="789" y="380" text-anchor="middle">不能求合力</text>
+    </g>
+  </g>
+
+  <g class="p32-note">
+    <rect x="56" y="440" width="790" height="48" rx="12" fill="#e8effc"/>
+    <text x="451" y="460" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">同体、等大、反向、共线 → 一对平衡力</text>
+    <text x="451" y="480" font-size="11.5" font-weight="800" fill="#047857" text-anchor="middle">异体、等大、反向、共线 → 一对相互作用力</text>
+  </g>
+</g>
+</svg>

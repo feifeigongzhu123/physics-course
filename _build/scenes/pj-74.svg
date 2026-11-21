@@ -1,0 +1,217 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="电生磁：奥斯特实验、通电螺线管磁场、安培定则">
+<style>
+.p74-s1,.p74-s2,.p74-s3{opacity:0;visibility:hidden}
+.p74-s1{opacity:1;visibility:visible}
+[data-scene="pj-74"] .p74-s1,[data-scene="pj-74"] .p74-s2,[data-scene="pj-74"] .p74-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="pj-74"].s1 .p74-s1,[data-scene="pj-74"].s2 .p74-s2,[data-scene="pj-74"].s3 .p74-s3{opacity:1;visibility:visible}
+@keyframes p74flow{to{stroke-dashoffset:-40}}
+@keyframes p74pop{0%{transform:scale(.82);opacity:0}72%{transform:scale(1.05);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes p74draw{to{stroke-dashoffset:0}}
+@keyframes p74pulse{0%,100%{opacity:.32}50%{opacity:.9}}
+@keyframes p74glow{0%,100%{opacity:.45}50%{opacity:.95}}
+[data-scene="pj-74"].s1 .p74-wire{stroke-dasharray:12 8;animation:p74flow 1.2s linear infinite}
+[data-scene="pj-74"].s1 .p74-field{animation:p74pulse 2.2s ease-in-out infinite}
+[data-scene="pj-74"].s1 .p74-needle{transform-box:fill-box;transform-origin:center;animation:p74pop .8s ease .35s both}
+[data-scene="pj-74"].s2 .p74-coil{animation:p74glow 2.4s ease-in-out infinite}
+[data-scene="pj-74"].s2 .p74-fieldloop{stroke-dasharray:760;stroke-dashoffset:760;animation:p74draw 1.5s ease .2s forwards}
+[data-scene="pj-74"].s2 .p74-mini{transform-box:fill-box;transform-origin:center;animation:p74pop .5s ease both}
+[data-scene="pj-74"].s2 .p74-mini2{animation-delay:.12s}
+[data-scene="pj-74"].s2 .p74-mini3{animation-delay:.24s}
+[data-scene="pj-74"].s3 .p74-thumb{animation:p74pulse 2s ease-in-out infinite}
+[data-scene="pj-74"].s3 .p74-rule{transform-box:fill-box;transform-origin:left center;animation:p74pop .55s ease both}
+[data-scene="pj-74"].s3 .p74-rule2{animation-delay:.12s}
+[data-scene="pj-74"].s3 .p74-rule3{animation-delay:.24s}
+[data-scene="pj-74"].s3 .p74-coilv{animation:p74glow 2.4s ease-in-out infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="470" width="900" height="150" fill="url(#gBench)"/>
+<line x1="0" y1="470" x2="900" y2="470" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">电生磁：电流周围有磁场，右手定则定南北</text>
+
+<!-- 第一步：奥斯特实验 -->
+<g class="p74-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">奥斯特实验：通电导线周围存在磁场</text>
+
+  <rect x="36" y="100" width="560" height="330" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+
+  <g class="p74-field" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="7 6">
+    <circle cx="330" cy="200" r="44"/>
+    <circle cx="330" cy="200" r="68"/>
+  </g>
+  <text x="246" y="142" font-size="12" font-weight="700" fill="#1d4ed8">电流的磁场</text>
+
+  <path d="M90 360 V200 H560 V360 H526" fill="none" stroke="#334155" stroke-width="4" stroke-linejoin="round"/>
+  <path class="p74-wire" d="M90 200 H560" fill="none" stroke="#1d4ed8" stroke-width="5" opacity=".85"/>
+  <line x1="90" y1="200" x2="560" y2="200" stroke="#334155" stroke-width="4"/>
+
+  <line x1="254" y1="338" x2="254" y2="382" stroke="#334155" stroke-width="4"/>
+  <line x1="268" y1="346" x2="268" y2="374" stroke="#334155" stroke-width="4"/>
+  <line x1="90" y1="360" x2="254" y2="360" stroke="#334155" stroke-width="4"/>
+  <line x1="268" y1="360" x2="486" y2="360" stroke="#334155" stroke-width="4"/>
+  <circle cx="490" cy="360" r="5" fill="#334155"/>
+  <circle cx="528" cy="360" r="5" fill="#334155"/>
+  <line x1="496" y1="350" x2="526" y2="359" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  <text x="261" y="402" font-size="11.5" font-weight="700" fill="#64748b" text-anchor="middle">电源</text>
+  <text x="509" y="344" font-size="12" font-weight="700" fill="#64748b" text-anchor="middle">S</text>
+
+  <polygon points="440,194 458,200 440,206" fill="#dc2626"/>
+  <text x="440" y="184" font-size="12.5" font-weight="800" fill="#b91c1c">电流 I</text>
+  <text x="100" y="184" font-size="12" font-weight="700" fill="#475569">通电直导线 AB</text>
+
+  <g>
+    <circle cx="330" cy="290" r="32" fill="#f8fbff" stroke="#475569" stroke-width="2.5"/>
+    <line x1="330" y1="292" x2="330" y2="324" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 4"/>
+    <g transform="rotate(30 330 290)">
+      <g class="p74-needle">
+        <polygon points="330,264 336,290 330,290" fill="#dc2626"/>
+        <polygon points="330,316 324,290 330,290" fill="#64748b"/>
+      </g>
+    </g>
+    <circle cx="330" cy="290" r="4" fill="#334155"/>
+  </g>
+  <path d="M330 256 A34 34 0 0 1 349 272" fill="none" stroke="#d97706" stroke-width="2.5"/>
+  <text x="358" y="262" font-size="11.5" font-weight="700" fill="#b45309">偏转</text>
+  <text x="330" y="348" font-size="12" font-weight="700" fill="#475569" text-anchor="middle">小磁针（俯视）</text>
+
+  <rect x="616" y="100" width="248" height="330" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="636" y="116" width="150" height="30" rx="15" fill="#e8effc"/>
+  <text x="711" y="136" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">实验结论</text>
+  <g font-size="12.5" font-weight="700" fill="#334155">
+    <text x="652" y="180">① 通电导线周围有磁场</text>
+    <text x="652" y="220">② 磁场方向随电流方向改变</text>
+    <text x="652" y="260">③ 断电后磁场消失</text>
+    <text x="652" y="300">④ 称为电流的磁效应</text>
+  </g>
+  <rect x="636" y="330" width="208" height="76" rx="12" fill="#e8effc"/>
+  <text x="740" y="356" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">奥斯特实验</text>
+  <text x="740" y="380" font-size="11.5" fill="#475569" text-anchor="middle">首次揭示电与磁的联系</text>
+  <text x="740" y="398" font-size="11.5" fill="#475569" text-anchor="middle">电可以生磁</text>
+</g>
+
+<!-- 第二步：通电螺线管 -->
+<g class="p74-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">通电螺线管：外部磁场跟条形磁体相似</text>
+
+  <rect x="36" y="100" width="420" height="330" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+
+  <path class="p74-fieldloop" d="M96 210 C96 118 364 118 364 210 C364 302 96 302 96 210" fill="none" stroke="#1d4ed8" stroke-width="2.5" stroke-dasharray="9 7"/>
+  <text x="230" y="120" font-size="12" font-weight="700" fill="#1d4ed8" text-anchor="middle">磁感线</text>
+
+  <g class="p74-coil" fill="none" stroke="#b45309" stroke-width="4">
+    <ellipse cx="120" cy="210" rx="9" ry="36"/>
+    <ellipse cx="142" cy="210" rx="9" ry="36"/>
+    <ellipse cx="164" cy="210" rx="9" ry="36"/>
+    <ellipse cx="186" cy="210" rx="9" ry="36"/>
+    <ellipse cx="208" cy="210" rx="9" ry="36"/>
+    <ellipse cx="230" cy="210" rx="9" ry="36"/>
+    <ellipse cx="252" cy="210" rx="9" ry="36"/>
+    <ellipse cx="274" cy="210" rx="9" ry="36"/>
+    <ellipse cx="296" cy="210" rx="9" ry="36"/>
+    <ellipse cx="318" cy="210" rx="9" ry="36"/>
+    <ellipse cx="340" cy="210" rx="9" ry="36"/>
+  </g>
+
+  <path d="M120 246 V330 H262 M278 330 H340 V246" fill="none" stroke="#334155" stroke-width="4"/>
+  <line x1="266" y1="312" x2="266" y2="348" stroke="#334155" stroke-width="4"/>
+  <line x1="278" y1="318" x2="278" y2="342" stroke="#334155" stroke-width="4"/>
+  <text x="272" y="368" font-size="11.5" font-weight="700" fill="#64748b" text-anchor="middle">电源</text>
+
+  <text x="98" y="214" font-size="18" font-weight="900" fill="#dc2626" text-anchor="end">N</text>
+  <text x="372" y="214" font-size="18" font-weight="900" fill="#1d4ed8">S</text>
+  <text x="230" y="300" font-size="12" font-weight="700" fill="#1d4ed8" text-anchor="middle">内部磁场由 S 极指向 N 极</text>
+
+  <rect x="480" y="100" width="384" height="330" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="672" y="132" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">外部磁场像条形磁体</text>
+
+  <rect x="572" y="160" width="100" height="46" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <rect x="672" y="160" width="100" height="46" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="622" y="191" font-size="20" font-weight="900" fill="#dc2626" text-anchor="middle">N</text>
+  <text x="722" y="191" font-size="20" font-weight="900" fill="#1d4ed8" text-anchor="middle">S</text>
+
+  <g class="p74-mini">
+    <rect x="496" y="234" width="352" height="38" rx="9" fill="#e8effc"/>
+    <text x="514" y="258" font-size="12.5" font-weight="800" fill="#1e3a8a">电流反向</text>
+    <text x="830" y="258" font-size="12.5" font-weight="700" fill="#1e40af" text-anchor="end">磁极对调</text>
+  </g>
+  <g class="p74-mini p74-mini2">
+    <rect x="496" y="282" width="352" height="38" rx="9" fill="#e6f7f1"/>
+    <text x="514" y="306" font-size="12.5" font-weight="800" fill="#047857">电流增大</text>
+    <text x="830" y="306" font-size="12.5" font-weight="700" fill="#047857" text-anchor="end">磁性增强</text>
+  </g>
+  <g class="p74-mini p74-mini3">
+    <rect x="496" y="330" width="352" height="38" rx="9" fill="#fff7ed"/>
+    <text x="514" y="354" font-size="12.5" font-weight="800" fill="#b45309">匝数增多</text>
+    <text x="830" y="354" font-size="12.5" font-weight="700" fill="#b45309" text-anchor="end">磁性增强</text>
+  </g>
+  <text x="672" y="398" font-size="12" font-weight="700" fill="#dc2626" text-anchor="middle">插入铁芯，磁性大大增强</text>
+  <text x="672" y="420" font-size="11.5" fill="#64748b" text-anchor="middle">磁极方向由电流方向决定</text>
+</g>
+
+<!-- 第三步：安培定则 -->
+<g class="p74-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">安培定则：右手握螺线管，拇指指向北极</text>
+
+  <rect x="36" y="100" width="480" height="330" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+
+  <rect x="210" y="170" width="90" height="220" rx="12" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <g class="p74-coilv" fill="none" stroke="#b45309" stroke-width="5">
+    <path d="M210 185 q45 18 90 0"/>
+    <path d="M210 212 q45 18 90 0"/>
+    <path d="M210 239 q45 18 90 0"/>
+    <path d="M210 266 q45 18 90 0"/>
+    <path d="M210 293 q45 18 90 0"/>
+    <path d="M210 320 q45 18 90 0"/>
+    <path d="M210 347 q45 18 90 0"/>
+    <path d="M210 374 q45 18 90 0"/>
+  </g>
+
+  <line class="p74-thumb" x1="255" y1="330" x2="255" y2="162" stroke="#dc2626" stroke-width="6" stroke-linecap="round" marker-end="url(#arrRed)"/>
+  <text x="272" y="186" font-size="12" font-weight="800" fill="#b91c1c">拇指 → N</text>
+
+  <polygon points="300,205 310,205 305,192" fill="#dc2626"/>
+  <polygon points="300,275 310,275 305,262" fill="#dc2626"/>
+  <polygon points="300,345 310,345 305,332" fill="#dc2626"/>
+  <text x="318" y="258" font-size="12" font-weight="800" fill="#b91c1c">四指：电流向上</text>
+
+  <g fill="none" stroke="#f59e0b" stroke-width="13" stroke-linecap="round" opacity=".85">
+    <path d="M152 218 H242"/>
+    <path d="M152 253 H242"/>
+    <path d="M152 288 H242"/>
+    <path d="M152 323 H242"/>
+  </g>
+  <rect x="146" y="244" width="42" height="92" rx="16" fill="#fde68a" stroke="#d97706" stroke-width="2" opacity=".95"/>
+  <text x="255" y="418" font-size="12" font-weight="700" fill="#b45309" text-anchor="middle">右手握住螺线管，四指顺着电流方向</text>
+
+  <text x="318" y="158" font-size="15" font-weight="900" fill="#dc2626">N 极</text>
+  <text x="318" y="412" font-size="15" font-weight="900" fill="#1d4ed8">S 极</text>
+
+  <rect x="530" y="100" width="334" height="330" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="697" y="132" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">安培定则（右手螺旋定则）</text>
+
+  <g class="p74-rule">
+    <circle cx="562" cy="182" r="15" fill="#1d4ed8"/>
+    <text x="562" y="187" font-size="13" font-weight="900" fill="#ffffff" text-anchor="middle">1</text>
+    <text x="590" y="187" font-size="13" font-weight="800" fill="#334155">右手握住螺线管</text>
+  </g>
+  <g class="p74-rule p74-rule2">
+    <circle cx="562" cy="248" r="15" fill="#1d4ed8"/>
+    <text x="562" y="253" font-size="13" font-weight="900" fill="#ffffff" text-anchor="middle">2</text>
+    <text x="590" y="253" font-size="13" font-weight="800" fill="#334155">四指指向电流方向</text>
+  </g>
+  <g class="p74-rule p74-rule3">
+    <circle cx="562" cy="314" r="15" fill="#dc2626"/>
+    <text x="562" y="319" font-size="13" font-weight="900" fill="#ffffff" text-anchor="middle">3</text>
+    <text x="590" y="319" font-size="13" font-weight="800" fill="#334155">大拇指所指为 N 极</text>
+  </g>
+
+  <rect x="548" y="348" width="298" height="42" rx="10" fill="#fee2e2"/>
+  <text x="697" y="374" font-size="12.5" font-weight="800" fill="#b91c1c" text-anchor="middle">电流方向改变，N 极、S 极对调</text>
+  <text x="697" y="412" font-size="11.5" fill="#64748b" text-anchor="middle">判断磁极、判断电流方向都可用它</text>
+
+  <rect x="36" y="440" width="828" height="44" rx="14" fill="#eef6ff" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="450" y="467" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">口诀：一握螺线管 → 四指顺电流 → 拇指指 N 极</text>
+</g>
+</svg>

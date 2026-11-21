@@ -1,0 +1,207 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="分子运动速率分布规律：统计规律、速率分布曲线与温度的影响">
+<style>
+[data-scene="ps-104"] .s104-s1,[data-scene="ps-104"] .s104-s2,[data-scene="ps-104"] .s104-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="ps-104"].s1 .s104-s1,[data-scene="ps-104"].s2 .s104-s2,[data-scene="ps-104"].s3 .s104-s3{opacity:1;visibility:visible}
+@keyframes s104fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+@keyframes s104draw{to{stroke-dashoffset:0}}
+@keyframes s104pop{0%{transform:scale(.9);opacity:0}70%{transform:scale(1.03);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s104drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes s104pulse{0%,100%{opacity:.45}50%{opacity:1}}
+[data-scene="ps-104"].s1 .s104-mol{animation:s104drift 2.6s ease-in-out infinite}
+[data-scene="ps-104"].s1 .s104-mol2{animation-delay:.4s}
+[data-scene="ps-104"].s1 .s104-mol3{animation-delay:.8s}
+[data-scene="ps-104"].s1 .s104-mol4{animation-delay:1.2s}
+[data-scene="ps-104"].s1 .s104-card{transform-box:fill-box;transform-origin:center;animation:s104pop .5s ease .2s both}
+[data-scene="ps-104"].s2 .s104-curve{stroke-dasharray:620;stroke-dashoffset:620;animation:s104draw 1.5s ease .25s forwards}
+[data-scene="ps-104"].s2 .s104-peak{animation:s104pulse 2s ease-in-out infinite}
+[data-scene="ps-104"].s2 .s104-card{transform-box:fill-box;transform-origin:center;animation:s104pop .5s ease .3s both}
+[data-scene="ps-104"].s3 .s104-cold{stroke-dasharray:600;stroke-dashoffset:600;animation:s104draw 1.3s ease .2s forwards}
+[data-scene="ps-104"].s3 .s104-hot{stroke-dasharray:620;stroke-dashoffset:620;animation:s104draw 1.3s ease .55s forwards}
+[data-scene="ps-104"].s3 .s104-shift{stroke-dasharray:8 6;animation:s104flow 1.1s linear infinite}
+[data-scene="ps-104"].s3 .s104-card{transform-box:fill-box;transform-origin:center;animation:s104pop .5s ease .7s both}
+@keyframes s104flow{to{stroke-dashoffset:-32}}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">分子速率分布：统计规律、分布曲线与温度</text>
+
+<!-- 第一步：统计规律 -->
+<g class="s104-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">单个分子速率随机，大量分子整体遵循统计规律</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="300" height="28" rx="14" fill="#e8effc"/>
+  <text x="206" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">气体分子的运动情况</text>
+
+  <rect x="70" y="160" width="460" height="200" rx="12" fill="#f8fbff" stroke="#93c5fd" stroke-width="1.5"/>
+  <g class="s104-mol">
+    <circle cx="130" cy="220" r="7" fill="#1d4ed8"/>
+    <line x1="130" y1="220" x2="176" y2="188" stroke="#dc2626" stroke-width="2" marker-end="url(#arrRed)"/>
+  </g>
+  <g class="s104-mol s104-mol2">
+    <circle cx="235" cy="200" r="7" fill="#1d4ed8"/>
+    <line x1="235" y1="200" x2="268" y2="248" stroke="#dc2626" stroke-width="2" marker-end="url(#arrRed)"/>
+  </g>
+  <g class="s104-mol s104-mol3">
+    <circle cx="340" cy="225" r="7" fill="#1d4ed8"/>
+    <line x1="340" y1="225" x2="305" y2="204" stroke="#dc2626" stroke-width="2" marker-end="url(#arrRed)"/>
+  </g>
+  <g class="s104-mol s104-mol4">
+    <circle cx="445" cy="205" r="7" fill="#1d4ed8"/>
+    <line x1="445" y1="205" x2="482" y2="238" stroke="#dc2626" stroke-width="2" marker-end="url(#arrRed)"/>
+  </g>
+  <g class="s104-mol s104-mol2">
+    <circle cx="155" cy="305" r="7" fill="#1d4ed8"/>
+    <line x1="155" y1="305" x2="118" y2="275" stroke="#dc2626" stroke-width="2" marker-end="url(#arrRed)"/>
+  </g>
+  <g class="s104-mol s104-mol3">
+    <circle cx="270" cy="318" r="7" fill="#1d4ed8"/>
+    <line x1="270" y1="318" x2="315" y2="300" stroke="#dc2626" stroke-width="2" marker-end="url(#arrRed)"/>
+  </g>
+  <g class="s104-mol s104-mol4">
+    <circle cx="385" cy="308" r="7" fill="#1d4ed8"/>
+    <line x1="385" y1="308" x2="360" y2="268" stroke="#dc2626" stroke-width="2" marker-end="url(#arrRed)"/>
+  </g>
+  <g class="s104-mol">
+    <circle cx="475" cy="300" r="7" fill="#1d4ed8"/>
+    <line x1="475" y1="300" x2="440" y2="332" stroke="#dc2626" stroke-width="2" marker-end="url(#arrRed)"/>
+  </g>
+
+  <text x="300" y="388" font-size="12" font-weight="800" fill="#334155" text-anchor="middle">每个分子的速率和方向都不同</text>
+  <text x="300" y="412" font-size="11" fill="#64748b" text-anchor="middle">单个分子：随机、忽快忽慢，无法预测</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">统计规律</text>
+
+  <circle cx="612" cy="174" r="4" fill="#dc2626"/>
+  <text x="628" y="178" font-size="11.5" font-weight="800" fill="#b91c1c">单个分子：速率随机</text>
+  <text x="628" y="200" font-size="11" fill="#64748b">忽快忽慢，无法预测</text>
+
+  <line x1="610" y1="216" x2="830" y2="216" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <circle cx="612" cy="242" r="4" fill="#1d4ed8"/>
+  <text x="628" y="246" font-size="11.5" font-weight="800" fill="#1e3a8a">大量分子：遵循统计规律</text>
+  <text x="628" y="268" font-size="11" fill="#475569">各速率区间的分子数比例确定</text>
+  <text x="628" y="292" font-size="11" fill="#475569">分子数越多，规律越稳定</text>
+
+  <g class="s104-card">
+    <rect x="596" y="312" width="248" height="66" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+    <text x="720" y="338" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">统计规律只对大量分子有意义</text>
+    <text x="720" y="360" font-size="11" fill="#92400e" text-anchor="middle">研究气体时关注整体行为</text>
+  </g>
+  <text x="720" y="404" font-size="11" fill="#64748b" text-anchor="middle">不能用一个分子的运动代替整体</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">单个分子的运动是随机的，大量分子的速率分布却遵循确定的统计规律</text>
+</g>
+
+<!-- 第二步：速率分布曲线 -->
+<g class="s104-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">速率分布曲线呈“中间多、两头少”的形状</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="300" height="28" rx="14" fill="#e8effc"/>
+  <text x="206" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">一定温度下的速率分布</text>
+
+  <line x1="110" y1="400" x2="110" y2="170" stroke="#334155" stroke-width="2.2" marker-end="url(#arrBlue)"/>
+  <line x1="110" y1="400" x2="540" y2="400" stroke="#334155" stroke-width="2.2" marker-end="url(#arrBlue)"/>
+  <text x="120" y="182" font-size="11.5" font-weight="800" fill="#334155">f(v)</text>
+  <text x="548" y="418" font-size="12.5" font-weight="900" fill="#334155" text-anchor="middle">v</text>
+  <text x="100" y="416" font-size="11" fill="#64748b" text-anchor="end">O</text>
+
+  <path class="s104-curve" d="M118 398 C158 396 190 368 216 318 C242 262 266 228 296 218 C326 209 352 228 378 268 C408 316 444 366 520 390" fill="none" stroke="#1d4ed8" stroke-width="3"/>
+
+  <line x1="296" y1="218" x2="296" y2="400" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text class="s104-peak" x="296" y="420" font-size="11.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">vₚ</text>
+
+  <text x="410" y="238" font-size="12" font-weight="900" fill="#1e3a8a">中间多、两头少</text>
+  <text x="410" y="260" font-size="11" fill="#475569">中等速率分子最多</text>
+  <text x="140" y="202" font-size="11" fill="#64748b">速率很小的分子少</text>
+  <text x="140" y="224" font-size="11" fill="#64748b">速率很大的分子也少</text>
+
+  <text x="306" y="428" font-size="11" fill="#64748b" text-anchor="middle">曲线下总面积表示全部分子，总面积恒为 1</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">速率分布曲线的特点</text>
+
+  <text x="610" y="170" font-size="11.5" fill="#334155">横轴：分子速率 v</text>
+  <text x="610" y="196" font-size="11.5" fill="#334155">纵轴：各速率区间的分子数占比</text>
+
+  <g class="s104-card">
+    <rect x="596" y="216" width="248" height="70" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="720" y="246" font-size="16" font-weight="900" fill="#1e3a8a" text-anchor="middle">中间多、两头少</text>
+    <text x="720" y="270" font-size="11" fill="#475569" text-anchor="middle">中等速率的分子最多</text>
+  </g>
+
+  <circle cx="612" cy="312" r="4" fill="#1d4ed8"/>
+  <text x="628" y="316" font-size="11.5" fill="#334155">峰值对应最概然速率 vₚ</text>
+  <circle cx="612" cy="342" r="4" fill="#1d4ed8"/>
+  <text x="628" y="346" font-size="11.5" fill="#334155">曲线下总面积表示全部分子</text>
+  <circle cx="612" cy="372" r="4" fill="#1d4ed8"/>
+  <text x="628" y="376" font-size="11.5" fill="#334155">温度一定，分布曲线就确定</text>
+
+  <text x="720" y="414" font-size="11" fill="#64748b" text-anchor="middle">速率分布是大量分子统计的结果</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">速率分布曲线的峰值对应最概然速率，中等速率的分子所占比例最大</text>
+</g>
+
+<!-- 第三步：温度升高曲线变宽 -->
+<g class="s104-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">温度升高时，分布曲线的峰值向速率大的方向移动</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="300" height="28" rx="14" fill="#e8effc"/>
+  <text x="206" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">不同温度下的分布曲线</text>
+
+  <line x1="110" y1="400" x2="110" y2="170" stroke="#334155" stroke-width="2.2" marker-end="url(#arrBlue)"/>
+  <line x1="110" y1="400" x2="540" y2="400" stroke="#334155" stroke-width="2.2" marker-end="url(#arrBlue)"/>
+  <text x="120" y="182" font-size="11.5" font-weight="800" fill="#334155">f(v)</text>
+  <text x="548" y="418" font-size="12.5" font-weight="900" fill="#334155" text-anchor="middle">v</text>
+  <text x="100" y="416" font-size="11" fill="#64748b" text-anchor="end">O</text>
+
+  <path class="s104-cold" d="M135 398 C175 396 205 375 225 330 C245 285 260 245 280 232 C300 222 318 250 335 300 C355 355 385 388 435 396" fill="none" stroke="#1d4ed8" stroke-width="3"/>
+  <path class="s104-hot" d="M120 398 C170 396 210 380 245 340 C285 292 315 265 355 258 C395 252 425 285 455 330 C480 365 505 388 535 396" fill="none" stroke="#dc2626" stroke-width="3"/>
+
+  <text x="280" y="220" font-size="12" font-weight="900" fill="#1d4ed8" text-anchor="middle">T₁</text>
+  <text x="355" y="246" font-size="12" font-weight="900" fill="#b91c1c" text-anchor="middle">T₂</text>
+
+  <path class="s104-shift" d="M300 244 C318 244 336 250 350 258" fill="none" stroke="#7c3aed" stroke-width="1.8" marker-end="url(#arrBlue)"/>
+  <text x="326" y="236" font-size="11" font-weight="800" fill="#6d28d9" text-anchor="middle">峰值右移</text>
+
+  <text x="306" y="424" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">T₂ &gt; T₁：曲线变宽、变平，峰值降低并右移</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">温度升高意味着什么</text>
+
+  <circle cx="612" cy="172" r="4" fill="#dc2626"/>
+  <text x="628" y="176" font-size="11.5" fill="#334155">峰值向速率大的方向移动</text>
+  <circle cx="612" cy="200" r="4" fill="#dc2626"/>
+  <text x="628" y="204" font-size="11.5" fill="#334155">曲线变宽、变平</text>
+  <circle cx="612" cy="228" r="4" fill="#dc2626"/>
+  <text x="628" y="232" font-size="11.5" fill="#334155">分子平均速率增大</text>
+  <circle cx="612" cy="256" r="4" fill="#dc2626"/>
+  <text x="628" y="260" font-size="11.5" fill="#334155">分子平均动能增大</text>
+
+  <g class="s104-card">
+    <rect x="596" y="280" width="248" height="72" rx="10" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+    <text x="720" y="306" font-size="11.5" font-weight="900" fill="#b91c1c" text-anchor="middle">并不是每个分子的</text>
+    <text x="720" y="326" font-size="11.5" font-weight="900" fill="#b91c1c" text-anchor="middle">速率都增大</text>
+    <text x="720" y="344" font-size="11" fill="#ef4444" text-anchor="middle">仍有速率很小的分子</text>
+  </g>
+
+  <rect x="596" y="366" width="248" height="52" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="720" y="390" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">温度是分子平均动能的标志</text>
+  <text x="720" y="408" font-size="11" fill="#475569" text-anchor="middle">温度越高，平均动能越大</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">温度升高时曲线变宽变平、峰值右移；但并非每个分子的速率都增大</text>
+</g>
+</svg>

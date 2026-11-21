@@ -1,0 +1,197 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="测量平均速度：斜面小车、刻度尺、停表与数据处理">
+  <style>
+    [data-scene="pj-7"] .p7-step1,[data-scene="pj-7"] .p7-step2,[data-scene="pj-7"] .p7-step3{display:none}
+    [data-scene="pj-7"].s1 .p7-step1,[data-scene="pj-7"].s2 .p7-step2,[data-scene="pj-7"].s3 .p7-step3{display:block;animation:p7in .45s ease both}
+    @keyframes p7in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+    @keyframes p7flow{to{stroke-dashoffset:-40}}
+    @keyframes p7pulse{0%,100%{opacity:.5}50%{opacity:1}}
+    @keyframes p7grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+    [data-scene="pj-7"] .p7-flow{stroke-dasharray:8 6;animation:p7flow 1.3s linear infinite}
+    [data-scene="pj-7"] .p7-move{stroke-dasharray:10 8;animation:p7flow 1.2s linear infinite}
+    [data-scene="pj-7"] .p7-pop{transform-box:fill-box;transform-origin:center;animation:popIn .45s ease both}
+    [data-scene="pj-7"] .p7-mark{animation:p7pulse 1.8s ease-in-out infinite}
+    [data-scene="pj-7"] .p7-bar{transform-box:fill-box;transform-origin:bottom;animation:p7grow .7s ease both}
+    [data-scene="pj-7"] .p7-b2{animation-delay:.12s}
+    [data-scene="pj-7"] .p7-b3{animation-delay:.24s}
+  </style>
+
+  <rect width="900" height="620" fill="url(#gBg)"/>
+  <rect width="900" height="620" fill="url(#dotsPat)"/>
+  <rect y="500" width="900" height="120" fill="url(#gBench)"/>
+  <line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+  <text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">测量平均速度：斜面小车 · 刻度尺 · 停表</text>
+
+  <!-- 第一步：实验原理 -->
+  <g class="p7-step1" data-zone="1">
+    <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">实验原理：v = s / t，用刻度尺测 s、停表测 t</text>
+
+    <rect x="126" y="216" width="10" height="284" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1.5"/>
+    <rect x="716" y="424" width="10" height="76" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1.5"/>
+    <polygon points="135,204 725,419 725,435 135,220" fill="#cbd5e1" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="135" y1="204" x2="725" y2="419" stroke="#64748b" stroke-width="2" opacity=".45"/>
+
+    <g transform="translate(432,285) rotate(20)">
+      <rect x="-285" y="-15" width="570" height="20" rx="3" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+      <g stroke="#92400e" stroke-width="1.5">
+        <line x1="-280" y1="-15" x2="-280" y2="-3"/><line x1="-230" y1="-15" x2="-230" y2="-3"/>
+        <line x1="-180" y1="-15" x2="-180" y2="-3"/><line x1="-130" y1="-15" x2="-130" y2="-3"/>
+        <line x1="-80" y1="-15" x2="-80" y2="-3"/><line x1="-30" y1="-15" x2="-30" y2="-3"/>
+        <line x1="20" y1="-15" x2="20" y2="-3"/><line x1="70" y1="-15" x2="70" y2="-3"/>
+        <line x1="120" y1="-15" x2="120" y2="-3"/><line x1="170" y1="-15" x2="170" y2="-3"/>
+        <line x1="220" y1="-15" x2="220" y2="-3"/><line x1="270" y1="-15" x2="270" y2="-3"/>
+      </g>
+      <text x="0" y="-22" font-size="11.5" font-weight="700" fill="#b45309" text-anchor="middle">刻度尺</text>
+    </g>
+
+    <g transform="translate(330,275) rotate(20)">
+      <rect x="-30" y="-26" width="60" height="22" rx="4" fill="#3b82f6" stroke="#1e40af" stroke-width="2"/>
+      <rect x="-16" y="-34" width="32" height="10" rx="3" fill="#93c5fd" stroke="#1e40af" stroke-width="1.5"/>
+      <circle cx="-16" cy="-2" r="6" fill="#334155"/><circle cx="16" cy="-2" r="6" fill="#334155"/>
+    </g>
+
+    <line class="p7-flow" x1="121" y1="242" x2="711" y2="457" stroke="#d97706" stroke-width="2" marker-start="url(#arrAmber)" marker-end="url(#arrAmber)"/>
+    <text transform="translate(420,377) rotate(20)" font-size="13.5" font-weight="800" fill="#b45309" text-anchor="middle">s（路程）</text>
+
+    <g>
+      <rect x="793" y="213" width="14" height="9" rx="2" fill="#475569"/>
+      <circle cx="800" cy="264" r="40" fill="#ffffff" stroke="#475569" stroke-width="5"/>
+      <circle cx="800" cy="264" r="32" fill="none" stroke="#e2e8f0" stroke-width="1.5"/>
+      <g stroke="#475569" stroke-width="1.8">
+        <line x1="800" y1="228" x2="800" y2="236"/><line x1="800" y1="292" x2="800" y2="300"/>
+        <line x1="764" y1="264" x2="772" y2="264"/><line x1="828" y1="264" x2="836" y2="264"/>
+      </g>
+      <line x1="800" y1="264" x2="813" y2="239" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="800" cy="264" r="4" fill="#334155"/>
+    </g>
+    <text x="800" y="326" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">t（时间）</text>
+
+    <g class="p7-pop">
+      <rect x="560" y="105" width="290" height="92" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <text x="705" y="132" font-size="13" font-weight="800" fill="#475569" text-anchor="middle">实验原理</text>
+      <text x="705" y="172" font-size="30" font-weight="900" fill="#1e3a8a" text-anchor="middle">v = s / t</text>
+    </g>
+
+    <text x="450" y="482" font-size="12.5" font-weight="700" fill="#475569" text-anchor="middle">先明确测的是哪一段路程、哪一段时间，s 与 t 必须对应</text>
+  </g>
+
+  <!-- 第二步：实验步骤 -->
+  <g class="p7-step2" data-zone="2">
+    <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">实验步骤：坡度小一些，由静止释放，同时开始计时</text>
+
+    <g class="p7-pop">
+      <rect x="70" y="104" width="470" height="36" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+      <text x="88" y="127" font-size="12.5" font-weight="700" fill="#1e3a8a">① 让小车从斜面顶端由静止释放，同时开始计时</text>
+      <rect x="70" y="146" width="470" height="36" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+      <text x="88" y="169" font-size="12.5" font-weight="700" fill="#1e3a8a">② 小车到达终点立即停止计时，再测上半段时间</text>
+      <rect x="560" y="178" width="290" height="32" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+      <text x="705" y="199" font-size="12" font-weight="700" fill="#b45309" text-anchor="middle">坡度小 → 运动慢 → 计时更准</text>
+    </g>
+
+    <rect x="126" y="216" width="10" height="284" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1.5"/>
+    <rect x="716" y="424" width="10" height="76" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1.5"/>
+    <polygon points="135,204 725,419 725,435 135,220" fill="#cbd5e1" stroke="#94a3b8" stroke-width="2"/>
+
+    <g class="p7-mark">
+      <line x1="170" y1="205" x2="180" y2="232" stroke="#059669" stroke-width="4" stroke-linecap="round"/>
+      <line x1="425" y1="298" x2="435" y2="325" stroke="#d97706" stroke-width="4" stroke-linecap="round"/>
+      <line x1="680" y1="391" x2="690" y2="418" stroke="#dc2626" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <text x="128" y="214" font-size="12.5" font-weight="800" fill="#047857" text-anchor="end">起点 A</text>
+    <line x1="446" y1="342" x2="430" y2="322" stroke="#94a3b8" stroke-width="1.2"/>
+    <text x="452" y="348" font-size="12.5" font-weight="800" fill="#b45309">中点 B</text>
+    <text x="700" y="458" font-size="12.5" font-weight="800" fill="#b91c1c">终点 C</text>
+
+    <line class="p7-flow" x1="165" y1="247" x2="420" y2="340" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrBlue)"/>
+    <text transform="translate(286,314) rotate(20)" font-size="13.5" font-weight="800" fill="#1e40af" text-anchor="middle">s₁</text>
+    <line class="p7-flow" x1="420" y1="340" x2="675" y2="433" stroke="#d97706" stroke-width="2" marker-end="url(#arrAmber)"/>
+    <text transform="translate(542,407) rotate(20)" font-size="13.5" font-weight="800" fill="#b45309" text-anchor="middle">s₂</text>
+
+    <g transform="translate(240,242) rotate(20)">
+      <rect x="-30" y="-26" width="60" height="22" rx="4" fill="#3b82f6" stroke="#1e40af" stroke-width="2"/>
+      <rect x="-16" y="-34" width="32" height="10" rx="3" fill="#93c5fd" stroke="#1e40af" stroke-width="1.5"/>
+      <circle cx="-16" cy="-2" r="6" fill="#334155"/><circle cx="16" cy="-2" r="6" fill="#334155"/>
+    </g>
+    <line class="p7-move" x1="255" y1="252" x2="682" y2="408" stroke="#1e40af" stroke-width="2" marker-end="url(#arrBlue)"/>
+
+    <g>
+      <rect x="793" y="213" width="14" height="9" rx="2" fill="#475569"/>
+      <circle cx="800" cy="260" r="36" fill="#ffffff" stroke="#475569" stroke-width="5"/>
+      <g stroke="#475569" stroke-width="1.6">
+        <line x1="800" y1="228" x2="800" y2="235"/><line x1="800" y1="285" x2="800" y2="292"/>
+        <line x1="768" y1="260" x2="775" y2="260"/><line x1="825" y1="260" x2="832" y2="260"/>
+      </g>
+      <line x1="800" y1="260" x2="810" y2="236" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="800" cy="260" r="4" fill="#334155"/>
+    </g>
+    <text x="800" y="318" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">t₁ 全程</text>
+
+    <g>
+      <rect x="793" y="325" width="14" height="9" rx="2" fill="#475569"/>
+      <circle cx="800" cy="372" r="36" fill="#ffffff" stroke="#475569" stroke-width="5"/>
+      <g stroke="#475569" stroke-width="1.6">
+        <line x1="800" y1="340" x2="800" y2="347"/><line x1="800" y1="397" x2="800" y2="404"/>
+        <line x1="768" y1="372" x2="775" y2="372"/><line x1="825" y1="372" x2="832" y2="372"/>
+      </g>
+      <line x1="800" y1="372" x2="810" y2="348" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="800" cy="372" r="4" fill="#334155"/>
+    </g>
+    <text x="800" y="430" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">t₂ 上半段</text>
+
+    <text x="450" y="482" font-size="12.5" font-weight="700" fill="#475569" text-anchor="middle">分别测出上半段和全程的 s、t，再代入 v = s / t</text>
+  </g>
+
+  <!-- 第三步：数据处理 -->
+  <g class="p7-step3" data-zone="3">
+    <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">数据处理：下半段更快；全程用总路程除以总时间</text>
+
+    <g class="p7-pop">
+      <rect x="60" y="110" width="480" height="290" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <text x="300" y="140" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">实验记录</text>
+
+      <rect x="80" y="160" width="440" height="34" fill="#e8effc"/>
+      <g font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">
+        <text x="140" y="182">路段</text><text x="255" y="182">s/m</text>
+        <text x="365" y="182">t/s</text><text x="475" y="182">v/(m·s⁻¹)</text>
+      </g>
+      <g stroke="#e2e8f0" stroke-width="1.5">
+        <line x1="80" y1="194" x2="520" y2="194"/><line x1="80" y1="230" x2="520" y2="230"/>
+        <line x1="80" y1="266" x2="520" y2="266"/><line x1="80" y1="302" x2="520" y2="302"/>
+      </g>
+      <g font-size="13" fill="#334155" text-anchor="middle">
+        <text x="140" y="220">上半段</text><text x="255" y="220">0.5</text><text x="365" y="220">1.6</text>
+        <text x="475" y="220" font-weight="800" fill="#1e40af">0.31</text>
+        <text x="140" y="256">下半段</text><text x="255" y="256">0.5</text><text x="365" y="256">0.9</text>
+        <text x="475" y="256" font-weight="800" fill="#b45309">0.56</text>
+        <text x="140" y="292">全程</text><text x="255" y="292">1.0</text><text x="365" y="292">2.5</text>
+        <text x="475" y="292" font-weight="800" fill="#047857">0.40</text>
+      </g>
+
+      <text x="300" y="340" font-size="12.5" font-weight="700" fill="#475569" text-anchor="middle">同一路程，下半段用时更短 → 速度更大</text>
+      <text x="300" y="366" font-size="12" fill="#64748b" text-anchor="middle">多次测量取平均值，可以减小误差</text>
+    </g>
+
+    <g class="p7-pop">
+      <rect x="560" y="110" width="290" height="290" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <text x="705" y="140" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">三段平均速度对比</text>
+      <text x="825" y="172" font-size="11" fill="#64748b" text-anchor="end">v/(m·s⁻¹)</text>
+      <line x1="590" y1="330" x2="825" y2="330" stroke="#64748b" stroke-width="2"/>
+      <line x1="590" y1="330" x2="590" y2="190" stroke="#64748b" stroke-width="1.5"/>
+
+      <rect class="p7-bar" x="607" y="237" width="46" height="93" fill="#93c5fd" stroke="#1e40af" stroke-width="1.5"/>
+      <text x="630" y="228" font-size="11.5" font-weight="800" fill="#1e40af" text-anchor="middle">0.31</text>
+      <rect class="p7-bar p7-b2" x="682" y="162" width="46" height="168" fill="#f59e0b" stroke="#b45309" stroke-width="1.5"/>
+      <text x="705" y="153" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">0.56</text>
+      <rect class="p7-bar p7-b3" x="757" y="210" width="46" height="120" fill="#10b981" stroke="#047857" stroke-width="1.5"/>
+      <text x="780" y="201" font-size="11.5" font-weight="800" fill="#047857" text-anchor="middle">0.40</text>
+
+      <g font-size="11.5" fill="#475569" text-anchor="middle">
+        <text x="630" y="352">上半</text><text x="705" y="352">下半</text><text x="780" y="352">全程</text>
+      </g>
+      <text x="705" y="382" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">v下半 大于 v上半，小车越来越快</text>
+    </g>
+
+    <text x="450" y="434" font-size="13" font-weight="700" fill="#334155" text-anchor="middle">同一段路程，用时越短，平均速度越大</text>
+    <text x="450" y="460" font-size="12" fill="#64748b" text-anchor="middle">坡度太小车可能不动；坡度太大运动太快，计时误差大</text>
+  </g>
+</svg>

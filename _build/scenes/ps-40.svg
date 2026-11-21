@@ -1,0 +1,157 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="电荷：正负两种电荷、电荷守恒定律、元电荷">
+<style>
+[data-scene="ps-40"] .s40-step1,[data-scene="ps-40"] .s40-step2,[data-scene="ps-40"] .s40-step3{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="ps-40"].s1 .s40-step1,[data-scene="ps-40"].s2 .s40-step2,[data-scene="ps-40"].s3 .s40-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes s40draw{to{stroke-dashoffset:0}}
+@keyframes s40pop{0%{transform:scale(.88);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes s40pulse{0%,100%{opacity:.6}50%{opacity:1}}
+@keyframes s40grow{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}
+[data-scene="ps-40"].s1 .s40-f{stroke-dasharray:90;stroke-dashoffset:90;animation:s40draw .7s ease .3s forwards}
+[data-scene="ps-40"].s1 .s40-card{transform-box:fill-box;transform-origin:center;animation:s40pop .5s ease .2s both}
+[data-scene="ps-40"].s1 .s40-sphere{animation:s40pulse 1.8s ease-in-out infinite}
+[data-scene="ps-40"].s2 .s40-f{stroke-dasharray:110;stroke-dashoffset:110;animation:s40draw .7s ease .2s forwards}
+[data-scene="ps-40"].s2 .s40-after{transform-box:fill-box;transform-origin:center;animation:s40pop .5s ease .8s both}
+[data-scene="ps-40"].s2 .s40-card{transform-box:fill-box;transform-origin:center;animation:s40pop .5s ease .3s both}
+[data-scene="ps-40"].s3 .s40-card{transform-box:fill-box;transform-origin:center;animation:s40pop .5s ease .2s both}
+[data-scene="ps-40"].s3 .s40-ruler{transform-box:fill-box;transform-origin:left center;animation:s40grow .9s ease .4s both}
+[data-scene="ps-40"].s3 .s40-sphere{animation:s40pulse 1.8s ease-in-out infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="532" width="900" height="88" fill="url(#gBench)"/>
+<line x1="0" y1="532" x2="900" y2="532" stroke="#cbd5e1" stroke-width="2.5"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">电荷：两种电荷、电荷守恒与元电荷</text>
+
+<!-- 第一步：两种电荷 -->
+<g class="s40-step1" data-zone="1">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 1 步 · 两种电荷：同种相斥，异种相吸</text>
+
+  <text x="250" y="132" font-size="13" font-weight="800" fill="#b91c1c" text-anchor="middle">同种电荷相互排斥</text>
+  <circle class="s40-sphere" cx="150" cy="190" r="28" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="150" y="200" font-size="26" font-weight="900" fill="#b91c1c" text-anchor="middle">+</text>
+  <circle class="s40-sphere" cx="350" cy="190" r="28" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="350" y="200" font-size="26" font-weight="900" fill="#b91c1c" text-anchor="middle">+</text>
+  <line class="s40-f" x1="116" y1="190" x2="72" y2="190" stroke="#b91c1c" stroke-width="3.5" marker-end="url(#arrRed)"/>
+  <line class="s40-f" x1="384" y1="190" x2="428" y2="190" stroke="#b91c1c" stroke-width="3.5" marker-end="url(#arrRed)"/>
+
+  <text x="250" y="292" font-size="13" font-weight="800" fill="#047857" text-anchor="middle">异种电荷相互吸引</text>
+  <circle class="s40-sphere" cx="150" cy="350" r="28" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="150" y="360" font-size="26" font-weight="900" fill="#b91c1c" text-anchor="middle">+</text>
+  <circle class="s40-sphere" cx="350" cy="350" r="28" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="350" y="360" font-size="26" font-weight="900" fill="#1d4ed8" text-anchor="middle">−</text>
+  <line class="s40-f" x1="184" y1="350" x2="240" y2="350" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrRed)"/>
+  <line class="s40-f" x1="316" y1="350" x2="260" y2="350" stroke="#1d4ed8" stroke-width="3.5" marker-end="url(#arrBlue)"/>
+
+  <g class="s40-card">
+    <rect x="470" y="110" width="360" height="330" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="650" y="142" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">摩擦起电</text>
+    <text x="494" y="184" font-size="12.5" fill="#334155">丝绸摩擦玻璃棒</text>
+    <text x="494" y="210" font-size="12.5" font-weight="800" fill="#b91c1c">→ 玻璃棒带正电</text>
+    <text x="494" y="246" font-size="12.5" fill="#334155">毛皮摩擦橡胶棒</text>
+    <text x="494" y="272" font-size="12.5" font-weight="800" fill="#1d4ed8">→ 橡胶棒带负电</text>
+    <line x1="494" y1="294" x2="806" y2="294" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="494" y="324" font-size="12" fill="#334155">实质：电子从一个物体</text>
+    <text x="494" y="348" font-size="12" fill="#334155">转移到另一个物体</text>
+    <text x="650" y="382" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">不是创造了电荷</text>
+    <text x="650" y="408" font-size="11.5" fill="#64748b" text-anchor="middle">同种相斥、异种相吸</text>
+  </g>
+
+  <rect x="70" y="470" width="760" height="38" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="494" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">自然界只存在正、负两种电荷</text>
+</g>
+
+<!-- 第二步：电荷守恒 -->
+<g class="s40-step2" data-zone="2">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 2 步 · 电荷守恒：只能转移，不能创生</text>
+
+  <text x="250" y="126" font-size="12.5" font-weight="800" fill="#475569" text-anchor="middle">接触前</text>
+  <rect x="105" y="152" width="290" height="104" rx="20" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="7 5"/>
+  <circle cx="160" cy="204" r="34" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="160" y="213" font-size="17" font-weight="900" fill="#b91c1c" text-anchor="middle">+3q</text>
+  <circle cx="340" cy="204" r="34" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="340" y="213" font-size="17" font-weight="900" fill="#1d4ed8" text-anchor="middle">−1q</text>
+  <text x="250" y="188" font-size="11.5" fill="#7c3aed" text-anchor="middle">接触</text>
+  <line class="s40-f" x1="206" y1="204" x2="294" y2="204" stroke="#7c3aed" stroke-width="3" marker-start="url(#arrBlue)" marker-end="url(#arrBlue)"/>
+
+  <line x1="250" y1="266" x2="250" y2="300" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrBlue)"/>
+  <text x="266" y="288" font-size="11.5" fill="#64748b">重新分配</text>
+
+  <text x="250" y="322" font-size="12.5" font-weight="800" fill="#475569" text-anchor="middle">接触后</text>
+  <g class="s40-after">
+    <circle cx="160" cy="392" r="34" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+    <text x="160" y="401" font-size="17" font-weight="900" fill="#6d28d9" text-anchor="middle">+1q</text>
+    <circle cx="340" cy="392" r="34" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+    <text x="340" y="401" font-size="17" font-weight="900" fill="#6d28d9" text-anchor="middle">+1q</text>
+  </g>
+  <text x="250" y="448" font-size="11.5" fill="#64748b" text-anchor="middle">两个相同小球接触后电荷量平分</text>
+
+  <g class="s40-card">
+    <rect x="470" y="110" width="360" height="330" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="650" y="142" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">电荷守恒定律</text>
+    <text x="494" y="182" font-size="12" fill="#334155">电荷既不能被创造，</text>
+    <text x="494" y="206" font-size="12" fill="#334155">也不能被消灭</text>
+    <line x1="494" y1="228" x2="806" y2="228" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="494" y="258" font-size="12" fill="#334155">只能从一个物体转移到另一个物体，</text>
+    <text x="494" y="282" font-size="12" fill="#334155">或从物体的一部分转移到另一部分</text>
+    <line x1="494" y1="304" x2="806" y2="304" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="650" y="336" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">电荷量的代数和保持不变</text>
+    <text x="650" y="368" font-size="11.5" fill="#64748b" text-anchor="middle">+3q + (−1q) = +2q</text>
+    <text x="650" y="392" font-size="11.5" fill="#64748b" text-anchor="middle">接触后每个小球带 +1q</text>
+    <text x="650" y="416" font-size="11" fill="#64748b" text-anchor="middle">总电荷量始终不变</text>
+  </g>
+
+  <rect x="70" y="470" width="760" height="38" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="494" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">任何过程中，电荷的总量都保持不变</text>
+</g>
+
+<!-- 第三步：元电荷 -->
+<g class="s40-step3" data-zone="3">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 3 步 · 元电荷：最小的电荷量 e</text>
+
+  <circle class="s40-sphere" cx="160" cy="220" r="42" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="160" y="232" font-size="30" font-weight="900" fill="#b91c1c" text-anchor="middle">+</text>
+  <text x="160" y="290" font-size="13" font-weight="800" fill="#b91c1c" text-anchor="middle">质子</text>
+  <text x="160" y="312" font-size="11.5" fill="#64748b" text-anchor="middle">电荷量 +e</text>
+
+  <circle class="s40-sphere" cx="330" cy="220" r="42" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="330" y="232" font-size="30" font-weight="900" fill="#1d4ed8" text-anchor="middle">−</text>
+  <text x="330" y="290" font-size="13" font-weight="800" fill="#1d4ed8" text-anchor="middle">电子</text>
+  <text x="330" y="312" font-size="11.5" fill="#64748b" text-anchor="middle">电荷量 −e</text>
+
+  <text x="240" y="360" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">电荷量只能取 e 的整数倍</text>
+  <line x1="100" y1="386" x2="380" y2="386" stroke="#64748b" stroke-width="2"/>
+  <g stroke="#64748b" stroke-width="2">
+    <line x1="100" y1="379" x2="100" y2="393"/>
+    <line x1="170" y1="379" x2="170" y2="393"/>
+    <line x1="240" y1="379" x2="240" y2="393"/>
+    <line x1="310" y1="379" x2="310" y2="393"/>
+    <line x1="380" y1="379" x2="380" y2="393"/>
+  </g>
+  <g font-size="11" fill="#64748b" text-anchor="middle">
+    <text x="100" y="412" font-size="11">0</text>
+    <text x="170" y="412" font-size="11">e</text>
+    <text x="240" y="412" font-size="11">2e</text>
+    <text x="310" y="412" font-size="11">3e</text>
+    <text x="380" y="412" font-size="11">4e</text>
+  </g>
+  <line class="s40-ruler" x1="100" y1="386" x2="380" y2="386" stroke="#b45309" stroke-width="3" opacity=".5"/>
+
+  <g class="s40-card">
+    <rect x="470" y="110" width="360" height="330" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="650" y="142" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">元电荷 e</text>
+    <text x="650" y="188" font-size="18" font-weight="900" fill="#b45309" text-anchor="middle">e = 1.6×10⁻¹⁹ C</text>
+    <text x="650" y="222" font-size="12" fill="#334155" text-anchor="middle">电子、质子电荷量的绝对值</text>
+    <text x="650" y="244" font-size="12" fill="#334155" text-anchor="middle">都等于 e</text>
+    <line x1="510" y1="266" x2="790" y2="266" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="650" y="296" font-size="12.5" fill="#334155" text-anchor="middle">任何带电体的电荷量：</text>
+    <text x="650" y="336" font-size="20" font-weight="900" fill="#1e3a8a" text-anchor="middle">Q = ne</text>
+    <text x="650" y="362" font-size="12" fill="#334155" text-anchor="middle">n 为整数</text>
+    <text x="650" y="394" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">不可能出现半个元电荷</text>
+  </g>
+
+  <rect x="70" y="470" width="760" height="38" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="494" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">元电荷是最小的电荷量，不是一种电荷</text>
+</g>
+</svg>

@@ -1,0 +1,206 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="焦耳定律：电流的热效应、Q 等于 I 平方乘 R 乘 t、电热应用与散热">
+<style>
+.p69-s1,.p69-s2,.p69-s3{opacity:0;visibility:hidden}
+.p69-s1{opacity:1;visibility:visible}
+[data-scene="pj-69"] .p69-s1,[data-scene="pj-69"] .p69-s2,[data-scene="pj-69"] .p69-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="pj-69"].s1 .p69-s1,[data-scene="pj-69"].s2 .p69-s2,[data-scene="pj-69"].s3 .p69-s3{opacity:1;visibility:visible}
+@keyframes p69flow{to{stroke-dashoffset:-42}}
+@keyframes p69heat{0%,100%{opacity:.3;transform:translateY(3px)}50%{opacity:1;transform:translateY(-4px)}}
+@keyframes p69pop{0%{transform:scale(.82);opacity:0}72%{transform:scale(1.04);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes p69glow{0%,100%{opacity:.4}50%{opacity:1}}
+[data-scene="pj-69"].s1 .p69-flow{stroke-dasharray:10 8;animation:p69flow 1.4s linear infinite}
+[data-scene="pj-69"].s1 .p69-heat{transform-box:fill-box;transform-origin:center bottom;animation:p69heat 1.8s ease-in-out infinite}
+[data-scene="pj-69"].s1 .p69-heat2{animation-delay:.3s}
+[data-scene="pj-69"].s1 .p69-heat3{animation-delay:.6s}
+[data-scene="pj-69"].s2 .p69-eq{transform-box:fill-box;transform-origin:center;animation:p69pop .6s ease both}
+[data-scene="pj-69"].s2 .p69-row{transform-box:fill-box;transform-origin:left center;animation:p69pop .5s ease both}
+[data-scene="pj-69"].s2 .p69-row2{animation-delay:.1s}
+[data-scene="pj-69"].s2 .p69-row3{animation-delay:.2s}
+[data-scene="pj-69"].s2 .p69-row4{animation-delay:.3s}
+[data-scene="pj-69"].s3 .p69-card{transform-box:fill-box;transform-origin:center;animation:p69pop .55s ease both}
+[data-scene="pj-69"].s3 .p69-card2{animation-delay:.15s}
+[data-scene="pj-69"].s3 .p69-glow{animation:p69glow 1.6s ease-in-out infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="470" width="900" height="150" fill="url(#gBench)"/>
+<line x1="0" y1="470" x2="900" y2="470" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">焦耳定律：Q = I²Rt，电流的热效应</text>
+
+<!-- 第一步：电流的热效应与三个因素 -->
+<g class="p69-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">电流通过导体产生的热量，跟电流的平方、电阻和通电时间成正比</text>
+
+  <rect x="36" y="100" width="430" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="180" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">实验：电阻丝通电发热</text>
+
+  <!-- 电路 -->
+  <path d="M95 210 V325 H160 M172 325 H255 M283 325 H400 V210 H370" fill="none" stroke="#334155" stroke-width="4" stroke-linejoin="round"/>
+  <line x1="95" y1="210" x2="250" y2="210" stroke="#334155" stroke-width="4"/>
+  <!-- 电池 -->
+  <line x1="160" y1="312" x2="160" y2="338" stroke="#334155" stroke-width="4"/>
+  <line x1="172" y1="318" x2="172" y2="332" stroke="#334155" stroke-width="5"/>
+  <text x="166" y="360" font-size="11.5" fill="#64748b" text-anchor="middle">电源</text>
+  <!-- 开关 -->
+  <circle cx="255" cy="325" r="4" fill="#334155"/>
+  <circle cx="283" cy="325" r="4" fill="#334155"/>
+  <line x1="255" y1="325" x2="281" y2="310" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  <text x="269" y="300" font-size="11.5" font-weight="700" fill="#64748b" text-anchor="middle">开关 S</text>
+
+  <!-- 电阻丝 -->
+  <rect x="250" y="192" width="120" height="36" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+  <path d="M258 210 l10 -9 l10 18 l10 -18 l10 18 l10 -18 l10 18 l10 -18 l10 18 l10 -9" fill="none" stroke="#b91c1c" stroke-width="2.5" stroke-linejoin="round"/>
+  <text x="310" y="248" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">电阻丝 R</text>
+
+  <!-- 热浪 -->
+  <path class="p69-heat" d="M278 182 q-9 -8 0 -16 q9 -8 0 -16" fill="none" stroke="#f97316" stroke-width="3" stroke-linecap="round"/>
+  <path class="p69-heat p69-heat2" d="M310 182 q-9 -8 0 -16 q9 -8 0 -16" fill="none" stroke="#f97316" stroke-width="3" stroke-linecap="round"/>
+  <path class="p69-heat p69-heat3" d="M342 182 q-9 -8 0 -16 q9 -8 0 -16" fill="none" stroke="#f97316" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 电流方向 -->
+  <path class="p69-flow" d="M95 210 H250 M370 210 H400 V325 H283" fill="none" stroke="#dc2626" stroke-width="3" opacity=".6"/>
+  <polygon points="180,203 192,210 180,217" fill="#dc2626"/>
+  <polygon points="400,270 407,282 393,282" fill="#dc2626"/>
+
+  <!-- 温度计 -->
+  <rect x="422" y="206" width="16" height="110" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+  <rect x="427" y="272" width="6" height="40" rx="3" fill="#dc2626"/>
+  <circle cx="430" cy="322" r="10" fill="#dc2626"/>
+  <line x1="440" y1="232" x2="448" y2="232" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="440" y1="256" x2="448" y2="256" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="440" y1="280" x2="448" y2="280" stroke="#94a3b8" stroke-width="2"/>
+  <text x="430" y="352" font-size="11" font-weight="700" fill="#64748b" text-anchor="middle">温度计</text>
+
+  <text x="251" y="384" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">电流通过电阻丝，产生的热量使液体温度升高</text>
+
+  <rect x="486" y="100" width="378" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="506" y="116" width="180" height="28" rx="14" fill="#e8effc"/>
+  <text x="596" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">三个影响因素</text>
+
+  <rect x="506" y="158" width="338" height="48" rx="10" fill="#e8effc"/>
+  <text x="520" y="179" font-size="13" font-weight="800" fill="#1e3a8a">I 越大 → Q 越大</text>
+  <text x="830" y="179" font-size="12.5" font-weight="900" fill="#1e40af" text-anchor="end">Q ∝ I²</text>
+  <text x="520" y="197" font-size="11" fill="#475569">电流变为 2 倍，热量变为 4 倍</text>
+
+  <rect x="506" y="214" width="338" height="48" rx="10" fill="#e6f7f1"/>
+  <text x="520" y="235" font-size="13" font-weight="800" fill="#047857">R 越大 → Q 越大</text>
+  <text x="830" y="235" font-size="12.5" font-weight="900" fill="#047857" text-anchor="end">Q ∝ R</text>
+  <text x="520" y="253" font-size="11" fill="#475569">电阻越大，产生的热量越多</text>
+
+  <rect x="506" y="270" width="338" height="48" rx="10" fill="#fff7ed"/>
+  <text x="520" y="291" font-size="13" font-weight="800" fill="#b45309">t 越长 → Q 越大</text>
+  <text x="830" y="291" font-size="12.5" font-weight="900" fill="#b45309" text-anchor="end">Q ∝ t</text>
+  <text x="520" y="309" font-size="11" fill="#475569">通电时间越长，产生的热量越多</text>
+
+  <rect x="506" y="332" width="338" height="46" rx="10" fill="#eef6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="675" y="352" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">结论：Q 与 I²、R、t 都成正比</text>
+  <text x="675" y="370" font-size="11" fill="#64748b" text-anchor="middle">研究一个量时，保持其余两个量不变</text>
+</g>
+
+<!-- 第二步：公式与纯电阻 -->
+<g class="p69-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">焦耳定律公式 Q = I²Rt；纯电阻电路中电能全部转化为内能</text>
+
+  <rect x="36" y="100" width="410" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="190" height="28" rx="14" fill="#e8effc"/>
+  <text x="151" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">焦耳定律公式</text>
+
+  <g class="p69-eq">
+    <text x="241" y="212" font-size="38" font-weight="900" fill="#1e3a8a" text-anchor="middle">Q = I²Rt</text>
+  </g>
+  <text x="241" y="244" font-size="12" font-weight="700" fill="#475569" text-anchor="middle">Q 热量 · I 电流 · R 电阻 · t 时间</text>
+
+  <g class="p69-row">
+    <rect x="60" y="262" width="362" height="28" rx="7" fill="#f8fbff"/>
+    <text x="76" y="281" font-size="12" font-weight="800" fill="#1e3a8a">Q　热量</text>
+    <text x="406" y="281" font-size="12" font-weight="700" fill="#334155" text-anchor="end">焦耳（J）</text>
+  </g>
+  <g class="p69-row p69-row2">
+    <rect x="60" y="294" width="362" height="28" rx="7" fill="#f8fbff"/>
+    <text x="76" y="313" font-size="12" font-weight="800" fill="#1e3a8a">I　电流</text>
+    <text x="406" y="313" font-size="12" font-weight="700" fill="#334155" text-anchor="end">安培（A）</text>
+  </g>
+  <g class="p69-row p69-row3">
+    <rect x="60" y="326" width="362" height="28" rx="7" fill="#f8fbff"/>
+    <text x="76" y="345" font-size="12" font-weight="800" fill="#1e3a8a">R　电阻</text>
+    <text x="406" y="345" font-size="12" font-weight="700" fill="#334155" text-anchor="end">欧姆（Ω）</text>
+  </g>
+  <g class="p69-row p69-row4">
+    <rect x="60" y="358" width="362" height="28" rx="7" fill="#f8fbff"/>
+    <text x="76" y="377" font-size="12" font-weight="800" fill="#1e3a8a">t　时间</text>
+    <text x="406" y="377" font-size="12" font-weight="700" fill="#334155" text-anchor="end">秒（s）</text>
+  </g>
+  <text x="241" y="398" font-size="11" fill="#64748b" text-anchor="middle">1 J = 1 A²·Ω·s</text>
+
+  <rect x="466" y="100" width="398" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="486" y="116" width="220" height="28" rx="14" fill="#e6f7f1"/>
+  <text x="596" y="135" font-size="12.5" font-weight="800" fill="#047857" text-anchor="middle">纯电阻电路</text>
+
+  <rect x="486" y="152" width="358" height="58" rx="12" fill="#e6f7f1" stroke="#a7f3d0" stroke-width="1.5"/>
+  <text x="665" y="176" font-size="13" font-weight="800" fill="#047857" text-anchor="middle">电能全部转化为内能</text>
+  <text x="665" y="200" font-size="17" font-weight="900" fill="#047857" text-anchor="middle">Q = W</text>
+
+  <text x="665" y="240" font-size="16" font-weight="900" fill="#1e3a8a" text-anchor="middle">Q = W = UIt = I²Rt = U²t/R</text>
+  <text x="665" y="272" font-size="12" font-weight="700" fill="#047857" text-anchor="middle">电炉、电饭锅、白炽灯都是纯电阻</text>
+  <text x="665" y="300" font-size="12" font-weight="700" fill="#b91c1c" text-anchor="middle">电动机是非纯电阻：Q &lt; W</text>
+  <text x="665" y="328" font-size="11.5" fill="#475569" text-anchor="middle">非纯电阻只能用 Q = I²Rt 计算热量</text>
+
+  <rect x="486" y="348" width="358" height="44" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="665" y="366" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">纯电阻：Q = W</text>
+  <text x="665" y="384" font-size="11" fill="#92400e" text-anchor="middle">非纯电阻：电能同时转化为机械能和内能</text>
+</g>
+
+<!-- 第三步：电热的利用与防止 -->
+<g class="p69-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">电流的热效应：电炉、电饭锅用来加热；电视机、电脑要散热</text>
+
+  <g class="p69-card">
+    <rect x="36" y="100" width="400" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="56" y="116" width="200" height="28" rx="14" fill="#fff7ed"/>
+    <text x="156" y="135" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">电炉、电饭锅</text>
+
+    <circle cx="236" cy="250" r="62" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+    <circle cx="236" cy="250" r="42" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/>
+    <circle class="p69-glow" cx="236" cy="250" r="32" fill="none" stroke="#f97316" stroke-width="6" stroke-dasharray="18 7" stroke-linecap="round"/>
+    <circle cx="236" cy="250" r="21" fill="none" stroke="#dc2626" stroke-width="5" stroke-dasharray="13 6" stroke-linecap="round"/>
+    <circle cx="236" cy="250" r="10" fill="none" stroke="#dc2626" stroke-width="4" stroke-dasharray="8 5" stroke-linecap="round"/>
+
+    <path class="p69-heat" d="M206 184 q-8 -7 0 -14 q8 -7 0 -14" fill="none" stroke="#f97316" stroke-width="3" stroke-linecap="round"/>
+    <path class="p69-heat p69-heat2" d="M236 184 q-8 -7 0 -14 q8 -7 0 -14" fill="none" stroke="#f97316" stroke-width="3" stroke-linecap="round"/>
+    <path class="p69-heat p69-heat3" d="M266 184 q-8 -7 0 -14 q8 -7 0 -14" fill="none" stroke="#f97316" stroke-width="3" stroke-linecap="round"/>
+
+    <text x="236" y="336" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">电流通过电热丝发热</text>
+    <text x="236" y="362" font-size="12" fill="#334155" text-anchor="middle">电阻大、熔点高的合金丝</text>
+    <text x="236" y="388" font-size="11.5" fill="#64748b" text-anchor="middle">电热水壶、电熨斗、电暖器</text>
+  </g>
+
+  <g class="p69-card p69-card2">
+    <rect x="464" y="100" width="400" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="484" y="116" width="220" height="28" rx="14" fill="#e8effc"/>
+    <text x="594" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电视机、电脑</text>
+
+    <rect x="564" y="170" width="180" height="120" rx="8" fill="#1e293b"/>
+    <rect x="574" y="180" width="160" height="100" rx="4" fill="#dbeafe"/>
+    <rect x="620" y="290" width="68" height="10" fill="#64748b"/>
+    <rect x="600" y="300" width="108" height="8" rx="4" fill="#475569"/>
+
+    <circle cx="776" cy="240" r="24" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+    <path d="M776 240 l0 -18 M776 240 l16 9 M776 240 l-16 9" stroke="#64748b" stroke-width="3" stroke-linecap="round"/>
+
+    <path class="p69-heat" d="M724 164 q-8 -8 0 -16 q8 -8 0 -16" fill="none" stroke="#f97316" stroke-width="3" stroke-linecap="round"/>
+    <path class="p69-heat p69-heat2" d="M756 164 q-8 -8 0 -16 q8 -8 0 -16" fill="none" stroke="#f97316" stroke-width="3" stroke-linecap="round"/>
+    <path class="p69-heat p69-heat3" d="M788 164 q-8 -8 0 -16 q8 -8 0 -16" fill="none" stroke="#f97316" stroke-width="3" stroke-linecap="round"/>
+    <text x="776" y="282" font-size="11" fill="#64748b" text-anchor="middle">散热风扇</text>
+
+    <text x="664" y="350" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">元件工作时会发热</text>
+    <text x="664" y="376" font-size="12" fill="#334155" text-anchor="middle">散热孔、风扇、散热片帮助散热</text>
+    <text x="664" y="400" font-size="11.5" fill="#64748b" text-anchor="middle">防止温度过高损坏元件</text>
+  </g>
+
+  <rect x="60" y="416" width="780" height="40" rx="12" fill="#eef6ff" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="450" y="441" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电流的热效应：需要加热的就利用它，怕热的就要及时散热</text>
+</g>
+</svg>

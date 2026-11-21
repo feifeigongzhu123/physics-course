@@ -1,0 +1,254 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="认识传感器：传感器定义、敏感元件与转换元件、自动控制">
+<style>
+[data-scene="ps-100"] .s100-s1,[data-scene="ps-100"] .s100-s2,[data-scene="ps-100"] .s100-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="ps-100"].s1 .s100-s1,[data-scene="ps-100"].s2 .s100-s2,[data-scene="ps-100"].s3 .s100-s3{opacity:1;visibility:visible}
+@keyframes s100fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+@keyframes s100draw{to{stroke-dashoffset:0}}
+@keyframes s100pop{0%{transform:scale(.9);opacity:0}70%{transform:scale(1.03);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s100flow{to{stroke-dashoffset:-36}}
+@keyframes s100pulse{0%,100%{opacity:.5}50%{opacity:1}}
+[data-scene="ps-100"].s1 .s100-chip{animation:s100fade .45s ease both}
+[data-scene="ps-100"].s1 .s100-chip2{animation-delay:.08s}
+[data-scene="ps-100"].s1 .s100-chip3{animation-delay:.16s}
+[data-scene="ps-100"].s1 .s100-chip4{animation-delay:.24s}
+[data-scene="ps-100"].s1 .s100-chip5{animation-delay:.32s}
+[data-scene="ps-100"].s1 .s100-sensor{transform-box:fill-box;transform-origin:center;animation:s100pop .6s ease .35s both}
+[data-scene="ps-100"].s1 .s100-arrow{stroke-dasharray:64;stroke-dashoffset:64;animation:s100draw .6s ease .5s forwards}
+[data-scene="ps-100"].s2 .s100-part{transform-box:fill-box;transform-origin:center;animation:s100pop .55s ease both}
+[data-scene="ps-100"].s2 .s100-part2{animation-delay:.12s}
+[data-scene="ps-100"].s2 .s100-part3{animation-delay:.24s}
+[data-scene="ps-100"].s2 .s100-chain{stroke-dasharray:60;stroke-dashoffset:60;animation:s100draw .7s ease .35s forwards}
+[data-scene="ps-100"].s3 .s100-box{transform-box:fill-box;transform-origin:center;animation:s100pop .5s ease both}
+[data-scene="ps-100"].s3 .s100-box2{animation-delay:.1s}
+[data-scene="ps-100"].s3 .s100-box3{animation-delay:.2s}
+[data-scene="ps-100"].s3 .s100-box4{animation-delay:.3s}
+[data-scene="ps-100"].s3 .s100-loop{stroke-dasharray:8 7;animation:s100flow 1s linear infinite}
+[data-scene="ps-100"].s3 .s100-ex{animation:s100fade .5s ease both}
+[data-scene="ps-100"].s3 .s100-ex2{animation-delay:.12s}
+[data-scene="ps-100"].s3 .s100-ex3{animation-delay:.24s}
+[data-scene="ps-100"].s3 .s100-core{animation:s100pulse 2s ease-in-out infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">认识传感器：把非电学量转换成电学量</text>
+
+<!-- 第一步：传感器的定义 -->
+<g class="s100-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">传感器能感受非电学量，并把它转换成便于处理的电信号</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="236" height="28" rx="14" fill="#e8effc"/>
+  <text x="174" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">传感器的作用</text>
+
+  <text x="110" y="152" font-size="11" font-weight="800" fill="#b45309" text-anchor="middle">非电学量输入</text>
+
+  <g class="s100-chip">
+    <rect x="56" y="168" width="100" height="34" rx="17" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+    <text x="106" y="190" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">力</text>
+  </g>
+  <g class="s100-chip s100-chip2">
+    <rect x="56" y="214" width="100" height="34" rx="17" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+    <text x="106" y="236" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">温度</text>
+  </g>
+  <g class="s100-chip s100-chip3">
+    <rect x="56" y="260" width="100" height="34" rx="17" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+    <text x="106" y="282" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">光</text>
+  </g>
+  <g class="s100-chip s100-chip4">
+    <rect x="56" y="306" width="100" height="34" rx="17" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+    <text x="106" y="328" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">声</text>
+  </g>
+  <g class="s100-chip s100-chip5">
+    <rect x="56" y="352" width="100" height="34" rx="17" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+    <text x="106" y="374" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">磁</text>
+  </g>
+
+  <line class="s100-arrow" x1="158" y1="185" x2="226" y2="185" stroke="#d97706" stroke-width="2" marker-end="url(#arrAmber)"/>
+  <line class="s100-arrow" x1="158" y1="231" x2="226" y2="231" stroke="#d97706" stroke-width="2" marker-end="url(#arrAmber)"/>
+  <line class="s100-arrow" x1="158" y1="277" x2="226" y2="277" stroke="#d97706" stroke-width="2" marker-end="url(#arrAmber)"/>
+  <line class="s100-arrow" x1="158" y1="323" x2="226" y2="323" stroke="#d97706" stroke-width="2" marker-end="url(#arrAmber)"/>
+  <line class="s100-arrow" x1="158" y1="369" x2="226" y2="369" stroke="#d97706" stroke-width="2" marker-end="url(#arrAmber)"/>
+
+  <g class="s100-sensor">
+    <rect x="230" y="190" width="150" height="170" rx="14" fill="#e8effc" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="305" y="256" font-size="16" font-weight="900" fill="#1e3a8a" text-anchor="middle">传感器</text>
+    <text x="305" y="282" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">感受 + 转换</text>
+    <text x="305" y="306" font-size="11" fill="#64748b" text-anchor="middle">非电学量 → 电学量</text>
+  </g>
+
+  <line x1="380" y1="275" x2="466" y2="275" stroke="#1d4ed8" stroke-width="2.4" marker-end="url(#arrBlue)"/>
+  <text x="423" y="264" font-size="11" font-weight="800" fill="#1d4ed8" text-anchor="middle">电信号</text>
+
+  <text x="505" y="222" font-size="11" font-weight="800" fill="#1d4ed8" text-anchor="middle">电学量输出</text>
+  <rect x="470" y="235" width="70" height="80" rx="10" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="505" y="270" font-size="12" font-weight="800" fill="#1e40af" text-anchor="middle">电压</text>
+  <text x="505" y="296" font-size="12" font-weight="800" fill="#1e40af" text-anchor="middle">电流</text>
+
+  <text x="296" y="404" font-size="12" font-weight="800" fill="#334155" text-anchor="middle">传感器是自动测量和自动控制的“感觉器官”</text>
+  <text x="296" y="428" font-size="11.5" fill="#64748b" text-anchor="middle">它把感受到的信息转换成便于处理的电信号</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">传感器的定义</text>
+
+  <text x="720" y="174" font-size="12.5" font-weight="700" fill="#334155" text-anchor="middle">能感受规定的被测量</text>
+  <text x="720" y="198" font-size="12.5" font-weight="700" fill="#334155" text-anchor="middle">并按一定规律转换成</text>
+  <text x="720" y="222" font-size="12.5" font-weight="700" fill="#334155" text-anchor="middle">可用输出信号的器件</text>
+
+  <rect x="596" y="240" width="248" height="74" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="720" y="274" font-size="15" font-weight="900" fill="#1e3a8a" text-anchor="middle">非电学量 → 电学量</text>
+  <text x="720" y="298" font-size="11" fill="#475569" text-anchor="middle">力/温度/光/声/磁 → 电压/电流</text>
+
+  <circle cx="610" cy="342" r="4" fill="#1d4ed8"/>
+  <text x="626" y="347" font-size="11.5" fill="#334155">感知外界信息</text>
+  <circle cx="610" cy="374" r="4" fill="#1d4ed8"/>
+  <text x="626" y="379" font-size="11.5" fill="#334155">像人的眼、耳、皮肤</text>
+  <circle cx="610" cy="406" r="4" fill="#1d4ed8"/>
+  <text x="626" y="411" font-size="11.5" fill="#334155">自动化的第一道关口</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">传感器把力、温度、光、声、磁等非电学量转换成电压、电流等电学量</text>
+</g>
+
+<!-- 第二步：敏感元件和转换元件 -->
+<g class="s100-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">传感器一般由敏感元件和转换元件组成，有的还带转换电路</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="236" height="28" rx="14" fill="#e8effc"/>
+  <text x="174" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">传感器的组成</text>
+
+  <text x="181" y="152" font-size="11" font-weight="800" fill="#b45309" text-anchor="middle">被测量输入</text>
+  <rect x="70" y="160" width="480" height="220" rx="16" fill="#f8fbff" stroke="#93c5fd" stroke-width="1.8" stroke-dasharray="8 6"/>
+  <text x="88" y="184" font-size="12" font-weight="800" fill="#1d4ed8">传感器</text>
+  <line class="s100-chain" x1="181" y1="160" x2="181" y2="218" stroke="#d97706" stroke-width="2" marker-end="url(#arrAmber)"/>
+
+  <g class="s100-part">
+    <rect x="96" y="220" width="170" height="80" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.8"/>
+    <text x="181" y="250" font-size="13" font-weight="900" fill="#b45309" text-anchor="middle">敏感元件</text>
+    <text x="181" y="274" font-size="11" fill="#92400e" text-anchor="middle">直接感受被测量</text>
+    <text x="181" y="292" font-size="11" fill="#92400e" text-anchor="middle">如热敏电阻感受温度</text>
+  </g>
+
+  <line class="s100-chain" x1="266" y1="260" x2="294" y2="260" stroke="#d97706" stroke-width="2" marker-end="url(#arrAmber)"/>
+
+  <g class="s100-part s100-part2">
+    <rect x="296" y="220" width="180" height="80" rx="10" fill="#e8effc" stroke="#93c5fd" stroke-width="1.8"/>
+    <text x="386" y="250" font-size="13" font-weight="900" fill="#1e3a8a" text-anchor="middle">转换元件</text>
+    <text x="386" y="274" font-size="11" fill="#475569" text-anchor="middle">把变化转换成电学量</text>
+    <text x="386" y="292" font-size="11" fill="#475569" text-anchor="middle">如把电阻变化变成电压</text>
+  </g>
+
+  <line class="s100-chain" x1="386" y1="300" x2="386" y2="324" stroke="#d97706" stroke-width="2" marker-end="url(#arrAmber)"/>
+
+  <g class="s100-part s100-part3">
+    <rect x="200" y="326" width="260" height="34" rx="10" fill="#ecfdf5" stroke="#86efac" stroke-width="1.8"/>
+    <text x="330" y="348" font-size="11.5" font-weight="800" fill="#047857" text-anchor="middle">转换电路：放大、整理</text>
+  </g>
+
+  <line x1="460" y1="343" x2="516" y2="343" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <text x="490" y="333" font-size="11" font-weight="800" fill="#1d4ed8" text-anchor="middle">输出</text>
+
+  <text x="296" y="406" font-size="12" font-weight="800" fill="#334155" text-anchor="middle">敏感元件“感受”，转换元件“转换”</text>
+  <text x="296" y="428" font-size="11.5" fill="#64748b" text-anchor="middle">转换电路把微弱信号放大、整理，便于仪表读取</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">各部分的作用</text>
+
+  <g class="s100-part">
+    <rect x="596" y="164" width="248" height="64" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+    <text x="614" y="190" font-size="12" font-weight="900" fill="#b45309">① 敏感元件</text>
+    <text x="614" y="212" font-size="11" fill="#92400e">直接感受被测量的变化</text>
+  </g>
+  <g class="s100-part s100-part2">
+    <rect x="596" y="240" width="248" height="64" rx="10" fill="#e8effc" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="614" y="266" font-size="12" font-weight="900" fill="#1e3a8a">② 转换元件</text>
+    <text x="614" y="288" font-size="11" fill="#475569">把变化转换成电学量</text>
+  </g>
+  <g class="s100-part s100-part3">
+    <rect x="596" y="316" width="248" height="64" rx="10" fill="#ecfdf5" stroke="#86efac" stroke-width="1.5"/>
+    <text x="614" y="342" font-size="12" font-weight="900" fill="#047857">③ 转换电路</text>
+    <text x="614" y="364" font-size="11" fill="#065f46">放大、整理微弱信号</text>
+  </g>
+
+  <text x="720" y="406" font-size="11.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">三者配合，输出可用电信号</text>
+  <text x="720" y="426" font-size="11" fill="#64748b" text-anchor="middle">便于显示、记录和控制</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">敏感元件感受被测量，转换元件输出电学量，转换电路让信号便于使用</text>
+</g>
+
+<!-- 第三步：自动控制 -->
+<g class="s100-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">传感器与控制器、执行器配合，构成自动控制的闭环系统</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="236" height="28" rx="14" fill="#e8effc"/>
+  <text x="174" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">自动控制的工作流程</text>
+
+  <g class="s100-box">
+    <rect x="200" y="170" width="140" height="54" rx="10" fill="#e8effc" stroke="#1d4ed8" stroke-width="1.8"/>
+    <text x="270" y="203" font-size="13" font-weight="900" fill="#1e3a8a" text-anchor="middle">传感器</text>
+  </g>
+  <g class="s100-box s100-box2">
+    <rect x="380" y="260" width="140" height="54" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.8"/>
+    <text x="450" y="293" font-size="13" font-weight="900" fill="#b45309" text-anchor="middle">控制器</text>
+  </g>
+  <g class="s100-box s100-box3">
+    <rect x="200" y="350" width="140" height="54" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="1.8"/>
+    <text x="270" y="383" font-size="13" font-weight="900" fill="#047857" text-anchor="middle">执行器</text>
+  </g>
+  <g class="s100-box s100-box4">
+    <rect x="60" y="260" width="140" height="54" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.8"/>
+    <text x="130" y="293" font-size="13" font-weight="900" fill="#334155" text-anchor="middle">被控对象</text>
+  </g>
+
+  <path class="s100-loop" d="M 340 200 C 372 208 396 230 414 258" fill="none" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <path class="s100-loop" d="M 420 314 C 402 342 372 362 342 372" fill="none" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <path class="s100-loop" d="M 200 372 C 172 360 148 340 134 314" fill="none" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <path class="s100-loop" d="M 130 260 C 148 232 172 210 198 198" fill="none" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrBlue)"/>
+
+  <text x="385" y="232" font-size="11" font-weight="700" fill="#475569">检测</text>
+  <text x="385" y="346" font-size="11" font-weight="700" fill="#475569">指令</text>
+  <text x="160" y="346" font-size="11" font-weight="700" fill="#475569">动作</text>
+  <text x="160" y="232" font-size="11" font-weight="700" fill="#475569">反馈</text>
+
+  <text class="s100-core" x="290" y="282" font-size="12.5" font-weight="900" fill="#1d4ed8" text-anchor="middle">自动控制</text>
+  <text x="290" y="306" font-size="11.5" fill="#64748b" text-anchor="middle">闭环系统</text>
+
+  <text x="296" y="428" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">传感器反馈 → 控制器判断 → 执行器动作，系统自动调节</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">生活中的自动控制</text>
+
+  <g class="s100-ex">
+    <rect x="596" y="164" width="248" height="58" rx="10" fill="#f8fbff" stroke="#dbe6f2" stroke-width="1.5"/>
+    <text x="610" y="190" font-size="12" font-weight="900" fill="#1e3a8a">楼道声光控灯</text>
+    <text x="610" y="210" font-size="11" fill="#475569">声音 + 光线传感器</text>
+  </g>
+  <g class="s100-ex s100-ex2">
+    <rect x="596" y="234" width="248" height="58" rx="10" fill="#f8fbff" stroke="#dbe6f2" stroke-width="1.5"/>
+    <text x="610" y="260" font-size="12" font-weight="900" fill="#1e3a8a">空调恒温</text>
+    <text x="610" y="280" font-size="11" fill="#475569">温度传感器 + 控制电路</text>
+  </g>
+  <g class="s100-ex s100-ex3">
+    <rect x="596" y="304" width="248" height="58" rx="10" fill="#f8fbff" stroke="#dbe6f2" stroke-width="1.5"/>
+    <text x="610" y="330" font-size="12" font-weight="900" fill="#1e3a8a">汽车安全气囊</text>
+    <text x="610" y="350" font-size="11" fill="#475569">加速度传感器</text>
+  </g>
+
+  <rect x="596" y="372" width="248" height="48" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="401" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">传感器是自动化的“眼睛”</text>
+
+  <text x="720" y="428" font-size="11" fill="#64748b" text-anchor="middle">生产线上还能检测位置、自动计数</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">传感器采集信息，控制器作出判断，执行器完成动作，实现自动控制</text>
+</g>
+</svg>

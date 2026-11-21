@@ -1,0 +1,212 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="温度：温度计的结构、摄氏温度的规定和正确读数">
+  <style>
+    .p12-s1,.p12-s2,.p12-s3{opacity:0;visibility:hidden}
+    .p12-s1{opacity:1;visibility:visible}
+    [data-scene="pj-12"] .p12-s1,[data-scene="pj-12"] .p12-s2,[data-scene="pj-12"] .p12-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+    [data-scene="pj-12"].s1 .p12-s1,[data-scene="pj-12"].s2 .p12-s2,[data-scene="pj-12"].s3 .p12-s3{opacity:1;visibility:visible}
+    @keyframes p12rise{from{transform:scaleY(.45)}to{transform:scaleY(1)}}
+    @keyframes p12flame{0%,100%{transform:scaleY(1) scaleX(1)}50%{transform:scaleY(1.16) scaleX(.92)}}
+    @keyframes p12bub{0%{transform:translateY(8px);opacity:0}30%{opacity:.9}100%{transform:translateY(-46px);opacity:0}}
+    @keyframes p12ok{0%,100%{opacity:.55}50%{opacity:1}}
+    [data-scene="pj-12"].s1 .p12-col{transform-box:fill-box;transform-origin:center bottom;animation:p12rise 1.3s ease both}
+    [data-scene="pj-12"].s2 .p12-flame{transform-box:fill-box;transform-origin:center bottom;animation:p12flame .6s ease-in-out infinite}
+    [data-scene="pj-12"].s2 .p12-bub{animation:p12bub 1.5s ease-in infinite}
+    [data-scene="pj-12"].s3 .p12-ok{animation:p12ok 1.3s ease-in-out infinite}
+  </style>
+
+  <rect width="900" height="620" fill="url(#gBg)"/>
+  <rect width="900" height="620" fill="url(#dotsPat)"/>
+  <rect y="470" width="900" height="150" fill="url(#gBench)"/>
+  <line x1="0" y1="470" x2="900" y2="470" stroke="#cfd9e8" stroke-width="2"/>
+  <text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">温度：温度计、摄氏温度与正确读数</text>
+
+  <!-- ========== 第一步：温度计 ========== -->
+  <g class="p12-s1" data-zone="1">
+    <rect x="36" y="64" width="828" height="394" rx="18" fill="#ffffff" stroke="#dbe6f2" stroke-width="2"/>
+    <rect x="56" y="80" width="176" height="30" rx="15" fill="#e8effc"/>
+    <text x="144" y="100" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">① 温度计的结构</text>
+
+    <!-- 温度计 -->
+    <rect x="298" y="100" width="48" height="292" rx="24" fill="#f8fafc" stroke="#94a3b8" stroke-width="3"/>
+    <circle cx="322" cy="426" r="36" fill="#fee2e2" stroke="#94a3b8" stroke-width="3"/>
+    <circle cx="322" cy="426" r="28" fill="#ef4444"/>
+    <rect x="313" y="342" width="18" height="84" rx="9" fill="#ef4444"/>
+    <line x1="306" y1="120" x2="306" y2="388" stroke="#ffffff" stroke-width="5" opacity=".8" stroke-linecap="round"/>
+    <path d="M300 412 q10 -10 20 0" fill="none" stroke="#ffffff" stroke-width="3" opacity=".7"/>
+    <!-- 刻度 -->
+    <g stroke="#475569" stroke-width="2">
+      <line x1="346" y1="390" x2="366" y2="390"/><line x1="346" y1="350" x2="366" y2="350"/>
+      <line x1="346" y1="310" x2="366" y2="310"/><line x1="346" y1="270" x2="366" y2="270"/>
+      <line x1="346" y1="230" x2="366" y2="230"/><line x1="346" y1="190" x2="366" y2="190"/>
+      <line x1="346" y1="170" x2="366" y2="170"/>
+    </g>
+    <g stroke="#94a3b8" stroke-width="1.5">
+      <line x1="346" y1="370" x2="356" y2="370"/><line x1="346" y1="330" x2="356" y2="330"/>
+      <line x1="346" y1="290" x2="356" y2="290"/><line x1="346" y1="250" x2="356" y2="250"/>
+      <line x1="346" y1="210" x2="356" y2="210"/>
+    </g>
+    <g font-size="12" font-weight="700" fill="#334155">
+      <text x="372" y="394">0</text><text x="372" y="354">20</text><text x="372" y="314">40</text>
+      <text x="372" y="274">60</text><text x="372" y="234">80</text><text x="372" y="194">100</text>
+      <text x="372" y="174">110</text>
+    </g>
+    <text x="398" y="178" font-size="11" fill="#64748b">℃</text>
+
+    <!-- 标注 -->
+    <line x1="298" y1="132" x2="216" y2="132" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <text x="206" y="127" font-size="12.5" font-weight="700" fill="#334155" text-anchor="end">玻璃外壳</text>
+    <line x1="298" y1="250" x2="216" y2="250" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <text x="206" y="245" font-size="12.5" font-weight="700" fill="#334155" text-anchor="end">毛细管（很细）</text>
+    <line x1="331" y1="360" x2="252" y2="382" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <text x="242" y="377" font-size="12.5" font-weight="700" fill="#b91c1c" text-anchor="end">红色液体柱</text>
+    <line x1="290" y1="440" x2="210" y2="440" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <text x="200" y="435" font-size="12.5" font-weight="700" fill="#334155" text-anchor="end">玻璃泡</text>
+    <text x="200" y="453" font-size="11" fill="#64748b" text-anchor="end">全部浸入液体</text>
+
+    <!-- 读数面板 -->
+    <rect x="520" y="100" width="320" height="300" rx="16" fill="#f8fbff" stroke="#dbe6f2" stroke-width="2"/>
+    <text x="540" y="132" font-size="14" font-weight="800" fill="#1e3a8a">使用前先看清</text>
+    <text x="540" y="166" font-size="12" fill="#64748b">量程</text>
+    <text x="540" y="190" font-size="14" font-weight="800" fill="#334155">−20 ℃ ~ 110 ℃</text>
+    <text x="540" y="224" font-size="12" fill="#64748b">分度值</text>
+    <text x="540" y="248" font-size="14" font-weight="800" fill="#334155">1 ℃</text>
+    <text x="540" y="282" font-size="12" fill="#64748b">测温液体</text>
+    <text x="540" y="306" font-size="12.5" font-weight="800" fill="#334155">水银 / 酒精 / 煤油</text>
+    <line x1="540" y1="322" x2="820" y2="322" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="540" y="350" font-size="13" font-weight="800" fill="#1e3a8a">原理：液体热胀冷缩</text>
+    <rect x="540" y="362" width="200" height="30" rx="10" fill="#fee2e2"/>
+    <text x="640" y="382" font-size="12.5" font-weight="800" fill="#b91c1c" text-anchor="middle">当前示数 24 ℃</text>
+  </g>
+
+  <!-- ========== 第二步：摄氏温度 ========== -->
+  <g class="p12-s2" data-zone="2">
+    <rect x="36" y="64" width="828" height="394" rx="18" fill="#ffffff" stroke="#dbe6f2" stroke-width="2"/>
+    <rect x="56" y="80" width="196" height="30" rx="15" fill="#dbeafe"/>
+    <text x="154" y="100" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">② 摄氏温度的规定</text>
+
+    <!-- 冰水混合物 -->
+    <path d="M78 160 V330 H232 V160" fill="#eff6ff" opacity=".5" stroke="#93c5fd" stroke-width="3"/>
+    <rect x="84" y="240" width="142" height="84" fill="#bfdbfe"/>
+    <rect x="108" y="212" width="34" height="28" rx="5" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="2" transform="rotate(-8 125 226)"/>
+    <rect x="148" y="204" width="38" height="30" rx="5" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="2" transform="rotate(6 167 219)"/>
+    <rect x="180" y="220" width="30" height="26" rx="5" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="2" transform="rotate(-6 195 233)"/>
+    <rect x="146" y="118" width="18" height="192" rx="9" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+    <circle cx="155" cy="310" r="13" fill="#fee2e2" stroke="#94a3b8" stroke-width="2"/>
+    <circle cx="155" cy="310" r="9" fill="#ef4444"/>
+    <rect x="150" y="248" width="10" height="62" rx="5" fill="#ef4444"/>
+    <text x="172" y="246" font-size="13" font-weight="900" fill="#dc2626">0 ℃</text>
+    <text x="155" y="364" font-size="13" font-weight="800" fill="#1d4ed8" text-anchor="middle">冰水混合物 0 ℃</text>
+
+    <!-- 中间刻度 -->
+    <text x="450" y="124" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">0 ℃ 与 100 ℃ 之间分成 100 等份</text>
+    <circle cx="450" cy="180" r="38" fill="#ffffff" stroke="#60a5fa" stroke-width="2"/>
+    <line x1="440" y1="160" x2="440" y2="200" stroke="#1e40af" stroke-width="2"/>
+    <line x1="460" y1="160" x2="460" y2="200" stroke="#1e40af" stroke-width="2"/>
+    <line x1="440" y1="180" x2="460" y2="180" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="450" y="212" font-size="12" font-weight="800" fill="#1e40af" text-anchor="middle">1 ℃</text>
+    <line x1="426" y1="216" x2="420" y2="278" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <line x1="474" y1="216" x2="480" y2="278" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <rect x="280" y="278" width="340" height="20" rx="10" fill="#e8effc" stroke="#93c5fd" stroke-width="2"/>
+    <g stroke="#1e40af" stroke-width="1.8">
+      <line x1="280" y1="278" x2="280" y2="292"/><line x1="314" y1="278" x2="314" y2="292"/>
+      <line x1="348" y1="278" x2="348" y2="292"/><line x1="382" y1="278" x2="382" y2="292"/>
+      <line x1="416" y1="278" x2="416" y2="292"/><line x1="450" y1="278" x2="450" y2="292"/>
+      <line x1="484" y1="278" x2="484" y2="292"/><line x1="518" y1="278" x2="518" y2="292"/>
+      <line x1="552" y1="278" x2="552" y2="292"/><line x1="586" y1="278" x2="586" y2="292"/>
+      <line x1="620" y1="278" x2="620" y2="292"/>
+    </g>
+    <text x="280" y="268" font-size="13" font-weight="800" fill="#1d4ed8" text-anchor="middle">0 ℃</text>
+    <text x="620" y="268" font-size="13" font-weight="800" fill="#1d4ed8" text-anchor="middle">100 ℃</text>
+    <line x1="280" y1="310" x2="280" y2="320" stroke="#64748b" stroke-width="1.5"/>
+    <line x1="620" y1="310" x2="620" y2="320" stroke="#64748b" stroke-width="1.5"/>
+    <line x1="280" y1="318" x2="620" y2="318" stroke="#64748b" stroke-width="1.5"/>
+    <text x="450" y="342" font-size="12.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">每一等份就是 1 ℃</text>
+
+    <!-- 沸水 -->
+    <path d="M668 160 V330 H822 V160" fill="#eff6ff" opacity=".5" stroke="#93c5fd" stroke-width="3"/>
+    <rect x="674" y="230" width="142" height="94" fill="#bae6fd"/>
+    <g fill="#7dd3fc">
+      <circle class="p12-bub" cx="700" cy="300" r="4"/>
+      <circle class="p12-bub" cx="738" cy="306" r="3.2" style="animation-delay:.25s"/>
+      <circle class="p12-bub" cx="782" cy="298" r="4.2" style="animation-delay:.5s"/>
+    </g>
+    <rect x="736" y="118" width="18" height="200" rx="9" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+    <circle cx="745" cy="318" r="13" fill="#fee2e2" stroke="#94a3b8" stroke-width="2"/>
+    <circle cx="745" cy="318" r="9" fill="#ef4444"/>
+    <rect x="740" y="188" width="10" height="130" rx="5" fill="#ef4444"/>
+    <text x="762" y="186" font-size="13" font-weight="900" fill="#dc2626">100 ℃</text>
+    <g class="p12-flame" fill="#f97316">
+      <path d="M700 356 q10 -24 20 0 q-10 8 -20 0 Z"/>
+      <path d="M726 356 q12 -30 24 0 q-12 9 -24 0 Z" fill="#fbbf24"/>
+      <path d="M754 356 q10 -24 20 0 q-10 8 -20 0 Z"/>
+    </g>
+    <rect x="692" y="354" width="98" height="10" rx="4" fill="#64748b"/>
+    <text x="745" y="364" font-size="13" font-weight="800" fill="#dc2626" text-anchor="middle" opacity="0">标准大气压沸水</text>
+    <text x="745" y="378" font-size="13" font-weight="800" fill="#dc2626" text-anchor="middle">标准大气压沸水 100 ℃</text>
+
+    <rect x="52" y="404" width="796" height="42" rx="10" fill="#eef6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="450" y="430" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">冰水混合物定为 0 ℃，标准大气压下的沸水定为 100 ℃</text>
+  </g>
+
+  <!-- ========== 第三步：正确读数 ========== -->
+  <g class="p12-s3" data-zone="3">
+    <rect x="36" y="64" width="828" height="394" rx="18" fill="#ffffff" stroke="#dbe6f2" stroke-width="2"/>
+    <rect x="56" y="80" width="196" height="30" rx="15" fill="#e8effc"/>
+    <text x="154" y="100" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">③ 温度计的使用与读数</text>
+
+    <!-- 使用要点 -->
+    <rect x="52" y="88" width="260" height="310" rx="14" fill="#f8fbff" stroke="#dbe6f2" stroke-width="1.5"/>
+    <text x="72" y="118" font-size="14" font-weight="800" fill="#1e3a8a">使用要点</text>
+    <g>
+      <circle cx="76" cy="148" r="9" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+      <path d="M72 148 l3 3 l5 -6" fill="none" stroke="#16a34a" stroke-width="2"/>
+      <text x="94" y="153" font-size="12.5" font-weight="700" fill="#334155">玻璃泡全部浸入液体</text>
+      <circle cx="76" cy="188" r="9" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+      <path d="M72 188 l3 3 l5 -6" fill="none" stroke="#16a34a" stroke-width="2"/>
+      <text x="94" y="193" font-size="12.5" font-weight="700" fill="#334155">不碰容器底和容器壁</text>
+      <circle cx="76" cy="228" r="9" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+      <path d="M72 228 l3 3 l5 -6" fill="none" stroke="#16a34a" stroke-width="2"/>
+      <text x="94" y="233" font-size="12.5" font-weight="700" fill="#334155">示数稳定后再读数</text>
+      <circle cx="76" cy="268" r="9" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+      <path d="M72 268 l3 3 l5 -6" fill="none" stroke="#16a34a" stroke-width="2"/>
+      <text x="94" y="273" font-size="12.5" font-weight="700" fill="#334155">视线与液柱上表面相平</text>
+    </g>
+    <rect x="68" y="294" width="228" height="86" rx="10" fill="#fffbeb"/>
+    <text x="80" y="320" font-size="11.5" fill="#92400e">体温计例外：可以离开</text>
+    <text x="80" y="342" font-size="11.5" fill="#92400e">人体读数，使用前要甩一甩。</text>
+    <text x="80" y="366" font-size="11.5" fill="#78716c">被测液体不能超过量程</text>
+
+    <!-- 烧杯与温度计 -->
+    <path d="M358 230 V415 H532 V230" fill="#eff6ff" opacity=".55" stroke="#93c5fd" stroke-width="3"/>
+    <rect x="364" y="300" width="162" height="110" fill="#bfdbfe"/>
+    <rect x="430" y="110" width="20" height="280" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="2.5"/>
+    <circle cx="440" cy="390" r="15" fill="#fee2e2" stroke="#94a3b8" stroke-width="2.5"/>
+    <circle cx="440" cy="390" r="11" fill="#ef4444"/>
+    <rect x="435" y="306" width="10" height="84" rx="5" fill="#ef4444"/>
+    <g stroke="#475569" stroke-width="1.8">
+      <line x1="452" y1="390" x2="466" y2="390"/><line x1="452" y1="350" x2="466" y2="350"/>
+      <line x1="452" y1="310" x2="466" y2="310"/><line x1="452" y1="270" x2="466" y2="270"/>
+    </g>
+    <text x="490" y="302" font-size="15" font-weight="900" fill="#dc2626">42 ℃</text>
+
+    <!-- 三种视线 -->
+    <line x1="750" y1="190" x2="448" y2="305" stroke="#dc2626" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrRed)"/>
+    <line class="p12-ok" x1="748" y1="306" x2="448" y2="306" stroke="#059669" stroke-width="3" marker-end="url(#arrGreen)"/>
+    <line x1="750" y1="372" x2="448" y2="308" stroke="#dc2626" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrRed)"/>
+
+    <g>
+      <path d="M748 180 q22 -13 44 0 q-22 13 -44 0 Z" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+      <circle cx="770" cy="180" r="5" fill="#334155"/>
+      <text x="770" y="160" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">A 俯视 → 偏大</text>
+      <path d="M748 306 q22 -13 44 0 q-22 13 -44 0 Z" fill="#ffffff" stroke="#059669" stroke-width="2.5"/>
+      <circle cx="770" cy="306" r="5" fill="#047857"/>
+      <text x="770" y="286" font-size="12" font-weight="800" fill="#047857" text-anchor="middle">B 平视 → 正确</text>
+      <path d="M748 380 q22 -13 44 0 q-22 13 -44 0 Z" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+      <circle cx="770" cy="380" r="5" fill="#334155"/>
+      <text x="770" y="408" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">C 仰视 → 偏小</text>
+    </g>
+
+    <rect x="330" y="420" width="518" height="30" rx="10" fill="#eef6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="589" y="440" font-size="11.5" font-weight="700" fill="#1e3a8a" text-anchor="middle">读数时玻璃泡留在液体中 · 体温计例外</text>
+  </g>
+</svg>

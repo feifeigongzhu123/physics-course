@@ -1,0 +1,185 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="串联电路和并联电路：电流电压电阻关系、分压与分流">
+<style>
+[data-scene="ps-51"] .s51-step1,[data-scene="ps-51"] .s51-step2,[data-scene="ps-51"] .s51-step3{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="ps-51"].s1 .s51-step1,[data-scene="ps-51"].s2 .s51-step2,[data-scene="ps-51"].s3 .s51-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes s51flow{to{stroke-dashoffset:-40}}
+@keyframes s51pop{0%{transform:scale(.9);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes s51draw{to{stroke-dashoffset:0}}
+@keyframes s51glow{0%,100%{opacity:.5}50%{opacity:1}}
+[data-scene="ps-51"].s1 .s51-flow{stroke-dasharray:10 10;animation:s51flow 1.4s linear infinite}
+[data-scene="ps-51"].s1 .s51-card{transform-box:fill-box;transform-origin:center;animation:s51pop .5s ease both}
+[data-scene="ps-51"].s1 .s51-res{animation:s51glow 2s ease-in-out infinite}
+[data-scene="ps-51"].s2 .s51-flow2{stroke-dasharray:10 10;animation:s51flow 1.4s linear infinite}
+[data-scene="ps-51"].s2 .s51-card{transform-box:fill-box;transform-origin:center;animation:s51pop .5s ease both}
+[data-scene="ps-51"].s2 .s51-branch{stroke-dasharray:200;stroke-dashoffset:200;animation:s51draw .8s ease .3s forwards}
+[data-scene="ps-51"].s3 .s51-card1{transform-box:fill-box;transform-origin:center;animation:s51pop .45s ease both}
+[data-scene="ps-51"].s3 .s51-card2{transform-box:fill-box;transform-origin:center;animation:s51pop .45s ease .15s both}
+[data-scene="ps-51"].s3 .s51-row{transform-box:fill-box;transform-origin:center;animation:s51pop .4s ease both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="532" width="900" height="88" fill="url(#gBench)"/>
+<line x1="0" y1="532" x2="900" y2="532" stroke="#cbd5e1" stroke-width="2.5"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">串联电路和并联电路：电流、电压、电阻与分压分流</text>
+
+<!-- 第一步：串联 -->
+<g class="s51-step1" data-zone="1">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 1 步 · 串联：一条路径，电流处处相等</text>
+
+  <g class="s51-card">
+    <rect x="40" y="104" width="430" height="340" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="255" y="132" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">两个电阻串联</text>
+
+    <path class="s51-flow" d="M80 180 H400 V370 H80 Z" fill="none" stroke="#1d4ed8" stroke-width="7" opacity=".18"/>
+    <path d="M80 180 H140 M210 180 H260 M330 180 H400 V370 H80 V180" fill="none" stroke="#334155" stroke-width="4" stroke-linejoin="round"/>
+    <rect class="s51-res" x="140" y="168" width="70" height="24" rx="4" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+    <rect class="s51-res" x="260" y="168" width="70" height="24" rx="4" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+    <text x="175" y="156" font-size="13" font-weight="900" fill="#1e3a8a" text-anchor="middle">R₁</text>
+    <text x="295" y="156" font-size="13" font-weight="900" fill="#1e3a8a" text-anchor="middle">R₂</text>
+    <text x="175" y="216" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">U₁</text>
+    <text x="295" y="216" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">U₂</text>
+
+    <line x1="220" y1="352" x2="220" y2="388" stroke="#334155" stroke-width="5"/>
+    <line x1="236" y1="358" x2="236" y2="382" stroke="#334155" stroke-width="5"/>
+    <text x="228" y="416" font-size="11.5" fill="#64748b" text-anchor="middle">电源</text>
+
+    <polygon points="350,174 362,180 350,186" fill="#1d4ed8"/>
+    <polygon points="394,260 400,272 406,260" fill="#1d4ed8"/>
+    <polygon points="140,364 128,370 140,376" fill="#1d4ed8"/>
+    <polygon points="74,260 80,248 86,260" fill="#1d4ed8"/>
+    <text x="345" y="166" font-size="12" font-weight="800" fill="#b91c1c">I</text>
+    <text x="330" y="236" font-size="11.5" fill="#64748b" text-anchor="middle">电流只有一条路径</text>
+  </g>
+
+  <g class="s51-card">
+    <rect x="470" y="104" width="390" height="340" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="665" y="132" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">串联电路的规律</text>
+    <text x="665" y="178" font-size="17" font-weight="900" fill="#1d4ed8" text-anchor="middle">I = I₁ = I₂</text>
+    <text x="665" y="214" font-size="17" font-weight="900" fill="#1d4ed8" text-anchor="middle">U = U₁ + U₂</text>
+    <text x="665" y="250" font-size="17" font-weight="900" fill="#1d4ed8" text-anchor="middle">R = R₁ + R₂</text>
+    <line x1="510" y1="270" x2="820" y2="270" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="665" y="300" font-size="13" font-weight="800" fill="#b45309" text-anchor="middle">分压：U₁/U₂ = R₁/R₂</text>
+    <text x="665" y="326" font-size="11.5" fill="#334155" text-anchor="middle">阻值大的电阻分得的电压多</text>
+    <text x="665" y="352" font-size="11.5" fill="#334155" text-anchor="middle">总电阻比任何一个电阻都大</text>
+    <text x="665" y="378" font-size="11.5" fill="#64748b" text-anchor="middle">一个电阻断路，全部停止工作</text>
+    <text x="665" y="412" font-size="11.5" fill="#64748b" text-anchor="middle">串联电阻越多，总电阻越大</text>
+  </g>
+
+  <rect x="40" y="468" width="820" height="40" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="493" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">串联电路：电流处处相等，电压按电阻正比分压</text>
+
+  <text x="80" y="576" font-size="12" fill="#64748b">把几个电阻首尾依次连接起来，就叫串联</text>
+</g>
+
+<!-- 第二步：并联 -->
+<g class="s51-step2" data-zone="2">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 2 步 · 并联：多条支路，各支路电压相等</text>
+
+  <g class="s51-card">
+    <rect x="40" y="104" width="430" height="340" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="255" y="132" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">两个电阻并联</text>
+
+    <path class="s51-flow2" d="M110 170 H390 V370 H110 Z" fill="none" stroke="#1d4ed8" stroke-width="7" opacity=".16"/>
+    <path d="M110 170 H390 V370 H110 V284 M110 270 V170" fill="none" stroke="#334155" stroke-width="4" stroke-linejoin="round"/>
+    <line x1="95" y1="270" x2="125" y2="270" stroke="#334155" stroke-width="5"/>
+    <line x1="102" y1="284" x2="118" y2="284" stroke="#334155" stroke-width="5"/>
+    <path class="s51-branch" d="M250 170 V235 M250 295 V370 M350 170 V235 M350 295 V370" fill="none" stroke="#334155" stroke-width="4"/>
+    <rect class="s51-res" x="238" y="235" width="24" height="60" rx="4" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+    <rect class="s51-res" x="338" y="235" width="24" height="60" rx="4" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+    <text x="230" y="268" font-size="13" font-weight="900" fill="#1e3a8a" text-anchor="end">R₁</text>
+    <text x="330" y="268" font-size="13" font-weight="900" fill="#1e3a8a" text-anchor="end">R₂</text>
+    <text x="250" y="160" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">I₁</text>
+    <text x="350" y="160" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">I₂</text>
+    <text x="110" y="402" font-size="11.5" fill="#64748b" text-anchor="middle">电源</text>
+
+    <polygon points="180,164 192,170 180,176" fill="#1d4ed8"/>
+    <polygon points="244,208 250,220 256,208" fill="#1d4ed8"/>
+    <polygon points="344,208 350,220 356,208" fill="#1d4ed8"/>
+    <polygon points="190,364 178,370 190,376" fill="#1d4ed8"/>
+    <polygon points="104,320 110,308 116,320" fill="#1d4ed8"/>
+    <text x="300" y="392" font-size="11.5" fill="#64748b" text-anchor="middle">各支路两端电压相等</text>
+  </g>
+
+  <g class="s51-card">
+    <rect x="470" y="104" width="390" height="340" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="665" y="132" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">并联电路的规律</text>
+    <text x="665" y="178" font-size="17" font-weight="900" fill="#059669" text-anchor="middle">U = U₁ = U₂</text>
+    <text x="665" y="214" font-size="17" font-weight="900" fill="#059669" text-anchor="middle">I = I₁ + I₂</text>
+    <text x="665" y="250" font-size="16" font-weight="900" fill="#059669" text-anchor="middle">1/R = 1/R₁ + 1/R₂</text>
+    <line x1="510" y1="270" x2="820" y2="270" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="665" y="300" font-size="13" font-weight="800" fill="#b45309" text-anchor="middle">分流：I₁/I₂ = R₂/R₁</text>
+    <text x="665" y="326" font-size="11.5" fill="#334155" text-anchor="middle">阻值小的支路分得的电流多</text>
+    <text x="665" y="352" font-size="11.5" fill="#334155" text-anchor="middle">总电阻小于任何一条支路的电阻</text>
+    <text x="665" y="378" font-size="11.5" fill="#64748b" text-anchor="middle">各支路互不影响</text>
+    <text x="665" y="412" font-size="11.5" fill="#64748b" text-anchor="middle">并联电阻越多，总电阻越小</text>
+  </g>
+
+  <rect x="40" y="468" width="820" height="40" rx="10" fill="#e6f7f1" stroke="#a7f3d0" stroke-width="1.5"/>
+  <text x="450" y="493" font-size="13" font-weight="800" fill="#047857" text-anchor="middle">并联电路：各支路电压相等，干路电流等于各支路电流之和</text>
+
+  <text x="80" y="576" font-size="12" fill="#64748b">把几个电阻的一端连在一起，另一端也连在一起，就叫并联</text>
+</g>
+
+<!-- 第三步：对比与分压分流 -->
+<g class="s51-step3" data-zone="3">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 3 步 · 对比：串联分压，并联分流</text>
+
+  <g class="s51-row">
+    <rect x="60" y="100" width="780" height="252" rx="12" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="60" y="100" width="140" height="32" rx="0" fill="#eef2f7"/>
+    <rect x="200" y="100" width="300" height="32" fill="#e8effc"/>
+    <rect x="500" y="100" width="340" height="32" fill="#e6f7f1"/>
+    <g font-size="12.5" font-weight="800" text-anchor="middle">
+      <text x="130" y="121" fill="#334155">项目</text>
+      <text x="350" y="121" fill="#1e3a8a">串联</text>
+      <text x="670" y="121" fill="#047857">并联</text>
+    </g>
+    <g stroke="#e2e8f0" stroke-width="1.2">
+      <line x1="60" y1="176" x2="840" y2="176"/>
+      <line x1="60" y1="220" x2="840" y2="220"/>
+      <line x1="60" y1="264" x2="840" y2="264"/>
+      <line x1="60" y1="308" x2="840" y2="308"/>
+      <line x1="200" y1="100" x2="200" y2="352"/>
+      <line x1="500" y1="100" x2="500" y2="352"/>
+    </g>
+    <g font-size="12" fill="#334155" text-anchor="middle">
+      <text x="130" y="166" font-weight="800">电流</text>
+      <text x="350" y="166">I = I₁ = I₂</text>
+      <text x="670" y="166">I = I₁ + I₂</text>
+      <text x="130" y="210" font-weight="800">电压</text>
+      <text x="350" y="210">U = U₁ + U₂</text>
+      <text x="670" y="210">U = U₁ = U₂</text>
+      <text x="130" y="254" font-weight="800">电阻</text>
+      <text x="350" y="254">R = R₁ + R₂</text>
+      <text x="670" y="254">1/R = 1/R₁ + 1/R₂</text>
+      <text x="130" y="298" font-weight="800">分压/分流</text>
+      <text x="350" y="298">U₁/U₂ = R₁/R₂</text>
+      <text x="670" y="298">I₁/I₂ = R₂/R₁</text>
+      <text x="130" y="338" font-weight="800">相互影响</text>
+      <text x="350" y="338">一个断路，全部停止</text>
+      <text x="670" y="338">各支路互不影响</text>
+    </g>
+  </g>
+
+  <g class="s51-card1">
+    <rect x="60" y="366" width="380" height="88" rx="12" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+    <text x="250" y="394" font-size="13" font-weight="900" fill="#b45309" text-anchor="middle">串联分压</text>
+    <text x="250" y="418" font-size="11.5" fill="#7c5a30" text-anchor="middle">给表头串联一个大电阻 → 改装成电压表</text>
+    <text x="250" y="440" font-size="11" fill="#64748b" text-anchor="middle">大电阻分担大部分电压，表头不被烧坏</text>
+  </g>
+
+  <g class="s51-card2">
+    <rect x="460" y="366" width="380" height="88" rx="12" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+    <text x="650" y="394" font-size="13" font-weight="900" fill="#1e40af" text-anchor="middle">并联分流</text>
+    <text x="650" y="418" font-size="11.5" fill="#1e3a8a" text-anchor="middle">给表头并联一个小电阻 → 改装成电流表</text>
+    <text x="650" y="440" font-size="11" fill="#64748b" text-anchor="middle">小电阻分走大部分电流，保护表头</text>
+  </g>
+
+  <rect x="60" y="466" width="780" height="36" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="489" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">等效电阻：几个电阻连接的效果，可以用一个电阻替代</text>
+
+  <text x="80" y="576" font-size="12" fill="#64748b">判断串并联：看电流有几条路径；串联分压，并联分流</text>
+</g>
+</svg>

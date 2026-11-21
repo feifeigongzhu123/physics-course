@@ -1,0 +1,150 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="宇宙航行：三个宇宙速度与卫星的轨道周期">
+<style>
+[data-scene="ps-33"] .s33-step1,[data-scene="ps-33"] .s33-step2,[data-scene="ps-33"] .s33-step3{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="ps-33"].s1 .s33-step1,[data-scene="ps-33"].s2 .s33-step2,[data-scene="ps-33"].s3 .s33-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes s33draw{to{stroke-dashoffset:0}}
+@keyframes s33rot{to{transform:rotate(360deg)}}
+@keyframes s33pop{0%{transform:scale(.86);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes s33pulse{0%,100%{opacity:.4;transform:scale(1)}50%{opacity:.9;transform:scale(1.3)}}
+@keyframes s33flow{to{stroke-dashoffset:-70}}
+[data-scene="ps-33"].s1 .s33-orbit{stroke-dasharray:1000;stroke-dashoffset:1000;animation:s33draw 1.2s ease both}
+[data-scene="ps-33"].s1 .s33-sat{transform-box:view-box;transform-origin:270px 360px;animation:s33rot 9s linear infinite}
+[data-scene="ps-33"].s1 .s33-card{transform-box:fill-box;transform-origin:center;animation:s33pop .5s ease .5s both}
+[data-scene="ps-33"].s2 .s33-path{stroke-dasharray:700;stroke-dashoffset:700;animation:s33draw 1.4s ease both}
+[data-scene="ps-33"].s2 .s33-path2{stroke-dasharray:700;stroke-dashoffset:700;animation:s33draw 1.4s ease .45s both}
+[data-scene="ps-33"].s2 .s33-path3{stroke-dasharray:760;stroke-dashoffset:760;animation:s33draw 1.4s ease .9s both}
+[data-scene="ps-33"].s2 .s33-row{transform-box:fill-box;transform-origin:center;animation:s33pop .45s ease both}
+[data-scene="ps-33"].s3 .s33-belt{stroke-dasharray:6 6;animation:s33flow 2.6s linear infinite}
+[data-scene="ps-33"].s3 .s33-sat{transform-box:fill-box;transform-origin:center;animation:s33pulse 2.4s ease-in-out infinite}
+[data-scene="ps-33"].s3 .s33-row{transform-box:fill-box;transform-origin:center;animation:s33pop .45s ease both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="532" width="900" height="88" fill="url(#gBench)"/>
+<line x1="0" y1="532" x2="900" y2="532" stroke="#cbd5e1" stroke-width="2.5"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">宇宙航行：三个宇宙速度与卫星的运动</text>
+
+<!-- 第一步：第一宇宙速度 -->
+<g class="s33-step1" data-zone="1">
+  <text x="70" y="86" font-size="14" font-weight="800" fill="#1e3a8a">贴近地面绕地球做圆周运动所需的速度</text>
+
+  <circle cx="270" cy="360" r="125" fill="#dbeafe" stroke="#1d4ed8" stroke-width="3"/>
+  <path d="M196 300 q34 -28 68 -10 q30 16 52 2 q24 -12 44 12 q-18 26 -50 22 q-36 -4 -58 16 q-30 22 -56 -8 z" fill="#86efac" opacity=".55"/>
+  <text x="270" y="404" font-size="15" font-weight="800" fill="#1e3a8a" text-anchor="middle">地球</text>
+  <line x1="270" y1="360" x2="270" y2="235" stroke="#1e40af" stroke-width="1.8" stroke-dasharray="6 5"/>
+  <text x="284" y="300" font-size="12" font-weight="800" fill="#1e40af">R</text>
+
+  <circle class="s33-orbit" cx="270" cy="360" r="158" fill="none" stroke="#64748b" stroke-width="1.8" stroke-dasharray="7 7"/>
+
+  <g class="s33-sat">
+    <rect x="262" y="192" width="16" height="20" rx="3" fill="#334155"/>
+    <rect x="232" y="196" width="26" height="12" rx="2" fill="#60a5fa" stroke="#1e40af" stroke-width="1.2"/>
+    <rect x="282" y="196" width="26" height="12" rx="2" fill="#60a5fa" stroke="#1e40af" stroke-width="1.2"/>
+  </g>
+  <line x1="292" y1="202" x2="372" y2="202" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrRed)"/>
+  <text x="338" y="188" font-size="13" font-weight="900" fill="#b91c1c" text-anchor="middle">v₁ = 7.9 km/s</text>
+  <text x="270" y="170" font-size="12" font-weight="700" fill="#475569" text-anchor="middle">近地圆轨道</text>
+
+  <g class="s33-card">
+    <rect x="500" y="100" width="330" height="296" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="665" y="130" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">第一宇宙速度</text>
+    <text x="665" y="162" font-size="13" fill="#334155" text-anchor="middle">GMm / R² = m v² / R</text>
+    <text x="665" y="204" font-size="25" font-weight="900" font-style="italic" fill="#1e3a8a" text-anchor="middle">v₁ = √(GM/R)</text>
+    <text x="665" y="242" font-size="13.5" font-weight="900" fill="#b45309" text-anchor="middle">≈ 7.9 km/s</text>
+    <line x1="524" y1="264" x2="806" y2="264" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="665" y="292" font-size="12.5" font-weight="700" fill="#334155" text-anchor="middle">卫星环绕地球的最大速度</text>
+    <text x="665" y="318" font-size="12.5" font-weight="700" fill="#334155" text-anchor="middle">把卫星送入轨道的最小发射速度</text>
+    <text x="665" y="350" font-size="11.5" fill="#b91c1c" text-anchor="middle">v 小于 7.9 km/s 就会落回地面</text>
+    <text x="665" y="374" font-size="11.5" fill="#64748b" text-anchor="middle">v 越大，需要的发射速度也越大</text>
+  </g>
+
+  <rect x="70" y="430" width="760" height="78" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="458" font-size="12.5" font-weight="700" fill="#1e3a8a" text-anchor="middle">由万有引力提供向心力，可得环绕速度与轨道半径的关系</text>
+  <text x="450" y="488" font-size="14" font-weight="900" fill="#1e3a8a" text-anchor="middle">v = √(GM/r)　　T = 2π√(r³/GM)</text>
+
+  <text x="80" y="576" font-size="12" fill="#64748b">第一宇宙速度既是最大环绕速度，也是最小发射速度</text>
+</g>
+
+<!-- 第二步：第二和第三宇宙速度 -->
+<g class="s33-step2" data-zone="2">
+  <text x="70" y="86" font-size="14" font-weight="800" fill="#1e3a8a">发射速度越大，航天器能挣脱的束缚就越多</text>
+
+  <circle cx="200" cy="440" r="76" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.5"/>
+  <path d="M154 414 q22 -18 44 -6 q18 10 32 2 q16 -8 28 8 q-12 18 -32 14 q-22 -4 -36 10 q-20 14 -36 -8 z" fill="#86efac" opacity=".55"/>
+  <text x="200" y="470" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">地球</text>
+  <circle cx="200" cy="364" r="5" fill="#dc2626"/>
+  <text x="214" y="360" font-size="11.5" font-weight="700" fill="#b91c1c">发射点</text>
+
+  <circle cx="200" cy="440" r="104" fill="none" stroke="#059669" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="310" y="440" font-size="12" font-weight="800" fill="#047857">v₁ = 7.9</text>
+
+  <path class="s33-path" d="M200 364 C 300 274, 470 292, 610 408" fill="none" stroke="#d97706" stroke-width="2.8" stroke-dasharray="8 6" marker-end="url(#arrAmber)"/>
+  <text x="480" y="318" font-size="12.5" font-weight="800" fill="#b45309">v₂ = 11.2 km/s</text>
+  <text x="480" y="338" font-size="11.5" fill="#b45309">挣脱地球引力</text>
+
+  <path class="s33-path3" d="M200 364 C 340 180, 610 150, 838 262" fill="none" stroke="#7c3aed" stroke-width="2.8" stroke-dasharray="8 6" marker-end="url(#arrBlue)"/>
+  <text x="660" y="164" font-size="12.5" font-weight="800" fill="#6d28d9">v₃ = 16.7 km/s</text>
+  <text x="660" y="184" font-size="11.5" fill="#6d28d9">挣脱太阳引力，飞出太阳系</text>
+
+  <text x="300" y="240" font-size="12" fill="#64748b">同一发射点，三条不同速度的轨迹</text>
+
+  <g class="s33-row">
+    <rect x="470" y="368" width="360" height="128" rx="12" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="650" y="396" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">三个宇宙速度（相对地球）</text>
+    <text x="494" y="424" font-size="12" fill="#047857">7.9 km/s：环绕地球，成为地球卫星</text>
+    <text x="494" y="448" font-size="12" fill="#b45309">11.2 km/s：脱离地球，成为太阳行星</text>
+    <text x="494" y="472" font-size="12" fill="#6d28d9">16.7 km/s：脱离太阳，飞向恒星际空间</text>
+  </g>
+
+  <text x="80" y="576" font-size="12" fill="#64748b">数值越大，航天器能够到达的范围越远</text>
+</g>
+
+<!-- 第三步：卫星轨道与周期 -->
+<g class="s33-step3" data-zone="3">
+  <text x="70" y="86" font-size="14" font-weight="800" fill="#1e3a8a">轨道半径越大：线速度越小，周期越大</text>
+
+  <circle cx="220" cy="440" r="78" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.5"/>
+  <path d="M168 414 q24 -18 46 -6 q18 10 34 2 q16 -8 28 8 q-12 18 -32 14 q-24 -4 -38 10 q-20 14 -36 -8 z" fill="#86efac" opacity=".55"/>
+  <text x="220" y="470" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">地球</text>
+
+  <circle class="s33-belt" cx="220" cy="440" r="112" fill="none" stroke="#059669" stroke-width="1.8"/>
+  <circle class="s33-belt" cx="220" cy="440" r="180" fill="none" stroke="#d97706" stroke-width="1.8"/>
+  <circle class="s33-belt" cx="220" cy="440" r="248" fill="none" stroke="#7c3aed" stroke-width="1.8"/>
+
+  <g class="s33-sat"><rect x="214" y="322" width="12" height="14" rx="2" fill="#047857"/></g>
+  <g class="s33-sat"><rect x="214" y="254" width="12" height="14" rx="2" fill="#b45309"/></g>
+  <g class="s33-sat"><rect x="214" y="186" width="12" height="14" rx="2" fill="#6d28d9"/></g>
+
+  <line x1="236" y1="328" x2="300" y2="328" stroke="#059669" stroke-width="3" marker-end="url(#arrGreen)"/>
+  <text x="308" y="332" font-size="12" font-weight="800" fill="#047857">v 较大，T 较小</text>
+  <line x1="236" y1="260" x2="276" y2="260" stroke="#d97706" stroke-width="3" marker-end="url(#arrAmber)"/>
+  <text x="284" y="264" font-size="12" font-weight="800" fill="#b45309">v 较小</text>
+  <line x1="236" y1="192" x2="260" y2="192" stroke="#7c3aed" stroke-width="3" marker-end="url(#arrBlue)"/>
+  <text x="268" y="196" font-size="12" font-weight="800" fill="#6d28d9">v 最小</text>
+
+  <text x="220" y="524" font-size="11.5" fill="#64748b" text-anchor="middle">近地 → 同步 → 高轨</text>
+
+  <g class="s33-row">
+    <rect x="500" y="104" width="330" height="368" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="665" y="134" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">卫星运动规律</text>
+    <line x1="524" y1="152" x2="806" y2="152" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="524" y="184" font-size="12.5" font-weight="900" fill="#047857">近地卫星</text>
+    <text x="806" y="184" font-size="12" fill="#334155" text-anchor="end">v ≈ 7.9 km/s</text>
+    <text x="524" y="208" font-size="11.5" fill="#64748b">r ≈ R，T ≈ 85 min</text>
+    <text x="524" y="248" font-size="12.5" font-weight="900" fill="#b45309">同步卫星</text>
+    <text x="806" y="248" font-size="12" fill="#334155" text-anchor="end">v ≈ 3.1 km/s</text>
+    <text x="524" y="272" font-size="11.5" fill="#64748b">赤道上空，T = 24 h</text>
+    <text x="524" y="312" font-size="12.5" font-weight="900" fill="#6d28d9">高轨卫星</text>
+    <text x="806" y="312" font-size="12" fill="#334155" text-anchor="end">v 更小，T 更大</text>
+    <text x="524" y="336" font-size="11.5" fill="#64748b">r 越大，环绕越慢</text>
+    <line x1="524" y1="356" x2="806" y2="356" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="665" y="386" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">v = √(GM/r)</text>
+    <text x="665" y="412" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">T = 2π√(r³/GM)</text>
+    <text x="665" y="444" font-size="11.5" fill="#64748b" text-anchor="middle">同步卫星从地面看好像静止不动</text>
+  </g>
+
+  <text x="80" y="576" font-size="12" fill="#64748b">发射越高的卫星越费力，但在轨道上运行得越慢</text>
+</g>
+</svg>

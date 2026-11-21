@@ -1,0 +1,187 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="重力与弹力：重力的大小与方向、弹力的方向、胡克定律">
+<style>
+[data-scene="ps-12"] .s12-step{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="ps-12"].s1 .s12-step1,[data-scene="ps-12"].s2 .s12-step2,[data-scene="ps-12"].s3 .s12-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes s12draw{to{stroke-dashoffset:0}}
+@keyframes s12grow{0%{opacity:0;transform:translateY(7px)}100%{opacity:1;transform:none}}
+@keyframes s12pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes s12pop{0%{opacity:0;transform:scale(.9)}100%{opacity:1;transform:scale(1)}}
+@keyframes s12flow{to{stroke-dashoffset:-30}}
+@keyframes s12stretch{0%,100%{transform:scaleY(1)}50%{transform:scaleY(1.03)}}
+[data-scene="ps-12"].s1 .s12-g{animation:s12draw 1s ease .1s both;stroke-dasharray:120;stroke-dashoffset:120}
+[data-scene="ps-12"].s1 .s12-t{animation:s12draw .8s ease .6s both;stroke-dasharray:100;stroke-dashoffset:100}
+[data-scene="ps-12"].s1 .s12-card{animation:s12grow .5s ease .25s both}
+[data-scene="ps-12"].s1 .s12-pulse{animation:s12pulse 1.6s ease-in-out infinite}
+[data-scene="ps-12"].s2 .s12-card{animation:s12grow .5s ease .15s both}
+[data-scene="ps-12"].s2 .s12-card2{animation-delay:.35s}
+[data-scene="ps-12"].s2 .s12-force{opacity:0;animation:s12grow .5s ease .5s both}
+[data-scene="ps-12"].s2 .s12-force2{animation-delay:.7s}
+[data-scene="ps-12"].s2 .s12-note{animation:s12grow .5s ease .9s both}
+[data-scene="ps-12"].s3 .s12-spring{transform-box:fill-box;transform-origin:top center;animation:s12stretch 2.6s ease-in-out infinite}
+[data-scene="ps-12"].s3 .s12-line{stroke-dasharray:360;stroke-dashoffset:360;animation:s12draw 1.1s ease .3s both}
+[data-scene="ps-12"].s3 .s12-card{animation:s12grow .5s ease .2s both}
+[data-scene="ps-12"].s3 .s12-x{animation:s12pulse 1.6s ease-in-out infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="532" width="900" height="88" fill="url(#gBench)"/>
+<line x1="0" y1="532" x2="900" y2="532" stroke="#cbd5e1" stroke-width="2.5"/>
+
+<text x="450" y="44" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">重力与弹力：方向与大小的分析</text>
+
+<!-- 第一步：重力 -->
+<g class="s12-step s12-step1" data-zone="1">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">重力：由于地球吸引，方向竖直向下，G = mg</text>
+
+  <line x1="128" y1="108" x2="332" y2="108" stroke="#94a3b8" stroke-width="4"/>
+  <line x1="152" y1="108" x2="152" y2="118" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="230" y1="108" x2="230" y2="118" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="308" y1="108" x2="308" y2="118" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="230" y1="108" x2="230" y2="232" stroke="#a16207" stroke-width="3"/>
+  <rect x="168" y="232" width="124" height="82" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+  <text x="230" y="280" font-size="12" font-weight="800" fill="#475569" text-anchor="middle">物块</text>
+
+  <line x1="230" y1="272" x2="230" y2="392" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrBlue)"/>
+  <circle cx="230" cy="272" r="4.5" fill="#7c3aed"/>
+  <text x="246" y="366" font-size="16" font-weight="900" fill="#6d28d9">G</text>
+  <text x="246" y="390" font-size="12" font-weight="700" fill="#6d28d9">G = mg</text>
+  <text x="246" y="414" font-size="11.5" fill="#64748b">竖直向下</text>
+  <text x="246" y="256" font-size="11.5" fill="#64748b">重心</text>
+
+  <line x1="230" y1="108" x2="230" y2="500" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="7 6"/>
+  <line x1="230" y1="272" x2="230" y2="186" stroke="#059669" stroke-width="3.5" marker-end="url(#arrGreen)"/>
+  <text x="244" y="208" font-size="14" font-weight="900" fill="#047857">T</text>
+
+  <g class="s12-card">
+    <rect x="360" y="95" width="510" height="300" rx="16" fill="#ffffff" stroke="#c7d7f5" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="360" y="95" width="510" height="7" rx="3.5" fill="#1d4ed8"/>
+    <text x="615" y="128" font-size="15" font-weight="900" fill="#1e3a8a" text-anchor="middle">重力的三要素</text>
+    <text x="382" y="160" font-size="13" font-weight="800" fill="#334155">大小：G = mg</text>
+    <text x="382" y="184" font-size="11.5" fill="#64748b">g = 9.8 N/kg，粗略取 10 N/kg</text>
+    <text x="382" y="214" font-size="13" font-weight="800" fill="#334155">方向：竖直向下</text>
+    <text x="382" y="238" font-size="11.5" fill="#64748b">不是“垂直向下”，也不是“指向地心”</text>
+    <text x="382" y="268" font-size="13" font-weight="800" fill="#334155">作用点：重心</text>
+    <text x="382" y="292" font-size="11.5" fill="#64748b">质量分布均匀、形状规则的物体，重心在几何中心</text>
+    <text x="382" y="316" font-size="11.5" fill="#64748b">重心不一定在物体上，例如圆环的重心在圆心</text>
+    <rect x="382" y="332" width="466" height="44" rx="9" fill="#fff7ed" stroke="#fdba74" stroke-width="1.3"/>
+    <text x="615" y="350" font-size="11.5" font-weight="800" fill="#7c5a30" text-anchor="middle">重力由地球吸引产生，施力物体是地球</text>
+    <text x="615" y="368" font-size="11" fill="#92400e" text-anchor="middle">同一物体在地球不同位置，重力略有不同</text>
+  </g>
+
+  <g class="s12-card">
+    <line x1="100" y1="496" x2="330" y2="496" stroke="#64748b" stroke-width="2.5"/>
+    <line x1="200" y1="496" x2="300" y2="420" stroke="#64748b" stroke-width="2.5"/>
+    <line x1="160" y1="496" x2="260" y2="420" stroke="#64748b" stroke-width="2.5"/>
+    <circle cx="258" cy="442" r="13" fill="#f97316" stroke="#c2410c" stroke-width="2"/>
+    <line x1="258" y1="442" x2="258" y2="512" stroke="#7c3aed" stroke-width="3" marker-end="url(#arrBlue)"/>
+    <text x="270" y="508" font-size="11.5" font-weight="800" fill="#6d28d9">G</text>
+    <line x1="258" y1="442" x2="230" y2="408" stroke="#059669" stroke-width="3" marker-end="url(#arrGreen)"/>
+    <text x="214" y="414" font-size="11.5" font-weight="800" fill="#047857" text-anchor="end">N</text>
+    <text x="102" y="470" font-size="11.5" font-weight="700" fill="#334155">斜面上：G 仍竖直向下</text>
+    <text x="102" y="452" font-size="11.5" fill="#64748b">支持力 N 垂直斜面</text>
+  </g>
+</g>
+
+<!-- 第二步：弹力方向 -->
+<g class="s12-step s12-step2" data-zone="2">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">弹力方向：与施力物体的形变方向相反</text>
+
+  <g class="s12-card">
+    <rect x="65" y="95" width="380" height="380" rx="16" fill="#f8fafc" stroke="#dbe6f2" stroke-width="1.5"/>
+    <text x="255" y="124" font-size="13.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">面与面接触：垂直于接触面</text>
+    <rect x="155" y="255" width="190" height="95" rx="6" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+    <text x="250" y="308" font-size="12" font-weight="800" fill="#475569" text-anchor="middle">物块</text>
+    <path d="M92 350 Q250 360 410 350" fill="none" stroke="#64748b" stroke-width="4"/>
+    <line x1="92" y1="350" x2="92" y2="464" stroke="#94a3b8" stroke-width="3"/>
+    <line x1="410" y1="350" x2="410" y2="464" stroke="#94a3b8" stroke-width="3"/>
+    <text x="250" y="380" font-size="11.5" fill="#64748b" text-anchor="middle">桌面发生微小形变</text>
+
+    <g class="s12-force">
+      <line x1="250" y1="352" x2="250" y2="268" stroke="#059669" stroke-width="4" marker-end="url(#arrGreen)"/>
+      <text x="264" y="292" font-size="15" font-weight="900" fill="#047857">N</text>
+    </g>
+    <g class="s12-force s12-force2">
+      <line x1="300" y1="300" x2="300" y2="408" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrBlue)"/>
+      <text x="314" y="394" font-size="15" font-weight="900" fill="#6d28d9">G</text>
+    </g>
+    <text x="250" y="432" font-size="12" font-weight="800" fill="#047857" text-anchor="middle">N 垂直桌面向上</text>
+    <text x="250" y="456" font-size="11.5" fill="#64748b" text-anchor="middle">压力方向垂直桌面向下</text>
+  </g>
+
+  <g class="s12-card s12-card2">
+    <rect x="455" y="95" width="380" height="380" rx="16" fill="#f8fafc" stroke="#dbe6f2" stroke-width="1.5"/>
+    <text x="645" y="124" font-size="13.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">绳的拉力：沿绳的收缩方向</text>
+    <line x1="500" y1="430" x2="800" y2="430" stroke="#64748b" stroke-width="3"/>
+    <rect x="530" y="345" width="160" height="85" rx="6" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+    <line x1="610" y1="345" x2="735" y2="176" stroke="#a16207" stroke-width="3.5"/>
+    <circle cx="610" cy="345" r="4" fill="#a16207"/>
+    <g class="s12-force">
+      <line x1="610" y1="345" x2="690" y2="232" stroke="#059669" stroke-width="4" marker-end="url(#arrGreen)"/>
+      <text x="702" y="248" font-size="15" font-weight="900" fill="#047857">T</text>
+    </g>
+    <g class="s12-force s12-force2">
+      <line x1="570" y1="430" x2="570" y2="336" stroke="#059669" stroke-width="3.5" marker-end="url(#arrGreen)"/>
+      <text x="556" y="358" font-size="13" font-weight="900" fill="#047857" text-anchor="end">N</text>
+      <line x1="650" y1="350" x2="650" y2="424" stroke="#7c3aed" stroke-width="3.5" marker-end="url(#arrBlue)"/>
+      <text x="664" y="416" font-size="13" font-weight="900" fill="#6d28d9">G</text>
+    </g>
+    <text x="645" y="456" font-size="11.5" font-weight="700" fill="#047857" text-anchor="middle">拉力方向沿绳，指向绳收缩的方向</text>
+  </g>
+
+  <g class="s12-note">
+    <rect x="65" y="492" width="770" height="34" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="450" y="514" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">面与面：垂直接触面　|　绳：沿绳　|　杆：不一定沿杆，要由运动状态判断</text>
+  </g>
+</g>
+
+<!-- 第三步：胡克定律 -->
+<g class="s12-step s12-step3" data-zone="3">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">胡克定律：弹性限度内，F = kx</text>
+
+  <line x1="100" y1="108" x2="360" y2="108" stroke="#94a3b8" stroke-width="5"/>
+  <line x1="140" y1="108" x2="140" y2="118" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="230" y1="108" x2="230" y2="118" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="320" y1="108" x2="320" y2="118" stroke="#94a3b8" stroke-width="2"/>
+
+  <g class="s12-spring">
+    <polyline points="230,110 250,124 210,138 250,152 210,166 250,180 210,194 250,208 210,222 230,234 230,255 230,275 230,295 230,315 230,335 230,355"
+      fill="none" stroke="#1d4ed8" stroke-width="3" stroke-linejoin="round"/>
+    <rect x="185" y="357" width="90" height="55" rx="6" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
+    <text x="230" y="390" font-size="12" font-weight="800" fill="#7c2d12" text-anchor="middle">重物</text>
+    <line x1="230" y1="412" x2="230" y2="455" stroke="#7c3aed" stroke-width="3.5" marker-end="url(#arrBlue)"/>
+    <text x="242" y="446" font-size="13" font-weight="900" fill="#6d28d9">G</text>
+  </g>
+
+  <line x1="150" y1="255" x2="360" y2="255" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="7 6"/>
+  <text x="132" y="260" font-size="11.5" font-weight="800" fill="#64748b" text-anchor="end">原长 l₀</text>
+  <line x1="340" y1="255" x2="340" y2="357" stroke="#dc2626" stroke-width="1.8"/>
+  <line x1="332" y1="255" x2="348" y2="255" stroke="#dc2626" stroke-width="1.8"/>
+  <line x1="332" y1="357" x2="348" y2="357" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="356" y="310" font-size="14" font-weight="900" fill="#b91c1c">x</text>
+  <text x="356" y="330" font-size="11" fill="#b91c1c">伸长量</text>
+  <text x="230" y="486" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">伸长量 x = 现长 − 原长</text>
+
+  <g class="s12-card">
+    <rect x="500" y="95" width="360" height="150" rx="14" fill="#ffffff" stroke="#bfdbfe" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="500" y="95" width="7" height="150" rx="3.5" fill="#1d4ed8"/>
+    <text x="680" y="124" font-size="14" font-weight="900" fill="#1e3a8a" text-anchor="middle">胡克定律</text>
+    <text x="680" y="160" font-size="24" font-weight="900" fill="#1d4ed8" text-anchor="middle">F = k x</text>
+    <text x="522" y="190" font-size="11.5" fill="#475569">k：劲度系数，由弹簧本身决定，单位 N/m</text>
+    <text x="522" y="213" font-size="11.5" fill="#475569">x：形变量（伸长量或压缩量），不是弹簧总长</text>
+    <text x="680" y="236" font-size="11.5" font-weight="700" fill="#b45309" text-anchor="middle">弹力也与形变方向相反</text>
+  </g>
+
+  <line x1="560" y1="465" x2="858" y2="465" stroke="#475569" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+  <line x1="560" y1="465" x2="560" y2="270" stroke="#475569" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+  <text x="867" y="470" font-size="13" font-weight="800" fill="#475569">x</text>
+  <text x="552" y="284" font-size="13" font-weight="800" fill="#475569" text-anchor="end">F</text>
+  <text x="544" y="482" font-size="11.5" font-weight="700" fill="#64748b">O</text>
+  <line class="s12-line" x1="560" y1="465" x2="800" y2="285" stroke="#1d4ed8" stroke-width="4" stroke-linecap="round"/>
+  <text x="740" y="330" font-size="13" font-weight="900" fill="#1d4ed8">斜率 = k</text>
+  <line x1="775" y1="465" x2="775" y2="290" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="6 5"/>
+  <text x="775" y="505" font-size="11" font-weight="800" fill="#b91c1c" text-anchor="middle">弹性限度</text>
+  <text x="800" y="505" font-size="11" fill="#64748b" text-anchor="middle">超过后不成立</text>
+  <text x="560" y="250" font-size="11.5" fill="#64748b">弹性限度内：F 与 x 成正比</text>
+</g>
+</svg>

@@ -1,0 +1,218 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="涡流、电磁阻尼和电磁驱动：整块导体中的感应电流、阻碍运动与带动运动">
+<style>
+[data-scene="ps-90"] .s90-s1,[data-scene="ps-90"] .s90-s2,[data-scene="ps-90"] .s90-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="ps-90"].s1 .s90-s1,[data-scene="ps-90"].s2 .s90-s2,[data-scene="ps-90"].s3 .s90-s3{opacity:1;visibility:visible}
+@keyframes s90fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+@keyframes s90pop{0%{transform:scale(.86);opacity:0}70%{transform:scale(1.04);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s90flow{to{stroke-dashoffset:-42}}
+@keyframes s90pulse{0%,100%{opacity:.4}50%{opacity:1}}
+@keyframes s90heat{0%,100%{transform:translateY(0);opacity:.55}50%{transform:translateY(-6px);opacity:1}}
+@keyframes s90sway{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+[data-scene="ps-90"].s1 .s90-coil{transform-box:fill-box;transform-origin:center;animation:s90pop .5s ease both}
+[data-scene="ps-90"].s1 .s90-plate{transform-box:fill-box;transform-origin:center;animation:s90pop .55s ease .2s both}
+[data-scene="ps-90"].s1 .s90-bflow{stroke-dasharray:7 6;animation:s90flow 1.2s linear infinite}
+[data-scene="ps-90"].s1 .s90-eddy{stroke-dasharray:7 6;animation:s90flow 1.4s linear infinite}
+[data-scene="ps-90"].s1 .s90-heat{animation:s90heat 1.4s ease-in-out infinite}
+[data-scene="ps-90"].s1 .s90-heat2{animation-delay:.25s}
+[data-scene="ps-90"].s1 .s90-heat3{animation-delay:.5s}
+[data-scene="ps-90"].s2 .s90-pend{transform-box:fill-box;transform-origin:50% 0;animation:s90sway 2.6s ease-in-out infinite}
+[data-scene="ps-90"].s2 .s90-force{animation:s90pulse 1.4s ease-in-out infinite}
+[data-scene="ps-90"].s2 .s90-eddy2{stroke-dasharray:7 6;animation:s90flow 1.5s linear infinite}
+[data-scene="ps-90"].s2 .s90-varr{animation:s90pulse 1.6s ease-in-out infinite}
+[data-scene="ps-90"].s3 .s90-disc{transform-box:fill-box;transform-origin:center;animation:s90pop .55s ease .2s both}
+[data-scene="ps-90"].s3 .s90-orbit{stroke-dasharray:8 7;animation:s90flow 1.5s linear infinite}
+[data-scene="ps-90"].s3 .s90-eddy3{stroke-dasharray:7 6;animation:s90flow 1.3s linear infinite}
+[data-scene="ps-90"].s3 .s90-varr{animation:s90pulse 1.6s ease-in-out infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">涡流、电磁阻尼和电磁驱动：电磁感应的三种表现</text>
+
+<!-- 第一步：涡流 -->
+<g class="s90-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">涡流：块状导体处在变化磁场中，内部产生漩涡状的感应电流</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="230" height="28" rx="14" fill="#e8effc"/>
+  <text x="171" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">变化的磁场穿过整块导体</text>
+
+  <g class="s90-coil">
+    <ellipse cx="230" cy="154" rx="42" ry="8" fill="none" stroke="#b45309" stroke-width="2.5"/>
+    <ellipse cx="230" cy="166" rx="42" ry="8" fill="none" stroke="#b45309" stroke-width="2.5"/>
+    <ellipse cx="230" cy="178" rx="42" ry="8" fill="none" stroke="#b45309" stroke-width="2.5"/>
+    <ellipse cx="230" cy="190" rx="42" ry="8" fill="none" stroke="#b45309" stroke-width="2.5"/>
+    <ellipse cx="230" cy="202" rx="42" ry="8" fill="none" stroke="#b45309" stroke-width="2.5"/>
+    <line x1="188" y1="154" x2="188" y2="202" stroke="#b45309" stroke-width="2.5"/>
+    <line x1="272" y1="154" x2="272" y2="202" stroke="#b45309" stroke-width="2.5"/>
+  </g>
+  <circle cx="120" cy="172" r="16" fill="#fff7ed" stroke="#b45309" stroke-width="2.5"/>
+  <text x="120" y="179" font-size="15" font-weight="900" fill="#b45309" text-anchor="middle">~</text>
+  <line x1="136" y1="166" x2="188" y2="162" stroke="#b45309" stroke-width="2"/>
+  <line x1="136" y1="178" x2="188" y2="194" stroke="#b45309" stroke-width="2"/>
+  <text x="120" y="208" font-size="11" font-weight="700" fill="#92400e" text-anchor="middle">交变电源</text>
+
+  <line class="s90-bflow" x1="200" y1="216" x2="200" y2="246" stroke="#1d4ed8" stroke-width="2.2" marker-end="url(#arrBlue)"/>
+  <line class="s90-bflow" x1="230" y1="216" x2="230" y2="246" stroke="#1d4ed8" stroke-width="2.2" marker-end="url(#arrBlue)"/>
+  <line class="s90-bflow" x1="260" y1="216" x2="260" y2="246" stroke="#1d4ed8" stroke-width="2.2" marker-end="url(#arrBlue)"/>
+  <text x="322" y="240" font-size="11" font-weight="800" fill="#1d4ed8">B 变化</text>
+
+  <g class="s90-plate">
+    <rect x="150" y="252" width="300" height="96" rx="8" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2.5"/>
+    <path class="s90-eddy" d="M368 300 A68 30 0 1 1 232 300" fill="none" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arrRed)"/>
+    <path class="s90-eddy" d="M232 300 A68 30 0 1 1 368 300" fill="none" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arrRed)"/>
+    <path class="s90-eddy" d="M340 300 A40 17 0 1 1 260 300" fill="none" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arrRed)"/>
+    <text x="382" y="304" font-size="12.5" font-weight="900" fill="#b91c1c">涡流</text>
+  </g>
+
+  <path class="s90-heat" d="M466 330 C474 318 458 308 466 296" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+  <path class="s90-heat s90-heat2" d="M482 330 C490 318 474 308 482 296" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+  <path class="s90-heat s90-heat3" d="M498 330 C506 318 490 308 498 296" fill="none" stroke="#f97316" stroke-width="2.5"/>
+  <text x="482" y="352" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">发热</text>
+
+  <text x="300" y="370" font-size="11" fill="#64748b" text-anchor="middle">整块金属导体</text>
+  <text x="296" y="396" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">变化磁场 → 导体内部闭合感应电流</text>
+  <text x="296" y="420" font-size="11" fill="#64748b" text-anchor="middle">涡流使导体发热，电能转化为内能</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="200" height="28" rx="14" fill="#e8effc"/>
+  <text x="696" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">涡流的特点与应用</text>
+
+  <text x="598" y="178" font-size="11.5" font-weight="800" fill="#1e3a8a">产生条件</text>
+  <text x="598" y="202" font-size="11.5" fill="#334155">· 处在变化的磁场中</text>
+  <text x="598" y="226" font-size="11.5" fill="#334155">· 或与磁场有相对运动</text>
+  <text x="598" y="250" font-size="11.5" fill="#334155">· 导体是整块的（不是细线）</text>
+
+  <line x1="596" y1="266" x2="844" y2="266" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <text x="598" y="290" font-size="11.5" font-weight="800" fill="#1e3a8a">特点</text>
+  <text x="598" y="314" font-size="11.5" fill="#334155">磁场变化越快，涡流越大</text>
+  <text x="598" y="338" font-size="11.5" fill="#334155">涡流大小还与导体电阻有关</text>
+
+  <rect x="596" y="352" width="248" height="54" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="376" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">利用：真空冶炼炉、电磁炉</text>
+  <text x="720" y="398" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">防止：硅钢片叠压铁芯</text>
+  <text x="720" y="426" font-size="11" fill="#64748b" text-anchor="middle">金属探测器、安检门也利用涡流</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">涡流是整块导体中的感应电流，既会产生焦耳热，也可被利用或防止</text>
+</g>
+
+<!-- 第二步：电磁阻尼 -->
+<g class="s90-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">电磁阻尼：感应电流受到的安培力，阻碍导体的相对运动</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="280" height="28" rx="14" fill="#e8effc"/>
+  <text x="196" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">金属摆在磁场中摆动，很快停下</text>
+
+  <line x1="200" y1="142" x2="400" y2="142" stroke="#475569" stroke-width="2.5"/>
+  <line x1="240" y1="124" x2="240" y2="142" stroke="#475569" stroke-width="2"/>
+  <line x1="360" y1="124" x2="360" y2="142" stroke="#475569" stroke-width="2"/>
+  <path d="M252 158 A 62 62 0 0 1 348 158" fill="none" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="5 5"/>
+  <circle cx="300" cy="142" r="5" fill="#475569"/>
+
+  <g class="s90-pend">
+    <line x1="300" y1="147" x2="300" y2="238" stroke="#475569" stroke-width="3"/>
+    <rect x="268" y="238" width="64" height="70" rx="6" fill="#fde68a" stroke="#b45309" stroke-width="2.5"/>
+    <ellipse class="s90-eddy2" cx="300" cy="278" rx="16" ry="20" fill="none" stroke="#dc2626" stroke-width="2"/>
+  </g>
+
+  <rect x="196" y="254" width="54" height="64" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="223" y="292" font-size="14" font-weight="900" fill="#b91c1c" text-anchor="middle">N</text>
+  <rect x="350" y="254" width="54" height="64" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="377" y="292" font-size="14" font-weight="900" fill="#1e3a8a" text-anchor="middle">S</text>
+
+  <line class="s90-varr" x1="312" y1="222" x2="352" y2="222" stroke="#b45309" stroke-width="2.2" marker-end="url(#arrAmber)"/>
+  <text x="360" y="227" font-size="11.5" font-weight="900" fill="#b45309">v</text>
+
+  <line class="s90-force" x1="300" y1="268" x2="246" y2="268" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arrRed)"/>
+  <text x="300" y="252" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">F安（安培力）</text>
+
+  <text x="296" y="372" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">安培力方向与运动方向相反</text>
+  <text x="296" y="398" font-size="11.5" fill="#334155" text-anchor="middle">机械能 → 电能 → 内能，振动迅速衰减</text>
+  <text x="296" y="422" font-size="11" fill="#64748b" text-anchor="middle">无接触、无磨损，制动平稳可靠</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="200" height="28" rx="14" fill="#e8effc"/>
+  <text x="696" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电磁阻尼的分析</text>
+
+  <rect x="596" y="160" width="248" height="40" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+  <text x="720" y="185" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">① 导体在磁场中运动</text>
+  <line x1="720" y1="204" x2="720" y2="224" stroke="#dc2626" stroke-width="2" marker-end="url(#arrRed)"/>
+
+  <rect x="596" y="228" width="248" height="40" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+  <text x="720" y="253" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">② 导体中产生感应电流</text>
+  <line x1="720" y1="272" x2="720" y2="292" stroke="#dc2626" stroke-width="2" marker-end="url(#arrRed)"/>
+
+  <rect x="596" y="296" width="248" height="40" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+  <text x="720" y="321" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">③ 安培力阻碍相对运动</text>
+
+  <text x="720" y="362" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">阻碍相对运动，不是阻止</text>
+  <text x="720" y="386" font-size="11" fill="#475569" text-anchor="middle">机械能 → 电能 → 内能</text>
+  <text x="598" y="412" font-size="11" font-weight="700" fill="#334155">应用：电磁制动、电表与天平阻尼</text>
+  <text x="598" y="432" font-size="11" fill="#64748b">特点：无接触、无磨损</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电磁阻尼：感应电流的安培力阻碍导体运动，把机械能转化为内能</text>
+</g>
+
+<!-- 第三步：电磁驱动 -->
+<g class="s90-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">电磁驱动：变化的磁场带动导体运动，转速略小于磁场转速</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="280" height="28" rx="14" fill="#e8effc"/>
+  <text x="196" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">旋转的磁场带动金属圆盘转动</text>
+
+  <line x1="290" y1="150" x2="290" y2="392" stroke="#64748b" stroke-width="1.5" stroke-dasharray="6 5"/>
+
+  <g class="s90-disc">
+    <ellipse cx="290" cy="268" rx="105" ry="26" fill="#dbe4ef" stroke="#64748b" stroke-width="2.5"/>
+    <path class="s90-eddy3" d="M338 268 A48 13 0 1 1 242 268" fill="none" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arrRed)"/>
+    <text x="290" y="292" font-size="11" font-weight="800" fill="#b91c1c" text-anchor="middle">涡流</text>
+  </g>
+
+  <path class="s90-orbit" d="M220 250 A 70 12 0 0 1 360 250" fill="none" stroke="#059669" stroke-width="2.5" marker-end="url(#arrGreen)"/>
+  <text x="372" y="252" font-size="12" font-weight="900" fill="#047857">ω′</text>
+  <text x="290" y="226" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">金属圆盘（可绕轴转动）</text>
+
+  <rect x="244" y="330" width="46" height="24" rx="3" fill="#dc2626"/>
+  <rect x="290" y="330" width="46" height="24" rx="3" fill="#1d4ed8"/>
+  <text x="267" y="347" font-size="12" font-weight="900" fill="#ffffff" text-anchor="middle">N</text>
+  <text x="313" y="347" font-size="12" font-weight="900" fill="#ffffff" text-anchor="middle">S</text>
+  <text x="156" y="344" font-size="11" font-weight="800" fill="#b45309">旋转磁体</text>
+
+  <path class="s90-orbit" d="M214 366 A 76 18 0 0 0 366 366" fill="none" stroke="#b45309" stroke-width="2.5" marker-end="url(#arrAmber)"/>
+  <text x="378" y="368" font-size="12" font-weight="900" fill="#b45309">ω</text>
+
+  <text x="296" y="410" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">磁场转动 → 盘内产生涡流 → 安培力带动盘同向转动</text>
+  <text x="296" y="432" font-size="11" fill="#64748b" text-anchor="middle">电能转化为机械能，盘速总略小于磁场转速</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="190" height="28" rx="14" fill="#e8effc"/>
+  <text x="691" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">阻尼与驱动的对比</text>
+
+  <rect x="596" y="156" width="248" height="76" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+  <text x="720" y="180" font-size="12.5" font-weight="900" fill="#b91c1c" text-anchor="middle">电磁阻尼</text>
+  <text x="720" y="203" font-size="11" fill="#334155" text-anchor="middle">导体运动，安培力阻碍</text>
+  <text x="720" y="223" font-size="11" fill="#334155" text-anchor="middle">机械能 → 电能</text>
+
+  <rect x="596" y="242" width="248" height="76" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="720" y="266" font-size="12.5" font-weight="900" fill="#1d4ed8" text-anchor="middle">电磁驱动</text>
+  <text x="720" y="289" font-size="11" fill="#334155" text-anchor="middle">磁场运动，带动导体</text>
+  <text x="720" y="309" font-size="11" fill="#334155" text-anchor="middle">电能 → 机械能</text>
+
+  <rect x="596" y="328" width="248" height="44" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="354" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">都是安培力阻碍相对运动</text>
+
+  <text x="720" y="394" font-size="11.5" font-weight="700" fill="#1d4ed8" text-anchor="middle">驱动转速总略小于磁场转速</text>
+  <text x="598" y="420" font-size="11" font-weight="700" fill="#334155">应用：感应式电动机、电磁搅拌</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电磁驱动：变化的磁场使导体中产生涡流，安培力带动导体跟随磁场运动</text>
+</g>
+</svg>

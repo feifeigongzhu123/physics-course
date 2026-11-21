@@ -1,0 +1,88 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="凸透镜成像：焦点、特殊光线与成像规律">
+  <rect width="900" height="620" fill="url(#gBg)"/>
+  <rect width="900" height="620" fill="url(#dotsPat)"/>
+  <rect y="500" width="900" height="120" fill="url(#gBench)"/>
+  <line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+  <text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">凸透镜成像：两条特殊光线找到像</text>
+
+  <!-- 主光轴与焦点 -->
+  <g class="p2-axis" data-zone="1">
+    <line x1="70" y1="340" x2="830" y2="340" stroke="#94a3b8" stroke-width="2" stroke-dasharray="10 7"/>
+    <text x="796" y="328" font-size="13" fill="#64748b" text-anchor="end">主光轴</text>
+    <g stroke="#1e40af" stroke-width="2">
+      <line x1="350" y1="332" x2="350" y2="348"/><line x1="550" y1="332" x2="550" y2="348"/>
+      <line x1="250" y1="334" x2="250" y2="346"/><line x1="650" y1="334" x2="650" y2="346"/>
+    </g>
+    <g font-size="13" font-weight="800" fill="#1e40af" text-anchor="middle">
+      <text x="350" y="368">F</text><text x="550" y="368">F′</text>
+      <text x="250" y="368" fill="#64748b">2F</text><text x="650" y="368" fill="#64748b">2F′</text>
+    </g>
+    <g stroke="#64748b" stroke-width="1.5">
+      <line x1="450" y1="372" x2="450" y2="386"/><line x1="550" y1="372" x2="550" y2="386"/>
+      <line x1="450" y1="380" x2="550" y2="380" marker-start="url(#arrBlue)" marker-end="url(#arrBlue)"/>
+    </g>
+    <text x="500" y="398" font-size="12" font-weight="700" fill="#64748b" text-anchor="middle">f</text>
+  </g>
+
+  <!-- 凸透镜 -->
+  <g class="p2-lens">
+    <path d="M450 210 C 416 258 416 422 450 470 C 484 422 484 258 450 210 Z"
+      fill="url(#gGlass)" stroke="#1d4ed8" stroke-width="3"/>
+    <line x1="450" y1="210" x2="450" y2="470" stroke="#93c5fd" stroke-width="1.5" opacity=".7"/>
+    <text x="450" y="194" font-size="15" font-weight="800" fill="#1e3a8a" text-anchor="middle">凸透镜</text>
+    <text x="466" y="368" font-size="13" font-weight="800" fill="#1e3a8a">O</text>
+  </g>
+
+  <!-- 物体 -->
+  <g class="p2-object">
+    <line x1="150" y1="340" x2="150" y2="230" stroke="#dc2626" stroke-width="5" stroke-linecap="round" marker-end="url(#arrRed)"/>
+    <text x="150" y="214" font-size="14" font-weight="800" fill="#b91c1c" text-anchor="middle">物体</text>
+    <g stroke="#64748b" stroke-width="1.5">
+      <line x1="150" y1="412" x2="150" y2="426"/><line x1="450" y1="412" x2="450" y2="426"/>
+      <line x1="150" y1="420" x2="450" y2="420" marker-start="url(#arrBlue)" marker-end="url(#arrBlue)"/>
+    </g>
+    <text x="300" y="440" font-size="12.5" font-weight="700" fill="#64748b" text-anchor="middle">u = 3f（u &gt; 2f）</text>
+  </g>
+
+  <!-- 第一步：平行主轴的光过焦点 -->
+  <g class="p2-ray1">
+    <line class="p2-line" x1="150" y1="230" x2="450" y2="230" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrRed)"/>
+    <line class="p2-line" x1="450" y1="230" x2="660" y2="461" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrRed)"/>
+    <circle cx="550" cy="340" r="5" fill="#dc2626"/>
+    <text x="560" y="332" font-size="12.5" font-weight="700" fill="#b91c1c">过焦点 F′</text>
+    <text x="262" y="214" font-size="12.5" font-weight="700" fill="#b91c1c">平行主光轴</text>
+  </g>
+
+  <!-- 第二步：过光心的光不偏折 + 成像 -->
+  <g class="p2-ray2" data-zone="2">
+    <line class="p2-line" x1="150" y1="230" x2="450" y2="340" stroke="#f59e0b" stroke-width="3.5" marker-end="url(#arrAmber)"/>
+    <line class="p2-line" x1="450" y1="340" x2="720" y2="439" stroke="#f59e0b" stroke-width="3.5" marker-end="url(#arrAmber)"/>
+    <text x="300" y="300" font-size="12.5" font-weight="700" fill="#b45309">过光心 O，方向不变</text>
+    <line x1="600" y1="340" x2="600" y2="395" stroke="#1d4ed8" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="6 5" marker-end="url(#arrBlue)"/>
+    <text x="612" y="420" font-size="13.5" font-weight="800" fill="#1e40af">像（倒立、缩小、实像）</text>
+    <circle cx="600" cy="395" r="4.5" fill="#1d4ed8"/>
+    <g stroke="#64748b" stroke-width="1.5">
+      <line x1="450" y1="440" x2="450" y2="454"/><line x1="600" y1="440" x2="600" y2="454"/>
+      <line x1="450" y1="448" x2="600" y2="448" marker-start="url(#arrBlue)" marker-end="url(#arrBlue)"/>
+    </g>
+    <text x="525" y="468" font-size="12" font-weight="700" fill="#64748b" text-anchor="middle">f &lt; v &lt; 2f</text>
+  </g>
+
+  <!-- 第三步：成像规律表 -->
+  <g class="p2-panel" data-zone="3">
+    <rect x="80" y="502" width="740" height="102" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="450" y="528" font-size="14.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">凸透镜成像规律</text>
+    <g font-size="12.5" font-weight="700" fill="#334155">
+      <rect x="100" y="540" width="224" height="48" rx="10" fill="#e8effc"/>
+      <text x="212" y="559" text-anchor="middle">u &gt; 2f</text>
+      <text x="212" y="578" text-anchor="middle" font-size="11.5">倒立缩小实像 · 照相机</text>
+      <rect x="338" y="540" width="224" height="48" rx="10" fill="#e8effc"/>
+      <text x="450" y="559" text-anchor="middle">f &lt; u &lt; 2f</text>
+      <text x="450" y="578" text-anchor="middle" font-size="11.5">倒立放大实像 · 投影仪</text>
+      <rect x="576" y="540" width="224" height="48" rx="10" fill="#e8effc"/>
+      <text x="688" y="559" text-anchor="middle">u &lt; f</text>
+      <text x="688" y="578" text-anchor="middle" font-size="11.5">正立放大虚像 · 放大镜</text>
+    </g>
+  </g>
+</svg>

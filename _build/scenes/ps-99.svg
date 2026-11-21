@@ -1,0 +1,266 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="电磁波谱：从无线电波到伽马射线的组成、波长频率顺序与应用">
+<style>
+[data-scene="ps-99"] .s99-s1,[data-scene="ps-99"] .s99-s2,[data-scene="ps-99"] .s99-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="ps-99"].s1 .s99-s1,[data-scene="ps-99"].s2 .s99-s2,[data-scene="ps-99"].s3 .s99-s3{opacity:1;visibility:visible}
+@keyframes s99fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+@keyframes s99draw{to{stroke-dashoffset:0}}
+@keyframes s99pop{0%{transform:scale(.9);opacity:0}70%{transform:scale(1.03);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s99grow{from{transform:scaleY(.2);opacity:0}to{transform:scaleY(1);opacity:1}}
+[data-scene="ps-99"].s1 .s99-band{transform-box:fill-box;transform-origin:center;animation:s99pop .45s ease both}
+[data-scene="ps-99"].s1 .s99-band2{animation-delay:.08s}
+[data-scene="ps-99"].s1 .s99-band3{animation-delay:.16s}
+[data-scene="ps-99"].s1 .s99-band4{animation-delay:.24s}
+[data-scene="ps-99"].s1 .s99-band5{animation-delay:.32s}
+[data-scene="ps-99"].s1 .s99-band6{animation-delay:.4s}
+[data-scene="ps-99"].s1 .s99-axis{stroke-dasharray:800;stroke-dashoffset:800;animation:s99draw 1.2s ease .4s forwards}
+[data-scene="ps-99"].s1 .s99-glyph{animation:s99fade .5s ease both}
+[data-scene="ps-99"].s2 .s99-seg{transform-box:fill-box;transform-origin:center;animation:s99pop .45s ease both}
+[data-scene="ps-99"].s2 .s99-seg2{animation-delay:.07s}
+[data-scene="ps-99"].s2 .s99-seg3{animation-delay:.14s}
+[data-scene="ps-99"].s2 .s99-seg4{animation-delay:.21s}
+[data-scene="ps-99"].s2 .s99-seg5{animation-delay:.28s}
+[data-scene="ps-99"].s2 .s99-seg6{animation-delay:.35s}
+[data-scene="ps-99"].s2 .s99-num{animation:s99fade .45s ease both}
+[data-scene="ps-99"].s2 .s99-formula{transform-box:fill-box;transform-origin:center;animation:s99pop .55s ease .45s both}
+[data-scene="ps-99"].s3 .s99-use{transform-box:fill-box;transform-origin:center;animation:s99grow .5s ease both}
+[data-scene="ps-99"].s3 .s99-use2{animation-delay:.08s}
+[data-scene="ps-99"].s3 .s99-use3{animation-delay:.16s}
+[data-scene="ps-99"].s3 .s99-use4{animation-delay:.24s}
+[data-scene="ps-99"].s3 .s99-use5{animation-delay:.32s}
+[data-scene="ps-99"].s3 .s99-use6{animation-delay:.4s}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">电磁波谱：从无线电波到 γ 射线</text>
+
+<!-- 第一步：电磁波谱的组成 -->
+<g class="s99-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">把各种电磁波按波长（或频率）排列，就得到电磁波谱</text>
+
+  <rect x="36" y="100" width="828" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+
+  <g class="s99-band">
+    <rect x="48" y="148" width="120" height="48" rx="8" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="108" y="178" font-size="12" font-weight="800" fill="#1e40af" text-anchor="middle">无线电波</text>
+    <path class="s99-glyph" d="M 66 225 C 76 201 86 201 96 225 C 106 249 116 249 126 225 C 134 209 142 209 150 221" fill="none" stroke="#3b82f6" stroke-width="2"/>
+    <text x="108" y="272" font-size="11" fill="#475569" text-anchor="middle">波长最长</text>
+    <text x="108" y="292" font-size="11" fill="#64748b" text-anchor="middle">频率最低</text>
+  </g>
+  <g class="s99-band s99-band2">
+    <rect x="180" y="148" width="120" height="48" rx="8" fill="#fef3c7" stroke="#fcd34d" stroke-width="1.5"/>
+    <text x="240" y="178" font-size="12" font-weight="800" fill="#92400e" text-anchor="middle">红外线</text>
+    <path class="s99-glyph" d="M 198 225 q 3.5 -12 7 0 q 3.5 12 7 0 q 3.5 -12 7 0 q 3.5 12 7 0 q 3.5 -12 7 0 q 3.5 12 7 0 q 3.5 -12 7 0 q 3.5 12 7 0 q 3.5 -12 7 0 q 3.5 12 7 0 q 3.5 -12 7 0 q 3.5 12 7 0" fill="none" stroke="#d97706" stroke-width="2"/>
+    <text x="240" y="272" font-size="11" fill="#475569" text-anchor="middle">波长较长</text>
+    <text x="240" y="292" font-size="11" fill="#64748b" text-anchor="middle">频率较低</text>
+  </g>
+  <g class="s99-band s99-band3">
+    <rect x="312" y="148" width="120" height="48" rx="8" fill="#fce7f3" stroke="#f9a8d4" stroke-width="1.5"/>
+    <text x="372" y="178" font-size="12" font-weight="800" fill="#9d174d" text-anchor="middle">可见光</text>
+    <g class="s99-glyph">
+      <rect x="334" y="205" width="8" height="40" rx="2" fill="#dc2626"/>
+      <rect x="344" y="205" width="8" height="40" rx="2" fill="#f59e0b"/>
+      <rect x="354" y="205" width="8" height="40" rx="2" fill="#eab308"/>
+      <rect x="364" y="205" width="8" height="40" rx="2" fill="#16a34a"/>
+      <rect x="374" y="205" width="8" height="40" rx="2" fill="#2563eb"/>
+      <rect x="384" y="205" width="8" height="40" rx="2" fill="#7c3aed"/>
+    </g>
+    <text x="372" y="272" font-size="11" fill="#475569" text-anchor="middle">400 ~ 760 nm</text>
+    <text x="372" y="292" font-size="11" fill="#64748b" text-anchor="middle">能引起视觉</text>
+  </g>
+  <g class="s99-band s99-band4">
+    <rect x="444" y="148" width="120" height="48" rx="8" fill="#ede9fe" stroke="#c4b5fd" stroke-width="1.5"/>
+    <text x="504" y="178" font-size="12" font-weight="800" fill="#5b21b6" text-anchor="middle">紫外线</text>
+    <path class="s99-glyph" d="M 462 225 q 3.5 -9 7 0 q 3.5 9 7 0 q 3.5 -9 7 0 q 3.5 9 7 0 q 3.5 -9 7 0 q 3.5 9 7 0 q 3.5 -9 7 0 q 3.5 9 7 0 q 3.5 -9 7 0 q 3.5 9 7 0 q 3.5 -9 7 0 q 3.5 9 7 0" fill="none" stroke="#7c3aed" stroke-width="2"/>
+    <text x="504" y="272" font-size="11" fill="#475569" text-anchor="middle">波长较短</text>
+    <text x="504" y="292" font-size="11" fill="#64748b" text-anchor="middle">频率很高</text>
+  </g>
+  <g class="s99-band s99-band5">
+    <rect x="576" y="148" width="120" height="48" rx="8" fill="#e0e7ff" stroke="#a5b4fc" stroke-width="1.5"/>
+    <text x="636" y="178" font-size="12" font-weight="800" fill="#3730a3" text-anchor="middle">X 射线</text>
+    <path class="s99-glyph" d="M 594 225 l 5 -12 l 5 24 l 5 -24 l 5 24 l 5 -24 l 5 24 l 5 -24 l 5 24 l 5 -24 l 5 24 l 5 -24 l 5 24 l 5 -24 l 5 24 l 5 -24 l 5 24 l 5 -12" fill="none" stroke="#4338ca" stroke-width="1.8"/>
+    <text x="636" y="272" font-size="11" fill="#475569" text-anchor="middle">波长很短</text>
+    <text x="636" y="292" font-size="11" fill="#64748b" text-anchor="middle">频率极高</text>
+  </g>
+  <g class="s99-band s99-band6">
+    <rect x="708" y="148" width="120" height="48" rx="8" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5"/>
+    <text x="768" y="178" font-size="12" font-weight="800" fill="#334155" text-anchor="middle">γ 射线</text>
+    <path class="s99-glyph" d="M 726 225 l 4 -8 l 4 16 l 4 -16 l 4 16 l 4 -16 l 4 16 l 4 -16 l 4 16 l 4 -16 l 4 16 l 4 -16 l 4 16 l 4 -16 l 4 16 l 4 -16 l 4 16 l 4 -16 l 4 16 l 4 -16 l 4 16 l 4 -8" fill="none" stroke="#475569" stroke-width="1.6"/>
+    <text x="768" y="272" font-size="11" fill="#475569" text-anchor="middle">波长最短</text>
+    <text x="768" y="292" font-size="11" fill="#64748b" text-anchor="middle">频率最高</text>
+  </g>
+
+  <line class="s99-axis" x1="48" y1="322" x2="828" y2="322" stroke="#dc2626" stroke-width="2" marker-end="url(#arrRed)"/>
+  <text x="450" y="312" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">波长变短、频率升高 →</text>
+
+  <text x="450" y="352" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">它们本质相同，都是电磁波</text>
+  <text x="450" y="376" font-size="11.5" fill="#334155" text-anchor="middle">在真空中的传播速度都相同，都是 c = 3.0×10⁸ m/s</text>
+  <text x="450" y="400" font-size="11" fill="#64748b" text-anchor="middle">伦琴射线就是 X 射线；各波段之间没有严格界限</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电磁波谱包括无线电波、红外线、可见光、紫外线、X 射线和 γ 射线</text>
+</g>
+
+<!-- 第二步：波长频率顺序 -->
+<g class="s99-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">波长与频率一一对应：波长越短，频率越高</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="236" height="28" rx="14" fill="#e8effc"/>
+  <text x="174" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">波长变短，频率升高</text>
+
+  <text x="70" y="172" font-size="11.5" font-weight="800" fill="#b91c1c">波长 λ 减小 →</text>
+
+  <text class="s99-num" x="107" y="198" font-size="11" fill="#475569" text-anchor="middle">10³ m</text>
+  <text class="s99-num" x="182" y="198" font-size="11" fill="#475569" text-anchor="middle">10⁻³ m</text>
+  <text class="s99-num" x="257" y="198" font-size="11" fill="#475569" text-anchor="middle">10⁻⁶ m</text>
+  <text class="s99-num" x="332" y="198" font-size="11" fill="#475569" text-anchor="middle">10⁻⁸ m</text>
+  <text class="s99-num" x="407" y="198" font-size="11" fill="#475569" text-anchor="middle">10⁻¹⁰ m</text>
+  <text class="s99-num" x="482" y="198" font-size="11" fill="#475569" text-anchor="middle">10⁻¹² m</text>
+
+  <g class="s99-seg">
+    <rect x="70" y="206" width="75" height="40" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.2"/>
+    <text x="107" y="232" font-size="11" font-weight="800" fill="#1e40af" text-anchor="middle">无线电波</text>
+  </g>
+  <g class="s99-seg s99-seg2">
+    <rect x="145" y="206" width="75" height="40" fill="#fef3c7" stroke="#fcd34d" stroke-width="1.2"/>
+    <text x="182" y="232" font-size="11" font-weight="800" fill="#92400e" text-anchor="middle">红外线</text>
+  </g>
+  <g class="s99-seg s99-seg3">
+    <rect x="220" y="206" width="75" height="40" fill="#fce7f3" stroke="#f9a8d4" stroke-width="1.2"/>
+    <text x="257" y="232" font-size="11" font-weight="800" fill="#9d174d" text-anchor="middle">可见光</text>
+  </g>
+  <g class="s99-seg s99-seg4">
+    <rect x="295" y="206" width="75" height="40" fill="#ede9fe" stroke="#c4b5fd" stroke-width="1.2"/>
+    <text x="332" y="232" font-size="11" font-weight="800" fill="#5b21b6" text-anchor="middle">紫外线</text>
+  </g>
+  <g class="s99-seg s99-seg5">
+    <rect x="370" y="206" width="75" height="40" fill="#e0e7ff" stroke="#a5b4fc" stroke-width="1.2"/>
+    <text x="407" y="232" font-size="11" font-weight="800" fill="#3730a3" text-anchor="middle">X 射线</text>
+  </g>
+  <g class="s99-seg s99-seg6">
+    <rect x="445" y="206" width="75" height="40" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.2"/>
+    <text x="482" y="232" font-size="11" font-weight="800" fill="#334155" text-anchor="middle">γ 射线</text>
+  </g>
+
+  <text class="s99-num" x="107" y="270" font-size="11" fill="#475569" text-anchor="middle">10⁵ Hz</text>
+  <text class="s99-num" x="182" y="270" font-size="11" fill="#475569" text-anchor="middle">10¹¹ Hz</text>
+  <text class="s99-num" x="257" y="270" font-size="11" fill="#475569" text-anchor="middle">10¹⁴ Hz</text>
+  <text class="s99-num" x="332" y="270" font-size="11" fill="#475569" text-anchor="middle">10¹⁵ Hz</text>
+  <text class="s99-num" x="407" y="270" font-size="11" fill="#475569" text-anchor="middle">10¹⁸ Hz</text>
+  <text class="s99-num" x="482" y="270" font-size="11" fill="#475569" text-anchor="middle">10²⁰ Hz</text>
+
+  <text x="70" y="294" font-size="11.5" font-weight="800" fill="#1d4ed8">频率 f 升高 →</text>
+
+  <rect x="70" y="314" width="450" height="58" rx="10" fill="#f8fbff" stroke="#dbe6f2" stroke-width="1.5"/>
+  <text x="295" y="338" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">同一介质中 c 相同，λ 与 f 成反比</text>
+  <text x="295" y="360" font-size="11" fill="#64748b" text-anchor="middle">λ 越长，f 越低；λ 越短，f 越高</text>
+
+  <text x="296" y="398" font-size="11" fill="#64748b" text-anchor="middle">可见光只是电磁波谱中很窄的一段</text>
+  <text x="296" y="420" font-size="11" font-weight="800" fill="#9d174d" text-anchor="middle">波长约 400~760 nm，频率约 4~7.5×10¹⁴ Hz</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">波长、频率与波速</text>
+
+  <g class="s99-formula">
+    <rect x="596" y="160" width="248" height="72" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="720" y="194" font-size="24" font-weight="900" fill="#1e3a8a" text-anchor="middle">c = λf</text>
+    <text x="720" y="216" font-size="11" fill="#475569" text-anchor="middle">c 为电磁波在真空中的速度</text>
+  </g>
+
+  <text x="720" y="262" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">λ = c / f</text>
+  <text x="720" y="290" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">f = c / λ</text>
+
+  <rect x="596" y="310" width="248" height="50" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="332" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">λ 长 → f 低</text>
+  <text x="720" y="352" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">λ 短 → f 高</text>
+
+  <text x="720" y="386" font-size="11" fill="#334155" text-anchor="middle">相邻波段的首尾有重叠</text>
+  <text x="720" y="408" font-size="11" fill="#334155" text-anchor="middle">分界并不绝对</text>
+  <text x="720" y="428" font-size="11" fill="#64748b" text-anchor="middle">不同波段只是 λ、f 不同</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">c = λf：波速相同时，波长越短，频率越高</text>
+</g>
+
+<!-- 第三步：应用 -->
+<g class="s99-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">不同波段的特性不同，用途也各不相同</text>
+
+  <g class="s99-use">
+    <rect x="36" y="112" width="130" height="296" rx="12" fill="#ffffff" stroke="#bfdbfe" stroke-width="2"/>
+    <rect x="36" y="112" width="130" height="56" rx="12" fill="#dbeafe"/>
+    <text x="101" y="146" font-size="13" font-weight="900" fill="#1e40af" text-anchor="middle">无线电波</text>
+    <text x="101" y="184" font-size="11" font-weight="800" fill="#1e3a8a" text-anchor="middle">波长最长</text>
+    <text x="101" y="204" font-size="11" fill="#64748b" text-anchor="middle">易衍射、传得远</text>
+    <text x="101" y="242" font-size="11.5" fill="#334155" text-anchor="middle">广播通信</text>
+    <text x="101" y="274" font-size="11.5" fill="#334155" text-anchor="middle">电视信号</text>
+    <text x="101" y="306" font-size="11.5" fill="#334155" text-anchor="middle">手机通信</text>
+    <text x="101" y="338" font-size="11.5" fill="#334155" text-anchor="middle">卫星导航</text>
+  </g>
+  <g class="s99-use s99-use2">
+    <rect x="172" y="112" width="130" height="296" rx="12" fill="#ffffff" stroke="#fde68a" stroke-width="2"/>
+    <rect x="172" y="112" width="130" height="56" rx="12" fill="#fef3c7"/>
+    <text x="237" y="146" font-size="13" font-weight="900" fill="#92400e" text-anchor="middle">红外线</text>
+    <text x="237" y="184" font-size="11" font-weight="800" fill="#92400e" text-anchor="middle">热效应显著</text>
+    <text x="237" y="204" font-size="11" fill="#64748b" text-anchor="middle">一切物体都辐射</text>
+    <text x="237" y="242" font-size="11.5" fill="#334155" text-anchor="middle">遥控</text>
+    <text x="237" y="274" font-size="11.5" fill="#334155" text-anchor="middle">测温</text>
+    <text x="237" y="306" font-size="11.5" fill="#334155" text-anchor="middle">遥感</text>
+    <text x="237" y="338" font-size="11.5" fill="#334155" text-anchor="middle">夜视仪</text>
+  </g>
+  <g class="s99-use s99-use3">
+    <rect x="308" y="112" width="130" height="296" rx="12" fill="#ffffff" stroke="#f9a8d4" stroke-width="2"/>
+    <rect x="308" y="112" width="130" height="56" rx="12" fill="#fce7f3"/>
+    <text x="373" y="146" font-size="13" font-weight="900" fill="#9d174d" text-anchor="middle">可见光</text>
+    <text x="373" y="184" font-size="11" font-weight="800" fill="#9d174d" text-anchor="middle">引起视觉</text>
+    <text x="373" y="204" font-size="11" fill="#64748b" text-anchor="middle">红橙黄绿蓝靛紫</text>
+    <text x="373" y="242" font-size="11.5" fill="#334155" text-anchor="middle">照明</text>
+    <text x="373" y="274" font-size="11.5" fill="#334155" text-anchor="middle">摄影</text>
+    <text x="373" y="306" font-size="11.5" fill="#334155" text-anchor="middle">显示成像</text>
+    <text x="373" y="338" font-size="11.5" fill="#334155" text-anchor="middle">光合作用</text>
+  </g>
+  <g class="s99-use s99-use4">
+    <rect x="444" y="112" width="130" height="296" rx="12" fill="#ffffff" stroke="#c4b5fd" stroke-width="2"/>
+    <rect x="444" y="112" width="130" height="56" rx="12" fill="#ede9fe"/>
+    <text x="509" y="146" font-size="13" font-weight="900" fill="#5b21b6" text-anchor="middle">紫外线</text>
+    <text x="509" y="184" font-size="11" font-weight="800" fill="#5b21b6" text-anchor="middle">荧光效应强</text>
+    <text x="509" y="204" font-size="11" fill="#64748b" text-anchor="middle">能杀菌，过量伤皮肤</text>
+    <text x="509" y="242" font-size="11.5" fill="#334155" text-anchor="middle">杀菌消毒</text>
+    <text x="509" y="274" font-size="11.5" fill="#334155" text-anchor="middle">验钞防伪</text>
+    <text x="509" y="306" font-size="11.5" fill="#334155" text-anchor="middle">促进合成维生素 D</text>
+    <text x="509" y="338" font-size="11.5" fill="#334155" text-anchor="middle">诱虫灯</text>
+  </g>
+  <g class="s99-use s99-use5">
+    <rect x="580" y="112" width="130" height="296" rx="12" fill="#ffffff" stroke="#a5b4fc" stroke-width="2"/>
+    <rect x="580" y="112" width="130" height="56" rx="12" fill="#e0e7ff"/>
+    <text x="645" y="146" font-size="13" font-weight="900" fill="#3730a3" text-anchor="middle">X 射线</text>
+    <text x="645" y="184" font-size="11" font-weight="800" fill="#3730a3" text-anchor="middle">穿透能力强</text>
+    <text x="645" y="204" font-size="11" fill="#64748b" text-anchor="middle">伦琴射线</text>
+    <text x="645" y="242" font-size="11.5" fill="#334155" text-anchor="middle">医学透视</text>
+    <text x="645" y="274" font-size="11.5" fill="#334155" text-anchor="middle">安检成像</text>
+    <text x="645" y="306" font-size="11.5" fill="#334155" text-anchor="middle">晶体结构分析</text>
+    <text x="645" y="338" font-size="11.5" fill="#334155" text-anchor="middle">工业探伤</text>
+  </g>
+  <g class="s99-use s99-use6">
+    <rect x="716" y="112" width="130" height="296" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+    <rect x="716" y="112" width="130" height="56" rx="12" fill="#e2e8f0"/>
+    <text x="781" y="146" font-size="13" font-weight="900" fill="#334155" text-anchor="middle">γ 射线</text>
+    <text x="781" y="184" font-size="11" font-weight="800" fill="#334155" text-anchor="middle">穿透能力最强</text>
+    <text x="781" y="204" font-size="11" fill="#64748b" text-anchor="middle">能量最高</text>
+    <text x="781" y="242" font-size="11.5" fill="#334155" text-anchor="middle">治疗肿瘤</text>
+    <text x="781" y="274" font-size="11.5" fill="#334155" text-anchor="middle">工业探伤</text>
+    <text x="781" y="306" font-size="11.5" fill="#334155" text-anchor="middle">杀菌保鲜</text>
+    <text x="781" y="338" font-size="11.5" fill="#334155" text-anchor="middle">研究核反应</text>
+  </g>
+
+  <text x="450" y="428" font-size="11" fill="#64748b" text-anchor="middle">波段只是波长、频率不同，本质都是电磁波；实际使用要综合考虑穿透能力与安全性</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">无线电波通信、红外线测温、紫外线消毒、X 射线透视、γ 射线治疗肿瘤</text>
+</g>
+</svg>

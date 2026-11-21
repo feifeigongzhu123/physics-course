@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-version="v0.1.0" data-build="2026-11-19">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="version" content="0.1.0">
+<title>初中物理 · 动画精讲（样例）</title>
+<style>
+/*__CSS__*/
+</style>
+</head>
+<body>
+<div class="app">
+  <section id="home" class="view">
+    <div class="card hero">
+      <div class="hero-top">
+        <span class="kicker">初中物理 · 样例课</span>
+        <span class="pill">3 步动画 · 语音同步</span>
+      </div>
+      <h1 id="homeTitle">3 个知识点，每个 3 步看懂</h1>
+      <p class="sub" id="homeSub">光学与电路 · 9 段动画 · 15 道中考真题改编 · 每题逐项解析</p>
+      <div class="stats">
+        <div><b id="statLearned">0</b><span>已学知识点</span></div>
+        <div><b id="statAnswered">0</b><span>已答题目</span></div>
+        <div><b id="statWrong">0</b><span>错题</span></div>
+      </div>
+    </div>
+    <div class="units" id="units"></div>
+    <div class="foot">
+      <button id="downloadAll" type="button">下载本学段语音</button>
+      <button id="reset" type="button">重置学习记录</button>
+      <span>进度保存在本机浏览器 · <a class="portal" href="index.html">返回总目录</a></span>
+    </div>
+    <div class="ver-line" id="appVersion"></div>
+  </section>
+
+  <section id="lesson" class="view hidden">
+    <div class="lesson-top">
+      <button id="back" type="button">← 返回目录</button>
+      <div class="top-right">
+        <a class="portal" href="index.html">⌂ 总目录</a>
+        <span class="crumb" id="crumb"></span>
+      </div>
+    </div>
+
+    <div class="card lesson">
+      <div class="head">
+        <div>
+          <span class="kicker" id="lessonKicker">初中物理</span>
+          <h1 id="lessonTitle"></h1>
+          <div class="sub" id="lessonSub"></div>
+        </div>
+        <span class="pill" id="learnedTag">3 步动画</span>
+      </div>
+
+      <div class="steps" id="stepChips"></div>
+
+      <div class="stage-wrap" id="stageBox">
+        <svg id="globalDefs" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+          <defs>
+            <linearGradient id="gBg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#f7fbff"/><stop offset="1" stop-color="#e8f2fd"/>
+            </linearGradient>
+            <linearGradient id="gBench" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#eef2f8"/><stop offset="1" stop-color="#dfe7f2"/>
+            </linearGradient>
+            <linearGradient id="gGlass" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ffffff" stop-opacity=".78"/>
+              <stop offset=".45" stop-color="#dcebf9" stop-opacity=".38"/>
+              <stop offset="1" stop-color="#b8d4ee" stop-opacity=".5"/>
+            </linearGradient>
+            <linearGradient id="gSteel" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#c9d5e5"/><stop offset=".5" stop-color="#9aabc2"/><stop offset="1" stop-color="#c9d5e5"/>
+            </linearGradient>
+            <pattern id="dotsPat" width="26" height="26" patternUnits="userSpaceOnUse">
+              <circle cx="2" cy="2" r="1.2" fill="#b9cde4" opacity=".32"/>
+            </pattern>
+            <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+              <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#40506a" flood-opacity=".16"/>
+            </filter>
+            <marker id="arrBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0 0 L10 5 L0 10 z" fill="#1d4ed8"/>
+            </marker>
+            <marker id="arrRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/>
+            </marker>
+            <marker id="arrGreen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0 0 L10 5 L0 10 z" fill="#059669"/>
+            </marker>
+            <marker id="arrAmber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0 0 L10 5 L0 10 z" fill="#d97706"/>
+            </marker>
+          </defs>
+        </svg>
+        <!--__SCENES__-->
+      </div>
+      <div class="stage-hint">讲解自动定位动画区 · 也可左右滑动</div>
+
+      <div class="caption" id="caption"></div>
+      <div class="equation" id="equation"></div>
+
+      <div class="readouts" id="readouts"></div>
+
+      <div class="controls">
+        <button class="play" id="play" type="button">▶ 播放讲解</button>
+        <button class="pause" id="pause" type="button" hidden>⏸ 暂停</button>
+        <button class="sound" id="sound" type="button">🔊 讲解</button>
+      </div>
+      <div class="audio-progress"><span id="audioBar"></span></div>
+      <div class="note">3 步动画 · 语音按需加载 · 可暂停、重播</div>
+      <div class="ver-line" id="lessonVersion"></div>
+    </div>
+
+    <div class="q-head">
+      <h2>5 道题 · 中考真题改编</h2>
+      <span id="qProgress"></span>
+    </div>
+    <div id="questions"></div>
+
+    <div class="lesson-nav">
+      <button id="prevPoint" type="button">← 上一个知识点</button>
+      <button id="nextPoint" type="button">下一个知识点 →</button>
+    </div>
+  </section>
+</div>
+
+<div class="error-bar" id="errorBar"></div>
+
+<script id="physics-data" type="application/json">__DATA_JSON__</script>
+<script>
+/*__APP_JS__*/
+</script>
+</body>
+</html>

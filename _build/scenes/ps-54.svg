@@ -1,0 +1,156 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="闭合电路欧姆定律：电动势等于内电压加外电压、电流等于电动势除以总电阻、路端电压随外电阻变化">
+<style>
+[data-scene="ps-54"] .s54-step{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="ps-54"].s1 .s54-step1,[data-scene="ps-54"].s2 .s54-step2,[data-scene="ps-54"].s3 .s54-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes s54draw{to{stroke-dashoffset:0}}
+@keyframes s54pop{0%{transform:scale(.88);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes s54rise{from{transform:translateY(10px);opacity:0}to{transform:none;opacity:1}}
+@keyframes s54grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes s54pulse{0%,100%{opacity:.45}50%{opacity:1}}
+[data-scene="ps-54"].s1 .s54-loop{stroke-dasharray:1200;stroke-dashoffset:1200;animation:s54draw 1s ease .1s both}
+[data-scene="ps-54"].s1 .s54-split{transform-box:fill-box;transform-origin:left center;animation:s54grow .8s ease .6s both}
+[data-scene="ps-54"].s1 .s54-e{animation:s54pulse 1.6s ease-in-out infinite}
+[data-scene="ps-54"].s2 .s54-formula{transform-box:fill-box;transform-origin:center;animation:s54pop .55s ease both}
+[data-scene="ps-54"].s2 .s54-card{animation:s54rise .5s ease both}
+[data-scene="ps-54"].s2 .s54-k2{animation-delay:.12s}
+[data-scene="ps-54"].s2 .s54-k3{animation-delay:.24s}
+[data-scene="ps-54"].s3 .s54-curve{stroke-dasharray:500;stroke-dashoffset:500;animation:s54draw 1.1s ease .2s both}
+[data-scene="ps-54"].s3 .s54-dot{transform-box:fill-box;transform-origin:center;animation:s54pop .45s ease .9s both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="532" width="900" height="88" fill="url(#gBench)"/>
+<line x1="0" y1="532" x2="900" y2="532" stroke="#cbd5e1" stroke-width="2.5"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">闭合电路欧姆定律：电动势分给内电路和外电路</text>
+
+<!-- 第一步：E = U内 + U外 -->
+<g class="s54-step s54-step1" data-zone="1">
+  <text x="50" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 1 步 · 电动势 E 的两份去向</text>
+
+  <rect x="46" y="100" width="494" height="368" rx="18" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="62" y="126" font-size="13" font-weight="800" fill="#1e3a8a">闭合电路</text>
+
+  <path class="s54-loop" d="M110 330 V150 H490 V210 M490 280 V330 H336 M300 330 H266 M250 330 H110" fill="none" stroke="#334155" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="478" y="210" width="24" height="70" rx="3" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/>
+  <text x="508" y="252" font-size="13" font-weight="800" fill="#92400e" text-anchor="start">R</text>
+
+  <line x1="250" y1="318" x2="250" y2="342" stroke="#334155" stroke-width="4"/>
+  <line x1="266" y1="324" x2="266" y2="336" stroke="#334155" stroke-width="4"/>
+  <rect x="300" y="320" width="36" height="20" rx="3" fill="#fff7ed" stroke="#d97706" stroke-width="2"/>
+  <text x="318" y="312" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">r</text>
+
+  <line x1="240" y1="150" x2="290" y2="150" stroke="#1d4ed8" stroke-width="4" marker-end="url(#arrBlue)"/>
+  <text x="265" y="138" font-size="13" font-weight="800" fill="#1d4ed8" text-anchor="middle">I</text>
+
+  <line x1="410" y1="245" x2="476" y2="245" stroke="#059669" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <text x="404" y="240" font-size="12" font-weight="800" fill="#047857" text-anchor="end">U外 = IR</text>
+  <line x1="300" y1="356" x2="336" y2="356" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <text x="318" y="378" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">U内 = Ir</text>
+
+  <text x="258" y="404" font-size="13" font-weight="900" fill="#1e3a8a" text-anchor="middle">E</text>
+  <text x="190" y="404" font-size="11.5" fill="#64748b" text-anchor="end">电源电动势</text>
+
+  <rect x="556" y="100" width="294" height="250" rx="18" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="572" y="130" font-size="13.5" font-weight="800" fill="#1e3a8a">电动势的去向</text>
+  <rect x="576" y="170" width="260" height="54" rx="8" fill="none" stroke="#94a3b8" stroke-width="2"/>
+  <rect class="s54-split" x="576" y="170" width="182" height="54" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+  <rect class="s54-split" x="758" y="170" width="78" height="54" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="667" y="203" font-size="12" font-weight="800" fill="#047857" text-anchor="middle">U外</text>
+  <text x="797" y="203" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">U内</text>
+  <text x="667" y="248" font-size="11.5" fill="#475569" text-anchor="middle">U外 = IR</text>
+  <text x="797" y="248" font-size="11.5" fill="#475569" text-anchor="middle">U内 = Ir</text>
+  <text x="703" y="292" font-size="16" font-weight="900" fill="#1e3a8a" text-anchor="middle">E = U外 + U内</text>
+  <text x="703" y="322" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">= I(R + r)</text>
+
+  <rect x="556" y="368" width="294" height="100" rx="16" fill="#e8effc" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="703" y="400" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">内电路与外电路串联</text>
+  <text x="703" y="426" font-size="11.5" fill="#475569" text-anchor="middle">电流处处相等，电压按电阻分配</text>
+  <text x="703" y="452" font-size="11.5" fill="#475569" text-anchor="middle">E 是电源提供的总电压</text>
+
+  <rect x="46" y="486" width="804" height="40" rx="11" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="511" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电动势 = 内电压 + 外电压：E = U内 + U外 = Ir + IR</text>
+</g>
+
+<!-- 第二步：I = E / (R + r) -->
+<g class="s54-step s54-step2" data-zone="2">
+  <text x="50" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 2 步 · 闭合电路的欧姆定律</text>
+
+  <g class="s54-formula">
+    <rect x="120" y="108" width="660" height="170" rx="20" fill="#ffffff" stroke="#bfdbfe" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="450" y="156" font-size="17" font-weight="800" fill="#1e3a8a" text-anchor="middle">E = IR + Ir = I(R + r)</text>
+    <text x="450" y="222" font-size="30" font-weight="900" fill="#1d4ed8" text-anchor="middle">I = E / (R + r)</text>
+    <text x="450" y="256" font-size="12" fill="#475569" text-anchor="middle">电流跟电动势成正比，跟内、外电阻之和成反比</text>
+  </g>
+
+  <g class="s54-card">
+    <rect x="46" y="304" width="260" height="150" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="62" y="336" font-size="13.5" font-weight="800" fill="#1e3a8a">E 由电源决定</text>
+    <text x="62" y="366" font-size="11.5" fill="#475569">与外电路无关</text>
+    <text x="62" y="392" font-size="11.5" fill="#475569">反映电源转化本领</text>
+    <text x="62" y="418" font-size="11.5" fill="#475569">单位：伏特（V）</text>
+  </g>
+
+  <g class="s54-card s54-k2">
+    <rect x="320" y="304" width="260" height="150" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="336" y="336" font-size="13.5" font-weight="800" fill="#1e3a8a">R + r 是总电阻</text>
+    <text x="336" y="366" font-size="11.5" fill="#475569">内、外电路串联</text>
+    <text x="336" y="392" font-size="11.5" fill="#475569">电流处处相等</text>
+    <text x="336" y="418" font-size="11.5" fill="#475569">r 很小，但不能忽略</text>
+  </g>
+
+  <g class="s54-card s54-k3">
+    <rect x="594" y="304" width="260" height="150" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="610" y="336" font-size="13.5" font-weight="800" fill="#1e3a8a">I 与 R 非线性</text>
+    <text x="610" y="366" font-size="11.5" fill="#475569">R 增大，I 减小</text>
+    <text x="610" y="392" font-size="11.5" fill="#475569">R→∞，I→0</text>
+    <text x="610" y="418" font-size="11.5" fill="#475569">R=0 时 I=E/r 最大</text>
+  </g>
+
+  <rect x="46" y="484" width="808" height="42" rx="11" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="510" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">同一电源：外电阻越小，电流越大；由 U外 = E − Ir 还能求出路端电压</text>
+</g>
+
+<!-- 第三步：路端电压与外电阻 -->
+<g class="s54-step s54-step3" data-zone="3">
+  <text x="50" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 3 步 · 路端电压随外电阻怎样变</text>
+
+  <rect x="46" y="100" width="500" height="380" rx="18" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <line x1="110" y1="430" x2="110" y2="140" stroke="#334155" stroke-width="2.5"/>
+  <line x1="110" y1="430" x2="510" y2="430" stroke="#334155" stroke-width="2.5"/>
+  <text x="92" y="152" font-size="13" font-weight="800" fill="#334155" text-anchor="middle">U</text>
+  <text x="506" y="452" font-size="13" font-weight="800" fill="#334155" text-anchor="middle">R</text>
+  <text x="94" y="450" font-size="12" fill="#64748b" text-anchor="middle">O</text>
+
+  <line x1="120" y1="180" x2="500" y2="180" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="7 5"/>
+  <text x="126" y="172" font-size="13" font-weight="800" fill="#64748b" text-anchor="start">E</text>
+
+  <path class="s54-curve" d="M110 430 C 170 340, 260 245, 500 192" fill="none" stroke="#1d4ed8" stroke-width="3.5"/>
+  <circle class="s54-dot" cx="500" cy="192" r="5" fill="#1d4ed8"/>
+  <circle class="s54-dot" cx="110" cy="430" r="5" fill="#b91c1c"/>
+  <text x="500" y="156" font-size="11.5" font-weight="800" fill="#1d4ed8" text-anchor="end">R→∞，U→E</text>
+  <text x="130" y="462" font-size="11" fill="#b91c1c">短路 R=0，U=0</text>
+  <text x="320" y="330" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">U = ER / (R + r)</text>
+  <text x="320" y="356" font-size="11.5" fill="#64748b" text-anchor="middle">外电阻越大，路端电压越接近 E</text>
+
+  <rect x="562" y="100" width="288" height="380" rx="18" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="578" y="130" font-size="13.5" font-weight="800" fill="#1e3a8a">外电阻改变时</text>
+  <text x="578" y="166" font-size="12.5" font-weight="800" fill="#1d4ed8">R ↑ → I ↓</text>
+  <text x="578" y="192" font-size="12.5" font-weight="800" fill="#047857">→ U外 ↑</text>
+  <line x1="578" y1="208" x2="834" y2="208" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="578" y="238" font-size="12.5" font-weight="800" fill="#1d4ed8">R ↓ → I ↑</text>
+  <text x="578" y="264" font-size="12.5" font-weight="800" fill="#b91c1c">→ U外 ↓</text>
+  <line x1="578" y1="280" x2="834" y2="280" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="578" y="310" font-size="12" fill="#334155">断路 R→∞：I=0，U=E</text>
+  <text x="578" y="336" font-size="12" fill="#334155">短路 R=0：U=0，I=E/r</text>
+  <text x="578" y="358" font-size="11" fill="#64748b">短路时电流最大</text>
+  <line x1="578" y1="374" x2="834" y2="374" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="578" y="400" font-size="11.5" font-weight="800" fill="#1e3a8a">U-I 图线是直线</text>
+  <text x="578" y="422" font-size="11.5" fill="#475569">U = E − Ir，斜率绝对值是 r</text>
+  <text x="578" y="444" font-size="11" fill="#64748b">下一节实验就用它求 E、r</text>
+
+  <rect x="46" y="496" width="804" height="30" rx="9" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="516" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">外电阻越大，路端电压越大；但电流越小。断路电压最大，短路电流最大</text>
+</g>
+</svg>

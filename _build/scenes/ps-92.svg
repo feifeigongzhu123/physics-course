@@ -1,0 +1,212 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="交变电流：线圈在匀强磁场中转动产生正弦交流电、中性面与e-t图像">
+<style>
+[data-scene="ps-92"] .s92-s1,[data-scene="ps-92"] .s92-s2,[data-scene="ps-92"] .s92-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="ps-92"].s1 .s92-s1,[data-scene="ps-92"].s2 .s92-s2,[data-scene="ps-92"].s3 .s92-s3{opacity:1;visibility:visible}
+@keyframes s92fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+@keyframes s92draw{to{stroke-dashoffset:0}}
+@keyframes s92pop{0%{transform:scale(.86);opacity:0}70%{transform:scale(1.04);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s92flow{to{stroke-dashoffset:-40}}
+@keyframes s92pulse{0%,100%{opacity:.45}50%{opacity:1}}
+[data-scene="ps-92"].s1 .s92-arrow{stroke-dasharray:7 7;animation:s92flow 1.1s linear infinite}
+[data-scene="ps-92"].s1 .s92-coil{transform-box:fill-box;transform-origin:center;animation:s92pop .6s ease .2s both}
+[data-scene="ps-92"].s1 .s92-card{transform-box:fill-box;transform-origin:center;animation:s92pop .55s ease .35s both}
+[data-scene="ps-92"].s2 .s92-panel{transform-box:fill-box;transform-origin:center;animation:s92pop .55s ease both}
+[data-scene="ps-92"].s2 .s92-panel2{animation-delay:.18s}
+[data-scene="ps-92"].s2 .s92-pulse{animation:s92pulse 1.5s ease-in-out infinite}
+[data-scene="ps-92"].s2 .s92-pulse2{animation-delay:.5s}
+[data-scene="ps-92"].s3 .s92-curve{stroke-dasharray:620;stroke-dashoffset:620;animation:s92draw 1.5s ease .2s forwards}
+[data-scene="ps-92"].s3 .s92-dot{transform-box:fill-box;transform-origin:center;animation:s92pulse 1.6s ease-in-out infinite}
+[data-scene="ps-92"].s3 .s92-note{animation:s92fade .5s ease .8s both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">交变电流：线圈转动产生正弦式交流电</text>
+
+<!-- 第一步：交变电流的产生 -->
+<g class="s92-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">矩形线圈在匀强磁场中绕垂直于磁场方向的轴匀速转动</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="236" height="28" rx="14" fill="#e8effc"/>
+  <text x="174" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">线圈在匀强磁场中转动</text>
+
+  <rect x="68" y="178" width="46" height="176" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="91" y="272" font-size="16" font-weight="900" fill="#b91c1c" text-anchor="middle">N</text>
+  <rect x="462" y="178" width="46" height="176" rx="6" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="485" y="272" font-size="16" font-weight="900" fill="#1e3a8a" text-anchor="middle">S</text>
+
+  <g stroke="#94a3b8" stroke-width="1.6" opacity=".85">
+    <line class="s92-arrow" x1="120" y1="200" x2="452" y2="200" marker-end="url(#arrBlue)"/>
+    <line class="s92-arrow" x1="120" y1="232" x2="452" y2="232" marker-end="url(#arrBlue)"/>
+    <line class="s92-arrow" x1="120" y1="264" x2="452" y2="264" marker-end="url(#arrBlue)"/>
+    <line class="s92-arrow" x1="120" y1="296" x2="452" y2="296" marker-end="url(#arrBlue)"/>
+    <line class="s92-arrow" x1="120" y1="328" x2="452" y2="328" marker-end="url(#arrBlue)"/>
+  </g>
+  <text x="286" y="194" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">B</text>
+
+  <line x1="299" y1="158" x2="299" y2="382" stroke="#64748b" stroke-width="1.6" stroke-dasharray="6 5"/>
+  <text x="299" y="152" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">O</text>
+  <text x="299" y="398" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">O′</text>
+
+  <g class="s92-coil">
+    <polygon points="244,206 338,184 354,320 260,342" fill="#fef3c7" stroke="#b45309" stroke-width="5" stroke-linejoin="round"/>
+    <line x1="252" y1="220" x2="344" y2="199" stroke="#f59e0b" stroke-width="1.5"/>
+    <line x1="255" y1="250" x2="347" y2="229" stroke="#f59e0b" stroke-width="1.5"/>
+    <line x1="258" y1="280" x2="350" y2="259" stroke="#f59e0b" stroke-width="1.5"/>
+    <line x1="261" y1="310" x2="353" y2="289" stroke="#f59e0b" stroke-width="1.5"/>
+  </g>
+  <path d="M259 176 A44 23 0 1 1 343 182" fill="none" stroke="#d97706" stroke-width="2.5" marker-end="url(#arrAmber)"/>
+  <text x="358" y="168" font-size="12" font-weight="900" fill="#b45309">ω</text>
+  <text x="299" y="374" font-size="11" font-weight="700" fill="#92400e" text-anchor="middle">矩形线圈</text>
+
+  <text x="296" y="420" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">线圈匀速转动，两条边切割磁感线，产生感应电动势</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="694" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">交变电流的产生</text>
+
+  <g class="s92-card">
+    <circle cx="610" cy="178" r="12" fill="#dbeafe"/>
+    <text x="610" y="183" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">1</text>
+    <text x="632" y="183" font-size="11.5" font-weight="700" fill="#334155">线圈匀速转动</text>
+
+    <circle cx="610" cy="226" r="12" fill="#dbeafe"/>
+    <text x="610" y="231" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">2</text>
+    <text x="632" y="231" font-size="11.5" font-weight="700" fill="#334155">电动势按正弦变化</text>
+
+    <circle cx="610" cy="274" r="12" fill="#dbeafe"/>
+    <text x="610" y="279" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">3</text>
+    <text x="632" y="279" font-size="11.5" font-weight="700" fill="#334155">电流大小、方向周期变化</text>
+
+    <circle cx="610" cy="322" r="12" fill="#dbeafe"/>
+    <text x="610" y="327" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">4</text>
+    <text x="632" y="327" font-size="11.5" font-weight="700" fill="#334155">每转一周方向改变两次</text>
+  </g>
+
+  <rect x="596" y="346" width="248" height="42" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="720" y="374" font-size="17" font-weight="900" fill="#1e3a8a" text-anchor="middle">e = Eₘ sin ωt</text>
+  <text x="720" y="414" font-size="11" fill="#64748b" text-anchor="middle">我国电网交流电：f = 50 Hz</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">线圈每转一周，感应电动势和电流的方向改变两次，这就是交变电流</text>
+</g>
+
+<!-- 第二步：线圈转动的特殊位置 -->
+<g class="s92-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">线圈平面与磁场垂直的位置叫中性面，此处感应电动势为零</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="250" height="28" rx="14" fill="#e8effc"/>
+  <text x="181" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">线圈转动的两个特殊位置</text>
+
+  <g class="s92-panel">
+    <rect x="56" y="156" width="236" height="190" rx="12" fill="#f8fafc" stroke="#dbe6f2" stroke-width="1.5"/>
+    <text x="174" y="180" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">中性面：线圈平面 ⊥ B</text>
+    <g stroke="#94a3b8" stroke-width="1.5">
+      <line x1="72" y1="212" x2="272" y2="212" marker-end="url(#arrBlue)"/>
+      <line x1="72" y1="244" x2="272" y2="244" marker-end="url(#arrBlue)"/>
+      <line x1="72" y1="276" x2="272" y2="276" marker-end="url(#arrBlue)"/>
+      <line x1="72" y1="308" x2="272" y2="308" marker-end="url(#arrBlue)"/>
+    </g>
+    <line x1="174" y1="198" x2="174" y2="330" stroke="#b45309" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="174" cy="264" r="5" fill="#d97706"/>
+    <text class="s92-pulse" x="174" y="342" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">Φ 最大，e = 0</text>
+  </g>
+
+  <g class="s92-panel s92-panel2">
+    <rect x="308" y="156" width="236" height="190" rx="12" fill="#f8fafc" stroke="#dbe6f2" stroke-width="1.5"/>
+    <text x="426" y="180" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">平行位置：线圈平面 ∥ B</text>
+    <g stroke="#94a3b8" stroke-width="1.5">
+      <line x1="324" y1="212" x2="524" y2="212" marker-end="url(#arrBlue)"/>
+      <line x1="324" y1="244" x2="524" y2="244" marker-end="url(#arrBlue)"/>
+      <line x1="324" y1="276" x2="524" y2="276" marker-end="url(#arrBlue)"/>
+      <line x1="324" y1="308" x2="524" y2="308" marker-end="url(#arrBlue)"/>
+    </g>
+    <line x1="336" y1="264" x2="516" y2="264" stroke="#b45309" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="426" cy="264" r="5" fill="#d97706"/>
+    <text class="s92-pulse s92-pulse2" x="426" y="342" font-size="11.5" font-weight="800" fill="#059669" text-anchor="middle">Φ = 0，e 最大</text>
+  </g>
+
+  <text x="296" y="374" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">中性面：磁通量最大，但磁通量变化率为零</text>
+  <text x="296" y="398" font-size="11.5" font-weight="700" fill="#1d4ed8" text-anchor="middle">平行位置：磁通量为零，但变化率最大</text>
+  <text x="296" y="422" font-size="11" fill="#64748b" text-anchor="middle">感应电动势 e 与磁通量的变化率成正比</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="694" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">中性面的特点</text>
+
+  <text x="598" y="176" font-size="11.5" font-weight="700" fill="#334155">· 线圈平面与磁场垂直</text>
+  <text x="598" y="204" font-size="11.5" font-weight="700" fill="#334155">· 穿过线圈的磁通量最大</text>
+  <text x="598" y="232" font-size="11.5" font-weight="700" fill="#334155">· 磁通量变化率 ΔΦ/Δt = 0</text>
+  <text x="598" y="260" font-size="11.5" font-weight="700" fill="#334155">· 感应电动势 e = 0</text>
+  <text x="598" y="288" font-size="11.5" font-weight="700" fill="#334155">· 电流方向在此发生改变</text>
+
+  <rect x="596" y="310" width="248" height="94" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="336" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">每经过中性面一次</text>
+  <text x="720" y="360" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">电流方向改变一次</text>
+  <text x="720" y="386" font-size="11" fill="#92400e" text-anchor="middle">转一周共改变两次</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">中性面是分析交变电流的关键位置：Φ 最大、e 为零、电流换向</text>
+</g>
+
+<!-- 第三步：e-t 图像 -->
+<g class="s92-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">从线圈经过中性面开始计时，感应电动势按正弦规律变化</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="236" height="28" rx="14" fill="#e8effc"/>
+  <text x="174" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电动势随时间的变化</text>
+
+  <line x1="110" y1="340" x2="110" y2="150" stroke="#475569" stroke-width="1.8" marker-end="url(#arrBlue)"/>
+  <line x1="90" y1="260" x2="522" y2="260" stroke="#475569" stroke-width="1.8" marker-end="url(#arrBlue)"/>
+  <text x="100" y="160" font-size="12" font-weight="900" fill="#1e3a8a">e</text>
+  <text x="520" y="282" font-size="11.5" font-weight="800" fill="#475569">t</text>
+
+  <line x1="110" y1="198" x2="490" y2="198" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="5 5"/>
+  <line x1="110" y1="322" x2="490" y2="322" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="5 5"/>
+  <text x="496" y="202" font-size="11.5" font-weight="800" fill="#b91c1c">Eₘ</text>
+  <text x="490" y="326" font-size="11.5" font-weight="800" fill="#b91c1c">−Eₘ</text>
+
+  <path class="s92-curve" d="M110 260 C124 208 181 208 195 260 C209 312 266 312 280 260 C294 208 351 208 365 260 C379 312 436 312 450 260" fill="none" stroke="#1d4ed8" stroke-width="3"/>
+
+  <circle class="s92-dot" cx="152" cy="198" r="4.5" fill="#dc2626"/>
+  <circle class="s92-dot" cx="237" cy="322" r="4.5" fill="#dc2626"/>
+  <circle class="s92-dot" cx="322" cy="198" r="4.5" fill="#dc2626"/>
+  <circle class="s92-dot" cx="407" cy="322" r="4.5" fill="#dc2626"/>
+
+  <line x1="280" y1="260" x2="280" y2="292" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <line x1="450" y1="260" x2="450" y2="292" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="110" y="356" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">0</text>
+  <text x="280" y="356" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">T/2</text>
+  <text x="450" y="356" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">T</text>
+  <text x="195" y="282" font-size="11" fill="#64748b" text-anchor="middle">中性面</text>
+
+  <text class="s92-note" x="296" y="396" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">e = Eₘ sin ωt（从中性面开始计时）</text>
+  <text x="296" y="420" font-size="11" fill="#64748b" text-anchor="middle">t = 0 时线圈位于中性面，e = 0</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="694" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">峰值与表达式</text>
+
+  <rect x="596" y="158" width="248" height="52" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="720" y="192" font-size="19" font-weight="900" fill="#1e3a8a" text-anchor="middle">Eₘ = nBSω</text>
+
+  <text x="598" y="236" font-size="11.5" font-weight="700" fill="#334155">n：线圈匝数</text>
+  <text x="598" y="262" font-size="11.5" font-weight="700" fill="#334155">B：磁感应强度</text>
+  <text x="598" y="288" font-size="11.5" font-weight="700" fill="#334155">S：线圈面积</text>
+  <text x="598" y="314" font-size="11.5" font-weight="700" fill="#334155">ω：转动角速度</text>
+
+  <text x="598" y="344" font-size="11.5" fill="#1d4ed8">峰值与线圈形状无关</text>
+  <text x="598" y="368" font-size="11.5" fill="#b45309">转得越快，Eₘ 越大</text>
+  <text x="598" y="392" font-size="11.5" fill="#64748b">ω = 2π/T = 2πf</text>
+  <text x="598" y="416" font-size="11" fill="#64748b">t 从经过中性面开始计</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">ω = 2π/T，峰值 Eₘ = nBSω，电动势按 e = Eₘ sin ωt 变化</text>
+</g>
+</svg>

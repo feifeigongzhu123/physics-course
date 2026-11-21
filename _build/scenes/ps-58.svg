@@ -1,0 +1,216 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="磁感应强度与磁通量：B 等于 F 除以 IL、匀强磁场与磁通量公式">
+<style>
+[data-scene="ps-58"] .s58-s1,[data-scene="ps-58"] .s58-s2,[data-scene="ps-58"] .s58-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="ps-58"].s1 .s58-s1,[data-scene="ps-58"].s2 .s58-s2,[data-scene="ps-58"].s3 .s58-s3{opacity:1;visibility:visible}
+@keyframes s58fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+@keyframes s58draw{to{stroke-dashoffset:0}}
+@keyframes s58pop{0%{transform:scale(.85);opacity:0}70%{transform:scale(1.04);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s58pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes s58float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+[data-scene="ps-58"].s1 .s58-wire{stroke-dasharray:430;stroke-dashoffset:430;animation:s58draw 1.1s ease .2s forwards}
+[data-scene="ps-58"].s1 .s58-force{stroke-dasharray:110;stroke-dashoffset:110;animation:s58draw .7s ease .9s forwards}
+[data-scene="ps-58"].s1 .s58-sym{animation:s58pulse 2.4s ease-in-out infinite}
+[data-scene="ps-58"].s1 .s58-card{transform-box:fill-box;transform-origin:center;animation:s58pop .55s ease .2s both}
+[data-scene="ps-58"].s2 .s58-plate{transform-box:fill-box;transform-origin:center;animation:s58pop .55s ease both}
+[data-scene="ps-58"].s2 .s58-field{stroke-dasharray:180;stroke-dashoffset:180;animation:s58draw .9s ease .3s forwards}
+[data-scene="ps-58"].s2 .s58-note{animation:s58fade .5s ease .4s both}
+[data-scene="ps-58"].s2 .s58-note2{animation-delay:.5s}
+[data-scene="ps-58"].s2 .s58-note3{animation-delay:.6s}
+[data-scene="ps-58"].s3 .s58-plane{animation:s58float 3.4s ease-in-out infinite}
+[data-scene="ps-58"].s3 .s58-line{stroke-dasharray:270;stroke-dashoffset:270;animation:s58draw 1s ease .2s forwards}
+[data-scene="ps-58"].s3 .s58-line2{animation-delay:.32s}
+[data-scene="ps-58"].s3 .s58-line3{animation-delay:.44s}
+[data-scene="ps-58"].s3 .s58-line4{animation-delay:.56s}
+[data-scene="ps-58"].s3 .s58-line5{animation-delay:.68s}
+[data-scene="ps-58"].s3 .s58-card{transform-box:fill-box;transform-origin:center;animation:s58pop .5s ease .5s both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">磁感应强度 磁通量：描述磁场的强弱与方向</text>
+
+<!-- 第一步：磁感应强度 -->
+<g class="s58-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">磁感应强度 B = F/(IL)：垂直放入磁场的短直导线受力与 IL 的比值</text>
+
+  <rect x="36" y="100" width="500" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="226" height="28" rx="14" fill="#e8effc"/>
+  <text x="169" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">通电导线在磁场中受力</text>
+
+  <rect x="66" y="158" width="440" height="248" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5" stroke-dasharray="7 6"/>
+
+  <g class="s58-sym" stroke="#1d4ed8" stroke-width="1.8">
+    <circle cx="100" cy="186" r="9" fill="#dbeafe"/><line x1="94" y1="180" x2="106" y2="192"/><line x1="106" y1="180" x2="94" y2="192"/>
+    <circle cx="160" cy="186" r="9" fill="#dbeafe"/><line x1="154" y1="180" x2="166" y2="192"/><line x1="166" y1="180" x2="154" y2="192"/>
+    <circle cx="220" cy="186" r="9" fill="#dbeafe"/><line x1="214" y1="180" x2="226" y2="192"/><line x1="226" y1="180" x2="214" y2="192"/>
+    <circle cx="340" cy="186" r="9" fill="#dbeafe"/><line x1="334" y1="180" x2="346" y2="192"/><line x1="346" y1="180" x2="334" y2="192"/>
+    <circle cx="400" cy="186" r="9" fill="#dbeafe"/><line x1="394" y1="180" x2="406" y2="192"/><line x1="406" y1="180" x2="394" y2="192"/>
+    <circle cx="460" cy="186" r="9" fill="#dbeafe"/><line x1="454" y1="180" x2="466" y2="192"/><line x1="466" y1="180" x2="454" y2="192"/>
+    <circle cx="100" cy="236" r="9" fill="#dbeafe"/><line x1="94" y1="230" x2="106" y2="242"/><line x1="106" y1="230" x2="94" y2="242"/>
+    <circle cx="160" cy="236" r="9" fill="#dbeafe"/><line x1="154" y1="230" x2="166" y2="242"/><line x1="166" y1="230" x2="154" y2="242"/>
+    <circle cx="220" cy="236" r="9" fill="#dbeafe"/><line x1="214" y1="230" x2="226" y2="242"/><line x1="226" y1="230" x2="214" y2="242"/>
+    <circle cx="340" cy="236" r="9" fill="#dbeafe"/><line x1="334" y1="230" x2="346" y2="242"/><line x1="346" y1="230" x2="334" y2="242"/>
+    <circle cx="400" cy="236" r="9" fill="#dbeafe"/><line x1="394" y1="230" x2="406" y2="242"/><line x1="406" y1="230" x2="394" y2="242"/>
+    <circle cx="460" cy="236" r="9" fill="#dbeafe"/><line x1="454" y1="230" x2="466" y2="242"/><line x1="466" y1="230" x2="454" y2="242"/>
+    <circle cx="100" cy="326" r="9" fill="#dbeafe"/><line x1="94" y1="320" x2="106" y2="332"/><line x1="106" y1="320" x2="94" y2="332"/>
+    <circle cx="160" cy="326" r="9" fill="#dbeafe"/><line x1="154" y1="320" x2="166" y2="332"/><line x1="166" y1="320" x2="154" y2="332"/>
+    <circle cx="220" cy="326" r="9" fill="#dbeafe"/><line x1="214" y1="320" x2="226" y2="332"/><line x1="226" y1="320" x2="214" y2="332"/>
+    <circle cx="340" cy="326" r="9" fill="#dbeafe"/><line x1="334" y1="320" x2="346" y2="332"/><line x1="346" y1="320" x2="334" y2="332"/>
+    <circle cx="400" cy="326" r="9" fill="#dbeafe"/><line x1="394" y1="320" x2="406" y2="332"/><line x1="406" y1="320" x2="394" y2="332"/>
+    <circle cx="460" cy="326" r="9" fill="#dbeafe"/><line x1="454" y1="320" x2="466" y2="332"/><line x1="466" y1="320" x2="454" y2="332"/>
+    <circle cx="100" cy="376" r="9" fill="#dbeafe"/><line x1="94" y1="370" x2="106" y2="382"/><line x1="106" y1="370" x2="94" y2="382"/>
+    <circle cx="160" cy="376" r="9" fill="#dbeafe"/><line x1="154" y1="370" x2="166" y2="382"/><line x1="166" y1="370" x2="154" y2="382"/>
+    <circle cx="220" cy="376" r="9" fill="#dbeafe"/><line x1="214" y1="370" x2="226" y2="382"/><line x1="226" y1="370" x2="214" y2="382"/>
+    <circle cx="340" cy="376" r="9" fill="#dbeafe"/><line x1="334" y1="370" x2="346" y2="382"/><line x1="346" y1="370" x2="334" y2="382"/>
+    <circle cx="400" cy="376" r="9" fill="#dbeafe"/><line x1="394" y1="370" x2="406" y2="382"/><line x1="406" y1="370" x2="394" y2="382"/>
+    <circle cx="460" cy="376" r="9" fill="#dbeafe"/><line x1="454" y1="370" x2="466" y2="382"/><line x1="466" y1="370" x2="454" y2="382"/>
+  </g>
+
+  <line class="s58-wire" x1="70" y1="282" x2="500" y2="282" stroke="#b45309" stroke-width="6" stroke-linecap="round"/>
+  <polygon points="486,272 508,282 486,292" fill="#b45309"/>
+  <text x="470" y="310" font-size="13" font-weight="900" fill="#b45309" text-anchor="middle">I</text>
+
+  <line class="s58-force" x1="300" y1="282" x2="300" y2="176" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrRed)"/>
+  <text x="314" y="198" font-size="14" font-weight="900" fill="#b91c1c">F</text>
+  <text x="314" y="220" font-size="11" fill="#b91c1c">F ⊥ I，F ⊥ B</text>
+
+  <text x="286" y="408" font-size="11.5" font-weight="700" fill="#1d4ed8" text-anchor="middle">B 垂直纸面向里（⊗），导线与 B 垂直</text>
+  <text x="286" y="430" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">此时导线所受磁场力最大</text>
+
+  <rect x="560" y="100" width="304" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="580" y="116" width="190" height="28" rx="14" fill="#e8effc"/>
+  <text x="675" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">磁感应强度 B</text>
+
+  <text x="712" y="180" font-size="18" font-weight="900" fill="#1e3a8a" text-anchor="middle">B = F / (IL)</text>
+  <text x="712" y="204" font-size="11" fill="#64748b" text-anchor="middle">导线与 B 垂直时</text>
+  <line x1="590" y1="218" x2="834" y2="218" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <text x="590" y="244" font-size="11.5" fill="#334155">F：磁场力，单位 N</text>
+  <text x="590" y="268" font-size="11.5" fill="#334155">I：电流，单位 A</text>
+  <text x="590" y="292" font-size="11.5" fill="#334155">L：导线长度，单位 m</text>
+  <text x="590" y="316" font-size="11.5" fill="#334155">单位：特斯拉（T）</text>
+  <text x="590" y="340" font-size="11.5" fill="#334155">1 T = 1 N/(A·m)</text>
+  <text x="590" y="364" font-size="11.5" fill="#334155">矢量：方向即该点磁场方向</text>
+
+  <rect x="584" y="380" width="256" height="44" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="712" y="400" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">B 由磁场本身决定</text>
+  <text x="712" y="418" font-size="11" fill="#92400e" text-anchor="middle">与是否放入导线无关</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">B 描述磁场的强弱和方向：小磁针 N 极所指的方向就是 B 的方向</text>
+</g>
+
+<!-- 第二步：匀强磁场 -->
+<g class="s58-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">匀强磁场：各点的磁感应强度大小相等、方向相同</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="226" height="28" rx="14" fill="#e8effc"/>
+  <text x="169" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">异名磁极间的匀强磁场</text>
+
+  <rect class="s58-plate" x="86" y="166" width="400" height="26" rx="5" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="286" y="184" font-size="12.5" font-weight="900" fill="#b91c1c" text-anchor="middle">N 极板</text>
+  <rect class="s58-plate" x="86" y="366" width="400" height="26" rx="5" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="286" y="384" font-size="12.5" font-weight="900" fill="#1e40af" text-anchor="middle">S 极板</text>
+
+  <g class="s58-field" stroke="#1d4ed8" stroke-width="2">
+    <line x1="106" y1="196" x2="106" y2="358" marker-end="url(#arrBlue)"/>
+    <line x1="166" y1="196" x2="166" y2="358" marker-end="url(#arrBlue)"/>
+    <line x1="226" y1="196" x2="226" y2="358" marker-end="url(#arrBlue)"/>
+    <line x1="286" y1="196" x2="286" y2="358" marker-end="url(#arrBlue)"/>
+    <line x1="346" y1="196" x2="346" y2="358" marker-end="url(#arrBlue)"/>
+    <line x1="406" y1="196" x2="406" y2="358" marker-end="url(#arrBlue)"/>
+    <line x1="466" y1="196" x2="466" y2="358" marker-end="url(#arrBlue)"/>
+  </g>
+
+  <rect x="188" y="258" width="196" height="38" rx="9" fill="#ffffff" opacity=".92" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="286" y="282" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">磁感线平行、等距、同向</text>
+
+  <text x="286" y="420" font-size="11.5" fill="#64748b" text-anchor="middle">两极板间中部区域的磁场可近似看成匀强磁场</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="694" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">匀强磁场的特点</text>
+
+  <g class="s58-note">
+    <circle cx="610" cy="176" r="11" fill="#e8effc"/>
+    <text x="610" y="181" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">1</text>
+    <text x="630" y="181" font-size="11.5" fill="#334155">各点 B 大小相等</text>
+  </g>
+  <g class="s58-note s58-note2">
+    <circle cx="610" cy="218" r="11" fill="#e8effc"/>
+    <text x="610" y="223" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">2</text>
+    <text x="630" y="223" font-size="11.5" fill="#334155">各点 B 方向相同</text>
+  </g>
+  <g class="s58-note">
+    <circle cx="610" cy="260" r="11" fill="#e8effc"/>
+    <text x="610" y="265" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">3</text>
+    <text x="630" y="265" font-size="11.5" fill="#334155">磁感线是平行等距直线</text>
+  </g>
+  <g class="s58-note s58-note3">
+    <circle cx="610" cy="302" r="11" fill="#e8effc"/>
+    <text x="610" y="307" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">4</text>
+    <text x="630" y="307" font-size="11.5" fill="#334155">试探导线受力处处相同</text>
+  </g>
+
+  <text x="596" y="344" font-size="11.5" font-weight="800" fill="#1e3a8a">常见来源</text>
+  <text x="596" y="368" font-size="11.5" fill="#334155">相距很近的异名磁极之间</text>
+  <text x="596" y="392" font-size="11.5" fill="#334155">通电螺线管内部</text>
+  <text x="596" y="418" font-size="11" font-weight="700" fill="#b45309">匀强磁场是理想化模型</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">在匀强磁场中，同一段通电导线无论放在哪里，所受磁场力都相同</text>
+</g>
+
+<!-- 第三步：磁通量 -->
+<g class="s58-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">磁通量：Φ = BS⊥，大小等于穿过某个面的磁感线条数</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="226" height="28" rx="14" fill="#e8effc"/>
+  <text x="169" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">磁场垂直穿过平面</text>
+
+  <g class="s58-line" stroke="#1d4ed8" stroke-width="2">
+    <line x1="90" y1="150" x2="90" y2="400" marker-end="url(#arrBlue)"/>
+    <line x1="150" y1="150" x2="150" y2="400" marker-end="url(#arrBlue)"/>
+    <line x1="210" y1="150" x2="210" y2="400" marker-end="url(#arrBlue)"/>
+    <line x1="270" y1="150" x2="270" y2="400" marker-end="url(#arrBlue)"/>
+    <line x1="330" y1="150" x2="330" y2="400" marker-end="url(#arrBlue)"/>
+    <line x1="390" y1="150" x2="390" y2="400" marker-end="url(#arrBlue)"/>
+    <line x1="450" y1="150" x2="450" y2="400" marker-end="url(#arrBlue)"/>
+  </g>
+
+  <g class="s58-plane">
+    <polygon points="150,205 430,185 450,335 170,355" fill="#dbeafe" opacity=".72" stroke="#1d4ed8" stroke-width="2.5"/>
+    <text x="302" y="300" font-size="20" font-weight="900" fill="#1e3a8a" text-anchor="middle">S</text>
+  </g>
+
+  <text x="474" y="164" font-size="13" font-weight="900" fill="#1d4ed8">B</text>
+  <text x="286" y="424" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">Φ = BS（B 与 S 垂直）</text>
+
+  <rect x="560" y="100" width="304" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="580" y="116" width="190" height="28" rx="14" fill="#e8effc"/>
+  <text x="675" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">磁通量 Φ</text>
+
+  <text x="712" y="180" font-size="18" font-weight="900" fill="#1e3a8a" text-anchor="middle">Φ = B·S</text>
+  <text x="712" y="204" font-size="11" fill="#64748b" text-anchor="middle">S 为垂直于 B 的有效面积</text>
+  <line x1="590" y1="218" x2="834" y2="218" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <text x="590" y="244" font-size="11.5" fill="#334155">平面斜放：Φ = BScosθ</text>
+  <text x="590" y="268" font-size="11.5" fill="#334155">单位：韦伯（Wb）</text>
+  <text x="590" y="292" font-size="11.5" fill="#334155">1 Wb = 1 T·m²</text>
+  <text x="590" y="316" font-size="11.5" fill="#334155">磁通量是标量</text>
+  <text x="590" y="340" font-size="11.5" fill="#334155">但有正负，表示穿入或穿出</text>
+
+  <rect x="584" y="360" width="256" height="64" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="712" y="382" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">不垂直时不能直接代 S</text>
+  <text x="712" y="400" font-size="11" fill="#92400e" text-anchor="middle">要用平面在垂直 B 方向的</text>
+  <text x="712" y="416" font-size="11" fill="#92400e" text-anchor="middle">投影面积来计算</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">磁感线越密，穿过同一面积的磁通量越大，说明磁场越强</text>
+</g>
+</svg>

@@ -1,0 +1,175 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="压强：压力作用效果、p 等于 F 除以 S、增大和减小压强的方法">
+<style>
+[data-scene="pj-34"] .p34-step1,[data-scene="pj-34"] .p34-step2,[data-scene="pj-34"] .p34-step3{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="pj-34"].s1 .p34-step1,[data-scene="pj-34"].s2 .p34-step2,[data-scene="pj-34"].s3 .p34-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes p34drop{0%{transform:translateY(-18px);opacity:0}60%{transform:translateY(1px);opacity:1}100%{transform:translateY(0);opacity:1}}
+@keyframes p34fade{from{opacity:0}to{opacity:1}}
+@keyframes p34pop{0%{transform:scale(.8);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes p34glow{0%,100%{opacity:.45}50%{opacity:.95}}
+[data-scene="pj-34"].s1 .p34-dropL{transform-box:fill-box;transform-origin:center;animation:p34drop .7s ease .15s both}
+[data-scene="pj-34"].s1 .p34-dropR{transform-box:fill-box;transform-origin:center;animation:p34drop .7s ease .4s both}
+[data-scene="pj-34"].s1 .p34-dent{animation:p34fade .5s ease .7s both,p34glow 2s ease-in-out 1.2s infinite}
+[data-scene="pj-34"].s2 .p34-card{transform-box:fill-box;transform-origin:center;animation:p34pop .45s ease both}
+[data-scene="pj-34"].s3 .p34-ex{transform-box:fill-box;transform-origin:center;animation:p34pop .45s ease both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">压强：压力的作用效果与 p = F/S</text>
+
+<!-- 第一步：压力作用效果 -->
+<g class="p34-step1" data-zone="1">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">探究：压力相同时，受力面积越小，作用效果越明显</text>
+
+  <!-- 左侧：大受力面积 -->
+  <rect x="100" y="300" width="320" height="86" rx="10" fill="#fde68a" stroke="#d97706" stroke-width="2"/>
+  <g fill="#fbbf24" opacity=".55">
+    <circle cx="130" cy="340" r="4"/><circle cx="170" cy="360" r="3.5"/><circle cx="215" cy="332" r="4"/>
+    <circle cx="260" cy="366" r="3.5"/><circle cx="305" cy="338" r="4"/><circle cx="345" cy="364" r="3.5"/>
+    <circle cx="385" cy="336" r="4"/><circle cx="405" cy="368" r="3.5"/><circle cx="145" cy="374" r="3"/>
+  </g>
+  <path class="p34-dent" d="M130 300 Q260 310 390 300" fill="none" stroke="#b45309" stroke-width="3"/>
+  <g class="p34-dropL">
+    <rect x="130" y="276" width="260" height="20" rx="4" fill="#93c5fd" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="225" y="236" width="70" height="40" rx="6" fill="#64748b"/>
+    <text x="260" y="261" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">重物</text>
+    <line x1="260" y1="140" x2="260" y2="228" stroke="#dc2626" stroke-width="4" stroke-linecap="round" marker-end="url(#arrRed)"/>
+    <text x="276" y="170" font-size="15" font-weight="800" fill="#b91c1c">F</text>
+    <text x="260" y="126" font-size="12" font-weight="700" fill="#b91c1c" text-anchor="middle">压力相同</text>
+  </g>
+  <text x="260" y="420" font-size="13" font-weight="800" fill="#b45309" text-anchor="middle">受力面积大 · 下陷浅</text>
+  <text x="260" y="442" font-size="12" fill="#7c5a30" text-anchor="middle">压力的作用效果不明显 · 压强小</text>
+
+  <!-- 右侧：小受力面积 -->
+  <rect x="500" y="300" width="320" height="86" rx="10" fill="#fde68a" stroke="#d97706" stroke-width="2"/>
+  <g fill="#fbbf24" opacity=".55">
+    <circle cx="530" cy="342" r="4"/><circle cx="575" cy="362" r="3.5"/><circle cx="620" cy="334" r="4"/>
+    <circle cx="700" cy="366" r="3.5"/><circle cx="745" cy="338" r="4"/><circle cx="785" cy="362" r="3.5"/>
+    <circle cx="805" cy="336" r="4"/><circle cx="545" cy="374" r="3"/>
+  </g>
+  <path class="p34-dent" d="M600 300 Q660 354 720 300" fill="none" stroke="#b45309" stroke-width="3"/>
+  <g class="p34-dropR">
+    <rect x="654" y="218" width="12" height="104" fill="#94a3b8"/>
+    <polygon points="646,322 674,322 660,350" fill="#64748b"/>
+    <rect x="628" y="188" width="64" height="34" rx="6" fill="#64748b"/>
+    <text x="660" y="211" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">重物</text>
+    <line x1="660" y1="132" x2="660" y2="180" stroke="#dc2626" stroke-width="4" stroke-linecap="round" marker-end="url(#arrRed)"/>
+    <text x="676" y="160" font-size="15" font-weight="800" fill="#b91c1c">F</text>
+    <text x="660" y="118" font-size="12" font-weight="700" fill="#b91c1c" text-anchor="middle">压力相同</text>
+  </g>
+  <text x="660" y="420" font-size="13" font-weight="800" fill="#b45309" text-anchor="middle">受力面积小 · 下陷深</text>
+  <text x="660" y="442" font-size="12" fill="#7c5a30" text-anchor="middle">压力的作用效果明显 · 压强大</text>
+
+  <rect x="70" y="458" width="760" height="34" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="480" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">压力的作用效果既跟压力大小有关，又跟受力面积有关</text>
+</g>
+
+<!-- 第二步：压强公式 -->
+<g class="p34-step2" data-zone="2">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">压强 = 压力 ÷ 受力面积，表示压力作用的强弱</text>
+
+  <rect x="70" y="110" width="330" height="292" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="160" y="268" width="120" height="72" fill="#93c5fd" stroke="#1e40af" stroke-width="2"/>
+  <text x="220" y="310" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">物体</text>
+  <line x1="120" y1="340" x2="350" y2="340" stroke="#94a3b8" stroke-width="4"/>
+  <line x1="220" y1="196" x2="220" y2="260" stroke="#dc2626" stroke-width="4" stroke-linecap="round" marker-end="url(#arrRed)"/>
+  <text x="236" y="218" font-size="15" font-weight="800" fill="#b91c1c">F</text>
+  <rect x="160" y="336" width="120" height="8" fill="#f59e0b"/>
+  <line x1="220" y1="344" x2="220" y2="370" stroke="#b45309" stroke-width="1.5"/>
+  <text x="230" y="376" font-size="12.5" font-weight="800" fill="#b45309">S：接触面积</text>
+  <text x="235" y="150" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">压力垂直作用在支持面上</text>
+  <text x="235" y="396" font-size="11.5" fill="#64748b" text-anchor="middle">受力面积 = 两物体实际接触的面积</text>
+
+  <g class="p34-card">
+    <rect x="430" y="110" width="400" height="160" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="630" y="138" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">压强公式</text>
+    <text x="470" y="196" font-size="30" font-weight="900" font-style="italic" fill="#1e3a8a">p</text>
+    <text x="498" y="194" font-size="24" font-weight="800" fill="#334155">=</text>
+    <text x="580" y="172" font-size="26" font-weight="900" fill="#1e3a8a" text-anchor="middle">F</text>
+    <line x1="552" y1="182" x2="608" y2="182" stroke="#334155" stroke-width="2.5"/>
+    <text x="580" y="218" font-size="26" font-weight="900" fill="#1e3a8a" text-anchor="middle">S</text>
+    <g font-size="12" fill="#475569">
+      <text x="634" y="164">p：压强（Pa）</text>
+      <text x="634" y="190">F：压力（N）</text>
+      <text x="634" y="216">S：受力面积（m²）</text>
+    </g>
+    <text x="630" y="254" font-size="13" font-weight="800" fill="#b45309" text-anchor="middle">1 Pa = 1 N/m²</text>
+  </g>
+
+  <g class="p34-card">
+    <rect x="430" y="288" width="400" height="102" rx="14" fill="#e8effc" stroke="#bfdbfe" stroke-width="2"/>
+    <text x="630" y="316" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">单位：帕斯卡（Pa）</text>
+    <text x="630" y="344" font-size="12.5" fill="#334155" text-anchor="middle">1 Pa 很小，约等于 1 m² 上放 0.1 kg 物体</text>
+    <text x="630" y="370" font-size="12" fill="#64748b" text-anchor="middle">1 kPa = 10³ Pa　·　1 MPa = 10⁶ Pa</text>
+  </g>
+
+  <rect x="70" y="405" width="760" height="78" rx="12" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+  <text x="450" y="431" font-size="12.5" font-weight="700" fill="#7c5a30" text-anchor="middle">例：体重 600 N 的人双脚站在地面，受力面积 S = 0.04 m²</text>
+  <text x="450" y="462" font-size="15" font-weight="900" fill="#b45309" text-anchor="middle">p = F/S = 600 N ÷ 0.04 m² = 1.5×10⁴ Pa</text>
+</g>
+
+<!-- 第三步：增大和减小压强 -->
+<g class="p34-step3" data-zone="3">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">增大压强：增大 F 或减小 S；减小压强：减小 F 或增大 S</text>
+
+  <text x="70" y="114" font-size="15" font-weight="900" fill="#b91c1c">增大压强</text>
+  <text x="160" y="114" font-size="12" font-weight="700" fill="#b45309">增大压力 F　或　减小受力面积 S</text>
+
+  <g class="p34-ex">
+    <rect x="70" y="124" width="235" height="128" rx="12" fill="#fff7f7" stroke="#fca5a5" stroke-width="2"/>
+    <path d="M150 184 L214 152 L214 172 L166 190 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+    <rect x="208" y="166" width="48" height="16" rx="6" fill="#78350f"/>
+    <text x="187" y="220" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">菜刀磨锋利</text>
+    <text x="187" y="240" font-size="11.5" fill="#64748b" text-anchor="middle">减小受力面积 S</text>
+  </g>
+  <g class="p34-ex">
+    <rect x="332" y="124" width="236" height="128" rx="12" fill="#fff7f7" stroke="#fca5a5" stroke-width="2"/>
+    <line x1="450" y1="148" x2="450" y2="180" stroke="#64748b" stroke-width="5"/>
+    <circle cx="450" cy="144" r="8" fill="#f87171" stroke="#b91c1c" stroke-width="1.5"/>
+    <polygon points="443,180 457,180 450,194" fill="#64748b"/>
+    <text x="450" y="220" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">图钉尖做细</text>
+    <text x="450" y="240" font-size="11.5" fill="#64748b" text-anchor="middle">减小受力面积 S</text>
+  </g>
+  <g class="p34-ex">
+    <rect x="595" y="124" width="235" height="128" rx="12" fill="#fff7f7" stroke="#fca5a5" stroke-width="2"/>
+    <circle cx="678" cy="176" r="21" fill="#94a3b8" stroke="#475569" stroke-width="3"/>
+    <rect x="698" y="163" width="52" height="26" rx="6" fill="#f59e0b"/>
+    <line x1="724" y1="192" x2="724" y2="212" stroke="#dc2626" stroke-width="3" marker-end="url(#arrRed)"/>
+    <text x="712" y="220" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">压路机加重</text>
+    <text x="712" y="240" font-size="11.5" fill="#64748b" text-anchor="middle">增大压力 F</text>
+  </g>
+
+  <text x="70" y="292" font-size="15" font-weight="900" fill="#1e40af">减小压强</text>
+  <text x="160" y="292" font-size="12" font-weight="700" fill="#1d4ed8">减小压力 F　或　增大受力面积 S</text>
+
+  <g class="p34-ex">
+    <rect x="70" y="302" width="235" height="130" rx="12" fill="#f5f9ff" stroke="#93c5fd" stroke-width="2"/>
+    <path d="M152 362 Q187 330 222 362" fill="none" stroke="#78350f" stroke-width="9" stroke-linecap="round"/>
+    <rect x="150" y="362" width="74" height="34" rx="7" fill="#f59e0b" stroke="#b45309" stroke-width="2"/>
+    <text x="187" y="408" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">书包带做宽</text>
+    <text x="187" y="426" font-size="11.5" fill="#64748b" text-anchor="middle">增大受力面积 S</text>
+  </g>
+  <g class="p34-ex">
+    <rect x="332" y="302" width="236" height="130" rx="12" fill="#f5f9ff" stroke="#93c5fd" stroke-width="2"/>
+    <rect x="380" y="348" width="120" height="30" rx="4" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
+    <rect x="420" y="336" width="42" height="12" rx="3" fill="#64748b"/>
+    <line x1="462" y1="342" x2="492" y2="342" stroke="#475569" stroke-width="5"/>
+    <g fill="#475569"><circle cx="398" cy="386" r="8"/><circle cx="432" cy="386" r="8"/><circle cx="466" cy="386" r="8"/><circle cx="500" cy="386" r="8"/></g>
+    <text x="450" y="408" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">坦克履带</text>
+    <text x="450" y="426" font-size="11.5" fill="#64748b" text-anchor="middle">增大受力面积 S</text>
+  </g>
+  <g class="p34-ex">
+    <rect x="595" y="302" width="235" height="130" rx="12" fill="#f5f9ff" stroke="#93c5fd" stroke-width="2"/>
+    <line x1="635" y1="376" x2="780" y2="376" stroke="#1d4ed8" stroke-width="8" stroke-linecap="round"/>
+    <line x1="645" y1="385" x2="790" y2="385" stroke="#60a5fa" stroke-width="8" stroke-linecap="round"/>
+    <rect x="690" y="350" width="20" height="24" rx="5" fill="#f59e0b"/>
+    <text x="712" y="408" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">滑雪板</text>
+    <text x="712" y="426" font-size="11.5" fill="#64748b" text-anchor="middle">增大受力面积 S</text>
+  </g>
+
+  <text x="450" y="462" font-size="12" fill="#64748b" text-anchor="middle">书包带、坦克履带、滑雪板都是通过增大受力面积来减小压强</text>
+</g>
+</svg>

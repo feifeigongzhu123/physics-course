@@ -1,0 +1,205 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="带电粒子在匀强磁场中的运动：匀速圆周运动、半径和周期、解题方法">
+<style>
+[data-scene="ps-86"] .s86-s1,[data-scene="ps-86"] .s86-s2,[data-scene="ps-86"] .s86-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility 0s linear .45s}
+[data-scene="ps-86"].s1 .s86-s1,[data-scene="ps-86"].s2 .s86-s2,[data-scene="ps-86"].s3 .s86-s3{opacity:1;visibility:visible;transition:opacity .45s ease,visibility 0s}
+@keyframes s86pulse{0%,100%{opacity:.5}50%{opacity:1}}
+@keyframes s86pop{0%{transform:scale(.85);opacity:0}70%{transform:scale(1.05);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s86draw{to{stroke-dashoffset:0}}
+@keyframes s86blink{0%,100%{opacity:1}50%{opacity:.35}}
+[data-scene="ps-86"].s1 .s86-orbit{stroke-dasharray:480;stroke-dashoffset:480;animation:s86draw 1.4s ease .2s both}
+[data-scene="ps-86"].s1 .s86-v{stroke-dasharray:150;stroke-dashoffset:150;animation:s86draw .7s ease .7s both}
+[data-scene="ps-86"].s1 .s86-q{transform-box:fill-box;transform-origin:center;animation:s86pop .5s ease 1.2s both}
+[data-scene="ps-86"].s1 .s86-f{animation:s86blink 1.8s ease-in-out infinite}
+[data-scene="ps-86"].s2 .s86-card{transform-box:fill-box;transform-origin:center;animation:s86pop .55s ease both}
+[data-scene="ps-86"].s2 .s86-card2{animation-delay:.15s}
+[data-scene="ps-86"].s2 .s86-period{animation:s86pulse 3s ease-in-out infinite}
+[data-scene="ps-86"].s3 .s86-arc{stroke-dasharray:250;stroke-dashoffset:250;animation:s86draw 1s ease .2s both}
+[data-scene="ps-86"].s3 .s86-con{stroke-dasharray:160;stroke-dashoffset:160;animation:s86draw .8s ease .6s both}
+[data-scene="ps-86"].s3 .s86-angle{animation:s86blink 1.8s ease-in-out infinite}
+</style>
+
+<defs>
+  <pattern id="s86cross" width="60" height="50" patternUnits="userSpaceOnUse">
+    <g stroke="#93c5fd" stroke-width="2" opacity=".8">
+      <line x1="26" y1="21" x2="34" y2="29"/>
+      <line x1="34" y1="21" x2="26" y2="29"/>
+    </g>
+  </pattern>
+</defs>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">带电粒子在匀强磁场中的运动</text>
+
+<!-- 第一步：匀速圆周运动 -->
+<g class="s86-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">v⊥B 时，洛伦兹力提供向心力，粒子做匀速圆周运动</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="220" height="28" rx="14" fill="#e8effc"/>
+  <text x="166" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">粒子垂直射入磁场</text>
+
+  <rect x="76" y="148" width="460" height="268" fill="url(#s86cross)" stroke="#bfdbfe" stroke-width="1.5" stroke-dasharray="7 6"/>
+  <text x="524" y="166" font-size="11.5" font-weight="800" fill="#1e40af" text-anchor="end">B 垂直纸面向里（×）</text>
+
+  <circle cx="240" cy="240" r="100" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <line class="s86-v" x1="104" y1="340" x2="240" y2="340" stroke="#dc2626" stroke-width="3" marker-end="url(#arrRed)"/>
+  <text x="170" y="328" font-size="12.5" font-weight="900" fill="#b91c1c">v</text>
+
+  <path class="s86-orbit" d="M240 340 A100 100 0 0 0 340 240 A100 100 0 0 0 240 140 A100 100 0 0 0 140 240" fill="none" stroke="#7c3aed" stroke-width="3.5" stroke-linecap="round"/>
+  <text x="356" y="188" font-size="11.5" font-weight="800" fill="#6d28d9">轨迹</text>
+
+  <circle cx="240" cy="240" r="4" fill="#334155"/>
+  <text x="250" y="232" font-size="11.5" font-weight="800" fill="#334155">O</text>
+  <line x1="240" y1="240" x2="240" y2="330" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <text x="248" y="292" font-size="11.5" font-weight="800" fill="#475569">r</text>
+
+  <g class="s86-q">
+    <circle cx="240" cy="340" r="8" fill="#fecaca" stroke="#dc2626" stroke-width="2.2"/>
+  </g>
+  <line class="s86-f" x1="240" y1="332" x2="240" y2="276" stroke="#1d4ed8" stroke-width="3" marker-end="url(#arrBlue)"/>
+  <text x="252" y="304" font-size="12" font-weight="900" fill="#1e40af">F</text>
+
+  <text x="296" y="432" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">洛伦兹力方向始终指向圆心</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="694" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">运动性质</text>
+
+  <rect x="596" y="156" width="248" height="50" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="720" y="188" font-size="18" font-weight="900" fill="#1e3a8a" text-anchor="middle">qvB = mv²/r</text>
+
+  <text x="610" y="238" font-size="11.5" font-weight="700" fill="#334155">v⊥B：洛伦兹力提供向心力</text>
+  <text x="610" y="266" font-size="11.5" font-weight="700" fill="#334155">F 大小不变，方向始终指向圆心</text>
+  <text x="610" y="294" font-size="11.5" font-weight="700" fill="#334155">F⊥v：速率不变，做匀速圆周运动</text>
+  <text x="610" y="322" font-size="11.5" font-weight="700" fill="#334155">v∥B：F=0，做匀速直线运动</text>
+
+  <rect x="596" y="342" width="248" height="58" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="366" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">轨道平面垂直于磁场 B</text>
+  <text x="720" y="388" font-size="11" fill="#92400e" text-anchor="middle">圆心在速度的垂线上</text>
+
+  <text x="720" y="424" font-size="11" fill="#64748b" text-anchor="middle">圆周运动的半径由速度决定</text>
+
+  <rect x="36" y="446" width="828" height="44" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="474" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">v⊥B 时做匀速圆周运动；v∥B 时不受洛伦兹力，做匀速直线运动</text>
+</g>
+
+<!-- 第二步：半径和周期 -->
+<g class="s86-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">半径 r=mv/qB，周期 T=2πm/qB，周期与速度无关</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="220" height="28" rx="14" fill="#e8effc"/>
+  <text x="166" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">半径与周期公式</text>
+
+  <g class="s86-card">
+    <rect x="80" y="146" width="440" height="88" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="2"/>
+    <text x="300" y="186" font-size="15" font-weight="800" fill="#1e40af" text-anchor="middle">轨道半径</text>
+    <text x="300" y="218" font-size="26" font-weight="900" fill="#1e3a8a" text-anchor="middle">r = mv / qB</text>
+  </g>
+
+  <g class="s86-card s86-card2">
+    <rect x="80" y="248" width="440" height="88" rx="12" fill="#fef9c3" stroke="#facc15" stroke-width="2"/>
+    <text x="300" y="288" font-size="15" font-weight="800" fill="#854d0e" text-anchor="middle">运动周期</text>
+    <text x="300" y="320" font-size="26" font-weight="900" fill="#854d0e" text-anchor="middle">T = 2πm / qB</text>
+  </g>
+
+  <g class="s86-period">
+    <rect x="80" y="350" width="440" height="66" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="300" y="374" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">r 与 v 成正比：速度越大，轨道半径越大</text>
+    <text x="300" y="398" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">T 与 v、r 无关：同一粒子在同一磁场中周期相同</text>
+  </g>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="694" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">推导与理解</text>
+
+  <text x="610" y="176" font-size="12" font-weight="700" fill="#334155">qvB = mv²/r</text>
+  <text x="610" y="204" font-size="12" font-weight="800" fill="#1e40af">→ r = mv / qB</text>
+  <text x="610" y="232" font-size="12" font-weight="800" fill="#1e40af">T = 2πr/v = 2πm / qB</text>
+
+  <line x1="596" y1="252" x2="844" y2="252" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <text x="610" y="278" font-size="11.5" font-weight="700" fill="#334155">周期只由 m、q、B 决定</text>
+  <text x="610" y="304" font-size="11.5" font-weight="700" fill="#334155">与速度大小、轨道半径无关</text>
+
+  <rect x="596" y="320" width="248" height="58" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="344" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">回旋加速器</text>
+  <text x="720" y="366" font-size="11" fill="#92400e" text-anchor="middle">交变电压周期等于粒子周期</text>
+
+  <text x="720" y="404" font-size="11" fill="#64748b" text-anchor="middle">同一粒子在同一磁场中，T 恒定</text>
+  <text x="720" y="426" font-size="11" fill="#64748b" text-anchor="middle">半径越大，运动一周的路程越长</text>
+
+  <rect x="36" y="446" width="828" height="44" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="474" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">r=mv/qB 随速度增大；T=2πm/qB 与速度、半径都无关</text>
+</g>
+
+<!-- 第三步：解题方法 -->
+<g class="s86-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">解题关键：定圆心、求半径、算圆心角，t=θ/2π·T</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="220" height="28" rx="14" fill="#e8effc"/>
+  <text x="166" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">找圆心与圆心角</text>
+
+  <rect x="70" y="148" width="460" height="268" fill="url(#s86cross)" stroke="#bfdbfe" stroke-width="1.5" stroke-dasharray="7 6"/>
+  <text x="518" y="166" font-size="11.5" font-weight="800" fill="#1e40af" text-anchor="end">B 垂直纸面向里（×）</text>
+
+  <circle cx="330" cy="260" r="150" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <line x1="100" y1="410" x2="330" y2="410" stroke="#dc2626" stroke-width="3" marker-end="url(#arrRed)"/>
+  <text x="170" y="398" font-size="12" font-weight="900" fill="#b91c1c">v</text>
+  <line x1="480" y1="260" x2="480" y2="170" stroke="#dc2626" stroke-width="3" marker-end="url(#arrRed)"/>
+  <text x="492" y="200" font-size="12" font-weight="900" fill="#b91c1c">v</text>
+
+  <path class="s86-arc" d="M330 410 A150 150 0 0 0 480 260" fill="none" stroke="#7c3aed" stroke-width="3.5" stroke-linecap="round"/>
+
+  <line x1="330" y1="410" x2="480" y2="260" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="7 5"/>
+  <line class="s86-con" x1="430" y1="360" x2="270" y2="200" stroke="#059669" stroke-width="1.8" stroke-dasharray="7 5"/>
+  <line x1="330" y1="260" x2="330" y2="410" stroke="#475569" stroke-width="1.8"/>
+  <line x1="330" y1="260" x2="480" y2="260" stroke="#475569" stroke-width="1.8"/>
+
+  <path class="s86-angle" d="M330 300 A40 40 0 0 0 370 260" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="366" y="298" font-size="12.5" font-weight="900" fill="#b91c1c">θ</text>
+
+  <circle cx="330" cy="260" r="5" fill="#334155"/>
+  <text x="316" y="250" font-size="11.5" font-weight="800" fill="#334155">O</text>
+  <text x="314" y="428" font-size="12" font-weight="900" fill="#6d28d9">A</text>
+  <text x="490" y="256" font-size="12" font-weight="900" fill="#6d28d9">C</text>
+  <text x="410" y="328" font-size="11" font-weight="800" fill="#047857">中垂线</text>
+
+  <text x="296" y="432" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">弦 AC 的中垂线过圆心 O</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="694" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">解题步骤</text>
+
+  <circle cx="612" cy="172" r="11" fill="#dbeafe"/>
+  <text x="612" y="176" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">1</text>
+  <text x="634" y="176" font-size="11.5" font-weight="700" fill="#334155">定圆心：v 的垂线与中垂线交点</text>
+
+  <circle cx="612" cy="214" r="11" fill="#dbeafe"/>
+  <text x="612" y="218" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">2</text>
+  <text x="634" y="218" font-size="11.5" font-weight="700" fill="#334155">求半径：几何关系或 r=mv/qB</text>
+
+  <circle cx="612" cy="256" r="11" fill="#dbeafe"/>
+  <text x="612" y="260" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">3</text>
+  <text x="634" y="260" font-size="11.5" font-weight="700" fill="#334155">求圆心角 θ，t = (θ/2π)T</text>
+
+  <circle cx="612" cy="298" r="11" fill="#dbeafe"/>
+  <text x="612" y="302" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">4</text>
+  <text x="634" y="302" font-size="11.5" font-weight="700" fill="#334155">用左手定则判断偏转方向</text>
+
+  <rect x="596" y="322" width="248" height="60" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="346" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">v 与 B 不垂直时</text>
+  <text x="720" y="368" font-size="11" fill="#92400e" text-anchor="middle">速度分解后做螺旋线运动</text>
+
+  <text x="720" y="406" font-size="11" fill="#64748b" text-anchor="middle">画出轨迹草图，找出几何关系</text>
+  <text x="720" y="428" font-size="11" fill="#64748b" text-anchor="middle">注意圆心角与弦长的关系</text>
+
+  <rect x="36" y="446" width="828" height="44" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="474" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">定圆心、求半径、算圆心角：运动时间 t = θ/(2π)·T</text>
+</g>
+</svg>

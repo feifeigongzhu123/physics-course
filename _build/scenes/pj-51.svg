@@ -1,0 +1,205 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="热机：汽油机四个冲程、能量转化、一个循环做功一次">
+<style>
+.p51-s1,.p51-s2,.p51-s3{opacity:0;visibility:hidden}
+.p51-s1{opacity:1;visibility:visible}
+[data-scene="pj-51"] .p51-s1,[data-scene="pj-51"] .p51-s2,[data-scene="pj-51"] .p51-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="pj-51"].s1 .p51-s1,[data-scene="pj-51"].s2 .p51-s2,[data-scene="pj-51"].s3 .p51-s3{opacity:1;visibility:visible}
+@keyframes p51flow{to{stroke-dashoffset:-40}}
+@keyframes p51spark{0%,100%{opacity:.25;transform:scale(.75)}50%{opacity:1;transform:scale(1.2)}}
+@keyframes p51flame{0%,100%{opacity:.65}50%{opacity:1}}
+@keyframes p51pop{0%{transform:scale(.84);opacity:0}70%{transform:scale(1.03);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes p51pulse{0%,100%{opacity:.4}50%{opacity:1}}
+[data-scene="pj-51"].s1 .p51-flow{stroke-dasharray:8 6;animation:p51flow 1s linear infinite}
+[data-scene="pj-51"].s1 .p51-spark{transform-box:fill-box;transform-origin:center;animation:p51spark .9s ease-in-out infinite}
+[data-scene="pj-51"].s1 .p51-flame{animation:p51flame .7s ease-in-out infinite}
+[data-scene="pj-51"].s2 .p51-box{transform-box:fill-box;transform-origin:center;animation:p51pop .55s ease both}
+[data-scene="pj-51"].s2 .p51-boxB{animation-delay:.15s}
+[data-scene="pj-51"].s2 .p51-boxC{animation-delay:.3s}
+[data-scene="pj-51"].s2 .p51-link{stroke-dasharray:9 7;animation:p51flow 1.1s linear infinite}
+[data-scene="pj-51"].s3 .p51-loop{stroke-dasharray:9 7;animation:p51flow 1.1s linear infinite}
+[data-scene="pj-51"].s3 .p51-core{animation:p51pulse 2s ease-in-out infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="470" width="900" height="150" fill="url(#gBench)"/>
+<line x1="0" y1="470" x2="900" y2="470" stroke="#cfd9e8" stroke-width="2"/>
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">热机：内能转化为机械能</text>
+
+<!-- 第一步：汽油机的四个冲程 -->
+<g class="p51-s1" data-zone="1">
+  <rect x="36" y="64" width="828" height="394" rx="18" fill="#ffffff" stroke="#dbe6f2" stroke-width="2"/>
+  <rect x="56" y="80" width="206" height="30" rx="15" fill="#dbeafe"/>
+  <text x="159" y="100" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">① 汽油机的四个冲程</text>
+  <text x="282" y="100" font-size="13" font-weight="800" fill="#1e3a8a">一个工作循环：吸气 → 压缩 → 做功 → 排气</text>
+
+  <!-- 吸气 -->
+  <g>
+    <rect x="117" y="134" width="116" height="16" rx="4" fill="#94a3b8"/>
+    <rect x="120" y="150" width="110" height="146" rx="6" fill="#f8fbff" stroke="#64748b" stroke-width="2.5"/>
+    <line class="p51-flow" x1="145" y1="112" x2="145" y2="130" stroke="#059669" stroke-width="3" marker-end="url(#arrGreen)"/>
+    <line x1="147" y1="158" x2="169" y2="158" stroke="#059669" stroke-width="4" stroke-linecap="round"/>
+    <line x1="145" y1="150" x2="145" y2="158" stroke="#059669" stroke-width="3"/>
+    <line x1="199" y1="156" x2="221" y2="156" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+    <line x1="205" y1="150" x2="205" y2="156" stroke="#94a3b8" stroke-width="3"/>
+    <line class="p51-flow" x1="103" y1="195" x2="103" y2="235" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+    <rect x="129" y="246" width="92" height="24" rx="3" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
+    <line x1="140" y1="252" x2="210" y2="252" stroke="#cbd5e1" stroke-width="2"/>
+    <line x1="175" y1="270" x2="175" y2="325" stroke="#64748b" stroke-width="5"/>
+    <circle cx="175" cy="338" r="13" fill="#cbd5e1" stroke="#475569" stroke-width="2"/>
+    <circle cx="175" cy="325" r="4" fill="#475569"/>
+    <text x="175" y="368" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">① 吸气</text>
+    <text x="175" y="388" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">进气门打开，活塞下行</text>
+    <text x="175" y="404" font-size="11.5" fill="#64748b" text-anchor="middle">吸入汽油和空气的混合气</text>
+  </g>
+
+  <!-- 压缩 -->
+  <g>
+    <rect x="302" y="134" width="116" height="16" rx="4" fill="#94a3b8"/>
+    <rect x="305" y="150" width="110" height="146" rx="6" fill="#f8fbff" stroke="#64748b" stroke-width="2.5"/>
+    <line x1="332" y1="156" x2="354" y2="156" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+    <line x1="330" y1="150" x2="330" y2="156" stroke="#94a3b8" stroke-width="3"/>
+    <line x1="384" y1="156" x2="406" y2="156" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+    <line x1="390" y1="150" x2="390" y2="156" stroke="#94a3b8" stroke-width="3"/>
+    <line class="p51-flow" x1="288" y1="250" x2="288" y2="205" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arrRed)"/>
+    <rect x="314" y="214" width="92" height="24" rx="3" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
+    <line x1="325" y1="220" x2="395" y2="220" stroke="#cbd5e1" stroke-width="2"/>
+    <line x1="360" y1="238" x2="360" y2="325" stroke="#64748b" stroke-width="5"/>
+    <circle cx="360" cy="338" r="13" fill="#cbd5e1" stroke="#475569" stroke-width="2"/>
+    <circle cx="360" cy="325" r="4" fill="#475569"/>
+    <text x="360" y="368" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">② 压缩</text>
+    <text x="360" y="388" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">两气门关闭，活塞上行</text>
+    <text x="360" y="404" font-size="11.5" fill="#64748b" text-anchor="middle">机械能转化为内能</text>
+  </g>
+
+  <!-- 做功 -->
+  <g>
+    <rect x="487" y="134" width="116" height="16" rx="4" fill="#94a3b8"/>
+    <rect x="490" y="150" width="110" height="146" rx="6" fill="#f8fbff" stroke="#64748b" stroke-width="2.5"/>
+    <rect x="492" y="150" width="106" height="28" rx="2" fill="#fee2e2"/>
+    <line x1="517" y1="156" x2="539" y2="156" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+    <line x1="515" y1="150" x2="515" y2="156" stroke="#94a3b8" stroke-width="3"/>
+    <line x1="569" y1="156" x2="591" y2="156" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+    <line x1="575" y1="150" x2="575" y2="156" stroke="#94a3b8" stroke-width="3"/>
+    <g class="p51-spark">
+      <circle cx="545" cy="158" r="4" fill="#f59e0b"/>
+      <path d="M537 152 L541 158 L545 151 L549 158 L553 152" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <g class="p51-flame">
+      <path d="M545 154 L529 176 L561 176 Z" fill="#f97316" opacity=".9"/>
+      <path d="M545 160 L536 175 L554 175 Z" fill="#fbbf24"/>
+    </g>
+    <line class="p51-flow" x1="473" y1="195" x2="473" y2="240" stroke="#059669" stroke-width="2.5" marker-end="url(#arrGreen)"/>
+    <rect x="499" y="178" width="92" height="24" rx="3" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
+    <line x1="510" y1="184" x2="580" y2="184" stroke="#cbd5e1" stroke-width="2"/>
+    <line x1="545" y1="202" x2="545" y2="325" stroke="#64748b" stroke-width="5"/>
+    <circle cx="545" cy="338" r="13" fill="#cbd5e1" stroke="#475569" stroke-width="2"/>
+    <circle cx="545" cy="325" r="4" fill="#475569"/>
+    <text x="545" y="368" font-size="13" font-weight="800" fill="#b45309" text-anchor="middle">③ 做功</text>
+    <text x="545" y="388" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">火花塞点火，活塞下行</text>
+    <text x="545" y="404" font-size="11.5" fill="#64748b" text-anchor="middle">内能转化为机械能</text>
+  </g>
+
+  <!-- 排气 -->
+  <g>
+    <rect x="672" y="134" width="116" height="16" rx="4" fill="#94a3b8"/>
+    <rect x="675" y="150" width="110" height="146" rx="6" fill="#f8fbff" stroke="#64748b" stroke-width="2.5"/>
+    <line x1="702" y1="156" x2="724" y2="156" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+    <line x1="700" y1="150" x2="700" y2="156" stroke="#94a3b8" stroke-width="3"/>
+    <line class="p51-flow" x1="760" y1="130" x2="760" y2="112" stroke="#dc2626" stroke-width="3" marker-end="url(#arrRed)"/>
+    <line x1="748" y1="158" x2="770" y2="158" stroke="#dc2626" stroke-width="4" stroke-linecap="round"/>
+    <line x1="760" y1="150" x2="760" y2="158" stroke="#dc2626" stroke-width="3"/>
+    <line class="p51-flow" x1="658" y1="250" x2="658" y2="205" stroke="#d97706" stroke-width="2.5" marker-end="url(#arrAmber)"/>
+    <rect x="684" y="210" width="92" height="24" rx="3" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
+    <line x1="695" y1="216" x2="765" y2="216" stroke="#cbd5e1" stroke-width="2"/>
+    <line x1="730" y1="234" x2="730" y2="325" stroke="#64748b" stroke-width="5"/>
+    <circle cx="730" cy="338" r="13" fill="#cbd5e1" stroke="#475569" stroke-width="2"/>
+    <circle cx="730" cy="325" r="4" fill="#475569"/>
+    <text x="730" y="368" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">④ 排气</text>
+    <text x="730" y="388" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">排气门打开，活塞上行</text>
+    <text x="730" y="404" font-size="11.5" fill="#64748b" text-anchor="middle">把废气排出气缸</text>
+  </g>
+
+  <rect x="52" y="420" width="796" height="28" rx="8" fill="#eef6ff"/>
+  <text x="450" y="439" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">四个冲程依次循环，活塞在气缸中上下往复运动</text>
+</g>
+
+<!-- 第二步：能量转化 -->
+<g class="p51-s2" data-zone="2">
+  <rect x="36" y="64" width="828" height="394" rx="18" fill="#ffffff" stroke="#dbe6f2" stroke-width="2"/>
+  <rect x="56" y="80" width="216" height="30" rx="15" fill="#dbeafe"/>
+  <text x="164" y="100" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">② 热机中的能量转化</text>
+  <text x="292" y="100" font-size="13" font-weight="800" fill="#1e3a8a">燃料的化学能 → 内能 → 机械能</text>
+
+  <rect class="p51-box" x="58" y="196" width="210" height="104" rx="16" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+  <text x="163" y="236" font-size="14" font-weight="800" fill="#c2410c" text-anchor="middle">燃料的化学能</text>
+  <text x="163" y="262" font-size="11.5" fill="#92400e" text-anchor="middle">汽油、柴油燃烧</text>
+  <text x="163" y="336" font-size="12" font-weight="800" fill="#92400e" text-anchor="middle">① 化学能 → 内能</text>
+
+  <rect class="p51-box p51-boxB" x="346" y="196" width="210" height="104" rx="16" fill="#fef2f2" stroke="#fca5a5" stroke-width="2"/>
+  <text x="451" y="236" font-size="14" font-weight="800" fill="#b91c1c" text-anchor="middle">内能</text>
+  <text x="451" y="262" font-size="11.5" fill="#991b1b" text-anchor="middle">高温高压燃气</text>
+  <text x="451" y="336" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">② 内能 → 机械能</text>
+
+  <rect class="p51-box p51-boxC" x="634" y="196" width="210" height="104" rx="16" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+  <text x="739" y="236" font-size="14" font-weight="800" fill="#1d4ed8" text-anchor="middle">机械能</text>
+  <text x="739" y="262" font-size="11.5" fill="#1e40af" text-anchor="middle">活塞、曲轴运动</text>
+  <text x="739" y="336" font-size="12" font-weight="800" fill="#1d4ed8" text-anchor="middle">③ 对外做功</text>
+
+  <line class="p51-link" x1="272" y1="248" x2="342" y2="248" stroke="#d97706" stroke-width="3" stroke-linecap="round" marker-end="url(#arrAmber)"/>
+  <text x="307" y="234" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">燃烧</text>
+  <line class="p51-link" x1="560" y1="248" x2="630" y2="248" stroke="#dc2626" stroke-width="3" stroke-linecap="round" marker-end="url(#arrRed)"/>
+  <text x="595" y="234" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">做功</text>
+
+  <rect x="120" y="356" width="660" height="46" rx="12" fill="#f0fdf4"/>
+  <text x="450" y="376" font-size="13" font-weight="800" fill="#047857" text-anchor="middle">热机工作的实质：燃料的化学能 → 内能 → 机械能</text>
+  <text x="450" y="394" font-size="11.5" fill="#065f46" text-anchor="middle">内能是中间环节，最终通过活塞做功输出机械能</text>
+
+  <rect x="52" y="420" width="796" height="28" rx="8" fill="#f0fdf4"/>
+  <text x="450" y="439" font-size="12.5" font-weight="800" fill="#047857" text-anchor="middle">热机把燃料的化学能转化为机械能，内能是中间环节</text>
+</g>
+
+<!-- 第三步：一个循环做功一次 -->
+<g class="p51-s3" data-zone="3">
+  <rect x="36" y="64" width="828" height="394" rx="18" fill="#ffffff" stroke="#dbe6f2" stroke-width="2"/>
+  <rect x="56" y="80" width="206" height="30" rx="15" fill="#dbeafe"/>
+  <text x="159" y="100" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">③ 一个循环做功一次</text>
+
+  <rect x="64" y="118" width="410" height="278" rx="14" fill="#f8fafc" stroke="#dbe6f2" stroke-width="1.5"/>
+  <text x="269" y="146" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">四冲程循环</text>
+
+  <circle class="p51-core" cx="310" cy="252" r="44" fill="#e8effc"/>
+  <text x="310" y="246" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">1 个循环</text>
+  <text x="310" y="268" font-size="13" font-weight="800" fill="#b45309" text-anchor="middle">做功 1 次</text>
+
+  <rect x="150" y="160" width="130" height="44" rx="10" fill="#ffffff" stroke="#93c5fd" stroke-width="2"/>
+  <text x="215" y="188" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">吸气</text>
+  <rect x="340" y="160" width="130" height="44" rx="10" fill="#ffffff" stroke="#93c5fd" stroke-width="2"/>
+  <text x="405" y="188" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">压缩</text>
+  <rect x="340" y="300" width="130" height="44" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="405" y="328" font-size="13.5" font-weight="800" fill="#92400e" text-anchor="middle">做功</text>
+  <rect x="150" y="300" width="130" height="44" rx="10" fill="#ffffff" stroke="#93c5fd" stroke-width="2"/>
+  <text x="215" y="328" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">排气</text>
+
+  <line class="p51-loop" x1="284" y1="182" x2="336" y2="182" stroke="#1d4ed8" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrBlue)"/>
+  <line class="p51-loop" x1="405" y1="208" x2="405" y2="296" stroke="#1d4ed8" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrBlue)"/>
+  <line class="p51-loop" x1="336" y1="322" x2="284" y2="322" stroke="#1d4ed8" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrBlue)"/>
+  <line class="p51-loop" x1="215" y1="296" x2="215" y2="208" stroke="#1d4ed8" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrBlue)"/>
+
+  <rect x="490" y="120" width="358" height="278" rx="14" fill="#f8fafc" stroke="#dbe6f2" stroke-width="1.5"/>
+  <text x="669" y="146" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">为什么只做功一次？</text>
+  <text x="669" y="176" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">只有做功冲程中，燃气推动活塞</text>
+  <text x="669" y="196" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">对外做有用功</text>
+  <text x="669" y="226" font-size="11.5" fill="#64748b" text-anchor="middle">其余三个冲程靠飞轮惯性完成</text>
+
+  <rect x="510" y="244" width="318" height="42" rx="10" fill="#e8effc"/>
+  <text x="669" y="270" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">活塞往复 2 次</text>
+  <rect x="510" y="292" width="318" height="42" rx="10" fill="#e8effc"/>
+  <text x="669" y="318" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">曲轴转 2 周</text>
+  <rect x="510" y="340" width="318" height="42" rx="10" fill="#fef3c7"/>
+  <text x="669" y="366" font-size="13" font-weight="800" fill="#92400e" text-anchor="middle">对外做功 1 次</text>
+
+  <rect x="52" y="420" width="796" height="28" rx="8" fill="#fffbeb"/>
+  <text x="450" y="439" font-size="12.5" font-weight="800" fill="#92400e" text-anchor="middle">一个工作循环：活塞往复 2 次，曲轴转 2 周，做功 1 次</text>
+</g>
+</svg>

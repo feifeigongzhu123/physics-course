@@ -1,0 +1,260 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="光的偏振与激光：横波偏振、偏振片、激光的特性与应用">
+<style>
+[data-scene="ps-83"] .s83-s1,[data-scene="ps-83"] .s83-s2,[data-scene="ps-83"] .s83-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility 0s linear .45s}
+[data-scene="ps-83"].s1 .s83-s1,[data-scene="ps-83"].s2 .s83-s2,[data-scene="ps-83"].s3 .s83-s3{opacity:1;visibility:visible;transition:opacity .45s ease,visibility 0s}
+@keyframes s83pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes s83pop{0%{transform:scale(.85);opacity:0}70%{transform:scale(1.05);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s83flow{to{stroke-dashoffset:-30}}
+@keyframes s83blink{0%,100%{opacity:1}50%{opacity:.35}}
+[data-scene="ps-83"].s1 .s83-vib{animation:s83pulse 2.8s ease-in-out infinite}
+[data-scene="ps-83"].s1 .s83-vib2{animation-delay:.7s}
+[data-scene="ps-83"].s1 .s83-plate{animation:s83pulse 2.2s ease-in-out infinite}
+[data-scene="ps-83"].s1 .s83-pol{transform-box:fill-box;transform-origin:center;animation:s83pop .5s ease both}
+[data-scene="ps-83"].s1 .s83-pol2{animation-delay:.12s}
+[data-scene="ps-83"].s1 .s83-pol3{animation-delay:.24s}
+[data-scene="ps-83"].s1 .s83-pol4{animation-delay:.36s}
+[data-scene="ps-83"].s2 .s83-panel{transform-box:fill-box;transform-origin:center;animation:s83pop .55s ease both}
+[data-scene="ps-83"].s2 .s83-panel2{animation-delay:.18s}
+[data-scene="ps-83"].s2 .s83-lit{animation:s83blink 1.8s ease-in-out infinite}
+[data-scene="ps-83"].s2 .s83-app{transform-box:fill-box;transform-origin:center;animation:s83pop .45s ease both}
+[data-scene="ps-83"].s2 .s83-app2{animation-delay:.1s}
+[data-scene="ps-83"].s2 .s83-app3{animation-delay:.2s}
+[data-scene="ps-83"].s2 .s83-app4{animation-delay:.3s}
+[data-scene="ps-83"].s3 .s83-beam{stroke-dasharray:9 7;animation:s83flow 1.1s linear infinite}
+[data-scene="ps-83"].s3 .s83-spot{animation:s83blink 1.5s ease-in-out infinite}
+[data-scene="ps-83"].s3 .s83-card{transform-box:fill-box;transform-origin:center;animation:s83pop .5s ease both}
+[data-scene="ps-83"].s3 .s83-c2{animation-delay:.12s}
+[data-scene="ps-83"].s3 .s83-c3{animation-delay:.24s}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">光的偏振 激光：横波证据与相干光源</text>
+
+<!-- 第一步：横波与偏振 -->
+<g class="s83-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">光波是横波，偏振片只让与透振方向一致的振动通过</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="256" height="28" rx="14" fill="#e8effc"/>
+  <text x="184" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">自然光 → 偏振片 → 偏振光</text>
+
+  <line x1="66" y1="272" x2="522" y2="272" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#arrBlue)"/>
+  <text x="456" y="258" font-size="11.5" font-weight="800" fill="#475569">传播方向</text>
+
+  <g stroke="#3b82f6" stroke-width="2" opacity=".65">
+    <line class="s83-vib" x1="104" y1="272" x2="196" y2="272"/>
+    <line class="s83-vib" x1="108" y1="254" x2="192" y2="290"/>
+    <line class="s83-vib s83-vib2" x1="118" y1="240" x2="182" y2="304"/>
+    <line class="s83-vib" x1="132" y1="230" x2="168" y2="314"/>
+    <line class="s83-vib s83-vib2" x1="150" y1="226" x2="150" y2="318"/>
+    <line class="s83-vib" x1="132" y1="314" x2="168" y2="230"/>
+    <line class="s83-vib" x1="118" y1="304" x2="182" y2="240"/>
+    <line class="s83-vib s83-vib2" x1="108" y1="290" x2="192" y2="254"/>
+  </g>
+  <text x="150" y="346" font-size="11.5" font-weight="800" fill="#1e40af" text-anchor="middle">自然光：各方向振动都有</text>
+
+  <rect class="s83-plate" x="240" y="208" width="20" height="128" rx="4" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+  <g stroke="#475569" stroke-width="1.6">
+    <line x1="246" y1="216" x2="246" y2="328"/>
+    <line x1="251" y1="216" x2="251" y2="328"/>
+    <line x1="256" y1="216" x2="256" y2="328"/>
+  </g>
+  <text x="250" y="200" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">偏振片</text>
+  <text x="250" y="356" font-size="11" fill="#64748b" text-anchor="middle">透振方向竖直</text>
+
+  <g stroke="#dc2626" stroke-width="2.6">
+    <line class="s83-pol" x1="320" y1="240" x2="320" y2="304"/>
+    <line class="s83-pol s83-pol2" x1="380" y1="240" x2="380" y2="304"/>
+    <line class="s83-pol s83-pol3" x1="440" y1="240" x2="440" y2="304"/>
+    <line class="s83-pol s83-pol4" x1="500" y1="240" x2="500" y2="304"/>
+  </g>
+  <text x="410" y="330" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">偏振光：只沿竖直方向振动</text>
+
+  <text x="296" y="420" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">偏振片只让平行于透振方向的光通过</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="694" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">光是横波</text>
+
+  <circle cx="612" cy="174" r="11" fill="#dbeafe"/>
+  <text x="612" y="178" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">1</text>
+  <text x="634" y="178" font-size="11.5" font-weight="700" fill="#334155">振动方向垂直于传播方向</text>
+
+  <circle cx="612" cy="212" r="11" fill="#dbeafe"/>
+  <text x="612" y="216" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">2</text>
+  <text x="634" y="216" font-size="11.5" font-weight="700" fill="#334155">自然光：各个方向都有振动</text>
+
+  <circle cx="612" cy="250" r="11" fill="#dbeafe"/>
+  <text x="612" y="254" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">3</text>
+  <text x="634" y="254" font-size="11.5" font-weight="700" fill="#334155">偏振光：只在一个方向振动</text>
+
+  <circle cx="612" cy="288" r="11" fill="#dbeafe"/>
+  <text x="612" y="292" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">4</text>
+  <text x="634" y="292" font-size="11.5" font-weight="700" fill="#334155">偏振片只透过一个振动方向</text>
+
+  <rect x="596" y="316" width="248" height="58" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="720" y="340" font-size="12" font-weight="900" fill="#1e3a8a" text-anchor="middle">偏振现象</text>
+  <text x="720" y="362" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">是光波为横波的有力证据</text>
+
+  <text x="720" y="400" font-size="11" fill="#64748b" text-anchor="middle">纵波不会发生偏振</text>
+  <text x="720" y="422" font-size="11" fill="#64748b" text-anchor="middle">只有横波才有偏振现象</text>
+
+  <rect x="36" y="446" width="828" height="44" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="474" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">偏振片只允许与透振方向一致的振动通过，偏振现象说明光是横波</text>
+</g>
+
+<!-- 第二步：偏振的应用 -->
+<g class="s83-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">两个偏振片：透振方向平行时最亮，垂直时几乎不透光</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="200" height="28" rx="14" fill="#e8effc"/>
+  <text x="156" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">两片偏振片叠加</text>
+
+  <g class="s83-panel">
+    <rect x="66" y="156" width="450" height="108" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="84" y="180" font-size="12" font-weight="800" fill="#1e3a8a">透振方向平行</text>
+    <line x1="84" y1="222" x2="474" y2="222" stroke="#f59e0b" stroke-width="3"/>
+    <rect x="190" y="198" width="14" height="48" rx="3" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+    <line x1="194" y1="204" x2="194" y2="240" stroke="#475569" stroke-width="1.4"/>
+    <line x1="200" y1="204" x2="200" y2="240" stroke="#475569" stroke-width="1.4"/>
+    <rect x="330" y="198" width="14" height="48" rx="3" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+    <line x1="334" y1="204" x2="334" y2="240" stroke="#475569" stroke-width="1.4"/>
+    <line x1="340" y1="204" x2="340" y2="240" stroke="#475569" stroke-width="1.4"/>
+    <text x="197" y="192" font-size="11" font-weight="800" fill="#475569" text-anchor="middle">P₁</text>
+    <text x="337" y="192" font-size="11" font-weight="800" fill="#475569" text-anchor="middle">P₂</text>
+    <circle class="s83-lit" cx="440" cy="222" r="15" fill="#fde047" stroke="#d97706" stroke-width="1.5"/>
+    <text x="440" y="258" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">亮</text>
+  </g>
+
+  <g class="s83-panel s83-panel2">
+    <rect x="66" y="280" width="450" height="108" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="84" y="304" font-size="12" font-weight="800" fill="#1e3a8a">透振方向垂直</text>
+    <line x1="84" y1="348" x2="352" y2="348" stroke="#f59e0b" stroke-width="3"/>
+    <rect x="190" y="324" width="14" height="48" rx="3" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+    <line x1="194" y1="330" x2="194" y2="366" stroke="#475569" stroke-width="1.4"/>
+    <line x1="200" y1="330" x2="200" y2="366" stroke="#475569" stroke-width="1.4"/>
+    <rect x="310" y="341" width="48" height="14" rx="3" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+    <line x1="316" y1="345" x2="352" y2="345" stroke="#475569" stroke-width="1.4"/>
+    <line x1="316" y1="351" x2="352" y2="351" stroke="#475569" stroke-width="1.4"/>
+    <text x="197" y="318" font-size="11" font-weight="800" fill="#475569" text-anchor="middle">P₁</text>
+    <text x="334" y="336" font-size="11" font-weight="800" fill="#475569" text-anchor="middle">P₂</text>
+    <circle cx="440" cy="348" r="15" fill="#1e293b"/>
+    <text x="440" y="384" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">暗</text>
+  </g>
+
+  <text x="296" y="420" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">转动第二片偏振片，透射光由亮逐渐变暗</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="694" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">偏振的应用</text>
+
+  <g class="s83-app">
+    <rect x="596" y="156" width="248" height="58" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+    <circle cx="614" cy="185" r="10" fill="#dbeafe"/>
+    <text x="614" y="189" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">1</text>
+    <text x="634" y="181" font-size="11.5" font-weight="800" fill="#1e3a8a">立体电影</text>
+    <text x="634" y="202" font-size="11" fill="#64748b">眼镜两片透振方向互相垂直</text>
+  </g>
+
+  <g class="s83-app s83-app2">
+    <rect x="596" y="222" width="248" height="58" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+    <circle cx="614" cy="251" r="10" fill="#dbeafe"/>
+    <text x="614" y="255" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">2</text>
+    <text x="634" y="247" font-size="11.5" font-weight="800" fill="#1e3a8a">摄影</text>
+    <text x="634" y="268" font-size="11" fill="#64748b">偏振镜滤去水面、玻璃的反光</text>
+  </g>
+
+  <g class="s83-app s83-app3">
+    <rect x="596" y="288" width="248" height="58" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+    <circle cx="614" cy="317" r="10" fill="#dbeafe"/>
+    <text x="614" y="321" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">3</text>
+    <text x="634" y="313" font-size="11.5" font-weight="800" fill="#1e3a8a">液晶显示</text>
+    <text x="634" y="334" font-size="11" fill="#64748b">用偏振片控制光的明暗</text>
+  </g>
+
+  <g class="s83-app s83-app4">
+    <rect x="596" y="354" width="248" height="58" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+    <circle cx="614" cy="383" r="10" fill="#dbeafe"/>
+    <text x="614" y="387" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">4</text>
+    <text x="634" y="379" font-size="11.5" font-weight="800" fill="#1e3a8a">偏光太阳镜</text>
+    <text x="634" y="400" font-size="11" fill="#64748b">减弱水面和路面的眩光</text>
+  </g>
+
+  <rect x="36" y="446" width="828" height="44" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="474" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">透振方向平行时透射光最强，垂直时几乎完全被挡住</text>
+</g>
+
+<!-- 第三步：激光 -->
+<g class="s83-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">激光：相干性好、平行度好、亮度高，是人工产生的相干光</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="200" height="28" rx="14" fill="#e8effc"/>
+  <text x="156" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">激光器发出的光束</text>
+
+  <rect x="80" y="248" width="112" height="60" rx="10" fill="#334155"/>
+  <rect x="94" y="260" width="50" height="36" rx="5" fill="#0f172a"/>
+  <text x="119" y="283" font-size="11" font-weight="800" fill="#86efac" text-anchor="middle">LASER</text>
+  <text x="136" y="326" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">激光器</text>
+
+  <rect x="192" y="260" width="318" height="32" rx="16" fill="#fecaca" opacity=".4"/>
+  <g stroke="#dc2626" stroke-width="2" stroke-linecap="round">
+    <line class="s83-beam" x1="196" y1="268" x2="508" y2="268"/>
+    <line class="s83-beam" x1="196" y1="276" x2="508" y2="276"/>
+    <line class="s83-beam" x1="196" y1="284" x2="508" y2="284"/>
+  </g>
+  <circle class="s83-spot" cx="516" cy="276" r="9" fill="#fde047" stroke="#d97706" stroke-width="1.5"/>
+
+  <text x="350" y="246" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">平行度好：光束不发散</text>
+  <text x="350" y="330" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">相干性好：频率单一，相位一致</text>
+
+  <rect x="56" y="350" width="160" height="54" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="136" y="373" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">相干性好</text>
+  <text x="136" y="393" font-size="11" fill="#475569" text-anchor="middle">频率单一</text>
+
+  <rect x="226" y="350" width="160" height="54" rx="10" fill="#fef9c3" stroke="#facc15" stroke-width="1.5"/>
+  <text x="306" y="373" font-size="11.5" font-weight="800" fill="#854d0e" text-anchor="middle">平行度好</text>
+  <text x="306" y="393" font-size="11" fill="#92400e" text-anchor="middle">方向集中</text>
+
+  <rect x="396" y="350" width="140" height="54" rx="10" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="466" y="373" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">亮度高</text>
+  <text x="466" y="393" font-size="11" fill="#b91c1c" text-anchor="middle">能量集中</text>
+
+  <text x="296" y="424" font-size="11" fill="#64748b" text-anchor="middle">激光是人工产生的相干光</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="694" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">激光的特性与应用</text>
+
+  <g class="s83-card">
+    <rect x="596" y="156" width="248" height="76" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="610" y="181" font-size="12" font-weight="800" fill="#1e3a8a">相干性好</text>
+    <text x="610" y="203" font-size="11" fill="#475569">频率单一、相位一致</text>
+    <text x="610" y="223" font-size="11" font-weight="700" fill="#1e40af">全息照相、干涉实验</text>
+  </g>
+
+  <g class="s83-card s83-c2">
+    <rect x="596" y="240" width="248" height="76" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="610" y="265" font-size="12" font-weight="800" fill="#1e3a8a">平行度好</text>
+    <text x="610" y="287" font-size="11" fill="#475569">光束发散小，可远距离传播</text>
+    <text x="610" y="307" font-size="11" font-weight="700" fill="#1e40af">测距、准直、光纤通信</text>
+  </g>
+
+  <g class="s83-card s83-c3">
+    <rect x="596" y="324" width="248" height="76" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="610" y="349" font-size="12" font-weight="800" fill="#1e3a8a">亮度高</text>
+    <text x="610" y="371" font-size="11" fill="#475569">能量高度集中</text>
+    <text x="610" y="391" font-size="11" font-weight="700" fill="#1e40af">切割、焊接、手术、光盘</text>
+  </g>
+
+  <text x="720" y="424" font-size="11" font-weight="800" fill="#b91c1c" text-anchor="middle">使用激光时不能直射眼睛</text>
+
+  <rect x="36" y="446" width="828" height="44" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="474" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">激光具有相干性好、平行度好、亮度高的特点，在通信、医疗和工业中应用广泛</text>
+</g>
+</svg>

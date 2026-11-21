@@ -1,0 +1,166 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="放射性元素的衰变：α β γ 三种射线、半衰期、衰变方程">
+<style>
+[data-scene="ps-121"] .s121-step1,[data-scene="ps-121"] .s121-step2,[data-scene="ps-121"] .s121-step3{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="ps-121"].s1 .s121-step1,[data-scene="ps-121"].s2 .s121-step2,[data-scene="ps-121"].s3 .s121-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes s121fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@keyframes s121pop{0%{transform:scale(.88);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes s121draw{to{stroke-dashoffset:0}}
+@keyframes s121pulse{0%,100%{opacity:.55}50%{opacity:1}}
+[data-scene="ps-121"].s1 .s121-ray{stroke-dasharray:620;stroke-dashoffset:620;animation:s121draw .9s ease both}
+[data-scene="ps-121"].s1 .s121-ray2{animation-delay:.2s}
+[data-scene="ps-121"].s1 .s121-ray3{animation-delay:.4s}
+[data-scene="ps-121"].s1 .s121-card{transform-box:fill-box;transform-origin:center;animation:s121pop .5s ease .4s both}
+[data-scene="ps-121"].s2 .s121-axis{stroke-dasharray:500;stroke-dashoffset:500;animation:s121draw .8s ease .2s forwards}
+[data-scene="ps-121"].s2 .s121-curve{stroke-dasharray:420;stroke-dashoffset:420;animation:s121draw 1.1s ease .5s forwards}
+[data-scene="ps-121"].s2 .s121-guide{opacity:0;animation:s121fade .4s ease forwards}
+[data-scene="ps-121"].s2 .s121-g2{animation-delay:.9s}
+[data-scene="ps-121"].s2 .s121-g3{animation-delay:1.05s}
+[data-scene="ps-121"].s2 .s121-card{transform-box:fill-box;transform-origin:center;animation:s121pop .5s ease .3s both}
+[data-scene="ps-121"].s3 .s121-row{transform-box:fill-box;transform-origin:center;animation:s121pop .45s ease both}
+[data-scene="ps-121"].s3 .s121-r2{animation-delay:.15s}
+[data-scene="ps-121"].s3 .s121-r3{animation-delay:.3s}
+[data-scene="ps-121"].s3 .s121-card{transform-box:fill-box;transform-origin:center;animation:s121pop .5s ease .45s both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="532" width="900" height="88" fill="url(#gBench)"/>
+<line x1="0" y1="532" x2="900" y2="532" stroke="#cbd5e1" stroke-width="2.5"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">放射性元素的衰变</text>
+
+<!-- 第一步：三种射线 -->
+<g class="s121-step1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 1 步 · 三种射线：α、β、γ</text>
+
+  <rect x="50" y="196" width="64" height="94" rx="10" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="82" y="238" font-size="12" font-weight="800" fill="#4338ca" text-anchor="middle">放射</text>
+  <text x="82" y="258" font-size="12" font-weight="800" fill="#4338ca" text-anchor="middle">源</text>
+
+  <rect x="300" y="150" width="8" height="170" rx="2" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
+  <rect x="450" y="150" width="8" height="170" rx="2" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5"/>
+  <rect x="580" y="150" width="10" height="170" rx="2" fill="#64748b" stroke="#334155" stroke-width="1.5"/>
+
+  <line class="s121-ray" x1="114" y1="215" x2="700" y2="215" stroke="#059669" stroke-width="2.5" opacity=".8"/>
+  <line class="s121-ray s121-ray2" x1="114" y1="250" x2="288" y2="250" stroke="#dc2626" stroke-width="3" marker-end="url(#arrRed)"/>
+  <line class="s121-ray s121-ray3" x1="114" y1="285" x2="438" y2="285" stroke="#1d4ed8" stroke-width="3" marker-end="url(#arrBlue)"/>
+
+  <text x="304" y="140" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">纸</text>
+  <text x="454" y="140" font-size="12" font-weight="800" fill="#475569" text-anchor="middle">铝板</text>
+  <text x="585" y="140" font-size="12" font-weight="800" fill="#334155" text-anchor="middle">铅板</text>
+
+  <text x="190" y="238" font-size="12" font-weight="800" fill="#b91c1c">α（氦核）</text>
+  <text x="330" y="305" font-size="12" font-weight="800" fill="#1d4ed8">β（电子）</text>
+  <text x="440" y="203" font-size="12" font-weight="800" fill="#047857">γ（光子）</text>
+  <text x="660" y="238" font-size="11.5" fill="#047857">穿透最强</text>
+
+  <g class="s121-card">
+    <rect x="55" y="348" width="790" height="108" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="75" y="376" font-size="13" font-weight="900" fill="#b91c1c">α 射线</text>
+    <text x="75" y="400" font-size="12" fill="#334155">氦核流 ⁴₂He，带 2 个正电荷</text>
+    <text x="75" y="422" font-size="12" fill="#475569">电离本领强，穿透本领弱</text>
+    <text x="330" y="376" font-size="13" font-weight="900" fill="#1d4ed8">β 射线</text>
+    <text x="330" y="400" font-size="12" fill="#334155">高速电子流 ⁰₋₁e，带负电</text>
+    <text x="330" y="422" font-size="12" fill="#475569">穿透本领较强，能被铝板挡住</text>
+    <text x="585" y="376" font-size="13" font-weight="900" fill="#047857">γ 射线</text>
+    <text x="585" y="400" font-size="12" fill="#334155">能量很高的光子，不带电</text>
+    <text x="585" y="422" font-size="12" fill="#475569">穿透本领最强，电离本领最弱</text>
+  </g>
+
+  <rect x="70" y="470" width="760" height="38" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="494" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">电离本领 α 最大，穿透本领 γ 最大</text>
+</g>
+
+<!-- 第二步：半衰期 -->
+<g class="s121-step2" data-zone="2">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 2 步 · 半衰期：核数目减半所需的时间</text>
+
+  <text x="90" y="120" font-size="12" font-weight="800" fill="#475569">N / N₀</text>
+  <line class="s121-axis" x1="90" y1="390" x2="452" y2="390" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <line class="s121-axis" x1="90" y1="390" x2="90" y2="140" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <text x="462" y="394" font-size="12" font-weight="800" fill="#475569">t</text>
+
+  <line class="s121-guide" x1="90" y1="270" x2="190" y2="270" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <line class="s121-guide" x1="190" y1="270" x2="190" y2="390" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <line class="s121-guide s121-g2" x1="90" y1="330" x2="290" y2="330" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <line class="s121-guide s121-g2" x1="290" y1="330" x2="290" y2="390" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <line class="s121-guide s121-g3" x1="90" y1="360" x2="390" y2="360" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <line class="s121-guide s121-g3" x1="390" y1="360" x2="390" y2="390" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5 5"/>
+
+  <text x="80" y="154" font-size="11" fill="#64748b" text-anchor="end">1</text>
+  <text x="80" y="274" font-size="11" fill="#64748b" text-anchor="end">1/2</text>
+  <text x="80" y="334" font-size="11" fill="#64748b" text-anchor="end">1/4</text>
+  <text x="80" y="364" font-size="11" fill="#64748b" text-anchor="end">1/8</text>
+  <text x="190" y="408" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">T</text>
+  <text x="290" y="408" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">2T</text>
+  <text x="390" y="408" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">3T</text>
+
+  <path class="s121-curve" d="M 90 150 C 130 150 155 225 190 270 C 225 312 255 320 290 330 C 325 340 355 355 390 360 L 430 362" fill="none" stroke="#dc2626" stroke-width="3"/>
+
+  <rect x="90" y="416" width="352" height="34" rx="8" fill="#fffbeb" stroke="#fcd34d" stroke-width="1.5"/>
+  <text x="266" y="439" font-size="13" font-weight="800" fill="#92400e" text-anchor="middle">N = N₀ × (1/2)^(t/T)</text>
+
+  <g class="s121-card">
+    <rect x="520" y="110" width="320" height="336" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="680" y="142" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">半衰期的特点</text>
+    <text x="538" y="178" font-size="12" fill="#334155">放射性元素的原子核有半数</text>
+    <text x="538" y="198" font-size="12" fill="#334155">发生衰变所需的时间</text>
+    <line x1="538" y1="218" x2="822" y2="218" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="538" y="246" font-size="12" font-weight="800" fill="#1d4ed8">由原子核自身决定</text>
+    <text x="538" y="272" font-size="11.5" fill="#475569">与温度、压强、化学状态无关</text>
+    <text x="538" y="296" font-size="11.5" fill="#475569">不能通过加热或加压改变</text>
+    <line x1="538" y1="316" x2="822" y2="316" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="538" y="344" font-size="12" font-weight="800" fill="#b45309">统计规律</text>
+    <text x="538" y="368" font-size="11.5" fill="#475569">只对大量原子核有意义</text>
+    <text x="680" y="400" font-size="11.5" fill="#334155" text-anchor="middle">经过 3 个半衰期，剩 1/8</text>
+    <text x="680" y="424" font-size="11" fill="#64748b" text-anchor="middle">剩余的是未衰变的原子核</text>
+  </g>
+
+  <rect x="70" y="470" width="760" height="38" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="494" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">每经过一个半衰期，未衰变的核数目减为原来的一半</text>
+</g>
+
+<!-- 第三步：衰变方程 -->
+<g class="s121-step3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 3 步 · 写衰变方程：两个守恒</text>
+
+  <g class="s121-row">
+    <rect x="55" y="116" width="525" height="98" rx="12" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="76" y="140" font-size="12.5" font-weight="900" fill="#b91c1c">α 衰变</text>
+    <text x="90" y="190" font-size="21" font-weight="800" fill="#1e3a8a">²³⁸₉₂U → ²³⁴₉₀Th + ⁴₂He</text>
+    <text x="90" y="210" font-size="11" fill="#64748b">质量数 238 = 234 + 4；电荷数 92 = 90 + 2</text>
+  </g>
+  <g class="s121-row s121-r2">
+    <rect x="55" y="226" width="525" height="98" rx="12" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="76" y="250" font-size="12.5" font-weight="900" fill="#1d4ed8">β 衰变</text>
+    <text x="90" y="300" font-size="21" font-weight="800" fill="#1e3a8a">²³⁴₉₀Th → ²³⁴₉₁Pa + ⁰₋₁e</text>
+    <text x="90" y="320" font-size="11" fill="#64748b">质量数 234 = 234 + 0；电荷数 90 = 91 + (−1)</text>
+  </g>
+  <g class="s121-row s121-r3">
+    <rect x="55" y="336" width="525" height="98" rx="12" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="76" y="360" font-size="12.5" font-weight="900" fill="#047857">γ 辐射</text>
+    <text x="90" y="410" font-size="21" font-weight="800" fill="#1e3a8a">激发态核 → 基态核 + γ</text>
+    <text x="90" y="428" font-size="11" fill="#64748b">质量数 A 和电荷数 Z 都不变，只放出光子</text>
+  </g>
+
+  <g class="s121-card">
+    <rect x="600" y="110" width="240" height="332" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="720" y="142" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">守恒规律</text>
+    <text x="618" y="176" font-size="12" font-weight="800" fill="#1d4ed8">质量数守恒</text>
+    <text x="618" y="200" font-size="12" font-weight="800" fill="#1d4ed8">电荷数守恒</text>
+    <line x1="618" y1="220" x2="822" y2="220" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="618" y="248" font-size="11.5" fill="#334155">β 衰变的实质：</text>
+    <text x="618" y="270" font-size="11.5" fill="#334155">核内中子变成质子</text>
+    <text x="618" y="292" font-size="12" font-weight="800" fill="#b45309">n → p + e⁻</text>
+    <line x1="618" y1="312" x2="822" y2="312" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="618" y="340" font-size="11.5" fill="#334155">先配质量数，</text>
+    <text x="618" y="360" font-size="11.5" fill="#334155">再配电荷数</text>
+    <text x="618" y="384" font-size="11.5" fill="#475569">新核确定后，</text>
+    <text x="618" y="404" font-size="11.5" fill="#475569">再补上放出的粒子</text>
+    <text x="720" y="430" font-size="11" fill="#64748b" text-anchor="middle">γ 射线不改变 A 和 Z</text>
+  </g>
+
+  <rect x="70" y="470" width="760" height="38" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="494" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">衰变方程两边质量数和电荷数必须分别相等</text>
+</g>
+</svg>

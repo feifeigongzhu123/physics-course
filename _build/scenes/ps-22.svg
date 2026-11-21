@@ -1,0 +1,191 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="超重和失重：电梯加速上升与下降、支持力和重力的关系、完全失重与空间站">
+<style>
+[data-scene="ps-22"] .s22-step{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="ps-22"].s1 .s22-step1,[data-scene="ps-22"].s2 .s22-step2,[data-scene="ps-22"].s3 .s22-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes s22rise{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes s22fall{0%,100%{transform:translateY(0)}50%{transform:translateY(9px)}}
+@keyframes s22pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes s22pop{0%{transform:scale(.85);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes s22orbit{to{transform:rotate(360deg)}}
+[data-scene="ps-22"].s1 .s22-car{transform-box:fill-box;transform-origin:center;animation:s22rise 2.8s ease-in-out infinite}
+[data-scene="ps-22"].s1 .s22-a{animation:s22pulse 1.4s ease-in-out infinite}
+[data-scene="ps-22"].s2 .s22-car{transform-box:fill-box;transform-origin:center;animation:s22fall 2.8s ease-in-out infinite}
+[data-scene="ps-22"].s2 .s22-a{animation:s22pulse 1.4s ease-in-out infinite}
+[data-scene="ps-22"].s3 .s22-station{transform-box:fill-box;transform-origin:center;animation:s22pop .6s ease .2s both}
+[data-scene="ps-22"].s3 .s22-orbit{transform-box:view-box;transform-origin:250px 330px;animation:s22orbit 16s linear infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">超重和失重：只看加速度方向</text>
+
+<!-- 第一步：电梯加速上升，超重 -->
+<g class="s22-step s22-step1" data-zone="1">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">电梯加速上升：加速度向上，支持力大于重力</text>
+
+  <rect x="110" y="100" width="430" height="380" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <line x1="132" y1="104" x2="132" y2="476" stroke="#94a3b8" stroke-width="4"/>
+  <line x1="518" y1="104" x2="518" y2="476" stroke="#94a3b8" stroke-width="4"/>
+  <line x1="110" y1="110" x2="540" y2="110" stroke="#cbd5e1" stroke-width="3"/>
+  <line x1="110" y1="470" x2="540" y2="470" stroke="#cbd5e1" stroke-width="3"/>
+
+  <g class="s22-car">
+    <rect x="175" y="238" width="310" height="212" rx="12" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+    <rect x="192" y="254" width="276" height="180" rx="7" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.6"/>
+    <line x1="330" y1="254" x2="330" y2="434" stroke="#cbd5e1" stroke-width="2"/>
+
+    <circle cx="296" cy="298" r="13" fill="#fbbf24" stroke="#b45309" stroke-width="1.8"/>
+    <rect x="286" y="313" width="20" height="46" rx="10" fill="#60a5fa" stroke="#1e40af" stroke-width="1.6"/>
+    <line x1="288" y1="326" x2="266" y2="350" stroke="#1e40af" stroke-width="5" stroke-linecap="round"/>
+    <line x1="304" y1="326" x2="326" y2="350" stroke="#1e40af" stroke-width="5" stroke-linecap="round"/>
+    <line x1="292" y1="357" x2="288" y2="386" stroke="#1e40af" stroke-width="6" stroke-linecap="round"/>
+    <line x1="300" y1="357" x2="304" y2="386" stroke="#1e40af" stroke-width="6" stroke-linecap="round"/>
+
+    <rect x="250" y="388" width="100" height="13" rx="4" fill="#94a3b8" stroke="#64748b" stroke-width="1.4"/>
+    <rect x="262" y="401" width="76" height="16" rx="4" fill="#64748b"/>
+    <text x="300" y="414" font-size="11.5" font-weight="800" fill="#f8fafc" text-anchor="middle">秤</text>
+    <text x="300" y="448" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">示数变大</text>
+
+    <line x1="362" y1="386" x2="362" y2="320" stroke="#059669" stroke-width="3.5" marker-end="url(#arrGreen)"/>
+    <text x="374" y="342" font-size="13" font-weight="900" fill="#047857">N</text>
+    <line x1="392" y1="326" x2="392" y2="392" stroke="#7c3aed" stroke-width="3.5" marker-end="url(#arrBlue)"/>
+    <text x="404" y="374" font-size="13" font-weight="900" fill="#6d28d9">G</text>
+    <text x="352" y="470" font-size="12.5" font-weight="800" fill="#b91c1c">N ＞ G</text>
+  </g>
+
+  <g class="s22-a">
+    <line x1="566" y1="372" x2="566" y2="268" stroke="#dc2626" stroke-width="4.5" marker-end="url(#arrRed)"/>
+    <text x="580" y="320" font-size="17" font-weight="900" fill="#b91c1c">a</text>
+    <text x="558" y="392" font-size="12.5" font-weight="800" fill="#b91c1c" text-anchor="middle">向上</text>
+  </g>
+
+  <rect x="590" y="92" width="282" height="368" rx="16" fill="#ffffff" stroke="#fecaca" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="590" y="92" width="282" height="8" rx="4" fill="#dc2626"/>
+  <text x="731" y="130" font-size="22" font-weight="900" fill="#b91c1c" text-anchor="middle">超重</text>
+  <text x="731" y="156" font-size="12.5" font-weight="800" fill="#7c5a30" text-anchor="middle">加速度方向向上</text>
+  <text x="612" y="188" font-size="12.5" fill="#334155">电梯加速上升</text>
+  <text x="612" y="212" font-size="12.5" fill="#334155">或 电梯减速下降</text>
+  <line x1="612" y1="228" x2="850" y2="228" stroke="#e8eef7" stroke-width="1.5"/>
+  <text x="731" y="258" font-size="16" font-weight="900" fill="#1e3a8a" text-anchor="middle">N − G = ma</text>
+  <text x="731" y="288" font-size="15" font-weight="900" fill="#b91c1c" text-anchor="middle">N = G + ma ＞ G</text>
+  <text x="731" y="318" font-size="12.5" fill="#334155" text-anchor="middle">秤的示数大于真实重力</text>
+  <text x="731" y="346" font-size="12" fill="#64748b" text-anchor="middle">重力并没有改变，</text>
+  <text x="731" y="366" font-size="12" fill="#64748b" text-anchor="middle">只是对支持物的压力变大</text>
+  <text x="731" y="408" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">判断依据：a 向上，与 v 方向无关</text>
+  <rect x="618" y="422" width="226" height="28" rx="8" fill="#fff7ed" stroke="#fdba74" stroke-width="1.2"/>
+  <text x="731" y="441" font-size="11.5" font-weight="700" fill="#7c5a30" text-anchor="middle">加速上升 / 减速下降</text>
+</g>
+
+<!-- 第二步：电梯加速下降，失重 -->
+<g class="s22-step s22-step2" data-zone="2">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">电梯加速下降：加速度向下，支持力小于重力</text>
+
+  <rect x="110" y="100" width="430" height="380" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <line x1="132" y1="104" x2="132" y2="476" stroke="#94a3b8" stroke-width="4"/>
+  <line x1="518" y1="104" x2="518" y2="476" stroke="#94a3b8" stroke-width="4"/>
+  <line x1="110" y1="110" x2="540" y2="110" stroke="#cbd5e1" stroke-width="3"/>
+  <line x1="110" y1="470" x2="540" y2="470" stroke="#cbd5e1" stroke-width="3"/>
+
+  <g class="s22-car">
+    <rect x="175" y="250" width="310" height="205" rx="12" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+    <rect x="192" y="266" width="276" height="173" rx="7" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.6"/>
+    <line x1="330" y1="266" x2="330" y2="439" stroke="#cbd5e1" stroke-width="2"/>
+
+    <circle cx="296" cy="308" r="13" fill="#fbbf24" stroke="#b45309" stroke-width="1.8"/>
+    <rect x="286" y="323" width="20" height="44" rx="10" fill="#60a5fa" stroke="#1e40af" stroke-width="1.6"/>
+    <line x1="288" y1="336" x2="266" y2="358" stroke="#1e40af" stroke-width="5" stroke-linecap="round"/>
+    <line x1="304" y1="336" x2="326" y2="358" stroke="#1e40af" stroke-width="5" stroke-linecap="round"/>
+    <line x1="292" y1="365" x2="288" y2="394" stroke="#1e40af" stroke-width="6" stroke-linecap="round"/>
+    <line x1="300" y1="365" x2="304" y2="394" stroke="#1e40af" stroke-width="6" stroke-linecap="round"/>
+
+    <rect x="250" y="396" width="100" height="13" rx="4" fill="#94a3b8" stroke="#64748b" stroke-width="1.4"/>
+    <rect x="262" y="409" width="76" height="16" rx="4" fill="#64748b"/>
+    <text x="300" y="422" font-size="11.5" font-weight="800" fill="#f8fafc" text-anchor="middle">秤</text>
+    <text x="300" y="450" font-size="12" font-weight="800" fill="#1e40af" text-anchor="middle">示数变小</text>
+
+    <line x1="362" y1="392" x2="362" y2="344" stroke="#059669" stroke-width="3.5" marker-end="url(#arrGreen)"/>
+    <text x="374" y="358" font-size="13" font-weight="900" fill="#047857">N</text>
+    <line x1="392" y1="332" x2="392" y2="404" stroke="#7c3aed" stroke-width="3.5" marker-end="url(#arrBlue)"/>
+    <text x="404" y="386" font-size="13" font-weight="900" fill="#6d28d9">G</text>
+    <text x="350" y="468" font-size="12.5" font-weight="800" fill="#1e40af">N ＜ G</text>
+  </g>
+
+  <g class="s22-a">
+    <line x1="566" y1="268" x2="566" y2="372" stroke="#dc2626" stroke-width="4.5" marker-end="url(#arrRed)"/>
+    <text x="580" y="322" font-size="17" font-weight="900" fill="#b91c1c">a</text>
+    <text x="558" y="392" font-size="12.5" font-weight="800" fill="#b91c1c" text-anchor="middle">向下</text>
+  </g>
+
+  <rect x="590" y="92" width="282" height="368" rx="16" fill="#ffffff" stroke="#bfdbfe" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="590" y="92" width="282" height="8" rx="4" fill="#1d4ed8"/>
+  <text x="731" y="130" font-size="22" font-weight="900" fill="#1d4ed8" text-anchor="middle">失重</text>
+  <text x="731" y="156" font-size="12.5" font-weight="800" fill="#475569" text-anchor="middle">加速度方向向下</text>
+  <text x="612" y="188" font-size="12.5" fill="#334155">电梯加速下降</text>
+  <text x="612" y="212" font-size="12.5" fill="#334155">或 电梯减速上升</text>
+  <line x1="612" y1="228" x2="850" y2="228" stroke="#e8eef7" stroke-width="1.5"/>
+  <text x="731" y="256" font-size="15" font-weight="900" fill="#1e3a8a" text-anchor="middle">G − N = ma</text>
+  <text x="731" y="284" font-size="15" font-weight="900" fill="#1d4ed8" text-anchor="middle">N = G − ma ＜ G</text>
+
+  <text x="612" y="316" font-size="11.5" font-weight="800" fill="#6d28d9">G</text>
+  <rect x="632" y="306" width="180" height="13" rx="6" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1.2"/>
+  <text x="612" y="342" font-size="11.5" font-weight="800" fill="#047857">N</text>
+  <rect x="632" y="332" width="118" height="13" rx="6" fill="#86efac" stroke="#059669" stroke-width="1.2"/>
+
+  <text x="731" y="378" font-size="12.5" fill="#334155" text-anchor="middle">支持力与重力合力向下，</text>
+  <text x="731" y="398" font-size="12.5" fill="#334155" text-anchor="middle">共同产生向下的加速度</text>
+  <text x="731" y="426" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">失重 ≠ 重力消失</text>
+  <text x="731" y="446" font-size="11.5" fill="#64748b" text-anchor="middle">重力仍然存在，只是压力变小</text>
+</g>
+
+<!-- 第三步：完全失重与空间站 -->
+<g class="s22-step s22-step3" data-zone="3">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">完全失重：a = g 且方向向下，支持力 N = 0</text>
+
+  <circle cx="250" cy="330" r="82" fill="#93c5fd" stroke="#1d4ed8" stroke-width="2.5"/>
+  <path d="M190 292 Q222 276 246 292 Q268 306 296 292 L310 320 Q280 334 252 322 Q222 310 196 324 Z" fill="#34d399" opacity=".7"/>
+  <path d="M210 368 Q240 352 268 366 Q294 378 308 360 L310 380 Q280 392 250 382 Q226 374 208 384 Z" fill="#34d399" opacity=".55"/>
+  <text x="250" y="440" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">地球</text>
+
+  <ellipse cx="250" cy="330" rx="218" ry="142" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 7"/>
+  <g class="s22-orbit">
+    <circle cx="468" cy="330" r="4" fill="#f97316"/>
+  </g>
+
+  <g class="s22-station">
+    <rect x="438" y="316" width="58" height="24" rx="5" fill="#cbd5e1" stroke="#475569" stroke-width="2"/>
+    <rect x="416" y="310" width="18" height="36" rx="3" fill="#60a5fa" stroke="#1d4ed8" stroke-width="1.4"/>
+    <rect x="500" y="310" width="18" height="36" rx="3" fill="#60a5fa" stroke="#1d4ed8" stroke-width="1.4"/>
+    <circle cx="467" cy="328" r="6" fill="#f8fafc" stroke="#475569" stroke-width="1.4"/>
+    <text x="467" y="298" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">空间站</text>
+    <line x1="467" y1="344" x2="520" y2="222" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="5 4"/>
+    <circle cx="528" cy="206" r="10" fill="#fbbf24" stroke="#b45309" stroke-width="1.6"/>
+    <rect x="520" y="216" width="16" height="30" rx="8" fill="#60a5fa" stroke="#1e40af" stroke-width="1.4"/>
+    <line x1="520" y1="226" x2="500" y2="212" stroke="#1e40af" stroke-width="4" stroke-linecap="round"/>
+    <line x1="536" y1="226" x2="556" y2="240" stroke="#1e40af" stroke-width="4" stroke-linecap="round"/>
+    <line x1="524" y1="246" x2="514" y2="264" stroke="#1e40af" stroke-width="5" stroke-linecap="round"/>
+    <line x1="532" y1="246" x2="542" y2="264" stroke="#1e40af" stroke-width="5" stroke-linecap="round"/>
+    <text x="542" y="202" font-size="12" font-weight="800" fill="#b45309">人漂浮</text>
+    <text x="480" y="386" font-size="12.5" font-weight="900" fill="#b91c1c">N = 0</text>
+  </g>
+
+  <rect x="586" y="92" width="286" height="368" rx="16" fill="#ffffff" stroke="#c7d7f5" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="586" y="92" width="286" height="8" rx="4" fill="#1d4ed8"/>
+  <text x="729" y="130" font-size="21" font-weight="900" fill="#1e3a8a" text-anchor="middle">完全失重</text>
+  <text x="729" y="158" font-size="13" font-weight="800" fill="#1d4ed8" text-anchor="middle">a = g，方向竖直向下</text>
+  <text x="608" y="190" font-size="12.5" fill="#334155">对支持物的压力 N = 0</text>
+  <text x="608" y="214" font-size="12.5" fill="#334155">重力全部用来产生加速度</text>
+  <text x="608" y="238" font-size="12.5" fill="#334155">物体处于“漂浮”状态</text>
+  <line x1="608" y1="254" x2="850" y2="254" stroke="#e8eef7" stroke-width="1.5"/>
+  <text x="729" y="282" font-size="14" font-weight="900" fill="#1e3a8a" text-anchor="middle">mg = m v² / r</text>
+  <text x="729" y="306" font-size="12" fill="#64748b" text-anchor="middle">重力提供绕地球做圆周运动的向心力</text>
+  <rect x="612" y="322" width="234" height="54" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.4"/>
+  <text x="729" y="344" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">失重不是不受重力</text>
+  <text x="729" y="364" font-size="11.5" fill="#475569" text-anchor="middle">重力仍存在，只是不再压支持物</text>
+  <text x="729" y="404" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">空间站里的一切物体都“漂浮”</text>
+  <text x="729" y="428" font-size="11.5" fill="#64748b" text-anchor="middle">它们与空间站具有相同的加速度 g</text>
+  <text x="729" y="450" font-size="11.5" fill="#64748b" text-anchor="middle">彼此之间没有压力</text>
+</g>
+</svg>

@@ -1,0 +1,209 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="核能：核裂变、核聚变、核电站与太阳">
+<style>
+.p83-s1,.p83-s2,.p83-s3{opacity:0;visibility:hidden}
+.p83-s1{opacity:1;visibility:visible}
+[data-scene="pj-83"] .p83-s1,[data-scene="pj-83"] .p83-s2,[data-scene="pj-83"] .p83-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="pj-83"].s1 .p83-s1,[data-scene="pj-83"].s2 .p83-s2,[data-scene="pj-83"].s3 .p83-s3{opacity:1;visibility:visible}
+@keyframes p83pop{0%{transform:scale(.82);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes p83flow{to{stroke-dashoffset:-46}}
+@keyframes p83draw{to{stroke-dashoffset:0}}
+@keyframes p83pulse{0%,100%{opacity:.4}50%{opacity:1}}
+@keyframes p83burst{0%,100%{transform:scale(.92);opacity:.55}50%{transform:scale(1.08);opacity:1}}
+[data-scene="pj-83"].s1 .p83-neutron{stroke-dasharray:5 4;animation:p83flow .9s linear infinite}
+[data-scene="pj-83"].s1 .p83-split{stroke-dasharray:8 6;animation:p83flow 1.2s linear infinite}
+[data-scene="pj-83"].s1 .p83-core{transform-box:fill-box;transform-origin:center;animation:p83burst 2.4s ease-in-out infinite}
+[data-scene="pj-83"].s1 .p83-frag{transform-box:fill-box;transform-origin:center;animation:p83pop .6s ease both}
+[data-scene="pj-83"].s1 .p83-frag2{animation-delay:.15s}
+[data-scene="pj-83"].s1 .p83-energy{animation:p83pulse 1.6s ease-in-out infinite}
+[data-scene="pj-83"].s2 .p83-fuel{transform-box:fill-box;transform-origin:center;animation:p83pop .55s ease both}
+[data-scene="pj-83"].s2 .p83-fuel2{animation-delay:.12s}
+[data-scene="pj-83"].s2 .p83-fuse{stroke-dasharray:6 5;animation:p83flow 1s linear infinite}
+[data-scene="pj-83"].s2 .p83-product{transform-box:fill-box;transform-origin:center;animation:p83pop .6s ease .25s both}
+[data-scene="pj-83"].s2 .p83-sunray{animation:p83pulse 1.6s ease-in-out infinite}
+[data-scene="pj-83"].s3 .p83-plant{transform-box:fill-box;transform-origin:center;animation:p83pop .5s ease both}
+[data-scene="pj-83"].s3 .p83-plant2{animation-delay:.08s}
+[data-scene="pj-83"].s3 .p83-plant3{animation-delay:.16s}
+[data-scene="pj-83"].s3 .p83-plant4{animation-delay:.24s}
+[data-scene="pj-83"].s3 .p83-plant5{animation-delay:.32s}
+[data-scene="pj-83"].s3 .p83-flowarrow{stroke-dasharray:7 6;animation:p83flow 1.1s linear infinite}
+[data-scene="pj-83"].s3 .p83-sun{animation:p83pulse 2.4s ease-in-out infinite}
+</style>
+<defs>
+  <radialGradient id="p83sun" cx=".4" cy=".35" r=".75">
+    <stop offset="0" stop-color="#fef08a"/><stop offset=".6" stop-color="#fbbf24"/><stop offset="1" stop-color="#f97316"/>
+  </radialGradient>
+</defs>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="470" width="900" height="150" fill="url(#gBench)"/>
+<line x1="0" y1="470" x2="900" y2="470" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">核能：小小原子核里的大能量</text>
+
+<!-- 第一步：核裂变 -->
+<g class="p83-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">核裂变：重核分裂成两个中等质量的核，同时释放巨大能量</text>
+
+  <rect x="40" y="104" width="820" height="276" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+
+  <circle class="p83-core" cx="178" cy="246" r="62" fill="#fca5a5" stroke="#b91c1c" stroke-width="3"/>
+  <g fill="#ef4444" stroke="#991b1b" stroke-width="1">
+    <circle cx="158" cy="224" r="6"/><circle cx="182" cy="214" r="6"/><circle cx="202" cy="232" r="6"/>
+    <circle cx="150" cy="250" r="6"/><circle cx="176" cy="244" r="6"/><circle cx="202" cy="258" r="6"/>
+    <circle cx="162" cy="276" r="6"/><circle cx="190" cy="280" r="6"/><circle cx="208" cy="272" r="6"/>
+  </g>
+  <text x="178" y="338" font-size="14" font-weight="800" fill="#991b1b" text-anchor="middle">铀-235</text>
+
+  <circle cx="58" cy="246" r="10" fill="#fde047" stroke="#ca8a04" stroke-width="2"/>
+  <text x="58" y="226" font-size="11.5" font-weight="700" fill="#92400e" text-anchor="middle">中子</text>
+  <line class="p83-neutron" x1="72" y1="246" x2="108" y2="246" stroke="#b45309" stroke-width="2.5" marker-end="url(#arrAmber)"/>
+
+  <g class="p83-split" fill="none" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arrBlue)">
+    <path d="M232 220 Q310 190 386 202"/>
+    <path d="M232 276 Q310 318 386 330"/>
+  </g>
+
+  <g class="p83-frag">
+    <circle cx="438" cy="198" r="46" fill="#c4b5fd" stroke="#6d28d9" stroke-width="3"/>
+    <text x="438" y="203" font-size="12.5" font-weight="800" fill="#4c1d95" text-anchor="middle">钡-141</text>
+  </g>
+  <g class="p83-frag p83-frag2">
+    <circle cx="438" cy="336" r="42" fill="#86efac" stroke="#15803d" stroke-width="3"/>
+    <text x="438" y="341" font-size="12.5" font-weight="800" fill="#14532d" text-anchor="middle">氪-92</text>
+  </g>
+
+  <g class="p83-frag">
+    <circle cx="550" cy="208" r="9" fill="#fde047" stroke="#ca8a04" stroke-width="2"/>
+    <circle cx="584" cy="270" r="9" fill="#fde047" stroke="#ca8a04" stroke-width="2"/>
+    <circle cx="550" cy="332" r="9" fill="#fde047" stroke="#ca8a04" stroke-width="2"/>
+    <text x="567" y="200" font-size="11.5" font-weight="700" fill="#92400e" text-anchor="middle">3 个中子</text>
+  </g>
+
+  <g class="p83-energy">
+    <polygon points="700,176 714,222 762,208 730,246 762,284 714,270 700,316 686,270 638,284 670,246 638,208 686,222" fill="#fde047" stroke="#d97706" stroke-width="2"/>
+    <text x="700" y="240" font-size="14" font-weight="900" fill="#92400e" text-anchor="middle">巨大</text>
+    <text x="700" y="260" font-size="14" font-weight="900" fill="#92400e" text-anchor="middle">能量</text>
+  </g>
+
+  <text x="450" y="404" font-size="15" font-weight="800" fill="#1e3a8a" text-anchor="middle">铀-235 + 中子 → 钡-141 + 氪-92 + 3 个中子 + 能量</text>
+  <text x="450" y="430" font-size="12" fill="#64748b" text-anchor="middle">核电站利用核裂变释放的能量发电；核燃料属于不可再生能源</text>
+</g>
+
+<!-- 第二步：核聚变 -->
+<g class="p83-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">核聚变：轻核结合成较重的核，太阳内部每时每刻都在发生</text>
+
+  <g class="p83-sun">
+    <circle cx="770" cy="176" r="62" fill="url(#p83sun)" stroke="#f97316" stroke-width="3"/>
+    <g class="p83-sunray" stroke="#f59e0b" stroke-width="3" stroke-linecap="round">
+      <line x1="770" y1="96" x2="770" y2="110"/><line x1="770" y1="242" x2="770" y2="256"/>
+      <line x1="690" y1="176" x2="704" y2="176"/><line x1="836" y1="176" x2="850" y2="176"/>
+      <line x1="714" y1="120" x2="724" y2="130"/><line x1="816" y1="222" x2="826" y2="232"/>
+      <line x1="714" y1="232" x2="724" y2="222"/><line x1="816" y1="130" x2="826" y2="120"/>
+    </g>
+    <circle cx="770" cy="176" r="22" fill="#fff7ed" opacity=".8"/>
+    <text x="770" y="180" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">核聚变</text>
+  </g>
+  <text x="770" y="276" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">太阳</text>
+
+  <g class="p83-fuel">
+    <circle cx="140" cy="252" r="38" fill="#93c5fd" stroke="#1d4ed8" stroke-width="3"/>
+    <text x="140" y="250" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">²H</text>
+    <text x="140" y="268" font-size="11" font-weight="700" fill="#1e3a8a" text-anchor="middle">氘</text>
+  </g>
+  <g class="p83-fuel p83-fuel2">
+    <circle cx="140" cy="352" r="38" fill="#c4b5fd" stroke="#6d28d9" stroke-width="3"/>
+    <text x="140" y="350" font-size="12.5" font-weight="800" fill="#4c1d95" text-anchor="middle">³H</text>
+    <text x="140" y="368" font-size="11" font-weight="700" fill="#4c1d95" text-anchor="middle">氚</text>
+  </g>
+  <text x="196" y="308" font-size="22" font-weight="900" fill="#475569" text-anchor="middle">+</text>
+  <line class="p83-fuse" x1="230" y1="302" x2="296" y2="302" stroke="#1d4ed8" stroke-width="3" marker-end="url(#arrBlue)"/>
+  <text x="263" y="288" font-size="11.5" font-weight="700" fill="#1d4ed8" text-anchor="middle">结合</text>
+
+  <g class="p83-product">
+    <circle cx="372" cy="272" r="52" fill="#fde047" stroke="#ca8a04" stroke-width="3"/>
+    <text x="372" y="270" font-size="12.5" font-weight="800" fill="#78350f" text-anchor="middle">⁴He</text>
+    <text x="372" y="288" font-size="11" font-weight="700" fill="#78350f" text-anchor="middle">氦</text>
+  </g>
+  <g class="p83-product">
+    <circle cx="478" cy="352" r="16" fill="#fde047" stroke="#ca8a04" stroke-width="2"/>
+    <text x="478" y="357" font-size="12" font-weight="800" fill="#78350f" text-anchor="middle">n</text>
+  </g>
+  <g class="p83-product">
+    <circle cx="572" cy="272" r="42" fill="none" stroke="#f97316" stroke-width="3" stroke-dasharray="5 5"/>
+    <text x="572" y="268" font-size="13" font-weight="900" fill="#b45309" text-anchor="middle">释放</text>
+    <text x="572" y="286" font-size="13" font-weight="900" fill="#b45309" text-anchor="middle">能量</text>
+  </g>
+  <g stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round">
+    <line x1="610" y1="248" x2="628" y2="234"/><line x1="616" y1="272" x2="638" y2="272"/>
+    <line x1="610" y1="296" x2="628" y2="310"/>
+  </g>
+
+  <text x="450" y="420" font-size="16" font-weight="800" fill="#1e3a8a" text-anchor="middle">²H + ³H → ⁴He + n + 17.6 MeV</text>
+  <text x="450" y="444" font-size="12" fill="#64748b" text-anchor="middle">核聚变释放的能量更大，但目前还不能大规模受控利用</text>
+</g>
+
+<!-- 第三步：核电站与太阳 -->
+<g class="p83-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">核电站：核裂变放热，烧水产生蒸汽推动汽轮机发电</text>
+
+  <g class="p83-plant">
+    <rect x="36" y="112" width="150" height="80" rx="11" fill="#eef6ff" stroke="#93c5fd" stroke-width="2"/>
+    <text x="111" y="138" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">核反应堆</text>
+    <text x="111" y="160" font-size="11.5" fill="#475569" text-anchor="middle">核裂变放热</text>
+    <text x="111" y="178" font-size="11.5" fill="#475569" text-anchor="middle">控制反应速度</text>
+  </g>
+  <g class="p83-plant p83-plant2">
+    <rect x="200" y="112" width="150" height="80" rx="11" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+    <text x="275" y="138" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">蒸汽发生器</text>
+    <text x="275" y="160" font-size="11.5" fill="#7c5a30" text-anchor="middle">水吸收热量</text>
+    <text x="275" y="178" font-size="11.5" fill="#7c5a30" text-anchor="middle">变成高温蒸汽</text>
+  </g>
+  <g class="p83-plant p83-plant3">
+    <rect x="364" y="112" width="150" height="80" rx="11" fill="#f0fdf4" stroke="#86efac" stroke-width="2"/>
+    <text x="439" y="138" font-size="12.5" font-weight="800" fill="#047857" text-anchor="middle">汽轮机</text>
+    <text x="439" y="160" font-size="11.5" fill="#065f46" text-anchor="middle">蒸汽推动叶片</text>
+    <text x="439" y="178" font-size="11.5" fill="#065f46" text-anchor="middle">高速旋转</text>
+  </g>
+  <g class="p83-plant p83-plant4">
+    <rect x="528" y="112" width="150" height="80" rx="11" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="2"/>
+    <text x="603" y="138" font-size="12.5" font-weight="800" fill="#5b21b6" text-anchor="middle">发电机</text>
+    <text x="603" y="160" font-size="11.5" fill="#4c1d95" text-anchor="middle">机械能</text>
+    <text x="603" y="178" font-size="11.5" fill="#4c1d95" text-anchor="middle">→ 电能</text>
+  </g>
+  <g class="p83-plant p83-plant5">
+    <rect x="692" y="112" width="150" height="80" rx="11" fill="#fef2f2" stroke="#fca5a5" stroke-width="2"/>
+    <text x="767" y="138" font-size="12.5" font-weight="800" fill="#b91c1c" text-anchor="middle">电网</text>
+    <text x="767" y="160" font-size="11.5" fill="#7f1d1d" text-anchor="middle">输送到千家万户</text>
+  </g>
+  <g class="p83-flowarrow" stroke="#1d4ed8" stroke-width="2.4" marker-end="url(#arrBlue)">
+    <line x1="188" y1="152" x2="196" y2="152"/>
+    <line x1="352" y1="152" x2="360" y2="152"/>
+    <line x1="516" y1="152" x2="524" y2="152"/>
+    <line x1="680" y1="152" x2="688" y2="152"/>
+  </g>
+
+  <g class="p83-sun">
+    <circle cx="214" cy="326" r="78" fill="url(#p83sun)" stroke="#f97316" stroke-width="3"/>
+    <g stroke="#f59e0b" stroke-width="3" stroke-linecap="round">
+      <line x1="214" y1="230" x2="214" y2="242"/><line x1="214" y1="410" x2="214" y2="422"/>
+      <line x1="118" y1="326" x2="130" y2="326"/><line x1="298" y1="326" x2="310" y2="326"/>
+      <line x1="146" y1="258" x2="155" y2="267"/><line x1="273" y1="385" x2="282" y2="394"/>
+      <line x1="146" y1="394" x2="155" y2="385"/><line x1="273" y1="267" x2="282" y2="258"/>
+    </g>
+    <circle cx="214" cy="326" r="26" fill="#fff7ed" opacity=".8"/>
+    <text x="214" y="330" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">核聚变</text>
+  </g>
+  <text x="214" y="430" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">太阳：核聚变</text>
+
+  <rect x="350" y="236" width="496" height="148" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="370" y="264" font-size="12.5" font-weight="800" fill="#1e3a8a">太阳的能量来自核聚变</text>
+  <text x="370" y="290" font-size="11.5" fill="#475569">太阳内部温度极高，氢核聚变成氦核，释放巨大能量。</text>
+  <text x="370" y="314" font-size="11.5" fill="#475569">核燃料属于不可再生能源，核废料需要妥善处理。</text>
+  <text x="370" y="338" font-size="11.5" fill="#475569">核电站正常运行时几乎不排放二氧化碳。</text>
+  <text x="370" y="362" font-size="11.5" font-weight="700" fill="#b45309">核能 → 内能 → 机械能 → 电能</text>
+
+  <text x="450" y="446" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">核电站把核能转化为电能，太阳的能量来自核聚变</text>
+</g>
+</svg>

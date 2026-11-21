@@ -1,0 +1,153 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="向心力：指向圆心的合力、公式与来源分析">
+<style>
+[data-scene="ps-27"] .s27-step1,[data-scene="ps-27"] .s27-step2,[data-scene="ps-27"] .s27-step3{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="ps-27"].s1 .s27-step1,[data-scene="ps-27"].s2 .s27-step2,[data-scene="ps-27"].s3 .s27-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes s27draw{to{stroke-dashoffset:0}}
+@keyframes s27pulse{0%,100%{opacity:.55}50%{opacity:1}}
+@keyframes s27pop{0%{opacity:0;transform:scale(.94)}100%{opacity:1;transform:scale(1)}}
+[data-scene="ps-27"].s1 .s27-orbit{stroke-dasharray:940;stroke-dashoffset:940;animation:s27draw 1.3s ease forwards}
+[data-scene="ps-27"].s1 .s27-f{animation:s27pulse 1.8s ease-in-out infinite}
+[data-scene="ps-27"].s2 .s27-card,[data-scene="ps-27"].s3 .s27-card{transform-box:fill-box;transform-origin:center;animation:s27pop .45s ease both}
+[data-scene="ps-27"].s3 .s27-card2{animation-delay:.12s}
+[data-scene="ps-27"].s3 .s27-card3{animation-delay:.24s}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="560" width="900" height="60" fill="url(#gBench)"/>
+<line x1="0" y1="560" x2="900" y2="560" stroke="#cbd5e1" stroke-width="2.5"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">向心力：指向圆心的合力</text>
+
+<!-- 第一步：指向圆心的合力 -->
+<g class="s27-step1" data-zone="1">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">做匀速圆周运动的物体，受到的指向圆心的合力叫向心力</text>
+
+  <circle class="s27-orbit" cx="295" cy="320" r="148" fill="none" stroke="#93c5fd" stroke-width="3"/>
+  <circle cx="295" cy="320" r="5" fill="#334155"/>
+  <text x="295" y="350" font-size="12.5" font-weight="700" fill="#475569" text-anchor="middle">O</text>
+
+  <g class="s27-f" stroke="#dc2626" stroke-width="3" marker-end="url(#arrRed)">
+    <line x1="443" y1="320" x2="315" y2="320"/>
+    <line x1="295" y1="172" x2="295" y2="300"/>
+    <line x1="147" y1="320" x2="275" y2="320"/>
+    <line x1="295" y1="468" x2="295" y2="340"/>
+  </g>
+  <g stroke="#1d4ed8" stroke-width="3" marker-end="url(#arrBlue)">
+    <line x1="443" y1="320" x2="443" y2="250"/>
+    <line x1="295" y1="172" x2="225" y2="172"/>
+    <line x1="147" y1="320" x2="147" y2="390"/>
+    <line x1="295" y1="468" x2="365" y2="468"/>
+  </g>
+  <text x="458" y="262" font-size="13" font-weight="800" fill="#1d4ed8">v</text>
+  <text x="356" y="348" font-size="13" font-weight="800" fill="#b91c1c">Fₙ</text>
+  <text x="295" y="515" font-size="13" font-weight="700" fill="#475569" text-anchor="middle">速率不变，速度方向时刻改变，所以合力始终指向圆心</text>
+
+  <g class="s27-card">
+    <rect x="555" y="110" width="275" height="330" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="692" y="142" font-size="15" font-weight="800" fill="#1e3a8a" text-anchor="middle">向心力 Fₙ</text>
+    <g font-size="13" fill="#334155">
+      <text x="585" y="180">· 方向：始终指向圆心</text>
+      <text x="585" y="212">· 效果：只改变速度方向</text>
+      <text x="585" y="244">· 不改变速度大小</text>
+      <text x="585" y="276">· 是效果力，不是性质力</text>
+      <text x="585" y="308">· 受力分析时不能重复添加</text>
+      <text x="585" y="340">· Fₙ ⊥ v，方向时刻在变</text>
+    </g>
+    <rect x="590" y="365" width="205" height="44" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="692" y="393" font-size="16" font-weight="900" fill="#1e3a8a" text-anchor="middle">Fₙ = m v² / r</text>
+  </g>
+</g>
+
+<!-- 第二步：向心力的大小 -->
+<g class="s27-step2" data-zone="2">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">向心力的大小，由质量、线速度和半径共同决定</text>
+
+  <g class="s27-card">
+    <rect x="70" y="108" width="440" height="255" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="290" y="142" font-size="15" font-weight="800" fill="#1e3a8a" text-anchor="middle">向心力公式</text>
+    <text x="100" y="240" font-size="26" font-weight="900" font-style="italic" fill="#1e3a8a">Fₙ</text>
+    <text x="145" y="238" font-size="22" font-weight="800" fill="#334155">=</text>
+    <text x="270" y="205" font-size="25" font-weight="900" fill="#1e3a8a" text-anchor="middle">m v²</text>
+    <line x1="215" y1="215" x2="325" y2="215" stroke="#334155" stroke-width="2.5"/>
+    <text x="270" y="253" font-size="25" font-weight="900" fill="#1e3a8a" text-anchor="middle">r</text>
+    <text x="345" y="240" font-size="21" font-weight="800" fill="#1e3a8a">= m ω² r</text>
+    <text x="290" y="300" font-size="16" font-weight="800" fill="#1e3a8a" text-anchor="middle">= 4π² m r / T²</text>
+    <text x="290" y="335" font-size="12.5" fill="#64748b" text-anchor="middle">只适用于匀速圆周运动</text>
+  </g>
+
+  <g class="s27-card">
+    <rect x="530" y="108" width="300" height="255" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="680" y="142" font-size="15" font-weight="800" fill="#1e3a8a" text-anchor="middle">由公式看关系</text>
+    <g font-size="13.5" fill="#334155" text-anchor="middle">
+      <text x="680" y="180">m 越大，Fₙ 越大</text>
+      <text x="680" y="214">v 越大，Fₙ 越大（v²）</text>
+      <text x="680" y="248">r 越小，Fₙ 越大</text>
+    </g>
+    <rect x="565" y="275" width="230" height="46" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+    <text x="680" y="304" font-size="13" font-weight="800" fill="#b45309" text-anchor="middle">v 减半 → Fₙ 变为 1/4</text>
+  </g>
+
+  <rect x="70" y="390" width="760" height="130" rx="14" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+  <text x="450" y="420" font-size="13" font-weight="700" fill="#7c5a30" text-anchor="middle">例：m = 0.5 kg，v = 4 m/s，r = 2 m</text>
+  <text x="450" y="458" font-size="18" font-weight="900" fill="#b45309" text-anchor="middle">Fₙ = mv²/r = 0.5×4² ÷ 2 N = 4 N</text>
+  <text x="450" y="490" font-size="12.5" fill="#7c5a30" text-anchor="middle">同一物体转弯：速度越大、弯道越急，需要的向心力越大</text>
+</g>
+
+<!-- 第三步：向心力的来源 -->
+<g class="s27-step3" data-zone="3">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">向心力是效果力，由其他力或它们的合力提供</text>
+
+  <g class="s27-card">
+    <rect x="70" y="108" width="232" height="310" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="186" y="136" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">圆锥摆</text>
+    <line x1="148" y1="150" x2="148" y2="320" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6 6"/>
+    <circle cx="186" cy="158" r="4" fill="#334155"/>
+    <line x1="186" y1="158" x2="214" y2="246" stroke="#475569" stroke-width="2"/>
+    <circle cx="214" cy="246" r="9" fill="#f97316" stroke="#c2410c" stroke-width="2"/>
+    <g stroke-width="2.5">
+      <line x1="210" y1="238" x2="197" y2="202" stroke="#059669" marker-end="url(#arrGreen)"/>
+      <line x1="214" y1="255" x2="214" y2="306" stroke="#dc2626" marker-end="url(#arrRed)"/>
+      <line x1="205" y1="246" x2="162" y2="246" stroke="#d97706" marker-end="url(#arrAmber)"/>
+    </g>
+    <text x="190" y="196" font-size="12" font-weight="800" fill="#047857">T</text>
+    <text x="224" y="290" font-size="12" font-weight="800" fill="#b91c1c">mg</text>
+    <text x="168" y="236" font-size="12" font-weight="800" fill="#b45309">Fₙ</text>
+    <text x="186" y="340" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">拉力与重力的合力</text>
+    <text x="186" y="362" font-size="11.5" fill="#64748b" text-anchor="middle">沿水平方向指向圆心</text>
+  </g>
+
+  <g class="s27-card s27-card2">
+    <rect x="332" y="108" width="232" height="310" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="448" y="136" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">汽车水平转弯</text>
+    <path d="M330.5 317.2 A125 125 0 0 1 565.5 317.2" fill="none" stroke="#dbe6f2" stroke-width="30"/>
+    <path d="M330.5 317.2 A125 125 0 0 1 565.5 317.2" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 7"/>
+    <rect x="426" y="222" width="44" height="22" rx="6" fill="#3b82f6" stroke="#1e40af" stroke-width="1.5"/>
+    <circle cx="437" cy="247" r="4" fill="#1e293b"/><circle cx="459" cy="247" r="4" fill="#1e293b"/>
+    <line x1="448" y1="248" x2="448" y2="302" stroke="#dc2626" stroke-width="3" marker-end="url(#arrRed)"/>
+    <text x="462" y="285" font-size="13" font-weight="800" fill="#b91c1c">f</text>
+    <circle cx="448" cy="360" r="4" fill="#334155"/>
+    <text x="448" y="383" font-size="12.5" font-weight="700" fill="#475569" text-anchor="middle">O</text>
+    <text x="448" y="174" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">静摩擦力提供</text>
+    <text x="448" y="196" font-size="11.5" fill="#64748b" text-anchor="middle">方向指向圆心</text>
+  </g>
+
+  <g class="s27-card s27-card3">
+    <rect x="594" y="108" width="232" height="310" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="710" y="136" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">竖直转筒</text>
+    <circle cx="710" cy="255" r="78" fill="#f8fbff" stroke="#64748b" stroke-width="7"/>
+    <circle cx="710" cy="255" r="58" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6 6"/>
+    <circle cx="782" cy="255" r="9" fill="#f97316" stroke="#c2410c" stroke-width="2"/>
+    <line x1="773" y1="255" x2="728" y2="255" stroke="#059669" stroke-width="3" marker-end="url(#arrGreen)"/>
+    <text x="746" y="242" font-size="13" font-weight="800" fill="#047857">N</text>
+    <path d="M650 212 A80 80 0 0 1 688 188" fill="none" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+    <circle cx="710" cy="255" r="3.5" fill="#334155"/>
+    <text x="710" y="340" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">筒壁的支持力</text>
+    <text x="710" y="362" font-size="11.5" fill="#64748b" text-anchor="middle">指向转轴</text>
+  </g>
+
+  <rect x="70" y="440" width="760" height="85" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="450" y="470" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">解题关键：先判断哪个力（或哪几个力的合力）提供向心力，再沿半径方向列方程</text>
+  <text x="450" y="502" font-size="12.5" fill="#475569" text-anchor="middle">向心力是按效果命名的，受力分析时不能把它当成新的性质力</text>
+</g>
+</svg>

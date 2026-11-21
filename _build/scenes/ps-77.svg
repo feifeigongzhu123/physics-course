@@ -1,0 +1,224 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="多普勒效应：波源靠近与远离、接收频率变化、测速雷达与天文应用">
+<style>
+[data-scene="ps-77"] .s77-s1,[data-scene="ps-77"] .s77-s2,[data-scene="ps-77"] .s77-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="ps-77"].s1 .s77-s1,[data-scene="ps-77"].s2 .s77-s2,[data-scene="ps-77"].s3 .s77-s3{opacity:1;visibility:visible}
+@keyframes s77draw{to{stroke-dashoffset:0}}
+@keyframes s77pulse{0%,100%{opacity:.5}50%{opacity:1}}
+@keyframes s77pop{0%{transform:scale(.86);opacity:0}70%{transform:scale(1.05);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s77flow{to{stroke-dashoffset:-36}}
+@keyframes s77blink{0%,100%{opacity:1}50%{opacity:.35}}
+[data-scene="ps-77"].s1 .s77-wave{animation:s77pulse 2.2s ease-in-out infinite}
+[data-scene="ps-77"].s1 .s77-src{transform-box:fill-box;transform-origin:center;animation:s77pop .6s ease .2s both}
+[data-scene="ps-77"].s1 .s77-move{stroke-dasharray:10 7;animation:s77flow 1s linear infinite}
+[data-scene="ps-77"].s2 .s77-curve{stroke-dasharray:520;stroke-dashoffset:520;animation:s77draw 1.4s ease .2s forwards}
+[data-scene="ps-77"].s2 .s77-f0{animation:s77pulse 2s ease-in-out infinite}
+[data-scene="ps-77"].s2 .s77-chip{transform-box:fill-box;transform-origin:center;animation:s77pop .5s ease both}
+[data-scene="ps-77"].s2 .s77-chip2{animation-delay:.15s}
+[data-scene="ps-77"].s2 .s77-chip3{animation-delay:.3s}
+[data-scene="ps-77"].s3 .s77-radar{stroke-dasharray:9 7;animation:s77flow 1.2s linear infinite}
+[data-scene="ps-77"].s3 .s77-sono{stroke-dasharray:10 8;animation:s77flow 1.4s linear infinite}
+[data-scene="ps-77"].s3 .s77-line{animation:s77blink 2s ease-in-out infinite}
+[data-scene="ps-77"].s3 .s77-line2{animation-delay:.5s}
+[data-scene="ps-77"].s3 .s77-card{transform-box:fill-box;transform-origin:center;animation:s77pop .55s ease both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">多普勒效应：相对运动改变接收频率</text>
+
+<!-- 第一步：靠近与远离 -->
+<g class="s77-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">波源与观察者相对运动时，单位时间接收到的完整波个数发生改变</text>
+
+  <rect x="36" y="100" width="400" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="116" y="116" width="240" height="28" rx="14" fill="#e8effc"/>
+  <text x="236" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">波源靠近观察者</text>
+
+  <g fill="none" stroke="#60a5fa" stroke-width="2.4">
+    <path class="s77-wave" d="M40 300 A140 140 0 0 1 320 300"/>
+    <path class="s77-wave" d="M90 300 A120 120 0 0 1 330 300"/>
+    <path class="s77-wave" d="M140 300 A100 100 0 0 1 340 300"/>
+    <path class="s77-wave" d="M190 300 A80 80 0 0 1 350 300"/>
+    <path class="s77-wave" d="M240 300 A60 60 0 0 1 360 300"/>
+    <path class="s77-wave" d="M290 300 A40 40 0 0 1 370 300"/>
+  </g>
+  <text x="108" y="222" font-size="12" font-weight="800" fill="#1e40af" paint-order="stroke" stroke="#ffffff" stroke-width="4">λ 变长</text>
+  <text x="326" y="238" font-size="12" font-weight="800" fill="#b45309" paint-order="stroke" stroke="#ffffff" stroke-width="4">λ′ 变短</text>
+
+  <circle class="s77-src" cx="355" cy="300" r="12" fill="#dc2626" stroke="#ffffff" stroke-width="3"/>
+  <text x="355" y="305" font-size="12" font-weight="900" fill="#ffffff" text-anchor="middle">S</text>
+  <line class="s77-move" x1="330" y1="332" x2="386" y2="332" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arrRed)"/>
+  <text x="358" y="354" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">运动</text>
+
+  <circle cx="408" cy="268" r="8" fill="#334155"/>
+  <line x1="408" y1="276" x2="408" y2="300" stroke="#334155" stroke-width="3"/>
+  <line x1="408" y1="300" x2="400" y2="318" stroke="#334155" stroke-width="3"/>
+  <line x1="408" y1="300" x2="416" y2="318" stroke="#334155" stroke-width="3"/>
+  <text x="408" y="340" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">观察者</text>
+
+  <text x="236" y="414" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">前方波前变密，接收频率变高</text>
+
+  <rect x="464" y="100" width="400" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="544" y="116" width="240" height="28" rx="14" fill="#e8effc"/>
+  <text x="664" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">波源远离观察者</text>
+
+  <g fill="none" stroke="#60a5fa" stroke-width="2.4">
+    <path class="s77-wave" d="M500 300 A40 40 0 0 1 580 300"/>
+    <path class="s77-wave" d="M510 300 A60 60 0 0 1 630 300"/>
+    <path class="s77-wave" d="M520 300 A80 80 0 0 1 680 300"/>
+    <path class="s77-wave" d="M530 300 A100 100 0 0 1 730 300"/>
+    <path class="s77-wave" d="M540 300 A120 120 0 0 1 780 300"/>
+    <path class="s77-wave" d="M550 300 A140 140 0 0 1 830 300"/>
+  </g>
+  <text x="480" y="238" font-size="12" font-weight="800" fill="#b45309" paint-order="stroke" stroke="#ffffff" stroke-width="4">λ′ 变短</text>
+  <text x="744" y="222" font-size="12" font-weight="800" fill="#1e40af" paint-order="stroke" stroke="#ffffff" stroke-width="4">λ 变长</text>
+
+  <circle class="s77-src" cx="530" cy="300" r="12" fill="#dc2626" stroke="#ffffff" stroke-width="3"/>
+  <text x="530" y="305" font-size="12" font-weight="900" fill="#ffffff" text-anchor="middle">S</text>
+  <line class="s77-move" x1="553" y1="332" x2="609" y2="332" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arrRed)"/>
+  <text x="581" y="354" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">运动</text>
+
+  <circle cx="484" cy="268" r="8" fill="#334155"/>
+  <line x1="484" y1="276" x2="484" y2="300" stroke="#334155" stroke-width="3"/>
+  <line x1="484" y1="300" x2="476" y2="318" stroke="#334155" stroke-width="3"/>
+  <line x1="484" y1="300" x2="492" y2="318" stroke="#334155" stroke-width="3"/>
+  <text x="484" y="340" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">观察者</text>
+
+  <text x="664" y="414" font-size="11.5" font-weight="800" fill="#1e40af" text-anchor="middle">后方波前变疏，接收频率变低</text>
+</g>
+
+<!-- 第二步：频率变化 -->
+<g class="s77-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">靠近时接收频率变高，远离时变低；波源本身的振动频率始终不变</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="236" height="28" rx="14" fill="#e8effc"/>
+  <text x="174" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">接收频率随时间的变化</text>
+
+  <line x1="100" y1="380" x2="520" y2="380" stroke="#64748b" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <line x1="100" y1="380" x2="100" y2="156" stroke="#64748b" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <text x="528" y="386" font-size="11.5" font-weight="800" fill="#475569" text-anchor="end">t</text>
+  <text x="110" y="150" font-size="11.5" font-weight="800" fill="#475569">f′</text>
+
+  <line class="s77-f0" x1="100" y1="250" x2="520" y2="250" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="8 6"/>
+  <text x="94" y="254" font-size="11.5" font-weight="800" fill="#64748b" text-anchor="end">f</text>
+  <text x="340" y="242" font-size="11" font-weight="700" fill="#64748b" text-anchor="middle">波源频率</text>
+
+  <line x1="360" y1="380" x2="360" y2="236" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <text x="360" y="400" font-size="11" fill="#64748b" text-anchor="middle">经过观察者</text>
+
+  <path class="s77-curve" d="M112 176 C180 176 240 208 300 230 C335 242 350 248 372 250 C405 258 445 278 478 300 C495 312 508 320 518 326" fill="none" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+  <text x="150" y="168" font-size="12" font-weight="800" fill="#b91c1c">靠近：f′ 高于 f</text>
+  <text x="408" y="344" font-size="12" font-weight="800" fill="#1e40af">远离：f′ 低于 f</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="694" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">规律</text>
+
+  <g class="s77-chip">
+    <rect x="596" y="164" width="248" height="44" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+    <text x="612" y="184" font-size="12" font-weight="900" fill="#b45309">相互靠近 → 频率变高</text>
+    <text x="612" y="200" font-size="11" fill="#92400e">接收到的完整波个数变多</text>
+  </g>
+  <g class="s77-chip s77-chip2">
+    <rect x="596" y="220" width="248" height="44" rx="10" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="612" y="240" font-size="12" font-weight="900" fill="#1e40af">相互远离 → 频率变低</text>
+    <text x="612" y="256" font-size="11" fill="#1e3a8a">接收到的完整波个数变少</text>
+  </g>
+  <g class="s77-chip s77-chip3">
+    <rect x="596" y="276" width="248" height="44" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="612" y="296" font-size="12" font-weight="900" fill="#334155">相对速度越大，变化越明显</text>
+    <text x="612" y="312" font-size="11" fill="#475569">波源振动频率 f 保持不变</text>
+  </g>
+
+  <rect x="596" y="338" width="248" height="66" rx="10" fill="#e8effc"/>
+  <text x="720" y="366" font-size="14" font-weight="900" fill="#1e3a8a" text-anchor="middle">f′ ≠ f，但 f 不变</text>
+  <text x="720" y="390" font-size="11" fill="#475569" text-anchor="middle">变的是“接收”频率，不是波源频率</text>
+</g>
+
+<!-- 第三步：应用 -->
+<g class="s77-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">多普勒效应：测速、医学超声、天体运动都能用频率变化来判断</text>
+
+  <rect class="s77-card" x="36" y="120" width="260" height="310" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="66" y="136" width="200" height="28" rx="14" fill="#e8effc"/>
+  <text x="166" y="155" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">交通测速雷达</text>
+
+  <rect x="62" y="238" width="36" height="46" rx="7" fill="#475569"/>
+  <rect x="68" y="244" width="24" height="16" rx="3" fill="#a7f3d0"/>
+  <text x="80" y="300" font-size="11" font-weight="800" fill="#475569" text-anchor="middle">雷达</text>
+  <g fill="none" stroke="#d97706" stroke-width="2.4">
+    <path class="s77-radar" d="M100 236 A26 26 0 0 1 100 288"/>
+    <path class="s77-radar" d="M100 226 A42 42 0 0 1 100 298"/>
+    <path class="s77-radar" d="M100 216 A58 58 0 0 1 100 308"/>
+  </g>
+
+  <rect x="186" y="292" width="58" height="26" rx="6" fill="#3b82f6"/>
+  <path d="M198 292 L208 276 L232 276 L242 292 Z" fill="#1d4ed8"/>
+  <circle cx="200" cy="322" r="8" fill="#334155"/>
+  <circle cx="232" cy="322" r="8" fill="#334155"/>
+  <circle cx="200" cy="322" r="3" fill="#cbd5e1"/>
+  <circle cx="232" cy="322" r="3" fill="#cbd5e1"/>
+  <line x1="180" y1="266" x2="140" y2="266" stroke="#dc2626" stroke-width="2.4" marker-end="url(#arrRed)"/>
+  <text x="166" y="356" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">发射 f，接收 f′</text>
+  <text x="166" y="380" font-size="11" fill="#475569" text-anchor="middle">由频率差算出车速</text>
+  <text x="166" y="406" font-size="11" fill="#64748b" text-anchor="middle">靠近 → f′ 变高</text>
+
+  <rect class="s77-card" x="320" y="120" width="260" height="310" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="350" y="136" width="200" height="28" rx="14" fill="#e8effc"/>
+  <text x="450" y="155" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">彩色多普勒超声</text>
+
+  <rect x="420" y="176" width="60" height="24" rx="6" fill="#94a3b8"/>
+  <text x="450" y="192" font-size="11" font-weight="800" fill="#ffffff" text-anchor="middle">探头</text>
+  <g stroke="#d97706" stroke-width="2.2">
+    <line class="s77-sono" x1="450" y1="200" x2="404" y2="248"/>
+    <line class="s77-sono" x1="450" y1="200" x2="450" y2="254"/>
+    <line class="s77-sono" x1="450" y1="200" x2="496" y2="248"/>
+  </g>
+  <rect x="362" y="246" width="176" height="132" rx="18" fill="#fee2e2" stroke="#fca5a5" stroke-width="2"/>
+  <rect x="376" y="296" width="148" height="26" rx="13" fill="#f87171" opacity=".6"/>
+  <line x1="390" y1="309" x2="508" y2="309" stroke="#b91c1c" stroke-width="2.5" marker-end="url(#arrRed)"/>
+  <text x="450" y="352" font-size="11" font-weight="800" fill="#b91c1c" text-anchor="middle">血流</text>
+  <text x="450" y="392" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">测血流速度与方向</text>
+  <text x="450" y="414" font-size="11" fill="#64748b" text-anchor="middle">利用红细胞反射波的频移</text>
+
+  <rect class="s77-card" x="604" y="120" width="260" height="310" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="634" y="136" width="200" height="28" rx="14" fill="#e8effc"/>
+  <text x="734" y="155" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">天文光谱</text>
+
+  <text x="624" y="192" font-size="11" font-weight="700" fill="#64748b">实验室光谱</text>
+  <g>
+    <rect x="624" y="198" width="39" height="24" fill="#8b5cf6"/>
+    <rect x="663" y="198" width="39" height="24" fill="#3b82f6"/>
+    <rect x="702" y="198" width="39" height="24" fill="#22c55e"/>
+    <rect x="741" y="198" width="39" height="24" fill="#eab308"/>
+    <rect x="780" y="198" width="40" height="24" fill="#ef4444"/>
+  </g>
+  <line class="s77-line" x1="700" y1="198" x2="700" y2="222" stroke="#111827" stroke-width="3"/>
+  <line class="s77-line s77-line2" x1="730" y1="198" x2="730" y2="222" stroke="#111827" stroke-width="3"/>
+
+  <text x="624" y="272" font-size="11" font-weight="700" fill="#64748b">恒星光谱（红移）</text>
+  <g>
+    <rect x="624" y="278" width="39" height="24" fill="#8b5cf6"/>
+    <rect x="663" y="278" width="39" height="24" fill="#3b82f6"/>
+    <rect x="702" y="278" width="39" height="24" fill="#22c55e"/>
+    <rect x="741" y="278" width="39" height="24" fill="#eab308"/>
+    <rect x="780" y="278" width="40" height="24" fill="#ef4444"/>
+  </g>
+  <line class="s77-line" x1="714" y1="278" x2="714" y2="302" stroke="#111827" stroke-width="3"/>
+  <line class="s77-line s77-line2" x1="744" y1="278" x2="744" y2="302" stroke="#111827" stroke-width="3"/>
+  <line x1="738" y1="244" x2="738" y2="266" stroke="#dc2626" stroke-width="2.4" marker-end="url(#arrRed)"/>
+  <text x="748" y="260" font-size="11" font-weight="800" fill="#b91c1c">红移</text>
+
+  <text x="734" y="340" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">谱线整体向长波方向移动</text>
+  <text x="734" y="366" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">说明天体正在远离地球</text>
+  <text x="734" y="392" font-size="11" fill="#64748b" text-anchor="middle">靠近天体则出现蓝移</text>
+  <text x="734" y="414" font-size="11" fill="#64748b" text-anchor="middle">据此研究星系运动</text>
+</g>
+
+<rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+<text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">相对靠近 → 接收频率变高；相对远离 → 接收频率变低</text>
+</svg>

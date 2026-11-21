@@ -1,0 +1,255 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="楞次定律：感应电流的磁场阻碍磁通量变化，增反减同，来拒去留">
+<style>
+[data-scene="ps-88"] .s88-s1,[data-scene="ps-88"] .s88-s2,[data-scene="ps-88"] .s88-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="ps-88"].s1 .s88-s1,[data-scene="ps-88"].s2 .s88-s2,[data-scene="ps-88"].s3 .s88-s3{opacity:1;visibility:visible}
+@keyframes s88draw{to{stroke-dashoffset:0}}
+@keyframes s88flow{to{stroke-dashoffset:-30}}
+@keyframes s88pop{0%{transform:scale(.86);opacity:0}70%{transform:scale(1.04);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s88pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes s88slide{0%{transform:translateX(-14px);opacity:0}100%{transform:translateX(0);opacity:1}}
+@keyframes s88sway{0%,100%{transform:rotate(-14deg)}50%{transform:rotate(14deg)}}
+@keyframes s88shake{0%,100%{transform:translateX(0)}50%{transform:translateX(-6px)}}
+[data-scene="ps-88"].s1 .s88-magnet{animation:s88slide .6s ease .2s both}
+[data-scene="ps-88"].s1 .s88-needle{transform-box:fill-box;transform-origin:50% 100%;animation:s88sway 2.6s ease-in-out infinite}
+[data-scene="ps-88"].s1 .s88-bind{animation:s88pulse 1.8s ease-in-out infinite}
+[data-scene="ps-88"].s1 .s88-flux{stroke-dasharray:7 6;animation:s88flow 1.3s linear infinite}
+[data-scene="ps-88"].s2 .s88-panel{transform-box:fill-box;transform-origin:center;animation:s88pop .55s ease both}
+[data-scene="ps-88"].s2 .s88-panel2{animation-delay:.15s}
+[data-scene="ps-88"].s2 .s88-arrow{stroke-dasharray:120;stroke-dashoffset:120;animation:s88draw .8s ease .35s forwards}
+[data-scene="ps-88"].s3 .s88-panel{transform-box:fill-box;transform-origin:center;animation:s88pop .55s ease both}
+[data-scene="ps-88"].s3 .s88-panel2{animation-delay:.15s}
+[data-scene="ps-88"].s3 .s88-magnet2{animation:s88shake 1.8s ease-in-out .4s infinite}
+[data-scene="ps-88"].s3 .s88-force{animation:s88pulse 1.6s ease-in-out infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">楞次定律：感应电流的磁场总要阻碍磁通量的变化</text>
+
+<!-- 第一步：阻碍磁通量变化 -->
+<g class="s88-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">楞次定律：感应电流的磁场总要阻碍引起感应电流的磁通量变化</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="250" height="28" rx="14" fill="#e8effc"/>
+  <text x="181" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">磁体靠近线圈：磁通量增加</text>
+
+  <g class="s88-magnet">
+    <rect x="90" y="262" width="52" height="48" rx="4" fill="#1d4ed8"/>
+    <rect x="142" y="262" width="52" height="48" rx="4" fill="#dc2626"/>
+    <text x="116" y="293" font-size="15" font-weight="900" fill="#ffffff" text-anchor="middle">S</text>
+    <text x="168" y="293" font-size="15" font-weight="900" fill="#ffffff" text-anchor="middle">N</text>
+  </g>
+  <line x1="96" y1="246" x2="178" y2="246" stroke="#b45309" stroke-width="2.5" marker-end="url(#arrAmber)"/>
+  <text x="137" y="238" font-size="11" font-weight="800" fill="#b45309" text-anchor="middle">靠近</text>
+
+  <g class="s88-flux">
+    <line x1="210" y1="286" x2="340" y2="286" stroke="#1d4ed8" stroke-width="2.2" marker-end="url(#arrBlue)"/>
+  </g>
+  <text x="326" y="276" font-size="11.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">B原</text>
+  <g class="s88-bind">
+    <line x1="340" y1="330" x2="210" y2="330" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arrRed)"/>
+  </g>
+  <text x="326" y="322" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">B感</text>
+
+  <ellipse cx="254" cy="286" rx="9" ry="52" fill="none" stroke="#b45309" stroke-width="3"/>
+  <ellipse cx="270" cy="286" rx="9" ry="52" fill="none" stroke="#b45309" stroke-width="3"/>
+  <ellipse cx="286" cy="286" rx="9" ry="52" fill="none" stroke="#b45309" stroke-width="3"/>
+  <ellipse cx="302" cy="286" rx="9" ry="52" fill="none" stroke="#b45309" stroke-width="3"/>
+
+  <path d="M311 240 C370 240 410 252 452 268" fill="none" stroke="#475569" stroke-width="2.5"/>
+  <path d="M311 332 C370 332 410 320 452 302" fill="none" stroke="#475569" stroke-width="2.5"/>
+  <circle cx="482" cy="286" r="30" fill="#ffffff" stroke="#475569" stroke-width="3"/>
+  <text x="482" y="294" font-size="15" font-weight="900" fill="#b91c1c" text-anchor="middle">G</text>
+  <g class="s88-needle" transform="translate(482,286)">
+    <line x1="0" y1="0" x2="0" y2="-22" stroke="#dc2626" stroke-width="2.5"/>
+  </g>
+  <text x="482" y="338" font-size="11" fill="#64748b" text-anchor="middle">灵敏电流计</text>
+
+  <text x="286" y="372" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">磁通量增加 → B感 与 B原 反向</text>
+  <text x="286" y="396" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">B感 就是感应电流产生的磁场</text>
+  <text x="286" y="420" font-size="11" fill="#64748b" text-anchor="middle">再用安培定则由 B感 判断感应电流方向</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="170" height="28" rx="14" fill="#e8effc"/>
+  <text x="681" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">楞次定律</text>
+
+  <text x="720" y="168" font-size="11.5" fill="#334155" text-anchor="middle">感应电流的磁场，总要</text>
+  <text x="720" y="190" font-size="11.5" fill="#334155" text-anchor="middle">阻碍引起感应电流的</text>
+  <text x="720" y="212" font-size="11.5" fill="#334155" text-anchor="middle">磁通量的变化</text>
+
+  <rect x="596" y="232" width="248" height="34" rx="9" fill="#e8effc"/>
+  <text x="720" y="254" font-size="11.5" font-weight="700" fill="#1e3a8a" text-anchor="middle">谁阻碍：感应电流的磁场</text>
+  <rect x="596" y="274" width="248" height="34" rx="9" fill="#e8effc"/>
+  <text x="720" y="296" font-size="11.5" font-weight="700" fill="#1e3a8a" text-anchor="middle">阻碍谁：磁通量的变化</text>
+  <rect x="596" y="316" width="248" height="44" rx="9" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="344" font-size="12.5" font-weight="900" fill="#b45309" text-anchor="middle">增反减同 · 来拒去留</text>
+
+  <text x="720" y="382" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">阻碍不是阻止</text>
+  <text x="720" y="404" font-size="11" fill="#475569" text-anchor="middle">磁通量仍会变化，只是被延缓</text>
+  <text x="720" y="426" font-size="11" fill="#1d4ed8" text-anchor="middle">本质：能量守恒</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">楞次定律判断方向：先看磁通量增减，再定 B感，最后用安培定则</text>
+</g>
+
+<!-- 第二步：增反减同 -->
+<g class="s88-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">增反减同：磁通量增加时感应磁场反向，减小时同向</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+
+  <g class="s88-panel">
+    <rect x="56" y="154" width="228" height="238" rx="12" fill="#fef2f2" stroke="#fecaca" stroke-width="2"/>
+    <text x="170" y="180" font-size="12.5" font-weight="800" fill="#b91c1c" text-anchor="middle">磁通量增加</text>
+    <text x="170" y="200" font-size="11" fill="#64748b" text-anchor="middle">磁体靠近线圈</text>
+
+    <rect x="70" y="236" width="28" height="34" rx="3" fill="#1d4ed8"/>
+    <rect x="98" y="236" width="28" height="34" rx="3" fill="#dc2626"/>
+    <text x="84" y="259" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">S</text>
+    <text x="112" y="259" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">N</text>
+    <line x1="66" y1="224" x2="126" y2="224" stroke="#b45309" stroke-width="2.2" marker-end="url(#arrAmber)"/>
+    <text x="96" y="216" font-size="11" font-weight="800" fill="#b45309" text-anchor="middle">靠近</text>
+
+    <ellipse cx="164" cy="252" rx="7" ry="34" fill="none" stroke="#b45309" stroke-width="2.5"/>
+    <ellipse cx="176" cy="252" rx="7" ry="34" fill="none" stroke="#b45309" stroke-width="2.5"/>
+    <ellipse cx="188" cy="252" rx="7" ry="34" fill="none" stroke="#b45309" stroke-width="2.5"/>
+
+    <line class="s88-arrow" x1="132" y1="233" x2="222" y2="233" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrBlue)"/>
+    <text x="206" y="225" font-size="11" font-weight="800" fill="#1d4ed8">B原</text>
+    <line class="s88-arrow" x1="222" y1="291" x2="132" y2="291" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arrRed)"/>
+    <text x="206" y="311" font-size="11" font-weight="800" fill="#b91c1c">B感</text>
+
+    <text x="170" y="338" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">感应磁场与原磁场反向</text>
+    <text x="170" y="366" font-size="13" font-weight="900" fill="#b91c1c" text-anchor="middle">增反</text>
+  </g>
+
+  <g class="s88-panel s88-panel2">
+    <rect x="308" y="154" width="228" height="238" rx="12" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2"/>
+    <text x="422" y="180" font-size="12.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">磁通量减小</text>
+    <text x="422" y="200" font-size="11" fill="#64748b" text-anchor="middle">磁体远离线圈</text>
+
+    <rect x="322" y="236" width="28" height="34" rx="3" fill="#1d4ed8"/>
+    <rect x="350" y="236" width="28" height="34" rx="3" fill="#dc2626"/>
+    <text x="336" y="259" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">S</text>
+    <text x="364" y="259" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">N</text>
+    <line x1="382" y1="224" x2="322" y2="224" stroke="#b45309" stroke-width="2.2" marker-end="url(#arrAmber)"/>
+    <text x="352" y="216" font-size="11" font-weight="800" fill="#b45309" text-anchor="middle">远离</text>
+
+    <ellipse cx="416" cy="252" rx="7" ry="34" fill="none" stroke="#b45309" stroke-width="2.5"/>
+    <ellipse cx="428" cy="252" rx="7" ry="34" fill="none" stroke="#b45309" stroke-width="2.5"/>
+    <ellipse cx="440" cy="252" rx="7" ry="34" fill="none" stroke="#b45309" stroke-width="2.5"/>
+
+    <line class="s88-arrow" x1="384" y1="233" x2="474" y2="233" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrBlue)"/>
+    <text x="458" y="225" font-size="11" font-weight="800" fill="#1d4ed8">B原</text>
+    <line class="s88-arrow" x1="384" y1="291" x2="474" y2="291" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arrRed)"/>
+    <text x="458" y="311" font-size="11" font-weight="800" fill="#b91c1c">B感</text>
+
+    <text x="422" y="338" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">感应磁场与原磁场同向</text>
+    <text x="422" y="366" font-size="13" font-weight="900" fill="#1d4ed8" text-anchor="middle">减同</text>
+  </g>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="200" height="28" rx="14" fill="#e8effc"/>
+  <text x="696" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">增反减同</text>
+
+  <rect x="596" y="158" width="248" height="58" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+  <text x="720" y="182" font-size="12.5" font-weight="800" fill="#b91c1c" text-anchor="middle">Φ 增加</text>
+  <text x="720" y="203" font-size="11.5" fill="#334155" text-anchor="middle">B感 与 B原 反向</text>
+
+  <rect x="596" y="224" width="248" height="58" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="720" y="248" font-size="12.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">Φ 减小</text>
+  <text x="720" y="269" font-size="11.5" fill="#334155" text-anchor="middle">B感 与 B原 同向</text>
+
+  <rect x="596" y="290" width="248" height="46" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="318" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">阻碍不是阻止</text>
+
+  <text x="720" y="366" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">判断口诀：增反减同</text>
+  <text x="720" y="392" font-size="11" fill="#475569" text-anchor="middle">先判断 Φ 增减，再定 B感 方向</text>
+  <text x="720" y="416" font-size="11" fill="#64748b" text-anchor="middle">阻碍只延缓变化，不改变趋势</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">增反减同：原磁通量增加则感应磁场反向，减小则同向</text>
+</g>
+
+<!-- 第三步：来拒去留 -->
+<g class="s88-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">来拒去留：感应电流的磁场阻碍磁体与线圈的相对运动</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+
+  <g class="s88-panel">
+    <rect x="56" y="154" width="228" height="238" rx="12" fill="#fef2f2" stroke="#fecaca" stroke-width="2"/>
+    <text x="170" y="180" font-size="12.5" font-weight="800" fill="#b91c1c" text-anchor="middle">磁体靠近（来）</text>
+
+    <g class="s88-magnet2">
+      <rect x="68" y="224" width="28" height="34" rx="3" fill="#1d4ed8"/>
+      <rect x="96" y="224" width="28" height="34" rx="3" fill="#dc2626"/>
+      <text x="82" y="247" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">S</text>
+      <text x="110" y="247" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">N</text>
+    </g>
+    <line x1="62" y1="212" x2="122" y2="212" stroke="#b45309" stroke-width="2.2" marker-end="url(#arrAmber)"/>
+    <text x="92" y="204" font-size="11" font-weight="800" fill="#b45309" text-anchor="middle">靠近</text>
+
+    <ellipse cx="176" cy="241" rx="7" ry="30" fill="none" stroke="#b45309" stroke-width="2.5"/>
+    <ellipse cx="190" cy="241" rx="7" ry="30" fill="none" stroke="#b45309" stroke-width="2.5"/>
+    <ellipse cx="204" cy="241" rx="7" ry="30" fill="none" stroke="#b45309" stroke-width="2.5"/>
+    <text x="166" y="248" font-size="12" font-weight="900" fill="#b91c1c" text-anchor="end">N</text>
+
+    <line class="s88-force" x1="110" y1="292" x2="60" y2="292" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arrRed)"/>
+    <text x="92" y="312" font-size="11" font-weight="800" fill="#b91c1c" text-anchor="middle">斥力</text>
+
+    <text x="170" y="340" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">感应磁场把磁体往外推</text>
+    <text x="170" y="366" font-size="13" font-weight="900" fill="#b91c1c" text-anchor="middle">来拒</text>
+  </g>
+
+  <g class="s88-panel s88-panel2">
+    <rect x="308" y="154" width="228" height="238" rx="12" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2"/>
+    <text x="422" y="180" font-size="12.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">磁体远离（去）</text>
+
+    <g class="s88-magnet2">
+      <rect x="320" y="224" width="28" height="34" rx="3" fill="#1d4ed8"/>
+      <rect x="348" y="224" width="28" height="34" rx="3" fill="#dc2626"/>
+      <text x="334" y="247" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">S</text>
+      <text x="362" y="247" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">N</text>
+    </g>
+    <line x1="382" y1="212" x2="322" y2="212" stroke="#b45309" stroke-width="2.2" marker-end="url(#arrAmber)"/>
+    <text x="352" y="204" font-size="11" font-weight="800" fill="#b45309" text-anchor="middle">远离</text>
+
+    <ellipse cx="428" cy="241" rx="7" ry="30" fill="none" stroke="#b45309" stroke-width="2.5"/>
+    <ellipse cx="442" cy="241" rx="7" ry="30" fill="none" stroke="#b45309" stroke-width="2.5"/>
+    <ellipse cx="456" cy="241" rx="7" ry="30" fill="none" stroke="#b45309" stroke-width="2.5"/>
+    <text x="418" y="248" font-size="12" font-weight="900" fill="#1d4ed8" text-anchor="end">S</text>
+
+    <line class="s88-force" x1="338" y1="292" x2="388" y2="292" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arrRed)"/>
+    <text x="362" y="312" font-size="11" font-weight="800" fill="#b91c1c" text-anchor="middle">引力</text>
+
+    <text x="422" y="340" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">感应磁场把磁体往回拉</text>
+    <text x="422" y="366" font-size="13" font-weight="900" fill="#1d4ed8" text-anchor="middle">去留</text>
+  </g>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="200" height="28" rx="14" fill="#e8effc"/>
+  <text x="696" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">来拒去留</text>
+
+  <text x="720" y="172" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">从力的角度看</text>
+  <text x="720" y="196" font-size="11.5" fill="#334155" text-anchor="middle">感应电流的磁场阻碍</text>
+  <text x="720" y="218" font-size="11.5" fill="#334155" text-anchor="middle">磁体与线圈的相对运动</text>
+
+  <rect x="596" y="238" width="248" height="36" rx="9" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+  <text x="720" y="261" font-size="11.5" font-weight="700" fill="#b91c1c" text-anchor="middle">来 → 拒（排斥）</text>
+  <rect x="596" y="282" width="248" height="36" rx="9" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="720" y="305" font-size="11.5" font-weight="700" fill="#1d4ed8" text-anchor="middle">去 → 留（吸引）</text>
+  <rect x="596" y="326" width="248" height="36" rx="9" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="349" font-size="11.5" font-weight="700" fill="#b45309" text-anchor="middle">阻碍相对运动，不是阻止</text>
+
+  <text x="600" y="390" font-size="11" fill="#334155">应用：电磁阻尼、电磁制动</text>
+  <text x="600" y="414" font-size="11" fill="#64748b">本质：机械能与电能的转化</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">来拒去留：感应电流的磁场总是阻碍磁体与线圈的相对运动</text>
+</g>
+</svg>

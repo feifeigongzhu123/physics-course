@@ -1,0 +1,183 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="动能和势能：运动小球的动能、被举高与弹性形变的势能及其影响因素">
+<style>
+.p43-s1,.p43-s2,.p43-s3{opacity:0;visibility:hidden}
+.p43-s1{opacity:1;visibility:visible}
+[data-scene="pj-43"] .p43-s1,[data-scene="pj-43"] .p43-s2,[data-scene="pj-43"] .p43-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="pj-43"].s1 .p43-s1,[data-scene="pj-43"].s2 .p43-s2,[data-scene="pj-43"].s3 .p43-s3{opacity:1;visibility:visible}
+@keyframes p43bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes p43pulse{0%,100%{opacity:.42}50%{opacity:1}}
+@keyframes p43pop{0%{transform:scale(.76);opacity:0}72%{transform:scale(1.04);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes p43flow{to{stroke-dashoffset:-36}}
+@keyframes p43spring{0%,100%{transform:scaleX(1)}50%{transform:scaleX(.88)}}
+@keyframes p43mat{0%,100%{transform:scaleY(1)}50%{transform:scaleY(1.12)}}
+[data-scene="pj-43"].s1 .p43-ball{transform-box:fill-box;transform-origin:center;animation:p43bob 2s ease-in-out infinite}
+[data-scene="pj-43"].s1 .p43-arrow{animation:p43pulse 1.6s ease-in-out infinite}
+[data-scene="pj-43"].s1 .p43-pop{transform-box:fill-box;transform-origin:center;animation:p43pop .5s ease both}
+[data-scene="pj-43"].s2 .p43-fall{stroke-dasharray:7 6;animation:p43flow 1.4s linear infinite}
+[data-scene="pj-43"].s2 .p43-ball2{transform-box:fill-box;transform-origin:center;animation:p43bob 2.4s ease-in-out infinite}
+[data-scene="pj-43"].s2 .p43-panel{transform-box:fill-box;transform-origin:center;animation:p43pop .5s ease both}
+[data-scene="pj-43"].s3 .p43-spring{transform-box:fill-box;transform-origin:right center;animation:p43spring 1.8s ease-in-out infinite}
+[data-scene="pj-43"].s3 .p43-shot{animation:p43pulse 1.5s ease-in-out infinite}
+[data-scene="pj-43"].s3 .p43-balloon{transform-box:fill-box;transform-origin:center;animation:p43bob 2.1s ease-in-out infinite}
+[data-scene="pj-43"].s3 .p43-mat{transform-box:fill-box;transform-origin:center bottom;animation:p43mat 1.6s ease-in-out infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="470" width="900" height="150" fill="url(#gBench)"/>
+<line x1="0" y1="470" x2="900" y2="470" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">动能和势能：运动的物体与被举高、发生形变的物体</text>
+
+<!-- 第一步：动能 -->
+<g class="p43-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">动能：物体由于运动而具有的能，质量越大、速度越大，动能越大</text>
+
+  <rect x="36" y="100" width="430" height="300" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="150" height="28" rx="14" fill="#e8effc"/>
+  <text x="131" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">斜面 + 木块实验</text>
+
+  <polygon points="70,150 132,150 252,330 70,330" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="252" y1="330" x2="424" y2="330" stroke="#94a3b8" stroke-width="3"/>
+  <g class="p43-ball">
+    <circle cx="170" cy="192" r="14" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
+    <circle cx="165" cy="187" r="4" fill="#fef3c7"/>
+  </g>
+  <line class="p43-arrow" x1="180" y1="206" x2="225" y2="273" stroke="#059669" stroke-width="3" stroke-linecap="round" marker-end="url(#arrGreen)"/>
+  <text x="232" y="226" font-size="12" font-weight="800" fill="#047857">v</text>
+
+  <rect x="300" y="292" width="42" height="38" rx="4" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
+  <text x="321" y="316" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">木块</text>
+  <line x1="348" y1="310" x2="404" y2="310" stroke="#059669" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#arrGreen)"/>
+  <text x="376" y="298" font-size="11" font-weight="700" fill="#047857" text-anchor="middle">被推远</text>
+
+  <text x="250" y="362" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">小球从越高处滚下，到达底端速度越大</text>
+  <text x="250" y="386" font-size="11.5" fill="#64748b" text-anchor="middle">木块被推得越远，说明小球的动能越大</text>
+
+  <rect x="486" y="100" width="378" height="300" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="506" y="116" width="150" height="28" rx="14" fill="#e8effc"/>
+  <text x="581" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">影响因素</text>
+
+  <g class="p43-pop">
+    <circle cx="545" cy="172" r="18" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
+    <circle cx="646" cy="178" r="11" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
+    <line x1="568" y1="172" x2="600" y2="172" stroke="#059669" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrGreen)"/>
+    <line x1="660" y1="178" x2="682" y2="178" stroke="#059669" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrGreen)"/>
+    <text x="545" y="208" font-size="11" font-weight="700" fill="#64748b" text-anchor="middle">m 大</text>
+    <text x="646" y="208" font-size="11" font-weight="700" fill="#64748b" text-anchor="middle">m 小</text>
+  </g>
+  <text x="675" y="238" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">质量越大，动能越大</text>
+
+  <g class="p43-pop">
+    <circle cx="545" cy="280" r="14" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
+    <circle cx="646" cy="280" r="14" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
+    <line x1="563" y1="280" x2="620" y2="280" stroke="#059669" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrGreen)"/>
+    <line x1="664" y1="280" x2="690" y2="280" stroke="#059669" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrGreen)"/>
+    <text x="545" y="310" font-size="11" font-weight="700" fill="#64748b" text-anchor="middle">v 大</text>
+    <text x="646" y="310" font-size="11" font-weight="700" fill="#64748b" text-anchor="middle">v 小</text>
+  </g>
+  <text x="675" y="338" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">速度越大，动能越大</text>
+  <text x="675" y="370" font-size="11.5" fill="#64748b" text-anchor="middle">一切运动的物体都具有动能</text>
+</g>
+
+<!-- 第二步：重力势能 -->
+<g class="p43-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">重力势能：物体由于被举高而具有的能</text>
+
+  <rect x="36" y="100" width="430" height="300" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="150" height="28" rx="14" fill="#e8effc"/>
+  <text x="131" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">被举高的小球</text>
+
+  <line x1="60" y1="350" x2="420" y2="350" stroke="#94a3b8" stroke-width="2.5"/>
+
+  <circle class="p43-ball2" cx="190" cy="252" r="20" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
+  <circle cx="183" cy="245" r="6" fill="#fef3c7"/>
+  <line class="p43-fall" x1="190" y1="276" x2="190" y2="344" stroke="#64748b" stroke-width="2"/>
+  <text x="190" y="214" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">被举高</text>
+
+  <line x1="320" y1="252" x2="320" y2="350" stroke="#1d4ed8" stroke-width="2" marker-start="url(#arrBlue)" marker-end="url(#arrBlue)"/>
+  <text x="334" y="306" font-size="14" font-weight="800" fill="#1e40af">h</text>
+  <text x="412" y="368" font-size="11" fill="#64748b" text-anchor="end">地面（参考面）</text>
+  <text x="240" y="394" font-size="17" font-weight="900" fill="#1e3a8a" text-anchor="middle">Ep = mgh</text>
+
+  <rect x="486" y="100" width="378" height="300" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="506" y="116" width="150" height="28" rx="14" fill="#e8effc"/>
+  <text x="581" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">影响因素</text>
+
+  <g class="p43-panel">
+    <line x1="506" y1="180" x2="700" y2="180" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <circle cx="546" cy="166" r="14" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
+    <line x1="506" y1="262" x2="700" y2="262" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <circle cx="646" cy="248" r="14" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
+    <line x1="716" y1="166" x2="716" y2="262" stroke="#1d4ed8" stroke-width="2" marker-start="url(#arrBlue)" marker-end="url(#arrBlue)"/>
+    <text x="730" y="218" font-size="14" font-weight="800" fill="#1e40af">h</text>
+  </g>
+  <text x="675" y="300" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">高度越高，重力势能越大</text>
+
+  <g class="p43-panel">
+    <line x1="506" y1="344" x2="800" y2="344" stroke="#94a3b8" stroke-width="2"/>
+    <circle cx="556" cy="322" r="20" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
+    <circle cx="656" cy="334" r="8" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
+    <text x="556" y="370" font-size="11" font-weight="700" fill="#64748b" text-anchor="middle">m 大</text>
+    <text x="656" y="370" font-size="11" font-weight="700" fill="#64748b" text-anchor="middle">m 小</text>
+  </g>
+  <text x="700" y="390" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">高度相同：质量越大，重力势能越大</text>
+</g>
+
+<!-- 第三步：弹性势能 -->
+<g class="p43-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">弹性势能：物体由于发生弹性形变而具有的能</text>
+
+  <!-- 弓 -->
+  <rect x="36" y="100" width="260" height="304" rx="16" fill="#ffffff" stroke="#fde68a" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="80" y="112" width="172" height="30" rx="15" fill="#fef3c7"/>
+  <text x="166" y="132" font-size="12.5" font-weight="800" fill="#92400e" text-anchor="middle">拉开的弓</text>
+
+  <path d="M170 180 Q112 270 170 360" fill="none" stroke="#b45309" stroke-width="6" stroke-linecap="round"/>
+  <line x1="170" y1="180" x2="112" y2="270" stroke="#64748b" stroke-width="2"/>
+  <line x1="170" y1="360" x2="112" y2="270" stroke="#64748b" stroke-width="2"/>
+  <line x1="120" y1="270" x2="240" y2="270" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="240,264 252,270 240,276" fill="#475569"/>
+  <line x1="120" y1="262" x2="132" y2="278" stroke="#dc2626" stroke-width="2.5"/>
+  <line x1="120" y1="278" x2="132" y2="262" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="200" y="236" font-size="11" font-weight="700" fill="#92400e">形变</text>
+
+  <text x="166" y="372" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">拉得越满，形变越大</text>
+  <text x="166" y="394" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">弹性势能越大</text>
+
+  <!-- 弹簧 -->
+  <rect x="320" y="100" width="260" height="304" rx="16" fill="#ffffff" stroke="#bbf7d0" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="364" y="112" width="172" height="30" rx="15" fill="#d1fae5"/>
+  <text x="450" y="132" font-size="12.5" font-weight="800" fill="#047857" text-anchor="middle">压缩的弹簧</text>
+
+  <rect x="330" y="210" width="14" height="140" rx="2" fill="#64748b"/>
+  <g class="p43-spring">
+    <path d="M344 280 l8 -14 l12 28 l12 -28 l12 28 l12 -28 l12 28 l12 -28 l8 14" fill="none" stroke="#059669" stroke-width="3"/>
+  </g>
+  <rect x="434" y="248" width="34" height="64" rx="4" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
+  <line class="p43-shot" x1="474" y1="280" x2="516" y2="280" stroke="#059669" stroke-width="3" stroke-linecap="round" marker-end="url(#arrGreen)"/>
+  <text x="494" y="266" font-size="11" font-weight="700" fill="#047857" text-anchor="middle">弹开</text>
+
+  <text x="450" y="372" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">压缩量越大，弹性势能越大</text>
+  <text x="450" y="394" font-size="12" font-weight="800" fill="#047857" text-anchor="middle">松手后对外做功</text>
+
+  <!-- 跳板 -->
+  <rect x="604" y="100" width="260" height="304" rx="16" fill="#ffffff" stroke="#bfdbfe" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="648" y="112" width="172" height="30" rx="15" fill="#dbeafe"/>
+  <text x="734" y="132" font-size="12.5" font-weight="800" fill="#1e40af" text-anchor="middle">压弯的跳板</text>
+
+  <line x1="648" y1="260" x2="648" y2="344" stroke="#475569" stroke-width="5"/>
+  <line x1="820" y1="260" x2="820" y2="344" stroke="#475569" stroke-width="5"/>
+  <path class="p43-mat" d="M648 292 Q734 332 820 292" fill="none" stroke="#1d4ed8" stroke-width="6" stroke-linecap="round"/>
+  <g class="p43-balloon">
+    <circle cx="734" cy="236" r="14" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
+  </g>
+  <line x1="734" y1="214" x2="734" y2="170" stroke="#1d4ed8" stroke-width="3" stroke-linecap="round" marker-end="url(#arrBlue)"/>
+
+  <text x="734" y="372" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">形变越大，弹力做功越多</text>
+  <text x="734" y="394" font-size="12" font-weight="800" fill="#1e40af" text-anchor="middle">弹性势能越大</text>
+
+  <rect x="60" y="412" width="780" height="40" rx="12" fill="#eef6ff" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="450" y="438" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">拉开的弓、压缩的弹簧、压弯的跳板都具有弹性势能 —— 形变越大，弹性势能越大</text>
+</g>
+</svg>

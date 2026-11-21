@@ -1,0 +1,204 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="原子核的组成：质子与中子、核素、同位素与原子核符号">
+<style>
+[data-scene="ps-120"] .s120-step1,[data-scene="ps-120"] .s120-step2,[data-scene="ps-120"] .s120-step3{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="ps-120"].s1 .s120-step1,[data-scene="ps-120"].s2 .s120-step2,[data-scene="ps-120"].s3 .s120-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes s120fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@keyframes s120pop{0%{transform:scale(.88);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes s120draw{to{stroke-dashoffset:0}}
+@keyframes s120pulse{0%,100%{opacity:.55}50%{opacity:1}}
+[data-scene="ps-120"].s1 .s120-nucleon{transform-box:fill-box;transform-origin:center;opacity:0;animation:s120pop .45s ease both}
+[data-scene="ps-120"].s1 .s120-n2{animation-delay:.06s}
+[data-scene="ps-120"].s1 .s120-n3{animation-delay:.12s}
+[data-scene="ps-120"].s1 .s120-n4{animation-delay:.18s}
+[data-scene="ps-120"].s1 .s120-n5{animation-delay:.24s}
+[data-scene="ps-120"].s1 .s120-n6{animation-delay:.3s}
+[data-scene="ps-120"].s1 .s120-n7{animation-delay:.36s}
+[data-scene="ps-120"].s1 .s120-n8{animation-delay:.42s}
+[data-scene="ps-120"].s1 .s120-n9{animation-delay:.48s}
+[data-scene="ps-120"].s1 .s120-n10{animation-delay:.54s}
+[data-scene="ps-120"].s1 .s120-n11{animation-delay:.6s}
+[data-scene="ps-120"].s1 .s120-n12{animation-delay:.66s}
+[data-scene="ps-120"].s1 .s120-card{transform-box:fill-box;transform-origin:center;animation:s120pop .5s ease .3s both}
+[data-scene="ps-120"].s2 .s120-sym{transform-box:fill-box;transform-origin:center;animation:s120pop .55s ease .2s both}
+[data-scene="ps-120"].s2 .s120-lead{stroke-dasharray:160;stroke-dashoffset:160;animation:s120draw .7s ease .6s forwards}
+[data-scene="ps-120"].s2 .s120-card{transform-box:fill-box;transform-origin:center;animation:s120pop .5s ease .3s both}
+[data-scene="ps-120"].s3 .s120-card{transform-box:fill-box;transform-origin:center;animation:s120pop .45s ease both}
+[data-scene="ps-120"].s3 .s120-c2{animation-delay:.12s}
+[data-scene="ps-120"].s3 .s120-c3{animation-delay:.24s}
+[data-scene="ps-120"].s3 .s120-strip{transform-box:fill-box;transform-origin:center;animation:s120pop .5s ease .5s both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="532" width="900" height="88" fill="url(#gBench)"/>
+<line x1="0" y1="532" x2="900" y2="532" stroke="#cbd5e1" stroke-width="2.5"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">原子核的组成</text>
+
+<!-- 第一步：质子与中子 -->
+<g class="s120-step1" data-zone="1">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 1 步 · 原子核由质子和中子组成</text>
+
+  <rect x="66" y="112" width="180" height="34" rx="17" fill="#fee2e2" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="156" y="134" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">质子 p（带正电）</text>
+  <rect x="258" y="112" width="180" height="34" rx="17" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="348" y="134" font-size="12" font-weight="800" fill="#475569" text-anchor="middle">中子 n（不带电）</text>
+
+  <g class="s120-nucleon s120-n1">
+    <circle cx="312" cy="285" r="15" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+    <text x="312" y="290" font-size="12" font-weight="800" fill="#475569" text-anchor="middle">n</text>
+  </g>
+  <g class="s120-nucleon s120-n2">
+    <circle cx="281" cy="339" r="15" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+    <text x="281" y="344" font-size="12" font-weight="800" fill="#475569" text-anchor="middle">n</text>
+  </g>
+  <g class="s120-nucleon s120-n3">
+    <circle cx="219" cy="339" r="15" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+    <text x="219" y="344" font-size="12" font-weight="800" fill="#475569" text-anchor="middle">n</text>
+  </g>
+  <g class="s120-nucleon s120-n4">
+    <circle cx="188" cy="285" r="15" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+    <text x="188" y="290" font-size="12" font-weight="800" fill="#475569" text-anchor="middle">n</text>
+  </g>
+  <g class="s120-nucleon s120-n5">
+    <circle cx="219" cy="231" r="15" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+    <text x="219" y="236" font-size="12" font-weight="800" fill="#475569" text-anchor="middle">n</text>
+  </g>
+  <g class="s120-nucleon s120-n6">
+    <circle cx="281" cy="231" r="15" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+    <text x="281" y="236" font-size="12" font-weight="800" fill="#475569" text-anchor="middle">n</text>
+  </g>
+  <g class="s120-nucleon s120-n7">
+    <circle cx="276" cy="300" r="14" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="276" y="305" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">p</text>
+  </g>
+  <g class="s120-nucleon s120-n8">
+    <circle cx="250" cy="315" r="14" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="250" y="320" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">p</text>
+  </g>
+  <g class="s120-nucleon s120-n9">
+    <circle cx="224" cy="300" r="14" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="224" y="305" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">p</text>
+  </g>
+  <g class="s120-nucleon s120-n10">
+    <circle cx="224" cy="270" r="14" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="224" y="275" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">p</text>
+  </g>
+  <g class="s120-nucleon s120-n11">
+    <circle cx="250" cy="255" r="14" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="250" y="260" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">p</text>
+  </g>
+  <g class="s120-nucleon s120-n12">
+    <circle cx="276" cy="270" r="14" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="276" y="275" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">p</text>
+  </g>
+
+  <text x="250" y="386" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">碳-12 原子核</text>
+  <text x="250" y="410" font-size="11.5" fill="#64748b" text-anchor="middle">6 个质子 + 6 个中子</text>
+
+  <g class="s120-card">
+    <rect x="480" y="110" width="360" height="336" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="660" y="142" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">组成与数量关系</text>
+    <text x="498" y="178" font-size="12" fill="#334155">原子核由质子和中子组成，</text>
+    <text x="498" y="198" font-size="12" fill="#334155">它们统称核子</text>
+    <line x1="498" y1="218" x2="822" y2="218" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="498" y="248" font-size="12" font-weight="800" fill="#b91c1c">质子数 = 电荷数 Z</text>
+    <text x="498" y="274" font-size="12" font-weight="800" fill="#475569">中子数 N = A − Z</text>
+    <text x="498" y="300" font-size="12" font-weight="800" fill="#1d4ed8">质量数 A = Z + N</text>
+    <line x1="498" y1="322" x2="822" y2="322" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="498" y="350" font-size="11.5" fill="#334155">质子数决定元素的种类</text>
+    <text x="498" y="374" font-size="11.5" fill="#334155">中子数影响同位素和核稳定性</text>
+    <text x="498" y="398" font-size="11.5" fill="#334155">原子核带正电，核外电子带负电</text>
+    <text x="660" y="426" font-size="12" font-weight="800" fill="#047857" text-anchor="middle">原子整体呈电中性</text>
+  </g>
+
+  <rect x="70" y="470" width="760" height="38" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="494" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">原子核的质量数等于质子数与中子数之和</text>
+</g>
+
+<!-- 第二步：核素与符号 -->
+<g class="s120-step2" data-zone="2">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 2 步 · 核素和原子核符号</text>
+
+  <g class="s120-sym">
+    <text x="270" y="242" font-size="22" font-weight="900" fill="#b45309" text-anchor="end">A</text>
+    <text x="270" y="326" font-size="22" font-weight="900" fill="#1d4ed8" text-anchor="end">Z</text>
+    <text x="288" y="312" font-size="70" font-weight="900" fill="#1e3a8a">X</text>
+  </g>
+
+  <line class="s120-lead" x1="200" y1="212" x2="268" y2="232" stroke="#b45309" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="62" y="206" font-size="12" font-weight="800" fill="#b45309">质量数 A（核子数）</text>
+  <line class="s120-lead" x1="200" y1="336" x2="266" y2="316" stroke="#1d4ed8" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="62" y="344" font-size="12" font-weight="800" fill="#1d4ed8">电荷数 Z（质子数）</text>
+  <line class="s120-lead" x1="350" y1="292" x2="424" y2="292" stroke="#1e3a8a" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="432" y="297" font-size="12" font-weight="800" fill="#1e3a8a">元素符号</text>
+
+  <rect x="70" y="386" width="416" height="62" rx="10" fill="#fffbeb" stroke="#fcd34d" stroke-width="1.5"/>
+  <text x="88" y="410" font-size="13" font-weight="800" fill="#92400e">¹²₆C 表示碳-12：</text>
+  <text x="88" y="433" font-size="11.5" fill="#78350f">6 个质子，6 个中子，共 12 个核子</text>
+
+  <g class="s120-card">
+    <rect x="500" y="110" width="340" height="336" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="670" y="142" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">核素与符号</text>
+    <text x="518" y="176" font-size="12" fill="#334155">核素：具有一定质子数和中子数</text>
+    <text x="518" y="196" font-size="12" fill="#334155">的一种原子</text>
+    <line x1="518" y1="216" x2="822" y2="216" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="518" y="246" font-size="17" font-weight="900" fill="#1e3a8a">左上 A · 左下 Z · X 元素</text>
+    <text x="518" y="278" font-size="11.5" fill="#334155">A —— 质量数（核子数）</text>
+    <text x="518" y="302" font-size="11.5" fill="#334155">Z —— 电荷数（质子数）</text>
+    <text x="518" y="326" font-size="11.5" fill="#334155">X —— 元素符号</text>
+    <line x1="518" y1="344" x2="822" y2="344" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="518" y="370" font-size="12" font-weight="800" fill="#b45309">中子数 N = A − Z</text>
+    <text x="518" y="396" font-size="11.5" fill="#475569">同一种元素可以有多种核素</text>
+    <text x="670" y="424" font-size="11.5" font-weight="800" fill="#047857" text-anchor="middle">核素由质子数和中子数共同确定</text>
+  </g>
+
+  <rect x="70" y="470" width="760" height="38" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="494" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">符号左上角写质量数，左下角写电荷数</text>
+</g>
+
+<!-- 第三步：同位素 -->
+<g class="s120-step3" data-zone="3">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 3 步 · 同位素：质子数相同，中子数不同</text>
+
+  <g class="s120-card">
+    <rect x="60" y="130" width="240" height="250" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="180" y="168" font-size="17" font-weight="900" fill="#1e3a8a" text-anchor="middle">氕 ¹₁H</text>
+    <circle cx="180" cy="250" r="17" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
+    <text x="180" y="255" font-size="13" font-weight="800" fill="#b91c1c" text-anchor="middle">p</text>
+    <text x="180" y="322" font-size="12" fill="#334155" text-anchor="middle">质子 1 · 中子 0</text>
+    <text x="180" y="348" font-size="11.5" fill="#64748b" text-anchor="middle">质量数 A = 1</text>
+  </g>
+  <g class="s120-card s120-c2">
+    <rect x="330" y="130" width="240" height="250" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="450" y="168" font-size="17" font-weight="900" fill="#1e3a8a" text-anchor="middle">氘 ²₁H</text>
+    <circle cx="435" cy="250" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
+    <text x="435" y="255" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">p</text>
+    <circle cx="467" cy="250" r="16" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+    <text x="467" y="255" font-size="12" font-weight="800" fill="#475569" text-anchor="middle">n</text>
+    <text x="450" y="322" font-size="12" fill="#334155" text-anchor="middle">质子 1 · 中子 1</text>
+    <text x="450" y="348" font-size="11.5" fill="#64748b" text-anchor="middle">质量数 A = 2</text>
+  </g>
+  <g class="s120-card s120-c3">
+    <rect x="600" y="130" width="240" height="250" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="720" y="168" font-size="17" font-weight="900" fill="#1e3a8a" text-anchor="middle">氚 ³₁H</text>
+    <circle cx="720" cy="236" r="14" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
+    <text x="720" y="241" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">p</text>
+    <circle cx="697" cy="260" r="14" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+    <text x="697" y="265" font-size="12" font-weight="800" fill="#475569" text-anchor="middle">n</text>
+    <circle cx="743" cy="260" r="14" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+    <text x="743" y="265" font-size="12" font-weight="800" fill="#475569" text-anchor="middle">n</text>
+    <text x="720" y="322" font-size="12" fill="#334155" text-anchor="middle">质子 1 · 中子 2</text>
+    <text x="720" y="348" font-size="11.5" fill="#64748b" text-anchor="middle">质量数 A = 3</text>
+  </g>
+
+  <g class="s120-strip">
+    <rect x="60" y="398" width="780" height="52" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="450" y="420" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">同位素的质子数相同，中子数不同，化学性质几乎相同</text>
+    <text x="450" y="440" font-size="11.5" fill="#475569" text-anchor="middle">物理性质可能不同，天然丰度也不同</text>
+  </g>
+
+  <rect x="70" y="470" width="760" height="38" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="494" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">同位素：质子数相同、中子数不同的原子</text>
+</g>
+</svg>

@@ -1,0 +1,230 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="电阻：电阻的概念与单位、影响电阻大小的因素、导体与绝缘体">
+<style>
+.p60-s1,.p60-s2,.p60-s3{opacity:0;visibility:hidden}
+.p60-s1{opacity:1;visibility:visible}
+[data-scene="pj-60"] .p60-s1,[data-scene="pj-60"] .p60-s2,[data-scene="pj-60"] .p60-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="pj-60"].s1 .p60-s1,[data-scene="pj-60"].s2 .p60-s2,[data-scene="pj-60"].s3 .p60-s3{opacity:1;visibility:visible}
+@keyframes p60drift{0%{transform:translateX(-6px)}100%{transform:translateX(18px)}}
+@keyframes p60pulse{0%,100%{opacity:.4}50%{opacity:1}}
+@keyframes p60pop{0%{transform:scale(.82);opacity:0}72%{transform:scale(1.04);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes p60grow{0%{transform:scaleX(.35)}100%{transform:scaleX(1)}}
+@keyframes p60heat{0%,100%{transform:scaleY(.55)}50%{transform:scaleY(1)}}
+[data-scene="pj-60"].s1 .p60-e{transform-box:fill-box;transform-origin:center;animation:p60drift 1.6s linear infinite alternate}
+[data-scene="pj-60"].s1 .p60-e2{animation-delay:.25s}
+[data-scene="pj-60"].s1 .p60-e3{animation-delay:.5s}
+[data-scene="pj-60"].s1 .p60-e4{animation-delay:.75s}
+[data-scene="pj-60"].s1 .p60-eq{transform-box:fill-box;transform-origin:center;animation:p60pop .55s ease both}
+[data-scene="pj-60"].s2 .p60-bar{transform-box:fill-box;transform-origin:left center;animation:p60grow .9s ease both}
+[data-scene="pj-60"].s2 .p60-card{transform-box:fill-box;transform-origin:center;animation:p60pop .5s ease both}
+[data-scene="pj-60"].s2 .p60-card2{animation-delay:.1s}
+[data-scene="pj-60"].s2 .p60-card3{animation-delay:.2s}
+[data-scene="pj-60"].s2 .p60-card4{animation-delay:.3s}
+[data-scene="pj-60"].s2 .p60-merc{transform-box:fill-box;transform-origin:center bottom;animation:p60heat 2.4s ease-in-out infinite}
+[data-scene="pj-60"].s3 .p60-e2{transform-box:fill-box;transform-origin:center;animation:p60drift 1.7s linear infinite alternate}
+[data-scene="pj-60"].s3 .p60-panel{transform-box:fill-box;transform-origin:center;animation:p60pop .55s ease both}
+[data-scene="pj-60"].s3 .p60-bound{animation:p60pulse 2s ease-in-out infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="470" width="900" height="150" fill="url(#gBench)"/>
+<line x1="0" y1="470" x2="900" y2="470" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">电阻：导体对电流的阻碍作用</text>
+
+<!-- 第一步：电阻概念与单位 -->
+<g class="p60-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">电阻表示导体对电流阻碍作用的大小，单位是欧姆</text>
+
+  <rect x="36" y="100" width="430" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="214" height="28" rx="14" fill="#e8effc"/>
+  <text x="163" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电阻：阻碍电流的性质</text>
+
+  <text x="92" y="180" font-size="12" font-weight="700" fill="#475569">电流方向</text>
+  <line x1="160" y1="176" x2="220" y2="176" stroke="#1d4ed8" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrBlue)"/>
+  <text x="236" y="181" font-size="13" font-weight="900" fill="#1d4ed8">I</text>
+
+  <rect x="82" y="196" width="336" height="56" rx="8" fill="#dbeafe" stroke="#60a5fa" stroke-width="2.5"/>
+  <g fill="#60a5fa">
+    <circle cx="112" cy="212" r="4"/><circle cx="172" cy="236" r="4"/><circle cx="232" cy="212" r="4"/>
+    <circle cx="292" cy="236" r="4"/><circle cx="352" cy="212" r="4"/><circle cx="402" cy="236" r="4"/>
+  </g>
+  <g fill="#1d4ed8">
+    <circle class="p60-e" cx="104" cy="232" r="3.5"/>
+    <circle class="p60-e p60-e2" cx="144" cy="220" r="3.5"/>
+    <circle class="p60-e p60-e3" cx="184" cy="234" r="3.5"/>
+    <circle class="p60-e p60-e4" cx="224" cy="218" r="3.5"/>
+    <circle class="p60-e" cx="264" cy="232" r="3.5"/>
+    <circle class="p60-e p60-e2" cx="304" cy="218" r="3.5"/>
+    <circle class="p60-e p60-e3" cx="344" cy="234" r="3.5"/>
+    <circle class="p60-e p60-e4" cx="384" cy="220" r="3.5"/>
+  </g>
+
+  <text x="251" y="284" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">自由电子定向移动时，不断与导体内粒子碰撞</text>
+
+  <rect x="210" y="320" width="90" height="28" rx="4" fill="#ffffff" stroke="#1e3a8a" stroke-width="2.5"/>
+  <line x1="180" y1="334" x2="210" y2="334" stroke="#334155" stroke-width="3"/>
+  <line x1="300" y1="334" x2="330" y2="334" stroke="#334155" stroke-width="3"/>
+  <text x="255" y="312" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">电阻符号 R</text>
+
+  <text x="251" y="380" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">R 越大，对电流的阻碍作用越强</text>
+  <text x="251" y="398" font-size="11" fill="#64748b" text-anchor="middle">相同电压下，电阻越大，电流越小</text>
+
+  <rect x="486" y="100" width="378" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="506" y="116" width="150" height="28" rx="14" fill="#e8effc"/>
+  <text x="581" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">单位与理解</text>
+
+  <g class="p60-eq">
+    <text x="675" y="184" font-size="26" font-weight="900" fill="#1e3a8a" text-anchor="middle">欧姆（Ω）</text>
+  </g>
+  <text x="675" y="210" font-size="11.5" fill="#64748b" text-anchor="middle">两端电压 1 V 时，电流为 1 A，电阻为 1 Ω</text>
+
+  <rect x="516" y="226" width="318" height="28" rx="8" fill="#f8fbff"/>
+  <text x="675" y="245" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">1 Ω = 1 V / 1 A</text>
+  <rect x="516" y="258" width="318" height="28" rx="8" fill="#f8fbff"/>
+  <text x="675" y="277" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">1 kΩ = 1 000 Ω</text>
+  <rect x="516" y="290" width="318" height="28" rx="8" fill="#f8fbff"/>
+  <text x="675" y="309" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">1 MΩ = 1 000 000 Ω</text>
+
+  <rect x="516" y="328" width="318" height="52" rx="10" fill="#e8effc"/>
+  <text x="675" y="348" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">电阻是导体本身的一种性质</text>
+  <text x="675" y="368" font-size="11.5" font-weight="700" fill="#1e40af" text-anchor="middle">与导体两端电压、通过的电流无关</text>
+  <text x="675" y="396" font-size="11" fill="#b91c1c" text-anchor="middle">R = U / I 只是测量式，不是决定式</text>
+</g>
+
+<!-- 第二步：影响电阻的因素 -->
+<g class="p60-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">电阻由导体本身决定：材料、长度、横截面积、温度</text>
+
+  <g class="p60-card">
+    <rect x="36" y="100" width="190" height="304" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="52" y="114" width="158" height="26" rx="13" fill="#e8effc"/>
+    <text x="131" y="132" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">① 材料</text>
+
+    <rect x="60" y="192" width="142" height="22" rx="4" fill="#d97706" stroke="#b45309" stroke-width="1.5"/>
+    <text x="131" y="184" font-size="11" font-weight="700" fill="#92400e" text-anchor="middle">铜</text>
+    <rect x="60" y="244" width="142" height="22" rx="4" fill="#64748b" stroke="#475569" stroke-width="1.5"/>
+    <text x="131" y="236" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">镍铬合金</text>
+    <text x="131" y="296" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">同长、同粗细</text>
+    <text x="131" y="322" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">镍铬合金电阻大</text>
+    <text x="131" y="366" font-size="11" fill="#64748b" text-anchor="middle">不同材料导电本领不同</text>
+  </g>
+
+  <g class="p60-card p60-card2">
+    <rect x="242" y="100" width="190" height="304" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="258" y="114" width="158" height="26" rx="13" fill="#e8f7f1"/>
+    <text x="337" y="132" font-size="11.5" font-weight="800" fill="#047857" text-anchor="middle">② 长度</text>
+
+    <rect x="262" y="204" width="62" height="14" rx="3" fill="#059669" stroke="#047857" stroke-width="1.5"/>
+    <text x="337" y="196" font-size="11" font-weight="700" fill="#047857" text-anchor="middle">短</text>
+    <rect class="p60-bar" x="262" y="262" width="146" height="14" rx="3" fill="#059669" stroke="#047857" stroke-width="1.5"/>
+    <text x="337" y="254" font-size="11" font-weight="700" fill="#047857" text-anchor="middle">长</text>
+
+    <text x="337" y="312" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">同材料、同粗细</text>
+    <text x="337" y="338" font-size="12.5" font-weight="800" fill="#047857" text-anchor="middle">越长，电阻越大</text>
+    <text x="337" y="372" font-size="11" fill="#64748b" text-anchor="middle">导线越长，阻碍越明显</text>
+  </g>
+
+  <g class="p60-card p60-card3">
+    <rect x="448" y="100" width="190" height="304" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="464" y="114" width="158" height="26" rx="13" fill="#fff7ed"/>
+    <text x="543" y="132" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">③ 横截面积</text>
+
+    <rect x="470" y="206" width="146" height="22" rx="3" fill="#d97706" stroke="#b45309" stroke-width="1.5"/>
+    <text x="543" y="198" font-size="11" font-weight="700" fill="#92400e" text-anchor="middle">粗</text>
+    <rect x="470" y="262" width="146" height="8" rx="3" fill="#d97706" stroke="#b45309" stroke-width="1.5"/>
+    <text x="543" y="254" font-size="11" font-weight="700" fill="#92400e" text-anchor="middle">细</text>
+
+    <text x="543" y="312" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">同材料、同长度</text>
+    <text x="543" y="338" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">越细，电阻越大</text>
+    <text x="543" y="372" font-size="11" fill="#64748b" text-anchor="middle">横截面积越小，阻碍越大</text>
+  </g>
+
+  <g class="p60-card p60-card4">
+    <rect x="654" y="100" width="190" height="304" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="670" y="114" width="158" height="26" rx="13" fill="#fee2e2"/>
+    <text x="749" y="132" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">④ 温度</text>
+
+    <rect x="700" y="180" width="16" height="132" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+    <circle cx="708" cy="322" r="17" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+    <rect class="p60-merc" x="704" y="248" width="8" height="78" rx="4" fill="#dc2626"/>
+    <circle cx="708" cy="324" r="11" fill="#dc2626"/>
+    <g stroke="#94a3b8" stroke-width="1.5">
+      <line x1="716" y1="208" x2="728" y2="208"/>
+      <line x1="716" y1="240" x2="728" y2="240"/>
+      <line x1="716" y1="272" x2="728" y2="272"/>
+    </g>
+    <text x="738" y="212" font-size="11" fill="#64748b">高</text>
+    <text x="738" y="276" font-size="11" fill="#64748b">低</text>
+
+    <text x="749" y="360" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">多数导体：温度升高</text>
+    <text x="749" y="384" font-size="12.5" font-weight="800" fill="#b91c1c" text-anchor="middle">电阻变大</text>
+    <text x="749" y="400" font-size="11" fill="#64748b" text-anchor="middle">灯丝发光时电阻明显变大</text>
+  </g>
+
+  <rect x="60" y="416" width="780" height="40" rx="12" fill="#eef6ff" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="450" y="441" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">研究电阻与某一因素的关系时，必须控制其他因素不变</text>
+</g>
+
+<!-- 第三步：导体与绝缘体 -->
+<g class="p60-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">按导电本领分为导体和绝缘体，二者没有绝对界限</text>
+
+  <g class="p60-panel">
+    <rect x="36" y="100" width="400" height="304" rx="16" fill="#ffffff" stroke="#bbf7d0" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="56" y="116" width="170" height="28" rx="14" fill="#d1fae5"/>
+    <text x="141" y="135" font-size="12.5" font-weight="800" fill="#047857" text-anchor="middle">导体：容易导电</text>
+
+    <text x="60" y="180" font-size="12.5" font-weight="700" fill="#334155">铜、铝、石墨</text>
+    <text x="60" y="206" font-size="12.5" font-weight="700" fill="#334155">人体、大地、酸碱盐溶液</text>
+
+    <rect x="60" y="230" width="352" height="56" rx="8" fill="#d1fae5" stroke="#34d399" stroke-width="2.5"/>
+    <g fill="#059669">
+      <circle cx="100" cy="248" r="4"/><circle cx="170" cy="268" r="4"/><circle cx="240" cy="248" r="4"/>
+      <circle cx="310" cy="268" r="4"/><circle cx="380" cy="248" r="4"/>
+    </g>
+    <g fill="#047857">
+      <circle class="p60-e2" cx="88" cy="268" r="3.5"/>
+      <circle class="p60-e2" cx="128" cy="252" r="3.5"/>
+      <circle class="p60-e2" cx="208" cy="268" r="3.5"/>
+      <circle class="p60-e2" cx="278" cy="252" r="3.5"/>
+      <circle class="p60-e2" cx="348" cy="268" r="3.5"/>
+      <circle class="p60-e2" cx="398" cy="252" r="3.5"/>
+    </g>
+
+    <text x="236" y="318" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">内部有大量自由移动的电荷</text>
+    <text x="236" y="350" font-size="13" font-weight="800" fill="#047857" text-anchor="middle">导电性能好，可用来输电、做导线</text>
+    <text x="236" y="378" font-size="11" fill="#64748b" text-anchor="middle">金属靠自由电子导电，溶液靠离子导电</text>
+  </g>
+
+  <g class="p60-panel">
+    <rect x="464" y="100" width="400" height="304" rx="16" fill="#ffffff" stroke="#fecaca" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="484" y="116" width="190" height="28" rx="14" fill="#fee2e2"/>
+    <text x="579" y="135" font-size="12.5" font-weight="800" fill="#b91c1c" text-anchor="middle">绝缘体：不容易导电</text>
+
+    <text x="488" y="180" font-size="12.5" font-weight="700" fill="#334155">橡胶、玻璃、陶瓷</text>
+    <text x="488" y="206" font-size="12.5" font-weight="700" fill="#334155">塑料、干木头、油</text>
+
+    <rect x="488" y="230" width="352" height="56" rx="8" fill="#fef2f2" stroke="#fca5a5" stroke-width="2.5"/>
+    <g class="p60-bound" fill="none" stroke="#dc2626" stroke-width="1.6">
+      <circle cx="528" cy="248" r="9"/><circle cx="558" cy="248" r="9"/>
+      <circle cx="608" cy="268" r="9"/><circle cx="638" cy="268" r="9"/>
+      <circle cx="688" cy="248" r="9"/><circle cx="718" cy="248" r="9"/>
+      <circle cx="768" cy="268" r="9"/><circle cx="798" cy="268" r="9"/>
+    </g>
+    <g fill="#b91c1c" font-size="11" font-weight="800" text-anchor="middle">
+      <text x="528" y="252">+</text><text x="558" y="252">−</text>
+      <text x="608" y="272">+</text><text x="638" y="272">−</text>
+      <text x="688" y="252">+</text><text x="718" y="252">−</text>
+      <text x="768" y="272">+</text><text x="798" y="272">−</text>
+    </g>
+
+    <text x="664" y="318" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">电荷被束缚，几乎不能自由移动</text>
+    <text x="664" y="350" font-size="13" font-weight="800" fill="#b91c1c" text-anchor="middle">不容易导电，可用来绝缘</text>
+    <text x="664" y="378" font-size="11" fill="#64748b" text-anchor="middle">干燥的空气也是绝缘体</text>
+  </g>
+
+  <rect x="60" y="416" width="780" height="40" rx="12" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+  <text x="450" y="441" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">导体和绝缘体没有绝对界限：玻璃加热到红炽状态会导电，潮湿空气也可能导电</text>
+</g>
+</svg>

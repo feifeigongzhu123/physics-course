@@ -1,0 +1,316 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="质量：质量是物体的属性，用托盘天平测量">
+  <style>
+    [data-scene="pj-24"] .p24-step{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility 0s linear .45s}
+    [data-scene="pj-24"].s1 .p24-step1,
+    [data-scene="pj-24"].s2 .p24-step2,
+    [data-scene="pj-24"].s3 .p24-step3{opacity:1;visibility:visible;transition:opacity .45s ease,visibility 0s}
+    @keyframes p24draw{to{stroke-dashoffset:0}}
+    @keyframes p24pop{0%{transform:scale(.72);opacity:0}72%{transform:scale(1.06);opacity:1}100%{transform:scale(1);opacity:1}}
+    @keyframes p24fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+    @keyframes p24pulse{0%,100%{opacity:.45}50%{opacity:1}}
+    @keyframes p24rise{0%{transform:translateY(-14px);opacity:0}100%{transform:translateY(0);opacity:1}}
+    @keyframes p24swing{0%{transform:rotate(-6deg)}55%{transform:rotate(2.5deg)}100%{transform:rotate(0)}}
+    @keyframes p24dash{to{stroke-dashoffset:-28}}
+    [data-scene="pj-24"].s1 .p24-concept{animation:p24fade .5s ease both}
+    [data-scene="pj-24"].s1 .p24-card{animation:p24fade .5s ease both}
+    [data-scene="pj-24"].s1 .p24-c2{animation-delay:.08s}
+    [data-scene="pj-24"].s1 .p24-c3{animation-delay:.16s}
+    [data-scene="pj-24"].s1 .p24-c4{animation-delay:.24s}
+    [data-scene="pj-24"].s1 .p24-iceArrow{animation:p24pulse 1.7s ease-in-out infinite}
+    [data-scene="pj-24"].s2 .p24-needle{transform-box:view-box;transform-origin:400px 268px;animation:p24swing .9s ease .15s both}
+    [data-scene="pj-24"].s2 .p24-call{animation:p24fade .45s ease both}
+    [data-scene="pj-24"].s2 .p24-call2{animation-delay:.1s}
+    [data-scene="pj-24"].s2 .p24-call3{animation-delay:.2s}
+    [data-scene="pj-24"].s2 .p24-weight{animation:p24rise .35s ease both}
+    [data-scene="pj-24"].s2 .p24-w2{animation-delay:.12s}
+    [data-scene="pj-24"].s2 .p24-w3{animation-delay:.24s}
+    [data-scene="pj-24"].s3 .p24-unit{transform-box:fill-box;transform-origin:center;animation:p24pop .5s ease both}
+    [data-scene="pj-24"].s3 .p24-u2{animation-delay:.08s}
+    [data-scene="pj-24"].s3 .p24-u3{animation-delay:.16s}
+    [data-scene="pj-24"].s3 .p24-u4{animation-delay:.24s}
+    [data-scene="pj-24"].s3 .p24-est{animation:p24fade .45s ease both}
+    [data-scene="pj-24"].s3 .p24-e2{animation-delay:.1s}
+    [data-scene="pj-24"].s3 .p24-e3{animation-delay:.2s}
+    [data-scene="pj-24"].s3 .p24-e4{animation-delay:.3s}
+    [data-scene="pj-24"].s3 .p24-flow{stroke-dasharray:8 6;animation:p24dash 1.2s linear infinite}
+  </style>
+
+  <rect width="900" height="620" fill="url(#gBg)"/>
+  <rect width="900" height="620" fill="url(#dotsPat)"/>
+  <rect y="500" width="900" height="120" fill="url(#gBench)"/>
+  <line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+  <text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">质量：物体的属性，用托盘天平测量</text>
+
+  <!-- 第一步：质量的概念与不变性 -->
+  <g class="p24-step p24-step1" data-zone="1">
+    <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">质量 m：物体所含物质的多少</text>
+
+    <g class="p24-concept">
+      <rect x="60" y="100" width="780" height="104" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <rect x="82" y="120" width="58" height="24" rx="12" fill="#e8effc"/>
+      <text x="111" y="137" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">定义</text>
+      <text x="152" y="168" font-size="17" font-weight="800" fill="#1e3a8a">物体所含物质的多少叫质量，用 m 表示</text>
+      <text x="82" y="192" font-size="12.5" fill="#64748b">国际单位：千克（kg）　1 t = 1000 kg　1 g = 10⁻³ kg</text>
+      <rect x="760" y="128" width="46" height="48" rx="6" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+      <ellipse cx="783" cy="128" rx="23" ry="6" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+      <text x="783" y="158" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">1 kg</text>
+      <text x="783" y="196" font-size="11" fill="#64748b" text-anchor="middle">标准质量</text>
+    </g>
+
+    <g class="p24-card p24-c1">
+      <rect x="60" y="228" width="180" height="208" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <rect x="74" y="242" width="152" height="26" rx="13" fill="#e8effc"/>
+      <text x="150" y="260" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">① 形状改变</text>
+      <ellipse cx="110" cy="314" rx="26" ry="18" fill="#fbbf24" stroke="#d97706" stroke-width="2"/>
+      <rect x="156" y="302" width="58" height="24" rx="12" fill="#fbbf24" stroke="#d97706" stroke-width="2"/>
+      <line x1="139" y1="314" x2="153" y2="314" stroke="#d97706" stroke-width="2" marker-end="url(#arrAmber)"/>
+      <text x="150" y="366" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">质量 m 不变</text>
+      <text x="150" y="394" font-size="11.5" fill="#334155" text-anchor="middle">橡皮泥捏成别的形状</text>
+      <text x="150" y="414" font-size="11.5" fill="#64748b" text-anchor="middle">所含物质多少没变</text>
+    </g>
+
+    <g class="p24-card p24-c2">
+      <rect x="260" y="228" width="180" height="208" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <rect x="274" y="242" width="152" height="26" rx="13" fill="#e8effc"/>
+      <text x="350" y="260" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">② 状态改变</text>
+      <rect x="292" y="298" width="42" height="40" rx="4" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/>
+      <path d="M300 306 L314 306 L308 318 L300 318 Z" fill="#eff6ff"/>
+      <line class="p24-iceArrow" x1="342" y1="318" x2="360" y2="318" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrBlue)"/>
+      <path d="M368 298 L372 336 Q372 342 380 342 L412 342 Q420 342 420 336 L424 298 Z" fill="#e0f2fe" stroke="#38bdf8" stroke-width="2"/>
+      <path d="M371 314 L421 314 L421 335 Q421 339 416 339 L376 339 Q371 339 371 335 Z" fill="#bae6fd" opacity=".85"/>
+      <text x="350" y="366" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">质量 m 不变</text>
+      <text x="350" y="394" font-size="11.5" fill="#334155" text-anchor="middle">冰化成水，状态变了</text>
+      <text x="350" y="414" font-size="11.5" fill="#64748b" text-anchor="middle">质量保持不变</text>
+    </g>
+
+    <g class="p24-card p24-c3">
+      <rect x="460" y="228" width="180" height="208" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <rect x="474" y="242" width="152" height="26" rx="13" fill="#e8effc"/>
+      <text x="550" y="260" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">③ 位置改变</text>
+      <circle cx="505" cy="318" r="27" fill="#93c5fd" stroke="#1d4ed8" stroke-width="2"/>
+      <path d="M490 304 q9 -7 18 0 q7 9 -4 14 q-11 5 -16 -4 z" fill="#86efac"/>
+      <line x1="536" y1="306" x2="572" y2="296" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrBlue)"/>
+      <rect x="568" y="270" width="32" height="20" rx="3" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+      <rect x="558" y="274" width="8" height="12" rx="1" fill="#60a5fa"/>
+      <rect x="602" y="274" width="8" height="12" rx="1" fill="#60a5fa"/>
+      <text x="584" y="312" font-size="11" fill="#475569" text-anchor="middle">太空</text>
+      <text x="550" y="366" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">质量 m 不变</text>
+      <text x="550" y="394" font-size="11.5" fill="#334155" text-anchor="middle">从地球到太空</text>
+      <text x="550" y="414" font-size="11.5" fill="#64748b" text-anchor="middle">位置变了，质量不变</text>
+    </g>
+
+    <g class="p24-card p24-c4">
+      <rect x="660" y="228" width="180" height="208" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <rect x="674" y="242" width="152" height="26" rx="13" fill="#e8effc"/>
+      <text x="750" y="260" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">④ 温度改变</text>
+      <rect x="694" y="286" width="14" height="54" rx="7" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+      <circle cx="701" cy="344" r="11" fill="#dc2626" stroke="#991b1b" stroke-width="2"/>
+      <rect x="698" y="306" width="6" height="38" fill="#dc2626"/>
+      <g stroke="#475569" stroke-width="1.4">
+        <line x1="708" y1="296" x2="716" y2="296"/>
+        <line x1="708" y1="306" x2="714" y2="306"/>
+        <line x1="708" y1="316" x2="716" y2="316"/>
+        <line x1="708" y1="326" x2="714" y2="326"/>
+      </g>
+      <rect x="742" y="310" width="58" height="30" rx="5" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
+      <path d="M752 300 q6 -8 0 -16 M766 300 q6 -8 0 -16 M780 300 q6 -8 0 -16" fill="none" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+      <text x="750" y="366" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">质量 m 不变</text>
+      <text x="750" y="394" font-size="11.5" fill="#334155" text-anchor="middle">加热或冷却</text>
+      <text x="750" y="414" font-size="11.5" fill="#64748b" text-anchor="middle">温度变了，质量不变</text>
+    </g>
+
+    <text x="450" y="474" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">质量是物体的一种属性：不随形状、状态、位置、温度改变</text>
+  </g>
+
+  <!-- 第二步：托盘天平的使用 -->
+  <g class="p24-step p24-step2" data-zone="2">
+    <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">天平：放平 · 游码归零 · 左物右码 · 读数</text>
+
+    <g class="p24-call p24-call1">
+      <rect x="40" y="118" width="150" height="60" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="2"/>
+      <text x="115" y="143" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">① 放在水平台上</text>
+      <text x="115" y="162" font-size="11" fill="#64748b" text-anchor="middle">底座平稳，不倾斜</text>
+    </g>
+    <g class="p24-call p24-call2">
+      <rect x="40" y="190" width="150" height="60" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="2"/>
+      <text x="115" y="215" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">② 游码归零</text>
+      <text x="115" y="234" font-size="11" fill="#64748b" text-anchor="middle">移到标尺左端 0</text>
+    </g>
+    <g class="p24-call p24-call3">
+      <rect x="40" y="262" width="150" height="60" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="2"/>
+      <text x="115" y="287" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">③ 左物右码</text>
+      <text x="115" y="306" font-size="11" fill="#64748b" text-anchor="middle">用镊子夹取砝码</text>
+    </g>
+
+    <!-- 天平底座与立柱 -->
+    <rect x="200" y="430" width="400" height="18" rx="9" fill="#64748b"/>
+    <rect x="220" y="448" width="34" height="10" rx="4" fill="#475569"/>
+    <rect x="546" y="448" width="34" height="10" rx="4" fill="#475569"/>
+    <rect x="388" y="268" width="24" height="162" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
+    <circle cx="400" cy="268" r="8" fill="#334155"/>
+
+    <!-- 横梁、标尺与游码 -->
+    <rect x="240" y="264" width="320" height="9" rx="4" fill="#94a3b8" stroke="#64748b" stroke-width="1.5"/>
+    <g stroke="#475569" stroke-width="1.3">
+      <line x1="252" y1="264" x2="252" y2="270"/>
+      <line x1="264" y1="264" x2="264" y2="269"/>
+      <line x1="276" y1="264" x2="276" y2="270"/>
+      <line x1="288" y1="264" x2="288" y2="269"/>
+      <line x1="300" y1="264" x2="300" y2="270"/>
+      <line x1="312" y1="264" x2="312" y2="269"/>
+      <line x1="324" y1="264" x2="324" y2="270"/>
+      <line x1="336" y1="264" x2="336" y2="269"/>
+      <line x1="348" y1="264" x2="348" y2="270"/>
+      <line x1="360" y1="264" x2="360" y2="269"/>
+      <line x1="372" y1="264" x2="372" y2="270"/>
+    </g>
+    <rect x="244" y="250" width="10" height="16" rx="2" fill="#d97706" stroke="#b45309" stroke-width="1.5"/>
+    <text x="298" y="244" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">游码</text>
+    <line x1="288" y1="248" x2="254" y2="254" stroke="#64748b" stroke-width="1.2" stroke-dasharray="4 3"/>
+    <text x="610" y="289" font-size="11" font-weight="700" fill="#475569" text-anchor="end">平衡螺母</text>
+    <line x1="572" y1="283" x2="558" y2="272" stroke="#64748b" stroke-width="1.2" stroke-dasharray="4 3"/>
+
+    <!-- 左盘与物体 -->
+    <line x1="260" y1="272" x2="260" y2="325" stroke="#64748b" stroke-width="2.5"/>
+    <ellipse cx="260" cy="332" rx="62" ry="9" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+    <polygon points="220,330 228,296 258,290 290,308 284,330" fill="#a78bfa" stroke="#7c3aed" stroke-width="2"/>
+    <text x="260" y="366" font-size="11.5" font-weight="800" fill="#6d28d9" text-anchor="middle">物体</text>
+
+    <!-- 右盘与砝码 -->
+    <line x1="540" y1="272" x2="540" y2="320" stroke="#64748b" stroke-width="2.5"/>
+    <ellipse cx="540" cy="327" rx="56" ry="8" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+    <g class="p24-weight p24-w1">
+      <rect x="498" y="300" width="24" height="26" rx="3" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
+      <ellipse cx="510" cy="300" rx="12" ry="4" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+    </g>
+    <g class="p24-weight p24-w2">
+      <rect x="526" y="300" width="24" height="26" rx="3" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
+      <ellipse cx="538" cy="300" rx="12" ry="4" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+    </g>
+    <g class="p24-weight p24-w3">
+      <rect x="554" y="300" width="24" height="26" rx="3" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
+      <ellipse cx="566" cy="300" rx="12" ry="4" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+    </g>
+    <text x="540" y="360" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">砝码</text>
+
+    <!-- 指针与分度盘 -->
+    <g class="p24-needle">
+      <line x1="400" y1="278" x2="400" y2="392" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <path d="M356 398 Q400 420 444 398" fill="none" stroke="#475569" stroke-width="2"/>
+    <g stroke="#475569" stroke-width="1.4">
+      <line x1="372" y1="403" x2="369" y2="410"/>
+      <line x1="386" y1="408" x2="384" y2="415"/>
+      <line x1="400" y1="410" x2="400" y2="418"/>
+      <line x1="414" y1="408" x2="416" y2="415"/>
+      <line x1="428" y1="403" x2="431" y2="410"/>
+    </g>
+    <text x="470" y="418" font-size="11" font-weight="700" fill="#475569">分度盘</text>
+    <line x1="452" y1="412" x2="424" y2="406" stroke="#64748b" stroke-width="1.2" stroke-dasharray="4 3"/>
+
+    <!-- 读数卡 -->
+    <g>
+      <rect x="620" y="108" width="225" height="330" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <text x="732" y="138" font-size="15" font-weight="800" fill="#1e3a8a" text-anchor="middle">④ 读数</text>
+      <text x="638" y="168" font-size="12.5" font-weight="800" fill="#334155">m物 = m砝码 + m游码</text>
+      <rect x="636" y="182" width="193" height="80" rx="10" fill="#e8effc"/>
+      <text x="732" y="212" font-size="13" font-weight="700" fill="#1e40af" text-anchor="middle">50 g + 2.4 g</text>
+      <text x="732" y="244" font-size="20" font-weight="900" fill="#1e3a8a" text-anchor="middle">= 52.4 g</text>
+      <g font-size="11.5" fill="#475569">
+        <text x="638" y="288">· 砝码用镊子夹取</text>
+        <text x="638" y="312">· 加砝码由大到小</text>
+        <text x="638" y="336">· 游码读左侧刻度</text>
+        <text x="638" y="360">· 指针指中央即平衡</text>
+        <text x="638" y="384">· 物体质量不能超量程</text>
+      </g>
+      <line x1="638" y1="402" x2="827" y2="402" stroke="#e2e8f0" stroke-width="1.5"/>
+      <text x="732" y="424" font-size="11" fill="#64748b" text-anchor="middle">称量中不能再调平衡螺母</text>
+    </g>
+
+    <g>
+      <rect x="60" y="512" width="780" height="78" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <text x="450" y="540" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">使用顺序：放平 → 游码归零 → 调平衡螺母 → 左物右码 → 读数</text>
+      <text x="450" y="566" font-size="11.5" fill="#64748b" text-anchor="middle">调节平衡螺母时，指针指在分度盘中央；称量过程中不能再动平衡螺母</text>
+    </g>
+  </g>
+
+  <!-- 第三步：质量单位与估测 -->
+  <g class="p24-step p24-step3" data-zone="3">
+    <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">估测与换算：记住几个常见质量</text>
+
+    <g class="p24-unit p24-u1">
+      <rect x="60" y="104" width="180" height="76" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <text x="150" y="136" font-size="16" font-weight="800" fill="#1e3a8a" text-anchor="middle">吨</text>
+      <text x="150" y="160" font-size="11.5" fill="#64748b" text-anchor="middle">t（1 t = 1000 kg）</text>
+    </g>
+    <g class="p24-unit p24-u2">
+      <rect x="260" y="104" width="180" height="76" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <text x="350" y="136" font-size="16" font-weight="800" fill="#1e3a8a" text-anchor="middle">千克</text>
+      <text x="350" y="160" font-size="11.5" fill="#64748b" text-anchor="middle">kg（基本单位）</text>
+    </g>
+    <g class="p24-unit p24-u3">
+      <rect x="460" y="104" width="180" height="76" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <text x="550" y="136" font-size="16" font-weight="800" fill="#1e3a8a" text-anchor="middle">克</text>
+      <text x="550" y="160" font-size="11.5" fill="#64748b" text-anchor="middle">g（1 kg = 1000 g）</text>
+    </g>
+    <g class="p24-unit p24-u4">
+      <rect x="660" y="104" width="180" height="76" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <text x="750" y="136" font-size="16" font-weight="800" fill="#1e3a8a" text-anchor="middle">毫克</text>
+      <text x="750" y="160" font-size="11.5" fill="#64748b" text-anchor="middle">mg（1 g = 1000 mg）</text>
+    </g>
+    <g stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrBlue)">
+      <line class="p24-flow" x1="242" y1="142" x2="258" y2="142"/>
+      <line class="p24-flow" x1="442" y1="142" x2="458" y2="142"/>
+      <line class="p24-flow" x1="642" y1="142" x2="658" y2="142"/>
+    </g>
+    <g font-size="11" font-weight="800" fill="#b45309" text-anchor="middle">
+      <text x="250" y="130">×1000</text>
+      <text x="450" y="130">×1000</text>
+      <text x="650" y="130">×1000</text>
+    </g>
+
+    <g class="p24-est p24-e1">
+      <rect x="60" y="212" width="385" height="105" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <ellipse cx="115" cy="264" rx="20" ry="26" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+      <text x="175" y="256" font-size="14" font-weight="800" fill="#334155">一枚鸡蛋</text>
+      <text x="175" y="282" font-size="13" font-weight="800" fill="#b45309">约 50 g</text>
+      <text x="300" y="278" font-size="11.5" fill="#64748b">估测时先想生活经验</text>
+    </g>
+    <g class="p24-est p24-e2">
+      <rect x="455" y="212" width="385" height="105" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <circle cx="510" cy="264" r="24" fill="#fca5a5" stroke="#dc2626" stroke-width="2"/>
+      <path d="M510 240 q8 -10 16 -6 q-4 10 -14 8" fill="#86efac" stroke="#059669" stroke-width="1.5"/>
+      <text x="570" y="256" font-size="14" font-weight="800" fill="#334155">一个苹果</text>
+      <text x="570" y="282" font-size="13" font-weight="800" fill="#b45309">约 200 g</text>
+      <text x="695" y="278" font-size="11.5" fill="#64748b">200 g = 0.2 kg</text>
+    </g>
+    <g class="p24-est p24-e3">
+      <rect x="60" y="332" width="385" height="105" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <circle cx="115" cy="368" r="10" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/>
+      <path d="M115 380 L115 400 M100 388 L130 388 M115 400 L104 416 M115 400 L126 416" fill="none" stroke="#1d4ed8" stroke-width="4" stroke-linecap="round"/>
+      <text x="175" y="376" font-size="14" font-weight="800" fill="#334155">一名中学生</text>
+      <text x="175" y="402" font-size="13" font-weight="800" fill="#b45309">约 50 kg</text>
+      <text x="300" y="398" font-size="11.5" fill="#64748b">50 kg = 0.05 t</text>
+    </g>
+    <g class="p24-est p24-e4">
+      <rect x="455" y="332" width="385" height="105" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <ellipse cx="510" cy="388" rx="30" ry="18" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+      <circle cx="540" cy="376" r="13" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+      <path d="M550 382 q12 4 8 18" fill="none" stroke="#64748b" stroke-width="4" stroke-linecap="round"/>
+      <rect x="492" y="388" width="7" height="16" rx="3" fill="#64748b"/>
+      <rect x="520" y="388" width="7" height="16" rx="3" fill="#64748b"/>
+      <text x="575" y="376" font-size="14" font-weight="800" fill="#334155">一头大象</text>
+      <text x="575" y="402" font-size="13" font-weight="800" fill="#b45309">约 5 t</text>
+      <text x="700" y="398" font-size="11.5" fill="#64748b">5 t = 5×10³ kg</text>
+    </g>
+
+    <text x="450" y="466" font-size="12.5" font-weight="700" fill="#334155" text-anchor="middle">换算示例：50 g = 0.05 kg　·　50 kg = 0.05 t　·　5 t = 5×10³ kg</text>
+
+    <g>
+      <rect x="60" y="512" width="780" height="78" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <text x="450" y="540" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">质量单位：吨（t）→ 千克（kg）→ 克（g）→ 毫克（mg），相邻单位进率都是 1000</text>
+      <text x="450" y="566" font-size="11.5" fill="#64748b" text-anchor="middle">估测参考：鸡蛋 50 g、苹果 200 g、中学生 50 kg、大象 5 t</text>
+    </g>
+  </g>
+</svg>

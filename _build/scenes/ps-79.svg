@@ -1,0 +1,193 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="全反射：折射光线消失、临界角 sin C 等于 1 比 n、光纤与全反射棱镜应用">
+<style>
+[data-scene="ps-79"] .s79-s1,[data-scene="ps-79"] .s79-s2,[data-scene="ps-79"] .s79-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="ps-79"].s1 .s79-s1,[data-scene="ps-79"].s2 .s79-s2,[data-scene="ps-79"].s3 .s79-s3{opacity:1;visibility:visible}
+@keyframes s79draw{to{stroke-dashoffset:0}}
+@keyframes s79fade{from{opacity:0}to{opacity:1}}
+@keyframes s79pop{0%{transform:scale(.86);opacity:0}70%{transform:scale(1.05);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s79flow{to{stroke-dashoffset:-40}}
+@keyframes s79pulse{0%,100%{opacity:.45}50%{opacity:1}}
+[data-scene="ps-79"].s1 .s79-ray{stroke-dasharray:280;stroke-dashoffset:280;animation:s79draw 1s ease both}
+[data-scene="ps-79"].s1 .s79-ray2{animation-delay:.25s}
+[data-scene="ps-79"].s1 .s79-ray3{animation-delay:.5s}
+[data-scene="ps-79"].s1 .s79-total{opacity:0;animation:s79fade .6s ease 1.2s forwards}
+[data-scene="ps-79"].s1 .s79-dot{animation:s79pulse 2s ease-in-out infinite}
+[data-scene="ps-79"].s2 .s79-formula{transform-box:fill-box;transform-origin:center;animation:s79pop .6s ease .2s both}
+[data-scene="ps-79"].s2 .s79-row{transform-box:fill-box;transform-origin:center;animation:s79pop .5s ease both}
+[data-scene="ps-79"].s2 .s79-row2{animation-delay:.15s}
+[data-scene="ps-79"].s2 .s79-row3{animation-delay:.3s}
+[data-scene="ps-79"].s3 .s79-path{stroke-dasharray:12 8;animation:s79flow 1.3s linear infinite}
+[data-scene="ps-79"].s3 .s79-hit{animation:s79pulse 1.8s ease-in-out infinite}
+[data-scene="ps-79"].s3 .s79-hit2{animation-delay:.45s}
+[data-scene="ps-79"].s3 .s79-hit3{animation-delay:.9s}
+[data-scene="ps-79"].s3 .s79-card{transform-box:fill-box;transform-origin:center;animation:s79pop .55s ease both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">全反射：从光密介质射向光疏介质</text>
+
+<!-- 第一步：全反射现象 -->
+<g class="s79-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">入射角增大到临界角时，折射光线消失，光全部反射回原介质</text>
+
+  <rect x="60" y="100" width="780" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+
+  <path d="M370 290 A130 130 0 0 0 630 290 Z" fill="#cfebff" opacity=".85" stroke="#60a5fa" stroke-width="2.5"/>
+  <line x1="290" y1="290" x2="810" y2="290" stroke="#60a5fa" stroke-width="2.5"/>
+  <text x="86" y="194" font-size="12" font-weight="800" fill="#64748b">空气（光疏介质）</text>
+  <text x="392" y="414" font-size="12" font-weight="800" fill="#1d4ed8">玻璃（光密介质）</text>
+
+  <line x1="500" y1="146" x2="500" y2="424" stroke="#64748b" stroke-width="2" stroke-dasharray="9 7"/>
+  <text x="512" y="162" font-size="12" font-weight="700" fill="#475569">法线</text>
+  <circle cx="500" cy="290" r="5.5" fill="#334155"/>
+  <text x="482" y="312" font-size="12.5" font-weight="900" fill="#334155" text-anchor="end">O</text>
+
+  <line class="s79-ray" x1="435" y1="177" x2="500" y2="290" stroke="#d97706" stroke-width="3" marker-end="url(#arrAmber)"/>
+  <line class="s79-ray" x1="500" y1="290" x2="590" y2="211" stroke="#d97706" stroke-width="3" marker-end="url(#arrAmber)"/>
+  <text x="430" y="172" font-size="12" font-weight="800" fill="#b45309">30°</text>
+  <text x="598" y="204" font-size="11.5" font-weight="800" fill="#b45309">r = 49°</text>
+
+  <line class="s79-ray s79-ray2" x1="427" y1="208" x2="500" y2="290" stroke="#dc2626" stroke-width="3" marker-end="url(#arrRed)"/>
+  <line class="s79-ray s79-ray2" x1="500" y1="290" x2="706" y2="290" stroke="#dc2626" stroke-width="3" marker-end="url(#arrRed)"/>
+  <text x="414" y="204" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="end">i = C</text>
+  <text x="648" y="280" font-size="11.5" font-weight="800" fill="#b91c1c">r = 90°</text>
+
+  <line class="s79-ray s79-ray3" x1="418" y1="232" x2="500" y2="290" stroke="#1d4ed8" stroke-width="3" marker-end="url(#arrBlue)"/>
+  <line class="s79-ray s79-ray3" x1="500" y1="290" x2="615" y2="375" stroke="#1d4ed8" stroke-width="3" marker-end="url(#arrBlue)"/>
+  <text x="406" y="230" font-size="12" font-weight="800" fill="#1e40af" text-anchor="end">55°</text>
+  <g class="s79-total">
+    <text x="624" y="394" font-size="12" font-weight="900" fill="#1e40af">全反射</text>
+    <text x="624" y="412" font-size="11" fill="#1e3a8a">没有折射光</text>
+  </g>
+
+  <circle class="s79-dot" cx="588" cy="212" r="4" fill="#d97706"/>
+  <circle class="s79-dot" cx="700" cy="290" r="4" fill="#dc2626"/>
+
+  <text x="450" y="424" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">入射角较小时有折射光；达到临界角时折射光沿界面；超过临界角发生全反射</text>
+</g>
+
+<!-- 第二步：临界角 -->
+<g class="s79-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">临界角的正弦等于折射率的倒数，折射率越大临界角越小</text>
+
+  <rect x="36" y="100" width="420" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="96" y="116" width="300" height="28" rx="14" fill="#e8effc"/>
+  <text x="246" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">临界角公式</text>
+
+  <g class="s79-formula">
+    <text x="246" y="196" font-size="24" font-weight="900" fill="#1e3a8a" text-anchor="middle">sin C = 1 / n</text>
+    <text x="246" y="222" font-size="11.5" fill="#475569" text-anchor="middle">C 为临界角，n 为光密介质的折射率</text>
+  </g>
+
+  <line x1="66" y1="242" x2="426" y2="242" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="246" y="268" font-size="12.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">发生全反射的两个条件</text>
+
+  <g font-size="11.5" fill="#334155">
+    <circle cx="86" cy="292" r="11" fill="#dbeafe"/>
+    <text x="86" y="297" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">1</text>
+    <text x="108" y="297">光从光密介质射向光疏介质</text>
+    <circle cx="86" cy="326" r="11" fill="#dbeafe"/>
+    <text x="86" y="331" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">2</text>
+    <text x="108" y="331">入射角大于或等于临界角</text>
+  </g>
+
+  <rect x="86" y="354" width="320" height="52" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="246" y="376" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">两个条件必须同时满足</text>
+  <text x="246" y="396" font-size="11" fill="#92400e" text-anchor="middle">从光疏到光密，无论入射角多大都不会全反射</text>
+
+  <rect x="480" y="100" width="384" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="540" y="116" width="264" height="28" rx="14" fill="#e8effc"/>
+  <text x="672" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">几种介质的临界角</text>
+
+  <text x="506" y="174" font-size="11" font-weight="800" fill="#64748b">介质</text>
+  <text x="630" y="174" font-size="11" font-weight="800" fill="#64748b" text-anchor="middle">折射率 n</text>
+  <text x="790" y="174" font-size="11" font-weight="800" fill="#64748b" text-anchor="middle">临界角 C</text>
+
+  <g class="s79-row">
+    <rect x="496" y="186" width="352" height="36" rx="8" fill="#f8fafc"/>
+    <text x="506" y="210" font-size="12" font-weight="800" fill="#334155">水</text>
+    <text x="630" y="210" font-size="12" fill="#334155" text-anchor="middle">1.33</text>
+    <text x="790" y="210" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">48.8°</text>
+  </g>
+  <g class="s79-row s79-row2">
+    <rect x="496" y="228" width="352" height="36" rx="8" fill="#f8fafc"/>
+    <text x="506" y="252" font-size="12" font-weight="800" fill="#334155">玻璃</text>
+    <text x="630" y="252" font-size="12" fill="#334155" text-anchor="middle">1.50</text>
+    <text x="790" y="252" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">41.8°</text>
+  </g>
+  <g class="s79-row s79-row3">
+    <rect x="496" y="270" width="352" height="36" rx="8" fill="#f8fafc"/>
+    <text x="506" y="294" font-size="12" font-weight="800" fill="#334155">金刚石</text>
+    <text x="630" y="294" font-size="12" fill="#334155" text-anchor="middle">2.42</text>
+    <text x="790" y="294" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">24.4°</text>
+  </g>
+
+  <text x="672" y="340" font-size="12" font-weight="900" fill="#b45309" text-anchor="middle">n 越大 → C 越小</text>
+  <text x="672" y="364" font-size="11.5" fill="#475569" text-anchor="middle">越容易发生全反射</text>
+  <rect x="540" y="382" width="264" height="30" rx="8" fill="#e8effc"/>
+  <text x="672" y="402" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">计算前先判断光在哪一介质中</text>
+</g>
+
+<!-- 第三步：光纤与应用 -->
+<g class="s79-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">光导纤维：光在纤芯内不断全反射，沿着纤维向前传播</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="70" y="230" width="450" height="102" rx="16" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="70" y="258" width="450" height="46" rx="12" fill="#bfdbfe" opacity=".9"/>
+  <text x="88" y="286" font-size="11" font-weight="800" fill="#1e3a8a">纤芯</text>
+
+  <polyline class="s79-path" points="58,281 96,281 146,258 206,304 266,258 326,304 386,258 446,304 506,281" fill="none" stroke="#1d4ed8" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#arrBlue)"/>
+  <circle class="s79-hit" cx="146" cy="258" r="4.5" fill="#dc2626"/>
+  <circle class="s79-hit s79-hit2" cx="266" cy="258" r="4.5" fill="#dc2626"/>
+  <circle class="s79-hit s79-hit3" cx="386" cy="258" r="4.5" fill="#dc2626"/>
+  <circle class="s79-hit s79-hit2" cx="206" cy="304" r="4.5" fill="#dc2626"/>
+  <circle class="s79-hit s79-hit3" cx="326" cy="304" r="4.5" fill="#dc2626"/>
+  <circle class="s79-hit" cx="446" cy="304" r="4.5" fill="#dc2626"/>
+
+  <text x="295" y="244" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle" paint-order="stroke" stroke="#ffffff" stroke-width="4">纤芯（光密介质）</text>
+  <text x="290" y="352" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">包层（光疏介质）</text>
+  <text x="236" y="334" font-size="11" font-weight="800" fill="#b91c1c">全反射</text>
+  <text x="295" y="382" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">光在纤芯与包层的界面不断发生全反射</text>
+  <text x="295" y="406" font-size="11" fill="#64748b" text-anchor="middle">能量几乎不损失，可传输很远</text>
+  <text x="52" y="270" font-size="11.5" font-weight="800" fill="#b45309">光</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="694" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">全反射的应用</text>
+
+  <g class="s79-card">
+    <rect x="596" y="160" width="248" height="48" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="608" y="176" width="16" height="16" rx="4" fill="#3b82f6"/>
+    <text x="636" y="182" font-size="12" font-weight="800" fill="#1e3a8a">光纤通信</text>
+    <text x="636" y="198" font-size="11" fill="#475569">容量大、衰减小、抗干扰</text>
+  </g>
+  <g class="s79-card">
+    <rect x="596" y="218" width="248" height="48" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="608" y="234" width="16" height="16" rx="4" fill="#22c55e"/>
+    <text x="636" y="240" font-size="12" font-weight="800" fill="#1e3a8a">医用内窥镜</text>
+    <text x="636" y="256" font-size="11" fill="#475569">光纤束导光、导像</text>
+  </g>
+  <g class="s79-card">
+    <rect x="596" y="276" width="248" height="48" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="608" y="292" width="16" height="16" rx="4" fill="#d97706"/>
+    <text x="636" y="298" font-size="12" font-weight="800" fill="#1e3a8a">全反射棱镜</text>
+    <text x="636" y="314" font-size="11" fill="#475569">潜望镜、望远镜中改变光路</text>
+  </g>
+  <g class="s79-card">
+    <rect x="596" y="334" width="248" height="48" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="608" y="350" width="16" height="16" rx="4" fill="#8b5cf6"/>
+    <text x="636" y="356" font-size="12" font-weight="800" fill="#1e3a8a">钻石的璀璨</text>
+    <text x="636" y="372" font-size="11" fill="#475569">多次全反射使光线更集中</text>
+  </g>
+
+  <text x="694" y="408" font-size="11" fill="#64748b" text-anchor="middle">共同点：光密介质 → 光疏介质，入射角足够大</text>
+</g>
+
+<rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+<text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">全反射条件：光密到光疏 + 入射角不小于临界角，sin C = 1 / n</text>
+</svg>

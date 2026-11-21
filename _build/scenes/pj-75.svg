@@ -1,0 +1,235 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="电磁铁与电磁继电器：构造、优点、继电器控制原理">
+<style>
+.p75-s1,.p75-s2,.p75-s3{opacity:0;visibility:hidden}
+.p75-s1{opacity:1;visibility:visible}
+[data-scene="pj-75"] .p75-s1,[data-scene="pj-75"] .p75-s2,[data-scene="pj-75"] .p75-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="pj-75"].s1 .p75-s1,[data-scene="pj-75"].s2 .p75-s2,[data-scene="pj-75"].s3 .p75-s3{opacity:1;visibility:visible}
+@keyframes p75flow{to{stroke-dashoffset:-40}}
+@keyframes p75pop{0%{transform:scale(.82);opacity:0}72%{transform:scale(1.05);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes p75draw{to{stroke-dashoffset:0}}
+@keyframes p75glow{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes p75slide{0%{transform:translateX(-8px);opacity:0}100%{transform:translateX(0);opacity:1}}
+[data-scene="pj-75"].s1 .p75-wire{stroke-dasharray:12 8;animation:p75flow 1.3s linear infinite}
+[data-scene="pj-75"].s1 .p75-coil{animation:p75glow 2.2s ease-in-out infinite}
+[data-scene="pj-75"].s1 .p75-clip{transform-box:fill-box;transform-origin:center;animation:p75pop .5s ease both}
+[data-scene="pj-75"].s1 .p75-clip2{animation-delay:.15s}
+[data-scene="pj-75"].s1 .p75-clip3{animation-delay:.3s}
+[data-scene="pj-75"].s2 .p75-card{transform-box:fill-box;transform-origin:center;animation:p75pop .55s ease both}
+[data-scene="pj-75"].s2 .p75-card2{animation-delay:.12s}
+[data-scene="pj-75"].s2 .p75-card3{animation-delay:.24s}
+[data-scene="pj-75"].s2 .p75-icon{animation:p75glow 2s ease-in-out infinite}
+[data-scene="pj-75"].s3 .p75-arm{transform-box:fill-box;transform-origin:left center;animation:p75slide .6s ease both}
+[data-scene="pj-75"].s3 .p75-on{animation:p75glow 1.8s ease-in-out infinite}
+[data-scene="pj-75"].s3 .p75-row{transform-box:fill-box;transform-origin:left center;animation:p75slide .5s ease both}
+[data-scene="pj-75"].s3 .p75-row2{animation-delay:.1s}
+[data-scene="pj-75"].s3 .p75-row3{animation-delay:.2s}
+[data-scene="pj-75"].s3 .p75-row4{animation-delay:.3s}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="470" width="900" height="150" fill="url(#gBench)"/>
+<line x1="0" y1="470" x2="900" y2="470" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">电磁铁 电磁继电器：通电有磁，断电无磁</text>
+
+<!-- 第一步：电磁铁的构造 -->
+<g class="p75-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">电磁铁：内部插入铁芯的通电螺线管</text>
+
+  <rect x="36" y="100" width="430" height="330" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+
+  <rect x="180" y="160" width="40" height="210" rx="6" fill="#d7dee8" stroke="#64748b" stroke-width="2.5"/>
+  <line x1="190" y1="164" x2="190" y2="366" stroke="#f8fafc" stroke-width="4" opacity=".7"/>
+
+  <g class="p75-coil" fill="none" stroke="#b45309" stroke-width="4">
+    <ellipse cx="200" cy="180" rx="36" ry="9"/>
+    <ellipse cx="200" cy="205" rx="36" ry="9"/>
+    <ellipse cx="200" cy="230" rx="36" ry="9"/>
+    <ellipse cx="200" cy="255" rx="36" ry="9"/>
+    <ellipse cx="200" cy="280" rx="36" ry="9"/>
+    <ellipse cx="200" cy="305" rx="36" ry="9"/>
+    <ellipse cx="200" cy="330" rx="36" ry="9"/>
+    <ellipse cx="200" cy="355" rx="36" ry="9"/>
+  </g>
+
+  <path d="M236 180 H300 V130 H322" fill="none" stroke="#334155" stroke-width="4"/>
+  <circle cx="326" cy="130" r="5" fill="#334155"/>
+  <circle cx="360" cy="130" r="5" fill="#334155"/>
+  <line x1="332" y1="120" x2="358" y2="129" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  <text x="343" y="112" font-size="12" font-weight="700" fill="#64748b" text-anchor="middle">S</text>
+
+  <path d="M364 130 H400 V174" fill="none" stroke="#334155" stroke-width="4"/>
+  <line x1="382" y1="176" x2="418" y2="176" stroke="#334155" stroke-width="4"/>
+  <line x1="388" y1="188" x2="412" y2="188" stroke="#334155" stroke-width="4"/>
+  <path class="p75-wire" d="M400 188 V420 H164 V355" fill="none" stroke="#1d4ed8" stroke-width="4"/>
+  <text x="410" y="240" font-size="11.5" font-weight="700" fill="#64748b">电源</text>
+
+  <g class="p75-clip">
+    <circle cx="184" cy="390" r="8" fill="none" stroke="#64748b" stroke-width="4"/>
+    <circle cx="184" cy="390" r="3" fill="#f8fbff"/>
+  </g>
+  <g class="p75-clip p75-clip2">
+    <circle cx="200" cy="398" r="8" fill="none" stroke="#64748b" stroke-width="4"/>
+    <circle cx="200" cy="398" r="3" fill="#f8fbff"/>
+  </g>
+  <g class="p75-clip p75-clip3">
+    <circle cx="216" cy="390" r="8" fill="none" stroke="#64748b" stroke-width="4"/>
+    <circle cx="216" cy="390" r="3" fill="#f8fbff"/>
+  </g>
+
+  <text x="250" y="262" font-size="12" font-weight="800" fill="#475569">铁芯</text>
+  <text x="156" y="262" font-size="12" font-weight="800" fill="#b45309" text-anchor="end">线圈</text>
+  <text x="200" y="146" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">电磁铁</text>
+  <text x="248" y="414" font-size="11.5" font-weight="700" fill="#64748b">吸引铁钉</text>
+
+  <rect x="480" y="100" width="384" height="330" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="672" y="132" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">电磁铁的特点</text>
+
+  <g font-size="12.5" font-weight="700" fill="#334155">
+    <rect x="496" y="152" width="352" height="42" rx="9" fill="#f8fbff"/>
+    <text x="514" y="179">构造：线圈 + 铁芯</text>
+    <rect x="496" y="204" width="352" height="42" rx="9" fill="#f8fbff"/>
+    <text x="514" y="231">铁芯被磁化，磁性大大增强</text>
+    <rect x="496" y="256" width="352" height="42" rx="9" fill="#f8fbff"/>
+    <text x="514" y="283">通电有磁，断电无磁</text>
+    <rect x="496" y="308" width="352" height="42" rx="9" fill="#f8fbff"/>
+    <text x="514" y="335">磁极方向由电流方向决定</text>
+  </g>
+
+  <rect x="496" y="360" width="352" height="52" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="672" y="384" font-size="13" font-weight="800" fill="#b45309" text-anchor="middle">电流通  ⇄  有磁性</text>
+  <text x="672" y="403" font-size="11.5" fill="#92400e" text-anchor="middle">磁性的有无完全由电流控制</text>
+</g>
+
+<!-- 第二步：电磁铁的优点 -->
+<g class="p75-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">电磁铁的三个优点：有无可控、强弱可调、极性可换</text>
+
+  <g class="p75-card">
+    <rect x="36" y="100" width="260" height="300" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="56" y="116" width="170" height="30" rx="15" fill="#e8effc"/>
+    <text x="141" y="136" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">① 磁性有无可控</text>
+
+    <path d="M104 196 H220 V250 H104 Z" fill="none" stroke="#334155" stroke-width="4" stroke-linejoin="round"/>
+    <line x1="150" y1="240" x2="150" y2="262" stroke="#334155" stroke-width="4"/>
+    <line x1="162" y1="244" x2="162" y2="258" stroke="#334155" stroke-width="4"/>
+    <circle cx="196" cy="250" r="4" fill="#334155"/>
+    <circle cx="216" cy="250" r="4" fill="#334155"/>
+    <line x1="200" y1="242" x2="214" y2="249" stroke="#334155" stroke-width="3.5" stroke-linecap="round"/>
+    <text x="166" y="284" font-size="11.5" font-weight="700" fill="#64748b" text-anchor="middle">开关控制电流通断</text>
+
+    <text x="166" y="330" font-size="16" font-weight="900" fill="#1e3a8a" text-anchor="middle">通电有磁</text>
+    <text x="166" y="358" font-size="16" font-weight="900" fill="#1e3a8a" text-anchor="middle">断电无磁</text>
+    <text x="166" y="384" font-size="11.5" fill="#64748b" text-anchor="middle">随手开关，像用电灯一样</text>
+  </g>
+
+  <g class="p75-card p75-card2">
+    <rect x="320" y="100" width="260" height="300" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="340" y="116" width="170" height="30" rx="15" fill="#e6f7f1"/>
+    <text x="425" y="136" font-size="12.5" font-weight="800" fill="#047857" text-anchor="middle">② 磁性强弱可调</text>
+
+    <g class="p75-icon" fill="none" stroke="#b45309" stroke-width="5">
+      <path d="M382 262 q14 -34 28 0"/>
+      <path d="M400 262 q14 -34 28 0"/>
+      <path d="M418 262 q14 -34 28 0"/>
+      <path d="M436 262 q14 -34 28 0"/>
+    </g>
+    <line x1="380" y1="275" x2="468" y2="275" stroke="#334155" stroke-width="4"/>
+    <text x="425" y="296" font-size="11.5" font-weight="700" fill="#64748b" text-anchor="middle">匝数多、电流大，磁性就强</text>
+
+    <text x="450" y="330" font-size="16" font-weight="900" fill="#047857" text-anchor="middle">增大电流</text>
+    <text x="450" y="358" font-size="16" font-weight="900" fill="#047857" text-anchor="middle">增加匝数</text>
+    <text x="450" y="384" font-size="11.5" fill="#64748b" text-anchor="middle">磁性强弱可以连续调节</text>
+  </g>
+
+  <g class="p75-card p75-card3">
+    <rect x="604" y="100" width="260" height="300" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="624" y="116" width="170" height="30" rx="15" fill="#fff7ed"/>
+    <text x="709" y="136" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">③ 磁极方向可改</text>
+
+    <rect x="664" y="208" width="42" height="70" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <rect x="706" y="208" width="42" height="70" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="685" y="250" font-size="16" font-weight="900" fill="#dc2626" text-anchor="middle">N</text>
+    <text x="727" y="250" font-size="16" font-weight="900" fill="#1d4ed8" text-anchor="middle">S</text>
+    <path d="M654 200 A62 62 0 0 1 758 200" fill="none" stroke="#d97706" stroke-width="3" marker-end="url(#arrAmber)"/>
+    <text x="706" y="186" font-size="11.5" font-weight="700" fill="#b45309" text-anchor="middle">改变电流方向</text>
+
+    <text x="734" y="330" font-size="16" font-weight="900" fill="#b45309" text-anchor="middle">电流方向一变</text>
+    <text x="734" y="358" font-size="16" font-weight="900" fill="#b45309" text-anchor="middle">N、S 极对调</text>
+    <text x="734" y="384" font-size="11.5" fill="#64748b" text-anchor="middle">不需要重新充磁</text>
+  </g>
+
+  <rect x="36" y="416" width="828" height="44" rx="14" fill="#eef6ff" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="450" y="443" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">与永磁体相比：电磁铁的磁性可以人为控制，使用更方便</text>
+</g>
+
+<!-- 第三步：电磁继电器 -->
+<g class="p75-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">电磁继电器：用低电压、弱电流控制高电压、强电流</text>
+
+  <rect x="36" y="100" width="250" height="330" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="161" y="130" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">继电器的作用</text>
+  <g font-size="12" font-weight="700" fill="#334155">
+    <g class="p75-row"><text x="54" y="168">① 低电压控高电压</text></g>
+    <g class="p75-row p75-row2"><text x="54" y="210">② 弱电流控强电流</text></g>
+    <g class="p75-row p75-row3"><text x="54" y="252">③ 可远距离控制</text></g>
+    <g class="p75-row p75-row4"><text x="54" y="294">④ 可实现自动控制</text></g>
+  </g>
+  <rect x="52" y="322" width="218" height="88" rx="10" fill="#e8effc"/>
+  <text x="161" y="348" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">实质：用电磁铁</text>
+  <text x="161" y="368" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">控制工作电路的开关</text>
+  <text x="161" y="392" font-size="11" fill="#475569" text-anchor="middle">人操作低压电路更安全</text>
+
+  <rect x="300" y="100" width="564" height="330" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+
+  <g class="p75-arm">
+    <rect x="430" y="229" width="225" height="12" rx="6" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+    <circle cx="425" cy="250" r="7" fill="#64748b"/>
+    <text x="452" y="221" font-size="11.5" font-weight="700" fill="#475569">衔铁</text>
+  </g>
+  <circle cx="640" cy="207" r="5" fill="#b45309"/>
+  <circle cx="640" cy="229" r="5" fill="#b45309"/>
+  <text x="654" y="199" font-size="11.5" font-weight="700" fill="#b45309">触点</text>
+
+  <path d="M600 229 V205 l-11 -8 22 -14 -22 -14 22 -14 -11 -8 V150" fill="none" stroke="#64748b" stroke-width="2.5"/>
+  <text x="606" y="146" font-size="11.5" font-weight="700" fill="#475569">弹簧</text>
+
+  <rect x="485" y="290" width="80" height="55" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="2.5"/>
+  <g stroke="#b45309" stroke-width="2.5">
+    <line x1="495" y1="298" x2="495" y2="337"/>
+    <line x1="505" y1="298" x2="505" y2="337"/>
+    <line x1="515" y1="298" x2="515" y2="337"/>
+    <line x1="525" y1="298" x2="525" y2="337"/>
+    <line x1="535" y1="298" x2="535" y2="337"/>
+    <line x1="545" y1="298" x2="545" y2="337"/>
+    <line x1="555" y1="298" x2="555" y2="337"/>
+  </g>
+  <line x1="525" y1="290" x2="525" y2="241" stroke="#b45309" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="525" y="370" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">电磁铁</text>
+
+  <path d="M485 305 H400 V400 H436" fill="none" stroke="#334155" stroke-width="3.5"/>
+  <line x1="438" y1="384" x2="438" y2="416" stroke="#334155" stroke-width="3.5"/>
+  <line x1="452" y1="390" x2="452" y2="410" stroke="#334155" stroke-width="3.5"/>
+  <path d="M454 400 H474" fill="none" stroke="#334155" stroke-width="3.5"/>
+  <circle cx="478" cy="400" r="4" fill="#334155"/>
+  <circle cx="514" cy="400" r="4" fill="#334155"/>
+  <line x1="484" y1="390" x2="512" y2="399" stroke="#334155" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M518 400 H575 V305 H565" fill="none" stroke="#334155" stroke-width="3.5"/>
+  <text x="446" y="430" font-size="11" font-weight="700" fill="#64748b" text-anchor="middle">低压电源</text>
+  <text x="496" y="384" font-size="11" font-weight="700" fill="#64748b" text-anchor="middle">S</text>
+  <text x="368" y="344" font-size="11.5" font-weight="800" fill="#1e3a8a">低压控制电路</text>
+
+  <path d="M645 207 H720 V168 H770" fill="none" stroke="#334155" stroke-width="3.5"/>
+  <circle cx="770" cy="190" r="22" fill="#fef3c7" stroke="#d97706" stroke-width="3"/>
+  <line x1="756" y1="176" x2="784" y2="204" stroke="#d97706" stroke-width="2"/>
+  <line x1="784" y1="176" x2="756" y2="204" stroke="#d97706" stroke-width="2"/>
+  <text x="770" y="232" font-size="11" font-weight="700" fill="#92400e" text-anchor="middle">电灯</text>
+  <path d="M770 212 V330 H830 V190 H792" fill="none" stroke="#334155" stroke-width="3.5"/>
+  <path d="M425 250 V415 H760" fill="none" stroke="#334155" stroke-width="3.5"/>
+  <rect x="760" y="378" width="80" height="42" rx="9" fill="#fff7ed" stroke="#b45309" stroke-width="2"/>
+  <text x="800" y="404" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">高压电源</text>
+  <text x="706" y="360" font-size="11.5" font-weight="800" fill="#b45309">高压工作电路</text>
+  <circle class="p75-on" cx="640" cy="218" r="10" fill="#f59e0b" opacity=".45"/>
+</g>
+</svg>

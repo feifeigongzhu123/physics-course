@@ -1,0 +1,235 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="无线电波的发射和接收：调制与发射天线、电谐振接收、检波">
+<style>
+[data-scene="ps-98"] .s98-s1,[data-scene="ps-98"] .s98-s2,[data-scene="ps-98"] .s98-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="ps-98"].s1 .s98-s1,[data-scene="ps-98"].s2 .s98-s2,[data-scene="ps-98"].s3 .s98-s3{opacity:1;visibility:visible}
+@keyframes s98fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+@keyframes s98draw{to{stroke-dashoffset:0}}
+@keyframes s98pop{0%{transform:scale(.9);opacity:0}70%{transform:scale(1.03);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s98flow{to{stroke-dashoffset:-36}}
+@keyframes s98pulse{0%,100%{opacity:.4}50%{opacity:1}}
+@keyframes s98blink{0%,100%{opacity:1}50%{opacity:.3}}
+[data-scene="ps-98"].s1 .s98-antenna{animation:s98pulse 1.8s ease-in-out infinite}
+[data-scene="ps-98"].s1 .s98-arc{stroke-dasharray:8 7;animation:s98flow 1.1s linear infinite}
+[data-scene="ps-98"].s1 .s98-card{transform-box:fill-box;transform-origin:center;animation:s98pop .55s ease .3s both}
+[data-scene="ps-98"].s1 .s98-sig{stroke-dasharray:700;stroke-dashoffset:700;animation:s98draw 1.2s ease .2s forwards}
+[data-scene="ps-98"].s2 .s98-antenna{animation:s98pulse 1.8s ease-in-out infinite}
+[data-scene="ps-98"].s2 .s98-inwave{stroke-dasharray:7 6;animation:s98flow 1.1s linear infinite}
+[data-scene="ps-98"].s2 .s98-coil{stroke-dasharray:220;stroke-dashoffset:220;animation:s98draw 1s ease .25s forwards}
+[data-scene="ps-98"].s2 .s98-tune{animation:s98blink 1.6s ease-in-out infinite}
+[data-scene="ps-98"].s2 .s98-card{transform-box:fill-box;transform-origin:center;animation:s98pop .55s ease .4s both}
+[data-scene="ps-98"].s3 .s98-block{transform-box:fill-box;transform-origin:center;animation:s98pop .5s ease both}
+[data-scene="ps-98"].s3 .s98-block2{animation-delay:.1s}
+[data-scene="ps-98"].s3 .s98-block3{animation-delay:.2s}
+[data-scene="ps-98"].s3 .s98-block4{animation-delay:.3s}
+[data-scene="ps-98"].s3 .s98-block5{animation-delay:.4s}
+[data-scene="ps-98"].s3 .s98-wave{stroke-dasharray:600;stroke-dashoffset:600;animation:s98draw 1.3s ease .45s forwards}
+[data-scene="ps-98"].s3 .s98-flow{stroke-dasharray:7 6;animation:s98flow 1s linear infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">无线电波的发射和接收：调制、调谐与检波</text>
+
+<!-- 第一步：发射与调制 -->
+<g class="s98-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">发射：用频率足够高、足够开放的振荡电路把电磁波送向空间</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="250" height="28" rx="14" fill="#e8effc"/>
+  <text x="181" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">发射天线与开放电路</text>
+
+  <g class="s98-antenna">
+    <line x1="180" y1="170" x2="180" y2="320" stroke="#475569" stroke-width="4"/>
+    <circle cx="180" cy="166" r="5" fill="#475569"/>
+    <line x1="158" y1="320" x2="202" y2="320" stroke="#475569" stroke-width="3"/>
+    <line x1="164" y1="328" x2="196" y2="328" stroke="#475569" stroke-width="3"/>
+    <line x1="171" y1="336" x2="189" y2="336" stroke="#475569" stroke-width="3"/>
+  </g>
+
+  <rect x="90" y="270" width="70" height="40" rx="6" fill="#e8effc" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="125" y="295" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">振荡器</text>
+  <line x1="160" y1="290" x2="180" y2="290" stroke="#475569" stroke-width="2"/>
+
+  <path class="s98-arc" d="M 205 190 A 55 55 0 0 1 205 300" fill="none" stroke="#1d4ed8" stroke-width="2.2"/>
+  <path class="s98-arc" d="M 235 175 A 80 80 0 0 1 235 315" fill="none" stroke="#1d4ed8" stroke-width="2.2" opacity=".8"/>
+  <path class="s98-arc" d="M 265 160 A 105 105 0 0 1 265 330" fill="none" stroke="#1d4ed8" stroke-width="2.2" opacity=".6"/>
+  <text x="410" y="166" font-size="11.5" font-weight="800" fill="#1d4ed8">电磁波向外辐射</text>
+  <text x="420" y="200" font-size="11" fill="#64748b">天线足够长、电路开放</text>
+  <text x="125" y="256" font-size="11" fill="#64748b" text-anchor="middle">高频振荡电流</text>
+
+  <rect x="70" y="352" width="200" height="30" rx="15" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="170" y="372" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">① 振荡频率足够高</text>
+  <rect x="290" y="352" width="210" height="30" rx="15" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="395" y="372" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">② 电路足够开放</text>
+  <text x="296" y="410" font-size="11.5" fill="#334155" text-anchor="middle">让电场和磁场分散到周围空间</text>
+  <text x="296" y="430" font-size="11" fill="#64748b" text-anchor="middle">这样才能有效地把能量辐射出去</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">调制：把信号“装”到载波上</text>
+
+  <text x="598" y="164" font-size="11.5" font-weight="800" fill="#475569">① 低频信号（信息）</text>
+  <path class="s98-sig" d="M 598 182 C 618 170 638 194 658 182 C 678 170 698 194 718 182 C 738 170 758 194 778 182 C 798 170 818 194 838 182" fill="none" stroke="#059669" stroke-width="2"/>
+
+  <text x="598" y="218" font-size="11.5" font-weight="800" fill="#475569">② 高频载波</text>
+  <path class="s98-sig" d="M 598 236 q 6 -12 12 0 q 6 12 12 0 q 6 -12 12 0 q 6 12 12 0 q 6 -12 12 0 q 6 12 12 0 q 6 -12 12 0 q 6 12 12 0 q 6 -12 12 0 q 6 12 12 0 q 6 -12 12 0 q 6 12 12 0 q 6 -12 12 0 q 6 12 12 0 q 6 -12 12 0 q 6 12 12 0 q 6 -12 12 0 q 6 12 12 0 q 6 -12 12 0 q 6 12 12 0" fill="none" stroke="#1d4ed8" stroke-width="1.8"/>
+
+  <text x="598" y="284" font-size="11.5" font-weight="800" fill="#475569">③ 调幅波（包络）</text>
+  <path class="s98-sig" d="M 598 302 q 5 -6 10 0 q 5 6 10 0 q 5 -6 10 0 q 5 6 10 0 q 5 -6 10 0 q 5 6 10 0 q 5 -6 10 0 q 5 6 10 0 q 5 -18 10 0 q 5 18 10 0 q 5 -18 10 0 q 5 18 10 0 q 5 -18 10 0 q 5 18 10 0 q 5 -18 10 0 q 5 18 10 0 q 5 -8 10 0 q 5 8 10 0 q 5 -8 10 0 q 5 8 10 0 q 5 -8 10 0 q 5 8 10 0 q 5 -8 10 0 q 5 8 10 0" fill="none" stroke="#dc2626" stroke-width="1.8"/>
+
+  <text x="720" y="344" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">调幅 AM：振幅随信号变化</text>
+  <text x="720" y="368" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">调频 FM：频率随信号变化</text>
+  <text x="720" y="394" font-size="11" fill="#1d4ed8" text-anchor="middle">把信息加载到高频电磁波上</text>
+  <text x="720" y="416" font-size="11" fill="#64748b" text-anchor="middle">这样才能有效地发射出去</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">发射要满足频率高、电路开放，并用调制把信息加载到载波上</text>
+</g>
+
+<!-- 第二步：电谐振接收 -->
+<g class="s98-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">接收：调谐使电路固有频率与来波频率相同，发生电谐振</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="250" height="28" rx="14" fill="#e8effc"/>
+  <text x="181" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">接收天线与调谐电路</text>
+
+  <g class="s98-antenna">
+    <line x1="420" y1="160" x2="420" y2="300" stroke="#475569" stroke-width="4"/>
+    <circle cx="420" cy="156" r="5" fill="#475569"/>
+  </g>
+
+  <path class="s98-inwave" d="M 340 185 Q 305 230 340 275" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+  <path class="s98-inwave" d="M 300 170 Q 255 230 300 290" fill="none" stroke="#1d4ed8" stroke-width="2" opacity=".75"/>
+  <path class="s98-inwave" d="M 260 158 Q 205 230 260 302" fill="none" stroke="#1d4ed8" stroke-width="2" opacity=".55"/>
+  <path d="M 246 230 h 14" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrBlue)"/>
+
+  <line x1="420" y1="300" x2="420" y2="380" stroke="#475569" stroke-width="2"/>
+  <line x1="120" y1="380" x2="420" y2="380" stroke="#475569" stroke-width="2"/>
+  <line x1="120" y1="300" x2="120" y2="380" stroke="#475569" stroke-width="2"/>
+  <line x1="120" y1="300" x2="180" y2="300" stroke="#475569" stroke-width="2"/>
+  <path class="s98-coil" d="M 180 300 a 10 10 0 0 1 20 0 a 10 10 0 0 1 20 0 a 10 10 0 0 1 20 0 a 10 10 0 0 1 20 0" fill="none" stroke="#b45309" stroke-width="2.5"/>
+  <line x1="260" y1="300" x2="330" y2="300" stroke="#475569" stroke-width="2"/>
+  <line x1="336" y1="282" x2="336" y2="318" stroke="#1d4ed8" stroke-width="3"/>
+  <line x1="352" y1="282" x2="352" y2="318" stroke="#1d4ed8" stroke-width="3"/>
+  <line x1="330" y1="300" x2="336" y2="300" stroke="#475569" stroke-width="2"/>
+  <line x1="352" y1="300" x2="420" y2="300" stroke="#475569" stroke-width="2"/>
+  <line class="s98-tune" x1="330" y1="332" x2="362" y2="270" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arrRed)"/>
+  <text x="344" y="350" font-size="11" font-weight="800" fill="#b91c1c" text-anchor="middle">可变 C</text>
+
+  <text x="220" y="340" font-size="11" font-weight="800" fill="#92400e" text-anchor="middle">线圈 L</text>
+  <text x="452" y="270" font-size="11.5" font-weight="800" fill="#475569">接收天线</text>
+  <text x="296" y="410" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">改变电容 C，就改变了电路的固有频率 f₀</text>
+  <text x="296" y="430" font-size="11.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">f₀ 与来波频率相同时发生电谐振</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电谐振选台</text>
+
+  <g class="s98-card">
+    <rect x="596" y="160" width="248" height="62" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="720" y="190" font-size="18" font-weight="900" fill="#1e3a8a" text-anchor="middle">f₀ = 1 / (2π√LC)</text>
+    <text x="720" y="212" font-size="11" fill="#475569" text-anchor="middle">电路的固有频率</text>
+
+    <circle cx="610" cy="254" r="11" fill="#dbeafe"/>
+    <text x="610" y="258" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">1</text>
+    <text x="632" y="258" font-size="11.5" font-weight="700" fill="#334155">调节可变电容 C</text>
+
+    <circle cx="610" cy="292" r="11" fill="#dbeafe"/>
+    <text x="610" y="296" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">2</text>
+    <text x="632" y="296" font-size="11.5" font-weight="700" fill="#334155">使 f₀ 等于目标电台频率</text>
+
+    <circle cx="610" cy="330" r="11" fill="#dbeafe"/>
+    <text x="610" y="334" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">3</text>
+    <text x="632" y="334" font-size="11.5" font-weight="700" fill="#334155">该频率电流最强（电谐振）</text>
+
+    <circle cx="610" cy="368" r="11" fill="#dbeafe"/>
+    <text x="610" y="372" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">4</text>
+    <text x="632" y="372" font-size="11.5" font-weight="700" fill="#334155">其他频率的信号被抑制</text>
+  </g>
+
+  <text x="720" y="406" font-size="11.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">这就是收音机“选台”的原理</text>
+  <text x="720" y="426" font-size="11" fill="#64748b" text-anchor="middle">调谐就是选频</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">调谐改变固有频率，f₀ = f 时发生电谐振，从众多电磁波中选出目标信号</text>
+</g>
+
+<!-- 第三步：检波 -->
+<g class="s98-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">检波（解调）：从高频调幅波中取出所携带的低频信号</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="250" height="28" rx="14" fill="#e8effc"/>
+  <text x="181" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">接收机的信号流程</text>
+
+  <text x="90" y="208" font-size="11" fill="#64748b" text-anchor="middle">接收</text>
+  <text x="194" y="208" font-size="11" fill="#64748b" text-anchor="middle">选频</text>
+  <text x="298" y="208" font-size="11" fill="#64748b" text-anchor="middle">放大</text>
+  <text x="402" y="208" font-size="11" fill="#64748b" text-anchor="middle">解调</text>
+  <text x="506" y="208" font-size="11" fill="#64748b" text-anchor="middle">发声</text>
+
+  <g class="s98-block">
+    <rect x="44" y="222" width="92" height="58" rx="10" fill="#e8effc" stroke="#1d4ed8" stroke-width="1.8"/>
+    <text x="90" y="256" font-size="12" font-weight="900" fill="#1e3a8a" text-anchor="middle">天线</text>
+  </g>
+  <line x1="136" y1="251" x2="146" y2="251" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <g class="s98-block s98-block2">
+    <rect x="148" y="222" width="92" height="58" rx="10" fill="#e8effc" stroke="#1d4ed8" stroke-width="1.8"/>
+    <text x="194" y="256" font-size="12" font-weight="900" fill="#1e3a8a" text-anchor="middle">调谐</text>
+  </g>
+  <line x1="240" y1="251" x2="250" y2="251" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <g class="s98-block s98-block3">
+    <rect x="252" y="222" width="92" height="58" rx="10" fill="#e8effc" stroke="#1d4ed8" stroke-width="1.8"/>
+    <text x="298" y="256" font-size="12" font-weight="900" fill="#1e3a8a" text-anchor="middle">放大</text>
+  </g>
+  <line x1="344" y1="251" x2="354" y2="251" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <g class="s98-block s98-block4">
+    <rect x="356" y="222" width="92" height="58" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.8"/>
+    <text x="402" y="256" font-size="12" font-weight="900" fill="#b45309" text-anchor="middle">检波</text>
+  </g>
+  <line x1="448" y1="251" x2="458" y2="251" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <g class="s98-block s98-block5">
+    <rect x="460" y="222" width="92" height="58" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="1.8"/>
+    <text x="506" y="256" font-size="12" font-weight="900" fill="#047857" text-anchor="middle">扬声器</text>
+  </g>
+
+  <text x="60" y="306" font-size="11.5" font-weight="800" fill="#b45309">检波前：高频调幅波</text>
+  <path class="s98-wave" d="M 60 344 q 5 -6 10 0 q 5 6 10 0 q 5 -6 10 0 q 5 6 10 0 q 5 -6 10 0 q 5 6 10 0 q 5 -14 10 0 q 5 14 10 0 q 5 -14 10 0 q 5 14 10 0 q 5 -14 10 0 q 5 14 10 0 q 5 -14 10 0 q 5 14 10 0 q 5 -14 10 0 q 5 14 10 0 q 5 -6 10 0 q 5 6 10 0 q 5 -6 10 0 q 5 6 10 0 q 5 -6 10 0 q 5 6 10 0 q 5 -6 10 0 q 5 6 10 0" fill="none" stroke="#dc2626" stroke-width="2"/>
+  <text x="320" y="306" font-size="11.5" font-weight="800" fill="#047857">检波后：低频信号</text>
+  <path class="s98-wave" d="M 320 344 C 340 322 360 322 380 344 C 400 366 420 366 440 344 C 460 322 480 322 500 344 C 520 366 535 366 545 350" fill="none" stroke="#059669" stroke-width="2.4"/>
+
+  <text x="296" y="398" font-size="11.5" fill="#334155" text-anchor="middle">检波：从高频调幅波中取出音频信号</text>
+  <text x="296" y="420" font-size="11.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">再经放大送到扬声器，我们就听到了声音</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">检波（解调）</text>
+
+  <text x="720" y="172" font-size="11.5" fill="#334155" text-anchor="middle">利用二极管的单向导电性</text>
+  <line x1="620" y1="210" x2="650" y2="210" stroke="#475569" stroke-width="2"/>
+  <polygon points="650,196 650,224 676,210" fill="#1d4ed8"/>
+  <line x1="678" y1="194" x2="678" y2="226" stroke="#1d4ed8" stroke-width="3"/>
+  <line x1="678" y1="210" x2="710" y2="210" stroke="#475569" stroke-width="2"/>
+  <text x="720" y="250" font-size="11.5" fill="#334155" text-anchor="middle">只保留一个方向的电流</text>
+
+  <circle cx="608" cy="282" r="3" fill="#1d4ed8"/>
+  <text x="620" y="286" font-size="11.5" fill="#334155">削去负半周</text>
+  <circle cx="608" cy="306" r="3" fill="#1d4ed8"/>
+  <text x="620" y="310" font-size="11.5" fill="#334155">滤掉高频成分</text>
+  <circle cx="608" cy="330" r="3" fill="#1d4ed8"/>
+  <text x="620" y="334" font-size="11.5" fill="#334155">留下音频包络</text>
+
+  <rect x="596" y="346" width="248" height="52" rx="10" fill="#ecfdf5" stroke="#86efac" stroke-width="1.5"/>
+  <text x="720" y="368" font-size="11.5" font-weight="800" fill="#047857" text-anchor="middle">调幅波 → 检波 → 音频信号</text>
+  <text x="720" y="388" font-size="11" fill="#065f46" text-anchor="middle">送到扬声器发声</text>
+
+  <text x="720" y="420" font-size="11.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">检波也叫解调</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">检波把音频信号从高频载波上“取”下来，送到扬声器还原声音</text>
+</g>
+</svg>

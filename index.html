@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-version="v0.1.0" data-build="2026-11-19">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>物理动画课 · 样例版</title>
+<style>
+  *{box-sizing:border-box}
+  :root{
+    --ink:#22314a; --muted:#7c8aa3; --line:#dce5f2; --paper:#eef3fb;
+    --blue:#1d4ed8; --blue-dark:#1e3a8a; --card:#ffffff;
+    --shadow:0 18px 50px rgba(40,60,110,.09);
+  }
+  body{
+    margin:0;
+    background:
+      radial-gradient(900px 420px at 50% -160px,#eef5ff 0%,rgba(238,245,255,0) 65%),
+      var(--paper);
+    color:var(--ink);
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .app{max-width:900px;margin:0 auto;padding:24px 14px 40px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow)}
+  .hero{padding:22px;background:linear-gradient(155deg,#fff 0%,#f7faff 60%,#f2f7fb 100%);border-radius:26px}
+  .hero-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+  .kicker{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;letter-spacing:.7px;color:var(--blue);
+    background:#e8effc;border-radius:999px;padding:5px 10px}
+  .pill{font-size:10px;font-weight:800;color:var(--blue);background:#e8effc;border-radius:999px;padding:7px 11px;white-space:nowrap}
+  h1{font-size:26px;font-weight:900;letter-spacing:-.5px;margin:12px 0 7px;line-height:1.3}
+  .sub{font-size:12px;color:var(--muted);line-height:1.7;margin:0}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:18px}
+  .stat{background:#f8fafc;border:1px solid #e8eef5;border-radius:14px;padding:11px 8px;text-align:center}
+  .stat b{display:block;font-size:21px;font-weight:900;color:var(--blue-dark)}
+  .stat span{display:block;font-size:10px;color:var(--muted);margin-top:2px}
+  .features{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+  .feature{font-size:10.5px;font-weight:700;color:#5b6b82;background:#f8fafc;border:1px solid #e8eef5;border-radius:999px;padding:6px 10px}
+  .version{margin-top:12px;font-size:10.5px;color:var(--muted)}
+  .version b{color:var(--blue-dark);font-weight:800}
+  .section-title{display:flex;align-items:baseline;justify-content:space-between;margin:24px 4px 10px}
+  .section-title h2{font-size:16px;font-weight:900;margin:0}
+  .section-title span{font-size:10.5px;color:var(--muted)}
+  .grades{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .grade{position:relative;display:flex;flex-direction:column;gap:12px;padding:18px;border-radius:20px;background:#fff;
+    border:1px solid var(--line);box-shadow:0 10px 30px rgba(40,60,110,.06);text-decoration:none;color:inherit;transition:.18s}
+  .grade:hover{transform:translateY(-2px);box-shadow:0 18px 40px rgba(40,60,110,.12);border-color:#c7d7f5}
+  .grade-top{display:flex;align-items:center;gap:12px}
+  .icon{width:46px;height:46px;flex:none;border-radius:14px;display:grid;place-items:center;font-size:15px;font-weight:900;color:#fff}
+  .icon.j{background:linear-gradient(135deg,#60a5fa,#1d4ed8)}
+  .icon.s{background:linear-gradient(135deg,#818cf8,#4338ca)}
+  .g-name{font-size:17px;font-weight:900}
+  .g-sub{font-size:10.5px;color:var(--muted);margin-top:3px}
+  .g-meta{display:flex;gap:14px;flex-wrap:wrap}
+  .g-meta b{display:block;font-size:16px;font-weight:900}
+  .g-meta span{display:block;font-size:9.5px;color:var(--muted)}
+  .points{display:flex;flex-wrap:wrap;gap:6px}
+  .pt{font-size:10.5px;font-weight:700;color:#3b4a63;background:#f4f7fd;border:1px solid #e5ecf7;border-radius:999px;padding:5px 9px}
+  .cta{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:8px}
+  .cta .enter{font-size:11.5px;font-weight:900;color:var(--blue-dark)}
+  .cta .arrow{width:26px;height:26px;border-radius:50%;background:#e7effc;color:var(--blue-dark);display:grid;place-items:center;font-size:14px}
+  .note{padding:18px;margin-top:2px;font-size:11.5px;line-height:1.9;color:#475569}
+  .note b{color:var(--blue-dark)}
+  .note ul{margin:6px 0 0;padding-left:18px}
+  .note li{margin:3px 0}
+  .foot{display:flex;flex-direction:column;gap:8px;margin-top:20px;padding:0 4px;font-size:10.5px;color:var(--muted);line-height:1.7}
+  .foot a{color:var(--blue-dark);font-weight:800;text-decoration:none}
+  .foot code{background:#fff;border:1px solid #e8eef5;border-radius:6px;padding:1px 5px;font-size:10px;color:#475569}
+  @media(max-width:560px){
+    .app{padding:14px 10px 28px}
+    .hero{padding:16px;border-radius:22px}
+    h1{font-size:21px}
+    .grades{grid-template-columns:1fr}
+    .grade{padding:15px}
+    .stats{gap:7px}
+    .stat b{font-size:18px}
+    .note{padding:14px}
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <section class="card hero">
+    <div class="hero-top">
+      <span class="kicker">物理动画课 · 全量完成</span>
+      <span class="pill">3 步动画 · 语音同步</span>
+    </div>
+    <h1>209 个知识点全部完成</h1>
+    <p class="sub">初中 85 点 + 高中 124 点 = 209 个知识点全部完成；每点 3 步专属动画、3 段语音、5 道题和逐项解析。</p>
+    <div class="stats">
+      <div class="stat"><b>209</b><span>课程页知识点</span></div>
+      <div class="stat"><b>627</b><span>步动画</span></div>
+      <div class="stat"><b>1045</b><span>道改编题</span></div>
+    </div>
+    <div class="features">
+      <span class="feature">每点 3 步 2D SVG</span>
+      <span class="feature">语音与步骤同步</span>
+      <span class="feature">4 选项 · 逐项解析</span>
+      <span class="feature">209 点语音已就绪</span>
+    </div>
+    <div class="version">版本 <b>v1.0.0</b> · 2026-11-21 · 课程页 209 点 / 627 步 / 1045 题 · 语音 209 点 / 627 段</div>
+  </section>
+
+  <div class="section-title">
+    <h2>选择学段</h2>
+    <span>点击卡片进入课程</span>
+  </div>
+  <div class="grades">
+    <a class="grade" href="junior.html">
+      <div class="grade-top">
+        <div class="icon j">初</div>
+        <div>
+          <div class="g-name">初中物理 · 85 点</div>
+          <div class="g-sub">初中全册（八上 + 八下 + 九年级）</div>
+        </div>
+      </div>
+      <div class="g-meta">
+        <div><b>85</b><span>知识点</span></div>
+        <div><b>255</b><span>步动画</span></div>
+        <div><b>425</b><span>道中考改编题</span></div>
+      </div>
+      <div class="points">
+        <span class="pt">机械运动</span>
+        <span class="pt">声现象</span>
+        <span class="pt">物态变化</span>
+        <span class="pt">光现象</span>
+        <span class="pt">质量密度</span>
+        <span class="pt">力与运动</span>
+        <span class="pt">压强浮力</span>
+        <span class="pt">功和机械能</span>
+        <span class="pt">电流和电路</span>
+      </div>
+      <div class="cta"><span class="enter">进入初中课程</span><span class="arrow">→</span></div>
+    </a>
+    <a class="grade" href="senior.html">
+      <div class="grade-top">
+        <div class="icon s">高</div>
+        <div>
+          <div class="g-name">高中物理 · 124 点</div>
+          <div class="g-sub">必修 + 选择性必修全册</div>
+        </div>
+      </div>
+      <div class="g-meta">
+        <div><b>124</b><span>知识点</span></div>
+        <div><b>372</b><span>步动画</span></div>
+        <div><b>620</b><span>道高考改编题</span></div>
+      </div>
+      <div class="points">
+        <span class="pt">运动与力</span>
+        <span class="pt">圆周与万有引力</span>
+        <span class="pt">功与能</span>
+        <span class="pt">电场与电路</span>
+        <span class="pt">动量与振动</span>
+        <span class="pt">波与光</span>
+        <span class="pt">热学</span>
+        <span class="pt">原子与核</span>
+      </div>
+      <div class="cta"><span class="enter">进入高中课程</span><span class="arrow">→</span></div>
+    </a>
+  </div>
+
+  <div class="section-title">
+    <h2>当前进度</h2>
+    <span>209 点全部完成</span>
+  </div>
+  <section class="card note">
+    <b>初中 85 + 高中 124 已全部完成：</b>每点 3 步专属 SVG、3 段语音、5 道题和逐项解析都已接入。
+    <ul>
+      <li>讲稿/语音层已覆盖全部 209 个知识点，共 627 段 MP3（约 86 MB），四个语音批均可试听。</li>
+      <li>全课程 209 点已全部完成：初中 85 + 高中 124，共 627 步动画、1045 道题；语音层 627 段 MP3（约 86 MB）。</li>
+      <li>构建入口：<code>python _build\build_full.py</code>；语音已生成，不需要再跑 TTS。</li>
+    </ul>
+  </section>
+
+  <div class="foot">
+    <span>本地直接双击 <code>index.html</code> 即可使用；音频为普通静态文件，分享时请连同整个 physics 文件夹一起发送。</span>
+    <span>语音批试听：<a href="voice-bank.html">第一批 50 点</a> · <a href="voice-bank-b2.html">第二批 53 点</a> · <a href="voice-bank-b3.html">第三批 52 点</a> · <a href="voice-bank-b4.html">第四批 51 点</a>（209 点 / 627 段，已全部接入课程）</span>
+    <span>构建：<code>python _build\build_full.py</code> · 语音批：<code>python _build\run_remaining.py</code></span>
+  </div>
+</div>
+</body>
+</html>

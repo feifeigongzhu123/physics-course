@@ -1,0 +1,165 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="功与功率：正负功、功率公式与机车启动">
+<style>
+[data-scene="ps-35"] .s35-step1,[data-scene="ps-35"] .s35-step2,[data-scene="ps-35"] .s35-step3{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="ps-35"].s1 .s35-step1,[data-scene="ps-35"].s2 .s35-step2,[data-scene="ps-35"].s3 .s35-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes s35draw{to{stroke-dashoffset:0}}
+@keyframes s35pop{0%{transform:scale(.86);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes s35rise{from{transform:translateY(16px);opacity:0}to{transform:none;opacity:1}}
+@keyframes s35move{0%,100%{transform:translateX(0)}50%{transform:translateX(34px)}}
+@keyframes s35flow{to{stroke-dashoffset:-80}}
+[data-scene="ps-35"].s1 .s35-ex{transform-box:fill-box;transform-origin:center;animation:s35pop .5s ease both}
+[data-scene="ps-35"].s1 .s35-arrow line{stroke-dasharray:200;stroke-dashoffset:200;animation:s35draw .8s ease .3s both}
+[data-scene="ps-35"].s1 .s35-box{transform-box:fill-box;transform-origin:center;animation:s35rise .6s ease both}
+[data-scene="ps-35"].s2 .s35-crate{transform-box:fill-box;transform-origin:center;animation:s35move 2.6s ease-in-out infinite}
+[data-scene="ps-35"].s2 .s35-rope{animation:s35flow 1.4s linear infinite}
+[data-scene="ps-35"].s2 .s35-card{transform-box:fill-box;transform-origin:center;animation:s35pop .5s ease .3s both}
+[data-scene="ps-35"].s3 .s35-curve{stroke-dasharray:900;stroke-dashoffset:900;animation:s35draw 1.6s ease both}
+[data-scene="ps-35"].s3 .s35-curve2{stroke-dasharray:900;stroke-dashoffset:900;animation:s35draw 1.6s ease .35s both}
+[data-scene="ps-35"].s3 .s35-card{transform-box:fill-box;transform-origin:center;animation:s35pop .5s ease .9s both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="532" width="900" height="88" fill="url(#gBench)"/>
+<line x1="0" y1="532" x2="900" y2="532" stroke="#cbd5e1" stroke-width="2.5"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">功与功率：正负功、P = W/t = Fv 与机车启动</text>
+
+<!-- 第一步：正功、负功与不做功 -->
+<g class="s35-step1" data-zone="1">
+  <text x="70" y="86" font-size="14" font-weight="800" fill="#1e3a8a">功 = 力 × 力的方向上的位移：W = Fs cosθ</text>
+
+  <g class="s35-ex">
+    <rect x="70" y="120" width="240" height="256" rx="14" fill="#f0fdf4" stroke="#86efac" stroke-width="2"/>
+    <text x="190" y="150" font-size="13" font-weight="800" fill="#047857" text-anchor="middle">力与位移同向</text>
+    <g class="s35-box"><rect x="150" y="256" width="80" height="54" rx="6" fill="#93c5fd" stroke="#1e40af" stroke-width="2"/><text x="190" y="290" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">m</text></g>
+    <g class="s35-arrow">
+      <line x1="150" y1="222" x2="238" y2="222" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrRed)"/>
+      <line x1="126" y1="352" x2="240" y2="352" stroke="#059669" stroke-width="3.5" marker-end="url(#arrGreen)"/>
+    </g>
+    <text x="196" y="212" font-size="13" font-weight="800" fill="#b91c1c">F</text>
+    <text x="186" y="378" font-size="13" font-weight="800" fill="#047857">s</text>
+    <text x="190" y="330" font-size="20" font-weight="900" fill="#047857" text-anchor="middle">W &gt; 0</text>
+    <text x="190" y="414" font-size="11.5" fill="#334155" text-anchor="middle">θ = 0°，做正功</text>
+  </g>
+
+  <g class="s35-ex">
+    <rect x="330" y="120" width="240" height="256" rx="14" fill="#fef2f2" stroke="#fca5a5" stroke-width="2"/>
+    <text x="450" y="150" font-size="13" font-weight="800" fill="#b91c1c" text-anchor="middle">力与位移反向</text>
+    <g class="s35-box"><rect x="410" y="256" width="80" height="54" rx="6" fill="#fca5a5" stroke="#b91c1c" stroke-width="2"/><text x="450" y="290" font-size="13" font-weight="800" fill="#7f1d1d" text-anchor="middle">m</text></g>
+    <g class="s35-arrow">
+      <line x1="450" y1="222" x2="362" y2="222" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrRed)"/>
+      <line x1="386" y1="352" x2="500" y2="352" stroke="#059669" stroke-width="3.5" marker-end="url(#arrGreen)"/>
+    </g>
+    <text x="374" y="212" font-size="13" font-weight="800" fill="#b91c1c">F</text>
+    <text x="446" y="378" font-size="13" font-weight="800" fill="#047857">s</text>
+    <text x="450" y="330" font-size="20" font-weight="900" fill="#b91c1c" text-anchor="middle">W &lt; 0</text>
+    <text x="450" y="414" font-size="11.5" fill="#334155" text-anchor="middle">θ = 180°，做负功（克服某力做功）</text>
+  </g>
+
+  <g class="s35-ex">
+    <rect x="590" y="120" width="240" height="256" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="710" y="150" font-size="13" font-weight="800" fill="#475569" text-anchor="middle">力与位移垂直</text>
+    <g class="s35-box"><rect x="670" y="256" width="80" height="54" rx="6" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/><text x="710" y="290" font-size="13" font-weight="800" fill="#334155" text-anchor="middle">m</text></g>
+    <g class="s35-arrow">
+      <line x1="710" y1="246" x2="710" y2="186" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrRed)"/>
+      <line x1="646" y1="352" x2="760" y2="352" stroke="#059669" stroke-width="3.5" marker-end="url(#arrGreen)"/>
+    </g>
+    <text x="722" y="200" font-size="13" font-weight="800" fill="#b91c1c">F</text>
+    <text x="706" y="378" font-size="13" font-weight="800" fill="#047857">s</text>
+    <text x="710" y="330" font-size="20" font-weight="900" fill="#475569" text-anchor="middle">W = 0</text>
+    <text x="710" y="414" font-size="11.5" fill="#334155" text-anchor="middle">θ = 90°，不做功</text>
+  </g>
+
+  <rect x="70" y="404" width="760" height="106" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="432" font-size="13.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">W = Fs cosθ　（θ 是力与位移方向的夹角）</text>
+  <text x="450" y="460" font-size="12" fill="#334155" text-anchor="middle">功是标量，有正负但没有方向，单位是焦耳（J），1 J = 1 N·m</text>
+  <text x="450" y="486" font-size="12" fill="#64748b" text-anchor="middle">计算功时必须明确是哪个力做的功，同一过程中不同力做功可以不同</text>
+
+  <text x="80" y="576" font-size="12" fill="#64748b">正负功不表示方向，只表示这个力对物体运动是促进还是阻碍</text>
+</g>
+
+<!-- 第二步：功率 -->
+<g class="s35-step2" data-zone="2">
+  <text x="70" y="86" font-size="14" font-weight="800" fill="#1e3a8a">功率描述做功的快慢：P = W/t，也可写成 P = Fv</text>
+
+  <rect x="70" y="112" width="340" height="330" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="96" y="132" width="288" height="10" rx="3" fill="#94a3b8"/>
+  <line x1="240" y1="142" x2="240" y2="188" stroke="#475569" stroke-width="3"/>
+  <path d="M216 188 h48 v18 h-48 z" fill="#94a3b8"/>
+  <line class="s35-rope" x1="240" y1="206" x2="240" y2="298" stroke="#78350f" stroke-width="3" stroke-dasharray="8 5"/>
+  <g class="s35-crate">
+    <rect x="196" y="298" width="88" height="66" rx="6" fill="#f59e0b" stroke="#b45309" stroke-width="2"/>
+    <text x="240" y="338" font-size="13" font-weight="800" fill="#7c2d12" text-anchor="middle">货物</text>
+  </g>
+  <line x1="240" y1="292" x2="240" y2="244" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrRed)"/>
+  <text x="252" y="268" font-size="13" font-weight="800" fill="#b91c1c">F</text>
+  <line x1="320" y1="360" x2="320" y2="288" stroke="#059669" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#arrGreen)"/>
+  <text x="332" y="326" font-size="12" font-weight="800" fill="#047857">h</text>
+  <line x1="110" y1="396" x2="370" y2="396" stroke="#94a3b8" stroke-width="3"/>
+  <text x="240" y="420" font-size="11.5" fill="#64748b" text-anchor="middle">起重机把货物匀速提升高度 h，用时 t</text>
+
+  <g class="s35-card">
+    <rect x="440" y="112" width="390" height="330" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="635" y="142" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">功率的两个常用式子</text>
+    <text x="635" y="186" font-size="26" font-weight="900" font-style="italic" fill="#1e3a8a" text-anchor="middle">P = W / t</text>
+    <text x="635" y="220" font-size="12" fill="#64748b" text-anchor="middle">一段时间内的功率叫平均功率</text>
+    <text x="635" y="262" font-size="26" font-weight="900" font-style="italic" fill="#6d28d9" text-anchor="middle">P = F v</text>
+    <text x="635" y="296" font-size="12" fill="#64748b" text-anchor="middle">某时刻的功率叫瞬时功率（v 为该时刻速度）</text>
+    <line x1="470" y1="314" x2="800" y2="314" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="635" y="340" font-size="12" font-weight="800" fill="#334155" text-anchor="middle">P 越大，做功越快；1 W = 1 J/s</text>
+    <text x="635" y="366" font-size="12" font-weight="700" fill="#b45309" text-anchor="middle">额定功率：机器长时间正常工作的最大功率</text>
+    <text x="635" y="392" font-size="11.5" fill="#64748b" text-anchor="middle">实际功率可以短时超过额定功率，但不能长时间超过</text>
+    <text x="635" y="420" font-size="11.5" fill="#64748b" text-anchor="middle">机车、起重机等机器的铭牌上标的是额定功率</text>
+  </g>
+
+  <rect x="70" y="460" width="760" height="52" rx="12" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="450" y="482" font-size="12" font-weight="700" fill="#7c5a30" text-anchor="middle">例：起重机用 F = 2000 N 在 3 s 内把货物匀速提升 6 m</text>
+  <text x="450" y="503" font-size="13" font-weight="900" fill="#b45309" text-anchor="middle">W = Fh = 1.2×10⁴ J　→　P = W/t = 4×10³ W</text>
+
+  <text x="80" y="576" font-size="12" fill="#64748b">求平均功率用 W/t，求瞬时功率用 P = Fv</text>
+</g>
+
+<!-- 第三步：机车启动 -->
+<g class="s35-step3" data-zone="3">
+  <text x="70" y="86" font-size="14" font-weight="800" fill="#1e3a8a">两种启动方式：恒定功率启动与恒定牵引力启动</text>
+
+  <line x1="140" y1="470" x2="570" y2="470" stroke="#334155" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+  <line x1="140" y1="470" x2="140" y2="120" stroke="#334155" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+  <text x="562" y="494" font-size="12" font-weight="800" fill="#334155" text-anchor="end">时间 t</text>
+  <text x="128" y="132" font-size="12" font-weight="800" fill="#334155" text-anchor="end">速度 v</text>
+
+  <line x1="140" y1="188" x2="566" y2="188" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="7 5"/>
+  <text x="560" y="180" font-size="12" font-weight="800" fill="#475569" text-anchor="end">v_max = P额 / f</text>
+
+  <path class="s35-curve" d="M140 470 C 240 410, 310 302, 372 236 C 418 198, 480 190, 556 188" fill="none" stroke="#1d4ed8" stroke-width="3.2"/>
+  <path class="s35-curve2" d="M140 470 L286 300 C 348 244, 430 204, 556 190" fill="none" stroke="#d97706" stroke-width="3.2"/>
+  <circle cx="286" cy="300" r="6" fill="#fff" stroke="#d97706" stroke-width="3"/>
+  <text x="300" y="292" font-size="11.5" font-weight="800" fill="#b45309">P 达到额定功率</text>
+
+  <text x="372" y="222" font-size="12" font-weight="800" fill="#1d4ed8">恒定功率：曲线上升</text>
+  <text x="180" y="320" font-size="12" font-weight="800" fill="#b45309">恒定牵引力：先匀加速</text>
+
+  <text x="145" y="446" font-size="11.5" fill="#64748b" text-anchor="middle">0</text>
+
+  <g class="s35-card">
+    <rect x="590" y="112" width="240" height="360" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="710" y="142" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">启动过程分析</text>
+    <text x="606" y="174" font-size="12" font-weight="900" fill="#1d4ed8">恒定功率启动</text>
+    <text x="606" y="196" font-size="11.5" fill="#334155">v 增大 → F = P/v 减小</text>
+    <text x="606" y="216" font-size="11.5" fill="#334155">a = (F−f)/m 减小</text>
+    <text x="606" y="236" font-size="11.5" fill="#334155">最后 F = f，匀速运动</text>
+    <text x="606" y="268" font-size="12" font-weight="900" fill="#b45309">恒定牵引力启动</text>
+    <text x="606" y="290" font-size="11.5" fill="#334155">先匀加速，P = Fv 增大</text>
+    <text x="606" y="310" font-size="11.5" fill="#334155">P 到额定值后功率不变</text>
+    <text x="606" y="330" font-size="11.5" fill="#334155">再按恒定功率继续加速</text>
+    <line x1="610" y1="346" x2="810" y2="346" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="710" y="372" font-size="11.5" fill="#047857" text-anchor="middle">两种方式最终都达到 v_max</text>
+    <text x="710" y="392" font-size="11.5" fill="#047857" text-anchor="middle">此时 F = f，a = 0</text>
+    <text x="710" y="418" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">v_max = P额 / f</text>
+    <text x="710" y="444" font-size="11.5" fill="#64748b" text-anchor="middle">最大速度由额定功率和阻力决定</text>
+  </g>
+
+  <text x="80" y="576" font-size="12" fill="#64748b">判断加速还是匀速，关键看牵引力 F 与阻力 f 的大小关系</text>
+</g>
+</svg>

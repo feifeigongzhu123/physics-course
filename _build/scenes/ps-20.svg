@@ -1,0 +1,147 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="力学单位制：米千克秒三个基本单位、导出单位、单位检验">
+<style>
+[data-scene="ps-20"] .s20-step{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="ps-20"].s1 .s20-step1,[data-scene="ps-20"].s2 .s20-step2,[data-scene="ps-20"].s3 .s20-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes s20pop{0%{transform:scale(.85);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes s20grow{from{opacity:0}to{opacity:1}}
+@keyframes s20slide{from{transform:translateX(-12px);opacity:0}to{transform:none;opacity:1}}
+@keyframes s20draw{to{stroke-dashoffset:0}}
+@keyframes s20shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-5px)}40%{transform:translateX(5px)}60%{transform:translateX(-3px)}80%{transform:translateX(3px)}}
+@keyframes s20pulse{0%,100%{opacity:.4}50%{opacity:1}}
+[data-scene="ps-20"].s1 .s20-u1{transform-box:fill-box;transform-origin:center;animation:s20pop .45s ease both}
+[data-scene="ps-20"].s1 .s20-u2{transform-box:fill-box;transform-origin:center;animation:s20pop .45s ease .15s both}
+[data-scene="ps-20"].s1 .s20-u3{transform-box:fill-box;transform-origin:center;animation:s20pop .45s ease .3s both}
+[data-scene="ps-20"].s2 .s20-r1{animation:s20slide .45s ease .05s both}
+[data-scene="ps-20"].s2 .s20-r2{animation:s20slide .45s ease .2s both}
+[data-scene="ps-20"].s2 .s20-r3{animation:s20slide .45s ease .35s both}
+[data-scene="ps-20"].s2 .s20-r4{animation:s20slide .45s ease .5s both}
+[data-scene="ps-20"].s2 .s20-ar{stroke-dasharray:45;stroke-dashoffset:45;animation:s20draw .45s ease both}
+[data-scene="ps-20"].s3 .s20-ok{animation:s20grow .5s ease .2s both}
+[data-scene="ps-20"].s3 .s20-bad{transform-box:fill-box;transform-origin:center;animation:s20shake .6s ease .4s both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">力学单位制：基本单位与导出单位</text>
+
+<!-- 第一步：三个基本单位 -->
+<g class="s20-step s20-step1" data-zone="1">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">力学基本单位：米、千克、秒</text>
+  <text x="450" y="106" font-size="12" fill="#64748b" text-anchor="middle">国际单位制（SI）中，力学的三个基本量</text>
+
+  <g class="s20-u1">
+    <rect x="50" y="126" width="250" height="252" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <circle cx="175" cy="212" r="46" fill="#e8effc" stroke="#1d4ed8" stroke-width="2.5"/>
+    <text x="175" y="227" font-size="34" font-weight="900" fill="#1d4ed8" text-anchor="middle">m</text>
+    <text x="175" y="300" font-size="22" font-weight="900" fill="#1e3a8a" text-anchor="middle">米</text>
+    <text x="175" y="328" font-size="13" font-weight="700" fill="#475569" text-anchor="middle">基本量：长度</text>
+    <text x="175" y="354" font-size="11.5" fill="#64748b" text-anchor="middle">单位符号：m</text>
+  </g>
+
+  <g class="s20-u2">
+    <rect x="325" y="126" width="250" height="252" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <circle cx="450" cy="212" r="46" fill="#f0fdf4" stroke="#059669" stroke-width="2.5"/>
+    <text x="450" y="224" font-size="29" font-weight="900" fill="#047857" text-anchor="middle">kg</text>
+    <text x="450" y="300" font-size="22" font-weight="900" fill="#047857" text-anchor="middle">千克</text>
+    <text x="450" y="328" font-size="13" font-weight="700" fill="#475569" text-anchor="middle">基本量：质量</text>
+    <text x="450" y="354" font-size="11.5" fill="#64748b" text-anchor="middle">单位符号：kg</text>
+  </g>
+
+  <g class="s20-u3">
+    <rect x="600" y="126" width="250" height="252" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <circle cx="725" cy="212" r="46" fill="#fff7ed" stroke="#b45309" stroke-width="2.5"/>
+    <text x="725" y="227" font-size="34" font-weight="900" fill="#b45309" text-anchor="middle">s</text>
+    <text x="725" y="300" font-size="22" font-weight="900" fill="#b45309" text-anchor="middle">秒</text>
+    <text x="725" y="328" font-size="13" font-weight="700" fill="#475569" text-anchor="middle">基本量：时间</text>
+    <text x="725" y="354" font-size="11.5" fill="#64748b" text-anchor="middle">单位符号：s</text>
+  </g>
+
+  <rect x="50" y="414" width="800" height="36" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="437" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">力学中只需这三个基本单位，其余单位都由它们组合导出</text>
+</g>
+
+<!-- 第二步：导出单位 -->
+<g class="s20-step s20-step2" data-zone="2">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">导出单位：由基本单位组合而成</text>
+  <text x="450" y="106" font-size="12" fill="#64748b" text-anchor="middle">把物理公式中的量都用基本单位替换，就得到导出单位</text>
+
+  <g class="s20-r1">
+    <rect x="60" y="120" width="290" height="50" rx="10" fill="#ffffff" stroke="#dbe6f2" stroke-width="1.8"/>
+    <text x="205" y="151" font-size="13.5" font-weight="700" fill="#334155" text-anchor="middle">速度　v = x / t</text>
+    <line class="s20-ar" x1="356" y1="145" x2="398" y2="145" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+    <rect x="410" y="120" width="230" height="50" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.8"/>
+    <text x="525" y="151" font-size="14" font-weight="900" fill="#1d4ed8" text-anchor="middle">m/s</text>
+    <text x="660" y="151" font-size="12.5" fill="#475569">米每秒</text>
+  </g>
+
+  <g class="s20-r2">
+    <rect x="60" y="186" width="290" height="50" rx="10" fill="#ffffff" stroke="#dbe6f2" stroke-width="1.8"/>
+    <text x="205" y="217" font-size="13.5" font-weight="700" fill="#334155" text-anchor="middle">加速度　a = Δv / t</text>
+    <line class="s20-ar" x1="356" y1="211" x2="398" y2="211" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+    <rect x="410" y="186" width="230" height="50" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.8"/>
+    <text x="525" y="217" font-size="14" font-weight="900" fill="#1d4ed8" text-anchor="middle">m/s²</text>
+    <text x="660" y="217" font-size="12.5" fill="#475569">米每二次方秒</text>
+  </g>
+
+  <g class="s20-r3">
+    <rect x="60" y="252" width="290" height="50" rx="10" fill="#ffffff" stroke="#dbe6f2" stroke-width="1.8"/>
+    <text x="205" y="283" font-size="13.5" font-weight="700" fill="#334155" text-anchor="middle">力　F = m a</text>
+    <line class="s20-ar" x1="356" y1="277" x2="398" y2="277" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+    <rect x="410" y="252" width="230" height="50" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.8"/>
+    <text x="525" y="283" font-size="14" font-weight="900" fill="#1d4ed8" text-anchor="middle">kg·m/s² = N</text>
+    <text x="660" y="283" font-size="12.5" fill="#475569">牛顿</text>
+  </g>
+
+  <g class="s20-r4">
+    <rect x="60" y="318" width="290" height="50" rx="10" fill="#ffffff" stroke="#dbe6f2" stroke-width="1.8"/>
+    <text x="205" y="349" font-size="13.5" font-weight="700" fill="#334155" text-anchor="middle">功　W = F x</text>
+    <line class="s20-ar" x1="356" y1="343" x2="398" y2="343" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+    <rect x="410" y="318" width="230" height="50" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.8"/>
+    <text x="525" y="349" font-size="14" font-weight="900" fill="#1d4ed8" text-anchor="middle">N·m = J</text>
+    <text x="660" y="349" font-size="12.5" fill="#475569">焦耳</text>
+  </g>
+
+  <rect x="50" y="390" width="800" height="36" rx="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+  <text x="450" y="413" font-size="12.5" font-weight="800" fill="#047857" text-anchor="middle">关键关系：1 N = 1 kg·m/s²，导出单位可整体代入运算</text>
+</g>
+
+<!-- 第三步：单位检验 -->
+<g class="s20-step s20-step3" data-zone="3">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">单位检验：等式两边单位必须相同</text>
+  <text x="450" y="106" font-size="12" fill="#64748b" text-anchor="middle">把单位当作代数式参与运算，检查每一项的单位</text>
+
+  <g class="s20-ok">
+    <rect x="50" y="122" width="390" height="292" rx="16" fill="#ffffff" stroke="#bbf7d0" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="50" y="122" width="390" height="8" rx="4" fill="#059669"/>
+    <text x="245" y="158" font-size="14.5" font-weight="800" fill="#047857" text-anchor="middle">正确：x = v₀t + ½at²</text>
+    <line x1="76" y1="174" x2="414" y2="174" stroke="#e8eef7" stroke-width="1.5"/>
+    <text x="76" y="206" font-size="12.5" fill="#334155">第一项　v₀t：m/s × s = m</text>
+    <text x="76" y="242" font-size="12.5" fill="#334155">第二项　½at²：m/s² × s² = m</text>
+    <text x="76" y="278" font-size="12.5" fill="#334155">两项单位都是 m，可以相加</text>
+    <rect x="76" y="302" width="338" height="42" rx="9" fill="#f0fdf4" stroke="#86efac" stroke-width="1.4"/>
+    <text x="245" y="329" font-size="13.5" font-weight="900" fill="#047857" text-anchor="middle">等式两边单位一致 ✓</text>
+    <text x="245" y="378" font-size="11.5" fill="#64748b" text-anchor="middle">单位一致是公式成立的</text>
+    <text x="245" y="398" font-size="11.5" fill="#64748b" text-anchor="middle">必要条件之一</text>
+  </g>
+
+  <g class="s20-bad">
+    <rect x="460" y="122" width="390" height="292" rx="16" fill="#ffffff" stroke="#fecaca" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="460" y="122" width="390" height="8" rx="4" fill="#dc2626"/>
+    <text x="655" y="158" font-size="14.5" font-weight="800" fill="#b91c1c" text-anchor="middle">错误：x = v₀t²</text>
+    <line x1="486" y1="174" x2="824" y2="174" stroke="#e8eef7" stroke-width="1.5"/>
+    <text x="486" y="206" font-size="12.5" fill="#334155">右边　v₀t²：m/s × s² = m·s</text>
+    <text x="486" y="242" font-size="12.5" fill="#334155">位移 x 的单位应是 m</text>
+    <text x="486" y="278" font-size="12.5" fill="#334155">m·s ≠ m，单位不符</text>
+    <rect x="486" y="302" width="338" height="42" rx="9" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.4"/>
+    <text x="655" y="329" font-size="13.5" font-weight="900" fill="#b91c1c" text-anchor="middle">等式两边单位不一致 ✗</text>
+    <text x="655" y="378" font-size="11.5" fill="#64748b" text-anchor="middle">不必代入数据，就能判断</text>
+    <text x="655" y="398" font-size="11.5" fill="#64748b" text-anchor="middle">这个表达式一定错误</text>
+  </g>
+
+  <rect x="50" y="430" width="800" height="38" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="454" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">单位检验能快速排除错误表达式；但单位正确只是必要条件，不是充分条件</text>
+</g>
+</svg>

@@ -1,0 +1,183 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="粒子的波动性与量子力学：德布罗意波、电子衍射、量子力学的建立">
+<style>
+[data-scene="ps-119"] .s119-step1,[data-scene="ps-119"] .s119-step2,[data-scene="ps-119"] .s119-step3{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="ps-119"].s1 .s119-step1,[data-scene="ps-119"].s2 .s119-step2,[data-scene="ps-119"].s3 .s119-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes s119fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@keyframes s119pop{0%{transform:scale(.88);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes s119draw{to{stroke-dashoffset:0}}
+@keyframes s119pulse{0%,100%{opacity:.5}50%{opacity:1}}
+@keyframes s119grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+[data-scene="ps-119"].s1 .s119-formula{transform-box:fill-box;transform-origin:center;animation:s119pop .55s ease .2s both}
+[data-scene="ps-119"].s1 .s119-wave{stroke-dasharray:380;stroke-dashoffset:380;animation:s119draw 1s ease .5s forwards}
+[data-scene="ps-119"].s1 .s119-electron{animation:s119pulse 1.8s ease-in-out infinite}
+[data-scene="ps-119"].s1 .s119-card{transform-box:fill-box;transform-origin:center;animation:s119pop .5s ease .3s both}
+[data-scene="ps-119"].s2 .s119-gun{transform-box:fill-box;transform-origin:center;animation:s119pop .5s ease .2s both}
+[data-scene="ps-119"].s2 .s119-beam{stroke-dasharray:200;stroke-dashoffset:200;animation:s119draw .8s ease .4s forwards}
+[data-scene="ps-119"].s2 .s119-ring{transform-box:fill-box;transform-origin:center;opacity:0;animation:s119pop .5s ease forwards}
+[data-scene="ps-119"].s2 .s119-r1{animation-delay:.75s}
+[data-scene="ps-119"].s2 .s119-r2{animation-delay:.9s}
+[data-scene="ps-119"].s2 .s119-r3{animation-delay:1.05s}
+[data-scene="ps-119"].s2 .s119-card{transform-box:fill-box;transform-origin:center;animation:s119pop .5s ease .3s both}
+[data-scene="ps-119"].s3 .s119-cloud{animation:s119pulse 2.2s ease-in-out infinite}
+[data-scene="ps-119"].s3 .s119-curve{stroke-dasharray:260;stroke-dashoffset:260;animation:s119draw 1s ease .35s forwards}
+[data-scene="ps-119"].s3 .s119-box{transform-box:fill-box;transform-origin:center;animation:s119pop .55s ease .8s both}
+[data-scene="ps-119"].s3 .s119-card{transform-box:fill-box;transform-origin:center;animation:s119pop .5s ease .3s both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="532" width="900" height="88" fill="url(#gBench)"/>
+<line x1="0" y1="532" x2="900" y2="532" stroke="#cbd5e1" stroke-width="2.5"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">粒子的波动性与量子力学</text>
+
+<!-- 第一步：德布罗意波 -->
+<g class="s119-step1" data-zone="1">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 1 步 · 德布罗意波：实物粒子也有波动性</text>
+
+  <g class="s119-formula">
+    <rect x="80" y="120" width="380" height="88" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="270" y="168" font-size="27" font-weight="900" fill="#1e3a8a" text-anchor="middle">λ = h / p = h / (mv)</text>
+    <text x="270" y="192" font-size="11" fill="#64748b" text-anchor="middle">德布罗意关系式</text>
+  </g>
+
+  <path class="s119-wave" d="M 100 300 q 10 -20 20 0 q 10 20 20 0 q 10 -20 20 0 q 10 20 20 0 q 10 -20 20 0 q 10 20 20 0 q 10 -20 20 0 q 10 20 20 0" fill="none" stroke="#60a5fa" stroke-width="2.5"/>
+  <circle class="s119-electron" cx="285" cy="300" r="17" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="285" y="305" font-size="13" font-weight="900" fill="#1d4ed8" text-anchor="middle">e⁻</text>
+  <line x1="306" y1="300" x2="400" y2="300" stroke="#1d4ed8" stroke-width="3" marker-end="url(#arrBlue)"/>
+  <text x="352" y="286" font-size="13" font-weight="800" fill="#1d4ed8" text-anchor="middle">v</text>
+
+  <text x="255" y="354" font-size="12" font-weight="800" fill="#334155" text-anchor="middle">运动电子：λ ≈ 10⁻¹⁰ m</text>
+  <text x="255" y="378" font-size="11.5" fill="#64748b" text-anchor="middle">波动性在微观世界才明显</text>
+
+  <g class="s119-card">
+    <rect x="500" y="110" width="340" height="336" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="670" y="142" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">德布罗意假设</text>
+    <text x="518" y="178" font-size="12" font-weight="800" fill="#334155">不仅光有波粒二象性，</text>
+    <text x="518" y="198" font-size="12" font-weight="800" fill="#334155">实物粒子也具有波动性</text>
+    <text x="518" y="226" font-size="12" fill="#475569">这种波叫物质波，</text>
+    <text x="518" y="246" font-size="12" fill="#475569">也叫德布罗意波</text>
+    <line x1="518" y1="264" x2="822" y2="264" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="518" y="292" font-size="13" font-weight="900" fill="#1e3a8a">λ = h / p</text>
+    <text x="518" y="316" font-size="11.5" fill="#334155">p = mv 是粒子的动量</text>
+    <text x="518" y="340" font-size="11.5" fill="#334155">动量越大，波长越短</text>
+    <line x1="518" y1="358" x2="822" y2="358" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="518" y="386" font-size="11.5" fill="#334155">宏观物体波长小到无法观测</text>
+    <text x="670" y="414" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">电子衍射证实了物质波</text>
+    <text x="670" y="436" font-size="11" fill="#64748b" text-anchor="middle">h ≈ 6.63×10⁻³⁴ J·s</text>
+  </g>
+
+  <rect x="70" y="470" width="760" height="38" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="494" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">一切实物粒子都具有波粒二象性</text>
+</g>
+
+<!-- 第二步：电子衍射 -->
+<g class="s119-step2" data-zone="2">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 2 步 · 电子衍射实验证实物质波</text>
+
+  <g class="s119-gun">
+    <rect x="58" y="246" width="92" height="68" rx="12" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+    <text x="104" y="287" font-size="12" font-weight="800" fill="#4338ca" text-anchor="middle">电子枪</text>
+  </g>
+  <line class="s119-beam" x1="150" y1="280" x2="308" y2="280" stroke="#3b82f6" stroke-width="3" marker-end="url(#arrBlue)"/>
+  <text x="228" y="266" font-size="11.5" fill="#1d4ed8" text-anchor="middle">电子束</text>
+
+  <rect x="310" y="158" width="16" height="244" rx="4" fill="#c7d2fe" stroke="#4f46e5" stroke-width="2"/>
+  <line x1="318" y1="168" x2="318" y2="392" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <text x="318" y="420" font-size="11.5" font-weight="800" fill="#4338ca" text-anchor="middle">晶体薄膜</text>
+
+  <line x1="326" y1="280" x2="428" y2="218" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <line x1="326" y1="280" x2="428" y2="342" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrBlue)"/>
+
+  <rect x="430" y="140" width="120" height="280" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <circle class="s119-ring s119-r1" cx="490" cy="280" r="18" fill="none" stroke="#e2e8f0" stroke-width="2.5"/>
+  <circle class="s119-ring s119-r2" cx="490" cy="280" r="34" fill="none" stroke="#93c5fd" stroke-width="2.5"/>
+  <circle class="s119-ring s119-r3" cx="490" cy="280" r="50" fill="none" stroke="#60a5fa" stroke-width="2.5"/>
+  <circle cx="490" cy="280" r="7" fill="#fbbf24"/>
+  <text x="490" y="440" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">荧光屏：明暗相间的衍射环</text>
+
+  <g class="s119-card">
+    <rect x="580" y="110" width="260" height="336" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="710" y="142" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">实验证实</text>
+    <text x="598" y="176" font-size="12" fill="#334155">电子束穿过晶体薄膜后，</text>
+    <text x="598" y="196" font-size="12" fill="#334155">在屏上形成明暗相间的环</text>
+    <line x1="598" y1="216" x2="822" y2="216" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="598" y="244" font-size="12" font-weight="800" fill="#047857">衍射是波的特征</text>
+    <text x="598" y="268" font-size="12" fill="#334155">电子具有波动性</text>
+    <text x="598" y="292" font-size="11.5" fill="#475569">物质波不是假说</text>
+    <line x1="598" y1="310" x2="822" y2="310" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="598" y="338" font-size="11.5" fill="#334155">质子、中子、原子、分子</text>
+    <text x="598" y="360" font-size="11.5" fill="#334155">也都能发生衍射</text>
+    <text x="710" y="392" font-size="11.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">微观粒子普遍具有波动性</text>
+    <text x="710" y="418" font-size="11" fill="#64748b" text-anchor="middle">衍射环间距与波长有关</text>
+  </g>
+
+  <rect x="70" y="470" width="760" height="38" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="494" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">电子衍射给出了物质波存在的直接证据</text>
+</g>
+
+<!-- 第三步：量子力学 -->
+<g class="s119-step3" data-zone="3">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 3 步 · 量子力学：用概率描述微观粒子</text>
+
+  <g class="s119-cloud">
+    <circle cx="210" cy="250" r="96" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5" stroke-dasharray="5 6"/>
+    <circle cx="210" cy="250" r="5" fill="#dc2626"/>
+    <g fill="#3b82f6">
+      <circle cx="160" cy="200" r="2.5" opacity=".7"/><circle cx="182" cy="180" r="2" opacity=".55"/>
+      <circle cx="210" cy="170" r="2.5" opacity=".7"/><circle cx="240" cy="180" r="2" opacity=".6"/>
+      <circle cx="262" cy="200" r="3" opacity=".75"/><circle cx="272" cy="232" r="2" opacity=".55"/>
+      <circle cx="266" cy="262" r="2.5" opacity=".7"/><circle cx="250" cy="288" r="2" opacity=".5"/>
+      <circle cx="224" cy="302" r="2.5" opacity=".65"/><circle cx="194" cy="306" r="2" opacity=".55"/>
+      <circle cx="168" cy="290" r="2.5" opacity=".7"/><circle cx="148" cy="264" r="2" opacity=".5"/>
+      <circle cx="144" cy="236" r="2.5" opacity=".7"/><circle cx="156" cy="212" r="2" opacity=".6"/>
+      <circle cx="186" cy="220" r="2" opacity=".55"/><circle cx="206" cy="210" r="2.5" opacity=".7"/>
+      <circle cx="232" cy="216" r="2" opacity=".55"/><circle cx="246" cy="236" r="2.5" opacity=".7"/>
+      <circle cx="240" cy="256" r="2" opacity=".55"/><circle cx="224" cy="272" r="2.5" opacity=".7"/>
+      <circle cx="200" cy="276" r="2" opacity=".55"/><circle cx="180" cy="260" r="2.5" opacity=".7"/>
+      <circle cx="174" cy="240" r="2" opacity=".6"/><circle cx="130" cy="250" r="2.5" opacity=".55"/>
+      <circle cx="142" cy="282" r="2" opacity=".5"/><circle cx="166" cy="312" r="2.5" opacity=".6"/>
+      <circle cx="202" cy="330" r="2" opacity=".5"/><circle cx="240" cy="324" r="2.5" opacity=".6"/>
+      <circle cx="272" cy="300" r="2" opacity=".55"/><circle cx="288" cy="270" r="2.5" opacity=".65"/>
+      <circle cx="290" cy="238" r="2" opacity=".5"/><circle cx="282" cy="208" r="2.5" opacity=".6"/>
+      <circle cx="256" cy="188" r="2" opacity=".5"/><circle cx="226" cy="174" r="2.5" opacity=".65"/>
+      <circle cx="196" cy="164" r="2" opacity=".5"/><circle cx="166" cy="170" r="2.5" opacity=".6"/>
+    </g>
+  </g>
+  <text x="210" y="372" font-size="12" font-weight="800" fill="#1d4ed8" text-anchor="middle">电子云：|ψ|² 的分布</text>
+  <text x="210" y="394" font-size="11.5" fill="#64748b" text-anchor="middle">只能预言粒子在某处出现的概率</text>
+
+  <line x1="340" y1="330" x2="540" y2="330" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <line x1="340" y1="330" x2="340" y2="160" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <path class="s119-curve" d="M 346 330 C 386 330 396 188 440 188 C 484 188 494 330 534 330" fill="none" stroke="#1d4ed8" stroke-width="3"/>
+  <line x1="440" y1="188" x2="440" y2="330" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="332" y="174" font-size="12" font-weight="800" fill="#475569" text-anchor="end">|ψ|²</text>
+  <text x="548" y="334" font-size="12" font-weight="800" fill="#475569">x</text>
+  <text x="440" y="354" font-size="11" fill="#64748b" text-anchor="middle">概率密度最大处</text>
+
+  <g class="s119-box">
+    <rect x="340" y="382" width="210" height="56" rx="10" fill="#fffbeb" stroke="#fcd34d" stroke-width="1.5"/>
+    <text x="445" y="416" font-size="17" font-weight="900" fill="#92400e" text-anchor="middle">Δx·Δp ≥ h/(4π)</text>
+  </g>
+
+  <g class="s119-card">
+    <rect x="580" y="110" width="270" height="336" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="715" y="142" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">量子力学的建立</text>
+    <text x="598" y="176" font-size="12" fill="#334155">1925 年 海森堡</text>
+    <text x="598" y="198" font-size="11.5" font-weight="800" fill="#475569">建立矩阵力学</text>
+    <text x="598" y="228" font-size="12" fill="#334155">1926 年 薛定谔</text>
+    <text x="598" y="250" font-size="11.5" font-weight="800" fill="#475569">建立波动方程</text>
+    <line x1="598" y1="270" x2="832" y2="270" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="598" y="298" font-size="11.5" fill="#334155">用波函数 ψ 描述状态</text>
+    <text x="598" y="320" font-size="11.5" fill="#334155">|ψ|² 表示出现的概率</text>
+    <line x1="598" y1="338" x2="832" y2="338" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="598" y="366" font-size="11.5" fill="#334155">不能同时精确确定</text>
+    <text x="598" y="386" font-size="11.5" fill="#334155">位置和动量</text>
+    <text x="715" y="414" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">不确定性关系</text>
+    <text x="715" y="436" font-size="11" fill="#64748b" text-anchor="middle">微观粒子服从统计规律</text>
+  </g>
+
+  <rect x="70" y="470" width="760" height="38" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="494" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">微观粒子具有波粒二象性，运动用概率和统计规律描述</text>
+</g>
+</svg>

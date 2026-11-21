@@ -1,0 +1,194 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="牛顿运动定律的应用：两类基本问题、受力分析与运动分析步骤、连接体整体法与隔离法">
+<style>
+[data-scene="ps-21"] .s21-step{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="ps-21"].s1 .s21-step1,[data-scene="ps-21"].s2 .s21-step2,[data-scene="ps-21"].s3 .s21-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes s21pop{0%{transform:scale(.86);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes s21grow{from{opacity:0}to{opacity:1}}
+@keyframes s21rise{from{transform:translateY(10px);opacity:0}to{transform:none;opacity:1}}
+@keyframes s21draw{to{stroke-dashoffset:0}}
+@keyframes s21pulse{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes s21flow{to{stroke-dashoffset:-26}}
+[data-scene="ps-21"].s1 .s21-node{transform-box:fill-box;transform-origin:center;animation:s21pop .5s ease both}
+[data-scene="ps-21"].s1 .s21-n1{animation-delay:.05s}
+[data-scene="ps-21"].s1 .s21-n2{animation-delay:.2s}
+[data-scene="ps-21"].s1 .s21-n3{animation-delay:.35s}
+[data-scene="ps-21"].s1 .s21-link{stroke-dasharray:110;stroke-dashoffset:110;animation:s21draw .8s ease .4s both}
+[data-scene="ps-21"].s2 .s21-card{transform-box:fill-box;transform-origin:center;animation:s21rise .45s ease both}
+[data-scene="ps-21"].s2 .s21-c1{animation-delay:.05s}
+[data-scene="ps-21"].s2 .s21-c2{animation-delay:.15s}
+[data-scene="ps-21"].s2 .s21-c3{animation-delay:.25s}
+[data-scene="ps-21"].s2 .s21-c4{animation-delay:.35s}
+[data-scene="ps-21"].s2 .s21-c5{animation-delay:.45s}
+[data-scene="ps-21"].s2 .s21-chev{animation:s21pulse 1.4s ease-in-out infinite}
+[data-scene="ps-21"].s3 .s21-block{transform-box:fill-box;transform-origin:center;animation:s21pop .5s ease both}
+[data-scene="ps-21"].s3 .s21-whole{stroke-dasharray:9 7;animation:s21flow 1.6s linear infinite}
+[data-scene="ps-21"].s3 .s21-eq{animation:s21rise .5s ease .3s both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">牛顿运动定律的应用：两根线、一座桥</text>
+
+<!-- 第一步：两类问题 -->
+<g class="s21-step s21-step1" data-zone="1">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">两类问题：桥梁都是加速度 a</text>
+
+  <text x="152" y="136" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">第一类</text>
+  <text x="747" y="136" font-size="12" font-weight="800" fill="#047857" text-anchor="middle">第二类</text>
+
+  <g class="s21-node s21-n1">
+    <rect x="50" y="150" width="205" height="150" rx="14" fill="#ffffff" stroke="#fecaca" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="152" y="190" font-size="16" font-weight="900" fill="#b91c1c" text-anchor="middle">受力情况</text>
+    <text x="152" y="218" font-size="12" fill="#475569" text-anchor="middle">已知：F、m</text>
+    <text x="152" y="244" font-size="12" fill="#475569" text-anchor="middle">求：a → v、x、t</text>
+    <text x="152" y="272" font-size="11.5" fill="#64748b" text-anchor="middle">由受力求运动</text>
+  </g>
+
+  <g class="s21-node s21-n2">
+    <rect x="350" y="150" width="200" height="150" rx="14" fill="#e8effc" stroke="#bfdbfe" stroke-width="2"/>
+    <text x="450" y="194" font-size="16" font-weight="900" fill="#1e3a8a" text-anchor="middle">加速度 a</text>
+    <text x="450" y="226" font-size="14" font-weight="800" fill="#1d4ed8" text-anchor="middle">F合 = ma</text>
+    <text x="450" y="254" font-size="11.5" fill="#475569" text-anchor="middle">联系力与运动</text>
+    <text x="450" y="278" font-size="11.5" fill="#475569" text-anchor="middle">两类问题的桥梁</text>
+  </g>
+
+  <g class="s21-node s21-n3">
+    <rect x="645" y="150" width="205" height="150" rx="14" fill="#ffffff" stroke="#bbf7d0" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="747" y="190" font-size="16" font-weight="900" fill="#047857" text-anchor="middle">运动情况</text>
+    <text x="747" y="218" font-size="12" fill="#475569" text-anchor="middle">已知：v₀、v、x、t</text>
+    <text x="747" y="244" font-size="12" fill="#475569" text-anchor="middle">求：a → F合</text>
+    <text x="747" y="272" font-size="11.5" fill="#64748b" text-anchor="middle">由运动求受力</text>
+  </g>
+
+  <line class="s21-link" x1="258" y1="192" x2="346" y2="192" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrRed)"/>
+  <text x="302" y="182" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">F合 = ma</text>
+  <line class="s21-link" x1="554" y1="192" x2="642" y2="192" stroke="#059669" stroke-width="3.5" marker-end="url(#arrGreen)"/>
+  <text x="598" y="182" font-size="11.5" font-weight="800" fill="#047857" text-anchor="middle">运动学公式</text>
+
+  <line class="s21-link" x1="642" y1="260" x2="554" y2="260" stroke="#059669" stroke-width="3.5" marker-end="url(#arrGreen)"/>
+  <text x="598" y="282" font-size="11.5" font-weight="800" fill="#047857" text-anchor="middle">a = Δv / Δt</text>
+  <line class="s21-link" x1="346" y1="260" x2="258" y2="260" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrRed)"/>
+  <text x="302" y="282" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">F合 = ma</text>
+
+  <rect x="50" y="330" width="800" height="72" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="450" y="360" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">第一类：受力 → a → 运动　　第二类：运动 → a → 受力</text>
+  <text x="450" y="388" font-size="12" fill="#64748b" text-anchor="middle">无论哪一类，都先求加速度 a，再用 F合 = ma 或运动学公式衔接</text>
+
+  <rect x="50" y="426" width="800" height="34" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="448" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">加速度 a 是连接受力情况与运动情况的桥梁</text>
+</g>
+
+<!-- 第二步：解题步骤 -->
+<g class="s21-step s21-step2" data-zone="2">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">解题步骤：先求 a，再串起力与运动</text>
+
+  <g class="s21-card s21-c1">
+    <rect x="50" y="140" width="150" height="210" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <circle cx="125" cy="182" r="20" fill="#e8effc" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="125" y="189" font-size="18" font-weight="900" fill="#1d4ed8" text-anchor="middle">1</text>
+    <text x="125" y="230" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">选对象</text>
+    <text x="125" y="260" font-size="11.5" fill="#475569" text-anchor="middle">单个物体</text>
+    <text x="125" y="284" font-size="11.5" fill="#475569" text-anchor="middle">或整体</text>
+    <text x="125" y="316" font-size="11" fill="#64748b" text-anchor="middle">明确研究谁</text>
+  </g>
+
+  <g class="s21-card s21-c2">
+    <rect x="212" y="140" width="150" height="210" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <circle cx="287" cy="182" r="20" fill="#e8effc" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="287" y="189" font-size="18" font-weight="900" fill="#1d4ed8" text-anchor="middle">2</text>
+    <text x="287" y="230" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">受力分析</text>
+    <text x="287" y="260" font-size="11.5" fill="#475569" text-anchor="middle">重力、弹力</text>
+    <text x="287" y="284" font-size="11.5" fill="#475569" text-anchor="middle">摩擦力</text>
+    <text x="287" y="316" font-size="11" fill="#64748b" text-anchor="middle">画示意图</text>
+  </g>
+
+  <g class="s21-card s21-c3">
+    <rect x="374" y="140" width="150" height="210" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <circle cx="449" cy="182" r="20" fill="#e8effc" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="449" y="189" font-size="18" font-weight="900" fill="#1d4ed8" text-anchor="middle">3</text>
+    <text x="449" y="230" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">建坐标系</text>
+    <text x="449" y="260" font-size="11.5" fill="#475569" text-anchor="middle">正交分解</text>
+    <text x="449" y="284" font-size="11.5" fill="#475569" text-anchor="middle">求合力</text>
+    <text x="449" y="316" font-size="11" fill="#64748b" text-anchor="middle">规定正方向</text>
+  </g>
+
+  <g class="s21-card s21-c4">
+    <rect x="536" y="140" width="150" height="210" rx="14" fill="#ffffff" stroke="#c7d7f5" stroke-width="2" filter="url(#softShadow)"/>
+    <circle cx="611" cy="182" r="20" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="611" y="189" font-size="18" font-weight="900" fill="#1d4ed8" text-anchor="middle">4</text>
+    <text x="611" y="230" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">求加速度</text>
+    <text x="611" y="260" font-size="12" font-weight="800" fill="#1d4ed8" text-anchor="middle">F合 = ma</text>
+    <text x="611" y="284" font-size="11.5" fill="#475569" text-anchor="middle">a = F合 / m</text>
+    <text x="611" y="316" font-size="11" fill="#64748b" text-anchor="middle">核心一步</text>
+  </g>
+
+  <g class="s21-card s21-c5">
+    <rect x="698" y="140" width="150" height="210" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <circle cx="773" cy="182" r="20" fill="#e8effc" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="773" y="189" font-size="18" font-weight="900" fill="#1d4ed8" text-anchor="middle">5</text>
+    <text x="773" y="230" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">运动学公式</text>
+    <text x="773" y="260" font-size="11.5" fill="#475569" text-anchor="middle">v、x、t</text>
+    <text x="773" y="284" font-size="11.5" fill="#475569" text-anchor="middle">联立求解</text>
+    <text x="773" y="316" font-size="11" fill="#64748b" text-anchor="middle">回到运动</text>
+  </g>
+
+  <path d="M204 238 L214 247 L204 256" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
+  <path d="M366 238 L376 247 L366 256" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
+  <path d="M528 238 L538 247 L528 256" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
+  <path d="M690 238 L700 247 L690 256" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
+
+  <rect x="50" y="376" width="800" height="70" rx="14" fill="#e8effc" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="450" y="404" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">受力情况 → 合力 → 加速度 a → 运动情况</text>
+  <text x="450" y="430" font-size="12" fill="#475569" text-anchor="middle">核心一步：用 F合 = ma 求 a，其余量由运动学公式补齐</text>
+</g>
+
+<!-- 第三步：连接体 -->
+<g class="s21-step s21-step3" data-zone="3">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">连接体：整体法求 a，隔离法求内力</text>
+
+  <line x1="60" y1="430" x2="620" y2="430" stroke="#94a3b8" stroke-width="4"/>
+
+  <g class="s21-block">
+    <rect x="150" y="350" width="110" height="80" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+    <text x="205" y="400" font-size="17" font-weight="900" fill="#334155" text-anchor="middle">m₁</text>
+  </g>
+  <g class="s21-block">
+    <rect x="330" y="350" width="110" height="80" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+    <text x="385" y="400" font-size="17" font-weight="900" fill="#334155" text-anchor="middle">m₂</text>
+  </g>
+  <line x1="260" y1="390" x2="330" y2="390" stroke="#475569" stroke-width="3"/>
+
+  <line x1="440" y1="390" x2="598" y2="390" stroke="#dc2626" stroke-width="4" marker-end="url(#arrRed)"/>
+  <text x="610" y="396" font-size="15" font-weight="900" fill="#b91c1c">F</text>
+
+  <line x1="330" y1="368" x2="292" y2="368" stroke="#059669" stroke-width="3.5" marker-end="url(#arrGreen)"/>
+  <text x="282" y="373" font-size="13" font-weight="900" fill="#047857" text-anchor="end">T</text>
+  <line x1="260" y1="412" x2="300" y2="412" stroke="#059669" stroke-width="3.5" marker-end="url(#arrGreen)"/>
+  <text x="310" y="417" font-size="13" font-weight="900" fill="#047857">T</text>
+
+  <rect class="s21-whole" x="130" y="326" width="330" height="112" rx="12" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="295" y="316" font-size="12" font-weight="800" fill="#1d4ed8" text-anchor="middle">整体：m₁ + m₂</text>
+  <rect class="s21-whole" x="310" y="326" width="150" height="112" rx="12" fill="none" stroke="#059669" stroke-width="2"/>
+  <text x="385" y="316" font-size="12" font-weight="800" fill="#047857" text-anchor="middle">隔离 m₂</text>
+
+  <g class="s21-eq">
+    <rect x="640" y="130" width="210" height="268" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="745" y="160" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">方程</text>
+    <line x1="660" y1="174" x2="830" y2="174" stroke="#e8eef7" stroke-width="1.5"/>
+    <text x="660" y="202" font-size="12" font-weight="800" fill="#1d4ed8">整体法</text>
+    <text x="745" y="232" font-size="15" font-weight="900" fill="#1e3a8a" text-anchor="middle">F = (m₁+m₂)a</text>
+    <line x1="660" y1="250" x2="830" y2="250" stroke="#e8eef7" stroke-width="1.5"/>
+    <text x="660" y="278" font-size="12" font-weight="800" fill="#047857">隔离 m₂</text>
+    <text x="745" y="308" font-size="15" font-weight="900" fill="#047857" text-anchor="middle">T = m₂a</text>
+    <line x1="660" y1="326" x2="830" y2="326" stroke="#e8eef7" stroke-width="1.5"/>
+    <text x="745" y="352" font-size="11.5" fill="#475569" text-anchor="middle">a = F / (m₁+m₂)</text>
+    <text x="745" y="376" font-size="11.5" fill="#475569" text-anchor="middle">T = m₂F / (m₁+m₂)</text>
+  </g>
+
+  <rect x="50" y="452" width="800" height="34" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="474" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">求加速度用整体法；求物体间的相互作用力用隔离法（以光滑水平面为例）</text>
+</g>
+</svg>

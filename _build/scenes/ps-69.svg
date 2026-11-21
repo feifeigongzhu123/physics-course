@@ -1,0 +1,200 @@
+<svg class="s69-root" viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="简谐运动的回复力和能量：F等于负kx、特殊位置的速度与加速度、动能势能转化">
+<style>
+[data-scene="ps-69"] .s69-s1,[data-scene="ps-69"] .s69-s2,[data-scene="ps-69"] .s69-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility 0s linear .45s}
+[data-scene="ps-69"].s1 .s69-s1,[data-scene="ps-69"].s2 .s69-s2,[data-scene="ps-69"].s3 .s69-s3{opacity:1;visibility:visible;transition:opacity .45s ease,visibility 0s}
+@keyframes s69fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes s69pop{0%{transform:scale(.86);opacity:0}70%{transform:scale(1.05);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s69draw{to{stroke-dashoffset:0}}
+@keyframes s69grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes s69pulse{0%,100%{opacity:.5}50%{opacity:1}}
+[data-scene="ps-69"].s1 .s69-arr{stroke-dasharray:110;stroke-dashoffset:110;animation:s69draw .6s ease .4s forwards}
+[data-scene="ps-69"].s1 .s69-arr2{stroke-dasharray:110;stroke-dashoffset:110;animation:s69draw .6s ease .55s forwards}
+[data-scene="ps-69"].s1 .s69-pop{transform-box:fill-box;transform-origin:center;animation:s69pop .5s ease .25s both}
+[data-scene="ps-69"].s1 .s69-f{animation:s69pulse 1.8s ease-in-out infinite}
+[data-scene="ps-69"].s2 .s69-snap{transform-box:fill-box;transform-origin:center;animation:s69pop .5s ease both}
+[data-scene="ps-69"].s2 .s69-snap2{animation-delay:.25s}
+[data-scene="ps-69"].s2 .s69-arr{stroke-dasharray:110;stroke-dashoffset:110;animation:s69draw .6s ease .3s forwards}
+[data-scene="ps-69"].s2 .s69-v{animation:s69pulse 1.5s ease-in-out infinite}
+[data-scene="ps-69"].s2 .s69-box{transform-box:fill-box;transform-origin:center;animation:s69pop .45s ease both}
+[data-scene="ps-69"].s2 .s69-box2{animation-delay:.15s}
+[data-scene="ps-69"].s3 .s69-bar{transform-box:fill-box;transform-origin:center bottom;animation:s69grow .65s ease both}
+[data-scene="ps-69"].s3 .s69-b2{animation-delay:.08s}
+[data-scene="ps-69"].s3 .s69-b3{animation-delay:.16s}
+[data-scene="ps-69"].s3 .s69-b4{animation-delay:.24s}
+[data-scene="ps-69"].s3 .s69-b5{animation-delay:.32s}
+[data-scene="ps-69"].s3 .s69-b6{animation-delay:.4s}
+[data-scene="ps-69"].s3 .s69-card{transform-box:fill-box;transform-origin:center;animation:s69pop .45s ease both}
+[data-scene="ps-69"].s3 .s69-c2{animation-delay:.15s}
+[data-scene="ps-69"].s3 .s69-c3{animation-delay:.3s}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">简谐运动的回复力和能量：F = −kx 与能量转化</text>
+
+<!-- 第一步：回复力 -->
+<g class="s69-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">回复力：大小与位移成正比，方向总指向平衡位置</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="56" y="132" font-size="13.5" font-weight="800" fill="#1e3a8a">弹簧振子的回复力</text>
+
+  <rect x="70" y="180" width="16" height="160" fill="#cbd5e1"/>
+  <path d="M86 260 L100 238 L114 282 L128 238 L142 282 L156 238 L170 282 L184 238 L198 282 L212 238 L226 260"
+    fill="none" stroke="#64748b" stroke-width="3" stroke-linejoin="round"/>
+  <g class="s69-pop">
+    <rect x="226" y="228" width="64" height="64" rx="9" fill="#f59e0b" stroke="#b45309" stroke-width="2.5"/>
+    <text x="258" y="266" font-size="16" font-weight="900" fill="#7c2d12" text-anchor="middle">m</text>
+  </g>
+
+  <line x1="258" y1="154" x2="258" y2="344" stroke="#1d4ed8" stroke-width="1.8" stroke-dasharray="7 7"/>
+  <text x="258" y="364" font-size="12" font-weight="800" fill="#1e40af" text-anchor="middle">O</text>
+
+  <line class="s69-arr" x1="258" y1="190" x2="340" y2="190" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrRed)"/>
+  <text x="314" y="178" font-size="13" font-weight="800" fill="#b91c1c" text-anchor="middle">x</text>
+  <line class="s69-arr2" x1="300" y1="260" x2="236" y2="260" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrBlue)"/>
+  <text class="s69-f" x="270" y="288" font-size="12.5" font-weight="900" fill="#6d28d9" text-anchor="middle">F</text>
+
+  <text x="296" y="330" font-size="12" font-weight="700" fill="#6d28d9" text-anchor="middle">F 与 x 方向相反，总是指向 O</text>
+
+  <rect class="s69-pop" x="56" y="370" width="480" height="52" rx="12" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1.5"/>
+  <text x="296" y="404" font-size="17" font-weight="900" fill="#6d28d9" text-anchor="middle">F = −kx</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="720" y="132" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">回复力的特点</text>
+
+  <circle cx="606" cy="176" r="11" fill="#ede9fe"/>
+  <text x="606" y="180" font-size="11" font-weight="900" fill="#6d28d9" text-anchor="middle">1</text>
+  <text x="628" y="180" font-size="12" font-weight="700" fill="#334155">是一种效果力</text>
+
+  <circle cx="606" cy="222" r="11" fill="#ede9fe"/>
+  <text x="606" y="226" font-size="11" font-weight="900" fill="#6d28d9" text-anchor="middle">2</text>
+  <text x="628" y="226" font-size="12" font-weight="700" fill="#334155">可由重力、弹力、摩擦力提供</text>
+
+  <circle cx="606" cy="268" r="11" fill="#ede9fe"/>
+  <text x="606" y="272" font-size="11" font-weight="900" fill="#6d28d9" text-anchor="middle">3</text>
+  <text x="628" y="272" font-size="12" font-weight="700" fill="#334155">也可以是几个力的合力</text>
+
+  <circle cx="606" cy="314" r="11" fill="#ede9fe"/>
+  <text x="606" y="318" font-size="11" font-weight="900" fill="#6d28d9" text-anchor="middle">4</text>
+  <text x="628" y="318" font-size="12" font-weight="700" fill="#334155">平衡位置处 F = 0</text>
+
+  <rect x="596" y="346" width="248" height="70" rx="12" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1.5"/>
+  <text x="720" y="372" font-size="11.5" font-weight="800" fill="#6d28d9" text-anchor="middle">负号只表示方向</text>
+  <text x="720" y="396" font-size="11.5" fill="#5b21b6" text-anchor="middle">不要把它当成新的性质力</text>
+
+  <rect x="36" y="446" width="828" height="44" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="474" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">简谐运动的判据：回复力满足 F = −kx，即与位移成正比、方向相反</text>
+</g>
+
+<!-- 第二步：平衡位置速度最大 -->
+<g class="s69-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">平衡位置速度最大，最大位移处加速度最大</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="56" y="132" font-size="13.5" font-weight="800" fill="#1e3a8a">两个特殊位置</text>
+
+  <g class="s69-snap">
+    <text x="56" y="170" font-size="12.5" font-weight="800" fill="#047857">平衡位置 O</text>
+    <line x1="70" y1="240" x2="510" y2="240" stroke="#94a3b8" stroke-width="3"/>
+    <line x1="290" y1="186" x2="290" y2="276" stroke="#1d4ed8" stroke-width="1.8" stroke-dasharray="6 6"/>
+    <rect x="258" y="208" width="64" height="64" rx="9" fill="#f59e0b" stroke="#b45309" stroke-width="2.5"/>
+    <text x="290" y="246" font-size="16" font-weight="900" fill="#7c2d12" text-anchor="middle">m</text>
+    <line class="s69-v" x1="322" y1="240" x2="404" y2="240" stroke="#059669" stroke-width="4" marker-end="url(#arrGreen)"/>
+    <text x="436" y="234" font-size="12.5" font-weight="800" fill="#047857">v 最大</text>
+    <text x="290" y="204" font-size="11.5" font-weight="800" fill="#047857" text-anchor="middle">F = 0，a = 0</text>
+  </g>
+
+  <g class="s69-snap s69-snap2">
+    <text x="56" y="306" font-size="12.5" font-weight="800" fill="#b91c1c">最大位移处</text>
+    <line x1="70" y1="374" x2="510" y2="374" stroke="#94a3b8" stroke-width="3"/>
+    <line x1="230" y1="320" x2="230" y2="410" stroke="#1d4ed8" stroke-width="1.8" stroke-dasharray="6 6"/>
+    <text x="230" y="326" font-size="11.5" font-weight="800" fill="#1e40af" text-anchor="middle">O</text>
+    <rect x="380" y="342" width="64" height="64" rx="9" fill="#f59e0b" stroke="#b45309" stroke-width="2.5"/>
+    <text x="412" y="380" font-size="16" font-weight="900" fill="#7c2d12" text-anchor="middle">m</text>
+    <line class="s69-arr" x1="444" y1="374" x2="360" y2="374" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrBlue)"/>
+    <text x="356" y="356" font-size="12" font-weight="800" fill="#6d28d9" text-anchor="end">F 最大</text>
+    <text x="470" y="336" font-size="12" font-weight="800" fill="#b91c1c">v = 0</text>
+    <text x="306" y="414" font-size="11.5" font-weight="800" fill="#1e40af" text-anchor="middle">x = A</text>
+  </g>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="720" y="132" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">位移、力、加速度、速度</text>
+
+  <g class="s69-box">
+    <rect x="596" y="148" width="248" height="94" rx="12" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.8"/>
+    <text x="720" y="176" font-size="12.5" font-weight="800" fill="#166534" text-anchor="middle">平衡位置 O</text>
+    <text x="720" y="202" font-size="12" fill="#334155" text-anchor="middle">x = 0，F = 0，a = 0</text>
+    <text x="720" y="226" font-size="12" font-weight="800" fill="#166534" text-anchor="middle">速度 v 最大</text>
+  </g>
+
+  <g class="s69-box s69-box2">
+    <rect x="596" y="256" width="248" height="94" rx="12" fill="#fef2f2" stroke="#fecaca" stroke-width="1.8"/>
+    <text x="720" y="284" font-size="12.5" font-weight="800" fill="#b91c1c" text-anchor="middle">最大位移处</text>
+    <text x="720" y="310" font-size="12" fill="#334155" text-anchor="middle">|x| = A，F、a 都最大</text>
+    <text x="720" y="334" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">速度 v = 0</text>
+  </g>
+
+  <text x="720" y="384" font-size="11.5" fill="#475569" text-anchor="middle">加速度与速度的变化步调</text>
+  <text x="720" y="406" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">并不一致，这是重要特点</text>
+
+  <rect x="36" y="446" width="828" height="44" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="474" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">经过平衡位置时速度最大，到达最大位移处时速度为零、加速度最大</text>
+</g>
+
+<!-- 第三步：能量转化 -->
+<g class="s69-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">动能与势能相互转化，机械能守恒</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="56" y="132" font-size="13.5" font-weight="800" fill="#1e3a8a">能量随位置变化</text>
+
+  <rect x="56" y="144" width="14" height="14" rx="3" fill="#f59e0b"/>
+  <text x="78" y="156" font-size="11.5" font-weight="700" fill="#92400e">动能 Ek</text>
+  <rect x="150" y="144" width="14" height="14" rx="3" fill="#60a5fa"/>
+  <text x="172" y="156" font-size="11.5" font-weight="700" fill="#1e40af">势能 Ep</text>
+
+  <line x1="70" y1="392" x2="520" y2="392" stroke="#94a3b8" stroke-width="2.5"/>
+
+  <rect class="s69-bar" x="104" y="222" width="36" height="170" rx="5" fill="#f59e0b"/>
+  <rect class="s69-bar s69-b2" x="146" y="362" width="36" height="30" rx="5" fill="#60a5fa"/>
+  <text x="143" y="414" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">平衡位置</text>
+
+  <rect class="s69-bar s69-b3" x="254" y="292" width="36" height="100" rx="5" fill="#f59e0b"/>
+  <rect class="s69-bar s69-b4" x="296" y="292" width="36" height="100" rx="5" fill="#60a5fa"/>
+  <text x="293" y="414" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">中间位置</text>
+
+  <rect class="s69-bar s69-b5" x="404" y="372" width="36" height="20" rx="5" fill="#f59e0b"/>
+  <rect class="s69-bar s69-b6" x="446" y="222" width="36" height="170" rx="5" fill="#60a5fa"/>
+  <text x="443" y="414" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">最大位移</text>
+
+  <text x="143" y="218" font-size="11" font-weight="800" fill="#92400e" text-anchor="middle">Ek 最大</text>
+  <text x="170" y="352" font-size="11" fill="#1e40af" text-anchor="middle">Ep 最小</text>
+  <text x="422" y="368" font-size="11" fill="#92400e" text-anchor="middle">Ek 为 0</text>
+  <text x="470" y="218" font-size="11" font-weight="800" fill="#1e40af" text-anchor="middle">Ep 最大</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="720" y="132" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">能量转化与守恒</text>
+
+  <rect class="s69-card" x="596" y="148" width="248" height="54" rx="11" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="720" y="182" font-size="16" font-weight="900" fill="#1e3a8a" text-anchor="middle">E = Ek + Ep</text>
+
+  <text x="606" y="232" font-size="12" fill="#334155">• 平衡位置：Ek 最大，Ep 最小</text>
+  <text x="606" y="262" font-size="12" fill="#334155">• 最大位移：Ep 最大，Ek 为 0</text>
+  <text x="606" y="292" font-size="12" fill="#334155">• 振幅越大，总机械能越大</text>
+  <text x="606" y="322" font-size="12" fill="#334155">• 理想弹簧振子机械能守恒</text>
+
+  <g class="s69-card s69-c2">
+    <rect x="596" y="340" width="248" height="76" rx="11" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+    <text x="720" y="364" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">实际振动有阻力</text>
+    <text x="720" y="386" font-size="11.5" fill="#92400e" text-anchor="middle">机械能逐渐减少，振幅变小</text>
+    <text x="720" y="406" font-size="11" fill="#92400e" text-anchor="middle">最终停下来，叫阻尼振动</text>
+  </g>
+
+  <rect x="36" y="446" width="828" height="44" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="474" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">Ek 与 Ep 此消彼长，但理想情况下总机械能 E 保持不变</text>
+</g>
+</svg>

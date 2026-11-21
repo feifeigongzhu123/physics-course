@@ -1,0 +1,195 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="电磁场与电磁波：变化的电场产生磁场、变化的磁场产生电场、电磁波传播">
+<style>
+[data-scene="ps-97"] .s97-s1,[data-scene="ps-97"] .s97-s2,[data-scene="ps-97"] .s97-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="ps-97"].s1 .s97-s1,[data-scene="ps-97"].s2 .s97-s2,[data-scene="ps-97"].s3 .s97-s3{opacity:1;visibility:visible}
+@keyframes s97fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+@keyframes s97draw{to{stroke-dashoffset:0}}
+@keyframes s97pop{0%{transform:scale(.9);opacity:0}70%{transform:scale(1.03);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s97pulse{0%,100%{opacity:.4}50%{opacity:1}}
+@keyframes s97flow{to{stroke-dashoffset:-40}}
+[data-scene="ps-97"].s1 .s97-e{stroke-dasharray:120;stroke-dashoffset:120;animation:s97draw 1s ease .15s forwards}
+[data-scene="ps-97"].s1 .s97-loop{stroke-dasharray:900;stroke-dashoffset:900;animation:s97draw 1.5s ease .35s forwards}
+[data-scene="ps-97"].s1 .s97-card{transform-box:fill-box;transform-origin:center;animation:s97pop .55s ease .3s both}
+[data-scene="ps-97"].s2 .s97-mag{animation:s97fade .5s ease both}
+[data-scene="ps-97"].s2 .s97-loop2{stroke-dasharray:900;stroke-dashoffset:900;animation:s97draw 1.4s ease .3s forwards}
+[data-scene="ps-97"].s2 .s97-card{transform-box:fill-box;transform-origin:center;animation:s97pop .55s ease .35s both}
+[data-scene="ps-97"].s2 .s97-flow{stroke-dasharray:7 6;animation:s97flow 1s linear infinite}
+[data-scene="ps-97"].s3 .s97-wave{stroke-dasharray:800;stroke-dashoffset:800;animation:s97draw 1.5s ease .2s forwards}
+[data-scene="ps-97"].s3 .s97-ray{stroke-dasharray:8 7;animation:s97flow 1s linear infinite}
+[data-scene="ps-97"].s3 .s97-card{transform-box:fill-box;transform-origin:center;animation:s97pop .55s ease .4s both}
+[data-scene="ps-97"].s3 .s97-glow{animation:s97pulse 2s ease-in-out infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">电磁场与电磁波：变化的电磁场向外传播</text>
+
+<!-- 第一步：变化的电场产生磁场 -->
+<g class="s97-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">变化的电场会在周围空间激发磁场，这是麦克斯韦的假设</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="250" height="28" rx="14" fill="#e8effc"/>
+  <text x="181" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">变化的电场产生磁场</text>
+
+  <ellipse class="s97-loop" cx="289" cy="270" rx="185" ry="115" fill="none" stroke="#1d4ed8" stroke-width="1.8" opacity=".55"/>
+  <ellipse class="s97-loop" cx="289" cy="270" rx="150" ry="90" fill="none" stroke="#1d4ed8" stroke-width="1.8" opacity=".75"/>
+  <path d="M 289 155 A 185 115 0 0 1 474 270" fill="none" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <path d="M 289 180 A 150 90 0 0 1 439 270" fill="none" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrBlue)"/>
+
+  <rect x="230" y="200" width="12" height="120" rx="3" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5"/>
+  <rect x="348" y="200" width="12" height="120" rx="3" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5"/>
+
+  <line class="s97-e" x1="246" y1="235" x2="342" y2="235" stroke="#dc2626" stroke-width="2.4" marker-end="url(#arrRed)"/>
+  <line class="s97-e" x1="246" y1="270" x2="342" y2="270" stroke="#dc2626" stroke-width="2.4" marker-end="url(#arrRed)"/>
+  <line class="s97-e" x1="246" y1="305" x2="342" y2="305" stroke="#dc2626" stroke-width="2.4" marker-end="url(#arrRed)"/>
+  <text x="272" y="222" font-size="12" font-weight="900" fill="#b91c1c">E</text>
+  <text x="480" y="268" font-size="12" font-weight="900" fill="#1d4ed8">B</text>
+  <text x="96" y="268" font-size="12" font-weight="900" fill="#1d4ed8">B</text>
+
+  <text x="296" y="410" font-size="12.5" font-weight="800" fill="#334155" text-anchor="middle">电场变化 → 周围空间出现磁场</text>
+  <text x="296" y="430" font-size="11.5" fill="#64748b" text-anchor="middle">磁场线是闭合的涡旋线，不需要“磁极”</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">麦克斯韦的电磁场理论</text>
+
+  <g class="s97-card">
+    <rect x="596" y="160" width="248" height="56" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="720" y="186" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">变化的电场 → 磁场</text>
+    <text x="720" y="205" font-size="11" fill="#475569" text-anchor="middle">第一步：电场变化激发磁场</text>
+
+    <rect x="596" y="224" width="248" height="56" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="720" y="250" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">变化的磁场 → 电场</text>
+    <text x="720" y="269" font-size="11" fill="#475569" text-anchor="middle">第二步：磁场变化激发电场</text>
+
+    <rect x="596" y="288" width="248" height="56" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+    <text x="720" y="314" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">变化的电磁场 → 统一整体</text>
+    <text x="720" y="333" font-size="11" fill="#92400e" text-anchor="middle">相互激发，形成电磁场</text>
+  </g>
+
+  <text x="720" y="372" font-size="11.5" fill="#334155" text-anchor="middle">电场与磁场相互联系、相互激发</text>
+  <text x="720" y="396" font-size="11.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">把电现象和磁现象统一起来</text>
+  <text x="720" y="420" font-size="11" fill="#64748b" text-anchor="middle">1864 年 · 英国物理学家麦克斯韦提出</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">变化的电场和磁场相互激发，形成一个统一的电磁场</text>
+</g>
+
+<!-- 第二步：变化的磁场产生电场 -->
+<g class="s97-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">变化的磁场会在周围空间激发电场，二者互为因果</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="250" height="28" rx="14" fill="#e8effc"/>
+  <text x="181" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">变化的磁场产生电场</text>
+
+  <ellipse class="s97-loop2" cx="305" cy="272" rx="195" ry="112" fill="none" stroke="#dc2626" stroke-width="1.8" opacity=".5"/>
+  <ellipse class="s97-loop2" cx="305" cy="272" rx="160" ry="90" fill="none" stroke="#dc2626" stroke-width="1.8" opacity=".7"/>
+  <path d="M 305 160 A 195 112 0 0 1 500 272" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#arrRed)"/>
+  <path d="M 305 182 A 160 90 0 0 1 465 272" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#arrRed)"/>
+
+  <g class="s97-mag">
+    <rect x="250" y="240" width="55" height="44" rx="4" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
+    <rect x="305" y="240" width="55" height="44" rx="4" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="277" y="269" font-size="13" font-weight="900" fill="#b91c1c" text-anchor="middle">N</text>
+    <text x="332" y="269" font-size="13" font-weight="900" fill="#1e40af" text-anchor="middle">S</text>
+  </g>
+
+  <path class="s97-flow" d="M 250 240 C 235 185 375 185 360 240" fill="none" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <path class="s97-flow" d="M 250 284 C 235 339 375 339 360 284" fill="none" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <path d="M 232 262 C 200 170 410 170 378 262" fill="none" stroke="#1d4ed8" stroke-width="1.5" opacity=".7" marker-end="url(#arrBlue)"/>
+
+  <text x="505" y="268" font-size="12" font-weight="900" fill="#b91c1c">E</text>
+  <text x="296" y="410" font-size="12.5" font-weight="800" fill="#334155" text-anchor="middle">磁场变化 → 周围空间出现电场</text>
+  <text x="296" y="430" font-size="11.5" fill="#64748b" text-anchor="middle">这个电场是涡旋电场，电场线闭合</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电场与磁场交替激发</text>
+
+  <g class="s97-card">
+    <rect x="592" y="192" width="112" height="58" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="648" y="216" font-size="12" font-weight="700" fill="#1e3a8a" text-anchor="middle">变化的</text>
+    <text x="648" y="236" font-size="12.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">磁场</text>
+
+    <rect x="736" y="192" width="112" height="58" rx="10" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+    <text x="792" y="216" font-size="12" font-weight="700" fill="#b91c1c" text-anchor="middle">变化的</text>
+    <text x="792" y="236" font-size="12.5" font-weight="900" fill="#b91c1c" text-anchor="middle">电场</text>
+
+    <line x1="706" y1="206" x2="734" y2="206" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrBlue)"/>
+    <text x="720" y="198" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">产生</text>
+    <line x1="734" y1="236" x2="706" y2="236" stroke="#dc2626" stroke-width="2" marker-end="url(#arrRed)"/>
+    <text x="720" y="254" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">产生</text>
+  </g>
+
+  <text x="720" y="288" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">二者互为因果、交替产生</text>
+  <text x="720" y="314" font-size="11.5" fill="#334155" text-anchor="middle">不需要介质</text>
+  <text x="720" y="340" font-size="11.5" fill="#334155" text-anchor="middle">在真空中也能传播</text>
+
+  <rect x="596" y="356" width="248" height="58" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="380" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">→ 形成电磁波</text>
+  <text x="720" y="402" font-size="11" fill="#92400e" text-anchor="middle">由近及远向外传播</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电场和磁场交替产生、由近及远传播，就形成了电磁波</text>
+</g>
+
+<!-- 第三步：电磁波传播 -->
+<g class="s97-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">电磁波是横波，E 与 B 相互垂直，且都垂直于传播方向</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="226" height="28" rx="14" fill="#e8effc"/>
+  <text x="169" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电磁波的传播</text>
+
+  <path class="s97-wave" d="M110 240 C130 185 155 185 175 240 C195 295 220 295 240 240 C260 185 285 185 305 240 C325 295 350 295 370 240 C390 185 415 185 435 240 C450 270 462 270 470 250" fill="none" stroke="#1d4ed8" stroke-width="2.5"/>
+  <path class="s97-wave" d="M110 320 C130 274 160 274 180 320 C200 366 230 366 250 320 C270 274 300 274 320 320 C340 366 370 366 390 320 C410 274 440 274 460 320" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+
+  <line x1="90" y1="320" x2="500" y2="320" stroke="#64748b" stroke-width="1.8" marker-end="url(#arrBlue)"/>
+  <text x="470" y="306" font-size="11" font-weight="800" fill="#475569">传播方向</text>
+
+  <text x="104" y="216" font-size="13" font-weight="900" fill="#1d4ed8">B</text>
+  <text x="104" y="300" font-size="13" font-weight="900" fill="#b91c1c">E</text>
+
+  <line x1="470" y1="250" x2="470" y2="320" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="486" y="290" font-size="11" fill="#64748b">二者垂直</text>
+
+  <text x="296" y="400" font-size="12.5" font-weight="700" fill="#334155" text-anchor="middle">E 与 B 互相垂直，且都垂直于传播方向</text>
+  <text x="296" y="424" font-size="12" font-weight="800" fill="#1d4ed8" text-anchor="middle">所以电磁波是横波</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电磁波的特性</text>
+
+  <g class="s97-card">
+    <circle cx="610" cy="180" r="12" fill="#dbeafe"/>
+    <text x="610" y="185" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">1</text>
+    <text x="632" y="185" font-size="11.5" font-weight="700" fill="#334155">真空中速度 c = 3.0×10⁸ m/s</text>
+
+    <circle cx="610" cy="226" r="12" fill="#dbeafe"/>
+    <text x="610" y="231" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">2</text>
+    <text x="632" y="231" font-size="11.5" font-weight="700" fill="#334155">不需要介质，可在真空传播</text>
+
+    <circle cx="610" cy="272" r="12" fill="#dbeafe"/>
+    <text x="610" y="277" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">3</text>
+    <text x="632" y="277" font-size="11.5" font-weight="700" fill="#334155">光也是一种电磁波</text>
+
+    <circle cx="610" cy="318" r="12" fill="#dbeafe"/>
+    <text x="610" y="323" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">4</text>
+    <text x="632" y="323" font-size="11.5" font-weight="700" fill="#334155">赫兹用实验证实其存在</text>
+  </g>
+
+  <rect x="590" y="344" width="260" height="66" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="368" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">电、磁、光的统一</text>
+  <text x="720" y="390" font-size="11" fill="#92400e" text-anchor="middle">预言 → 证实 → 应用</text>
+
+  <text x="720" y="426" font-size="11" fill="#64748b" text-anchor="middle">这个速度也是自然界运动速度的极限</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电磁波是横波，真空速度 c = 3.0×10⁸ m/s，光也是电磁波</text>
+</g>
+</svg>

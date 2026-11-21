@@ -1,0 +1,154 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="牛顿第三定律：作用力与反作用力等大反向共线，与一对平衡力的区别">
+<style>
+[data-scene="ps-14"] .s14-step{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="ps-14"].s1 .s14-step1,[data-scene="ps-14"].s2 .s14-step2,[data-scene="ps-14"].s3 .s14-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes s14draw{to{stroke-dashoffset:0}}
+@keyframes s14pop{0%{transform:scale(.88);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes s14pulse{0%,100%{opacity:.45}50%{opacity:1}}
+[data-scene="ps-14"].s1 .s14-line1,[data-scene="ps-14"].s1 .s14-line2{stroke-dasharray:96;stroke-dashoffset:96;animation:s14draw .7s ease .35s forwards}
+[data-scene="ps-14"].s1 .s14-line2{animation-delay:.6s}
+[data-scene="ps-14"].s1 .s14-banner{transform-box:fill-box;transform-origin:center;animation:s14pop .5s ease .1s both}
+[data-scene="ps-14"].s2 .s14-fa,[data-scene="ps-14"].s2 .s14-fb{animation:s14pulse 1.6s ease-in-out infinite}
+[data-scene="ps-14"].s2 .s14-card{transform-box:fill-box;transform-origin:center;animation:s14pop .5s ease .25s both}
+[data-scene="ps-14"].s2 .s14-bar{transform-box:fill-box;transform-origin:left center;animation:s14pop .5s ease .2s both}
+[data-scene="ps-14"].s3 .s14-side{transform-box:fill-box;transform-origin:center;animation:s14pop .45s ease both}
+[data-scene="ps-14"].s3 .s14-side2{animation-delay:.15s}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="532" width="900" height="88" fill="url(#gBench)"/>
+<line x1="0" y1="532" x2="900" y2="532" stroke="#cbd5e1" stroke-width="2.5"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">牛顿第三定律：等大、反向、共线</text>
+
+<!-- 第一步：作用力与反作用力 -->
+<g class="s14-step s14-step1" data-zone="1">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">第 1 步 · 两个物体之间的作用力与反作用力</text>
+
+  <rect class="s14-banner" x="150" y="100" width="600" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.6"/>
+  <text x="450" y="129" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">大小相等 F₁ = F₂ · 方向相反 · 作用在同一条直线上</text>
+
+  <text x="450" y="242" font-size="12" font-weight="700" fill="#64748b" text-anchor="middle">两个力在同一条直线上</text>
+  <line x1="150" y1="340" x2="750" y2="340" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="7 6"/>
+
+  <rect x="190" y="250" width="200" height="180" rx="12" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+  <text x="290" y="412" font-size="16" font-weight="900" fill="#334155" text-anchor="middle">A</text>
+  <rect x="510" y="250" width="200" height="180" rx="12" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="610" y="412" font-size="16" font-weight="900" fill="#1e3a8a" text-anchor="middle">B</text>
+
+  <line class="s14-line1" x1="510" y1="340" x2="600" y2="340" stroke="#dc2626" stroke-width="4" marker-end="url(#arrRed)"/>
+  <text x="650" y="322" font-size="13" font-weight="800" fill="#b91c1c" text-anchor="middle">F₁：A 对 B</text>
+
+  <line class="s14-line2" x1="390" y1="340" x2="300" y2="340" stroke="#059669" stroke-width="4" marker-end="url(#arrGreen)"/>
+  <text x="250" y="322" font-size="13" font-weight="800" fill="#047857" text-anchor="middle">F₂：B 对 A</text>
+
+  <text x="450" y="470" font-size="13" fill="#334155" text-anchor="middle">A 推 B 的同时，B 也在推 A：两个物体互为施力物体和受力物体。</text>
+  <text x="450" y="496" font-size="12" fill="#64748b" text-anchor="middle">一对作用力与反作用力，总是成对出现、同时存在</text>
+</g>
+
+<!-- 第二步：特点 -->
+<g class="s14-step s14-step2" data-zone="2">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">第 2 步 · 同时产生、同时消失，作用在两个物体上</text>
+
+  <text x="360" y="124" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">两个力分别画在两个物体上</text>
+
+  <rect x="150" y="160" width="160" height="120" rx="10" fill="#e2e8f0" stroke="#475569" stroke-width="2.2"/>
+  <text x="230" y="270" font-size="15" font-weight="900" fill="#334155" text-anchor="middle">A</text>
+  <rect x="400" y="160" width="160" height="120" rx="10" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.2"/>
+  <text x="480" y="270" font-size="15" font-weight="900" fill="#1e3a8a" text-anchor="middle">B</text>
+
+  <line class="s14-fa" x1="400" y1="220" x2="470" y2="220" stroke="#dc2626" stroke-width="3.6" marker-end="url(#arrRed)"/>
+  <text x="435" y="204" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">F₁</text>
+  <line class="s14-fb" x1="310" y1="220" x2="240" y2="220" stroke="#059669" stroke-width="3.6" marker-end="url(#arrGreen)"/>
+  <text x="275" y="204" font-size="12" font-weight="800" fill="#047857" text-anchor="middle">F₂</text>
+
+  <text x="360" y="322" font-size="12.5" fill="#334155" text-anchor="middle">F₁ 作用在 B 上，F₂ 作用在 A 上，两个力不能相互抵消</text>
+  <text x="360" y="348" font-size="12" fill="#64748b" text-anchor="middle">两者性质一定相同：同为弹力，或同为摩擦力</text>
+
+  <text x="360" y="392" font-size="12" font-weight="700" fill="#475569" text-anchor="middle">存在的时间完全相同</text>
+  <rect class="s14-bar" x="250" y="412" width="220" height="12" rx="6" fill="#fca5a5"/>
+  <rect class="s14-bar" x="250" y="432" width="220" height="12" rx="6" fill="#86efac"/>
+  <text x="238" y="424" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="end">F₁</text>
+  <text x="238" y="444" font-size="11.5" font-weight="800" fill="#047857" text-anchor="end">F₂</text>
+  <line x1="170" y1="462" x2="560" y2="462" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="250" y1="404" x2="250" y2="470" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <line x1="470" y1="404" x2="470" y2="470" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="250" y="490" font-size="11.5" fill="#64748b" text-anchor="middle">同时产生</text>
+  <text x="470" y="490" font-size="11.5" fill="#64748b" text-anchor="middle">同时消失</text>
+
+  <rect class="s14-card" x="590" y="110" width="270" height="390" rx="16" fill="#ffffff" stroke="#c7d7f5" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="590" y="110" width="270" height="8" rx="4" fill="#1d4ed8"/>
+  <text x="725" y="152" font-size="17" font-weight="900" fill="#1e3a8a" text-anchor="middle">三个“同时”</text>
+  <circle cx="616" cy="186" r="4" fill="#1d4ed8"/>
+  <text x="632" y="191" font-size="12.5" font-weight="800" fill="#1e3a8a">同时产生</text>
+  <circle cx="616" cy="218" r="4" fill="#1d4ed8"/>
+  <text x="632" y="223" font-size="12.5" font-weight="800" fill="#1e3a8a">同时变化</text>
+  <circle cx="616" cy="250" r="4" fill="#1d4ed8"/>
+  <text x="632" y="255" font-size="12.5" font-weight="800" fill="#1e3a8a">同时消失</text>
+  <line x1="612" y1="276" x2="838" y2="276" stroke="#e8eef7" stroke-width="1.5"/>
+  <circle cx="616" cy="306" r="4" fill="#dc2626"/>
+  <text x="632" y="311" font-size="12.5" fill="#334155">分别作用在两个物体上</text>
+  <circle cx="616" cy="338" r="4" fill="#dc2626"/>
+  <text x="632" y="343" font-size="12.5" fill="#334155">不能相互抵消</text>
+  <circle cx="616" cy="370" r="4" fill="#dc2626"/>
+  <text x="632" y="375" font-size="12.5" fill="#334155">性质相同（同为弹力等）</text>
+  <text x="725" y="410" font-size="11.5" fill="#64748b" text-anchor="middle">与物体的运动状态无关</text>
+  <rect x="612" y="428" width="226" height="52" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.4"/>
+  <text x="725" y="450" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">不能把 F₁、F₂ 求合力</text>
+  <text x="725" y="470" font-size="11.5" fill="#475569" text-anchor="middle">它们作用在不同物体上</text>
+</g>
+
+<!-- 第三步：与平衡力的区别 -->
+<g class="s14-step s14-step3" data-zone="3">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">第 3 步 · 与一对平衡力的区别</text>
+
+  <g class="s14-side">
+    <rect x="70" y="140" width="380" height="10" rx="5" fill="#dc2626"/>
+    <text x="260" y="178" font-size="15" font-weight="900" fill="#b91c1c" text-anchor="middle">作用力与反作用力</text>
+
+    <rect x="150" y="204" width="90" height="70" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+    <rect x="290" y="204" width="90" height="70" rx="8" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="195" y="246" font-size="12" font-weight="900" fill="#334155" text-anchor="middle">A</text>
+    <text x="335" y="246" font-size="12" font-weight="900" fill="#1e3a8a" text-anchor="middle">B</text>
+    <line x1="290" y1="232" x2="350" y2="232" stroke="#dc2626" stroke-width="3" marker-end="url(#arrRed)"/>
+    <line x1="240" y1="232" x2="180" y2="232" stroke="#059669" stroke-width="3" marker-end="url(#arrGreen)"/>
+    <text x="322" y="222" font-size="11" font-weight="800" fill="#b91c1c" text-anchor="middle">F₁</text>
+    <text x="208" y="222" font-size="11" font-weight="800" fill="#047857" text-anchor="middle">F₂</text>
+
+    <circle cx="86" cy="314" r="3.6" fill="#dc2626"/>
+    <text x="100" y="319" font-size="12.5" fill="#334155">作用在两个不同物体上</text>
+    <circle cx="86" cy="346" r="3.6" fill="#dc2626"/>
+    <text x="100" y="351" font-size="12.5" fill="#334155">不能相互抵消</text>
+    <circle cx="86" cy="378" r="3.6" fill="#dc2626"/>
+    <text x="100" y="383" font-size="12.5" fill="#334155">同时产生、同时消失</text>
+    <circle cx="86" cy="410" r="3.6" fill="#dc2626"/>
+    <text x="100" y="415" font-size="12.5" fill="#334155">性质一定相同</text>
+  </g>
+
+  <g class="s14-side s14-side2">
+    <rect x="450" y="140" width="400" height="10" rx="5" fill="#1d4ed8"/>
+    <text x="650" y="178" font-size="15" font-weight="900" fill="#1e3a8a" text-anchor="middle">一对平衡力</text>
+
+    <rect x="560" y="204" width="160" height="70" rx="8" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+    <line x1="640" y1="238" x2="716" y2="238" stroke="#dc2626" stroke-width="3" marker-end="url(#arrRed)"/>
+    <line x1="640" y1="238" x2="564" y2="238" stroke="#7c3aed" stroke-width="3" marker-end="url(#arrBlue)"/>
+    <text x="706" y="226" font-size="11" font-weight="800" fill="#b91c1c" text-anchor="middle">F₁</text>
+    <text x="574" y="226" font-size="11" font-weight="800" fill="#6d28d9" text-anchor="middle">F₂</text>
+    <text x="640" y="292" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">同一个物体</text>
+
+    <circle cx="466" cy="314" r="3.6" fill="#1d4ed8"/>
+    <text x="480" y="319" font-size="12.5" fill="#334155">作用在同一个物体上</text>
+    <circle cx="466" cy="346" r="3.6" fill="#1d4ed8"/>
+    <text x="480" y="351" font-size="12.5" fill="#334155">合力为零，可以抵消</text>
+    <circle cx="466" cy="378" r="3.6" fill="#1d4ed8"/>
+    <text x="480" y="383" font-size="12.5" fill="#334155">撤去一个，另一个仍可存在</text>
+    <circle cx="466" cy="410" r="3.6" fill="#1d4ed8"/>
+    <text x="480" y="415" font-size="12.5" fill="#334155">性质不一定相同</text>
+  </g>
+
+  <rect x="70" y="444" width="760" height="62" rx="12" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+  <text x="450" y="470" font-size="14" font-weight="900" fill="#b45309" text-anchor="middle">同物平衡，异物反作用</text>
+  <text x="450" y="494" font-size="12" fill="#7c5a30" text-anchor="middle">平衡力作用在同一物体上、可以抵消；作用力与反作用力作用在两个物体上、不能抵消</text>
+</g>
+</svg>

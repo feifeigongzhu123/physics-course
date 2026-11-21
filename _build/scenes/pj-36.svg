@@ -1,0 +1,177 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="大气压强：马德堡半球、托里拆利实验、海拔与沸点">
+<style>
+[data-scene="pj-36"] .p36-step1,[data-scene="pj-36"] .p36-step2,[data-scene="pj-36"] .p36-step3{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="pj-36"].s1 .p36-step1,[data-scene="pj-36"].s2 .p36-step2,[data-scene="pj-36"].s3 .p36-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes p36pullL{from{transform:translateX(0)}to{transform:translateX(-7px)}}
+@keyframes p36pullR{from{transform:translateX(0)}to{transform:translateX(7px)}}
+@keyframes p36fill{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes p36pop{0%{transform:scale(.85);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes p36steam{0%{transform:translateY(4px);opacity:0}30%{opacity:.85}100%{transform:translateY(-16px);opacity:0}}
+@keyframes p36draw{to{stroke-dashoffset:0}}
+[data-scene="pj-36"].s1 .p36-pullL{animation:p36pullL 1.1s ease-in-out infinite alternate}
+[data-scene="pj-36"].s1 .p36-pullR{animation:p36pullR 1.1s ease-in-out infinite alternate}
+[data-scene="pj-36"].s1 .p36-air{animation:p36steam 2.4s ease-in-out infinite}
+[data-scene="pj-36"].s2 .p36-merc{transform-box:fill-box;transform-origin:bottom;animation:p36fill 1.2s ease .2s both}
+[data-scene="pj-36"].s2 .p36-card{transform-box:fill-box;transform-origin:center;animation:p36pop .45s ease .5s both}
+[data-scene="pj-36"].s3 .p36-level{transform-box:fill-box;transform-origin:center;animation:p36pop .45s ease both}
+[data-scene="pj-36"].s3 .p36-curve{stroke-dasharray:420;stroke-dashoffset:420;animation:p36draw 1.2s ease .2s forwards}
+[data-scene="pj-36"].s3 .p36-steam{animation:p36steam 2.2s ease-in-out infinite}
+[data-scene="pj-36"].s3 .p36-steam2{animation:p36steam 2.2s ease-in-out .7s infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">大气压强：马德堡半球与托里拆利实验</text>
+
+<!-- 第一步：大气压的存在 -->
+<g class="p36-step1" data-zone="1">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">马德堡半球实验：16 匹马才把两个半球拉开</text>
+
+  <line x1="90" y1="430" x2="810" y2="430" stroke="#cbd5e1" stroke-width="3"/>
+  <text x="450" y="150" font-size="12.5" font-weight="800" fill="#475569" text-anchor="middle">内部接近真空</text>
+  <line x1="450" y1="156" x2="450" y2="200" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 4"/>
+
+  <g stroke="#1d4ed8" stroke-width="3" marker-end="url(#arrBlue)">
+    <line x1="450" y1="168" x2="450" y2="202"/>
+    <line x1="332" y1="290" x2="366" y2="290"/>
+    <line x1="568" y1="290" x2="534" y2="290"/>
+    <line x1="370" y1="210" x2="393" y2="232"/>
+    <line x1="530" y1="210" x2="507" y2="232"/>
+    <line x1="370" y1="366" x2="393" y2="344"/>
+    <line x1="530" y1="366" x2="507" y2="344"/>
+  </g>
+
+  <path d="M450 208 A82 82 0 0 0 450 372 Z" fill="#cbd5e1"/>
+  <path d="M450 208 A82 82 0 0 1 450 372 Z" fill="#94a3b8"/>
+  <circle cx="450" cy="290" r="82" fill="none" stroke="#475569" stroke-width="4"/>
+  <line x1="450" y1="208" x2="450" y2="372" stroke="#475569" stroke-width="3"/>
+  <rect x="436" y="194" width="28" height="14" rx="4" fill="#475569"/>
+  <rect x="436" y="372" width="28" height="14" rx="4" fill="#475569"/>
+
+  <g class="p36-pullL">
+    <line x1="362" y1="290" x2="272" y2="290" stroke="#d97706" stroke-width="5" stroke-linecap="round" marker-end="url(#arrAmber)"/>
+    <text x="310" y="276" font-size="13" font-weight="800" fill="#b45309" text-anchor="middle">拉</text>
+    <path d="M260 384 Q258 368 276 363 L300 356 L314 366 L306 378 L292 382 L296 404" fill="none" stroke="#a16207" stroke-width="7" stroke-linecap="round"/>
+    <ellipse cx="252" cy="378" rx="30" ry="14" fill="#a16207"/>
+    <polygon points="274,370 290,346 300,352 284,378" fill="#a16207"/>
+    <circle cx="296" cy="347" r="9" fill="#a16207"/>
+    <g stroke="#a16207" stroke-width="4" stroke-linecap="round">
+      <line x1="234" y1="390" x2="230" y2="420"/><line x1="252" y1="392" x2="250" y2="422"/>
+      <line x1="270" y1="390" x2="274" y2="420"/><line x1="284" y1="384" x2="290" y2="414"/>
+    </g>
+    <path d="M224 370 Q208 360 200 374" fill="none" stroke="#78350f" stroke-width="4"/>
+  </g>
+  <g class="p36-pullR">
+    <line x1="538" y1="290" x2="628" y2="290" stroke="#d97706" stroke-width="5" stroke-linecap="round" marker-end="url(#arrAmber)"/>
+    <text x="590" y="276" font-size="13" font-weight="800" fill="#b45309" text-anchor="middle">拉</text>
+    <path d="M640 384 Q642 368 624 363 L600 356 L586 366 L594 378 L608 382 L604 404" fill="none" stroke="#a16207" stroke-width="7" stroke-linecap="round"/>
+    <ellipse cx="648" cy="378" rx="30" ry="14" fill="#a16207"/>
+    <polygon points="626,370 610,346 600,352 616,378" fill="#a16207"/>
+    <circle cx="604" cy="347" r="9" fill="#a16207"/>
+    <g stroke="#a16207" stroke-width="4" stroke-linecap="round">
+      <line x1="666" y1="390" x2="670" y2="420"/><line x1="648" y1="392" x2="650" y2="422"/>
+      <line x1="630" y1="390" x2="626" y2="420"/><line x1="616" y1="384" x2="610" y2="414"/>
+    </g>
+    <path d="M676 370 Q692 360 700 374" fill="none" stroke="#78350f" stroke-width="4"/>
+  </g>
+
+  <text x="450" y="410" font-size="12" fill="#64748b" text-anchor="middle">两个半球合在一起，抽出内部空气，大气压把它们压紧</text>
+  <rect x="70" y="452" width="760" height="36" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">大气对浸在其中的物体有压强，这就是大气压强</text>
+</g>
+
+<!-- 第二步：托里拆利实验 -->
+<g class="p36-step2" data-zone="2">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">托里拆利实验：大气压支持 760 mm 高的水银柱</text>
+
+  <rect x="70" y="110" width="230" height="320" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="185" y="140" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">实验步骤</text>
+  <g font-size="12" fill="#334155">
+    <text x="90" y="176">① 玻璃管灌满水银</text>
+    <text x="90" y="210">② 倒插进水银槽中</text>
+    <text x="90" y="244">③ 水银面下降到</text>
+    <text x="104" y="264">一定高度后静止</text>
+    <text x="90" y="298">④ 管顶出现真空</text>
+  </g>
+  <rect x="86" y="320" width="198" height="90" rx="10" fill="#e8effc"/>
+  <text x="185" y="346" font-size="11.5" fill="#1e3a8a" text-anchor="middle">大气压的大小等于</text>
+  <text x="185" y="366" font-size="11.5" fill="#1e3a8a" text-anchor="middle">管内水银柱产生的压强</text>
+  <text x="185" y="392" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">与管的粗细无关</text>
+
+  <rect x="330" y="400" width="300" height="50" rx="6" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+  <rect x="334" y="412" width="292" height="34" fill="#94a3b8"/>
+  <line x1="320" y1="412" x2="640" y2="412" stroke="#64748b" stroke-width="1.5" stroke-dasharray="7 5"/>
+  <rect x="440" y="120" width="44" height="290" fill="#f8fafc" stroke="#64748b" stroke-width="3"/>
+  <rect class="p36-merc" x="444" y="210" width="36" height="236" fill="#94a3b8"/>
+  <text x="462" y="170" font-size="11" fill="#64748b" text-anchor="middle">真空</text>
+  <line x1="484" y1="210" x2="514" y2="210" stroke="#1e3a8a" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="510" y1="210" x2="510" y2="412" stroke="#1e3a8a" stroke-width="2" marker-start="url(#arrBlue)" marker-end="url(#arrBlue)"/>
+  <line x1="500" y1="210" x2="520" y2="210" stroke="#1e3a8a" stroke-width="1.5"/>
+  <line x1="500" y1="412" x2="520" y2="412" stroke="#1e3a8a" stroke-width="1.5"/>
+  <text x="524" y="316" font-size="12.5" font-weight="800" fill="#1e3a8a">760 mm</text>
+  <text x="420" y="108" font-size="11.5" font-weight="700" fill="#475569" text-anchor="end">玻璃管</text>
+  <text x="470" y="472" font-size="12" font-weight="700" fill="#475569" text-anchor="middle">水银槽</text>
+
+  <g class="p36-card">
+    <rect x="570" y="120" width="260" height="250" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="700" y="150" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">标准大气压</text>
+    <text x="700" y="192" font-size="16" font-weight="900" fill="#b45309" text-anchor="middle">p₀ = 1.013×10⁵ Pa</text>
+    <text x="700" y="224" font-size="12.5" font-weight="700" fill="#334155" text-anchor="middle">= 760 mm 水银柱</text>
+    <text x="700" y="252" font-size="12.5" font-weight="700" fill="#334155" text-anchor="middle">≈ 10.3 m 水柱</text>
+    <line x1="600" y1="272" x2="800" y2="272" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="700" y="300" font-size="11.5" fill="#64748b" text-anchor="middle">与管的粗细、倾斜程度无关</text>
+    <text x="700" y="326" font-size="11.5" fill="#64748b" text-anchor="middle">换用水做实验，需要约 10.3 m 长</text>
+  </g>
+
+  <rect x="70" y="458" width="760" height="34" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+  <text x="450" y="481" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">一个标准大气压 p₀ ≈ 1.0×10⁵ Pa，相当于每平方厘米承受约 10 N 的压力</text>
+</g>
+
+<!-- 第三步：大气压的变化 -->
+<g class="p36-step3" data-zone="3">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">海拔越高，大气压越小；气压越低，沸点越低</text>
+
+  <polygon points="60,460 190,220 255,320 330,250 440,460" fill="#cbd5e1" stroke="#64748b" stroke-width="2.5"/>
+  <polygon points="190,220 224,268 208,262 190,282 174,260 158,266" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="60" y1="460" x2="440" y2="460" stroke="#94a3b8" stroke-width="2"/>
+
+  <circle cx="190" cy="220" r="5" fill="#dc2626"/>
+  <rect class="p36-level" x="95" y="166" width="142" height="42" rx="8" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="166" y="184" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">约 5000 m</text>
+  <text x="166" y="200" font-size="11" fill="#64748b" text-anchor="middle">大气压约 540 hPa</text>
+  <line x1="204" y1="208" x2="200" y2="214" stroke="#94a3b8" stroke-width="1.5"/>
+
+  <circle cx="255" cy="320" r="5" fill="#d97706"/>
+  <rect class="p36-level" x="292" y="296" width="142" height="42" rx="8" fill="#ffffff" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="363" y="314" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">约 2000 m</text>
+  <text x="363" y="330" font-size="11" fill="#64748b" text-anchor="middle">大气压约 800 hPa</text>
+  <line x1="292" y1="322" x2="264" y2="320" stroke="#94a3b8" stroke-width="1.5"/>
+
+  <circle cx="105" cy="442" r="5" fill="#1d4ed8"/>
+  <rect class="p36-level" x="62" y="396" width="142" height="42" rx="8" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="133" y="414" font-size="12" font-weight="800" fill="#1e40af" text-anchor="middle">海平面</text>
+  <text x="133" y="430" font-size="11" fill="#64748b" text-anchor="middle">大气压约 1013 hPa</text>
+
+  <rect x="470" y="110" width="370" height="238" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <line x1="500" y1="132" x2="500" y2="310" stroke="#64748b" stroke-width="2"/>
+  <line x1="500" y1="310" x2="800" y2="310" stroke="#64748b" stroke-width="2"/>
+  <text x="486" y="140" font-size="13" font-weight="800" fill="#475569" text-anchor="end">p</text>
+  <text x="798" y="330" font-size="13" font-weight="800" fill="#475569" text-anchor="end">h</text>
+  <path class="p36-curve" d="M506 150 C590 188 690 252 792 304" fill="none" stroke="#1d4ed8" stroke-width="3.5"/>
+  <text x="650" y="338" font-size="12" fill="#64748b" text-anchor="middle">海拔越高，空气越稀薄，大气压越小</text>
+
+  <rect x="470" y="360" width="370" height="110" rx="14" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+  <ellipse cx="556" cy="414" rx="38" ry="9" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
+  <path d="M520 414 L528 455 H584 L592 414 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+  <path d="M530 414 Q556 404 582 414" fill="#93c5fd" opacity=".7"/>
+  <path class="p36-steam" d="M544 398 C536 386 552 378 544 364" fill="none" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+  <path class="p36-steam2" d="M566 400 C558 388 574 380 566 366" fill="none" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+  <text x="556" y="442" font-size="11" font-weight="800" fill="#b45309" text-anchor="middle">沸水</text>
+  <text x="636" y="402" font-size="13" font-weight="800" fill="#b45309">高山上水不到 100 ℃</text>
+  <text x="636" y="424" font-size="13" font-weight="800" fill="#b45309">就沸腾了</text>
+  <text x="636" y="448" font-size="11.5" fill="#7c5a30">气压减小 → 沸点降低</text>
+</g>
+</svg>

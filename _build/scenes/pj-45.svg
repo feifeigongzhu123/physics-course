@@ -1,0 +1,174 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="杠杆：五要素、杠杆平衡条件、省力费力等臂杠杆分类">
+  <style>
+    .p45-s1,.p45-s2,.p45-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+    .p45-s1{opacity:1;visibility:visible}
+    [data-scene="pj-45"] .p45-s1,[data-scene="pj-45"] .p45-s2,[data-scene="pj-45"] .p45-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+    [data-scene="pj-45"].s1 .p45-s1,[data-scene="pj-45"].s2 .p45-s2,[data-scene="pj-45"].s3 .p45-s3{opacity:1;visibility:visible}
+    @keyframes p45pop{0%{transform:scale(.78);opacity:0}72%{transform:scale(1.04);opacity:1}100%{transform:scale(1);opacity:1}}
+    @keyframes p45pulse{0%,100%{opacity:.42}50%{opacity:1}}
+    @keyframes p45bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+    @keyframes p45rock{0%,100%{transform:rotate(-1.2deg)}50%{transform:rotate(1.2deg)}}
+    [data-scene="pj-45"].s1 .p45-pop{transform-box:fill-box;transform-origin:center;animation:p45pop .5s ease both}
+    [data-scene="pj-45"].s1 .p45-force{animation:p45pulse 1.6s ease-in-out infinite}
+    [data-scene="pj-45"].s2 .p45-pop{transform-box:fill-box;transform-origin:center;animation:p45pop .5s ease both}
+    [data-scene="pj-45"].s2 .p45-force{animation:p45pulse 1.7s ease-in-out infinite}
+    [data-scene="pj-45"].s2 .p45-rock{transform-box:fill-box;transform-origin:center bottom;animation:p45rock 2.6s ease-in-out infinite}
+    [data-scene="pj-45"].s3 .p45-pop{transform-box:fill-box;transform-origin:center;animation:p45pop .5s ease both}
+    [data-scene="pj-45"].s3 .p45-fish{transform-box:fill-box;transform-origin:center;animation:p45bob 2s ease-in-out infinite}
+    [data-scene="pj-45"].s3 .p45-pan{transform-box:fill-box;transform-origin:center top;animation:p45rock 3s ease-in-out infinite}
+  </style>
+
+  <rect width="900" height="620" fill="url(#gBg)"/>
+  <rect width="900" height="620" fill="url(#dotsPat)"/>
+  <rect y="470" width="900" height="150" fill="url(#gBench)"/>
+  <line x1="0" y1="470" x2="900" y2="470" stroke="#cfd9e8" stroke-width="2"/>
+
+  <text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">杠杆：五要素、平衡条件与三类杠杆</text>
+
+  <!-- 第一步：杠杆的五要素 -->
+  <g class="p45-s1" data-zone="1">
+    <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">杠杆五要素：一个支点、两个力、两个力臂</text>
+
+    <rect x="120" y="262" width="660" height="14" rx="7" fill="#cbd5e1" stroke="#94a3b8" stroke-width="2"/>
+    <polygon points="450,276 412,332 488,332" fill="#64748b"/>
+    <circle cx="450" cy="270" r="5" fill="#334155"/>
+    <text x="464" y="258" font-size="13" font-weight="800" fill="#334155">O</text>
+
+    <line class="p45-force" x1="200" y1="190" x2="200" y2="262" stroke="#dc2626" stroke-width="4" stroke-linecap="round" marker-end="url(#arrRed)"/>
+    <text x="200" y="178" font-size="13" font-weight="800" fill="#b91c1c" text-anchor="middle">动力 F1</text>
+    <line class="p45-force" x1="700" y1="190" x2="700" y2="262" stroke="#d97706" stroke-width="4" stroke-linecap="round" marker-end="url(#arrAmber)"/>
+    <text x="700" y="178" font-size="13" font-weight="800" fill="#b45309" text-anchor="middle">阻力 F2</text>
+
+    <line x1="200" y1="276" x2="200" y2="384" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <line x1="700" y1="276" x2="700" y2="384" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6 5"/>
+
+    <line x1="200" y1="370" x2="450" y2="370" stroke="#1d4ed8" stroke-width="2.5"/>
+    <line x1="200" y1="360" x2="200" y2="380" stroke="#1d4ed8" stroke-width="2.5"/>
+    <line x1="450" y1="360" x2="450" y2="380" stroke="#1d4ed8" stroke-width="2.5"/>
+    <text x="325" y="360" font-size="12" font-weight="800" fill="#1e40af" text-anchor="middle">动力臂 l1</text>
+
+    <line x1="450" y1="398" x2="700" y2="398" stroke="#d97706" stroke-width="2.5"/>
+    <line x1="450" y1="388" x2="450" y2="408" stroke="#d97706" stroke-width="2.5"/>
+    <line x1="700" y1="388" x2="700" y2="408" stroke="#d97706" stroke-width="2.5"/>
+    <text x="575" y="388" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">阻力臂 l2</text>
+
+    <g class="p45-pop" font-size="11.5" font-weight="800" fill="#1e3a8a">
+      <rect x="60" y="416" width="148" height="38" rx="10" fill="#e8effc"/>
+      <text x="134" y="440" text-anchor="middle">① 支点 O</text>
+      <rect x="220" y="416" width="148" height="38" rx="10" fill="#fee2e2"/>
+      <text x="294" y="440" text-anchor="middle">② 动力 F1</text>
+      <rect x="380" y="416" width="148" height="38" rx="10" fill="#ffedd5"/>
+      <text x="454" y="440" text-anchor="middle">③ 阻力 F2</text>
+      <rect x="540" y="416" width="148" height="38" rx="10" fill="#dbeafe"/>
+      <text x="614" y="440" text-anchor="middle">④ 动力臂 l1</text>
+      <rect x="700" y="416" width="148" height="38" rx="10" fill="#fef3c7"/>
+      <text x="774" y="440" text-anchor="middle">⑤ 阻力臂 l2</text>
+    </g>
+  </g>
+
+  <!-- 第二步：杠杆平衡条件 -->
+  <g class="p45-s2" data-zone="2">
+    <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">杠杆平衡条件：动力 × 动力臂 = 阻力 × 阻力臂</text>
+
+    <rect x="120" y="286" width="500" height="14" rx="7" fill="#cbd5e1" stroke="#94a3b8" stroke-width="2"/>
+    <polygon points="450,300 412,356 488,356" fill="#64748b"/>
+    <circle cx="450" cy="294" r="5" fill="#334155"/>
+    <text x="464" y="282" font-size="13" font-weight="800" fill="#334155">O</text>
+
+    <line class="p45-force" x1="170" y1="196" x2="170" y2="288" stroke="#dc2626" stroke-width="4" stroke-linecap="round" marker-end="url(#arrRed)"/>
+    <text x="170" y="184" font-size="13" font-weight="800" fill="#b91c1c" text-anchor="middle">F1</text>
+    <text x="188" y="238" font-size="12" font-weight="800" fill="#b91c1c">100 N</text>
+    <line class="p45-force" x1="560" y1="166" x2="560" y2="288" stroke="#d97706" stroke-width="4" stroke-linecap="round" marker-end="url(#arrAmber)"/>
+    <text x="560" y="154" font-size="13" font-weight="800" fill="#b45309" text-anchor="middle">F2</text>
+    <text x="548" y="222" font-size="12" font-weight="800" fill="#b45309" text-anchor="end">300 N</text>
+
+    <line x1="170" y1="288" x2="170" y2="380" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <line x1="560" y1="288" x2="560" y2="408" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <line x1="170" y1="372" x2="450" y2="372" stroke="#1d4ed8" stroke-width="2.5"/>
+    <line x1="170" y1="362" x2="170" y2="382" stroke="#1d4ed8" stroke-width="2.5"/>
+    <line x1="450" y1="362" x2="450" y2="382" stroke="#1d4ed8" stroke-width="2.5"/>
+    <text x="310" y="364" font-size="11.5" font-weight="800" fill="#1e40af" text-anchor="middle">l1 = 0.6 m</text>
+    <line x1="450" y1="400" x2="560" y2="400" stroke="#d97706" stroke-width="2.5"/>
+    <line x1="450" y1="390" x2="450" y2="410" stroke="#d97706" stroke-width="2.5"/>
+    <line x1="560" y1="390" x2="560" y2="410" stroke="#d97706" stroke-width="2.5"/>
+    <text x="505" y="392" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">l2 = 0.2 m</text>
+
+    <g class="p45-pop">
+      <rect x="630" y="150" width="220" height="190" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <text x="740" y="180" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">代入数据</text>
+      <text x="740" y="218" font-size="15" font-weight="900" fill="#1e3a8a" text-anchor="middle">F1·l1 = F2·l2</text>
+      <text x="740" y="252" font-size="12.5" font-weight="700" fill="#334155" text-anchor="middle">100 × 0.6 = 300 × 0.2</text>
+      <text x="740" y="286" font-size="13" font-weight="800" fill="#047857" text-anchor="middle">60 N·m = 60 N·m</text>
+      <text x="740" y="318" font-size="11.5" fill="#64748b" text-anchor="middle">杠杆水平平衡</text>
+    </g>
+
+    <g class="p45-pop" font-size="12" font-weight="800">
+      <rect x="60" y="422" width="250" height="36" rx="10" fill="#dcfce7"/>
+      <text x="185" y="445" fill="#047857" text-anchor="middle">l1 > l2 → 省力杠杆</text>
+      <rect x="325" y="422" width="250" height="36" rx="10" fill="#e8effc"/>
+      <text x="450" y="445" fill="#1e3a8a" text-anchor="middle">l1 = l2 → 等臂杠杆</text>
+      <rect x="590" y="422" width="250" height="36" rx="10" fill="#fee2e2"/>
+      <text x="715" y="445" fill="#b91c1c" text-anchor="middle">l1 &lt; l2 → 费力杠杆</text>
+    </g>
+  </g>
+
+  <!-- 第三步：杠杆的分类 -->
+  <g class="p45-s3" data-zone="3">
+    <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">杠杆分类：省力费距离，费力省距离，等臂不省力也不费距离</text>
+
+    <g class="p45-pop">
+      <rect x="40" y="112" width="240" height="285" rx="16" fill="#ffffff" stroke="#bbf7d0" stroke-width="2" filter="url(#softShadow)"/>
+      <rect x="60" y="126" width="130" height="26" rx="13" fill="#dcfce7"/>
+      <text x="125" y="144" font-size="12" font-weight="800" fill="#047857" text-anchor="middle">省力杠杆</text>
+      <polygon points="78,320 112,292 150,304 134,334" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
+      <line x1="78" y1="332" x2="240" y2="282" stroke="#b45309" stroke-width="9" stroke-linecap="round"/>
+      <polygon points="118,334 102,356 134,356" fill="#64748b"/>
+      <line x1="236" y1="276" x2="236" y2="318" stroke="#1d4ed8" stroke-width="3" stroke-linecap="round" marker-end="url(#arrBlue)"/>
+      <text x="254" y="270" font-size="11" font-weight="800" fill="#1e40af">F 小</text>
+      <text x="160" y="374" font-size="12.5" font-weight="800" fill="#334155" text-anchor="middle">撬棒 · 羊角锤</text>
+      <text x="160" y="394" font-size="12" font-weight="700" fill="#047857" text-anchor="middle">省力，但费距离</text>
+    </g>
+
+    <g class="p45-pop">
+      <rect x="330" y="112" width="240" height="285" rx="16" fill="#ffffff" stroke="#fecaca" stroke-width="2" filter="url(#softShadow)"/>
+      <rect x="350" y="126" width="130" height="26" rx="13" fill="#fee2e2"/>
+      <text x="415" y="144" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">费力杠杆</text>
+      <line x1="372" y1="228" x2="540" y2="180" stroke="#92400e" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="372" cy="228" r="8" fill="#475569"/>
+      <circle cx="430" cy="242" r="10" fill="none" stroke="#64748b" stroke-width="2.5"/>
+      <line x1="540" y1="180" x2="540" y2="318" stroke="#64748b" stroke-width="1.5"/>
+      <g class="p45-fish">
+        <ellipse cx="540" cy="332" rx="17" ry="8" fill="#60a5fa" stroke="#1d4ed8" stroke-width="1.5"/>
+        <polygon points="556,332 568,324 568,340" fill="#60a5fa" stroke="#1d4ed8" stroke-width="1.5"/>
+      </g>
+      <text x="548" y="166" font-size="11" font-weight="800" fill="#b91c1c">F 大</text>
+      <text x="450" y="374" font-size="12.5" font-weight="800" fill="#334155" text-anchor="middle">钓鱼竿 · 筷子</text>
+      <text x="450" y="394" font-size="12" font-weight="700" fill="#b91c1c" text-anchor="middle">费力，但省距离</text>
+    </g>
+
+    <g class="p45-pop">
+      <rect x="620" y="112" width="240" height="285" rx="16" fill="#ffffff" stroke="#bfdbfe" stroke-width="2" filter="url(#softShadow)"/>
+      <rect x="640" y="126" width="130" height="26" rx="13" fill="#e8effc"/>
+      <text x="705" y="144" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">等臂杠杆</text>
+      <rect x="732" y="250" width="8" height="110" fill="#64748b"/>
+      <rect x="700" y="356" width="72" height="10" rx="5" fill="#64748b"/>
+      <line x1="660" y1="250" x2="812" y2="250" stroke="#475569" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="736" cy="250" r="6" fill="#334155"/>
+      <g class="p45-pan">
+        <line x1="660" y1="250" x2="660" y2="306" stroke="#64748b" stroke-width="1.5"/>
+        <line x1="632" y1="306" x2="688" y2="306" stroke="#64748b" stroke-width="1.5"/>
+        <path d="M630 306 Q660 330 690 306" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+      </g>
+      <g class="p45-pan">
+        <line x1="812" y1="250" x2="812" y2="306" stroke="#64748b" stroke-width="1.5"/>
+        <line x1="784" y1="306" x2="840" y2="306" stroke="#64748b" stroke-width="1.5"/>
+        <path d="M782 306 Q812 330 842 306" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+      </g>
+      <text x="740" y="374" font-size="12.5" font-weight="800" fill="#334155" text-anchor="middle">天平 · 定滑轮</text>
+      <text x="740" y="394" font-size="12" font-weight="700" fill="#1e40af" text-anchor="middle">不省力也不费距离</text>
+    </g>
+
+    <rect x="60" y="416" width="780" height="42" rx="12" fill="#eef6ff" stroke="#bfdbfe" stroke-width="2"/>
+    <text x="450" y="442" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">省力必费距离，费力必省距离 —— 使用任何机械都不省功</text>
+  </g>
+</svg>

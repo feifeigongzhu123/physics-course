@@ -1,0 +1,188 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="电磁波的海洋：变化的电流产生电磁波、真空传播与波速、电磁波谱的应用">
+<style>
+.p79-s1,.p79-s2,.p79-s3{opacity:0;visibility:hidden}
+.p79-s1{opacity:1;visibility:visible}
+[data-scene="pj-79"] .p79-s1,[data-scene="pj-79"] .p79-s2,[data-scene="pj-79"] .p79-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="pj-79"].s1 .p79-s1,[data-scene="pj-79"].s2 .p79-s2,[data-scene="pj-79"].s3 .p79-s3{opacity:1;visibility:visible}
+@keyframes p79pop{0%{transform:scale(.86);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes p79ring{0%,100%{opacity:.22}50%{opacity:.95}}
+@keyframes p79flow{to{stroke-dashoffset:-48}}
+@keyframes p79draw{to{stroke-dashoffset:0}}
+@keyframes p79glow{0%,100%{opacity:.55}50%{opacity:1}}
+[data-scene="pj-79"].s1 .p79-wave{animation:p79ring 2.2s ease-in-out infinite}
+[data-scene="pj-79"].s1 .p79-wave2{animation-delay:.3s}
+[data-scene="pj-79"].s1 .p79-wave3{animation-delay:.6s}
+[data-scene="pj-79"].s1 .p79-wave4{animation-delay:.9s}
+[data-scene="pj-79"].s1 .p79-emit{stroke-dasharray:9 8;animation:p79flow 1s linear infinite}
+[data-scene="pj-79"].s1 .p79-emf{stroke-dasharray:420;stroke-dashoffset:420;animation:p79draw 1.2s ease .2s forwards}
+[data-scene="pj-79"].s1 .p79-spark{animation:p79glow 1.1s ease-in-out infinite}
+[data-scene="pj-79"].s2 .p79-vac{stroke-dasharray:10 8;animation:p79flow 1.2s linear infinite}
+[data-scene="pj-79"].s2 .p79-hi,[data-scene="pj-79"].s2 .p79-lo{stroke-dasharray:520;stroke-dashoffset:520;animation:p79draw 1.2s ease forwards}
+[data-scene="pj-79"].s2 .p79-lo{animation-delay:.25s}
+[data-scene="pj-79"].s3 .p79-seg{transform-box:fill-box;transform-origin:center;animation:p79pop .5s ease both}
+[data-scene="pj-79"].s3 .p79-seg2{animation-delay:.06s}
+[data-scene="pj-79"].s3 .p79-seg3{animation-delay:.12s}
+[data-scene="pj-79"].s3 .p79-seg4{animation-delay:.18s}
+[data-scene="pj-79"].s3 .p79-seg5{animation-delay:.24s}
+[data-scene="pj-79"].s3 .p79-seg6{animation-delay:.3s}
+[data-scene="pj-79"].s3 .p79-seg7{animation-delay:.36s}
+</style>
+<defs>
+  <linearGradient id="p79vis" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#ef4444"/><stop offset=".18" stop-color="#f97316"/>
+    <stop offset=".36" stop-color="#facc15"/><stop offset=".54" stop-color="#22c55e"/>
+    <stop offset=".72" stop-color="#3b82f6"/><stop offset=".88" stop-color="#6366f1"/>
+    <stop offset="1" stop-color="#8b5cf6"/>
+  </linearGradient>
+</defs>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="470" width="900" height="150" fill="url(#gBench)"/>
+<line x1="0" y1="470" x2="900" y2="470" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">电磁波的海洋：变化的电流激起电磁波</text>
+
+<!-- 第一步：变化的电流产生电磁波 -->
+<g class="p79-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">变化的电流在周围空间产生电磁波，天线负责发射</text>
+
+  <rect x="34" y="104" width="420" height="330" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="54" y="120" width="212" height="28" rx="14" fill="#e8effc"/>
+  <text x="160" y="139" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">产生：变化的电流</text>
+
+  <line x1="58" y1="400" x2="432" y2="400" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="76" y="330" width="104" height="58" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="128" y="354" font-size="13" font-weight="800" fill="#92400e" text-anchor="middle">高频电源</text>
+  <text x="128" y="374" font-size="11.5" fill="#92400e" text-anchor="middle">电流往复变化</text>
+
+  <path d="M180 358 H 250 V 214" fill="none" stroke="#334155" stroke-width="3"/>
+  <line x1="250" y1="176" x2="250" y2="400" stroke="#475569" stroke-width="6" stroke-linecap="round"/>
+  <line x1="222" y1="176" x2="278" y2="176" stroke="#475569" stroke-width="5" stroke-linecap="round"/>
+  <circle class="p79-spark" cx="250" cy="176" r="6" fill="#dc2626"/>
+  <text x="250" y="162" font-size="12" font-weight="800" fill="#475569" text-anchor="middle">天线</text>
+
+  <g fill="none" stroke="#3b82f6" stroke-width="3" stroke-linecap="round">
+    <path class="p79-wave" d="M282 245 A55 55 0 0 1 282 335"/>
+    <path class="p79-wave p79-wave2" d="M299 220 A85 85 0 0 1 299 360"/>
+    <path class="p79-wave p79-wave3" d="M316 196 A115 115 0 0 1 316 384"/>
+    <path class="p79-wave p79-wave4" d="M333 171 A145 145 0 0 1 333 409"/>
+  </g>
+  <text x="366" y="298" font-size="12" font-weight="800" fill="#1d4ed8">电磁波</text>
+  <path class="p79-emit" d="M250 250 H 330" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <text x="68" y="312" font-size="11" font-weight="700" fill="#64748b">电源频率越高，电磁波频率越高</text>
+  <text x="244" y="424" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">通入高频电流，天线向四周发射电磁波</text>
+
+  <rect x="470" y="104" width="396" height="330" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="490" y="120" width="252" height="28" rx="14" fill="#e8effc"/>
+  <text x="616" y="139" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电磁波：电场与磁场交替变化</text>
+
+  <line x1="486" y1="300" x2="846" y2="300" stroke="#cbd5e1" stroke-width="1.5"/>
+  <path class="p79-emf" d="M486 300 Q511 248 536 300 T586 300 T636 300 T686 300 T736 300 T786 300 T836 300" fill="none" stroke="#dc2626" stroke-width="3.5"/>
+  <path d="M486 350 Q511 318 536 350 T586 350 T636 350 T686 350 T736 350 T786 350 T836 350" fill="none" stroke="#1d4ed8" stroke-width="3" stroke-dasharray="7 5"/>
+  <line x1="511" y1="300" x2="511" y2="250" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arrRed)"/>
+  <text x="492" y="238" font-size="13" font-weight="900" fill="#b91c1c">E</text>
+  <text x="492" y="372" font-size="13" font-weight="900" fill="#1e40af">B</text>
+  <line x1="486" y1="394" x2="844" y2="394" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <text x="666" y="387" font-size="11.5" font-weight="700" fill="#1e40af" text-anchor="middle">传播方向</text>
+  <text x="666" y="424" font-size="12.5" font-weight="700" fill="#334155" text-anchor="middle">电场与磁场相互垂直，由近及远传播</text>
+</g>
+
+<!-- 第二步：真空传播与波速 -->
+<g class="p79-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">电磁波的传播不需要介质，真空中的速度等于光速</text>
+
+  <rect x="34" y="104" width="380" height="330" rx="16" fill="#0f172a" stroke="#1e3a8a" stroke-width="2"/>
+  <text x="58" y="142" font-size="13.5" font-weight="800" fill="#dbeafe">真空（没有空气）</text>
+  <text x="58" y="164" font-size="11.5" fill="#94a3b8">声音不能传播，电磁波可以</text>
+  <g fill="#cbd5e1">
+    <circle cx="80" cy="210" r="1.6"/><circle cx="128" cy="186" r="1.2"/><circle cx="186" cy="212" r="1.8"/>
+    <circle cx="238" cy="178" r="1.3"/><circle cx="294" cy="205" r="1.6"/><circle cx="348" cy="184" r="1.2"/>
+    <circle cx="392" cy="224" r="1.4"/><circle cx="104" cy="352" r="1.5"/><circle cx="170" cy="378" r="1.2"/>
+    <circle cx="252" cy="356" r="1.4"/><circle cx="330" cy="380" r="1.6"/><circle cx="392" cy="344" r="1.2"/>
+    <circle cx="62" cy="300" r="1.2"/><circle cx="376" cy="300" r="1.3"/>
+  </g>
+  <path class="p79-vac" d="M52 272 Q72 240 92 272 T132 272 T172 272 T212 272 T252 272 T292 272 T332 272 T372 272 L394 272" fill="none" stroke="#60a5fa" stroke-width="3.5" stroke-linecap="round"/>
+  <text x="98" y="250" font-size="11.5" font-weight="700" fill="#93c5fd">电磁波穿过真空</text>
+  <text x="225" y="412" font-size="12.5" font-weight="800" fill="#dbeafe" text-anchor="middle">不需要介质，真空中也能传播</text>
+  <text x="225" y="431" font-size="11.5" fill="#93c5fd" text-anchor="middle">传播速度等于光速 c</text>
+
+  <rect x="440" y="104" width="426" height="330" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="653" y="154" font-size="25" font-weight="900" fill="#1e3a8a" text-anchor="middle">c = 3.0×10⁸ m/s</text>
+  <text x="653" y="178" font-size="12" fill="#64748b" text-anchor="middle">真空中的电磁波速度约为三亿米每秒</text>
+  <text x="653" y="218" font-size="20" font-weight="900" fill="#1d4ed8" text-anchor="middle">c = λ f</text>
+  <g font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">
+    <text x="590" y="240">c 波速</text><text x="653" y="240">λ 波长</text><text x="716" y="240">f 频率</text>
+  </g>
+
+  <path class="p79-hi" d="M460 300 Q472 278 484 300 T508 300 T532 300 T556 300 T580 300 T604 300 T628 300 T652 300 T676 300 T700 300 T724 300 T748 300 T772 300 T796 300 T820 300 T844 300" fill="none" stroke="#dc2626" stroke-width="3"/>
+  <text x="460" y="272" font-size="11.5" font-weight="800" fill="#b91c1c">频率高 · 波长短</text>
+  <path class="p79-lo" d="M460 375 Q495 342 530 375 T600 375 T670 375 T740 375 T810 375" fill="none" stroke="#1d4ed8" stroke-width="3"/>
+  <text x="460" y="347" font-size="11.5" font-weight="800" fill="#1e40af">频率低 · 波长长</text>
+  <line x1="460" y1="392" x2="530" y2="392" stroke="#1d4ed8" stroke-width="1.8" marker-start="url(#arrBlue)" marker-end="url(#arrBlue)"/>
+  <text x="495" y="407" font-size="11" font-weight="700" fill="#1e40af" text-anchor="middle">λ</text>
+  <text x="653" y="426" font-size="12.5" font-weight="700" fill="#334155" text-anchor="middle">波速一定时，频率越高，波长越短</text>
+</g>
+
+<!-- 第三步：电磁波谱与应用 -->
+<g class="p79-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">不同频率的电磁波组成电磁波谱，各有各的用途</text>
+
+  <rect x="34" y="104" width="832" height="330" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="54" y="120" width="286" height="28" rx="14" fill="#e8effc"/>
+  <text x="197" y="139" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电磁波谱：按频率由低到高排列</text>
+  <line x1="74" y1="162" x2="826" y2="162" stroke="#d97706" stroke-width="2.5" marker-end="url(#arrAmber)"/>
+  <text x="450" y="155" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">频率升高，波长变短</text>
+
+  <g class="p79-seg">
+    <rect x="73" y="180" width="106" height="88" rx="4" fill="#2563eb"/>
+    <text x="126" y="232" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle">无线电波</text>
+  </g>
+  <g class="p79-seg p79-seg2">
+    <rect x="181" y="180" width="106" height="88" rx="4" fill="#0891b2"/>
+    <text x="234" y="232" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle">微波</text>
+  </g>
+  <g class="p79-seg p79-seg3">
+    <rect x="289" y="180" width="106" height="88" rx="4" fill="#f59e0b"/>
+    <text x="342" y="232" font-size="12.5" font-weight="800" fill="#78350f" text-anchor="middle">红外线</text>
+  </g>
+  <g class="p79-seg p79-seg4">
+    <rect x="397" y="180" width="106" height="88" rx="4" fill="url(#p79vis)"/>
+    <text x="450" y="232" font-size="12.5" font-weight="800" fill="#1e293b" text-anchor="middle">可见光</text>
+  </g>
+  <g class="p79-seg p79-seg5">
+    <rect x="505" y="180" width="106" height="88" rx="4" fill="#8b5cf6"/>
+    <text x="558" y="232" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle">紫外线</text>
+  </g>
+  <g class="p79-seg p79-seg6">
+    <rect x="613" y="180" width="106" height="88" rx="4" fill="#6366f1"/>
+    <text x="666" y="232" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle">X 射线</text>
+  </g>
+  <g class="p79-seg p79-seg7">
+    <rect x="721" y="180" width="106" height="88" rx="4" fill="#334155"/>
+    <text x="774" y="232" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle">γ 射线</text>
+  </g>
+
+  <g font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">
+    <text x="126" y="306">广播 电视 手机</text>
+    <text x="234" y="306">雷达 微波炉</text>
+    <text x="342" y="306">遥控 热成像</text>
+    <text x="450" y="306">照明 看见物体</text>
+    <text x="558" y="306">杀菌 防紫外线</text>
+    <text x="666" y="306">医学透视 安检</text>
+    <text x="774" y="306">肿瘤治疗 探伤</text>
+  </g>
+  <g font-size="11" fill="#64748b" text-anchor="middle">
+    <text x="126" y="330">通信 导航</text>
+    <text x="234" y="330">加热 测速</text>
+    <text x="342" y="330">感应 测温</text>
+    <text x="450" y="330">光合作用</text>
+    <text x="558" y="330">消毒 合成维生素</text>
+    <text x="666" y="330">检查骨骼</text>
+    <text x="774" y="330">杀死癌细胞</text>
+  </g>
+
+  <text x="450" y="388" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">它们都是电磁波，只是频率（波长）不同</text>
+  <text x="450" y="414" font-size="12" fill="#64748b" text-anchor="middle">广播、电视、手机都利用电磁波传递信息</text>
+</g>
+</svg>

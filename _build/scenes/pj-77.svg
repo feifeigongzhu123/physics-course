@@ -1,0 +1,193 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="磁生电：电磁感应条件、感应电流方向、发电机">
+<style>
+.p77-s1,.p77-s2,.p77-s3{opacity:0;visibility:hidden}
+.p77-s1{opacity:1;visibility:visible}
+[data-scene="pj-77"] .p77-s1,[data-scene="pj-77"] .p77-s2,[data-scene="pj-77"] .p77-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="pj-77"].s1 .p77-s1,[data-scene="pj-77"].s2 .p77-s2,[data-scene="pj-77"].s3 .p77-s3{opacity:1;visibility:visible}
+@keyframes p77flow{to{stroke-dashoffset:-40}}
+@keyframes p77pop{0%{transform:scale(.82);opacity:0}72%{transform:scale(1.05);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes p77draw{to{stroke-dashoffset:0}}
+@keyframes p77glow{0%,100%{opacity:.4}50%{opacity:1}}
+@keyframes p77wave{to{stroke-dashoffset:-120}}
+[data-scene="pj-77"].s1 .p77-field{stroke-dasharray:9 7;animation:p77flow 1.5s linear infinite}
+[data-scene="pj-77"].s1 .p77-v{stroke-dasharray:110;stroke-dashoffset:110;animation:p77draw .8s ease .2s forwards}
+[data-scene="pj-77"].s1 .p77-needle{transform-box:fill-box;transform-origin:bottom center;animation:p77glow 2s ease-in-out infinite}
+[data-scene="pj-77"].s1 .p77-cur{stroke-dasharray:11 8;animation:p77flow 1.4s linear infinite}
+[data-scene="pj-77"].s2 .p77-cond{transform-box:fill-box;transform-origin:center;animation:p77pop .55s ease both}
+[data-scene="pj-77"].s2 .p77-cond2{animation-delay:.15s}
+[data-scene="pj-77"].s2 .p77-arrow{stroke-dasharray:100;stroke-dashoffset:100;animation:p77draw .8s ease .3s forwards}
+[data-scene="pj-77"].s2 .p77-flip{animation:p77glow 2s ease-in-out infinite}
+[data-scene="pj-77"].s3 .p77-coil{transform-box:fill-box;transform-origin:center;animation:p77pop .6s ease both}
+[data-scene="pj-77"].s3 .p77-wave{stroke-dasharray:480;stroke-dashoffset:480;animation:p77draw 1.6s ease .2s forwards}
+[data-scene="pj-77"].s3 .p77-row{transform-box:fill-box;transform-origin:left center;animation:p77pop .5s ease both}
+[data-scene="pj-77"].s3 .p77-row2{animation-delay:.14s}
+[data-scene="pj-77"].s3 .p77-row3{animation-delay:.28s}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="470" width="900" height="150" fill="url(#gBench)"/>
+<line x1="0" y1="470" x2="900" y2="470" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">磁生电：导体切割磁感线，产生感应电流</text>
+
+<!-- 第一步：电磁感应现象 -->
+<g class="p77-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">闭合电路的一部分导体切割磁感线，产生感应电流</text>
+
+  <rect x="36" y="100" width="560" height="330" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+
+  <rect x="150" y="120" width="300" height="30" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="300" y="143" font-size="16" font-weight="900" fill="#dc2626" text-anchor="middle">N</text>
+  <rect x="150" y="320" width="300" height="30" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="300" y="343" font-size="16" font-weight="900" fill="#1d4ed8" text-anchor="middle">S</text>
+
+  <g class="p77-field" stroke="#1d4ed8" stroke-width="2.5">
+    <line x1="180" y1="156" x2="180" y2="312" marker-end="url(#arrBlue)"/>
+    <line x1="240" y1="156" x2="240" y2="312" marker-end="url(#arrBlue)"/>
+    <line x1="300" y1="156" x2="300" y2="312" marker-end="url(#arrBlue)"/>
+    <line x1="360" y1="156" x2="360" y2="312" marker-end="url(#arrBlue)"/>
+    <line x1="420" y1="156" x2="420" y2="312" marker-end="url(#arrBlue)"/>
+  </g>
+  <text x="424" y="172" font-size="12" font-weight="700" fill="#1d4ed8" text-anchor="end">磁感线</text>
+
+  <path d="M130 240 H90 V392 H274" fill="none" stroke="#334155" stroke-width="3.5"/>
+  <path d="M470 240 H510 V392 H326" fill="none" stroke="#334155" stroke-width="3.5"/>
+  <path class="p77-cur" d="M130 240 H470" fill="none" stroke="#dc2626" stroke-width="5" opacity=".9"/>
+  <text x="118" y="232" font-size="13" font-weight="900" fill="#b91c1c" text-anchor="end">A</text>
+  <text x="482" y="232" font-size="13" font-weight="900" fill="#b91c1c">B</text>
+  <text x="300" y="222" font-size="12" font-weight="700" fill="#b91c1c" text-anchor="middle">导体 AB</text>
+
+  <line class="p77-v" x1="310" y1="285" x2="396" y2="285" stroke="#059669" stroke-width="5" stroke-linecap="round" marker-end="url(#arrGreen)"/>
+  <text x="354" y="308" font-size="12" font-weight="800" fill="#047857" text-anchor="middle">v 向右运动</text>
+
+  <circle cx="300" cy="392" r="26" fill="#ffffff" stroke="#475569" stroke-width="3"/>
+  <line class="p77-needle" x1="300" y1="392" x2="314" y2="372" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="300" cy="392" r="3.5" fill="#334155"/>
+  <text x="300" y="410" font-size="13" font-weight="900" fill="#475569" text-anchor="middle">G</text>
+  <text x="300" y="446" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">灵敏电流计</text>
+
+  <text x="420" y="378" font-size="11.5" font-weight="700" fill="#b45309" text-anchor="middle">指针偏转 → 有感应电流</text>
+
+  <rect x="616" y="100" width="248" height="330" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="636" y="116" width="150" height="30" rx="15" fill="#e8effc"/>
+  <text x="711" y="136" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电磁感应</text>
+  <g font-size="12.5" font-weight="700" fill="#334155">
+    <text x="650" y="180">① 闭合电路的一部分导体</text>
+    <text x="650" y="218">② 在磁场中做切割磁感线运动</text>
+    <text x="650" y="256">③ 导体中产生感应电流</text>
+    <text x="650" y="294">④ 这种现象叫电磁感应</text>
+  </g>
+  <rect x="636" y="322" width="208" height="84" rx="12" fill="#fff7ed"/>
+  <text x="740" y="348" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">上下运动不切割磁感线</text>
+  <text x="740" y="370" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">电流计指针不偏转</text>
+  <text x="740" y="392" font-size="11.5" fill="#92400e" text-anchor="middle">必须是“切割”运动</text>
+</g>
+
+<!-- 第二步：产生条件与方向 -->
+<g class="p77-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">产生感应电流的条件与感应电流的方向</text>
+
+  <rect x="36" y="100" width="400" height="330" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="236" y="132" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">两个条件，缺一不可</text>
+
+  <g class="p77-cond">
+    <rect x="60" y="158" width="352" height="96" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+    <circle cx="100" cy="206" r="20" fill="#1d4ed8"/>
+    <text x="100" y="212" font-size="14" font-weight="900" fill="#ffffff" text-anchor="middle">1</text>
+    <text x="134" y="198" font-size="16" font-weight="900" fill="#1e3a8a">电路必须闭合</text>
+    <text x="134" y="226" font-size="12" fill="#475569">断开电路，即使切割也不产生电流</text>
+  </g>
+
+  <g class="p77-cond p77-cond2">
+    <rect x="60" y="272" width="352" height="96" rx="12" fill="#e6f7f1" stroke="#a7f3d0" stroke-width="1.5"/>
+    <circle cx="100" cy="320" r="20" fill="#059669"/>
+    <text x="100" y="326" font-size="14" font-weight="900" fill="#ffffff" text-anchor="middle">2</text>
+    <text x="134" y="312" font-size="16" font-weight="900" fill="#047857">切割磁感线</text>
+    <text x="134" y="340" font-size="12" fill="#475569">导体做切割磁感线运动，如左右运动</text>
+  </g>
+
+  <text x="236" y="402" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">闭合 + 切割 → 有感应电流</text>
+
+  <rect x="460" y="100" width="404" height="330" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="662" y="132" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">感应电流的方向</text>
+
+  <rect x="484" y="158" width="356" height="102" rx="12" fill="#f8fbff" stroke="#dbe6f2" stroke-width="1.5"/>
+  <text x="500" y="184" font-size="12.5" font-weight="800" fill="#1e3a8a">与导体运动方向有关</text>
+  <line class="p77-arrow" x1="508" y1="216" x2="572" y2="216" stroke="#059669" stroke-width="4" marker-end="url(#arrGreen)"/>
+  <text x="584" y="221" font-size="12" font-weight="700" fill="#047857">向右 → 电流方向甲</text>
+  <line x1="508" y1="242" x2="572" y2="242" stroke="#059669" stroke-width="4" marker-end="url(#arrGreen)" transform="rotate(180 540 242)"/>
+  <text x="584" y="247" font-size="12" font-weight="700" fill="#047857">向左 → 电流方向乙</text>
+
+  <rect x="484" y="274" width="356" height="102" rx="12" fill="#f8fbff" stroke="#dbe6f2" stroke-width="1.5"/>
+  <text x="500" y="300" font-size="12.5" font-weight="800" fill="#1e3a8a">与磁场方向有关</text>
+  <g class="p77-flip">
+    <rect x="508" y="316" width="32" height="34" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+    <text x="524" y="340" font-size="13" font-weight="900" fill="#dc2626" text-anchor="middle">N</text>
+    <rect x="540" y="316" width="32" height="34" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+    <text x="556" y="340" font-size="13" font-weight="900" fill="#1d4ed8" text-anchor="middle">S</text>
+  </g>
+  <text x="584" y="332" font-size="12" font-weight="700" fill="#475569">磁极对调</text>
+  <text x="584" y="354" font-size="12" font-weight="700" fill="#475569">感应电流方向也改变</text>
+
+  <text x="662" y="410" font-size="11.5" fill="#64748b" text-anchor="middle">只改变其中一个因素，电流方向就改变</text>
+
+  <rect x="36" y="444" width="828" height="44" rx="14" fill="#eef6ff" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="450" y="471" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">闭合 + 切割 = 有感应电流；方向由导体运动方向和磁场方向共同决定</text>
+</g>
+
+<!-- 第三步：发电机 -->
+<g class="p77-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">发电机：利用电磁感应，把机械能转化为电能</text>
+
+  <rect x="36" y="100" width="430" height="330" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+
+  <rect x="70" y="190" width="40" height="120" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="90" y="257" font-size="18" font-weight="900" fill="#dc2626" text-anchor="middle">N</text>
+  <rect x="350" y="190" width="40" height="120" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="370" y="257" font-size="18" font-weight="900" fill="#1d4ed8" text-anchor="middle">S</text>
+
+  <g class="p77-coil">
+    <rect x="150" y="155" width="160" height="190" fill="none" stroke="#b45309" stroke-width="5"/>
+    <polygon points="145,200 155,200 150,212" fill="#dc2626"/>
+    <polygon points="305,300 315,300 310,288" fill="#dc2626"/>
+    <text x="230" y="145" font-size="11.5" font-weight="700" fill="#b45309" text-anchor="middle">线圈</text>
+  </g>
+
+  <line x1="310" y1="250" x2="400" y2="250" stroke="#64748b" stroke-width="4"/>
+  <ellipse cx="400" cy="215" rx="8" ry="16" fill="none" stroke="#b45309" stroke-width="4"/>
+  <ellipse cx="400" cy="275" rx="8" ry="16" fill="none" stroke="#b45309" stroke-width="4"/>
+  <rect x="410" y="207" width="22" height="14" rx="3" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
+  <rect x="410" y="267" width="22" height="14" rx="3" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
+  <text x="430" y="244" font-size="11" font-weight="700" fill="#b45309">铜环</text>
+  <text x="410" y="200" font-size="11" font-weight="700" fill="#475569">电刷</text>
+
+  <path d="M432 214 H450 V380 H437" fill="none" stroke="#334155" stroke-width="3"/>
+  <path d="M432 274 H455 V410 H420 V397" fill="none" stroke="#334155" stroke-width="3"/>
+  <circle cx="420" cy="380" r="17" fill="#fef3c7" stroke="#d97706" stroke-width="3"/>
+  <line x1="409" y1="369" x2="431" y2="391" stroke="#d97706" stroke-width="2"/>
+  <line x1="431" y1="369" x2="409" y2="391" stroke="#d97706" stroke-width="2"/>
+  <text x="420" y="418" font-size="11" fill="#92400e" text-anchor="middle">小灯泡</text>
+
+  <path d="M180 142 A52 52 0 0 1 262 136" fill="none" stroke="#d97706" stroke-width="3" marker-end="url(#arrAmber)"/>
+  <text x="222" y="128" font-size="11" font-weight="700" fill="#b45309" text-anchor="middle">转动</text>
+
+  <rect x="486" y="100" width="378" height="330" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="506" y="116" width="120" height="30" rx="15" fill="#e6f7f1"/>
+  <text x="566" y="136" font-size="12.5" font-weight="800" fill="#047857" text-anchor="middle">交流电</text>
+
+  <line x1="520" y1="280" x2="840" y2="280" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="6 5"/>
+  <line x1="520" y1="190" x2="520" y2="340" stroke="#94a3b8" stroke-width="2"/>
+  <path class="p77-wave" d="M520 280 Q555 225 590 280 Q625 335 660 280 Q695 225 730 280 Q765 335 800 280" fill="none" stroke="#1d4ed8" stroke-width="4"/>
+  <text x="680" y="205" font-size="12" font-weight="700" fill="#1e3a8a" text-anchor="middle">电流方向周期性改变</text>
+
+  <g font-size="12.5" font-weight="700" fill="#334155">
+    <g class="p77-row"><text x="510" y="350">机械能 → 电能</text></g>
+    <g class="p77-row p77-row2"><text x="510" y="378">我国家庭电路使用交流电</text></g>
+    <g class="p77-row p77-row3"><text x="510" y="406">频率 50 Hz，每秒完成 50 个周期</text></g>
+  </g>
+
+  <rect x="36" y="444" width="828" height="44" rx="14" fill="#eef6ff" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="450" y="471" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">发电机：线圈在磁场中转动 → 切割磁感线 → 产生感应电流</text>
+</g>
+</svg>

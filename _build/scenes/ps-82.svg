@@ -1,0 +1,231 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="光的衍射：明显衍射条件、单缝衍射条纹、泊松亮斑">
+<style>
+[data-scene="ps-82"] .s82-s1,[data-scene="ps-82"] .s82-s2,[data-scene="ps-82"] .s82-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility 0s linear .45s}
+[data-scene="ps-82"].s1 .s82-s1,[data-scene="ps-82"].s2 .s82-s2,[data-scene="ps-82"].s3 .s82-s3{opacity:1;visibility:visible;transition:opacity .45s ease,visibility 0s}
+@keyframes s82pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes s82pop{0%{transform:scale(.85);opacity:0}70%{transform:scale(1.05);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s82draw{to{stroke-dashoffset:0}}
+@keyframes s82blink{0%,100%{opacity:1}50%{opacity:.35}}
+[data-scene="ps-82"].s1 .s82-wave{animation:s82pulse 2.6s ease-in-out infinite}
+[data-scene="ps-82"].s1 .s82-w2{animation-delay:.6s}
+[data-scene="ps-82"].s1 .s82-w3{animation-delay:1.2s}
+[data-scene="ps-82"].s1 .s82-ray{stroke-dasharray:180;stroke-dashoffset:180;animation:s82draw .9s ease both}
+[data-scene="ps-82"].s2 .s82-band{transform-box:fill-box;transform-origin:center;animation:s82pop .5s ease both}
+[data-scene="ps-82"].s2 .s82-band2{animation-delay:.1s}
+[data-scene="ps-82"].s2 .s82-band3{animation-delay:.2s}
+[data-scene="ps-82"].s2 .s82-band4{animation-delay:.3s}
+[data-scene="ps-82"].s2 .s82-core{animation:s82pulse 2.2s ease-in-out infinite}
+[data-scene="ps-82"].s3 .s82-spot{animation:s82blink 1.6s ease-in-out infinite}
+[data-scene="ps-82"].s3 .s82-glow{transform-box:fill-box;transform-origin:center;animation:s82pulse 2s ease-in-out infinite}
+[data-scene="ps-82"].s3 .s82-ray{stroke-dasharray:180;stroke-dashoffset:180;animation:s82draw 1s ease both}
+[data-scene="ps-82"].s3 .s82-ray2{animation-delay:.2s}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">光的衍射：光绕过障碍物，条纹宽窄不均</text>
+
+<!-- 第一步：明显衍射条件 -->
+<g class="s82-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">障碍物或孔的尺寸跟光的波长差不多，甚至更小时，衍射才明显</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="240" height="28" rx="14" fill="#e8effc"/>
+  <text x="176" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">光波绕过狭缝继续传播</text>
+
+  <rect x="66" y="252" width="54" height="36" rx="8" fill="#334155"/>
+  <text x="93" y="275" font-size="11" font-weight="800" fill="#86efac" text-anchor="middle">激光</text>
+  <line x1="120" y1="270" x2="290" y2="270" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrAmber)"/>
+
+  <g stroke="#3b82f6" stroke-width="2" opacity=".7">
+    <line class="s82-wave" x1="150" y1="190" x2="150" y2="350"/>
+    <line class="s82-wave s82-w2" x1="190" y1="190" x2="190" y2="350"/>
+    <line class="s82-wave s82-w3" x1="230" y1="190" x2="230" y2="350"/>
+    <line class="s82-wave" x1="270" y1="195" x2="270" y2="345"/>
+  </g>
+
+  <rect x="292" y="150" width="10" height="105" fill="#475569"/>
+  <rect x="292" y="285" width="10" height="115" fill="#475569"/>
+  <text x="286" y="246" font-size="11.5" font-weight="800" fill="#334155" text-anchor="end">缝宽 a</text>
+  <text x="286" y="304" font-size="11.5" font-weight="800" fill="#334155" text-anchor="end">窄缝</text>
+
+  <rect x="302" y="160" width="198" height="95" fill="#dbeafe" opacity=".5"/>
+  <rect x="302" y="285" width="198" height="105" fill="#dbeafe" opacity=".5"/>
+  <text x="414" y="205" font-size="11" fill="#64748b" text-anchor="middle">几何阴影区</text>
+
+  <g fill="none" stroke="#f59e0b" stroke-width="2.2">
+    <path class="s82-wave s82-w2" d="M303 243 A22 22 0 0 1 303 287"/>
+    <path class="s82-wave s82-w3" d="M303 217 A48 48 0 0 1 303 313"/>
+    <path class="s82-wave" d="M303 191 A74 74 0 0 1 303 339"/>
+    <path class="s82-wave s82-w2" d="M303 165 A100 100 0 0 1 303 365"/>
+  </g>
+  <path class="s82-ray" d="M303 255 Q410 205 500 190" fill="none" stroke="#f59e0b" stroke-width="1.8" stroke-dasharray="6 5"/>
+  <path class="s82-ray" d="M303 285 Q410 335 500 350" fill="none" stroke="#f59e0b" stroke-width="1.8" stroke-dasharray="6 5"/>
+
+  <rect x="500" y="160" width="16" height="230" rx="3" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <text x="508" y="150" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">屏</text>
+
+  <text x="296" y="420" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">衍射使光偏离直线传播，进入几何阴影区</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="694" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">明显衍射的条件</text>
+
+  <rect x="596" y="158" width="248" height="54" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="720" y="193" font-size="20" font-weight="900" fill="#1e3a8a" text-anchor="middle">a ≈ λ 或更小</text>
+
+  <circle cx="612" cy="238" r="11" fill="#dcfce7"/>
+  <text x="612" y="243" font-size="12" font-weight="900" fill="#15803d" text-anchor="middle">✓</text>
+  <text x="634" y="243" font-size="11.5" font-weight="700" fill="#334155">孔或障碍物的尺寸接近波长</text>
+
+  <circle cx="612" cy="274" r="11" fill="#dcfce7"/>
+  <text x="612" y="279" font-size="12" font-weight="900" fill="#15803d" text-anchor="middle">✓</text>
+  <text x="634" y="279" font-size="11.5" font-weight="700" fill="#334155">或比波长还小，衍射更明显</text>
+
+  <circle cx="612" cy="310" r="11" fill="#dcfce7"/>
+  <text x="612" y="315" font-size="12" font-weight="900" fill="#15803d" text-anchor="middle">✓</text>
+  <text x="634" y="315" font-size="11.5" font-weight="700" fill="#334155">波长越长，衍射现象越明显</text>
+
+  <rect x="596" y="334" width="248" height="86" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="356" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">声波：波长大，容易绕过障碍物</text>
+  <text x="720" y="380" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">可见光：波长短，日常物体不明显</text>
+  <text x="720" y="404" font-size="11" fill="#92400e" text-anchor="middle">缝越窄，衍射图样越清楚</text>
+
+  <rect x="36" y="446" width="828" height="44" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="474" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">明显衍射的条件：障碍物或孔的尺寸与波长相近，甚至比波长更小</text>
+</g>
+
+<!-- 第二步：单缝衍射 -->
+<g class="s82-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">单缝衍射：中央亮纹最宽最亮，两侧条纹变窄变暗</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="200" height="28" rx="14" fill="#e8effc"/>
+  <text x="156" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">单缝衍射条纹</text>
+
+  <line x1="80" y1="270" x2="248" y2="270" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrAmber)"/>
+  <text x="150" y="255" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">平行光</text>
+
+  <rect x="250" y="150" width="10" height="112" fill="#475569"/>
+  <rect x="250" y="278" width="10" height="112" fill="#475569"/>
+  <text x="255" y="146" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">单缝</text>
+
+  <g stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="6 5" opacity=".55">
+    <line x1="260" y1="270" x2="470" y2="185"/>
+    <line x1="260" y1="270" x2="470" y2="225"/>
+    <line x1="260" y1="270" x2="470" y2="315"/>
+    <line x1="260" y1="270" x2="470" y2="355"/>
+  </g>
+
+  <rect x="470" y="160" width="22" height="224" rx="2" fill="#1e293b"/>
+  <text x="481" y="150" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">屏</text>
+
+  <g class="s82-band" fill="#fbbf24" opacity=".45">
+    <rect x="474" y="190" width="14" height="6"/>
+    <rect x="474" y="338" width="14" height="6"/>
+  </g>
+  <g class="s82-band s82-band2" fill="#fbbf24" opacity=".65">
+    <rect x="474" y="204" width="14" height="10"/>
+    <rect x="474" y="324" width="14" height="10"/>
+  </g>
+  <g class="s82-band s82-band3" fill="#fbbf24" opacity=".82">
+    <rect x="474" y="222" width="14" height="16"/>
+    <rect x="474" y="300" width="14" height="16"/>
+  </g>
+  <rect class="s82-band s82-band4 s82-core" x="474" y="246" width="14" height="46" fill="#fde047"/>
+  <text x="458" y="252" font-size="11" font-weight="800" fill="#b45309" text-anchor="end">中央亮纹</text>
+  <text x="458" y="322" font-size="11" font-weight="800" fill="#b45309" text-anchor="end">两侧亮纹</text>
+
+  <text x="296" y="418" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">中央亮纹最宽也最亮，向两侧宽度变窄、亮度减弱</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="694" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">单缝衍射的特点</text>
+
+  <rect x="596" y="158" width="248" height="58" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="610" y="182" font-size="12" font-weight="800" fill="#1e3a8a">中央亮纹最宽、最亮</text>
+  <text x="610" y="204" font-size="11" fill="#64748b">两侧亮纹宽度变窄、亮度减弱</text>
+
+  <rect x="596" y="226" width="248" height="58" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="610" y="250" font-size="12" font-weight="800" fill="#1e3a8a">条纹间距不相等</text>
+  <text x="610" y="272" font-size="11" fill="#64748b">与双缝干涉的等间距条纹不同</text>
+
+  <rect x="596" y="294" width="248" height="58" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="610" y="318" font-size="12" font-weight="800" fill="#1e3a8a">缝越窄，衍射越明显</text>
+  <text x="610" y="340" font-size="11" fill="#64748b">中央亮纹变宽，条纹更稀疏</text>
+
+  <rect x="596" y="364" width="248" height="50" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="386" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">单缝：间距不等</text>
+  <text x="720" y="406" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">双缝：等间距</text>
+  <text x="720" y="430" font-size="11" fill="#64748b" text-anchor="middle">看条纹间距是否相等即可区分</text>
+
+  <rect x="36" y="446" width="828" height="44" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="474" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">单缝衍射条纹中央最宽最亮，两侧变窄变暗，而且间距不相等</text>
+</g>
+
+<!-- 第三步：泊松亮斑 -->
+<g class="s82-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">泊松亮斑：不透明圆板阴影的中心出现亮斑</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="200" height="28" rx="14" fill="#e8effc"/>
+  <text x="156" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">圆板衍射</text>
+
+  <text x="84" y="175" font-size="11.5" font-weight="800" fill="#b45309">平行光</text>
+  <g stroke="#f59e0b" stroke-width="2">
+    <line x1="70" y1="190" x2="500" y2="190"/>
+    <line x1="70" y1="230" x2="266" y2="230"/>
+    <line x1="70" y1="270" x2="266" y2="270"/>
+    <line x1="70" y1="310" x2="266" y2="310"/>
+    <line x1="70" y1="350" x2="500" y2="350"/>
+  </g>
+
+  <circle cx="280" cy="270" r="48" fill="#475569" stroke="#334155" stroke-width="2.5"/>
+  <text x="280" y="366" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">不透明圆板</text>
+
+  <polygon points="280,222 500,160 500,380 280,318" fill="#64748b" opacity=".2"/>
+  <text x="410" y="220" font-size="11" fill="#475569" text-anchor="middle">阴影</text>
+
+  <path class="s82-ray" d="M280 222 Q400 200 500 262" fill="none" stroke="#f59e0b" stroke-width="1.8" stroke-dasharray="6 5"/>
+  <path class="s82-ray s82-ray2" d="M280 318 Q400 340 500 278" fill="none" stroke="#f59e0b" stroke-width="1.8" stroke-dasharray="6 5"/>
+
+  <rect x="500" y="150" width="18" height="250" rx="2" fill="#1e293b"/>
+  <circle class="s82-glow" cx="509" cy="270" r="20" fill="#fde047" opacity=".35"/>
+  <circle class="s82-spot" cx="509" cy="270" r="10" fill="#fde047" stroke="#d97706" stroke-width="1.5"/>
+  <text x="490" y="300" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="end">泊松亮斑</text>
+
+  <text x="296" y="418" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">光绕过圆板边缘在阴影中心叠加加强，形成亮点</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="694" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">圆孔衍射与其他衍射</text>
+
+  <text x="720" y="162" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">圆孔衍射：明暗相间的圆环</text>
+  <g fill="none" stroke="#3b82f6" stroke-width="2">
+    <circle cx="650" cy="212" r="30" opacity=".5"/>
+    <circle cx="650" cy="212" r="21" opacity=".75"/>
+    <circle cx="650" cy="212" r="12"/>
+  </g>
+  <circle cx="650" cy="212" r="4.5" fill="#fbbf24"/>
+  <text x="694" y="205" font-size="11.5" font-weight="700" fill="#334155">中心亮斑</text>
+  <text x="694" y="226" font-size="11.5" font-weight="700" fill="#334155">外围明暗圆环</text>
+
+  <line x1="596" y1="252" x2="844" y2="252" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <text x="720" y="278" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">泊松亮斑</text>
+  <text x="720" y="302" font-size="11.5" fill="#334155" text-anchor="middle">不透明圆板阴影中心出现亮斑</text>
+  <text x="720" y="326" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">有力证明光具有波动性</text>
+
+  <line x1="596" y1="346" x2="844" y2="346" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <text x="720" y="372" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">光栅衍射：条纹更窄更亮</text>
+  <text x="720" y="396" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">可用于分析光谱</text>
+  <text x="720" y="424" font-size="11" fill="#64748b" text-anchor="middle">衍射是波特有的现象</text>
+
+  <rect x="36" y="446" width="828" height="44" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="474" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">泊松亮斑有力地证明光具有波动性，衍射是波特有的现象</text>
+</g>
+</svg>

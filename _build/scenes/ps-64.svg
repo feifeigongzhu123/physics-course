@@ -1,0 +1,164 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="动量守恒定律：守恒条件、初末动量相等、碰撞中的应用">
+<style>
+[data-scene="ps-64"] .s64-step1,[data-scene="ps-64"] .s64-step2,[data-scene="ps-64"] .s64-step3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility 0s linear .45s}
+[data-scene="ps-64"].s1 .s64-step1,[data-scene="ps-64"].s2 .s64-step2,[data-scene="ps-64"].s3 .s64-step3{opacity:1;visibility:visible;transition:opacity .45s ease,visibility 0s}
+@keyframes s64draw{to{stroke-dashoffset:0}}
+@keyframes s64pop{0%{transform:scale(.86);opacity:0}70%{transform:scale(1.05);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s64pulse{0%,100%{opacity:.5}50%{opacity:1}}
+[data-scene="ps-64"].s1 .s64-card{transform-box:fill-box;transform-origin:center;animation:s64pop .5s ease both}
+[data-scene="ps-64"].s1 .s64-card:nth-of-type(2){animation-delay:.1s}
+[data-scene="ps-64"].s1 .s64-card:nth-of-type(3){animation-delay:.2s}
+[data-scene="ps-64"].s1 .s64-box{stroke-dasharray:1200;stroke-dashoffset:1200;animation:s64draw 1s ease .3s forwards}
+[data-scene="ps-64"].s1 .s64-f{animation:s64pulse 1.8s ease-in-out infinite}
+[data-scene="ps-64"].s2 .s64-v{stroke-dasharray:170;stroke-dashoffset:170;animation:s64draw .6s ease .2s forwards}
+[data-scene="ps-64"].s2 .s64-v2{animation-delay:.35s}
+[data-scene="ps-64"].s2 .s64-v3{animation-delay:.5s}
+[data-scene="ps-64"].s2 .s64-v4{animation-delay:.65s}
+[data-scene="ps-64"].s2 .s64-eq{animation:s64pop .5s ease .75s both;transform-box:fill-box;transform-origin:center}
+[data-scene="ps-64"].s3 .s64-v{stroke-dasharray:150;stroke-dashoffset:150;animation:s64draw .55s ease .2s forwards}
+[data-scene="ps-64"].s3 .s64-v2{animation-delay:.4s}
+[data-scene="ps-64"].s3 .s64-v3{animation-delay:.6s}
+[data-scene="ps-64"].s3 .s64-v4{animation-delay:.8s}
+[data-scene="ps-64"].s3 .s64-card{transform-box:fill-box;transform-origin:center;animation:s64pop .5s ease .5s both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="532" width="900" height="88" fill="url(#gBench)"/>
+<line x1="0" y1="532" x2="900" y2="532" stroke="#cbd5e1" stroke-width="2.5"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">动量守恒定律：系统总动量保持不变</text>
+
+<!-- 第一步：守恒条件 -->
+<g class="s64-step1" data-zone="1">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 1 步 · 守恒条件</text>
+
+  <g class="s64-card">
+    <rect x="60" y="108" width="245" height="118" rx="14" fill="#ffffff" stroke="#bfdbfe" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="182" y="148" font-size="15" font-weight="900" fill="#1e3a8a" text-anchor="middle">不受外力</text>
+    <text x="182" y="180" font-size="12" fill="#334155" text-anchor="middle">系统不受外界作用</text>
+    <text x="182" y="204" font-size="11.5" fill="#64748b" text-anchor="middle">理想情况</text>
+  </g>
+
+  <g class="s64-card">
+    <rect x="327" y="108" width="245" height="118" rx="14" fill="#ffffff" stroke="#bfdbfe" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="449" y="148" font-size="15" font-weight="900" fill="#1e3a8a" text-anchor="middle">合外力为零</text>
+    <text x="449" y="180" font-size="12" fill="#334155" text-anchor="middle">外力的矢量和为零</text>
+    <text x="449" y="204" font-size="11.5" fill="#64748b" text-anchor="middle">最常见的情况</text>
+  </g>
+
+  <g class="s64-card">
+    <rect x="594" y="108" width="245" height="118" rx="14" fill="#ffffff" stroke="#bfdbfe" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="716" y="148" font-size="15" font-weight="900" fill="#1e3a8a" text-anchor="middle">内力远大于外力</text>
+    <text x="716" y="180" font-size="12" fill="#334155" text-anchor="middle">碰撞、爆炸可近似</text>
+    <text x="716" y="204" font-size="11.5" fill="#64748b" text-anchor="middle">忽略外力冲量</text>
+  </g>
+
+  <text x="450" y="286" font-size="12.5" font-weight="700" fill="#475569" text-anchor="middle">系统：两个滑块组成的整体</text>
+  <rect class="s64-box" x="190" y="300" width="530" height="110" rx="16" fill="#f8fafc" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 6"/>
+  <line x1="100" y1="412" x2="800" y2="412" stroke="#cbd5e1" stroke-width="2.5"/>
+
+  <rect x="300" y="336" width="80" height="46" rx="8" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <circle cx="320" cy="390" r="8" fill="#64748b"/><circle cx="360" cy="390" r="8" fill="#64748b"/>
+  <rect x="540" y="336" width="80" height="46" rx="8" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+  <circle cx="560" cy="390" r="8" fill="#64748b"/><circle cx="600" cy="390" r="8" fill="#64748b"/>
+
+  <line class="s64-f" x1="296" y1="359" x2="222" y2="359" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrRed)"/>
+  <line class="s64-f" x1="624" y1="359" x2="698" y2="359" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrRed)"/>
+  <text x="258" y="345" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">F内</text>
+  <text x="662" y="345" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">F内′</text>
+
+  <text x="450" y="438" font-size="12.5" fill="#64748b" text-anchor="middle">光滑水平面：外力合力为零，内力只改变各自的动量</text>
+
+  <rect x="60" y="458" width="800" height="48" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+  <text x="460" y="487" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">若系统在某一方向所受合外力为零，则该方向动量守恒</text>
+</g>
+
+<!-- 第二步：初末动量相等 -->
+<g class="s64-step2" data-zone="2">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 2 步 · 初动量等于末动量</text>
+
+  <text x="70" y="218" font-size="12.5" font-weight="800" fill="#64748b">碰前</text>
+  <line x1="90" y1="254" x2="820" y2="254" stroke="#cbd5e1" stroke-width="2.5"/>
+
+  <rect x="190" y="190" width="90" height="44" rx="8" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <circle cx="214" cy="240" r="7" fill="#64748b"/><circle cx="256" cy="240" r="7" fill="#64748b"/>
+  <text x="240" y="217" font-size="13" font-weight="900" fill="#1e3a8a" text-anchor="middle">m₁</text>
+
+  <rect x="520" y="190" width="72" height="44" rx="8" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+  <circle cx="540" cy="240" r="7" fill="#64748b"/><circle cx="572" cy="240" r="7" fill="#64748b"/>
+  <text x="556" y="217" font-size="13" font-weight="900" fill="#047857" text-anchor="middle">m₂</text>
+
+  <line class="s64-v" x1="284" y1="172" x2="364" y2="172" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrRed)"/>
+  <text x="324" y="160" font-size="13" font-weight="800" fill="#b91c1c" text-anchor="middle">v₁</text>
+  <line class="s64-v s64-v2" x1="596" y1="172" x2="666" y2="172" stroke="#059669" stroke-width="3.5" marker-end="url(#arrGreen)"/>
+  <text x="631" y="160" font-size="13" font-weight="800" fill="#047857" text-anchor="middle">v₂</text>
+
+  <g class="s64-eq">
+    <rect x="120" y="266" width="660" height="50" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="450" y="288" font-size="16" font-weight="900" fill="#1e3a8a" text-anchor="middle">m₁v₁ + m₂v₂ = m₁v₁′ + m₂v₂′</text>
+    <text x="450" y="308" font-size="12" font-weight="700" fill="#1d4ed8" text-anchor="middle">p初 = p末</text>
+  </g>
+
+  <text x="70" y="394" font-size="12.5" font-weight="800" fill="#64748b">碰后</text>
+  <line x1="90" y1="430" x2="820" y2="430" stroke="#cbd5e1" stroke-width="2.5"/>
+
+  <rect x="220" y="366" width="90" height="44" rx="8" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <circle cx="244" cy="416" r="7" fill="#64748b"/><circle cx="286" cy="416" r="7" fill="#64748b"/>
+  <text x="270" y="393" font-size="13" font-weight="900" fill="#1e3a8a" text-anchor="middle">m₁</text>
+
+  <rect x="540" y="366" width="72" height="44" rx="8" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+  <circle cx="560" cy="416" r="7" fill="#64748b"/><circle cx="592" cy="416" r="7" fill="#64748b"/>
+  <text x="576" y="393" font-size="13" font-weight="900" fill="#047857" text-anchor="middle">m₂</text>
+
+  <line class="s64-v s64-v3" x1="218" y1="348" x2="150" y2="348" stroke="#1d4ed8" stroke-width="3.5" marker-end="url(#arrBlue)"/>
+  <text x="184" y="336" font-size="13" font-weight="800" fill="#1d4ed8" text-anchor="middle">v₁′</text>
+  <line class="s64-v s64-v4" x1="616" y1="348" x2="726" y2="348" stroke="#059669" stroke-width="3.5" marker-end="url(#arrGreen)"/>
+  <text x="671" y="336" font-size="13" font-weight="800" fill="#047857" text-anchor="middle">v₂′</text>
+
+  <rect x="60" y="454" width="800" height="50" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="460" y="484" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">各速度必须相对同一惯性参考系，并先规定正方向</text>
+</g>
+
+<!-- 第三步：碰撞 -->
+<g class="s64-step3" data-zone="3">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 3 步 · 碰撞中的动量守恒</text>
+
+  <text x="70" y="160" font-size="12.5" font-weight="800" fill="#64748b">碰前</text>
+  <circle cx="160" cy="200" r="24" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="160" y="207" font-size="13" font-weight="900" fill="#1e3a8a" text-anchor="middle">m₁</text>
+  <line class="s64-v" x1="186" y1="200" x2="280" y2="200" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrRed)"/>
+  <text x="233" y="188" font-size="12.5" font-weight="800" fill="#b91c1c" text-anchor="middle">v₁</text>
+  <circle cx="380" cy="200" r="20" fill="#dcfce7" stroke="#059669" stroke-width="2.5"/>
+  <text x="380" y="206" font-size="12" font-weight="900" fill="#047857" text-anchor="middle">m₂</text>
+  <text x="380" y="242" font-size="12" fill="#64748b" text-anchor="middle">静止</text>
+
+  <text x="70" y="330" font-size="12.5" font-weight="800" fill="#64748b">碰后</text>
+  <circle cx="160" cy="370" r="24" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="160" y="377" font-size="13" font-weight="900" fill="#1e3a8a" text-anchor="middle">m₁</text>
+  <line class="s64-v s64-v3" x1="186" y1="370" x2="232" y2="370" stroke="#1d4ed8" stroke-width="3.5" marker-end="url(#arrBlue)"/>
+  <text x="209" y="358" font-size="12.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">v₁′</text>
+  <circle cx="420" cy="370" r="20" fill="#dcfce7" stroke="#059669" stroke-width="2.5"/>
+  <text x="420" y="376" font-size="12" font-weight="900" fill="#047857" text-anchor="middle">m₂</text>
+  <line class="s64-v s64-v4" x1="446" y1="370" x2="540" y2="370" stroke="#059669" stroke-width="3.5" marker-end="url(#arrGreen)"/>
+  <text x="493" y="358" font-size="12.5" font-weight="800" fill="#047857" text-anchor="middle">v₂′</text>
+
+  <g class="s64-card">
+    <rect x="560" y="112" width="300" height="340" rx="14" fill="#ffffff" stroke="#bbf7d0" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="710" y="146" font-size="14" font-weight="800" fill="#047857" text-anchor="middle">示例验证</text>
+    <text x="690" y="182" font-size="12.5" fill="#334155" text-anchor="middle">m₁ = 2 kg，v₁ = 3 m/s</text>
+    <text x="690" y="212" font-size="12.5" fill="#334155" text-anchor="middle">m₂ = 1 kg，v₂ = 0</text>
+    <text x="690" y="244" font-size="12.5" fill="#334155" text-anchor="middle">碰后 v₁′ = 1 m/s</text>
+    <text x="690" y="272" font-size="12.5" fill="#334155" text-anchor="middle">v₂′ = 4 m/s</text>
+    <line x1="600" y1="292" x2="820" y2="292" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="690" y="322" font-size="12.5" font-weight="700" fill="#b45309" text-anchor="middle">碰前：p = 2×3 = 6 kg·m/s</text>
+    <text x="690" y="352" font-size="12.5" font-weight="700" fill="#b45309" text-anchor="middle">碰后：p′ = 2×1 + 1×4</text>
+    <text x="690" y="380" font-size="12.5" font-weight="700" fill="#b45309" text-anchor="middle">p′ = 6 kg·m/s</text>
+    <line x1="600" y1="398" x2="820" y2="398" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="710" y="428" font-size="13" font-weight="900" fill="#047857" text-anchor="middle">p = p′，动量守恒</text>
+  </g>
+
+  <rect x="60" y="464" width="780" height="50" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+  <text x="450" y="494" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">碰撞时间极短，内力远大于外力，可认为系统动量守恒</text>
+</g>
+</svg>

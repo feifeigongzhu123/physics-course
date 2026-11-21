@@ -1,0 +1,288 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="弹力：弹性形变产生弹力、弹簧测力计的原理与使用、弹性限度">
+<style>
+[data-scene="pj-29"] .p29-step1,[data-scene="pj-29"] .p29-step2,[data-scene="pj-29"] .p29-step3{display:none}
+[data-scene="pj-29"].s1 .p29-step1,[data-scene="pj-29"].s2 .p29-step2,[data-scene="pj-29"].s3 .p29-step3{display:block}
+@keyframes p29pop{0%{transform:scale(.72);opacity:0}72%{transform:scale(1.05);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes p29in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes p29draw{to{stroke-dashoffset:0}}
+@keyframes p29pulse{0%,100%{opacity:.4}50%{opacity:1}}
+@keyframes p29flow{to{stroke-dashoffset:-44}}
+@keyframes p29ptr{from{transform:translateY(-120px)}to{transform:translateY(0)}}
+@keyframes p29blk{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}
+@keyframes p29glow{0%,100%{opacity:.35}50%{opacity:.75}}
+[data-scene="pj-29"] .p29-card{transform-box:fill-box;transform-origin:center;animation:p29pop .55s ease .1s both}
+[data-scene="pj-29"] .p29-note{animation:p29in .55s ease .2s both}
+[data-scene="pj-29"] .p29-force{animation:p29pulse 1.8s ease-in-out infinite}
+[data-scene="pj-29"].s1 .p29-dx{stroke-dasharray:7 5;animation:p29flow 1.3s linear infinite}
+[data-scene="pj-29"].s1 .p29-blk{transform-box:view-box;animation:p29blk 2.6s ease-in-out infinite}
+[data-scene="pj-29"].s2 .p29-pointer{transform-box:view-box;animation:p29ptr 1.3s cubic-bezier(.2,.75,.3,1) .35s both}
+[data-scene="pj-29"].s2 .p29-read{animation:p29pulse 2s ease-in-out infinite}
+[data-scene="pj-29"].s3 .p29-curve{stroke-dasharray:300;stroke-dashoffset:300;animation:p29draw 1.2s ease .25s forwards}
+[data-scene="pj-29"].s3 .p29-line{stroke-dasharray:320;stroke-dashoffset:320;animation:p29draw .9s ease forwards}
+[data-scene="pj-29"].s3 .p29-zone{animation:p29glow 2.4s ease-in-out infinite}
+[data-scene="pj-29"].s3 .p29-bad{animation:p29pulse 1.6s ease-in-out infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">弹力：形变产生力，测力计量力</text>
+
+<!-- 第一步：弹力的产生 -->
+<g class="p29-step1" data-zone="1">
+  <text x="70" y="84" font-size="13.5" font-weight="800" fill="#1e3a8a">弹力：物体发生弹性形变后，要恢复原状而对接触的物体产生的力</text>
+
+  <!-- 固定墙壁 -->
+  <g>
+    <rect x="498" y="196" width="38" height="196" rx="4" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2"/>
+    <g stroke="#94a3b8" stroke-width="1.6">
+      <line x1="504" y1="238" x2="530" y2="212"/>
+      <line x1="504" y1="266" x2="530" y2="240"/>
+      <line x1="504" y1="294" x2="530" y2="268"/>
+      <line x1="504" y1="322" x2="530" y2="296"/>
+      <line x1="504" y1="350" x2="530" y2="324"/>
+      <line x1="504" y1="378" x2="530" y2="352"/>
+    </g>
+    <text x="517" y="186" font-size="11.5" font-weight="700" fill="#64748b" text-anchor="middle">固定墙壁</text>
+  </g>
+
+  <!-- 弹簧（被压缩） -->
+  <path d="M390 300 L398 284 L412 316 L426 284 L440 316 L454 284 L468 316 L482 284 L494 316 L500 300"
+        fill="none" stroke="#b45309" stroke-width="3.2" stroke-linejoin="round"/>
+  <text x="446" y="352" font-size="11.5" font-weight="700" fill="#b45309" text-anchor="middle">弹簧被压缩</text>
+
+  <!-- 物块 -->
+  <g class="p29-blk">
+    <rect x="320" y="260" width="70" height="80" rx="8" fill="#e8effc" stroke="#1e3a8a" stroke-width="3"/>
+    <text x="355" y="306" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">物块</text>
+  </g>
+
+  <!-- 原长与压缩量 -->
+  <line class="p29-dx" x1="300" y1="240" x2="300" y2="372" stroke="#b45309" stroke-width="2"/>
+  <text x="296" y="224" font-size="11.5" font-weight="700" fill="#b45309" text-anchor="end">弹簧原长位置</text>
+  <g stroke="#b45309" stroke-width="1.8">
+    <line x1="300" y1="250" x2="390" y2="250"/>
+    <line x1="300" y1="244" x2="300" y2="256"/>
+    <line x1="390" y1="244" x2="390" y2="256"/>
+  </g>
+  <text x="345" y="240" font-size="11" font-weight="800" fill="#b45309" text-anchor="middle">Δx（压缩量）</text>
+
+  <!-- 弹力 -->
+  <g class="p29-force">
+    <line x1="320" y1="300" x2="196" y2="300" stroke="#1d4ed8" stroke-width="4.5" stroke-linecap="round" marker-end="url(#arrBlue)"/>
+    <text x="252" y="332" font-size="12" font-weight="800" fill="#1e40af" text-anchor="middle">弹簧对物块的弹力 F</text>
+  </g>
+
+  <!-- 定义卡片 -->
+  <g class="p29-card">
+    <rect x="570" y="106" width="280" height="252" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="710" y="136" font-size="15" font-weight="800" fill="#1e3a8a" text-anchor="middle">弹力的产生</text>
+    <text x="710" y="158" font-size="11.5" fill="#64748b" text-anchor="middle">两个条件缺一不可</text>
+    <rect x="588" y="170" width="244" height="30" rx="8" fill="#e8effc"/>
+    <text x="710" y="190" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">① 两物体相互接触</text>
+    <rect x="588" y="206" width="244" height="30" rx="8" fill="#e8effc"/>
+    <text x="710" y="226" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">② 发生弹性形变</text>
+    <line x1="588" y1="252" x2="832" y2="252" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="710" y="274" font-size="12" font-weight="800" fill="#475569" text-anchor="middle">常见的弹力（本质都是弹力）</text>
+    <g font-size="11.5" font-weight="700" fill="#b45309">
+      <rect x="588" y="284" width="76" height="28" rx="7" fill="#fef3c7"/>
+      <text x="626" y="303" text-anchor="middle">压力</text>
+      <rect x="672" y="284" width="76" height="28" rx="7" fill="#fef3c7"/>
+      <text x="710" y="303" text-anchor="middle">支持力</text>
+      <rect x="756" y="284" width="76" height="28" rx="7" fill="#fef3c7"/>
+      <text x="794" y="303" text-anchor="middle">拉力</text>
+    </g>
+    <text x="710" y="336" font-size="11.5" fill="#64748b" text-anchor="middle">弹性限度内：形变越大，弹力越大</text>
+  </g>
+
+  <!-- 成对与实例 -->
+  <g class="p29-note">
+    <rect x="56" y="386" width="790" height="100" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2"/>
+    <text x="451" y="412" font-size="12" font-weight="800" fill="#334155" text-anchor="middle">弹力总是成对出现：弹簧对物块有弹力，物块对弹簧有压力，二者是相互作用力</text>
+    <g font-size="11.5" font-weight="700">
+      <rect x="76" y="424" width="240" height="46" rx="10" fill="#e8effc"/>
+      <text x="196" y="452" fill="#1e3a8a" text-anchor="middle">拉弓射箭 · 拉力</text>
+      <rect x="330" y="424" width="240" height="46" rx="10" fill="#e8effc"/>
+      <text x="450" y="452" fill="#1e3a8a" text-anchor="middle">桌面托书 · 支持力</text>
+      <rect x="584" y="424" width="240" height="46" rx="10" fill="#e8effc"/>
+      <text x="704" y="452" fill="#1e3a8a" text-anchor="middle">手压弹簧 · 压力</text>
+    </g>
+  </g>
+</g>
+
+<!-- 第二步：弹簧测力计 -->
+<g class="p29-step2" data-zone="2">
+  <text x="70" y="84" font-size="13.5" font-weight="800" fill="#1e3a8a">弹簧测力计：使用前调零，看清量程和分度值，拉力沿弹簧轴线</text>
+
+  <!-- 提环 -->
+  <circle cx="340" cy="108" r="9" fill="none" stroke="#334155" stroke-width="3"/>
+  <line x1="340" y1="117" x2="340" y2="122" stroke="#334155" stroke-width="3"/>
+
+  <!-- 表身 -->
+  <rect x="250" y="120" width="180" height="316" rx="16" fill="#ffffff" stroke="#334155" stroke-width="3"/>
+  <line x1="340" y1="120" x2="340" y2="128" stroke="#94a3b8" stroke-width="2"/>
+
+  <!-- 刻度 -->
+  <g stroke="#334155">
+    <line x1="270" y1="152" x2="300" y2="152" stroke-width="2"/>
+    <line x1="282" y1="162" x2="300" y2="162" stroke-width="1"/>
+    <line x1="282" y1="172" x2="300" y2="172" stroke-width="1"/>
+    <line x1="282" y1="182" x2="300" y2="182" stroke-width="1"/>
+    <line x1="282" y1="192" x2="300" y2="192" stroke-width="1"/>
+    <line x1="270" y1="202" x2="300" y2="202" stroke-width="2"/>
+    <line x1="282" y1="212" x2="300" y2="212" stroke-width="1"/>
+    <line x1="282" y1="222" x2="300" y2="222" stroke-width="1"/>
+    <line x1="282" y1="232" x2="300" y2="232" stroke-width="1"/>
+    <line x1="282" y1="242" x2="300" y2="242" stroke-width="1"/>
+    <line x1="270" y1="252" x2="300" y2="252" stroke-width="2"/>
+    <line x1="282" y1="262" x2="300" y2="262" stroke-width="1"/>
+    <line x1="282" y1="272" x2="300" y2="272" stroke-width="1"/>
+    <line x1="282" y1="282" x2="300" y2="282" stroke-width="1"/>
+    <line x1="282" y1="292" x2="300" y2="292" stroke-width="1"/>
+    <line x1="270" y1="302" x2="300" y2="302" stroke-width="2"/>
+    <line x1="282" y1="312" x2="300" y2="312" stroke-width="1"/>
+    <line x1="282" y1="322" x2="300" y2="322" stroke-width="1"/>
+    <line x1="282" y1="332" x2="300" y2="332" stroke-width="1"/>
+    <line x1="282" y1="342" x2="300" y2="342" stroke-width="1"/>
+    <line x1="270" y1="352" x2="300" y2="352" stroke-width="2"/>
+    <line x1="282" y1="362" x2="300" y2="362" stroke-width="1"/>
+    <line x1="282" y1="372" x2="300" y2="372" stroke-width="1"/>
+    <line x1="282" y1="382" x2="300" y2="382" stroke-width="1"/>
+    <line x1="282" y1="392" x2="300" y2="392" stroke-width="1"/>
+    <line x1="270" y1="402" x2="300" y2="402" stroke-width="2"/>
+  </g>
+  <g font-size="11.5" font-weight="700" fill="#334155" text-anchor="end">
+    <text x="322" y="156">0</text>
+    <text x="322" y="206">1</text>
+    <text x="322" y="256">2</text>
+    <text x="322" y="306">3</text>
+    <text x="322" y="356">4</text>
+    <text x="322" y="406">5</text>
+  </g>
+  <text x="392" y="134" font-size="11.5" font-weight="800" fill="#334155">N</text>
+
+  <!-- 内部弹簧 -->
+  <path d="M380 156 L368 166 L392 178 L368 190 L392 202 L368 214 L392 226 L368 238 L392 250 L380 262 L380 268"
+        fill="none" stroke="#b45309" stroke-width="2.4" stroke-linejoin="round"/>
+
+  <!-- 指针（读数 2.4 N） -->
+  <g class="p29-pointer">
+    <line x1="300" y1="272" x2="380" y2="272" stroke="#dc2626" stroke-width="2.6"/>
+    <polygon points="300,272 310,266 310,278" fill="#dc2626"/>
+    <circle cx="380" cy="272" r="4" fill="#dc2626"/>
+  </g>
+  <line x1="386" y1="272" x2="440" y2="272" stroke="#fca5a5" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <g class="p29-read">
+    <rect x="440" y="258" width="68" height="28" rx="8" fill="#fef2f2" stroke="#fca5a5" stroke-width="2"/>
+    <text x="474" y="277" font-size="12.5" font-weight="900" fill="#b91c1c" text-anchor="middle">2.4 N</text>
+  </g>
+
+  <!-- 挂钩与重物 -->
+  <line x1="340" y1="436" x2="340" y2="440" stroke="#334155" stroke-width="3"/>
+  <path d="M330 440 Q330 450 340 450 Q350 450 350 440" fill="none" stroke="#334155" stroke-width="3"/>
+  <rect x="300" y="450" width="80" height="38" rx="6" fill="#e8effc" stroke="#1e3a8a" stroke-width="2.5"/>
+  <text x="340" y="475" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">G</text>
+
+  <!-- 左侧参数 -->
+  <g text-anchor="end">
+    <text x="238" y="136" font-size="12.5" font-weight="800" fill="#1e3a8a">量程 0 ~ 5 N</text>
+    <text x="238" y="158" font-size="12" font-weight="800" fill="#b45309">分度值 0.2 N</text>
+    <text x="238" y="180" font-size="11.5" fill="#64748b">使用前指针调零</text>
+  </g>
+
+  <!-- 原理卡片 -->
+  <g class="p29-card">
+    <rect x="520" y="112" width="330" height="170" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="685" y="140" font-size="15" font-weight="800" fill="#1e3a8a" text-anchor="middle">测力计的原理</text>
+    <text x="685" y="166" font-size="11.5" fill="#475569" text-anchor="middle">弹性限度内，弹簧的伸长量 Δx</text>
+    <text x="685" y="186" font-size="11.5" fill="#475569" text-anchor="middle">与所受拉力 F 成正比</text>
+    <text x="685" y="224" font-size="18" font-weight="900" fill="#1d4ed8" text-anchor="middle">F = k · Δx</text>
+    <text x="685" y="252" font-size="11.5" fill="#64748b" text-anchor="middle">伸长量随拉力均匀增加，刻度均匀</text>
+  </g>
+
+  <!-- 使用要点 -->
+  <g font-size="12" font-weight="800" fill="#1e3a8a">
+    <rect x="520" y="298" width="330" height="38" rx="10" fill="#e8effc"/>
+    <text x="685" y="322" text-anchor="middle">① 检查指针是否指在零刻度</text>
+    <rect x="520" y="344" width="330" height="38" rx="10" fill="#e8effc"/>
+    <text x="685" y="368" text-anchor="middle">② 看清量程和分度值</text>
+    <rect x="520" y="390" width="330" height="38" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+    <text x="685" y="414" fill="#b45309" text-anchor="middle">③ 拉力沿轴线，不能超过量程</text>
+  </g>
+
+  <!-- 读数说明 -->
+  <g class="p29-note">
+    <text x="685" y="452" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">读数 2.4 N：过 2 N 后第 2 小格，每小格 0.2 N</text>
+    <text x="685" y="472" font-size="11" fill="#64748b" text-anchor="middle">静止时拉力与重力平衡，示数等于物重</text>
+  </g>
+</g>
+
+<!-- 第三步：弹性限度 -->
+<g class="p29-step3" data-zone="3">
+  <text x="70" y="84" font-size="13.5" font-weight="800" fill="#1e3a8a">弹性限度：形变必须在限度内，超过后弹簧不能恢复原状</text>
+
+  <!-- F-Δx 图像 -->
+  <g>
+    <rect class="p29-zone" x="330" y="100" width="122" height="192" rx="6" fill="#fee2e2"/>
+    <line x1="115" y1="292" x2="482" y2="292" stroke="#475569" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+    <line x1="115" y1="292" x2="115" y2="96" stroke="#475569" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+    <line class="p29-line" x1="115" y1="292" x2="330" y2="168" stroke="#1d4ed8" stroke-width="4" stroke-linecap="round"/>
+    <path class="p29-curve" d="M330 168 Q382 144 452 140" fill="none" stroke="#dc2626" stroke-width="4" stroke-linecap="round"/>
+    <line x1="330" y1="168" x2="330" y2="292" stroke="#dc2626" stroke-width="2" stroke-dasharray="7 5"/>
+    <circle cx="330" cy="168" r="5" fill="#dc2626"/>
+    <text x="104" y="112" font-size="12" font-weight="800" fill="#475569" text-anchor="end">F / N</text>
+    <text x="486" y="298" font-size="12" font-weight="800" fill="#475569">Δx</text>
+    <text x="102" y="306" font-size="11" font-weight="700" fill="#64748b" text-anchor="end">O</text>
+    <text x="215" y="218" transform="rotate(-30 215 218)" font-size="12" font-weight="800" fill="#1e40af" text-anchor="middle">F ∝ Δx</text>
+    <text transform="rotate(-90 322 232)" x="322" y="232" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">弹性限度</text>
+    <text x="401" y="124" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">超过后示数不准</text>
+  </g>
+
+  <!-- 警示卡片 -->
+  <g class="p29-card">
+    <rect x="520" y="100" width="330" height="200" rx="16" fill="#ffffff" stroke="#fecaca" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="685" y="128" font-size="14.5" font-weight="800" fill="#b91c1c" text-anchor="middle">超过弹性限度会怎样？</text>
+    <g font-size="11.5" fill="#334155">
+      <text x="540" y="158">· 撤去拉力后，弹簧不能完全恢复原状</text>
+      <text x="540" y="184">· 伸长量与拉力不再成正比，示数不准</text>
+      <text x="540" y="210">· 严重时永久变形，测力计损坏</text>
+    </g>
+    <rect x="538" y="228" width="294" height="56" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+    <text x="685" y="252" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">使用规则：轻拉轻放，不超过量程</text>
+    <text x="685" y="272" font-size="11.5" fill="#7c5a30" text-anchor="middle">读数时视线与刻度盘垂直</text>
+  </g>
+
+  <!-- 三种状态 -->
+  <g class="p29-note">
+    <g>
+      <rect x="56" y="318" width="246" height="170" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2"/>
+      <text x="179" y="344" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">原长 · 没有形变</text>
+      <line x1="80" y1="400" x2="278" y2="400" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5 4"/>
+      <path d="M100 400 L106 388 L116 412 L126 388 L136 412 L146 388 L156 412 L166 388 L176 412 L186 388 L196 412 L206 388 L216 412 L226 388 L236 412 L246 388 L252 400"
+            fill="none" stroke="#b45309" stroke-width="2.6" stroke-linejoin="round"/>
+      <text x="179" y="444" font-size="11.5" fill="#475569" text-anchor="middle">弹簧保持自然长度</text>
+      <text x="179" y="466" font-size="11.5" fill="#64748b" text-anchor="middle">弹力为零</text>
+    </g>
+    <g>
+      <rect x="326" y="318" width="246" height="170" rx="14" fill="#ffffff" stroke="#bbf7d0" stroke-width="2"/>
+      <text x="449" y="344" font-size="13" font-weight="800" fill="#047857" text-anchor="middle">弹性限度内 · 能恢复</text>
+      <line x1="344" y1="400" x2="548" y2="400" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5 4"/>
+      <path d="M350 400 L358 388 L372 412 L386 388 L400 412 L414 388 L428 412 L442 388 L456 412 L470 388 L484 412 L498 388 L512 412 L524 388 L532 400"
+            fill="none" stroke="#b45309" stroke-width="2.6" stroke-linejoin="round"/>
+      <text x="449" y="444" font-size="11.5" fill="#047857" text-anchor="middle">撤去拉力后恢复原状</text>
+      <text x="449" y="466" font-size="11.5" fill="#64748b" text-anchor="middle">形变越大，弹力越大</text>
+    </g>
+    <g>
+      <rect x="596" y="318" width="246" height="170" rx="14" fill="#ffffff" stroke="#fecaca" stroke-width="2"/>
+      <text x="719" y="344" font-size="13" font-weight="800" fill="#b91c1c" text-anchor="middle">超过弹性限度 · 不能恢复</text>
+      <line x1="616" y1="400" x2="790" y2="400" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5 4"/>
+      <path class="p29-bad" d="M620 400 L632 384 L640 416 L658 382 L666 414 L686 380 L694 412 L716 383 L724 413 L744 380 L752 412 L772 384 L780 414 L800 382 L806 404"
+            fill="none" stroke="#dc2626" stroke-width="2.8" stroke-linejoin="round"/>
+      <text x="719" y="444" font-size="11.5" fill="#b91c1c" text-anchor="middle">撤去拉力后仍有残余形变</text>
+      <text x="719" y="466" font-size="11.5" fill="#64748b" text-anchor="middle">弹簧损坏，测力计失效</text>
+    </g>
+  </g>
+</g>
+</svg>

@@ -1,0 +1,216 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="分子动理论：物质由大量分子组成、分子热运动与分子间作用力">
+<style>
+[data-scene="ps-102"] .s102-s1,[data-scene="ps-102"] .s102-s2,[data-scene="ps-102"] .s102-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="ps-102"].s1 .s102-s1,[data-scene="ps-102"].s2 .s102-s2,[data-scene="ps-102"].s3 .s102-s3{opacity:1;visibility:visible}
+@keyframes s102fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+@keyframes s102draw{to{stroke-dashoffset:0}}
+@keyframes s102pop{0%{transform:scale(.9);opacity:0}70%{transform:scale(1.03);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s102pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes s102flow{to{stroke-dashoffset:-36}}
+[data-scene="ps-102"].s1 .s102-mol{transform-box:fill-box;transform-origin:center;animation:s102pop .5s ease both}
+[data-scene="ps-102"].s1 .s102-zoom{transform-box:fill-box;transform-origin:center;animation:s102pop .55s ease .35s both}
+[data-scene="ps-102"].s1 .s102-card{transform-box:fill-box;transform-origin:center;animation:s102pop .5s ease .15s both}
+[data-scene="ps-102"].s2 .s102-path{stroke-dasharray:600;stroke-dashoffset:600;animation:s102draw 1.5s ease .3s forwards}
+[data-scene="ps-102"].s2 .s102-ink{animation:s102pulse 2.2s ease-in-out infinite}
+[data-scene="ps-102"].s2 .s102-card{transform-box:fill-box;transform-origin:center;animation:s102pop .5s ease .2s both}
+[data-scene="ps-102"].s3 .s102-curve{stroke-dasharray:600;stroke-dashoffset:600;animation:s102draw 1.4s ease .2s forwards}
+[data-scene="ps-102"].s3 .s102-zero{transform-box:fill-box;transform-origin:center;animation:s102pop .5s ease .9s both}
+[data-scene="ps-102"].s3 .s102-card{transform-box:fill-box;transform-origin:center;animation:s102pop .5s ease .35s both}
+[data-scene="ps-102"].s3 .s102-flow{stroke-dasharray:7 6;animation:s102flow 1s linear infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">分子动理论：大量分子、热运动与分子间作用力</text>
+
+<!-- 第一步：物质由大量分子组成 -->
+<g class="s102-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">物体由大量分子组成，分子很小，数目却极其巨大</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="250" height="28" rx="14" fill="#e8effc"/>
+  <text x="181" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">1 cm³ 水中的分子</text>
+
+  <g class="s102-mol">
+    <rect x="64" y="150" width="270" height="180" rx="14" fill="#e8effc" stroke="#93c5fd" stroke-width="1.8"/>
+    <text x="199" y="172" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">1 cm³ 水（约 20 滴）</text>
+    <g fill="#1d4ed8" opacity=".75">
+      <circle cx="92" cy="198" r="4"/><circle cx="112" cy="214" r="3.5"/><circle cx="134" cy="196" r="4.2"/>
+      <circle cx="156" cy="212" r="3.6"/><circle cx="178" cy="198" r="4"/><circle cx="200" cy="216" r="4.4"/>
+      <circle cx="222" cy="196" r="3.5"/><circle cx="244" cy="212" r="4"/><circle cx="266" cy="198" r="4.3"/>
+      <circle cx="288" cy="216" r="3.6"/><circle cx="310" cy="198" r="4"/>
+      <circle cx="94" cy="232" r="4.2"/><circle cx="118" cy="244" r="3.5"/><circle cx="142" cy="230" r="4"/>
+      <circle cx="166" cy="246" r="3.6"/><circle cx="190" cy="232" r="4.3"/><circle cx="214" cy="246" r="3.5"/>
+      <circle cx="238" cy="230" r="4"/><circle cx="262" cy="246" r="4.2"/><circle cx="286" cy="232" r="3.6"/>
+      <circle cx="310" cy="244" r="4"/>
+      <circle cx="90" cy="266" r="4.1"/><circle cx="114" cy="280" r="3.5"/><circle cx="138" cy="264" r="4"/>
+      <circle cx="162" cy="280" r="3.7"/><circle cx="186" cy="266" r="4.2"/><circle cx="210" cy="282" r="3.5"/>
+      <circle cx="234" cy="266" r="4"/><circle cx="258" cy="280" r="4.1"/><circle cx="282" cy="266" r="3.6"/>
+      <circle cx="306" cy="282" r="4"/>
+      <circle cx="96" cy="304" r="4"/><circle cx="122" cy="312" r="3.5"/><circle cx="150" cy="300" r="4.2"/>
+      <circle cx="178" cy="314" r="3.6"/><circle cx="206" cy="302" r="4"/><circle cx="234" cy="314" r="4.3"/>
+      <circle cx="262" cy="300" r="3.5"/><circle cx="290" cy="312" r="4"/><circle cx="314" cy="300" r="4.1"/>
+    </g>
+  </g>
+
+  <line x1="334" y1="240" x2="396" y2="240" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <g class="s102-zoom">
+    <circle cx="452" cy="240" r="54" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="7 5"/>
+    <circle cx="452" cy="240" r="19" fill="#93c5fd" stroke="#1d4ed8" stroke-width="1.8"/>
+    <text x="452" y="245" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">分子</text>
+  </g>
+  <text x="452" y="316" font-size="12" font-weight="900" fill="#1e3a8a" text-anchor="middle">d ≈ 10⁻¹⁰ m</text>
+  <text x="452" y="336" font-size="11" fill="#64748b" text-anchor="middle">把分子看成球形</text>
+
+  <text x="306" y="354" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">1 cm³ 水中约含 3.3×10²² 个分子</text>
+  <text x="306" y="376" font-size="11.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">1 mol 物质约含 6.02×10²³ 个分子</text>
+  <text x="306" y="398" font-size="11" fill="#64748b" text-anchor="middle">分子数极其巨大，肉眼无法看见</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">分子“小”而“多”</text>
+
+  <g class="s102-card">
+    <rect x="596" y="160" width="248" height="64" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="614" y="186" font-size="13" font-weight="900" fill="#1e3a8a">d ≈ 10⁻¹⁰ m</text>
+    <text x="614" y="208" font-size="11" fill="#475569">即 0.1 nm 的数量级</text>
+  </g>
+  <g class="s102-card">
+    <rect x="596" y="236" width="248" height="64" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+    <text x="614" y="262" font-size="12" font-weight="900" fill="#b45309">1 cm³ 水约 3.3×10²² 个</text>
+    <text x="614" y="284" font-size="11" fill="#92400e">分子数目极其巨大</text>
+  </g>
+  <g class="s102-card">
+    <rect x="596" y="312" width="248" height="48" rx="10" fill="#ecfdf5" stroke="#86efac" stroke-width="1.5"/>
+    <text x="614" y="333" font-size="12" font-weight="900" fill="#047857">分子之间有空隙</text>
+    <text x="614" y="352" font-size="11" fill="#065f46">扩散、压缩现象都能说明</text>
+  </g>
+  <text x="720" y="388" font-size="12" font-weight="800" fill="#334155" text-anchor="middle">分子模型：把分子看成小球</text>
+  <text x="720" y="410" font-size="11" fill="#64748b" text-anchor="middle">这是估算分子大小的基础</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">物体由大量分子组成，分子直径约 10⁻¹⁰ m，分子数多到无法直接数清</text>
+</g>
+
+<!-- 第二步：分子热运动 -->
+<g class="s102-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">分子永不停息地做无规则运动，温度越高运动越剧烈</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="300" height="28" rx="14" fill="#e8effc"/>
+  <text x="206" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">扩散现象与布朗运动</text>
+
+  <g class="s102-card">
+    <path d="M80 180 V320 H230 V180" fill="none" stroke="#475569" stroke-width="2.5"/>
+    <rect x="84" y="214" width="142" height="102" fill="#dbeafe" opacity=".85"/>
+    <line x1="84" y1="214" x2="226" y2="214" stroke="#60a5fa" stroke-width="2"/>
+    <g class="s102-ink">
+      <circle cx="140" cy="198" r="9" fill="#7c3aed" opacity=".85"/>
+      <circle cx="158" cy="232" r="6" fill="#7c3aed" opacity=".7"/>
+      <circle cx="122" cy="252" r="5" fill="#7c3aed" opacity=".6"/>
+      <circle cx="178" cy="264" r="4.5" fill="#7c3aed" opacity=".55"/>
+      <circle cx="145" cy="282" r="4" fill="#7c3aed" opacity=".45"/>
+      <ellipse cx="155" cy="294" rx="56" ry="18" fill="#7c3aed" opacity=".12"/>
+    </g>
+    <text x="155" y="170" font-size="11.5" font-weight="800" fill="#6d28d9" text-anchor="middle">滴入墨水</text>
+  </g>
+  <text x="155" y="344" font-size="12" font-weight="900" fill="#6d28d9" text-anchor="middle">扩散</text>
+  <text x="155" y="364" font-size="11" fill="#475569" text-anchor="middle">分子彼此进入对方</text>
+
+  <g class="s102-card">
+    <rect x="294" y="180" width="240" height="140" rx="10" fill="#f8fbff" stroke="#93c5fd" stroke-width="1.5"/>
+    <path class="s102-path" d="M318 250 L334 224 L350 262 L368 210 L386 246 L402 218 L418 258 L436 228 L454 268 L472 236 L490 270 L508 242" fill="none" stroke="#dc2626" stroke-width="1.8" stroke-linejoin="round"/>
+    <circle cx="318" cy="250" r="5" fill="#dc2626"/>
+    <text x="414" y="170" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">布朗运动</text>
+  </g>
+  <text x="414" y="344" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">悬浮微粒的无规则运动</text>
+  <text x="414" y="364" font-size="11" fill="#64748b" text-anchor="middle">不是分子本身的运动</text>
+
+  <text x="296" y="392" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">扩散和布朗运动都说明：分子在永不停息地运动</text>
+  <text x="296" y="414" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">温度越高，分子运动越剧烈</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">分子热运动</text>
+
+  <circle cx="612" cy="174" r="4" fill="#1d4ed8"/>
+  <text x="628" y="178" font-size="11.5" font-weight="800" fill="#1e3a8a">扩散：分子彼此进入对方</text>
+  <text x="628" y="200" font-size="11" fill="#64748b">墨水在水中散开就是扩散</text>
+
+  <circle cx="612" cy="234" r="4" fill="#dc2626"/>
+  <text x="628" y="238" font-size="11.5" font-weight="800" fill="#b91c1c">布朗运动：微粒的无规则运动</text>
+  <text x="628" y="260" font-size="11" fill="#64748b">由液体分子撞击不平衡引起</text>
+  <text x="628" y="282" font-size="11" fill="#64748b">它反映液体分子在不停地运动</text>
+
+  <circle cx="612" cy="312" r="4" fill="#1d4ed8"/>
+  <text x="628" y="316" font-size="11.5" font-weight="800" fill="#1e3a8a">温度越高，热运动越剧烈</text>
+
+  <rect x="596" y="338" width="248" height="58" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="720" y="362" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">热运动：分子永不停息的无规则运动</text>
+  <text x="720" y="383" font-size="11" fill="#475569" text-anchor="middle">温度越高，运动越剧烈</text>
+
+  <text x="720" y="420" font-size="11" fill="#64748b" text-anchor="middle">分子热运动是分子动理论的核心</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">扩散现象和布朗运动证明分子永不停息地运动，温度越高越剧烈</text>
+</g>
+
+<!-- 第三步：分子间的作用力 -->
+<g class="s102-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">分子间同时存在引力和斥力，合力随距离变化</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="300" height="28" rx="14" fill="#e8effc"/>
+  <text x="206" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">分子间作用力 F–r 图像</text>
+
+  <line x1="130" y1="400" x2="130" y2="172" stroke="#334155" stroke-width="2.2" marker-end="url(#arrBlue)"/>
+  <line x1="130" y1="300" x2="536" y2="300" stroke="#334155" stroke-width="2.2" marker-end="url(#arrBlue)"/>
+  <text x="116" y="180" font-size="12.5" font-weight="900" fill="#334155" text-anchor="end">F</text>
+  <text x="546" y="318" font-size="12.5" font-weight="900" fill="#334155" text-anchor="middle">r</text>
+  <text x="116" y="318" font-size="11.5" fill="#64748b" text-anchor="end">O</text>
+
+  <line x1="250" y1="300" x2="250" y2="312" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="250" y="326" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">r₀</text>
+
+  <path class="s102-curve" d="M158 188 C196 210 228 250 250 300 C276 352 314 352 360 334 C414 316 468 306 516 302" fill="none" stroke="#dc2626" stroke-width="3"/>
+
+  <g class="s102-zero">
+    <circle cx="250" cy="300" r="4.5" fill="#ffffff" stroke="#dc2626" stroke-width="2"/>
+    <text x="264" y="292" font-size="11" font-weight="800" fill="#b91c1c">F = 0</text>
+  </g>
+
+  <line class="s102-flow" x1="150" y1="238" x2="212" y2="274" stroke="#1d4ed8" stroke-width="1.5" marker-end="url(#arrBlue)"/>
+  <text x="146" y="230" font-size="11.5" font-weight="900" fill="#1e40af">r &lt; r₀</text>
+  <text x="146" y="250" font-size="11" fill="#1e40af">斥力为主</text>
+  <text x="404" y="360" font-size="11.5" font-weight="900" fill="#b91c1c">r &gt; r₀</text>
+  <text x="404" y="380" font-size="11" fill="#b91c1c">引力为主</text>
+
+  <text x="306" y="424" font-size="11" fill="#64748b" text-anchor="middle">距离增大时，引力和斥力都减小，但斥力减小得更快</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">引力和斥力同时存在</text>
+
+  <text x="610" y="168" font-size="11.5" fill="#334155">分子间同时存在引力和斥力</text>
+  <text x="610" y="194" font-size="11.5" fill="#334155">r 增大：两者都减小</text>
+  <text x="610" y="218" font-size="11.5" font-weight="800" fill="#1e40af">其中斥力减小得更快</text>
+  <text x="610" y="244" font-size="11.5" fill="#334155">r 减小：两者都增大</text>
+  <text x="610" y="268" font-size="11.5" font-weight="800" fill="#b91c1c">其中斥力增大得更快</text>
+
+  <line x1="610" y1="282" x2="830" y2="282" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <text x="610" y="306" font-size="11.5" font-weight="800" fill="#1e3a8a">r = r₀：F引 = F斥，合力为零</text>
+  <text x="610" y="330" font-size="11.5" fill="#1e40af">r &lt; r₀：斥力占优势</text>
+  <text x="610" y="354" font-size="11.5" fill="#b91c1c">r &gt; r₀：引力占优势</text>
+  <text x="610" y="378" font-size="11.5" fill="#475569">r &gt; 10r₀：作用力可忽略</text>
+
+  <rect x="596" y="392" width="248" height="38" rx="9" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="416" font-size="11" font-weight="800" fill="#b45309" text-anchor="middle">r₀ 叫平衡距离，约 10⁻¹⁰ m</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">r = r₀ 时引力与斥力平衡；距离小于 r₀ 表现为斥力，大于 r₀ 表现为引力</text>
+</g>
+</svg>

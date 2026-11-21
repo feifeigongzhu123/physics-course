@@ -1,0 +1,202 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="眼睛和眼镜：眼睛成像、近视眼与凹透镜矫正、远视眼与凸透镜矫正">
+<style>
+[data-scene="pj-22"] .p22-step{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility 0s linear .45s}
+[data-scene="pj-22"].s1 .p22-step1,
+[data-scene="pj-22"].s2 .p22-step2,
+[data-scene="pj-22"].s3 .p22-step3{opacity:1;visibility:visible;transition:opacity .45s ease,visibility 0s}
+@keyframes p22draw{to{stroke-dashoffset:0}}
+@keyframes p22pop{0%{transform:scale(.72);opacity:0}72%{transform:scale(1.06);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes p22pulse{0%,100%{opacity:.45;transform:scale(1)}50%{opacity:.95;transform:scale(1.12)}}
+@keyframes p22blur{0%,100%{opacity:.45}50%{opacity:.9}}
+@keyframes p22fade{from{opacity:.12}to{opacity:1}}
+[data-scene="pj-22"].s1 .p22-ray{opacity:0;animation:p22fade .8s ease .2s forwards}
+[data-scene="pj-22"].s1 .p22-retina{opacity:0;animation:p22fade .8s ease .1s forwards}
+[data-scene="pj-22"].s1 .p22-image{transform-box:fill-box;transform-origin:top center;animation:p22pop .5s ease 1.35s both}
+[data-scene="pj-22"].s2 .p22-ray{opacity:0;animation:p22fade .9s ease .2s forwards}
+[data-scene="pj-22"].s2 .p22-glass{transform-box:fill-box;transform-origin:center;animation:p22pop .55s ease .9s both}
+[data-scene="pj-22"].s2 .p22-blur{animation:p22blur 1.4s ease-in-out infinite}
+[data-scene="pj-22"].s2 .p22-good{transform-box:fill-box;transform-origin:center;animation:p22pulse 1.8s ease-in-out infinite}
+[data-scene="pj-22"].s3 .p22-ray{opacity:0;animation:p22fade .9s ease .2s forwards}
+[data-scene="pj-22"].s3 .p22-glass{transform-box:fill-box;transform-origin:center;animation:p22pop .55s ease .9s both}
+[data-scene="pj-22"].s3 .p22-blur{animation:p22blur 1.4s ease-in-out infinite}
+[data-scene="pj-22"].s3 .p22-good{transform-box:fill-box;transform-origin:center;animation:p22pulse 1.8s ease-in-out infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">眼睛和眼镜：成像与近视、远视的矫正</text>
+
+<!-- 第一步：眼睛成像 -->
+<g class="p22-step p22-step1" data-zone="1">
+  <circle cx="430" cy="290" r="130" fill="#f8fafc" stroke="#334155" stroke-width="4"/>
+  <path d="M332 205 Q270 290 332 375" fill="#e0f2fe" stroke="#0284c7" stroke-width="3.5"/>
+  <path class="p22-retina" d="M524 198 A130 130 0 0 1 524 382" fill="none" stroke="#dc2626" stroke-width="7" stroke-linecap="round"/>
+  <ellipse cx="382" cy="290" rx="18" ry="70" fill="url(#gGlass)" stroke="#1d4ed8" stroke-width="3"/>
+
+  <line x1="110" y1="290" x2="600" y2="290" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="10 7"/>
+  <line x1="140" y1="290" x2="140" y2="230" stroke="#dc2626" stroke-width="5" stroke-linecap="round" marker-end="url(#arrRed)"/>
+  <text x="140" y="215" font-size="13.5" font-weight="800" fill="#b91c1c" text-anchor="middle">物体</text>
+
+  <g class="p22-ray">
+    <polyline points="140,230 382,290 524,325" fill="none" stroke="#dc2626" stroke-width="3" marker-end="url(#arrRed)"/>
+    <polyline points="140,230 382,230 524,325" fill="none" stroke="#1d4ed8" stroke-width="3" marker-end="url(#arrBlue)"/>
+  </g>
+
+  <g class="p22-image">
+    <line x1="524" y1="290" x2="524" y2="325" stroke="#1d4ed8" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="6 5" marker-end="url(#arrBlue)"/>
+    <text x="588" y="342" font-size="12.5" font-weight="800" fill="#1e40af">倒立、缩小的实像</text>
+  </g>
+
+  <path d="M545 290 L620 290 L665 275" fill="none" stroke="#f59e0b" stroke-width="6" stroke-linecap="round"/>
+  <path d="M620 290 L662 305" fill="none" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+  <text x="678" y="270" font-size="12.5" font-weight="800" fill="#b45309">视神经 → 大脑</text>
+
+  <text x="296" y="190" font-size="12.5" font-weight="800" fill="#0369a1" text-anchor="end">角膜</text>
+  <line x1="300" y1="196" x2="314" y2="222" stroke="#0369a1" stroke-width="1.4"/>
+  <text x="382" y="162" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">晶状体</text>
+  <line x1="382" y1="170" x2="382" y2="246" stroke="#1e3a8a" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <text x="602" y="396" font-size="12.5" font-weight="800" fill="#b91c1c">视网膜</text>
+  <line x1="596" y1="386" x2="540" y2="366" stroke="#b91c1c" stroke-width="1.4"/>
+
+  <rect x="235" y="438" width="430" height="44" rx="14" fill="#e8effc"/>
+  <text x="450" y="465" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">眼睛 ≈ 照相机：晶状体=凸透镜，视网膜=光屏</text>
+</g>
+
+<!-- 第二步：近视眼与凹透镜矫正 -->
+<g class="p22-step p22-step2" data-zone="2">
+  <rect x="28" y="84" width="420" height="392" rx="18" fill="#ffffff" stroke="#fecaca" stroke-width="2"/>
+  <rect x="28" y="84" width="420" height="7" rx="3" fill="#dc2626"/>
+  <text x="238" y="120" font-size="14.5" font-weight="800" fill="#b91c1c" text-anchor="middle">近视眼：像落在视网膜前</text>
+
+  <line x1="58" y1="275" x2="342" y2="275" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="9 7"/>
+  <ellipse cx="215" cy="275" rx="105" ry="80" fill="#f8fafc" stroke="#334155" stroke-width="3"/>
+  <path d="M125 225 Q96 275 125 325" fill="#e0f2fe" stroke="#0284c7" stroke-width="2.5"/>
+  <ellipse cx="190" cy="275" rx="13" ry="32" fill="url(#gGlass)" stroke="#1d4ed8" stroke-width="2.5"/>
+  <line x1="315" y1="218" x2="315" y2="332" stroke="#dc2626" stroke-width="6" stroke-linecap="round"/>
+  <text x="315" y="210" font-size="11" font-weight="800" fill="#b91c1c" text-anchor="middle">视网膜</text>
+
+  <line x1="62" y1="275" x2="62" y2="225" stroke="#dc2626" stroke-width="4" stroke-linecap="round" marker-end="url(#arrRed)"/>
+  <text x="62" y="212" font-size="11.5" font-weight="700" fill="#64748b">远处物体</text>
+
+  <g class="p22-ray" fill="none" stroke="#dc2626" stroke-width="2.8">
+    <polyline points="62,235 190,235 255,275 315,237" marker-end="url(#arrRed)"/>
+    <polyline points="62,275 190,275 255,275 315,275" marker-end="url(#arrRed)"/>
+    <polyline points="62,315 190,315 255,275 315,313" marker-end="url(#arrRed)"/>
+  </g>
+  <circle cx="255" cy="275" r="4.5" fill="#dc2626"/>
+  <text x="255" y="376" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">会聚点在视网膜前</text>
+  <g class="p22-blur">
+    <ellipse cx="315" cy="275" rx="11" ry="28" fill="#f59e0b" opacity=".28"/>
+    <ellipse cx="315" cy="275" rx="4" ry="18" fill="#f59e0b"/>
+  </g>
+  <text x="340" y="280" font-size="11.5" font-weight="800" fill="#b45309">模糊</text>
+
+  <text x="238" y="406" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">晶状体太厚 / 眼球太长</text>
+  <text x="238" y="430" font-size="11.5" fill="#64748b" text-anchor="middle">折光能力太强，像成在视网膜前</text>
+
+  <rect x="452" y="84" width="420" height="392" rx="18" fill="#ffffff" stroke="#bfdbfe" stroke-width="2"/>
+  <rect x="452" y="84" width="420" height="7" rx="3" fill="#1d4ed8"/>
+  <text x="662" y="120" font-size="14" font-weight="800" fill="#1d4ed8" text-anchor="middle">凹透镜矫正：像后移到视网膜</text>
+
+  <line x1="472" y1="275" x2="762" y2="275" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="9 7"/>
+  <ellipse cx="655" cy="275" rx="95" ry="80" fill="#f8fafc" stroke="#334155" stroke-width="3"/>
+  <path d="M572 228 Q550 275 572 322" fill="#e0f2fe" stroke="#0284c7" stroke-width="2.5"/>
+  <ellipse cx="630" cy="275" rx="13" ry="32" fill="url(#gGlass)" stroke="#1d4ed8" stroke-width="2.5"/>
+  <line x1="750" y1="218" x2="750" y2="332" stroke="#dc2626" stroke-width="6" stroke-linecap="round"/>
+  <text x="750" y="210" font-size="11" font-weight="800" fill="#b91c1c" text-anchor="middle">视网膜</text>
+
+  <g class="p22-glass">
+    <ellipse cx="515" cy="275" rx="44" ry="64" fill="none" stroke="#334155" stroke-width="3"/>
+    <path d="M497 215 L533 215 Q515 275 533 335 L497 335 Q515 275 497 215 Z" fill="url(#gGlass)" stroke="#1d4ed8" stroke-width="2.5"/>
+    <text x="515" y="202" font-size="12.5" font-weight="800" fill="#1e40af" text-anchor="middle">凹透镜</text>
+  </g>
+
+  <line x1="460" y1="275" x2="460" y2="235" stroke="#dc2626" stroke-width="4" stroke-linecap="round" marker-end="url(#arrRed)"/>
+  <text x="452" y="358" font-size="11.5" font-weight="700" fill="#64748b">远处物体</text>
+
+  <g class="p22-ray" fill="none" stroke="#1d4ed8" stroke-width="2.8">
+    <polyline points="460,235 515,235 630,205 750,275" marker-end="url(#arrBlue)"/>
+    <polyline points="460,275 515,275 630,275 750,275" marker-end="url(#arrBlue)"/>
+    <polyline points="460,315 515,315 630,345 750,275" marker-end="url(#arrBlue)"/>
+  </g>
+  <g class="p22-good">
+    <circle cx="750" cy="275" r="6" fill="#dc2626"/>
+    <circle cx="750" cy="275" r="14" fill="#f59e0b" opacity=".25"/>
+  </g>
+  <text x="585" y="198" font-size="11.5" font-weight="800" fill="#1d4ed8">先发散</text>
+  <text x="662" y="406" font-size="12" font-weight="800" fill="#1e40af" text-anchor="middle">近视眼镜 = 凹透镜</text>
+  <text x="662" y="430" font-size="11.5" fill="#047857" text-anchor="middle">像后移到视网膜上，看清远处</text>
+</g>
+
+<!-- 第三步：远视眼与凸透镜矫正 -->
+<g class="p22-step p22-step3" data-zone="3">
+  <rect x="28" y="84" width="420" height="392" rx="18" fill="#ffffff" stroke="#bfdbfe" stroke-width="2"/>
+  <rect x="28" y="84" width="420" height="7" rx="3" fill="#1d4ed8"/>
+  <text x="238" y="120" font-size="14.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">远视眼：像落在视网膜后</text>
+
+  <line x1="52" y1="275" x2="410" y2="275" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="9 7"/>
+  <ellipse cx="215" cy="275" rx="78" ry="72" fill="#f8fafc" stroke="#334155" stroke-width="3"/>
+  <path d="M140 232 Q118 275 140 318" fill="#e0f2fe" stroke="#0284c7" stroke-width="2.5"/>
+  <ellipse cx="195" cy="275" rx="13" ry="30" fill="url(#gGlass)" stroke="#1d4ed8" stroke-width="2.5"/>
+  <line x1="285" y1="222" x2="285" y2="328" stroke="#dc2626" stroke-width="6" stroke-linecap="round"/>
+  <text x="285" y="214" font-size="11" font-weight="800" fill="#b91c1c" text-anchor="middle">视网膜</text>
+
+  <line x1="60" y1="275" x2="60" y2="225" stroke="#dc2626" stroke-width="4" stroke-linecap="round" marker-end="url(#arrRed)"/>
+  <text x="60" y="212" font-size="11.5" font-weight="700" fill="#64748b">近处物体</text>
+
+  <g class="p22-ray" fill="none" stroke="#dc2626" stroke-width="2.8">
+    <polyline points="60,225 195,240 285,260" marker-end="url(#arrRed)"/>
+    <polyline points="60,225 195,275 285,275" marker-end="url(#arrRed)"/>
+    <polyline points="60,225 195,310 285,290" marker-end="url(#arrRed)"/>
+  </g>
+  <g fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="6 5" opacity=".75">
+    <polyline points="285,260 340,275"/>
+    <polyline points="285,275 340,275"/>
+    <polyline points="285,290 340,275"/>
+  </g>
+  <g class="p22-blur">
+    <ellipse cx="285" cy="275" rx="11" ry="26" fill="#f59e0b" opacity=".28"/>
+    <ellipse cx="285" cy="275" rx="4" ry="16" fill="#f59e0b"/>
+  </g>
+  <text x="340" y="322" font-size="11.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">像在视网膜后</text>
+
+  <text x="238" y="406" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">晶状体太薄 / 眼球太短</text>
+  <text x="238" y="430" font-size="11.5" fill="#64748b" text-anchor="middle">折光能力太弱，像成在视网膜后</text>
+
+  <rect x="452" y="84" width="420" height="392" rx="18" fill="#ffffff" stroke="#bbf7d0" stroke-width="2"/>
+  <rect x="452" y="84" width="420" height="7" rx="3" fill="#059669"/>
+  <text x="662" y="120" font-size="14" font-weight="800" fill="#047857" text-anchor="middle">凸透镜矫正：像前移到视网膜</text>
+
+  <line x1="472" y1="275" x2="762" y2="275" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="9 7"/>
+  <ellipse cx="655" cy="275" rx="95" ry="80" fill="#f8fafc" stroke="#334155" stroke-width="3"/>
+  <path d="M572 228 Q550 275 572 322" fill="#e0f2fe" stroke="#0284c7" stroke-width="2.5"/>
+  <ellipse cx="630" cy="275" rx="13" ry="32" fill="url(#gGlass)" stroke="#1d4ed8" stroke-width="2.5"/>
+  <line x1="750" y1="218" x2="750" y2="332" stroke="#dc2626" stroke-width="6" stroke-linecap="round"/>
+  <text x="750" y="210" font-size="11" font-weight="800" fill="#b91c1c" text-anchor="middle">视网膜</text>
+
+  <g class="p22-glass">
+    <ellipse cx="515" cy="275" rx="44" ry="68" fill="none" stroke="#334155" stroke-width="3"/>
+    <path d="M515 205 Q489 275 515 345 Q541 275 515 205 Z" fill="url(#gGlass)" stroke="#047857" stroke-width="2.5"/>
+    <text x="515" y="192" font-size="12.5" font-weight="800" fill="#047857" text-anchor="middle">凸透镜</text>
+  </g>
+
+  <line x1="460" y1="275" x2="460" y2="225" stroke="#dc2626" stroke-width="4" stroke-linecap="round" marker-end="url(#arrRed)"/>
+  <text x="452" y="358" font-size="11.5" font-weight="700" fill="#64748b">近处物体</text>
+
+  <g class="p22-ray" fill="none" stroke="#059669" stroke-width="2.8">
+    <polyline points="460,225 515,235 630,245 750,275" marker-end="url(#arrGreen)"/>
+    <polyline points="460,225 515,275 630,275 750,275" marker-end="url(#arrGreen)"/>
+    <polyline points="460,225 515,315 630,305 750,275" marker-end="url(#arrGreen)"/>
+  </g>
+  <g class="p22-good">
+    <circle cx="750" cy="275" r="6" fill="#dc2626"/>
+    <circle cx="750" cy="275" r="14" fill="#f59e0b" opacity=".25"/>
+  </g>
+  <text x="585" y="198" font-size="11.5" font-weight="800" fill="#047857">先会聚</text>
+  <text x="662" y="406" font-size="12" font-weight="800" fill="#047857" text-anchor="middle">远视眼镜 = 凸透镜</text>
+  <text x="662" y="430" font-size="11.5" fill="#047857" text-anchor="middle">像前移到视网膜上，看清近处</text>
+</g>
+</svg>

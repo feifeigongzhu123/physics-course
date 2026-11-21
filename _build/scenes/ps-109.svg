@@ -1,0 +1,217 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="固体：晶体与非晶体、各向异性与熔点">
+<style>
+[data-scene="ps-109"] .s109-s1,[data-scene="ps-109"] .s109-s2,[data-scene="ps-109"] .s109-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="ps-109"].s1 .s109-s1,[data-scene="ps-109"].s2 .s109-s2,[data-scene="ps-109"].s3 .s109-s3{opacity:1;visibility:visible}
+@keyframes s109fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+@keyframes s109draw{to{stroke-dashoffset:0}}
+@keyframes s109pop{0%{transform:scale(.9);opacity:0}70%{transform:scale(1.03);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s109pulse{0%,100%{opacity:.5}50%{opacity:1}}
+[data-scene="ps-109"].s1 .s109-crystal{animation:s109fade .5s ease .12s both}
+[data-scene="ps-109"].s1 .s109-amorph{animation:s109fade .5s ease .3s both}
+[data-scene="ps-109"].s1 .s109-card{animation:s109fade .5s ease .35s both}
+[data-scene="ps-109"].s2 .s109-plate{animation:s109fade .5s ease .12s both}
+[data-scene="ps-109"].s2 .s109-melt{transform-box:fill-box;transform-origin:center;animation:s109pulse 2.2s ease-in-out infinite}
+[data-scene="ps-109"].s2 .s109-card{animation:s109fade .5s ease .3s both}
+[data-scene="ps-109"].s3 .s109-curve{stroke-dasharray:520;stroke-dashoffset:520;animation:s109draw 1.4s ease .2s forwards}
+[data-scene="ps-109"].s3 .s109-curve2{stroke-dasharray:520;stroke-dashoffset:520;animation:s109draw 1.4s ease .5s forwards}
+[data-scene="ps-109"].s3 .s109-dot{animation:s109fade .4s ease both}
+[data-scene="ps-109"].s3 .s109-card{animation:s109fade .5s ease .3s both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">固体：晶体、非晶体与各向异性</text>
+
+<!-- 第一步：晶体和非晶体 -->
+<g class="s109-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">晶体有规则的几何外形和确定的熔点</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+
+  <text x="170" y="130" font-size="13" font-weight="900" fill="#1d4ed8" text-anchor="middle">晶体</text>
+  <text x="420" y="130" font-size="13" font-weight="900" fill="#64748b" text-anchor="middle">非晶体</text>
+  <line x1="296" y1="118" x2="296" y2="414" stroke="#dbe6f2" stroke-width="2" stroke-dasharray="7 6"/>
+
+  <g class="s109-crystal">
+    <rect x="96" y="240" width="70" height="70" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+    <polygon points="96,240 126,210 196,210 166,240" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/>
+    <polygon points="166,240 196,210 196,280 166,310" fill="#93c5fd" stroke="#1d4ed8" stroke-width="2"/>
+    <line x1="232" y1="238" x2="232" y2="306" stroke="#1d4ed8" stroke-width="2.4"/>
+    <line x1="203" y1="255" x2="261" y2="289" stroke="#1d4ed8" stroke-width="2.4"/>
+    <line x1="203" y1="289" x2="261" y2="255" stroke="#1d4ed8" stroke-width="2.4"/>
+    <circle cx="232" cy="272" r="4" fill="#1d4ed8"/>
+    <line x1="232" y1="238" x2="220" y2="228" stroke="#60a5fa" stroke-width="1.6"/>
+    <line x1="232" y1="238" x2="244" y2="228" stroke="#60a5fa" stroke-width="1.6"/>
+    <line x1="232" y1="306" x2="220" y2="316" stroke="#60a5fa" stroke-width="1.6"/>
+    <line x1="232" y1="306" x2="244" y2="316" stroke="#60a5fa" stroke-width="1.6"/>
+    <line x1="203" y1="255" x2="192" y2="247" stroke="#60a5fa" stroke-width="1.6"/>
+    <line x1="261" y1="289" x2="272" y2="297" stroke="#60a5fa" stroke-width="1.6"/>
+    <line x1="261" y1="255" x2="272" y2="247" stroke="#60a5fa" stroke-width="1.6"/>
+    <line x1="203" y1="289" x2="192" y2="297" stroke="#60a5fa" stroke-width="1.6"/>
+    <text x="133" y="332" font-size="11" fill="#475569" text-anchor="middle">食盐</text>
+    <text x="232" y="332" font-size="11" fill="#475569" text-anchor="middle">雪花</text>
+    <text x="170" y="360" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">规则外形 · 有确定熔点</text>
+    <text x="170" y="386" font-size="11" fill="#64748b" text-anchor="middle">实例：食盐、石英、雪花</text>
+  </g>
+
+  <g class="s109-amorph">
+    <polygon points="340,250 372,222 410,236 424,278 402,316 356,314 332,286" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <path d="M 470 232 C 492 232 506 252 502 274 C 498 300 478 314 460 304 C 440 294 436 266 448 248 C 454 238 462 232 470 232 Z" fill="#f8fafc" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 5"/>
+    <text x="380" y="332" font-size="11" fill="#475569" text-anchor="middle">玻璃</text>
+    <text x="470" y="332" font-size="11" fill="#475569" text-anchor="middle">松香</text>
+    <text x="405" y="360" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">无规则外形 · 无确定熔点</text>
+    <text x="405" y="386" font-size="11" fill="#64748b" text-anchor="middle">实例：玻璃、松香、沥青</text>
+  </g>
+
+  <text x="296" y="416" font-size="12" font-weight="800" fill="#1d4ed8" text-anchor="middle">判断晶体与非晶体，最可靠的办法是看有没有固定熔点</text>
+
+  <g class="s109-card">
+    <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+    <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">晶体与非晶体的对比</text>
+
+    <rect x="596" y="160" width="248" height="100" rx="10" fill="#e8effc" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="610" y="184" font-size="13" font-weight="900" fill="#1e3a8a">晶体</text>
+    <text x="610" y="208" font-size="11.5" fill="#334155">有规则的几何外形</text>
+    <text x="610" y="230" font-size="11.5" fill="#334155">有确定的熔点</text>
+    <text x="610" y="252" font-size="11" fill="#475569">实例：食盐、石英、金属</text>
+
+    <rect x="596" y="272" width="248" height="100" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="610" y="296" font-size="13" font-weight="900" fill="#475569">非晶体</text>
+    <text x="610" y="320" font-size="11.5" fill="#334155">没有规则的几何外形</text>
+    <text x="610" y="342" font-size="11.5" fill="#334155">没有确定的熔点</text>
+    <text x="610" y="364" font-size="11" fill="#475569">实例：玻璃、松香、沥青</text>
+
+    <text x="720" y="398" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">非晶体熔化时逐渐变软</text>
+    <text x="720" y="422" font-size="11" fill="#64748b" text-anchor="middle">温度持续升高，没有温度平台</text>
+  </g>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">有确定熔点的是晶体，没有确定熔点的是非晶体（又称无定形固体）</text>
+</g>
+
+<!-- 第二步：单晶体各向异性 -->
+<g class="s109-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">单晶体物理性质各向异性，多晶体整体各向同性</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="240" height="28" rx="14" fill="#e8effc"/>
+  <text x="176" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">云母与玻璃上的熔蜡实验</text>
+
+  <text x="170" y="160" font-size="11.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">云母片（单晶体）</text>
+  <text x="420" y="160" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">玻璃片（非晶体）</text>
+
+  <g class="s109-plate">
+    <rect x="80" y="174" width="180" height="90" rx="6" fill="#e8effc" stroke="#1d4ed8" stroke-width="2"/>
+    <rect x="92" y="186" width="156" height="66" rx="3" fill="#fef9c3" stroke="#fde047" stroke-width="1.2" stroke-dasharray="5 4"/>
+    <ellipse class="s109-melt" cx="185" cy="219" rx="58" ry="24" fill="#fdba74" opacity="0.75" stroke="#f97316" stroke-width="1.6" stroke-dasharray="6 4"/>
+
+    <rect x="320" y="174" width="180" height="90" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <rect x="332" y="186" width="156" height="66" rx="3" fill="#fef9c3" stroke="#fde047" stroke-width="1.2" stroke-dasharray="5 4"/>
+    <circle class="s109-melt" cx="430" cy="219" r="26" fill="#fdba74" opacity="0.75" stroke="#f97316" stroke-width="1.6" stroke-dasharray="6 4"/>
+
+    <path d="M 68 232 C 58 240 56 248 63 255 C 62 246 70 243 71 237 C 76 246 84 241 79 233 Z" fill="#fb923c" stroke="#f97316" stroke-width="1.2"/>
+    <path d="M 308 232 C 298 240 296 248 303 255 C 302 246 310 243 311 237 C 316 246 324 241 319 233 Z" fill="#fb923c" stroke="#f97316" stroke-width="1.2"/>
+  </g>
+
+  <text x="170" y="292" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">熔蜡区呈椭圆</text>
+  <text x="420" y="292" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">熔蜡区呈圆形</text>
+  <text x="170" y="318" font-size="11" fill="#334155" text-anchor="middle">沿不同方向导热本领不同</text>
+  <text x="420" y="318" font-size="11" fill="#334155" text-anchor="middle">各方向导热本领相同</text>
+  <text x="170" y="344" font-size="11.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">单晶体：各向异性</text>
+  <text x="420" y="344" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">非晶体：各向同性</text>
+
+  <text x="296" y="378" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">多晶体由许多杂乱排列的小晶粒组成</text>
+  <text x="296" y="402" font-size="11.5" fill="#64748b" text-anchor="middle">整体表现为各向同性，但有确定的熔点</text>
+  <text x="296" y="426" font-size="11" fill="#64748b" text-anchor="middle">金属一般属于多晶体</text>
+
+  <g class="s109-card">
+    <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+    <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">单晶体 · 多晶体 · 非晶体</text>
+
+    <rect x="596" y="158" width="248" height="76" rx="10" fill="#e8effc" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="610" y="181" font-size="12" font-weight="900" fill="#1e3a8a">单晶体</text>
+    <text x="610" y="203" font-size="11" fill="#334155">规则外形，各向异性</text>
+    <text x="610" y="224" font-size="11" fill="#475569">有熔点（石英、云母）</text>
+
+    <rect x="596" y="244" width="248" height="76" rx="10" fill="#f8fbff" stroke="#c7d7f5" stroke-width="1.5"/>
+    <text x="610" y="267" font-size="12" font-weight="900" fill="#1e3a8a">多晶体</text>
+    <text x="610" y="289" font-size="11" fill="#334155">小晶粒杂乱排列，各向同性</text>
+    <text x="610" y="310" font-size="11" fill="#475569">有熔点（金属、岩石）</text>
+
+    <rect x="596" y="330" width="248" height="76" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="610" y="353" font-size="12" font-weight="900" fill="#475569">非晶体</text>
+    <text x="610" y="375" font-size="11" fill="#334155">各向同性，没有熔点</text>
+    <text x="610" y="396" font-size="11" fill="#475569">如玻璃、松香、沥青</text>
+
+    <text x="720" y="428" font-size="11" font-weight="800" fill="#b45309" text-anchor="middle">各向异性只属于单晶体</text>
+  </g>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">单晶体各向异性；多晶体各向同性但熔点确定；非晶体各向同性且无熔点</text>
+</g>
+
+<!-- 第三步：熔点和微观结构 -->
+<g class="s109-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">晶体熔化时吸收热量，温度保持在熔点不变</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+
+  <line x1="110" y1="380" x2="510" y2="380" stroke="#475569" stroke-width="2.2" marker-end="url(#arrBlue)"/>
+  <line x1="110" y1="380" x2="110" y2="150" stroke="#475569" stroke-width="2.2" marker-end="url(#arrBlue)"/>
+  <text x="100" y="162" font-size="11.5" font-weight="900" fill="#475569" text-anchor="end">T</text>
+  <text x="516" y="386" font-size="11.5" font-weight="900" fill="#475569">t</text>
+  <text x="98" y="398" font-size="11" fill="#64748b">O</text>
+
+  <line x1="110" y1="240" x2="505" y2="240" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="7 6"/>
+  <text x="104" y="244" font-size="11" font-weight="800" fill="#475569" text-anchor="end">熔点</text>
+
+  <path class="s109-curve" d="M 120 372 L 230 240 L 330 240 L 460 168" fill="none" stroke="#1d4ed8" stroke-width="3.6"/>
+  <path class="s109-curve2" d="M 120 372 C 200 340 250 316 300 300 C 360 282 420 268 490 258" fill="none" stroke="#d97706" stroke-width="3.6"/>
+
+  <text x="286" y="222" font-size="11.5" font-weight="800" fill="#1e40af">晶体：熔化时温度不变</text>
+  <text x="404" y="330" font-size="11.5" font-weight="800" fill="#b45309">非晶体：逐渐软化</text>
+
+  <line x1="230" y1="240" x2="330" y2="240" stroke="#1d4ed8" stroke-width="5" stroke-linecap="round"/>
+  <text x="280" y="264" font-size="11" fill="#475569" text-anchor="middle">吸热，温度不变</text>
+
+  <text x="60" y="422" font-size="11.5" font-weight="800" fill="#334155">晶体有固定熔点，非晶体没有固定熔点</text>
+
+  <g class="s109-card">
+    <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+    <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">晶体的微观结构</text>
+
+    <g class="s109-dot">
+      <circle cx="606" cy="170" r="3.6" fill="#1d4ed8"/><circle cx="626" cy="170" r="3.6" fill="#1d4ed8"/><circle cx="646" cy="170" r="3.6" fill="#1d4ed8"/><circle cx="666" cy="170" r="3.6" fill="#1d4ed8"/><circle cx="686" cy="170" r="3.6" fill="#1d4ed8"/>
+      <circle cx="606" cy="190" r="3.6" fill="#1d4ed8"/><circle cx="626" cy="190" r="3.6" fill="#1d4ed8"/><circle cx="646" cy="190" r="3.6" fill="#1d4ed8"/><circle cx="666" cy="190" r="3.6" fill="#1d4ed8"/><circle cx="686" cy="190" r="3.6" fill="#1d4ed8"/>
+      <circle cx="606" cy="210" r="3.6" fill="#1d4ed8"/><circle cx="626" cy="210" r="3.6" fill="#1d4ed8"/><circle cx="646" cy="210" r="3.6" fill="#1d4ed8"/><circle cx="666" cy="210" r="3.6" fill="#1d4ed8"/><circle cx="686" cy="210" r="3.6" fill="#1d4ed8"/>
+      <circle cx="606" cy="230" r="3.6" fill="#1d4ed8"/><circle cx="626" cy="230" r="3.6" fill="#1d4ed8"/><circle cx="646" cy="230" r="3.6" fill="#1d4ed8"/><circle cx="666" cy="230" r="3.6" fill="#1d4ed8"/><circle cx="686" cy="230" r="3.6" fill="#1d4ed8"/>
+      <text x="646" y="250" font-size="11" font-weight="800" fill="#1e40af" text-anchor="middle">规则排列</text>
+    </g>
+
+    <g class="s109-dot">
+      <circle cx="746" cy="172" r="3.4" fill="#d97706"/><circle cx="770" cy="184" r="3.4" fill="#d97706"/><circle cx="794" cy="166" r="3.4" fill="#d97706"/><circle cx="820" cy="180" r="3.4" fill="#d97706"/>
+      <circle cx="758" cy="206" r="3.4" fill="#d97706"/><circle cx="784" cy="198" r="3.4" fill="#d97706"/><circle cx="812" cy="210" r="3.4" fill="#d97706"/><circle cx="738" cy="226" r="3.4" fill="#d97706"/>
+      <circle cx="772" cy="230" r="3.4" fill="#d97706"/><circle cx="800" cy="222" r="3.4" fill="#d97706"/><circle cx="826" cy="234" r="3.4" fill="#d97706"/>
+      <text x="784" y="250" font-size="11" font-weight="800" fill="#b45309" text-anchor="middle">杂乱排列</text>
+    </g>
+
+    <line x1="596" y1="264" x2="844" y2="264" stroke="#e8eef7" stroke-width="1.5"/>
+    <text x="610" y="288" font-size="11" fill="#334155">晶体中微粒按一定规则排列</text>
+    <text x="610" y="310" font-size="11" fill="#334155">周期性重复，形成空间点阵</text>
+    <text x="610" y="332" font-size="11" fill="#334155">非晶体中微粒排列无序</text>
+    <text x="610" y="356" font-size="11" fill="#334155">同种物质可形成不同晶体</text>
+    <text x="610" y="378" font-size="11" fill="#334155">如金刚石与石墨都由碳组成</text>
+    <text x="610" y="400" font-size="11" fill="#475569">结构不同，硬度、导电性差别很大</text>
+    <text x="610" y="422" font-size="11" fill="#475569">金刚石坚硬，石墨质软、能导电</text>
+  </g>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">晶体有固定熔点，熔化时吸热但温度不变，因为微粒排列被破坏需要能量</text>
+</g>
+</svg>

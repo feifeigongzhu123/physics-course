@@ -1,0 +1,75 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="简谐运动：弹簧振子、位移时间图像与能量转化">
+  <rect width="900" height="620" fill="url(#gBg)"/>
+  <rect width="900" height="620" fill="url(#dotsPat)"/>
+  <rect y="500" width="900" height="120" fill="url(#gBench)"/>
+  <line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+  <text x="450" y="44" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">简谐运动：回复力让振子回到平衡位置</text>
+
+  <!-- 墙与弹簧 -->
+  <rect x="64" y="190" width="18" height="220" fill="#cbd5e1"/>
+  <g class="ps2-spring">
+    <path d="M82 300 L97 278 L112 322 L127 278 L142 322 L157 278 L172 322 L187 278 L202 322 L217 278 L232 322 L247 278 L262 322 L277 278 L292 322 L300 300"
+      fill="none" stroke="#64748b" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 振子 -->
+  <g class="ps2-mass">
+    <rect x="300" y="268" width="70" height="64" rx="8" fill="#f59e0b" stroke="#b45309" stroke-width="2.5"/>
+    <text x="335" y="306" font-size="16" font-weight="900" fill="#7c2d12" text-anchor="middle">m</text>
+  </g>
+
+  <!-- 平衡位置 -->
+  <g class="ps2-eq">
+    <line x1="335" y1="150" x2="335" y2="470" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="7 7"/>
+    <text x="335" y="138" font-size="13" font-weight="800" fill="#1e40af" text-anchor="middle">平衡位置 O</text>
+    <text x="350" y="470" font-size="12" fill="#64748b">x = 0</text>
+  </g>
+
+  <!-- 第一步：回复力 -->
+  <g class="ps2-force" data-zone="1">
+    <line x1="335" y1="240" x2="407" y2="240" stroke="#dc2626" stroke-width="3" marker-end="url(#arrRed)"/>
+    <text x="371" y="228" font-size="13" font-weight="800" fill="#b91c1c" text-anchor="middle">x</text>
+    <line x1="430" y1="300" x2="348" y2="300" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrBlue)"/>
+    <text x="300" y="362" font-size="13.5" font-weight="900" fill="#6d28d9" text-anchor="end">F = −kx</text>
+    <text x="150" y="430" font-size="12.5" font-weight="700" fill="#6d28d9">回复力总指向平衡位置</text>
+  </g>
+
+  <!-- 第二步：位移—时间图像 -->
+  <g class="ps2-graph" data-zone="2">
+    <rect x="560" y="108" width="310" height="372" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2"/>
+    <line x1="610" y1="380" x2="852" y2="380" stroke="#64748b" stroke-width="2" marker-end="url(#arrBlue)"/>
+    <line x1="610" y1="450" x2="610" y2="170" stroke="#64748b" stroke-width="2" marker-end="url(#arrBlue)"/>
+    <text x="846" y="402" font-size="12" fill="#64748b">t</text>
+    <text x="588" y="182" font-size="12" fill="#64748b">x</text>
+    <text x="592" y="314" font-size="12" font-weight="700" fill="#1e40af">A</text>
+    <text x="584" y="452" font-size="12" font-weight="700" fill="#1e40af">−A</text>
+    <text x="610" y="398" font-size="11" fill="#94a3b8">O</text>
+    <path class="ps2-curve" d="M610 380 L630 330.5 L650 310 L670 330.5 L690 380 L710 429.5 L730 450 L750 429.5 L770 380 L790 330.5 L810 310 L830 330.5 L850 380"
+      fill="none" stroke="#1d4ed8" stroke-width="3.5" stroke-linecap="round"/>
+    <g stroke="#94a3b8" stroke-width="1.5">
+      <line x1="610" y1="462" x2="610" y2="474"/><line x1="770" y1="462" x2="770" y2="474"/>
+      <line x1="610" y1="468" x2="770" y2="468" marker-start="url(#arrBlue)" marker-end="url(#arrBlue)"/>
+    </g>
+    <text x="690" y="492" font-size="12" font-weight="700" fill="#64748b" text-anchor="middle">T（一个周期）</text>
+    <text x="715" y="132" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">位移—时间图像</text>
+    <text x="715" y="152" font-size="11.5" fill="#64748b" text-anchor="middle">正弦曲线 · 振幅 A · 周期 T</text>
+  </g>
+
+  <!-- 第三步：能量条 -->
+  <g class="ps2-energy" data-zone="3">
+    <rect x="60" y="512" width="780" height="80" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="86" y="540" font-size="13" font-weight="800" fill="#1e3a8a">能量转化</text>
+    <text x="86" y="566" font-size="11.5" fill="#64748b">平衡位置 Ek 最大；最大位移处 Ep 最大</text>
+    <g>
+      <rect x="350" y="524" width="200" height="18" rx="9" fill="#fde68a"/>
+      <rect class="ps2-ek" x="350" y="524" width="200" height="18" rx="9" fill="#f59e0b"/>
+      <text x="330" y="538" font-size="11.5" font-weight="700" fill="#92400e" text-anchor="end">Ek</text>
+      <rect x="350" y="552" width="200" height="18" rx="9" fill="#dbeafe"/>
+      <rect class="ps2-ep" x="350" y="552" width="200" height="18" rx="9" fill="#60a5fa"/>
+      <text x="330" y="566" font-size="11.5" font-weight="700" fill="#1e40af" text-anchor="end">Ep</text>
+    </g>
+    <text x="590" y="540" font-size="14" font-weight="900" fill="#1e3a8a">E = Ek + Ep</text>
+    <text x="590" y="562" font-size="11.5" fill="#475569">理想弹簧振子机械能守恒</text>
+  </g>
+</svg>

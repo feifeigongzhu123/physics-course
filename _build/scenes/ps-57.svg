@@ -1,0 +1,228 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="磁场与磁感线：磁体和电流周围的磁场、磁感线方向与几种常见磁场">
+<style>
+[data-scene="ps-57"] .s57-s1,[data-scene="ps-57"] .s57-s2,[data-scene="ps-57"] .s57-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="ps-57"].s1 .s57-s1,[data-scene="ps-57"].s2 .s57-s2,[data-scene="ps-57"].s3 .s57-s3{opacity:1;visibility:visible}
+@keyframes s57fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+@keyframes s57draw{to{stroke-dashoffset:0}}
+@keyframes s57pop{0%{transform:scale(.85);opacity:0}70%{transform:scale(1.04);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s57pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes s57sway{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}
+[data-scene="ps-57"].s1 .s57-magnet{transform-box:fill-box;transform-origin:center;animation:s57pop .6s ease both}
+[data-scene="ps-57"].s1 .s57-loop{stroke-dasharray:340;stroke-dashoffset:340;animation:s57draw 1.1s ease .2s forwards}
+[data-scene="ps-57"].s1 .s57-loop2{animation-delay:.4s}
+[data-scene="ps-57"].s1 .s57-ring{animation:s57pulse 2s ease-in-out infinite}
+[data-scene="ps-57"].s1 .s57-ring2{animation-delay:.3s}
+[data-scene="ps-57"].s1 .s57-ring3{animation-delay:.6s}
+[data-scene="ps-57"].s1 .s57-compass{transform-box:fill-box;transform-origin:center;animation:s57sway 3.2s ease-in-out infinite}
+[data-scene="ps-57"].s2 .s57-line{stroke-dasharray:320;stroke-dashoffset:320;animation:s57draw 1.2s ease .15s forwards}
+[data-scene="ps-57"].s2 .s57-line2{animation-delay:.3s}
+[data-scene="ps-57"].s2 .s57-line3{animation-delay:.45s}
+[data-scene="ps-57"].s2 .s57-line4{animation-delay:.6s}
+[data-scene="ps-57"].s2 .s57-note{animation:s57fade .5s ease both}
+[data-scene="ps-57"].s2 .s57-note2{animation-delay:.12s}
+[data-scene="ps-57"].s2 .s57-note3{animation-delay:.24s}
+[data-scene="ps-57"].s2 .s57-note4{animation-delay:.36s}
+[data-scene="ps-57"].s2 .s57-note5{animation-delay:.48s}
+[data-scene="ps-57"].s3 .s57-card{transform-box:fill-box;transform-origin:center;animation:s57pop .5s ease both}
+[data-scene="ps-57"].s3 .s57-card2{animation-delay:.12s}
+[data-scene="ps-57"].s3 .s57-card3{animation-delay:.24s}
+[data-scene="ps-57"].s3 .s57-card4{animation-delay:.36s}
+[data-scene="ps-57"].s3 .s57-spark{animation:s57pulse 1.8s ease-in-out infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">磁场 磁感线：磁体与电流周围的磁场</text>
+
+<!-- 第一步：磁场 -->
+<g class="s57-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">磁体周围有磁场，电流周围也有磁场——磁场看不见，却真实存在</text>
+
+  <rect x="36" y="100" width="430" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="154" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">磁体周围的磁场</text>
+
+  <text x="251" y="168" font-size="11.5" font-weight="700" fill="#64748b" text-anchor="middle">磁感线从 N 极出发，回到 S 极</text>
+
+  <g class="s57-magnet">
+    <rect x="140" y="238" width="110" height="46" rx="4" fill="#dc2626"/>
+    <rect x="250" y="238" width="110" height="46" rx="4" fill="#1d4ed8"/>
+    <text x="195" y="268" font-size="20" font-weight="900" fill="#ffffff" text-anchor="middle">N</text>
+    <text x="305" y="268" font-size="20" font-weight="900" fill="#ffffff" text-anchor="middle">S</text>
+  </g>
+
+  <path class="s57-loop" d="M150 238 C120 150 370 150 340 238" fill="none" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+  <path class="s57-loop s57-loop2" d="M160 284 C140 356 360 356 330 284" fill="none" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+
+  <g transform="translate(106,196)">
+    <g class="s57-compass">
+      <polygon points="0,-14 6,0 0,14 -6,0" fill="#dc2626"/>
+      <text x="0" y="-19" font-size="11" font-weight="800" fill="#b91c1c" text-anchor="middle">N</text>
+    </g>
+  </g>
+  <g transform="translate(396,196)">
+    <g class="s57-compass">
+      <polygon points="0,14 6,0 0,-14 -6,0" fill="#1d4ed8"/>
+      <text x="0" y="27" font-size="11" font-weight="800" fill="#1e40af" text-anchor="middle">S</text>
+    </g>
+  </g>
+
+  <text x="251" y="386" font-size="12.5" font-weight="700" fill="#334155" text-anchor="middle">磁极之间的相互作用通过磁场发生</text>
+  <text x="251" y="412" font-size="11.5" fill="#64748b" text-anchor="middle">把小磁针放在磁场中，N 极受力方向即磁场方向</text>
+
+  <rect x="490" y="100" width="374" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="510" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="608" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电流周围的磁场</text>
+  <text x="677" y="166" font-size="11.5" font-weight="700" fill="#b45309" text-anchor="middle">电流的磁效应（奥斯特实验）</text>
+
+  <line x1="640" y1="178" x2="640" y2="334" stroke="#b45309" stroke-width="5" stroke-linecap="round"/>
+  <polygon points="640,162 633,178 647,178" fill="#b45309"/>
+  <text x="654" y="196" font-size="13" font-weight="900" fill="#b45309">I</text>
+
+  <ellipse class="s57-ring" cx="640" cy="256" rx="58" ry="20" fill="none" stroke="#1d4ed8" stroke-width="2.2"/>
+  <ellipse class="s57-ring s57-ring2" cx="640" cy="256" rx="98" ry="34" fill="none" stroke="#1d4ed8" stroke-width="2.2" opacity=".75"/>
+  <ellipse class="s57-ring s57-ring3" cx="640" cy="256" rx="138" ry="48" fill="none" stroke="#1d4ed8" stroke-width="2.2" opacity=".55"/>
+
+  <text x="677" y="352" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">磁感线是以导线为圆心的同心圆</text>
+  <text x="677" y="378" font-size="11.5" fill="#64748b" text-anchor="middle">安培定则：右手握导线，拇指指电流方向</text>
+  <text x="677" y="402" font-size="11.5" fill="#64748b" text-anchor="middle">四指弯曲的方向就是磁场方向</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">磁场的基本性质：对放入其中的磁体或电流有力的作用</text>
+</g>
+
+<!-- 第二步：磁感线 -->
+<g class="s57-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">磁感线：人为画出的闭合曲线，某点的切线方向就是该点的磁场方向</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="250" height="28" rx="14" fill="#e8effc"/>
+  <text x="181" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">条形磁体的磁感线</text>
+
+  <text x="296" y="166" font-size="12" font-weight="800" fill="#1d4ed8" text-anchor="middle">磁体外部：磁感线从 N 极出发，回到 S 极</text>
+
+  <path class="s57-line" d="M206 304 C196 214 416 214 406 304" fill="none" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+  <path class="s57-line s57-line2" d="M218 304 C218 244 394 244 394 304" fill="none" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+  <path class="s57-line s57-line3" d="M206 338 C196 390 416 390 406 338" fill="none" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+  <path class="s57-line s57-line4" d="M218 338 C218 380 394 380 394 338" fill="none" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+
+  <line x1="206" y1="321" x2="156" y2="321" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+  <line x1="456" y1="321" x2="412" y2="321" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+
+  <rect x="206" y="300" width="100" height="42" rx="4" fill="#dc2626"/>
+  <rect x="306" y="300" width="100" height="42" rx="4" fill="#1d4ed8"/>
+  <text x="240" y="328" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">N</text>
+  <text x="372" y="328" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">S</text>
+
+  <line x1="396" y1="370" x2="236" y2="370" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#arrAmber)"/>
+  <text x="296" y="362" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">磁体内部：S → N</text>
+  <text x="296" y="404" font-size="11.5" fill="#64748b" text-anchor="middle">外部与内部相连，磁感线是闭合曲线</text>
+  <text x="296" y="426" font-size="11" fill="#64748b" text-anchor="middle">磁极附近磁感线最密，磁场最强</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="694" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">磁感线的特点</text>
+
+  <g class="s57-note">
+    <circle cx="610" cy="174" r="11" fill="#e8effc"/>
+    <text x="610" y="179" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">1</text>
+    <text x="630" y="179" font-size="11.5" fill="#334155">假想曲线，实际不存在</text>
+  </g>
+  <g class="s57-note s57-note2">
+    <circle cx="610" cy="214" r="11" fill="#e8effc"/>
+    <text x="610" y="219" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">2</text>
+    <text x="630" y="219" font-size="11.5" fill="#334155">切线方向 = 磁场方向</text>
+  </g>
+  <g class="s57-note s57-note3">
+    <circle cx="610" cy="254" r="11" fill="#e8effc"/>
+    <text x="610" y="259" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">3</text>
+    <text x="630" y="259" font-size="11.5" fill="#334155">越密越强，越疏越弱</text>
+  </g>
+  <g class="s57-note s57-note4">
+    <circle cx="610" cy="294" r="11" fill="#e8effc"/>
+    <text x="610" y="299" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">4</text>
+    <text x="630" y="299" font-size="11.5" fill="#334155">任何两条磁感线不相交</text>
+  </g>
+  <g class="s57-note s57-note5">
+    <circle cx="610" cy="334" r="11" fill="#e8effc"/>
+    <text x="610" y="339" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">5</text>
+    <text x="630" y="339" font-size="11.5" fill="#334155">闭合曲线，箭头表示方向</text>
+  </g>
+
+  <rect x="600" y="364" width="240" height="50" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="386" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">磁感线是假想的，但磁场真实存在</text>
+  <text x="720" y="404" font-size="11" fill="#92400e" text-anchor="middle">用疏密和切线方向描述磁场</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">磁感线越密的地方磁场越强；磁极附近最密，所以两极磁性最强</text>
+</g>
+
+<!-- 第三步：几种常见磁场 -->
+<g class="s57-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">几种常见磁场：条形磁体、通电直导线、通电螺线管、地磁场</text>
+
+  <g class="s57-card">
+    <rect x="36" y="100" width="400" height="150" rx="14" fill="#ffffff" stroke="#fecaca" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="56" y="128" font-size="13.5" font-weight="800" fill="#b91c1c">条形磁体</text>
+    <rect x="64" y="178" width="58" height="24" rx="3" fill="#dc2626"/>
+    <rect x="122" y="178" width="58" height="24" rx="3" fill="#1d4ed8"/>
+    <text x="93" y="195" font-size="12" font-weight="900" fill="#ffffff" text-anchor="middle">N</text>
+    <text x="151" y="195" font-size="12" font-weight="900" fill="#ffffff" text-anchor="middle">S</text>
+    <path d="M64 178 C54 150 190 150 180 178" fill="none" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrBlue)"/>
+    <path d="M64 202 C54 230 190 230 180 202" fill="none" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrBlue)"/>
+    <text x="200" y="174" font-size="11.5" fill="#334155">外部：N 极 → S 极</text>
+    <text x="200" y="198" font-size="11.5" fill="#334155">内部：S 极 → N 极</text>
+    <text x="200" y="222" font-size="11.5" fill="#64748b">两头最密，中间最疏</text>
+  </g>
+
+  <g class="s57-card s57-card2">
+    <rect x="464" y="100" width="400" height="150" rx="14" fill="#ffffff" stroke="#fde68a" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="484" y="128" font-size="13.5" font-weight="800" fill="#b45309">通电直导线</text>
+    <circle cx="104" cy="185" r="7" fill="#b45309"/>
+    <circle cx="104" cy="185" r="20" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+    <circle cx="104" cy="185" r="34" fill="none" stroke="#1d4ed8" stroke-width="2" opacity=".7"/>
+    <circle cx="104" cy="185" r="44" fill="none" stroke="#1d4ed8" stroke-width="2" opacity=".45"/>
+    <text x="104" y="244" font-size="11" fill="#64748b" text-anchor="middle">俯视图</text>
+    <text x="196" y="174" font-size="11.5" fill="#334155">磁感线是同心圆</text>
+    <text x="196" y="198" font-size="11.5" fill="#334155">安培定则判方向</text>
+    <text x="196" y="222" font-size="11.5" fill="#64748b">离导线越远磁场越弱</text>
+  </g>
+
+  <g class="s57-card s57-card3">
+    <rect x="36" y="262" width="400" height="150" rx="14" fill="#ffffff" stroke="#bbf7d0" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="56" y="290" font-size="13.5" font-weight="800" fill="#047857">通电螺线管</text>
+    <g stroke="#b45309" stroke-width="2.5" fill="none">
+      <ellipse cx="76" cy="344" rx="9" ry="38"/>
+      <ellipse cx="98" cy="344" rx="9" ry="38"/>
+      <ellipse cx="120" cy="344" rx="9" ry="38"/>
+      <ellipse cx="142" cy="344" rx="9" ry="38"/>
+      <ellipse cx="164" cy="344" rx="9" ry="38"/>
+    </g>
+    <path d="M76 306 C50 286 190 286 164 306" fill="none" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrBlue)"/>
+    <path d="M76 382 C50 402 190 402 164 382" fill="none" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrBlue)"/>
+    <text x="200" y="308" font-size="11.5" fill="#334155">外部磁场与条形磁体相似</text>
+    <text x="200" y="332" font-size="11.5" fill="#334155">内部：S → N</text>
+    <text x="200" y="356" font-size="11.5" fill="#64748b">安培定则判断 N 极</text>
+  </g>
+
+  <g class="s57-card s57-card4">
+    <rect x="464" y="262" width="400" height="150" rx="14" fill="#ffffff" stroke="#bfdbfe" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="484" y="290" font-size="13.5" font-weight="800" fill="#1d4ed8">地磁场</text>
+    <circle cx="130" cy="342" r="40" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+    <line x1="106" y1="314" x2="154" y2="370" stroke="#dc2626" stroke-width="2.5"/>
+    <text x="106" y="310" font-size="11" font-weight="900" fill="#b91c1c" text-anchor="middle">S</text>
+    <text x="156" y="382" font-size="11" font-weight="900" fill="#b91c1c" text-anchor="middle">N</text>
+    <text x="130" y="346" font-size="11" fill="#475569" text-anchor="middle">地球</text>
+    <text x="200" y="308" font-size="11.5" fill="#334155">地磁北极在地理南极附近</text>
+    <text x="200" y="332" font-size="11.5" fill="#334155">小磁针 N 极指向地理北方</text>
+    <text x="200" y="356" font-size="11.5" fill="#64748b">磁偏角：指南针并不严格指南</text>
+  </g>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="468" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">磁感线是间距相等的平行直线 → 匀强磁场</text>
+  <text x="450" y="486" font-size="11" fill="#475569" text-anchor="middle">如相距很近的异名磁极之间中部、通电螺线管内部</text>
+</g>
+</svg>

@@ -1,0 +1,227 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="互感和自感：线圈之间的电磁感应、线圈自身的电磁感应以及自感系数">
+<style>
+[data-scene="ps-91"] .s91-s1,[data-scene="ps-91"] .s91-s2,[data-scene="ps-91"] .s91-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="ps-91"].s1 .s91-s1,[data-scene="ps-91"].s2 .s91-s2,[data-scene="ps-91"].s3 .s91-s3{opacity:1;visibility:visible}
+@keyframes s91fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+@keyframes s91draw{to{stroke-dashoffset:0}}
+@keyframes s91pop{0%{transform:scale(.86);opacity:0}70%{transform:scale(1.04);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s91flow{to{stroke-dashoffset:-42}}
+@keyframes s91glow{0%,100%{opacity:.55}50%{opacity:1}}
+@keyframes s91pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes s91slide{0%{transform:translateX(-14px);opacity:0}100%{transform:translateX(0);opacity:1}}
+[data-scene="ps-91"].s1 .s91-coil{transform-box:fill-box;transform-origin:center;animation:s91pop .5s ease both}
+[data-scene="ps-91"].s1 .s91-coil2{animation-delay:.12s}
+[data-scene="ps-91"].s1 .s91-coil3{animation-delay:.24s}
+[data-scene="ps-91"].s1 .s91-coil4{animation-delay:.36s}
+[data-scene="ps-91"].s1 .s91-flux{stroke-dasharray:7 6;animation:s91flow 1.2s linear infinite}
+[data-scene="ps-91"].s1 .s91-lamp{animation:s91glow 1.6s ease-in-out infinite}
+[data-scene="ps-91"].s1 .s91-core{animation:s91fade .6s ease .1s both}
+[data-scene="ps-91"].s2 .s91-lever{transform-box:fill-box;transform-origin:0 100%;animation:s91fade .5s ease .3s both}
+[data-scene="ps-91"].s2 .s91-current{stroke-dasharray:8 6;animation:s91flow 1.1s linear infinite}
+[data-scene="ps-91"].s2 .s91-lamp{animation:s91glow 1.4s ease-in-out infinite}
+[data-scene="ps-91"].s2 .s91-coilL{animation:s91pulse 1.8s ease-in-out infinite}
+[data-scene="ps-91"].s3 .s91-w{transform-box:fill-box;transform-origin:center;animation:s91pop .5s ease both}
+[data-scene="ps-91"].s3 .s91-w2{animation-delay:.14s}
+[data-scene="ps-91"].s3 .s91-w3{animation-delay:.28s}
+[data-scene="ps-91"].s3 .s91-core2{animation:s91fade .55s ease .1s both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">互感和自感：线圈之间的电磁感应与线圈自身的电磁感应</text>
+
+<!-- 第一步：互感 -->
+<g class="s91-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">互感现象：一个线圈的电流变化，在另一个线圈中产生感应电动势</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="270" height="28" rx="14" fill="#e8effc"/>
+  <text x="191" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">原线圈电流变化 → 副线圈</text>
+
+  <g class="s91-core">
+    <rect x="300" y="178" width="90" height="104" rx="4" fill="none" stroke="#94a3b8" stroke-width="9"/>
+  </g>
+
+  <ellipse class="s91-coil" cx="292" cy="230" rx="9" ry="26" fill="none" stroke="#b45309" stroke-width="2.5"/>
+  <ellipse class="s91-coil s91-coil2" cx="304" cy="230" rx="9" ry="26" fill="none" stroke="#b45309" stroke-width="2.5"/>
+  <ellipse class="s91-coil s91-coil3" cx="382" cy="230" rx="9" ry="26" fill="none" stroke="#b45309" stroke-width="2.5"/>
+  <ellipse class="s91-coil s91-coil4" cx="394" cy="230" rx="9" ry="26" fill="none" stroke="#b45309" stroke-width="2.5"/>
+
+  <path d="M283 208 L150 208 L137 222" fill="none" stroke="#475569" stroke-width="2.5"/>
+  <path d="M283 252 L150 252 L137 238" fill="none" stroke="#475569" stroke-width="2.5"/>
+  <circle cx="120" cy="230" r="17" fill="#fff7ed" stroke="#b45309" stroke-width="2.5"/>
+  <text x="120" y="237" font-size="15" font-weight="900" fill="#b45309" text-anchor="middle">~</text>
+  <text x="120" y="268" font-size="11" font-weight="700" fill="#92400e" text-anchor="middle">交变电源</text>
+
+  <path d="M403 208 L470 208 L482 220" fill="none" stroke="#475569" stroke-width="2.5"/>
+  <path d="M403 252 L470 252 L482 240" fill="none" stroke="#475569" stroke-width="2.5"/>
+  <circle class="s91-lamp" cx="498" cy="230" r="19" fill="#fef9c3" stroke="#b45309" stroke-width="2.5"/>
+  <line x1="492" y1="223" x2="504" y2="237" stroke="#b45309" stroke-width="1.8"/>
+  <line x1="504" y1="223" x2="492" y2="237" stroke="#b45309" stroke-width="1.8"/>
+  <text x="498" y="266" font-size="11" fill="#64748b" text-anchor="middle">灯泡</text>
+
+  <text x="345" y="242" font-size="13" font-weight="900" fill="#7c3aed" text-anchor="middle">互感</text>
+
+  <path class="s91-flux" d="M306 172 C322 150 368 150 384 172" fill="none" stroke="#1d4ed8" stroke-width="2.2" marker-end="url(#arrBlue)"/>
+  <text x="432" y="152" font-size="11" font-weight="800" fill="#1d4ed8">磁通量相互穿过</text>
+
+  <text x="296" y="372" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">原线圈电流变化 → 铁芯中磁通量变化 → 副线圈产生感应电动势</text>
+  <text x="296" y="398" font-size="11.5" fill="#334155" text-anchor="middle">两个线圈通过磁场相互联系，这种现象叫互感</text>
+  <text x="296" y="422" font-size="11" fill="#64748b" text-anchor="middle">能量通过磁场从一个线圈传递到另一个线圈</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="160" height="28" rx="14" fill="#e8effc"/>
+  <text x="676" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">互感现象</text>
+
+  <text x="598" y="178" font-size="11.5" fill="#334155">两个相互靠近的线圈，其中一个</text>
+  <text x="598" y="200" font-size="11.5" fill="#334155">线圈中电流发生变化时，会在</text>
+  <text x="598" y="222" font-size="11.5" fill="#334155">另一个线圈中产生感应电动势</text>
+
+  <line x1="596" y1="240" x2="844" y2="240" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <text x="598" y="264" font-size="11.5" font-weight="800" fill="#1e3a8a">条件</text>
+  <text x="598" y="288" font-size="11.5" fill="#334155">线圈靠近，磁通量相互穿过</text>
+
+  <text x="598" y="316" font-size="11.5" font-weight="800" fill="#1e3a8a">应用</text>
+  <text x="598" y="340" font-size="11.5" fill="#334155">变压器、无线充电、互感器</text>
+
+  <rect x="596" y="356" width="248" height="56" rx="10" fill="#faf5ff" stroke="#e9d5ff" stroke-width="1.5"/>
+  <text x="720" y="380" font-size="11.5" font-weight="800" fill="#7e22ce" text-anchor="middle">能量通过磁场在</text>
+  <text x="720" y="402" font-size="11.5" font-weight="800" fill="#7e22ce" text-anchor="middle">两个线圈之间传递</text>
+  <text x="720" y="428" font-size="11" fill="#64748b" text-anchor="middle">互感也可能造成干扰，需要屏蔽</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">互感：一个线圈的电流变化，通过磁场在另一个线圈中产生感应电动势</text>
+</g>
+
+<!-- 第二步：自感 -->
+<g class="s91-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">自感现象：线圈自身电流变化，产生阻碍电流变化的自感电动势</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="280" height="28" rx="14" fill="#e8effc"/>
+  <text x="196" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">线圈与灯泡串联的自感电路</text>
+
+  <line x1="140" y1="194" x2="210" y2="194" stroke="#475569" stroke-width="2.5"/>
+  <circle cx="210" cy="194" r="3.5" fill="#475569"/>
+  <circle cx="250" cy="194" r="3.5" fill="#475569"/>
+  <line class="s91-lever" x1="210" y1="194" x2="246" y2="178" stroke="#b45309" stroke-width="3" stroke-linecap="round"/>
+  <text x="228" y="170" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">S</text>
+  <line x1="250" y1="194" x2="470" y2="194" stroke="#475569" stroke-width="2.5"/>
+
+  <circle class="s91-lamp" cx="350" cy="194" r="18" fill="#fef9c3" stroke="#b45309" stroke-width="2.5"/>
+  <line x1="344" y1="186" x2="356" y2="202" stroke="#b45309" stroke-width="1.8"/>
+  <line x1="356" y1="186" x2="344" y2="202" stroke="#b45309" stroke-width="1.8"/>
+  <text x="350" y="232" font-size="11" fill="#64748b" text-anchor="middle">灯泡 A</text>
+
+  <line x1="470" y1="194" x2="470" y2="218" stroke="#475569" stroke-width="2.5"/>
+  <path class="s91-coilL" d="M470 218 A14 14 0 0 1 470 246 A14 14 0 0 1 470 274 A14 14 0 0 1 470 302" fill="none" stroke="#b45309" stroke-width="3"/>
+  <line x1="470" y1="302" x2="470" y2="340" stroke="#475569" stroke-width="2.5"/>
+  <text x="492" y="264" font-size="12" font-weight="900" fill="#b45309">L</text>
+
+  <line x1="470" y1="340" x2="320" y2="340" stroke="#475569" stroke-width="2.5"/>
+  <line x1="280" y1="340" x2="140" y2="340" stroke="#475569" stroke-width="2.5"/>
+  <line x1="290" y1="326" x2="290" y2="354" stroke="#475569" stroke-width="2.5"/>
+  <line x1="306" y1="332" x2="306" y2="348" stroke="#475569" stroke-width="4"/>
+  <text x="298" y="372" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">电源</text>
+  <line x1="140" y1="194" x2="140" y2="340" stroke="#475569" stroke-width="2.5"/>
+
+  <line class="s91-current" x1="420" y1="194" x2="382" y2="194" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arrRed)"/>
+  <text x="432" y="186" font-size="11.5" font-weight="800" fill="#b91c1c">I</text>
+  <line class="s91-current" x1="200" y1="340" x2="240" y2="340" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arrRed)"/>
+
+  <text x="296" y="398" font-size="11.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">闭合 S：自感电动势阻碍电流增大，灯逐渐变亮</text>
+  <text x="296" y="422" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">断开 S：自感电动势维持电流，灯闪亮后熄灭</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="180" height="28" rx="14" fill="#e8effc"/>
+  <text x="686" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">自感电动势</text>
+
+  <rect x="596" y="158" width="248" height="54" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="720" y="195" font-size="17" font-weight="900" fill="#1e3a8a" text-anchor="middle">E_L = L·ΔI/Δt</text>
+
+  <text x="598" y="238" font-size="11.5" font-weight="700" fill="#334155">L：自感系数，由线圈决定</text>
+  <text x="598" y="262" font-size="11.5" font-weight="700" fill="#334155">ΔI/Δt：电流的变化率</text>
+
+  <rect x="596" y="280" width="248" height="40" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+  <text x="720" y="305" font-size="11.5" font-weight="700" fill="#b91c1c" text-anchor="middle">电流增大 → 自感电动势反向</text>
+
+  <rect x="596" y="326" width="248" height="40" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="720" y="351" font-size="11.5" font-weight="700" fill="#1d4ed8" text-anchor="middle">电流减小 → 自感电动势同向</text>
+
+  <text x="720" y="384" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">自感电动势总是阻碍电流的变化</text>
+  <text x="598" y="410" font-size="11" fill="#475569">通电自感：灯逐渐变亮</text>
+  <text x="598" y="432" font-size="11" fill="#475569">断电自感：灯闪亮一下再熄灭</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">自感电动势总是阻碍线圈中电流的变化，体现磁场能的储存与释放</text>
+</g>
+
+<!-- 第三步：自感系数 -->
+<g class="s91-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">自感系数 L：由线圈的匝数、横截面积、长度和铁芯决定</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="280" height="28" rx="14" fill="#e8effc"/>
+  <text x="196" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">影响自感系数的因素</text>
+
+  <g class="s91-w">
+    <line x1="56" y1="250" x2="70" y2="250" stroke="#475569" stroke-width="2.5"/>
+    <path d="M70 250 A15 15 0 0 1 100 250 A15 15 0 0 1 130 250 A15 15 0 0 1 160 250 A15 15 0 0 1 190 250" fill="none" stroke="#b45309" stroke-width="3"/>
+    <line x1="190" y1="250" x2="204" y2="250" stroke="#475569" stroke-width="2.5"/>
+    <text x="123" y="292" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">匝数越多</text>
+    <text x="123" y="316" font-size="11.5" font-weight="900" fill="#059669" text-anchor="middle">L 越大</text>
+  </g>
+
+  <g class="s91-w s91-w2">
+    <line x1="216" y1="250" x2="230" y2="250" stroke="#475569" stroke-width="2.5"/>
+    <path d="M230 250 A20 20 0 0 1 270 250 A20 20 0 0 1 310 250 A20 20 0 0 1 350 250" fill="none" stroke="#b45309" stroke-width="3"/>
+    <line x1="350" y1="250" x2="364" y2="250" stroke="#475569" stroke-width="2.5"/>
+    <text x="290" y="292" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">横截面积越大</text>
+    <text x="290" y="316" font-size="11.5" font-weight="900" fill="#059669" text-anchor="middle">L 越大</text>
+  </g>
+
+  <g class="s91-core2">
+    <rect x="437" y="214" width="14" height="72" rx="2" fill="#94a3b8"/>
+  </g>
+  <g class="s91-w s91-w3">
+    <line x1="382" y1="250" x2="396" y2="250" stroke="#475569" stroke-width="2.5"/>
+    <path d="M396 250 A13 13 0 0 1 422 250 A13 13 0 0 1 448 250 A13 13 0 0 1 474 250 A13 13 0 0 1 500 250" fill="none" stroke="#b45309" stroke-width="3"/>
+    <line x1="500" y1="250" x2="514" y2="250" stroke="#475569" stroke-width="2.5"/>
+    <text x="448" y="292" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">有铁芯</text>
+    <text x="448" y="316" font-size="11.5" font-weight="900" fill="#059669" text-anchor="middle">L 大大增加</text>
+  </g>
+
+  <text x="296" y="352" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">线圈的匝数、横截面积、长度和有无铁芯</text>
+  <text x="296" y="376" font-size="11" fill="#64748b" text-anchor="middle">共同决定自感系数的大小，与电流大小无关</text>
+
+  <rect x="56" y="394" width="480" height="34" rx="9" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="296" y="417" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">L 越大，线圈阻碍电流变化的本领越强</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="180" height="28" rx="14" fill="#e8effc"/>
+  <text x="686" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">自感系数 L</text>
+
+  <text x="720" y="176" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">由线圈本身的性质决定</text>
+
+  <text x="598" y="208" font-size="11.5" fill="#334155">· 匝数越多，L 越大</text>
+  <text x="598" y="234" font-size="11.5" fill="#334155">· 横截面积越大，L 越大</text>
+  <text x="598" y="260" font-size="11.5" fill="#334155">· 长度越长，L 越大</text>
+  <text x="598" y="286" font-size="11.5" fill="#334155">· 有铁芯时，L 大大增加</text>
+
+  <rect x="596" y="302" width="248" height="40" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="327" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">与电流大小、变化快慢无关</text>
+
+  <rect x="596" y="352" width="248" height="52" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="720" y="376" font-size="12.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">单位：亨利（H）</text>
+  <text x="720" y="396" font-size="11" fill="#475569" text-anchor="middle">1 H = 1 V·s/A</text>
+
+  <text x="720" y="424" font-size="11" font-weight="700" fill="#334155" text-anchor="middle">电感器：扼流圈（低频、高频）</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">互感与自感都是电磁感应；L 越大，线圈阻碍电流变化的本领越强</text>
+</g>
+</svg>

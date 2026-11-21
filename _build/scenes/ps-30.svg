@@ -1,0 +1,153 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="行星的运动：椭圆轨道、焦点与开普勒三定律">
+<style>
+[data-scene="ps-30"] .s30-step1,[data-scene="ps-30"] .s30-step2,[data-scene="ps-30"] .s30-step3{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="ps-30"].s1 .s30-step1,[data-scene="ps-30"].s2 .s30-step2,[data-scene="ps-30"].s3 .s30-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes s30draw{to{stroke-dashoffset:0}}
+@keyframes s30glow{0%,100%{opacity:.35}50%{opacity:.8}}
+@keyframes s30pop{0%{opacity:0;transform:scale(.94)}100%{opacity:1;transform:scale(1)}}
+[data-scene="ps-30"].s1 .s30-ellipse{stroke-dasharray:1100;stroke-dashoffset:1100;animation:s30draw 1.5s ease forwards}
+[data-scene="ps-30"].s1 .s30-sun{animation:s30glow 2.4s ease-in-out infinite}
+[data-scene="ps-30"].s2 .s30-card,[data-scene="ps-30"].s3 .s30-card{transform-box:fill-box;transform-origin:center;animation:s30pop .45s ease both}
+[data-scene="ps-30"].s2 .s30-card2{animation-delay:.12s}
+[data-scene="ps-30"].s2 .s30-card3{animation-delay:.24s}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="560" width="900" height="60" fill="url(#gBench)"/>
+<line x1="0" y1="560" x2="900" y2="560" stroke="#cbd5e1" stroke-width="2.5"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">行星的运动：椭圆轨道与开普勒三定律</text>
+
+<!-- 第一步：椭圆轨道与焦点 -->
+<g class="s30-step1" data-zone="1">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">行星绕太阳的轨道是椭圆，太阳处在椭圆的一个焦点上</text>
+
+  <line x1="105" y1="300" x2="555" y2="300" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="7 6"/>
+  <ellipse class="s30-ellipse" cx="330" cy="300" rx="210" ry="125" fill="none" stroke="#1d4ed8" stroke-width="3"/>
+  <circle cx="330" cy="300" r="3.5" fill="#64748b"/>
+  <text x="330" y="322" font-size="11.5" font-weight="700" fill="#64748b" text-anchor="middle">C</text>
+  <path d="M156 295 L166 305 M166 295 L156 305" stroke="#7c3aed" stroke-width="2"/>
+  <text x="161" y="322" font-size="11.5" font-weight="700" fill="#6d28d9" text-anchor="middle">F₂</text>
+
+  <circle class="s30-sun" cx="499" cy="300" r="31" fill="#fde68a"/>
+  <circle cx="499" cy="300" r="18" fill="#f59e0b" stroke="#b45309" stroke-width="2"/>
+  <text x="499" y="342" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">太阳</text>
+  <text x="499" y="360" font-size="11.5" font-weight="700" fill="#b45309" text-anchor="middle">焦点 F₁</text>
+
+  <circle cx="451" cy="198" r="8" fill="#f97316" stroke="#c2410c" stroke-width="2"/>
+  <text x="438" y="180" font-size="12" font-weight="800" fill="#b45309" text-anchor="end">行星</text>
+  <line x1="499" y1="300" x2="451" y2="198" stroke="#b45309" stroke-width="1.6" stroke-dasharray="6 5"/>
+  <text x="492" y="248" font-size="12" font-weight="800" fill="#b45309">r</text>
+  <line x1="451" y1="198" x2="503" y2="220" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+  <text x="512" y="216" font-size="12" font-weight="800" fill="#1d4ed8">v</text>
+
+  <line x1="330" y1="332" x2="540" y2="332" stroke="#94a3b8" stroke-width="1.4"/>
+  <text x="435" y="350" font-size="12" font-weight="800" fill="#475569" text-anchor="middle">a（半长轴）</text>
+  <text x="548" y="318" font-size="11.5" font-weight="700" fill="#475569">近日点</text>
+  <text x="112" y="318" font-size="11.5" font-weight="700" fill="#475569" text-anchor="end">远日点</text>
+
+  <g class="s30-card">
+    <rect x="590" y="110" width="240" height="340" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="710" y="142" font-size="15" font-weight="800" fill="#1e3a8a" text-anchor="middle">椭圆轨道</text>
+    <g font-size="12.5" fill="#334155">
+      <text x="608" y="182">· 太阳位于一个焦点上</text>
+      <text x="608" y="214">· r：行星到太阳的距离</text>
+      <text x="608" y="246">· 近日点：r 小，v 较大</text>
+      <text x="608" y="278">· 远日点：r 大，v 较小</text>
+      <text x="608" y="310">· 轨道不是圆</text>
+      <text x="608" y="342">· 运动不是匀速圆周运动</text>
+      <text x="608" y="374">· 各点速度大小不同</text>
+    </g>
+  </g>
+
+  <rect x="70" y="465" width="760" height="60" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="450" y="494" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">开普勒第一定律：行星绕太阳的轨道是椭圆，太阳处在其中一个焦点上</text>
+  <text x="450" y="516" font-size="11.5" fill="#475569" text-anchor="middle">因此行星到太阳的距离不断变化，速度大小也随之变化</text>
+</g>
+
+<!-- 第二步：开普勒三定律 -->
+<g class="s30-step2" data-zone="2">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">开普勒三定律：轨道、面积、周期三个层面描述行星运动</text>
+
+  <g class="s30-card">
+    <rect x="70" y="108" width="240" height="330" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="190" y="138" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">第一定律 · 轨道</text>
+    <ellipse cx="190" cy="250" rx="78" ry="48" fill="none" stroke="#1d4ed8" stroke-width="2.2"/>
+    <circle cx="251" cy="250" r="9" fill="#f59e0b" stroke="#b45309" stroke-width="1.5"/>
+    <circle cx="129" cy="250" r="2.4" fill="#7c3aed"/>
+    <text x="190" y="342" font-size="12.5" fill="#334155" text-anchor="middle">轨道是椭圆</text>
+    <text x="190" y="368" font-size="12.5" fill="#334155" text-anchor="middle">太阳在一个焦点上</text>
+    <text x="190" y="400" font-size="11.5" fill="#64748b" text-anchor="middle">行星到太阳的距离变化</text>
+  </g>
+
+  <g class="s30-card s30-card2">
+    <rect x="330" y="108" width="240" height="330" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="450" y="138" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">第二定律 · 面积</text>
+    <ellipse cx="450" cy="250" rx="78" ry="48" fill="none" stroke="#1d4ed8" stroke-width="2.2"/>
+    <path d="M511 250 L390 219 A78 48 0 0 0 390 281 Z" fill="#fcd34d" opacity=".55" stroke="#d97706" stroke-width="1"/>
+    <path d="M511 250 L521 230 L521 270 Z" fill="#fcd34d" opacity=".85" stroke="#d97706" stroke-width="1"/>
+    <circle cx="511" cy="250" r="8" fill="#f59e0b" stroke="#b45309" stroke-width="1.5"/>
+    <text x="450" y="342" font-size="12" fill="#334155" text-anchor="middle">相等时间扫过相等面积</text>
+    <text x="450" y="368" font-size="12" fill="#334155" text-anchor="middle">近日点快，远日点慢</text>
+    <text x="450" y="400" font-size="11.5" fill="#64748b" text-anchor="middle">离太阳越近，速度越大</text>
+  </g>
+
+  <g class="s30-card s30-card3">
+    <rect x="590" y="108" width="240" height="330" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="710" y="138" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">第三定律 · 周期</text>
+    <text x="710" y="212" font-size="23" font-weight="900" fill="#1e3a8a" text-anchor="middle">a³ / T² = k</text>
+    <g font-size="12" fill="#334155">
+      <text x="608" y="270">a：半长轴</text>
+      <text x="608" y="300">T：公转周期</text>
+      <text x="608" y="330">k：只与中心天体有关</text>
+      <text x="608" y="360">与行星质量无关</text>
+    </g>
+    <text x="710" y="404" font-size="11.5" fill="#64748b" text-anchor="middle">同一中心天体，k 相同</text>
+  </g>
+
+  <rect x="70" y="452" width="760" height="78" rx="12" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+  <text x="450" y="482" font-size="13" font-weight="800" fill="#b45309" text-anchor="middle">开普勒三定律描述了行星“怎样运动”</text>
+  <text x="450" y="510" font-size="12.5" fill="#7c5a30" text-anchor="middle">万有引力定律则解释了行星“为什么这样运动”</text>
+</g>
+
+<!-- 第三步：第三定律的应用 -->
+<g class="s30-step3" data-zone="3">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">a³/T² = k：同一中心天体，k 相同，可用来推算周期或轨道</text>
+
+  <g class="s30-card">
+    <rect x="70" y="108" width="340" height="250" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="240" y="140" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">第三定律的表达式</text>
+    <text x="240" y="218" font-size="30" font-weight="900" fill="#1e3a8a" text-anchor="middle">a³ / T² = k</text>
+    <g font-size="12.5" fill="#334155">
+      <text x="100" y="270">a：轨道半长轴（m）</text>
+      <text x="100" y="300">T：公转周期（s）</text>
+      <text x="100" y="330">k：由中心天体决定</text>
+    </g>
+  </g>
+
+  <g class="s30-card s30-card2">
+    <rect x="440" y="108" width="390" height="250" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="635" y="140" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">同一中心天体，k 相同</text>
+    <g font-size="11.5" font-weight="800" fill="#475569">
+      <text x="465" y="178">行星</text>
+      <text x="595" y="178" text-anchor="middle">a/AU</text>
+      <text x="690" y="178" text-anchor="middle">T/年</text>
+      <text x="785" y="178" text-anchor="middle">a³/T²</text>
+    </g>
+    <line x1="460" y1="190" x2="810" y2="190" stroke="#cbd5e1" stroke-width="1.5"/>
+    <g font-size="12.5" fill="#334155">
+      <text x="465" y="226">地球</text><text x="595" y="226" text-anchor="middle">1.00</text><text x="690" y="226" text-anchor="middle">1.00</text><text x="785" y="226" text-anchor="middle">1.00</text>
+      <text x="465" y="262">火星</text><text x="595" y="262" text-anchor="middle">1.52</text><text x="690" y="262" text-anchor="middle">1.88</text><text x="785" y="262" text-anchor="middle">0.99</text>
+      <text x="465" y="298">木星</text><text x="595" y="298" text-anchor="middle">5.20</text><text x="690" y="298" text-anchor="middle">11.86</text><text x="785" y="298" text-anchor="middle">1.00</text>
+    </g>
+    <text x="635" y="336" font-size="11.5" fill="#64748b" text-anchor="middle">三行比值几乎相同</text>
+  </g>
+
+  <rect x="70" y="380" width="760" height="145" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="450" y="412" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">以地球为参照：a = 1 AU，T = 1 年，则 k = 1 AU³/年²</text>
+  <text x="450" y="448" font-size="14" font-weight="900" fill="#1e3a8a" text-anchor="middle">已知火星 a = 1.52 AU → T = √(1.52³) ≈ 1.87 年</text>
+  <text x="450" y="484" font-size="12.5" fill="#475569" text-anchor="middle">绕地球运行的卫星，k 由地球质量决定，数值与行星不同</text>
+  <text x="450" y="512" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">所以 k 只跟中心天体有关，与环绕天体无关</text>
+</g>
+</svg>

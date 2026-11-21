@@ -1,0 +1,259 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="电能的输送：输电线损耗、高压输电减小损耗、升压与降压">
+<style>
+[data-scene="ps-95"] .s95-s1,[data-scene="ps-95"] .s95-s2,[data-scene="ps-95"] .s95-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="ps-95"].s1 .s95-s1,[data-scene="ps-95"].s2 .s95-s2,[data-scene="ps-95"].s3 .s95-s3{opacity:1;visibility:visible}
+@keyframes s95fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+@keyframes s95pop{0%{transform:scale(.86);opacity:0}70%{transform:scale(1.04);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s95flow{to{stroke-dashoffset:-40}}
+@keyframes s95pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes s95grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+[data-scene="ps-95"].s1 .s95-current{stroke-dasharray:8 7;animation:s95flow 1.1s linear infinite}
+[data-scene="ps-95"].s1 .s95-heat{animation:s95pulse 1.5s ease-in-out infinite}
+[data-scene="ps-95"].s1 .s95-formula{transform-box:fill-box;transform-origin:center;animation:s95pop .5s ease .2s both}
+[data-scene="ps-95"].s2 .s95-bar{transform-box:fill-box;transform-origin:left center;animation:s95grow .8s ease .3s both}
+[data-scene="ps-95"].s2 .s95-bar2{animation-delay:.5s}
+[data-scene="ps-95"].s2 .s95-case{animation:s95fade .5s ease both}
+[data-scene="ps-95"].s2 .s95-case2{animation-delay:.18s}
+[data-scene="ps-95"].s3 .s95-link{stroke-dasharray:7 6;animation:s95flow 1.1s linear infinite}
+[data-scene="ps-95"].s3 .s95-node{transform-box:fill-box;transform-origin:center;animation:s95pop .5s ease both}
+[data-scene="ps-95"].s3 .s95-node2{animation-delay:.1s}
+[data-scene="ps-95"].s3 .s95-node3{animation-delay:.2s}
+[data-scene="ps-95"].s3 .s95-node4{animation-delay:.3s}
+[data-scene="ps-95"].s3 .s95-node5{animation-delay:.4s}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">电能的输送：高压输电减小线路损耗</text>
+
+<!-- 第一步：输电损失 -->
+<g class="s95-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">输电线有电阻，电流通过导线发热，造成功率损失和电压损失</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="236" height="28" rx="14" fill="#e8effc"/>
+  <text x="174" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">输电线路上的损失</text>
+
+  <rect x="56" y="250" width="74" height="80" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <polygon points="56,250 93,224 130,250" fill="#93c5fd" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="108" y="204" width="14" height="46" fill="#cbd5e1" stroke="#64748b" stroke-width="1"/>
+  <text x="93" y="352" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">发电厂</text>
+
+  <line x1="130" y1="255" x2="448" y2="255" stroke="#475569" stroke-width="2.5"/>
+  <line x1="130" y1="305" x2="448" y2="305" stroke="#475569" stroke-width="2.5"/>
+  <line class="s95-current" x1="140" y1="255" x2="440" y2="255" stroke="#dc2626" stroke-width="2.5" opacity=".9"/>
+  <line class="s95-current" x1="140" y1="305" x2="440" y2="305" stroke="#1d4ed8" stroke-width="2.5" opacity=".9"/>
+
+  <g stroke="#94a3b8" stroke-width="3">
+    <line x1="268" y1="228" x2="268" y2="332"/>
+    <line x1="246" y1="252" x2="290" y2="252"/>
+    <line x1="252" y1="278" x2="284" y2="278"/>
+    <line x1="388" y1="228" x2="388" y2="332"/>
+    <line x1="366" y1="252" x2="410" y2="252"/>
+    <line x1="372" y1="278" x2="404" y2="278"/>
+  </g>
+
+  <g class="s95-heat">
+    <rect x="312" y="244" width="36" height="22" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <rect x="312" y="294" width="36" height="22" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="330" y="260" font-size="11" font-weight="800" fill="#b91c1c" text-anchor="middle">R</text>
+    <text x="330" y="310" font-size="11" font-weight="800" fill="#b91c1c" text-anchor="middle">R</text>
+  </g>
+
+  <text x="188" y="244" font-size="12" font-weight="900" fill="#b91c1c">I</text>
+  <line x1="178" y1="232" x2="212" y2="232" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arrRed)"/>
+
+  <rect x="448" y="240" width="78" height="90" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <polygon points="448,240 487,212 526,240" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
+  <rect x="474" y="285" width="24" height="45" fill="#ffffff" stroke="#b45309" stroke-width="1.2"/>
+  <text x="487" y="352" font-size="11.5" font-weight="800" fill="#92400e" text-anchor="middle">用户</text>
+
+  <text x="296" y="380" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">导线发热：P损 = I²R，U损 = IR</text>
+  <text x="296" y="404" font-size="11.5" fill="#475569" text-anchor="middle">电流越大，线路上的功率损失和电压损失越大</text>
+  <text x="296" y="426" font-size="11" fill="#64748b" text-anchor="middle">输电线越长、电阻越大，损失也越大</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="694" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">损失的计算</text>
+
+  <g class="s95-formula">
+    <rect x="596" y="158" width="248" height="54" rx="10" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+    <text x="720" y="194" font-size="21" font-weight="900" fill="#b91c1c" text-anchor="middle">P损 = I²R</text>
+  </g>
+  <g class="s95-formula">
+    <rect x="596" y="222" width="248" height="46" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="720" y="252" font-size="18" font-weight="900" fill="#1e3a8a" text-anchor="middle">U损 = IR</text>
+  </g>
+
+  <text x="598" y="298" font-size="11.5" font-weight="700" fill="#334155">· 导线有电阻，电流发热</text>
+  <text x="598" y="322" font-size="11.5" font-weight="700" fill="#334155">· 损失功率与 I² 成正比</text>
+  <text x="598" y="346" font-size="11.5" font-weight="700" fill="#334155">· 损失电压与 I 成正比</text>
+  <text x="598" y="370" font-size="11.5" font-weight="700" fill="#334155">· 输送功率越大，损失越大</text>
+
+  <rect x="596" y="386" width="248" height="36" rx="9" fill="#fff7ed" stroke="#fdba74" stroke-width="1.2"/>
+  <text x="720" y="409" font-size="11" font-weight="700" fill="#b45309" text-anchor="middle">线路损失不可能完全避免</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电流通过输电线发热：P损 = I²R，U损 = IR，这是输电损耗的根源</text>
+</g>
+
+<!-- 第二步：高压输电 -->
+<g class="s95-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">输送功率一定时，提高电压可以减小电流，从而减小线路损耗</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="236" height="28" rx="14" fill="#e8effc"/>
+  <text x="174" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">低压输电与高压输电比较</text>
+
+  <g class="s95-case">
+    <rect x="56" y="160" width="480" height="116" rx="12" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+    <text x="76" y="188" font-size="12" font-weight="800" fill="#b91c1c">低压输电：U 小，I 大</text>
+    <line x1="76" y1="214" x2="256" y2="214" stroke="#dc2626" stroke-width="4" marker-end="url(#arrRed)"/>
+    <text x="160" y="204" font-size="11" font-weight="800" fill="#b91c1c" text-anchor="middle">I 很大</text>
+    <rect x="330" y="202" width="180" height="24" rx="6" fill="#fecaca"/>
+    <rect class="s95-bar" x="330" y="202" width="158" height="24" rx="6" fill="#dc2626"/>
+    <text x="420" y="219" font-size="11" font-weight="800" fill="#ffffff" text-anchor="middle">P损 很大</text>
+    <text x="76" y="254" font-size="11.5" fill="#7f1d1d">同样输送功率 P，电流越大，损失越多</text>
+  </g>
+
+  <g class="s95-case s95-case2">
+    <rect x="56" y="288" width="480" height="116" rx="12" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+    <text x="76" y="316" font-size="12" font-weight="800" fill="#047857">高压输电：U 大，I 小</text>
+    <line x1="76" y1="342" x2="256" y2="342" stroke="#059669" stroke-width="2.5" marker-end="url(#arrGreen)"/>
+    <text x="160" y="332" font-size="11" font-weight="800" fill="#047857" text-anchor="middle">I 很小</text>
+    <rect x="330" y="330" width="180" height="24" rx="6" fill="#d1fae5"/>
+    <rect class="s95-bar s95-bar2" x="330" y="330" width="58" height="24" rx="6" fill="#059669"/>
+    <text x="420" y="347" font-size="11" font-weight="800" fill="#ffffff" text-anchor="middle">P损 很小</text>
+    <text x="76" y="382" font-size="11.5" fill="#065f46">电压越高，电流越小，损失越少</text>
+  </g>
+
+  <text x="296" y="426" font-size="11" fill="#64748b" text-anchor="middle">两种方式输送的功率 P 相同，线路电阻 R 也相同</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="694" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">为什么高压能减损</text>
+
+  <text x="598" y="172" font-size="12" font-weight="800" fill="#1e3a8a">输送功率 P = UI</text>
+  <text x="598" y="200" font-size="12" font-weight="800" fill="#1e3a8a">所以 I = P / U</text>
+
+  <rect x="596" y="216" width="248" height="56" rx="10" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="720" y="238" font-size="12.5" font-weight="900" fill="#b91c1c" text-anchor="middle">P损 = I²R</text>
+  <text x="720" y="260" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">= (P/U)²R</text>
+
+  <text x="598" y="300" font-size="11.5" font-weight="700" fill="#334155">电压升高到 k 倍</text>
+  <text x="598" y="324" font-size="11.5" font-weight="700" fill="#334155">电流减小到 1/k</text>
+  <text x="598" y="348" font-size="11.5" font-weight="700" fill="#334155">功率损失减小到 1/k²</text>
+
+  <rect x="596" y="366" width="248" height="56" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="388" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">例如电压升高 10 倍</text>
+  <text x="720" y="410" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">损耗降为原来的 1/100</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">P = UI：输送功率一定时，电压越高电流越小，P损 = I²R 越小</text>
+</g>
+
+<!-- 第三步：升压与降压 -->
+<g class="s95-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">发电厂升压 → 高压远距离输送 → 用户附近降压</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="236" height="28" rx="14" fill="#e8effc"/>
+  <text x="174" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">高压输电的完整过程</text>
+
+  <g class="s95-node">
+    <circle cx="76" cy="238" r="21" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="76" y="244" font-size="13" font-weight="900" fill="#1e3a8a" text-anchor="middle">G</text>
+    <text x="76" y="292" font-size="11" font-weight="800" fill="#1e3a8a" text-anchor="middle">发电厂</text>
+  </g>
+
+  <line class="s95-link" x1="102" y1="238" x2="148" y2="238" stroke="#1d4ed8" stroke-width="2.2" marker-end="url(#arrBlue)"/>
+
+  <g class="s95-node s95-node2">
+    <rect x="156" y="214" width="34" height="48" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.5"/>
+    <g stroke="#b45309" stroke-width="2">
+      <line x1="148" y1="222" x2="158" y2="222"/>
+      <line x1="148" y1="234" x2="158" y2="234"/>
+      <line x1="148" y1="246" x2="158" y2="246"/>
+      <line x1="188" y1="218" x2="198" y2="218"/>
+      <line x1="188" y1="228" x2="198" y2="228"/>
+      <line x1="188" y1="238" x2="198" y2="238"/>
+      <line x1="188" y1="248" x2="198" y2="248"/>
+      <line x1="188" y1="258" x2="198" y2="258"/>
+    </g>
+    <text x="173" y="292" font-size="11" font-weight="800" fill="#92400e" text-anchor="middle">升压</text>
+  </g>
+
+  <line class="s95-link" x1="204" y1="238" x2="246" y2="238" stroke="#1d4ed8" stroke-width="2.2" marker-end="url(#arrBlue)"/>
+
+  <g class="s95-node s95-node3">
+    <g stroke="#64748b" stroke-width="2.5">
+      <line x1="278" y1="210" x2="278" y2="270"/>
+      <line x1="260" y1="226" x2="296" y2="226"/>
+      <line x1="324" y1="210" x2="324" y2="270"/>
+      <line x1="306" y1="226" x2="342" y2="226"/>
+    </g>
+    <line x1="246" y1="222" x2="376" y2="222" stroke="#475569" stroke-width="2"/>
+    <line x1="246" y1="250" x2="376" y2="250" stroke="#475569" stroke-width="2"/>
+    <line class="s95-link" x1="250" y1="222" x2="372" y2="222" stroke="#dc2626" stroke-width="2" opacity=".85"/>
+    <text x="310" y="292" font-size="11" font-weight="800" fill="#475569" text-anchor="middle">高压输电线</text>
+  </g>
+
+  <line class="s95-link" x1="382" y1="238" x2="418" y2="238" stroke="#1d4ed8" stroke-width="2.2" marker-end="url(#arrBlue)"/>
+
+  <g class="s95-node s95-node4">
+    <rect x="426" y="214" width="34" height="48" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.5"/>
+    <g stroke="#b45309" stroke-width="2">
+      <line x1="418" y1="218" x2="428" y2="218"/>
+      <line x1="418" y1="228" x2="428" y2="228"/>
+      <line x1="418" y1="238" x2="428" y2="238"/>
+      <line x1="418" y1="248" x2="428" y2="248"/>
+      <line x1="418" y1="258" x2="428" y2="258"/>
+      <line x1="458" y1="222" x2="468" y2="222"/>
+      <line x1="458" y1="234" x2="468" y2="234"/>
+      <line x1="458" y1="246" x2="468" y2="246"/>
+    </g>
+    <text x="443" y="292" font-size="11" font-weight="800" fill="#92400e" text-anchor="middle">降压</text>
+  </g>
+
+  <line class="s95-link" x1="472" y1="238" x2="500" y2="238" stroke="#1d4ed8" stroke-width="2.2" marker-end="url(#arrBlue)"/>
+
+  <g class="s95-node s95-node5">
+    <rect x="504" y="222" width="38" height="38" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+    <polygon points="500,222 523,202 546,222" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
+    <text x="523" y="292" font-size="11" font-weight="800" fill="#92400e" text-anchor="middle">用户</text>
+  </g>
+
+  <text x="120" y="334" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">U₁</text>
+  <text x="222" y="334" font-size="11" font-weight="700" fill="#b45309" text-anchor="middle">U₂ 高</text>
+  <text x="380" y="334" font-size="11" font-weight="700" fill="#b45309" text-anchor="middle">U₃ 高</text>
+  <text x="480" y="334" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">U₄</text>
+
+  <text x="296" y="374" font-size="11.5" font-weight="700" fill="#1e3a8a" text-anchor="middle">升压变压器 n₂ &gt; n₁，降压变压器 n₂ &lt; n₁</text>
+  <text x="296" y="398" font-size="11.5" fill="#334155" text-anchor="middle">输电电压越高，线路电流越小，损耗越小</text>
+  <text x="296" y="422" font-size="11" fill="#64748b" text-anchor="middle">变压器利用互感改变电压，不改变频率</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="694" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">减小损耗的其他办法</text>
+
+  <text x="598" y="174" font-size="11.5" font-weight="700" fill="#334155">· 减小输电线的电阻</text>
+  <text x="612" y="198" font-size="11" fill="#475569">选电阻率小的铜、铝</text>
+  <text x="612" y="222" font-size="11" fill="#475569">增大导线的横截面积</text>
+  <text x="598" y="250" font-size="11.5" font-weight="700" fill="#b45309">· 但耗金属多、成本高</text>
+  <text x="598" y="278" font-size="11.5" font-weight="700" fill="#047857">· 高压输电最有效</text>
+
+  <rect x="596" y="294" width="248" height="72" rx="10" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+  <text x="608" y="316" font-size="11.5" font-weight="800" fill="#047857">实际输电要综合考虑</text>
+  <text x="608" y="338" font-size="11" fill="#065f46">绝缘、安全、经济、环境</text>
+  <text x="608" y="358" font-size="11" fill="#065f46">我国已建成特高压电网</text>
+
+  <text x="598" y="396" font-size="11" fill="#64748b">高压输电是远距离输电的主要方式</text>
+  <text x="598" y="420" font-size="11" fill="#64748b">升压和降压都由变压器完成</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">远距离输电采用高压：升压送电、降压用电，大幅减小 P损 = I²R</text>
+</g>
+</svg>

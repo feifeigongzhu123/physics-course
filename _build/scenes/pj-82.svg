@@ -1,0 +1,216 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="能源：化石能源与不可再生能源、可再生能源、一次能源和二次能源">
+<style>
+.p82-s1,.p82-s2,.p82-s3{opacity:0;visibility:hidden}
+.p82-s1{opacity:1;visibility:visible}
+[data-scene="pj-82"] .p82-s1,[data-scene="pj-82"] .p82-s2,[data-scene="pj-82"] .p82-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="pj-82"].s1 .p82-s1,[data-scene="pj-82"].s2 .p82-s2,[data-scene="pj-82"].s3 .p82-s3{opacity:1;visibility:visible}
+@keyframes p82pop{0%{transform:scale(.84);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes p82flow{to{stroke-dashoffset:-36}}
+@keyframes p82pulse{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes p82rise{0%{transform:translateY(10px);opacity:0}100%{transform:translateY(0);opacity:1}}
+@keyframes p82spin{to{transform:rotate(360deg)}}
+[data-scene="pj-82"].s1 .p82-card{transform-box:fill-box;transform-origin:center;animation:p82pop .5s ease both}
+[data-scene="pj-82"].s1 .p82-card2{animation-delay:.1s}
+[data-scene="pj-82"].s1 .p82-card3{animation-delay:.2s}
+[data-scene="pj-82"].s1 .p82-timeline{stroke-dasharray:7 6;animation:p82flow 1.2s linear infinite}
+[data-scene="pj-82"].s2 .p82-card{transform-box:fill-box;transform-origin:center;animation:p82pop .5s ease both}
+[data-scene="pj-82"].s2 .p82-card2{animation-delay:.08s}
+[data-scene="pj-82"].s2 .p82-card3{animation-delay:.16s}
+[data-scene="pj-82"].s2 .p82-card4{animation-delay:.24s}
+[data-scene="pj-82"].s2 .p82-blade{transform-box:fill-box;transform-origin:center;animation:p82spin 5s linear infinite}
+[data-scene="pj-82"].s2 .p82-sun{animation:p82pulse 2.2s ease-in-out infinite}
+[data-scene="pj-82"].s3 .p82-chip{transform-box:fill-box;transform-origin:center;animation:p82pop .45s ease both}
+[data-scene="pj-82"].s3 .p82-chip2{animation-delay:.06s}
+[data-scene="pj-82"].s3 .p82-chip3{animation-delay:.12s}
+[data-scene="pj-82"].s3 .p82-chip4{animation-delay:.18s}
+[data-scene="pj-82"].s3 .p82-chip5{animation-delay:.24s}
+[data-scene="pj-82"].s3 .p82-chip6{animation-delay:.3s}
+[data-scene="pj-82"].s3 .p82-arrow{animation:p82pulse 1.8s ease-in-out infinite}
+[data-scene="pj-82"].s3 .p82-right{animation:p82rise .5s ease .2s both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="470" width="900" height="150" fill="url(#gBench)"/>
+<line x1="0" y1="470" x2="900" y2="470" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">能源：从哪里来，又会到哪里去</text>
+
+<!-- 第一步：化石能源与不可再生能源 -->
+<g class="p82-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">煤、石油、天然气是化石能源，形成要上亿年，属于不可再生能源</text>
+
+  <g font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">
+    <rect x="62" y="102" width="176" height="34" rx="17" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="150" y="124">远古动植物遗体</text>
+    <rect x="342" y="102" width="200" height="34" rx="17" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="442" y="124">埋在地下经历上亿年</text>
+    <rect x="646" y="102" width="192" height="34" rx="17" fill="#fef3c7" stroke="#fcd34d" stroke-width="1.2"/>
+    <text x="742" y="124" fill="#92400e">变成煤、石油、天然气</text>
+  </g>
+  <g class="p82-timeline" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrBlue)">
+    <line x1="242" y1="119" x2="334" y2="119"/>
+    <line x1="546" y1="119" x2="638" y2="119"/>
+  </g>
+
+  <g class="p82-card">
+    <rect x="50" y="152" width="250" height="186" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <polygon points="112,226 140,206 176,212 194,236 178,258 132,258 106,244" fill="#334155"/>
+    <polygon points="140,206 158,224 138,238 116,222" fill="#475569"/>
+    <polygon points="158,224 176,212 194,236 172,246" fill="#1e293b"/>
+    <text x="175" y="290" font-size="15" font-weight="800" fill="#1e3a8a" text-anchor="middle">煤</text>
+    <text x="175" y="314" font-size="11.5" fill="#475569" text-anchor="middle">火力发电、炼钢</text>
+    <text x="175" y="333" font-size="11.5" fill="#475569" text-anchor="middle">化工原料</text>
+  </g>
+  <g class="p82-card p82-card2">
+    <rect x="320" y="152" width="250" height="186" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <g stroke="#475569" stroke-width="3">
+      <line x1="412" y1="208" x2="412" y2="256"/>
+      <line x1="412" y1="208" x2="392" y2="256"/>
+      <line x1="412" y1="208" x2="432" y2="256"/>
+      <line x1="398" y1="226" x2="426" y2="226"/>
+      <line x1="394" y1="242" x2="430" y2="242"/>
+    </g>
+    <path d="M470 236 C456 218 458 204 470 190 C482 204 484 218 470 236 Z" fill="#b45309"/>
+    <path d="M470 228 C463 219 463 211 470 203 C477 211 477 219 470 228 Z" fill="#fbbf24"/>
+    <text x="445" y="290" font-size="15" font-weight="800" fill="#1e3a8a" text-anchor="middle">石油</text>
+    <text x="445" y="314" font-size="11.5" fill="#475569" text-anchor="middle">汽油、柴油、煤油</text>
+    <text x="445" y="333" font-size="11.5" fill="#475569" text-anchor="middle">塑料、化纤</text>
+  </g>
+  <g class="p82-card p82-card3">
+    <rect x="590" y="152" width="250" height="186" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <path d="M700 244 C676 220 680 190 700 168 C720 190 724 220 700 244 Z" fill="#f97316"/>
+    <path d="M700 230 C688 216 690 198 700 184 C710 198 712 216 700 230 Z" fill="#fde047"/>
+    <rect x="664" y="246" width="72" height="10" rx="5" fill="#475569"/>
+    <text x="715" y="290" font-size="15" font-weight="800" fill="#1e3a8a" text-anchor="middle">天然气</text>
+    <text x="715" y="314" font-size="11.5" fill="#475569" text-anchor="middle">做饭、供暖</text>
+    <text x="715" y="333" font-size="11.5" fill="#475569" text-anchor="middle">发电、化工</text>
+  </g>
+
+  <rect x="50" y="358" width="790" height="58" rx="12" fill="#fef2f2" stroke="#fca5a5" stroke-width="2"/>
+  <text x="445" y="382" font-size="13" font-weight="800" fill="#b91c1c" text-anchor="middle">不可再生能源：短期内无法从自然界得到补充</text>
+  <text x="445" y="404" font-size="11.5" fill="#7f1d1d" text-anchor="middle">化石能源越用越少，燃烧还会产生污染物和温室气体</text>
+</g>
+
+<!-- 第二步：可再生能源 -->
+<g class="p82-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">太阳能、风能、水能等可以不断补充，是可再生能源</text>
+
+  <g class="p82-card">
+    <rect x="45" y="150" width="190" height="182" rx="14" fill="#fffbeb" stroke="#fcd34d" stroke-width="2" filter="url(#softShadow)"/>
+    <circle class="p82-sun" cx="140" cy="206" r="26" fill="#fbbf24" stroke="#d97706" stroke-width="2"/>
+    <g stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round">
+      <line x1="140" y1="166" x2="140" y2="176"/><line x1="140" y1="236" x2="140" y2="246"/>
+      <line x1="100" y1="206" x2="110" y2="206"/><line x1="170" y1="206" x2="180" y2="206"/>
+      <line x1="112" y1="178" x2="119" y2="185"/><line x1="161" y1="227" x2="168" y2="234"/>
+      <line x1="112" y1="234" x2="119" y2="227"/><line x1="161" y1="185" x2="168" y2="178"/>
+    </g>
+    <text x="140" y="288" font-size="14" font-weight="800" fill="#92400e" text-anchor="middle">太阳能</text>
+    <text x="140" y="312" font-size="11.5" fill="#7c5a30" text-anchor="middle">取之不尽</text>
+    <text x="140" y="331" font-size="11.5" fill="#7c5a30" text-anchor="middle">清洁无污染</text>
+  </g>
+  <g class="p82-card p82-card2">
+    <rect x="255" y="150" width="190" height="182" rx="14" fill="#f0fdf4" stroke="#86efac" stroke-width="2" filter="url(#softShadow)"/>
+    <line x1="350" y1="196" x2="350" y2="242" stroke="#475569" stroke-width="4"/>
+    <g class="p82-blade" fill="#34d399" stroke="#059669" stroke-width="1.5">
+      <path d="M350 196 L342 164 L352 162 Z"/>
+      <path d="M350 196 L380 214 L374 222 Z"/>
+      <path d="M350 196 L320 214 L326 222 Z"/>
+    </g>
+    <circle cx="350" cy="196" r="5" fill="#065f46"/>
+    <text x="350" y="288" font-size="14" font-weight="800" fill="#047857" text-anchor="middle">风能</text>
+    <text x="350" y="312" font-size="11.5" fill="#065f46" text-anchor="middle">风力发电</text>
+    <text x="350" y="331" font-size="11.5" fill="#065f46" text-anchor="middle">不排放废气</text>
+  </g>
+  <g class="p82-card p82-card3">
+    <rect x="465" y="150" width="190" height="182" rx="14" fill="#eff6ff" stroke="#93c5fd" stroke-width="2" filter="url(#softShadow)"/>
+    <path d="M500 240 L560 240 L580 190 L520 190 Z" fill="#93c5fd" stroke="#1d4ed8" stroke-width="2"/>
+    <line x1="500" y1="240" x2="580" y2="240" stroke="#1d4ed8" stroke-width="3"/>
+    <g stroke="#60a5fa" stroke-width="2">
+      <path d="M492 252 Q508 244 524 252 T556 252 T588 252"/>
+      <path d="M492 266 Q508 258 524 266 T556 266 T588 266"/>
+    </g>
+    <circle cx="540" cy="214" r="10" fill="#1d4ed8"/>
+    <text x="560" y="288" font-size="14" font-weight="800" fill="#1e40af" text-anchor="middle">水能</text>
+    <text x="560" y="312" font-size="11.5" fill="#1e3a8a" text-anchor="middle">水力发电</text>
+    <text x="560" y="331" font-size="11.5" fill="#1e3a8a" text-anchor="middle">可重复利用</text>
+  </g>
+  <g class="p82-card p82-card4">
+    <rect x="675" y="150" width="190" height="182" rx="14" fill="#f0fdf4" stroke="#86efac" stroke-width="2" filter="url(#softShadow)"/>
+    <path d="M770 244 C744 232 738 208 754 190 C756 210 772 216 782 204 C790 224 786 238 770 244 Z" fill="#22c55e" stroke="#15803d" stroke-width="1.5"/>
+    <line x1="770" y1="244" x2="762" y2="262" stroke="#15803d" stroke-width="3"/>
+    <path d="M732 236 Q746 228 758 236" fill="none" stroke="#16a34a" stroke-width="2"/>
+    <text x="770" y="288" font-size="14" font-weight="800" fill="#047857" text-anchor="middle">生物质能</text>
+    <text x="770" y="312" font-size="11.5" fill="#065f46" text-anchor="middle">薪柴、沼气</text>
+    <text x="770" y="331" font-size="11.5" fill="#065f46" text-anchor="middle">植物可再生长</text>
+  </g>
+
+  <rect x="60" y="350" width="380" height="66" rx="12" fill="#f0fdf4" stroke="#86efac" stroke-width="2"/>
+  <text x="250" y="374" font-size="12.5" font-weight="800" fill="#047857" text-anchor="middle">可再生：太阳能、风能、水能、生物质能</text>
+  <text x="250" y="396" font-size="11.5" fill="#065f46" text-anchor="middle">自然界可以不断补充，能够重复利用</text>
+  <rect x="460" y="350" width="380" height="66" rx="12" fill="#fef2f2" stroke="#fca5a5" stroke-width="2"/>
+  <text x="650" y="374" font-size="12.5" font-weight="800" fill="#b91c1c" text-anchor="middle">不可再生：煤、石油、天然气、核燃料</text>
+  <text x="650" y="396" font-size="11.5" fill="#7f1d1d" text-anchor="middle">形成需要漫长年代，用完就难以补充</text>
+
+  <text x="450" y="450" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">可再生能源是未来能源发展的重要方向</text>
+</g>
+
+<!-- 第三步：一次能源与二次能源 -->
+<g class="p82-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">一次能源直接取自自然界，二次能源由一次能源转化而来</text>
+
+  <rect x="34" y="118" width="360" height="284" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="54" y="134" width="150" height="30" rx="15" fill="#e7f8ef"/>
+  <text x="129" y="154" font-size="13" font-weight="800" fill="#047857" text-anchor="middle">一次能源</text>
+  <text x="54" y="188" font-size="11.5" fill="#475569">自然界直接提供，没有经过加工转化</text>
+  <g class="p82-chip" font-size="12" font-weight="700" fill="#065f46" text-anchor="middle">
+    <rect x="58" y="204" width="138" height="40" rx="9" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+    <text x="127" y="229">煤</text>
+    <rect x="212" y="204" width="138" height="40" rx="9" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+    <text x="281" y="229">石油</text>
+  </g>
+  <g class="p82-chip p82-chip2" font-size="12" font-weight="700" fill="#065f46" text-anchor="middle">
+    <rect x="58" y="254" width="138" height="40" rx="9" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+    <text x="127" y="279">天然气</text>
+    <rect x="212" y="254" width="138" height="40" rx="9" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+    <text x="281" y="279">水能</text>
+  </g>
+  <g class="p82-chip p82-chip3" font-size="12" font-weight="700" fill="#065f46" text-anchor="middle">
+    <rect x="58" y="304" width="138" height="40" rx="9" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+    <text x="127" y="329">风能</text>
+    <rect x="212" y="304" width="138" height="40" rx="9" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+    <text x="281" y="329">太阳能</text>
+  </g>
+  <text x="214" y="378" font-size="11.5" fill="#64748b" text-anchor="middle">包括可再生能源和不可再生能源</text>
+
+  <g class="p82-arrow">
+    <line x1="406" y1="260" x2="480" y2="260" stroke="#b45309" stroke-width="4" marker-end="url(#arrAmber)"/>
+    <text x="443" y="242" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">加工转化</text>
+    <text x="443" y="286" font-size="11.5" fill="#7c5a30" text-anchor="middle">发电、冶炼</text>
+  </g>
+
+  <g class="p82-right">
+    <rect x="506" y="118" width="360" height="284" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="526" y="134" width="150" height="30" rx="15" fill="#fff7ed"/>
+    <text x="601" y="154" font-size="13" font-weight="800" fill="#b45309" text-anchor="middle">二次能源</text>
+    <text x="526" y="188" font-size="11.5" fill="#475569">由一次能源加工转化得到</text>
+    <g font-size="12" font-weight="700" fill="#92400e" text-anchor="middle">
+      <rect x="530" y="204" width="138" height="40" rx="9" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+      <text x="599" y="229">电能</text>
+      <rect x="684" y="204" width="138" height="40" rx="9" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+      <text x="753" y="229">汽油</text>
+      <rect x="530" y="254" width="138" height="40" rx="9" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+      <text x="599" y="279">柴油</text>
+      <rect x="684" y="254" width="138" height="40" rx="9" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+      <text x="753" y="279">焦炭</text>
+      <rect x="530" y="304" width="138" height="40" rx="9" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+      <text x="599" y="329">氢能</text>
+      <rect x="684" y="304" width="138" height="40" rx="9" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+      <text x="753" y="329">沼气</text>
+    </g>
+    <text x="686" y="378" font-size="11.5" fill="#64748b" text-anchor="middle">电能是最常见的二次能源</text>
+  </g>
+
+  <text x="450" y="442" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">一次能源 → 加工转化 → 二次能源，电能就是典型例子</text>
+</g>
+</svg>

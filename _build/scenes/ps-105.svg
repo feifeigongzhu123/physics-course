@@ -1,0 +1,218 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="分子动能和分子势能：温度与平均动能、r0 处势能最小与物体的内能">
+<style>
+[data-scene="ps-105"] .s105-s1,[data-scene="ps-105"] .s105-s2,[data-scene="ps-105"] .s105-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="ps-105"].s1 .s105-s1,[data-scene="ps-105"].s2 .s105-s2,[data-scene="ps-105"].s3 .s105-s3{opacity:1;visibility:visible}
+@keyframes s105fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+@keyframes s105draw{to{stroke-dashoffset:0}}
+@keyframes s105pop{0%{transform:scale(.9);opacity:0}70%{transform:scale(1.03);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s105pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes s105bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+[data-scene="ps-105"].s1 .s105-hot{animation:s105bob 1.4s ease-in-out infinite}
+[data-scene="ps-105"].s1 .s105-cold{animation:s105bob 3s ease-in-out infinite}
+[data-scene="ps-105"].s1 .s105-card{transform-box:fill-box;transform-origin:center;animation:s105pop .5s ease .2s both}
+[data-scene="ps-105"].s2 .s105-curve{stroke-dasharray:620;stroke-dashoffset:620;animation:s105draw 1.5s ease .25s forwards}
+[data-scene="ps-105"].s2 .s105-min{transform-box:fill-box;transform-origin:center;animation:s105pop .55s ease .9s both}
+[data-scene="ps-105"].s2 .s105-card{transform-box:fill-box;transform-origin:center;animation:s105pop .5s ease .35s both}
+[data-scene="ps-105"].s3 .s105-bar{transform-box:fill-box;transform-origin:left center;animation:s105grow .7s ease both}
+[data-scene="ps-105"].s3 .s105-bar2{animation-delay:.2s}
+[data-scene="ps-105"].s3 .s105-card{transform-box:fill-box;transform-origin:center;animation:s105pop .5s ease .2s both}
+@keyframes s105grow{from{transform:scaleX(.2);opacity:0}to{transform:scaleX(1);opacity:1}}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">分子动能与分子势能：温度、r₀ 与内能</text>
+
+<!-- 第一步：分子动能 -->
+<g class="s105-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">温度是分子平均动能的标志，温度越高平均动能越大</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="300" height="28" rx="14" fill="#e8effc"/>
+  <text x="206" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">同一物体：低温与高温</text>
+
+  <rect x="70" y="168" width="200" height="150" rx="12" fill="#e8effc" stroke="#93c5fd" stroke-width="1.8"/>
+  <text x="170" y="192" font-size="13" font-weight="900" fill="#1e3a8a" text-anchor="middle">低温</text>
+  <g class="s105-cold">
+    <circle cx="105" cy="238" r="6" fill="#1d4ed8"/>
+    <line x1="105" y1="238" x2="115" y2="228" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arrRed)"/>
+    <circle cx="145" cy="268" r="6" fill="#1d4ed8"/>
+    <line x1="145" y1="268" x2="137" y2="278" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arrRed)"/>
+    <circle cx="185" cy="228" r="6" fill="#1d4ed8"/>
+    <line x1="185" y1="228" x2="195" y2="222" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arrRed)"/>
+    <circle cx="220" cy="272" r="6" fill="#1d4ed8"/>
+    <line x1="220" y1="272" x2="228" y2="262" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arrRed)"/>
+    <circle cx="120" cy="300" r="6" fill="#1d4ed8"/>
+    <line x1="120" y1="300" x2="112" y2="290" stroke="#dc2626" stroke-width="1.8" marker-end="url(#arrRed)"/>
+  </g>
+
+  <rect x="290" y="168" width="200" height="150" rx="12" fill="#fff7ed" stroke="#fdba74" stroke-width="1.8"/>
+  <text x="390" y="192" font-size="13" font-weight="900" fill="#b45309" text-anchor="middle">高温</text>
+  <g class="s105-hot">
+    <circle cx="325" cy="238" r="6" fill="#d97706"/>
+    <line x1="325" y1="238" x2="349" y2="214" stroke="#dc2626" stroke-width="2" marker-end="url(#arrRed)"/>
+    <circle cx="365" cy="268" r="6" fill="#d97706"/>
+    <line x1="365" y1="268" x2="341" y2="290" stroke="#dc2626" stroke-width="2" marker-end="url(#arrRed)"/>
+    <circle cx="405" cy="228" r="6" fill="#d97706"/>
+    <line x1="405" y1="228" x2="435" y2="216" stroke="#dc2626" stroke-width="2" marker-end="url(#arrRed)"/>
+    <circle cx="440" cy="272" r="6" fill="#d97706"/>
+    <line x1="440" y1="272" x2="462" y2="246" stroke="#dc2626" stroke-width="2" marker-end="url(#arrRed)"/>
+    <circle cx="340" cy="300" r="6" fill="#d97706"/>
+    <line x1="340" y1="300" x2="318" y2="278" stroke="#dc2626" stroke-width="2" marker-end="url(#arrRed)"/>
+  </g>
+
+  <text x="280" y="350" font-size="12.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">温度升高 → 分子平均动能增大</text>
+  <text x="280" y="374" font-size="11" fill="#475569" text-anchor="middle">平均动能是对大量分子统计的结果</text>
+  <text x="280" y="398" font-size="11" fill="#64748b" text-anchor="middle">单个分子的动能有大有小，不能代表温度</text>
+  <text x="280" y="422" font-size="11" fill="#64748b" text-anchor="middle">温度升高，分子热运动更加剧烈</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">分子动能</text>
+
+  <circle cx="612" cy="170" r="4" fill="#1d4ed8"/>
+  <text x="628" y="174" font-size="11.5" fill="#334155">分子做热运动，具有动能</text>
+  <circle cx="612" cy="198" r="4" fill="#1d4ed8"/>
+  <text x="628" y="202" font-size="11.5" fill="#334155">所有分子动能的平均值</text>
+  <text x="628" y="222" font-size="11" fill="#64748b">叫分子平均动能</text>
+
+  <g class="s105-card">
+    <rect x="596" y="240" width="248" height="66" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="720" y="266" font-size="11.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">温度是分子平均动能的标志</text>
+    <text x="720" y="288" font-size="11" fill="#475569" text-anchor="middle">温度越高，平均动能越大</text>
+  </g>
+
+  <circle cx="612" cy="332" r="4" fill="#7c3aed"/>
+  <text x="628" y="336" font-size="11.5" fill="#334155">与机械运动速度无关</text>
+  <circle cx="612" cy="362" r="4" fill="#7c3aed"/>
+  <text x="628" y="366" font-size="11.5" fill="#334155">静止的物体，内部分子照样运动</text>
+
+  <text x="720" y="404" font-size="11" fill="#64748b" text-anchor="middle">分子平均动能由温度唯一决定</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">温度是分子平均动能的标志；温度越高，分子的平均动能越大</text>
+</g>
+
+<!-- 第二步：分子势能 -->
+<g class="s105-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">分子势能由相对位置决定，在 r₀ 处最小</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="300" height="28" rx="14" fill="#e8effc"/>
+  <text x="206" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">分子势能 Eₚ–r 图像</text>
+
+  <line x1="120" y1="410" x2="120" y2="164" stroke="#334155" stroke-width="2.2" marker-end="url(#arrBlue)"/>
+  <line x1="120" y1="390" x2="540" y2="390" stroke="#334155" stroke-width="2.2" marker-end="url(#arrBlue)"/>
+  <text x="108" y="176" font-size="11.5" font-weight="900" fill="#334155" text-anchor="end">Eₚ</text>
+  <text x="548" y="408" font-size="12.5" font-weight="900" fill="#334155" text-anchor="middle">r</text>
+  <text x="108" y="406" font-size="11" fill="#64748b" text-anchor="end">O</text>
+
+  <line x1="120" y1="250" x2="540" y2="250" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="532" y="242" font-size="11" fill="#64748b" text-anchor="end">Eₚ = 0</text>
+
+  <path class="s105-curve" d="M150 180 C190 200 220 300 250 340 C265 358 282 364 300 358 C340 345 380 300 430 275 C470 262 500 256 530 254" fill="none" stroke="#dc2626" stroke-width="3"/>
+
+  <line x1="285" y1="361" x2="285" y2="396" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="285" y="410" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">r₀</text>
+
+  <g class="s105-min">
+    <circle cx="285" cy="361" r="5" fill="#ffffff" stroke="#dc2626" stroke-width="2"/>
+    <text x="338" y="382" font-size="11.5" font-weight="900" fill="#b91c1c" text-anchor="middle">Eₚ 最小</text>
+  </g>
+
+  <text x="136" y="306" font-size="11.5" font-weight="900" fill="#1e40af">r &lt; r₀</text>
+  <text x="136" y="324" font-size="11" fill="#1e40af">势能增大</text>
+  <text x="420" y="320" font-size="11.5" font-weight="900" fill="#b91c1c">r &gt; r₀</text>
+  <text x="420" y="338" font-size="11" fill="#b91c1c">势能增大</text>
+
+  <text x="306" y="430" font-size="11" fill="#64748b" text-anchor="middle">r 偏离 r₀ 时，分子势能都增大</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">分子势能</text>
+
+  <text x="610" y="168" font-size="11.5" fill="#334155">由分子间的相对位置决定</text>
+
+  <circle cx="612" cy="198" r="4" fill="#1d4ed8"/>
+  <text x="628" y="202" font-size="11.5" fill="#334155">r 从 r₀ 增大：引力做负功</text>
+  <text x="628" y="222" font-size="11" font-weight="800" fill="#1e40af">分子势能增大</text>
+
+  <circle cx="612" cy="252" r="4" fill="#dc2626"/>
+  <text x="628" y="256" font-size="11.5" fill="#334155">r 从 r₀ 减小：斥力做负功</text>
+  <text x="628" y="276" font-size="11" font-weight="800" fill="#b91c1c">分子势能增大</text>
+
+  <g class="s105-card">
+    <rect x="596" y="292" width="248" height="56" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="720" y="316" font-size="13" font-weight="900" fill="#1e3a8a" text-anchor="middle">r = r₀：分子势能最小</text>
+    <text x="720" y="336" font-size="11" fill="#475569" text-anchor="middle">此时分子间合力为零</text>
+  </g>
+
+  <text x="610" y="376" font-size="11.5" fill="#334155">物体体积变化时，</text>
+  <text x="610" y="396" font-size="11.5" font-weight="800" fill="#1e3a8a">分子势能随之变化</text>
+  <text x="610" y="422" font-size="11" fill="#64748b">势能属于分子系统，不属于单个分子</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">分子间距离等于 r₀ 时势能最小，距离增大或减小，势能都会增大</text>
+</g>
+
+<!-- 第三步：物体的内能 -->
+<g class="s105-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">内能是所有分子动能与势能的总和</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="300" height="28" rx="14" fill="#e8effc"/>
+  <text x="206" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">物体内能的组成</text>
+
+  <rect x="80" y="158" width="440" height="270" rx="14" fill="#f8fbff" stroke="#93c5fd" stroke-width="1.8"/>
+  <text x="300" y="186" font-size="14" font-weight="900" fill="#1e3a8a" text-anchor="middle">物体的内能</text>
+
+  <g class="s105-bar">
+    <rect x="120" y="206" width="360" height="56" rx="9" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="300" y="229" font-size="12.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">分子动能的总和</text>
+    <text x="300" y="249" font-size="11" fill="#475569" text-anchor="middle">由温度决定</text>
+  </g>
+
+  <text x="300" y="282" font-size="18" font-weight="900" fill="#1e3a8a" text-anchor="middle">＋</text>
+
+  <g class="s105-bar s105-bar2">
+    <rect x="120" y="292" width="360" height="56" rx="9" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
+    <text x="300" y="315" font-size="12.5" font-weight="900" fill="#92400e" text-anchor="middle">分子势能的总和</text>
+    <text x="300" y="335" font-size="11" fill="#92400e" text-anchor="middle">由体积和物态决定</text>
+  </g>
+
+  <text x="300" y="372" font-size="11.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">内能 = 所有分子动能 + 所有分子势能</text>
+  <text x="300" y="392" font-size="11" fill="#64748b" text-anchor="middle">内能是状态量，由物体的状态决定</text>
+
+  <text x="300" y="420" font-size="11" fill="#64748b" text-anchor="middle">影响因素：温度、体积、物质的量、物态</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">物体的内能</text>
+
+  <circle cx="612" cy="170" r="4" fill="#1d4ed8"/>
+  <text x="628" y="174" font-size="11.5" fill="#334155">所有分子动能与势能的总和</text>
+  <circle cx="612" cy="198" r="4" fill="#1d4ed8"/>
+  <text x="628" y="202" font-size="11.5" fill="#334155">与温度、体积、物质的量有关</text>
+  <text x="628" y="222" font-size="11.5" fill="#334155">还与物态有关</text>
+
+  <g class="s105-card">
+    <rect x="596" y="242" width="248" height="74" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="720" y="268" font-size="11.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">一定质量理想气体</text>
+    <text x="720" y="290" font-size="11" fill="#475569" text-anchor="middle">分子间作用力可忽略，无分子势能</text>
+    <text x="720" y="308" font-size="11" font-weight="800" fill="#1e40af" text-anchor="middle">内能只由温度决定</text>
+  </g>
+
+  <circle cx="612" cy="342" r="4" fill="#7c3aed"/>
+  <text x="628" y="346" font-size="11.5" fill="#334155">内能是状态量</text>
+  <circle cx="612" cy="370" r="4" fill="#7c3aed"/>
+  <text x="628" y="374" font-size="11.5" fill="#334155">改变内能：做功和传热</text>
+
+  <text x="720" y="414" font-size="11" fill="#64748b" text-anchor="middle">内能变化可以反映物体状态的变化</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">内能是所有分子动能和分子势能的总和，由温度、体积、物质的量和物态共同决定</text>
+</g>
+</svg>

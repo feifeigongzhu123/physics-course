@@ -1,0 +1,285 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="摩擦力：静摩擦与滑动摩擦、压力的影响、增大与减小摩擦的方法">
+<style>
+[data-scene="pj-33"] .p33-step1,[data-scene="pj-33"] .p33-step2,[data-scene="pj-33"] .p33-step3{display:none}
+[data-scene="pj-33"].s1 .p33-step1,[data-scene="pj-33"].s2 .p33-step2,[data-scene="pj-33"].s3 .p33-step3{display:block}
+@keyframes p33pop{0%{transform:scale(.72);opacity:0}72%{transform:scale(1.05);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes p33in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes p33draw{to{stroke-dashoffset:0}}
+@keyframes p33pulse{0%,100%{opacity:.38}50%{opacity:1}}
+@keyframes p33slide{0%,100%{transform:translateX(0)}50%{transform:translateX(10px)}}
+@keyframes p33grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes p33jiggle{0%,100%{transform:rotate(0)}25%{transform:rotate(-3deg)}75%{transform:rotate(3deg)}}
+[data-scene="pj-33"] .p33-card{transform-box:fill-box;transform-origin:center;animation:p33pop .55s ease .1s both}
+[data-scene="pj-33"] .p33-note{animation:p33in .55s ease .2s both}
+[data-scene="pj-33"].s1 .p33-push{stroke-dasharray:110;stroke-dashoffset:110;animation:p33draw .7s ease .25s forwards}
+[data-scene="pj-33"].s1 .p33-fric{stroke-dasharray:110;stroke-dashoffset:110;animation:p33draw .7s ease .55s forwards}
+[data-scene="pj-33"].s1 .p33-box{transform-box:fill-box;transform-origin:center;animation:p33pop .5s ease .15s both}
+[data-scene="pj-33"].s1 .p33-slide{transform-box:view-box;animation:p33slide 2s ease-in-out infinite}
+[data-scene="pj-33"].s2 .p33-read{transform-box:fill-box;transform-origin:center;animation:p33pop .45s ease both}
+[data-scene="pj-33"].s2 .p33-read2{animation-delay:.15s}
+[data-scene="pj-33"].s2 .p33-read3{animation-delay:.3s}
+[data-scene="pj-33"].s2 .p33-bar{transform-box:fill-box;transform-origin:left center;animation:p33grow .7s ease .4s both}
+[data-scene="pj-33"].s2 .p33-bar2{transform-box:fill-box;transform-origin:left center;animation:p33grow .7s ease .55s both}
+[data-scene="pj-33"].s2 .p33-bar3{transform-box:fill-box;transform-origin:left center;animation:p33grow .7s ease .7s both}
+[data-scene="pj-33"].s3 .p33-icon{transform-box:fill-box;transform-origin:center;animation:p33pop .45s ease both}
+[data-scene="pj-33"].s3 .p33-icon2{animation-delay:.1s}
+[data-scene="pj-33"].s3 .p33-icon3{animation-delay:.2s}
+[data-scene="pj-33"].s3 .p33-icon4{animation-delay:.3s}
+[data-scene="pj-33"].s3 .p33-spin{transform-box:fill-box;transform-origin:center;animation:p33jiggle 2.4s ease-in-out infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">摩擦力：阻碍相对运动，方向与相对运动相反</text>
+
+<!-- 第一步：静摩擦与滑动摩擦 -->
+<g class="p33-step1" data-zone="1">
+  <text x="70" y="84" font-size="13" font-weight="800" fill="#1e3a8a">两个相互接触的物体，做相对运动或有相对运动趋势时，接触面上产生阻碍相对运动的力</text>
+
+  <line x1="450" y1="110" x2="450" y2="404" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="7 6"/>
+
+  <!-- 静摩擦 -->
+  <line x1="36" y1="400" x2="420" y2="400" stroke="#94a3b8" stroke-width="3"/>
+  <g class="p33-box">
+    <rect x="130" y="280" width="160" height="120" rx="6" fill="#e8effc" stroke="#1e3a8a" stroke-width="2.5"/>
+    <text x="210" y="348" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">箱子</text>
+  </g>
+  <line class="p33-push" x1="36" y1="340" x2="124" y2="340" stroke="#047857" stroke-width="3.6" stroke-linecap="round" marker-end="url(#arrGreen)"/>
+  <line class="p33-fric" x1="130" y1="376" x2="42" y2="376" stroke="#dc2626" stroke-width="3.6" stroke-linecap="round" marker-end="url(#arrRed)"/>
+  <text x="70" y="326" font-size="12" font-weight="800" fill="#047857" text-anchor="middle">F推</text>
+  <text x="70" y="396" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">f静</text>
+  <text x="210" y="424" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">没推动：f 静 = F 推，二力平衡</text>
+  <text x="210" y="444" font-size="11" fill="#64748b" text-anchor="middle">有相对运动趋势，但物体仍静止</text>
+
+  <!-- 滑动摩擦 -->
+  <line x1="480" y1="400" x2="860" y2="400" stroke="#94a3b8" stroke-width="3"/>
+  <g class="p33-slide">
+    <rect x="560" y="280" width="160" height="120" rx="6" fill="#e8effc" stroke="#1e3a8a" stroke-width="2.5"/>
+    <text x="640" y="348" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">箱子</text>
+  </g>
+  <line x1="584" y1="258" x2="696" y2="258" stroke="#1d4ed8" stroke-width="3.6" stroke-linecap="round" marker-end="url(#arrBlue)"/>
+  <text x="640" y="246" font-size="12" font-weight="800" fill="#1e40af" text-anchor="middle">v</text>
+  <line class="p33-fric" x1="560" y1="376" x2="474" y2="376" stroke="#dc2626" stroke-width="3.6" stroke-linecap="round" marker-end="url(#arrRed)"/>
+  <line class="p33-push" x1="726" y1="340" x2="814" y2="340" stroke="#047857" stroke-width="3.6" stroke-linecap="round" marker-end="url(#arrGreen)"/>
+  <text x="516" y="396" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">f滑</text>
+  <text x="770" y="326" font-size="12" font-weight="800" fill="#047857" text-anchor="middle">F拉</text>
+  <text x="670" y="424" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">滑动时：f 方向与相对运动方向相反</text>
+  <text x="670" y="444" font-size="11" fill="#64748b" text-anchor="middle">拉动同一箱子，滑动摩擦力小于最大静摩擦</text>
+
+  <!-- 产生条件 -->
+  <g class="p33-note" font-size="11.5" font-weight="800" fill="#1e3a8a">
+    <rect x="56" y="462" width="250" height="26" rx="8" fill="#e8effc"/>
+    <text x="181" y="480" text-anchor="middle">① 接触并相互挤压</text>
+    <rect x="325" y="462" width="250" height="26" rx="8" fill="#e8effc"/>
+    <text x="450" y="480" text-anchor="middle">② 接触面粗糙</text>
+    <rect x="594" y="462" width="250" height="26" rx="8" fill="#e8effc"/>
+    <text x="719" y="480" text-anchor="middle">③ 有相对运动或趋势</text>
+  </g>
+</g>
+
+<!-- 第二步：影响滑动摩擦力的因素 -->
+<g class="p33-step2" data-zone="2">
+  <text x="70" y="84" font-size="13.5" font-weight="800" fill="#1e3a8a">滑动摩擦力的大小跟压力大小、接触面的粗糙程度有关</text>
+
+  <!-- 实验一 -->
+  <g>
+    <text x="175" y="122" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">① 木板</text>
+    <rect x="64" y="187" width="84" height="24" rx="5" fill="#ffffff" stroke="#334155" stroke-width="1.8"/>
+    <g stroke="#334155" stroke-width="1.2">
+      <line x1="72" y1="190" x2="72" y2="196"/><line x1="82" y1="190" x2="82" y2="196"/>
+      <line x1="92" y1="190" x2="92" y2="196"/><line x1="102" y1="190" x2="102" y2="196"/>
+      <line x1="112" y1="190" x2="112" y2="196"/><line x1="122" y1="190" x2="122" y2="196"/>
+      <line x1="132" y1="190" x2="132" y2="196"/>
+    </g>
+    <rect x="136" y="187" width="4" height="24" fill="#dc2626"/>
+    <text x="106" y="182" font-size="11" font-weight="700" fill="#64748b" text-anchor="middle">弹簧测力计</text>
+    <line x1="148" y1="199" x2="166" y2="199" stroke="#475569" stroke-width="1.8"/>
+    <rect x="166" y="166" width="66" height="66" rx="4" fill="#e8effc" stroke="#1e3a8a" stroke-width="2.5"/>
+    <line x1="52" y1="232" x2="300" y2="232" stroke="#b45309" stroke-width="6" stroke-linecap="round"/>
+    <line x1="54" y1="229" x2="298" y2="229" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="175" y="256" font-size="11" fill="#64748b" text-anchor="middle">木板 · 匀速拉动，示数等于摩擦力</text>
+    <g class="p33-read">
+      <rect x="58" y="140" width="96" height="26" rx="7" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+      <text x="106" y="158" font-size="12" font-weight="900" fill="#b91c1c" text-anchor="middle">0.8 N</text>
+    </g>
+  </g>
+
+  <!-- 实验二 -->
+  <g>
+    <text x="450" y="122" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">② 加砝码（压力大）</text>
+    <rect x="339" y="187" width="84" height="24" rx="5" fill="#ffffff" stroke="#334155" stroke-width="1.8"/>
+    <g stroke="#334155" stroke-width="1.2">
+      <line x1="347" y1="190" x2="347" y2="196"/><line x1="357" y1="190" x2="357" y2="196"/>
+      <line x1="367" y1="190" x2="367" y2="196"/><line x1="377" y1="190" x2="377" y2="196"/>
+      <line x1="387" y1="190" x2="387" y2="196"/><line x1="397" y1="190" x2="397" y2="196"/>
+      <line x1="407" y1="190" x2="407" y2="196"/>
+    </g>
+    <rect x="411" y="187" width="4" height="24" fill="#dc2626"/>
+    <line x1="423" y1="199" x2="441" y2="199" stroke="#475569" stroke-width="1.8"/>
+    <rect x="441" y="166" width="66" height="66" rx="4" fill="#e8effc" stroke="#1e3a8a" stroke-width="2.5"/>
+    <rect x="456" y="142" width="36" height="24" rx="3" fill="#cbd5e1" stroke="#64748b" stroke-width="1.6"/>
+    <text x="474" y="158" font-size="11" font-weight="700" fill="#334155" text-anchor="middle">砝码</text>
+    <line x1="327" y1="232" x2="575" y2="232" stroke="#b45309" stroke-width="6" stroke-linecap="round"/>
+    <line x1="329" y1="229" x2="573" y2="229" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="450" y="256" font-size="11" fill="#64748b" text-anchor="middle">压力增大，摩擦力变大</text>
+    <g class="p33-read p33-read2">
+      <rect x="333" y="140" width="96" height="26" rx="7" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+      <text x="381" y="158" font-size="12" font-weight="900" fill="#b91c1c" text-anchor="middle">1.6 N</text>
+    </g>
+  </g>
+
+  <!-- 实验三 -->
+  <g>
+    <text x="725" y="122" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">③ 铺毛巾（更粗糙）</text>
+    <rect x="614" y="187" width="84" height="24" rx="5" fill="#ffffff" stroke="#334155" stroke-width="1.8"/>
+    <g stroke="#334155" stroke-width="1.2">
+      <line x1="622" y1="190" x2="622" y2="196"/><line x1="632" y1="190" x2="632" y2="196"/>
+      <line x1="642" y1="190" x2="642" y2="196"/><line x1="652" y1="190" x2="652" y2="196"/>
+      <line x1="662" y1="190" x2="662" y2="196"/><line x1="672" y1="190" x2="672" y2="196"/>
+      <line x1="682" y1="190" x2="682" y2="196"/>
+    </g>
+    <rect x="686" y="187" width="4" height="24" fill="#dc2626"/>
+    <line x1="698" y1="199" x2="716" y2="199" stroke="#475569" stroke-width="1.8"/>
+    <rect x="716" y="166" width="66" height="66" rx="4" fill="#e8effc" stroke="#1e3a8a" stroke-width="2.5"/>
+    <line x1="602" y1="232" x2="850" y2="232" stroke="#b45309" stroke-width="7" stroke-linecap="round"/>
+    <g stroke="#92400e" stroke-width="1.6">
+      <line x1="622" y1="232" x2="628" y2="239"/><line x1="642" y1="232" x2="648" y2="239"/>
+      <line x1="662" y1="232" x2="668" y2="239"/><line x1="682" y1="232" x2="688" y2="239"/>
+      <line x1="702" y1="232" x2="708" y2="239"/><line x1="722" y1="232" x2="728" y2="239"/>
+      <line x1="742" y1="232" x2="748" y2="239"/><line x1="762" y1="232" x2="768" y2="239"/>
+      <line x1="782" y1="232" x2="788" y2="239"/><line x1="802" y1="232" x2="808" y2="239"/>
+      <line x1="822" y1="232" x2="828" y2="239"/>
+    </g>
+    <text x="725" y="256" font-size="11" fill="#64748b" text-anchor="middle">接触面越粗糙，摩擦力越大</text>
+    <g class="p33-read p33-read3">
+      <rect x="608" y="140" width="96" height="26" rx="7" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+      <text x="656" y="158" font-size="12" font-weight="900" fill="#b91c1c" text-anchor="middle">2.2 N</text>
+    </g>
+  </g>
+
+  <!-- 对比 -->
+  <g>
+    <text x="64" y="300" font-size="12" font-weight="800" fill="#1e3a8a">摩擦力大小对比</text>
+    <text x="64" y="352" font-size="11" font-weight="700" fill="#334155">木板</text>
+    <rect class="p33-bar" x="130" y="342" width="120" height="14" rx="4" fill="#60a5fa"/>
+    <text x="258" y="353" font-size="11" font-weight="800" fill="#1e40af">0.8 N</text>
+    <text x="64" y="378" font-size="11" font-weight="700" fill="#334155">加砝码</text>
+    <rect class="p33-bar2" x="130" y="368" width="240" height="14" rx="4" fill="#f59e0b"/>
+    <text x="378" y="379" font-size="11" font-weight="800" fill="#b45309">1.6 N</text>
+    <text x="64" y="404" font-size="11" font-weight="700" fill="#334155">铺毛巾</text>
+    <rect class="p33-bar3" x="130" y="394" width="330" height="14" rx="4" fill="#dc2626"/>
+    <text x="468" y="405" font-size="11" font-weight="800" fill="#b91c1c">2.2 N</text>
+  </g>
+
+  <g class="p33-card">
+    <rect x="540" y="290" width="320" height="126" rx="12" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+    <text x="700" y="316" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">结论</text>
+    <text x="700" y="342" font-size="11.5" font-weight="700" fill="#7c5a30" text-anchor="middle">压力越大，滑动摩擦力越大</text>
+    <text x="700" y="366" font-size="11.5" font-weight="700" fill="#7c5a30" text-anchor="middle">接触面越粗糙，摩擦力越大</text>
+    <text x="700" y="396" font-size="11" fill="#64748b" text-anchor="middle">控制变量：一次只改变一个因素</text>
+  </g>
+
+  <g class="p33-note">
+    <rect x="56" y="426" width="790" height="60" rx="12" fill="#ffffff" stroke="#dbe6f2" stroke-width="2"/>
+    <text x="451" y="448" font-size="11" fill="#64748b" text-anchor="middle">滑动摩擦力的大小与接触面积大小、运动速度无关（只跟压力和粗糙程度有关）</text>
+    <text x="451" y="472" font-size="11" font-weight="700" fill="#334155" text-anchor="middle">测量原理：弹簧测力计拉着物体匀速滑动，二力平衡，示数等于摩擦力</text>
+  </g>
+</g>
+
+<!-- 第三步：增大与减小摩擦 -->
+<g class="p33-step3" data-zone="3">
+  <text x="70" y="84" font-size="13.5" font-weight="800" fill="#1e3a8a">增大摩擦与减小摩擦：从压力、粗糙程度、滚动还是滑动入手</text>
+
+  <!-- 增大摩擦 -->
+  <g>
+    <rect x="40" y="100" width="400" height="292" rx="16" fill="#ffffff" stroke="#fecaca" stroke-width="2"/>
+    <rect x="40" y="100" width="400" height="46" rx="16" fill="#fef2f2"/>
+    <text x="240" y="130" font-size="14" font-weight="800" fill="#b91c1c" text-anchor="middle">增大摩擦的方法</text>
+
+    <g class="p33-icon">
+      <rect x="64" y="172" width="56" height="56" rx="12" fill="#fff7ed"/>
+      <rect x="78" y="192" width="28" height="16" rx="2" fill="#fbbf24" stroke="#b45309" stroke-width="1.6"/>
+      <line x1="92" y1="166" x2="92" y2="188" stroke="#dc2626" stroke-width="3" marker-end="url(#arrRed)"/>
+    </g>
+    <text x="136" y="192" font-size="12" font-weight="800" fill="#b91c1c">增大压力</text>
+    <text x="136" y="212" font-size="11" fill="#64748b">刹车时用力捏闸，让闸皮压紧车圈</text>
+
+    <g class="p33-icon p33-icon2">
+      <rect x="64" y="240" width="56" height="56" rx="12" fill="#fff7ed"/>
+      <path d="M74 282 L82 272 L90 282 L98 272 L106 282 L114 272" fill="none" stroke="#b45309" stroke-width="2.4" stroke-linejoin="round"/>
+      <rect x="84" y="256" width="20" height="14" rx="2" fill="#e8effc" stroke="#1e3a8a" stroke-width="1.6"/>
+    </g>
+    <text x="136" y="260" font-size="12" font-weight="800" fill="#b91c1c">增大粗糙程度</text>
+    <text x="136" y="280" font-size="11" fill="#64748b">轮胎刻花纹，瓶盖做竖纹，鞋底压纹</text>
+
+    <g class="p33-icon p33-icon3">
+      <rect x="64" y="308" width="56" height="56" rx="12" fill="#fff7ed"/>
+      <circle cx="84" cy="330" r="12" fill="none" stroke="#475569" stroke-width="2.4"/>
+      <circle cx="84" cy="330" r="3.5" fill="#475569"/>
+      <polygon points="96,348 110,348 104,334" fill="#b45309" stroke="#92400e" stroke-width="1.2"/>
+      <line x1="72" y1="356" x2="106" y2="356" stroke="#94a3b8" stroke-width="2"/>
+    </g>
+    <text x="136" y="328" font-size="12" font-weight="800" fill="#b91c1c">变滚动为滑动</text>
+    <text x="136" y="348" font-size="11" fill="#64748b">滚动轴承卡住后，推起来更费力</text>
+  </g>
+
+  <!-- 减小摩擦 -->
+  <g>
+    <rect x="460" y="100" width="400" height="292" rx="16" fill="#ffffff" stroke="#bbf7d0" stroke-width="2"/>
+    <rect x="460" y="100" width="400" height="46" rx="16" fill="#e6f7f1"/>
+    <text x="660" y="130" font-size="14" font-weight="800" fill="#047857" text-anchor="middle">减小摩擦的方法</text>
+
+    <g class="p33-icon">
+      <rect x="478" y="152" width="50" height="50" rx="11" fill="#f8fafc"/>
+      <rect x="486" y="182" width="34" height="14" rx="2" fill="#e8effc" stroke="#1e3a8a" stroke-width="1.8"/>
+      <line x1="503" y1="182" x2="503" y2="164" stroke="#047857" stroke-width="3"/>
+      <polygon points="496,166 510,166 503,152" fill="#047857"/>
+    </g>
+    <text x="542" y="170" font-size="12" font-weight="800" fill="#047857">减小压力</text>
+    <text x="542" y="190" font-size="11" fill="#64748b">轻拿轻放，减小物体之间的挤压</text>
+
+    <g class="p33-icon p33-icon2">
+      <rect x="478" y="212" width="50" height="50" rx="11" fill="#f8fafc"/>
+      <path d="M500 228 Q506 242 500 250 Q494 258 500 262 Q506 268 501 276" fill="none" stroke="#f59e0b" stroke-width="2.6"/>
+      <line x1="488" y1="284" x2="520" y2="284" stroke="#94a3b8" stroke-width="2"/>
+    </g>
+    <text x="542" y="230" font-size="12" font-weight="800" fill="#047857">减小粗糙程度</text>
+    <text x="542" y="250" font-size="11" fill="#64748b">加润滑油，把接触面磨光</text>
+
+    <g class="p33-icon p33-icon3">
+      <rect x="478" y="272" width="50" height="50" rx="11" fill="#f8fafc"/>
+      <circle cx="503" cy="297" r="16" fill="none" stroke="#475569" stroke-width="2.4"/>
+      <circle cx="503" cy="297" r="3.5" fill="#475569"/>
+      <circle cx="503" cy="287" r="3" fill="#60a5fa"/>
+      <circle cx="494" cy="302" r="3" fill="#60a5fa"/>
+      <circle cx="512" cy="302" r="3" fill="#60a5fa"/>
+    </g>
+    <text x="542" y="290" font-size="12" font-weight="800" fill="#047857">变滑动为滚动</text>
+    <text x="542" y="310" font-size="11" fill="#64748b">滚珠轴承、搬运时在下面垫滚木</text>
+
+    <g class="p33-icon p33-icon4">
+      <rect x="478" y="332" width="50" height="50" rx="11" fill="#f8fafc"/>
+      <line x1="488" y1="344" x2="518" y2="344" stroke="#475569" stroke-width="3"/>
+      <line x1="488" y1="370" x2="518" y2="370" stroke="#475569" stroke-width="3"/>
+      <g stroke="#1d4ed8" stroke-width="1.8">
+        <line x1="494" y1="357" x2="500" y2="352"/><line x1="503" y1="357" x2="509" y2="352"/>
+        <line x1="512" y1="357" x2="518" y2="352"/>
+        <line x1="494" y1="357" x2="500" y2="362"/><line x1="503" y1="357" x2="509" y2="362"/>
+        <line x1="512" y1="357" x2="518" y2="362"/>
+      </g>
+    </g>
+    <text x="542" y="350" font-size="12" font-weight="800" fill="#047857">使接触面分离</text>
+    <text x="542" y="370" font-size="11" fill="#64748b">气垫船、磁悬浮列车靠气垫或磁场悬浮</text>
+  </g>
+
+  <g class="p33-note">
+    <rect x="56" y="408" width="790" height="78" rx="12" fill="#ffffff" stroke="#dbe6f2" stroke-width="2"/>
+    <text x="451" y="432" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">摩擦力不一定是阻力：走路时脚向后蹬，地面给脚的摩擦力向前，是动力</text>
+    <text x="451" y="456" font-size="11" fill="#64748b" text-anchor="middle">传送带把货物送上去，靠的也是摩擦力</text>
+    <text x="451" y="476" font-size="11" font-weight="700" fill="#1e3a8a" text-anchor="middle">判断增大的方法看需要“抓地”还是“顺滑”，再选择压力、粗糙程度或滚动方式</text>
+  </g>
+</g>
+</svg>

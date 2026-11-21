@@ -1,0 +1,224 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="电阻的测量：伏安法原理、实验电路与滑动变阻器、多次测量求平均值">
+<style>
+.p64-s1,.p64-s2,.p64-s3{opacity:0;visibility:hidden}
+.p64-s1{opacity:1;visibility:visible}
+[data-scene="pj-64"] .p64-s1,[data-scene="pj-64"] .p64-s2,[data-scene="pj-64"] .p64-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="pj-64"].s1 .p64-s1,[data-scene="pj-64"].s2 .p64-s2,[data-scene="pj-64"].s3 .p64-s3{opacity:1;visibility:visible}
+@keyframes p64pop{0%{transform:scale(.82);opacity:0}72%{transform:scale(1.04);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes p64draw{to{stroke-dashoffset:0}}
+@keyframes p64pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes p64slide{0%{transform:translateY(8px);opacity:0}100%{transform:translateY(0);opacity:1}}
+[data-scene="pj-64"].s1 .p64-formula{transform-box:fill-box;transform-origin:center;animation:p64pop .6s ease both}
+[data-scene="pj-64"].s1 .p64-chip{transform-box:fill-box;transform-origin:center;animation:p64pop .5s ease both}
+[data-scene="pj-64"].s1 .p64-chip2{animation-delay:.12s}
+[data-scene="pj-64"].s1 .p64-chip3{animation-delay:.24s}
+[data-scene="pj-64"].s2 .p64-wire{stroke-dasharray:1100;stroke-dashoffset:1100;animation:p64draw 1.3s ease .1s forwards}
+[data-scene="pj-64"].s2 .p64-rx{transform-box:fill-box;transform-origin:center;animation:p64pop .5s ease .9s both}
+[data-scene="pj-64"].s2 .p64-slider{animation:p64pulse 1.8s ease-in-out infinite}
+[data-scene="pj-64"].s3 .p64-card{transform-box:fill-box;transform-origin:center;animation:p64pop .55s ease both}
+[data-scene="pj-64"].s3 .p64-card2{animation-delay:.12s}
+[data-scene="pj-64"].s3 .p64-card3{animation-delay:.24s}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="470" width="900" height="150" fill="url(#gBench)"/>
+<line x1="0" y1="470" x2="900" y2="470" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">电阻的测量：伏安法测电阻，多次测量求平均</text>
+
+<!-- 第一步：实验原理 -->
+<g class="p64-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">伏安法：用电压表测 U，用电流表测 I，再用 R = U / I 算电阻</text>
+
+  <rect x="36" y="100" width="430" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="180" height="28" rx="14" fill="#e8effc"/>
+  <text x="146" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">伏安法原理</text>
+
+  <g class="p64-formula">
+    <text x="251" y="202" font-size="34" font-weight="900" fill="#1e3a8a" text-anchor="middle">R = U / I</text>
+  </g>
+  <text x="251" y="228" font-size="12.5" font-weight="700" fill="#475569" text-anchor="middle">欧姆定律的变形，用来计算待测电阻</text>
+
+  <g class="p64-chip">
+    <rect x="60" y="244" width="116" height="62" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="118" y="270" font-size="13.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">电压表</text>
+    <text x="118" y="291" font-size="11.5" font-weight="700" fill="#1e40af" text-anchor="middle">测出 U</text>
+  </g>
+  <g class="p64-chip p64-chip2">
+    <rect x="184" y="244" width="116" height="62" rx="10" fill="#e6f7f1" stroke="#a7f3d0" stroke-width="1.5"/>
+    <text x="242" y="270" font-size="13.5" font-weight="900" fill="#047857" text-anchor="middle">电流表</text>
+    <text x="242" y="291" font-size="11.5" font-weight="700" fill="#047857" text-anchor="middle">测出 I</text>
+  </g>
+  <g class="p64-chip p64-chip3">
+    <rect x="308" y="244" width="116" height="62" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+    <text x="366" y="270" font-size="13.5" font-weight="900" fill="#b45309" text-anchor="middle">欧姆定律</text>
+    <text x="366" y="291" font-size="11.5" font-weight="700" fill="#b45309" text-anchor="middle">算出 R</text>
+  </g>
+
+  <text x="251" y="332" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">电压表并联在 Rx 两端，电流表串联在电路中</text>
+  <text x="251" y="356" font-size="12" fill="#475569" text-anchor="middle">R 的单位是 Ω，U 的单位是 V，I 的单位是 A</text>
+
+  <rect x="60" y="370" width="382" height="28" rx="9" fill="#eef6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="251" y="389" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">间接测量：先测 U、I，再计算 R</text>
+
+  <rect x="486" y="100" width="378" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="506" y="116" width="150" height="28" rx="14" fill="#e6f7f1"/>
+  <text x="581" y="135" font-size="12.5" font-weight="800" fill="#047857" text-anchor="middle">测量思路</text>
+
+  <rect x="506" y="158" width="248" height="48" rx="10" fill="#e8effc"/>
+  <text x="522" y="178" font-size="12.5" font-weight="800" fill="#1e3a8a">① 电压表并联</text>
+  <text x="522" y="197" font-size="11.5" fill="#334155">测出待测电阻两端的电压 U</text>
+
+  <rect x="506" y="216" width="248" height="48" rx="10" fill="#e6f7f1"/>
+  <text x="522" y="236" font-size="12.5" font-weight="800" fill="#047857">② 电流表串联</text>
+  <text x="522" y="255" font-size="11.5" fill="#334155">测出通过待测电阻的电流 I</text>
+
+  <rect x="506" y="274" width="248" height="48" rx="10" fill="#fff7ed"/>
+  <text x="522" y="294" font-size="12.5" font-weight="800" fill="#b45309">③ 代入公式</text>
+  <text x="522" y="313" font-size="11.5" fill="#334155">用 R = U / I 算出电阻值</text>
+
+  <text x="675" y="352" font-size="12" font-weight="700" fill="#1e3a8a" text-anchor="middle">U、I、R 必须对应同一段电阻</text>
+  <text x="675" y="376" font-size="11.5" fill="#64748b" text-anchor="middle">并且是同一时刻的数值</text>
+  <text x="675" y="398" font-size="11" fill="#b91c1c" text-anchor="middle">待测电阻不能带电测量</text>
+</g>
+
+<!-- 第二步：实验电路与滑动变阻器 -->
+<g class="p64-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">伏安法电路：电流表串联、电压表并联，滑动变阻器串联调压</text>
+
+  <rect x="36" y="100" width="540" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="210" height="28" rx="14" fill="#e8effc"/>
+  <text x="161" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">伏安法实验电路</text>
+
+  <path class="p64-wire" d="M90 220 H500 V360 H90 Z" fill="none" stroke="#334155" stroke-width="4" stroke-linejoin="round"/>
+
+  <g class="p64-rx">
+    <rect x="160" y="208" width="86" height="24" rx="3" fill="#e8effc" stroke="#1d4ed8" stroke-width="2.5"/>
+    <text x="203" y="225" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">Rx</text>
+  </g>
+
+  <line x1="160" y1="208" x2="160" y2="165" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="5 4"/>
+  <line x1="160" y1="165" x2="246" y2="165" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="5 4"/>
+  <line x1="246" y1="165" x2="246" y2="208" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="5 4"/>
+  <circle cx="203" cy="165" r="18" fill="#ffffff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="203" y="171" font-size="12.5" font-weight="900" fill="#1e40af" text-anchor="middle">V</text>
+  <text x="264" y="169" font-size="11.5" font-weight="700" fill="#1d4ed8">电压表（并联）</text>
+
+  <circle cx="395" cy="220" r="19" fill="#ffffff" stroke="#059669" stroke-width="2.5"/>
+  <text x="395" y="226" font-size="13" font-weight="900" fill="#047857" text-anchor="middle">A</text>
+  <text x="395" y="256" font-size="11.5" font-weight="700" fill="#047857" text-anchor="middle">电流表（串联）</text>
+
+  <line x1="200" y1="346" x2="200" y2="374" stroke="#334155" stroke-width="4"/>
+  <line x1="214" y1="352" x2="214" y2="368" stroke="#334155" stroke-width="4"/>
+  <text x="207" y="392" font-size="11" fill="#64748b" text-anchor="middle">电源</text>
+
+  <g class="p64-slider">
+    <rect x="260" y="348" width="100" height="24" rx="3" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+    <line x1="274" y1="342" x2="348" y2="342" stroke="#b45309" stroke-width="2"/>
+    <polygon points="348,342 338,337 338,347" fill="#b45309"/>
+  </g>
+  <text x="310" y="334" font-size="11" font-weight="700" fill="#92400e" text-anchor="middle">滑动变阻器</text>
+
+  <circle cx="420" cy="360" r="4" fill="#334155"/>
+  <circle cx="452" cy="360" r="4" fill="#334155"/>
+  <line x1="420" y1="360" x2="446" y2="346" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  <text x="436" y="338" font-size="11.5" font-weight="800" fill="#64748b" text-anchor="middle">S</text>
+
+  <text x="306" y="396" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电流表串联 · 电压表并联在 Rx 两端 · 滑动变阻器串联</text>
+
+  <rect x="596" y="100" width="268" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="616" y="116" width="150" height="28" rx="14" fill="#e6f7f1"/>
+  <text x="691" y="135" font-size="12.5" font-weight="800" fill="#047857" text-anchor="middle">连接与作用</text>
+
+  <rect x="616" y="158" width="228" height="56" rx="10" fill="#e8effc"/>
+  <text x="632" y="180" font-size="12" font-weight="800" fill="#1e3a8a">电流表：串联</text>
+  <text x="632" y="201" font-size="11.5" fill="#334155">测通过 Rx 的电流</text>
+
+  <rect x="616" y="222" width="228" height="56" rx="10" fill="#e6f7f1"/>
+  <text x="632" y="244" font-size="12" font-weight="800" fill="#047857">电压表：并联</text>
+  <text x="632" y="265" font-size="11.5" fill="#334155">测 Rx 两端的电压</text>
+
+  <rect x="616" y="286" width="228" height="56" rx="10" fill="#fff7ed"/>
+  <text x="632" y="308" font-size="12" font-weight="800" fill="#b45309">滑动变阻器：串联</text>
+  <text x="632" y="329" font-size="11.5" fill="#334155">改变电流和电压</text>
+
+  <text x="730" y="366" font-size="11.5" font-weight="700" fill="#1e3a8a" text-anchor="middle">闭合开关前，滑片调到最大阻值</text>
+  <text x="730" y="390" font-size="11.5" fill="#64748b" text-anchor="middle">滑动变阻器还能保护电路</text>
+</g>
+
+<!-- 第三步：多次测量求平均 -->
+<g class="p64-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">多次测量求平均值，减小误差；操作规范保安全</text>
+
+  <g class="p64-card">
+    <rect x="36" y="100" width="260" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="56" y="116" width="180" height="28" rx="14" fill="#e8effc"/>
+    <text x="146" y="135" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">① 连接电路</text>
+
+    <text x="70" y="174" font-size="12" font-weight="700" fill="#334155">• 开关要断开</text>
+    <text x="70" y="206" font-size="12" font-weight="700" fill="#334155">• 滑动变阻器调到最大阻值</text>
+    <text x="70" y="238" font-size="12" font-weight="700" fill="#334155">• 电流表串联，电压表并联</text>
+    <text x="70" y="270" font-size="12" font-weight="700" fill="#334155">• 注意量程和正负接线柱</text>
+    <text x="70" y="302" font-size="12" font-weight="700" fill="#334155">• 接完先检查，再闭合开关</text>
+
+    <rect x="60" y="330" width="212" height="52" rx="10" fill="#fff7ed"/>
+    <text x="166" y="352" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">电流表量程偏大，读数不准</text>
+    <text x="166" y="372" font-size="11.5" fill="#b45309" text-anchor="middle">先用大量程试触，再换小量程</text>
+  </g>
+
+  <g class="p64-card p64-card2">
+    <rect x="320" y="100" width="260" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="340" y="116" width="180" height="28" rx="14" fill="#e6f7f1"/>
+    <text x="430" y="135" font-size="12" font-weight="800" fill="#047857" text-anchor="middle">② 测量记录</text>
+
+    <rect x="340" y="158" width="220" height="30" fill="#e6f7f1"/>
+    <text x="378" y="178" font-size="11.5" font-weight="800" fill="#047857" text-anchor="middle">次数</text>
+    <text x="430" y="178" font-size="11.5" font-weight="800" fill="#047857" text-anchor="middle">U/V</text>
+    <text x="482" y="178" font-size="11.5" font-weight="800" fill="#047857" text-anchor="middle">I/A</text>
+    <text x="532" y="178" font-size="11.5" font-weight="800" fill="#047857" text-anchor="middle">R/Ω</text>
+
+    <rect x="340" y="188" width="220" height="32" fill="#f8fbff"/>
+    <text x="378" y="209" font-size="12" fill="#334155" text-anchor="middle">1</text>
+    <text x="430" y="209" font-size="12" fill="#334155" text-anchor="middle">1.0</text>
+    <text x="482" y="209" font-size="12" fill="#334155" text-anchor="middle">0.10</text>
+    <text x="532" y="209" font-size="12" font-weight="700" fill="#047857" text-anchor="middle">10.0</text>
+
+    <rect x="340" y="220" width="220" height="32" fill="#ffffff"/>
+    <text x="378" y="241" font-size="12" fill="#334155" text-anchor="middle">2</text>
+    <text x="430" y="241" font-size="12" fill="#334155" text-anchor="middle">2.0</text>
+    <text x="482" y="241" font-size="12" fill="#334155" text-anchor="middle">0.20</text>
+    <text x="532" y="241" font-size="12" font-weight="700" fill="#047857" text-anchor="middle">10.0</text>
+
+    <rect x="340" y="252" width="220" height="32" fill="#f8fbff"/>
+    <text x="378" y="273" font-size="12" fill="#334155" text-anchor="middle">3</text>
+    <text x="430" y="273" font-size="12" fill="#334155" text-anchor="middle">3.0</text>
+    <text x="482" y="273" font-size="12" fill="#334155" text-anchor="middle">0.30</text>
+    <text x="532" y="273" font-size="12" font-weight="700" fill="#047857" text-anchor="middle">10.0</text>
+
+    <text x="450" y="310" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">调滑片，测三组 U、I</text>
+    <text x="450" y="334" font-size="11.5" fill="#64748b" text-anchor="middle">每组都用 R = U / I 算电阻</text>
+    <text x="450" y="358" font-size="11.5" fill="#64748b" text-anchor="middle">三组数据要对应不同电压</text>
+  </g>
+
+  <g class="p64-card p64-card3">
+    <rect x="604" y="100" width="260" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="624" y="116" width="180" height="28" rx="14" fill="#fff7ed"/>
+    <text x="714" y="135" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">③ 求平均值</text>
+
+    <text x="734" y="194" font-size="15" font-weight="800" fill="#b45309" text-anchor="middle">R = (R1 + R2 + R3) ÷ 3</text>
+    <text x="734" y="222" font-size="12" font-weight="700" fill="#475569" text-anchor="middle">三次测量值相加，再除以 3</text>
+
+    <rect x="648" y="240" width="172" height="40" rx="9" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+    <text x="734" y="267" font-size="18" font-weight="900" fill="#b45309" text-anchor="middle">R = 10.0 Ω</text>
+
+    <text x="734" y="316" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">多次测量取平均值，减小误差</text>
+    <text x="734" y="340" font-size="11.5" fill="#64748b" text-anchor="middle">定值电阻的阻值基本不变</text>
+    <text x="734" y="364" font-size="11" fill="#b91c1c" text-anchor="middle">小灯泡电阻随温度变化</text>
+    <text x="734" y="384" font-size="11" fill="#b91c1c" text-anchor="middle">不能把电阻求平均</text>
+  </g>
+
+  <rect x="60" y="416" width="780" height="40" rx="12" fill="#eef6ff" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="450" y="441" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">实验顺序：连接电路 → 调滑片测三组 U、I → 算 R → 求平均值</text>
+</g>
+</svg>

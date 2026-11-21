@@ -1,0 +1,153 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="波的干涉：相干条件、振动加强与减弱、稳定干涉图样">
+<style>
+[data-scene="ps-76"] .s76-step{opacity:0;visibility:hidden;transition:opacity .35s ease,visibility 0s linear .35s}
+[data-scene="ps-76"].s1 .s76-step1,[data-scene="ps-76"].s2 .s76-step2,[data-scene="ps-76"].s3 .s76-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes s76draw{to{stroke-dashoffset:0}}
+@keyframes s76pulse{0%,100%{opacity:.25}50%{opacity:.85}}
+@keyframes s76pop{0%{transform:scale(.9);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes s76ripple{0%{transform:scale(.96);opacity:.9}100%{transform:scale(1.04);opacity:.5}}
+[data-scene="ps-76"].s1 .s76-rings{animation:s76pulse 2.2s ease-in-out infinite}
+[data-scene="ps-76"].s1 .s76-src{animation:s76ripple 1.6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+[data-scene="ps-76"].s2 .s76-line{stroke-dasharray:300;stroke-dashoffset:300;animation:s76draw 1.1s ease .2s forwards}
+[data-scene="ps-76"].s2 .s76-line2{animation-delay:.5s}
+[data-scene="ps-76"].s2 .s76-w1,[data-scene="ps-76"].s2 .s76-w2,[data-scene="ps-76"].s2 .s76-res{stroke-dasharray:420;stroke-dashoffset:420;animation:s76draw 1s ease .4s forwards}
+[data-scene="ps-76"].s2 .s76-w2{animation-delay:.6s}
+[data-scene="ps-76"].s2 .s76-res{animation-delay:.8s}
+[data-scene="ps-76"].s3 .s76-pattern{animation:s76pulse 2s ease-in-out infinite}
+[data-scene="ps-76"].s3 .s76-chip{transform-box:fill-box;transform-origin:center;animation:s76pop .45s ease both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">波的干涉：相干波叠加形成稳定的加强与减弱</text>
+
+<!-- 第一步：相干条件 -->
+<g class="s76-step s76-step1" data-zone="1">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">两列相干波叠加，才能形成稳定的干涉图样</text>
+
+  <rect x="55" y="100" width="565" height="345" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <defs>
+    <clipPath id="s76clip"><rect x="65" y="110" width="545" height="325"/></clipPath>
+  </defs>
+  <g clip-path="url(#s76clip)">
+    <g class="s76-rings" fill="none" stroke="#1d4ed8" stroke-width="2" opacity=".65">
+      <circle cx="250" cy="410" r="55"/><circle cx="250" cy="410" r="105"/>
+      <circle cx="250" cy="410" r="155"/><circle cx="250" cy="410" r="205"/>
+    </g>
+    <g class="s76-rings" fill="none" stroke="#d97706" stroke-width="2" opacity=".65">
+      <circle cx="430" cy="410" r="55"/><circle cx="430" cy="410" r="105"/>
+      <circle cx="430" cy="410" r="155"/><circle cx="430" cy="410" r="205"/>
+    </g>
+  </g>
+  <circle class="s76-src" cx="250" cy="410" r="9" fill="#1d4ed8"/>
+  <circle class="s76-src" cx="430" cy="410" r="9" fill="#d97706"/>
+  <text x="250" y="440" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">S1</text>
+  <text x="430" y="440" font-size="12.5" font-weight="800" fill="#92400e" text-anchor="middle">S2</text>
+  <text x="340" y="160" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">两列波在同一区域叠加</text>
+  <text x="340" y="184" font-size="11.5" fill="#475569" text-anchor="middle">波纹交叠的区域出现稳定的强弱分布</text>
+
+  <rect x="640" y="100" width="200" height="345" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="740" y="128" font-size="14" font-weight="900" fill="#1e3a8a" text-anchor="middle">相干条件</text>
+  <g>
+    <circle cx="667" cy="172" r="11" fill="#1d4ed8"/><text x="667" y="176" font-size="12" font-weight="900" fill="#ffffff" text-anchor="middle">1</text>
+    <text x="688" y="177" font-size="12" font-weight="700" fill="#334155">频率相同</text>
+    <circle cx="667" cy="220" r="11" fill="#1d4ed8"/><text x="667" y="224" font-size="12" font-weight="900" fill="#ffffff" text-anchor="middle">2</text>
+    <text x="688" y="225" font-size="12" font-weight="700" fill="#334155">振动方向相同</text>
+    <circle cx="667" cy="268" r="11" fill="#1d4ed8"/><text x="667" y="272" font-size="12" font-weight="900" fill="#ffffff" text-anchor="middle">3</text>
+    <text x="688" y="273" font-size="12" font-weight="700" fill="#334155">相位差恒定</text>
+  </g>
+  <line x1="658" y1="296" x2="822" y2="296" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="740" y="322" font-size="11.5" fill="#475569" text-anchor="middle">这样的两列波</text>
+  <text x="740" y="342" font-size="11.5" fill="#475569" text-anchor="middle">叫做相干波</text>
+  <text x="740" y="376" font-size="11.5" fill="#475569" text-anchor="middle">干涉和衍射一样</text>
+  <text x="740" y="396" font-size="11.5" fill="#475569" text-anchor="middle">都是波特有的现象</text>
+
+  <rect x="70" y="458" width="760" height="32" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.6"/>
+  <text x="450" y="480" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">相干波源产生的波叠加，才形成稳定的干涉图样</text>
+</g>
+
+<!-- 第二步：加强与减弱 -->
+<g class="s76-step s76-step2" data-zone="2">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">路程差 Δr = nλ 时加强，等于半波长奇数倍时减弱</text>
+
+  <rect x="50" y="100" width="430" height="345" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="265" y="128" font-size="14" font-weight="900" fill="#1e3a8a" text-anchor="middle">路程差决定强弱</text>
+  <line class="s76-line" x1="300" y1="170" x2="150" y2="400" stroke="#1d4ed8" stroke-width="2.4"/>
+  <line class="s76-line s76-line2" x1="300" y1="170" x2="350" y2="400" stroke="#d97706" stroke-width="2.4"/>
+  <line x1="171" y1="367" x2="150" y2="400" stroke="#dc2626" stroke-width="5" stroke-linecap="round"/>
+  <path d="M171 367 A235 235 0 0 0 350 400" fill="none" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="6 5"/>
+  <circle cx="150" cy="400" r="8" fill="#1d4ed8"/>
+  <circle cx="350" cy="400" r="8" fill="#d97706"/>
+  <circle cx="300" cy="170" r="7" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+  <text x="300" y="156" font-size="12.5" font-weight="900" fill="#b91c1c" text-anchor="middle">P</text>
+  <text x="150" y="426" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">S1</text>
+  <text x="350" y="426" font-size="12" font-weight="800" fill="#92400e" text-anchor="middle">S2</text>
+  <text x="204" y="282" font-size="12" font-weight="800" fill="#1e40af">r1</text>
+  <text x="338" y="286" font-size="12" font-weight="800" fill="#92400e">r2</text>
+  <text x="132" y="392" font-size="12" font-weight="900" fill="#b91c1c" text-anchor="end">Δr</text>
+  <text x="265" y="435" font-size="11.5" fill="#475569" text-anchor="middle">P 到两波源的路程差 Δr = r2 − r1</text>
+
+  <rect x="500" y="100" width="340" height="160" rx="14" fill="#ffffff" stroke="#bbf7d0" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="670" y="126" font-size="13.5" font-weight="900" fill="#047857" text-anchor="middle">振动加强</text>
+  <line x1="520" y1="190" x2="820" y2="190" stroke="#e2e8f0" stroke-width="1.2"/>
+  <path class="s76-w1" d="M520 190 Q545 176 570 190 Q595 204 620 190 Q645 176 670 190 Q695 204 720 190 Q745 176 770 190 Q795 204 820 190" fill="none" stroke="#1d4ed8" stroke-width="2.2"/>
+  <path class="s76-w2" d="M520 190 Q545 176 570 190 Q595 204 620 190 Q645 176 670 190 Q695 204 720 190 Q745 176 770 190 Q795 204 820 190" fill="none" stroke="#f59e0b" stroke-width="2.2" stroke-dasharray="5 4"/>
+  <path class="s76-res" d="M520 190 Q545 162 570 190 Q595 218 620 190 Q645 162 670 190 Q695 218 720 190 Q745 162 770 190 Q795 218 820 190" fill="none" stroke="#059669" stroke-width="3.4"/>
+  <text x="670" y="244" font-size="12.5" font-weight="800" fill="#047857" text-anchor="middle">Δr = nλ（n = 0,1,2…）</text>
+
+  <rect x="500" y="280" width="340" height="165" rx="14" fill="#ffffff" stroke="#fecaca" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="670" y="306" font-size="13.5" font-weight="900" fill="#b91c1c" text-anchor="middle">振动减弱</text>
+  <line x1="520" y1="370" x2="820" y2="370" stroke="#e2e8f0" stroke-width="1.2"/>
+  <path class="s76-w1" d="M520 370 Q545 356 570 370 Q595 384 620 370 Q645 356 670 370 Q695 384 720 370 Q745 356 770 370 Q795 384 820 370" fill="none" stroke="#1d4ed8" stroke-width="2.2"/>
+  <path class="s76-w2" d="M520 370 Q545 384 570 370 Q595 356 620 370 Q645 384 670 370 Q695 356 720 370 Q745 384 770 370 Q795 356 820 370" fill="none" stroke="#f59e0b" stroke-width="2.2" stroke-dasharray="5 4"/>
+  <line class="s76-res" x1="520" y1="370" x2="820" y2="370" stroke="#dc2626" stroke-width="3.4"/>
+  <text x="670" y="425" font-size="12.5" font-weight="800" fill="#b91c1c" text-anchor="middle">Δr = (2n+1)λ/2</text>
+
+  <rect x="70" y="458" width="760" height="32" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.6"/>
+  <text x="450" y="480" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">加强点振幅最大、减弱点振幅最小，位置固定不变</text>
+</g>
+
+<!-- 第三步：干涉图样 -->
+<g class="s76-step s76-step3" data-zone="3">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">干涉图样：加强区与减弱区相互间隔、位置稳定</text>
+
+  <rect x="50" y="100" width="800" height="350" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <g class="s76-pattern" fill="none" stroke="#1d4ed8" stroke-width="2.6" opacity=".8">
+    <path d="M450 415 V135"/>
+    <path d="M390 415 C370 340 345 250 330 135"/>
+    <path d="M510 415 C530 340 555 250 570 135"/>
+    <path d="M390 415 C310 360 250 280 200 150"/>
+    <path d="M510 415 C590 360 650 280 700 150"/>
+    <path d="M390 415 C300 380 210 325 140 240"/>
+    <path d="M510 415 C600 380 690 325 760 240"/>
+  </g>
+  <g class="s76-pattern" fill="none" stroke="#dc2626" stroke-width="2.2" stroke-dasharray="8 6" opacity=".75">
+    <path d="M390 415 C410 330 425 240 430 135"/>
+    <path d="M510 415 C490 330 475 240 470 135"/>
+    <path d="M390 415 C340 350 300 260 270 135"/>
+    <path d="M510 415 C560 350 600 260 630 135"/>
+    <path d="M390 415 C280 380 190 320 120 230"/>
+    <path d="M510 415 C620 380 710 320 780 230"/>
+  </g>
+  <circle cx="390" cy="415" r="8" fill="#1d4ed8"/>
+  <circle cx="510" cy="415" r="8" fill="#d97706"/>
+  <text x="390" y="440" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">S1</text>
+  <text x="510" y="440" font-size="12" font-weight="800" fill="#92400e" text-anchor="middle">S2</text>
+  <g class="s76-chip">
+    <rect x="65" y="115" width="165" height="32" rx="9" fill="#ffffff" stroke="#fecaca" stroke-width="1.6"/>
+    <line x1="78" y1="131" x2="108" y2="131" stroke="#dc2626" stroke-width="2.2" stroke-dasharray="7 5"/>
+    <text x="118" y="136" font-size="11.5" font-weight="800" fill="#b91c1c">减弱线</text>
+    <rect x="670" y="115" width="165" height="32" rx="9" fill="#ffffff" stroke="#bfdbfe" stroke-width="1.6"/>
+    <line x1="683" y1="131" x2="713" y2="131" stroke="#1d4ed8" stroke-width="2.6"/>
+    <text x="723" y="136" font-size="11.5" font-weight="800" fill="#1e3a8a">加强线</text>
+  </g>
+  <text x="450" y="168" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle" paint-order="stroke" stroke="#ffffff" stroke-width="5">实线：加强　虚线：减弱</text>
+  <text x="450" y="390" font-size="11.5" fill="#475569" text-anchor="middle" paint-order="stroke" stroke="#ffffff" stroke-width="5">加强区与减弱区相间排列，图样稳定不随时间改变</text>
+
+  <rect x="70" y="462" width="760" height="32" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.6"/>
+  <text x="450" y="484" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">稳定图样中，加强区与减弱区的位置固定不变</text>
+</g>
+</svg>

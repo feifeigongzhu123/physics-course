@@ -1,0 +1,215 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="光的干涉：相干光条件、路程差决定明暗条纹、薄膜干涉应用">
+<style>
+[data-scene="ps-80"] .s80-s1,[data-scene="ps-80"] .s80-s2,[data-scene="ps-80"] .s80-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="ps-80"].s1 .s80-s1,[data-scene="ps-80"].s2 .s80-s2,[data-scene="ps-80"].s3 .s80-s3{opacity:1;visibility:visible}
+@keyframes s80pulse{0%,100%{opacity:.4}50%{opacity:.95}}
+@keyframes s80pop{0%{transform:scale(.86);opacity:0}70%{transform:scale(1.05);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s80draw{to{stroke-dashoffset:0}}
+@keyframes s80flow{to{stroke-dashoffset:-36}}
+@keyframes s80blink{0%,100%{opacity:1}50%{opacity:.4}}
+[data-scene="ps-80"].s1 .s80-wave{animation:s80pulse 2.6s ease-in-out infinite}
+[data-scene="ps-80"].s1 .s80-w2{animation-delay:.8s}
+[data-scene="ps-80"].s1 .s80-src{transform-box:fill-box;transform-origin:center;animation:s80pop .55s ease both}
+[data-scene="ps-80"].s1 .s80-cond{transform-box:fill-box;transform-origin:center;animation:s80pop .5s ease both}
+[data-scene="ps-80"].s1 .s80-cond2{animation-delay:.15s}
+[data-scene="ps-80"].s1 .s80-cond3{animation-delay:.3s}
+[data-scene="ps-80"].s2 .s80-ray{stroke-dasharray:320;stroke-dashoffset:320;animation:s80draw 1s ease both}
+[data-scene="ps-80"].s2 .s80-ray2{animation-delay:.3s}
+[data-scene="ps-80"].s2 .s80-delta{animation:s80blink 1.8s ease-in-out infinite}
+[data-scene="ps-80"].s2 .s80-band{transform-box:fill-box;transform-origin:center;animation:s80pop .5s ease both}
+[data-scene="ps-80"].s2 .s80-band2{animation-delay:.1s}
+[data-scene="ps-80"].s2 .s80-band3{animation-delay:.2s}
+[data-scene="ps-80"].s3 .s80-ray{stroke-dasharray:9 7;animation:s80flow 1.3s linear infinite}
+[data-scene="ps-80"].s3 .s80-film{animation:s80pulse 3s ease-in-out infinite}
+[data-scene="ps-80"].s3 .s80-card{transform-box:fill-box;transform-origin:center;animation:s80pop .55s ease both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">光的干涉：相干光叠加出现明暗条纹</text>
+
+<!-- 第一步：相干光 -->
+<g class="s80-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">频率相同、相位差恒定、振动方向相同的光，才能产生稳定的干涉</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="226" height="28" rx="14" fill="#e8effc"/>
+  <text x="169" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">两列相干光叠加</text>
+
+  <g fill="none" stroke="#3b82f6" stroke-width="2.2">
+    <path class="s80-wave" d="M240 180 A30 30 0 0 1 240 240"/>
+    <path class="s80-wave" d="M240 155 A55 55 0 0 1 240 265"/>
+    <path class="s80-wave" d="M240 130 A80 80 0 0 1 240 290"/>
+    <path class="s80-wave" d="M240 105 A105 105 0 0 1 240 315"/>
+  </g>
+  <g fill="none" stroke="#ef4444" stroke-width="2.2" opacity=".8">
+    <path class="s80-wave s80-w2" d="M240 300 A30 30 0 0 1 240 360"/>
+    <path class="s80-wave s80-w2" d="M240 275 A55 55 0 0 1 240 385"/>
+    <path class="s80-wave s80-w2" d="M240 250 A80 80 0 0 1 240 410"/>
+    <path class="s80-wave s80-w2" d="M240 225 A105 105 0 0 1 240 435"/>
+  </g>
+
+  <circle class="s80-src" cx="240" cy="210" r="7" fill="#1d4ed8"/>
+  <circle class="s80-src" cx="240" cy="330" r="7" fill="#dc2626"/>
+  <text x="224" y="215" font-size="13" font-weight="900" fill="#1d4ed8" text-anchor="end">S₁</text>
+  <text x="224" y="335" font-size="13" font-weight="900" fill="#b91c1c" text-anchor="end">S₂</text>
+
+  <rect x="468" y="150" width="16" height="240" rx="3" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <g fill="#fbbf24">
+    <rect x="470" y="168" width="12" height="14"/>
+    <rect x="470" y="208" width="12" height="14"/>
+    <rect x="470" y="248" width="12" height="14"/>
+    <rect x="470" y="288" width="12" height="14"/>
+    <rect x="470" y="328" width="12" height="14"/>
+    <rect x="470" y="368" width="12" height="14"/>
+  </g>
+  <text x="476" y="142" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">屏</text>
+  <text x="330" y="412" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">两列波在重叠区叠加，出现明暗相间的条纹</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="694" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">相干条件</text>
+
+  <g class="s80-cond">
+    <circle cx="612" cy="172" r="11" fill="#dcfce7"/>
+    <text x="612" y="177" font-size="12" font-weight="900" fill="#15803d" text-anchor="middle">✓</text>
+    <text x="634" y="177" font-size="12" font-weight="800" fill="#334155">频率相同</text>
+  </g>
+  <g class="s80-cond s80-cond2">
+    <circle cx="612" cy="210" r="11" fill="#dcfce7"/>
+    <text x="612" y="215" font-size="12" font-weight="900" fill="#15803d" text-anchor="middle">✓</text>
+    <text x="634" y="215" font-size="12" font-weight="800" fill="#334155">相位差恒定</text>
+  </g>
+  <g class="s80-cond s80-cond3">
+    <circle cx="612" cy="248" r="11" fill="#dcfce7"/>
+    <text x="612" y="253" font-size="12" font-weight="900" fill="#15803d" text-anchor="middle">✓</text>
+    <text x="634" y="253" font-size="12" font-weight="800" fill="#334155">振动方向相同</text>
+  </g>
+
+  <rect x="596" y="276" width="248" height="64" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="720" y="298" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">普通光源发光是随机的</text>
+  <text x="720" y="318" font-size="11" fill="#64748b" text-anchor="middle">不同原子发出的光不能稳定干涉</text>
+
+  <rect x="596" y="350" width="248" height="62" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="372" font-size="11.5" font-weight="900" fill="#b45309" text-anchor="middle">办法：把同一束光分成两束</text>
+  <text x="720" y="394" font-size="11" fill="#92400e" text-anchor="middle">例如双缝、薄膜前后表面的反射</text>
+</g>
+
+<!-- 第二步：明暗条件 -->
+<g class="s80-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">到两个光源的路程差是波长的整数倍时最亮，是半波长奇数倍时最暗</text>
+
+  <rect x="36" y="100" width="460" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="236" height="28" rx="14" fill="#e8effc"/>
+  <text x="174" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">路程差 Δr</text>
+
+  <line class="s80-ray" x1="120" y1="220" x2="380" y2="180" stroke="#3b82f6" stroke-width="2.4"/>
+  <line class="s80-ray s80-ray2" x1="120" y1="330" x2="380" y2="180" stroke="#ef4444" stroke-width="2.4"/>
+  <line class="s80-delta" x1="348" y1="198" x2="380" y2="180" stroke="#059669" stroke-width="5" stroke-linecap="round"/>
+
+  <circle cx="120" cy="220" r="7" fill="#1d4ed8"/>
+  <circle cx="120" cy="330" r="7" fill="#dc2626"/>
+  <circle cx="380" cy="180" r="6" fill="#334155"/>
+  <text x="104" y="225" font-size="13" font-weight="900" fill="#1d4ed8" text-anchor="end">S₁</text>
+  <text x="104" y="335" font-size="13" font-weight="900" fill="#b91c1c" text-anchor="end">S₂</text>
+  <text x="394" y="176" font-size="13" font-weight="900" fill="#334155">P</text>
+  <text x="372" y="208" font-size="12" font-weight="900" fill="#047857">Δr</text>
+
+  <text x="240" y="380" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">Δr = |S₂P − S₁P|</text>
+  <text x="240" y="406" font-size="11" fill="#64748b" text-anchor="middle">P 到两光源的距离之差，决定它是亮点还是暗点</text>
+
+  <rect x="516" y="100" width="348" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="536" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="634" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">明暗条纹条件</text>
+
+  <g class="s80-band">
+    <rect x="536" y="160" width="308" height="66" rx="10" fill="#fef9c3" stroke="#facc15" stroke-width="1.5"/>
+    <text x="690" y="186" font-size="13" font-weight="900" fill="#854d0e" text-anchor="middle">亮条纹：Δr = kλ</text>
+    <text x="690" y="208" font-size="11" fill="#92400e" text-anchor="middle">k = 0,1,2…（波长整数倍）</text>
+  </g>
+  <g class="s80-band s80-band2">
+    <rect x="536" y="238" width="308" height="66" rx="10" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5"/>
+    <text x="690" y="264" font-size="13" font-weight="900" fill="#334155" text-anchor="middle">暗条纹：Δr = (2k+1)λ / 2</text>
+    <text x="690" y="286" font-size="11" fill="#475569" text-anchor="middle">k = 0,1,2…（半波长奇数倍）</text>
+  </g>
+
+  <g class="s80-band s80-band3">
+    <rect x="536" y="320" width="308" height="44" rx="6" fill="#1e293b"/>
+    <g fill="#fbbf24">
+      <rect x="548" y="331" width="22" height="22"/>
+      <rect x="588" y="331" width="22" height="22"/>
+      <rect x="628" y="331" width="22" height="22"/>
+      <rect x="668" y="331" width="22" height="22"/>
+      <rect x="708" y="331" width="22" height="22"/>
+      <rect x="748" y="331" width="22" height="22"/>
+      <rect x="788" y="331" width="22" height="22"/>
+    </g>
+  </g>
+  <text x="690" y="388" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">屏上出现等间距的明暗相间条纹</text>
+  <text x="690" y="410" font-size="11" fill="#64748b" text-anchor="middle">亮纹处振动加强，暗纹处振动减弱</text>
+</g>
+
+<!-- 第三步：薄膜干涉 -->
+<g class="s80-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">薄膜前后两个表面的反射光叠加，形成彩色条纹</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="236" height="28" rx="14" fill="#e8effc"/>
+  <text x="174" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">薄膜干涉的形成</text>
+
+  <rect x="80" y="330" width="420" height="44" rx="6" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.5"/>
+  <polygon class="s80-film" points="80,238 500,270 500,302 80,330" fill="#fde68a" fill-opacity=".55" stroke="#d97706" stroke-width="2"/>
+
+  <line class="s80-ray" x1="205" y1="150" x2="250" y2="251" stroke="#d97706" stroke-width="2.8" marker-end="url(#arrAmber)"/>
+  <line class="s80-ray" x1="250" y1="251" x2="320" y2="184" stroke="#dc2626" stroke-width="2.8" marker-end="url(#arrRed)"/>
+  <line class="s80-ray" x1="250" y1="251" x2="270" y2="317" stroke="#d97706" stroke-width="2.4"/>
+  <line class="s80-ray" x1="270" y1="317" x2="326" y2="256" stroke="#dc2626" stroke-width="2.8"/>
+  <line class="s80-ray" x1="326" y1="256" x2="370" y2="205" stroke="#dc2626" stroke-width="2.8" marker-end="url(#arrRed)"/>
+
+  <circle cx="250" cy="251" r="4.5" fill="#b45309"/>
+  <circle cx="270" cy="317" r="4.5" fill="#b45309"/>
+  <text x="196" y="142" font-size="11.5" font-weight="800" fill="#b45309">入射光</text>
+  <text x="330" y="176" font-size="11.5" font-weight="800" fill="#b91c1c">① 上表面反射</text>
+  <text x="380" y="248" font-size="11.5" font-weight="800" fill="#b91c1c">② 下表面反射</text>
+  <text x="438" y="292" font-size="11.5" font-weight="800" fill="#92400e">薄膜</text>
+  <text x="448" y="360" font-size="11" fill="#475569" text-anchor="end">玻璃基底</text>
+  <text x="260" y="386" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">两束反射光叠加，路程差不同则明暗不同</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="694" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">薄膜干涉的应用</text>
+
+  <g class="s80-card">
+    <rect x="596" y="160" width="248" height="52" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="608" y="176" width="20" height="20" rx="10" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
+    <text x="638" y="182" font-size="12" font-weight="800" fill="#1e3a8a">肥皂膜、油膜</text>
+    <text x="638" y="200" font-size="11" fill="#475569">阳光下出现彩色条纹</text>
+  </g>
+  <g class="s80-card">
+    <rect x="596" y="220" width="248" height="52" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="608" y="236" width="20" height="20" rx="4" fill="#93c5fd"/>
+    <text x="638" y="242" font-size="12" font-weight="800" fill="#1e3a8a">检查平面平整度</text>
+    <text x="638" y="260" font-size="11" fill="#475569">条纹弯曲处说明表面不平</text>
+  </g>
+  <g class="s80-card">
+    <rect x="596" y="280" width="248" height="52" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="608" y="296" width="20" height="20" rx="4" fill="#a7f3d0"/>
+    <text x="638" y="302" font-size="12" font-weight="800" fill="#1e3a8a">镜头增透膜</text>
+    <text x="638" y="320" font-size="11" fill="#475569">减弱反射光，增加透射光</text>
+  </g>
+  <g class="s80-card">
+    <rect x="596" y="340" width="248" height="52" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="608" y="356" width="20" height="20" rx="4" fill="#c4b5fd"/>
+    <text x="638" y="362" font-size="12" font-weight="800" fill="#1e3a8a">增反膜</text>
+    <text x="638" y="380" font-size="11" fill="#475569">多层膜提高反射率</text>
+  </g>
+
+  <text x="694" y="416" font-size="11" fill="#64748b" text-anchor="middle">膜厚不均匀 → 各处路程差不同 → 彩色条纹</text>
+</g>
+
+<rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+<text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">相干光叠加：路程差为 kλ 时亮，为半波长奇数倍时暗</text>
+</svg>

@@ -1,0 +1,199 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="热力学第二定律：克劳修斯表述、开尔文表述、宏观过程的方向性与熵增原理">
+<style>
+[data-scene="ps-114"] .s114-s1,[data-scene="ps-114"] .s114-s2,[data-scene="ps-114"] .s114-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="ps-114"].s1 .s114-s1,[data-scene="ps-114"].s2 .s114-s2,[data-scene="ps-114"].s3 .s114-s3{opacity:1;visibility:visible}
+@keyframes s114fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+@keyframes s114pop{0%{transform:scale(.88);opacity:0}70%{transform:scale(1.04);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s114pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes s114flow{to{stroke-dashoffset:-36}}
+@keyframes s114drift{0%{transform:translateX(0)}100%{transform:translateX(30px)}}
+[data-scene="ps-114"].s1 .s114-hot{animation:s114pulse 2.2s ease-in-out infinite}
+[data-scene="ps-114"].s1 .s114-flow{stroke-dasharray:8 6;animation:s114flow 1s linear infinite}
+[data-scene="ps-114"].s1 .s114-x{transform-box:fill-box;transform-origin:center;animation:s114pop .5s ease .7s both}
+[data-scene="ps-114"].s1 .s114-card{animation:s114fade .5s ease .5s both}
+[data-scene="ps-114"].s2 .s114-machine{transform-box:fill-box;transform-origin:center;animation:s114pop .55s ease .3s both}
+[data-scene="ps-114"].s2 .s114-flow{stroke-dasharray:8 6;animation:s114flow 1s linear infinite}
+[data-scene="ps-114"].s2 .s114-card{animation:s114fade .5s ease .5s both}
+[data-scene="ps-114"].s3 .s114-gas{transform-box:fill-box;animation:s114drift 2.8s ease-in-out 0s infinite alternate}
+[data-scene="ps-114"].s3 .s114-flow{stroke-dasharray:8 6;animation:s114flow 1s linear infinite}
+[data-scene="ps-114"].s3 .s114-card{animation:s114fade .5s ease .4s both}
+[data-scene="ps-114"].s3 .s114-ds{animation:s114pulse 2.2s ease-in-out infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">热力学第二定律：宏观过程的方向性</text>
+
+<!-- 第一步：克劳修斯表述 -->
+<g class="s114-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">克劳修斯表述：热量不能自发地从低温物体传到高温物体</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="250" height="28" rx="14" fill="#e8effc"/>
+  <text x="181" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">热传导的方向</text>
+
+  <g class="s114-hot">
+    <rect x="130" y="150" width="332" height="64" rx="10" fill="#fef2f2" stroke="#fca5a5" stroke-width="2"/>
+    <text x="296" y="180" font-size="13" font-weight="900" fill="#b91c1c" text-anchor="middle">高温物体 T₁</text>
+    <text x="296" y="202" font-size="11" fill="#991b1b" text-anchor="middle">温度高，内能大</text>
+  </g>
+
+  <rect x="130" y="330" width="332" height="64" rx="10" fill="#e8effc" stroke="#93c5fd" stroke-width="2"/>
+  <text x="296" y="360" font-size="13" font-weight="900" fill="#1e40af" text-anchor="middle">低温物体 T₂</text>
+  <text x="296" y="382" font-size="11" fill="#1e3a8a" text-anchor="middle">温度低，内能小</text>
+
+  <line class="s114-flow" x1="250" y1="220" x2="250" y2="324" stroke="#059669" stroke-width="3" marker-end="url(#arrGreen)"/>
+  <text x="264" y="276" font-size="11.5" font-weight="800" fill="#047857">可以自发</text>
+
+  <line x1="360" y1="324" x2="360" y2="220" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#arrRed)"/>
+  <g class="s114-x">
+    <line x1="350" y1="264" x2="370" y2="284" stroke="#dc2626" stroke-width="3"/>
+    <line x1="370" y1="264" x2="350" y2="284" stroke="#dc2626" stroke-width="3"/>
+  </g>
+  <text x="380" y="280" font-size="11.5" font-weight="800" fill="#b91c1c">不能自发</text>
+
+  <text x="296" y="424" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">热量的自发传递方向：高温 → 低温</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">克劳修斯表述</text>
+
+  <g class="s114-card">
+    <rect x="590" y="158" width="260" height="100" rx="10" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+    <text x="720" y="192" font-size="12.5" font-weight="900" fill="#b91c1c" text-anchor="middle">热量不能自发地从</text>
+    <text x="720" y="220" font-size="12.5" font-weight="900" fill="#b91c1c" text-anchor="middle">低温物体传到高温物体</text>
+  </g>
+
+  <text x="596" y="292" font-size="12" font-weight="900" fill="#1e3a8a">关键词：自发</text>
+  <text x="596" y="318" font-size="11.5" fill="#334155">冰箱能把热量从冷藏室搬到室外</text>
+  <text x="596" y="342" font-size="11.5" fill="#334155">但必须消耗电能，引起其他变化</text>
+  <text x="596" y="366" font-size="11.5" font-weight="800" fill="#1d4ed8">所以并不违反热力学第二定律</text>
+
+  <rect x="590" y="386" width="260" height="34" rx="8" fill="#e8effc"/>
+  <text x="720" y="408" font-size="11" font-weight="800" fill="#1e3a8a" text-anchor="middle">“自发”是判断的关键</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">克劳修斯表述：热量不能自发地从低温物体传到高温物体</text>
+</g>
+
+<!-- 第二步：开尔文表述 -->
+<g class="s114-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">开尔文表述：不可能从单一热源吸热全部做功而不引起其他变化</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="250" height="28" rx="14" fill="#e8effc"/>
+  <text x="181" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">热机的效率</text>
+
+  <rect x="150" y="150" width="292" height="58" rx="10" fill="#fef2f2" stroke="#fca5a5" stroke-width="2"/>
+  <text x="296" y="176" font-size="13" font-weight="900" fill="#b91c1c" text-anchor="middle">单一热源</text>
+  <text x="296" y="196" font-size="11" fill="#991b1b" text-anchor="middle">提供热量 Q</text>
+
+  <line class="s114-flow" x1="286" y1="210" x2="286" y2="236" stroke="#d97706" stroke-width="3" marker-end="url(#arrAmber)"/>
+  <text x="298" y="228" font-size="11.5" font-weight="800" fill="#b45309">Q</text>
+
+  <g class="s114-machine">
+    <rect x="206" y="240" width="160" height="70" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+    <text x="286" y="268" font-size="13" font-weight="900" fill="#b45309" text-anchor="middle">热机</text>
+    <text x="286" y="292" font-size="11" fill="#92400e" text-anchor="middle">工作物质</text>
+  </g>
+
+  <line class="s114-flow" x1="368" y1="262" x2="470" y2="262" stroke="#1d4ed8" stroke-width="3" marker-end="url(#arrBlue)"/>
+  <text x="420" y="248" font-size="11.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">对外做功 W</text>
+  <text x="432" y="286" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">全部变成功？不可能</text>
+
+  <line x1="286" y1="312" x2="286" y2="362" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#arrRed)"/>
+  <text x="300" y="342" font-size="11" fill="#b91c1c">必须放出的热量 Q′</text>
+
+  <text x="296" y="394" font-size="12" font-weight="900" fill="#1e3a8a" text-anchor="middle">热机效率 η = W / Q &lt; 100%</text>
+  <rect x="100" y="408" width="392" height="14" rx="7" fill="#e2e8f0"/>
+  <rect x="100" y="408" width="286" height="14" rx="7" fill="#f59e0b"/>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">开尔文表述</text>
+
+  <g class="s114-card">
+    <rect x="590" y="158" width="260" height="112" rx="10" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+    <text x="720" y="186" font-size="12" font-weight="900" fill="#b91c1c" text-anchor="middle">不可能从单一热源吸收热量</text>
+    <text x="720" y="212" font-size="12" font-weight="900" fill="#b91c1c" text-anchor="middle">把它全部用来做功</text>
+    <text x="720" y="238" font-size="12" font-weight="900" fill="#b91c1c" text-anchor="middle">而不引起其他变化</text>
+  </g>
+
+  <rect x="590" y="286" width="260" height="64" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="310" font-size="12" font-weight="900" fill="#b45309" text-anchor="middle">第二类永动机</text>
+  <text x="720" y="332" font-size="11" fill="#92400e" text-anchor="middle">效率 100% 的热机，不可能制成</text>
+
+  <text x="596" y="376" font-size="11.5" fill="#334155">它不违背能量守恒定律</text>
+  <text x="596" y="400" font-size="11.5" fill="#334155">但违背热力学第二定律</text>
+  <text x="596" y="424" font-size="11.5" font-weight="800" fill="#1d4ed8">所以第二类永动机同样不可能</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">开尔文表述：不可能从单一热源吸热全部做功而不引起其他变化</text>
+</g>
+
+<!-- 第三步：方向性与熵 -->
+<g class="s114-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">方向性：自发过程有方向，孤立系统的熵不会减少</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="250" height="28" rx="14" fill="#e8effc"/>
+  <text x="181" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">气体向真空扩散</text>
+
+  <rect x="90" y="150" width="412" height="126" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="2"/>
+  <line x1="296" y1="150" x2="296" y2="276" stroke="#64748b" stroke-width="2"/>
+  <rect x="288" y="198" width="16" height="26" rx="3" fill="#475569"/>
+  <text x="120" y="170" font-size="11" font-weight="800" fill="#1e40af">气体</text>
+  <text x="380" y="170" font-size="11" font-weight="800" fill="#64748b">真空</text>
+
+  <g class="s114-gas" fill="#93c5fd">
+    <circle cx="125" cy="200" r="6"/>
+    <circle cx="160" cy="188" r="6"/>
+    <circle cx="185" cy="220" r="6"/>
+    <circle cx="140" cy="245" r="6"/>
+    <circle cx="205" cy="190" r="6"/>
+    <circle cx="225" cy="230" r="6"/>
+    <circle cx="170" cy="255" r="6"/>
+    <circle cx="245" cy="200" r="6"/>
+    <circle cx="210" cy="255" r="6"/>
+    <circle cx="255" cy="240" r="6"/>
+  </g>
+
+  <line class="s114-flow" x1="150" y1="304" x2="440" y2="304" stroke="#059669" stroke-width="2.5" marker-end="url(#arrGreen)"/>
+  <text x="295" y="296" font-size="11.5" font-weight="800" fill="#047857" text-anchor="middle">可以自发扩散</text>
+
+  <line x1="440" y1="330" x2="150" y2="330" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#arrRed)"/>
+  <g>
+    <line x1="285" y1="320" x2="305" y2="340" stroke="#dc2626" stroke-width="3"/>
+    <line x1="305" y1="320" x2="285" y2="340" stroke="#dc2626" stroke-width="3"/>
+  </g>
+  <text x="295" y="362" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">不能自发聚回</text>
+
+  <text x="296" y="394" font-size="11.5" fill="#334155" text-anchor="middle">气体向真空扩散可以自发发生</text>
+  <text x="296" y="418" font-size="11.5" fill="#334155" text-anchor="middle">相反过程不会自发发生</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">熵增加原理</text>
+
+  <g class="s114-card">
+    <text x="720" y="180" font-size="11.5" font-weight="800" fill="#64748b" text-anchor="middle">孤立系统</text>
+    <text class="s114-ds" x="720" y="222" font-size="26" font-weight="900" fill="#1d4ed8" text-anchor="middle">ΔS ≥ 0</text>
+    <text x="720" y="250" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">熵不会减少</text>
+  </g>
+
+  <line x1="590" y1="268" x2="834" y2="268" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="596" y="292" font-size="11.5" fill="#334155">熵是系统无序程度的量度</text>
+  <text x="596" y="316" font-size="11.5" fill="#334155">自然过程总是朝着</text>
+  <text x="596" y="338" font-size="11.5" fill="#334155">无序程度增大的方向进行</text>
+  <text x="596" y="362" font-size="11.5" font-weight="800" fill="#1e3a8a">这就是熵增加原理</text>
+
+  <rect x="590" y="378" width="260" height="42" rx="9" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="720" y="404" font-size="11" font-weight="800" fill="#1e3a8a" text-anchor="middle">第二定律揭示宏观过程的方向性</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">一切自发过程都有方向性：孤立系统的熵不会减少</text>
+</g>
+</svg>

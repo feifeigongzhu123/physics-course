@@ -1,0 +1,174 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="电容器的电容：充电与放电、电容的定义式、平行板电容器的决定因素">
+<style>
+[data-scene="ps-47"] .s47-step1,[data-scene="ps-47"] .s47-step2,[data-scene="ps-47"] .s47-step3{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="ps-47"].s1 .s47-step1,[data-scene="ps-47"].s2 .s47-step2,[data-scene="ps-47"].s3 .s47-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes s47flow{to{stroke-dashoffset:-44}}
+@keyframes s47pop{0%{transform:scale(.9);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes s47glow{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes s47draw{to{stroke-dashoffset:0}}
+[data-scene="ps-47"].s1 .s47-flow{stroke-dasharray:11 11;animation:s47flow 1.2s linear infinite}
+[data-scene="ps-47"].s1 .s47-card{transform-box:fill-box;transform-origin:center;animation:s47pop .5s ease both}
+[data-scene="ps-47"].s1 .s47-charge{animation:s47glow 2s ease-in-out infinite}
+[data-scene="ps-47"].s2 .s47-card{transform-box:fill-box;transform-origin:center;animation:s47pop .5s ease both}
+[data-scene="ps-47"].s2 .s47-line{stroke-dasharray:320;stroke-dashoffset:320;animation:s47draw .9s ease .3s forwards}
+[data-scene="ps-47"].s3 .s47-card1{transform-box:fill-box;transform-origin:center;animation:s47pop .45s ease both}
+[data-scene="ps-47"].s3 .s47-card2{transform-box:fill-box;transform-origin:center;animation:s47pop .45s ease .12s both}
+[data-scene="ps-47"].s3 .s47-card3{transform-box:fill-box;transform-origin:center;animation:s47pop .45s ease .24s both}
+[data-scene="ps-47"].s3 .s47-dielectric{transform-box:fill-box;transform-origin:center;animation:s47pop .6s ease .2s both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="532" width="900" height="88" fill="url(#gBench)"/>
+<line x1="0" y1="532" x2="900" y2="532" stroke="#cbd5e1" stroke-width="2.5"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">电容器的电容：充放电、定义式与平行板电容</text>
+
+<!-- 第一步：充电与放电 -->
+<g class="s47-step1" data-zone="1">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 1 步 · 充电与放电：电容器怎样储存电荷</text>
+
+  <g class="s47-card s47-cardA">
+    <rect x="50" y="104" width="390" height="348" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="72" y="130" font-size="13" font-weight="800" fill="#1e3a8a">① 充电：电源给电容器储电</text>
+
+    <path class="s47-flow" d="M90 170 H345 V390 H90 Z" fill="none" stroke="#1d4ed8" stroke-width="7" opacity=".22"/>
+    <path d="M90 170 H220 M262 170 H345 M345 170 V252 M345 276 V390 M90 390 H345 M90 170 V390" fill="none" stroke="#334155" stroke-width="4" stroke-linejoin="round"/>
+    <line x1="220" y1="170" x2="258" y2="152" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="220" cy="170" r="4" fill="#334155"/>
+    <circle cx="262" cy="170" r="4" fill="#334155"/>
+    <text x="238" y="146" font-size="12" font-weight="800" fill="#475569" text-anchor="middle">S</text>
+
+    <line class="s47-charge" x1="317" y1="252" x2="373" y2="252" stroke="#dc2626" stroke-width="5" stroke-linecap="round"/>
+    <line class="s47-charge" x1="317" y1="276" x2="373" y2="276" stroke="#1d4ed8" stroke-width="5" stroke-linecap="round"/>
+    <text x="388" y="260" font-size="16" font-weight="900" fill="#dc2626">+</text>
+    <text x="388" y="292" font-size="18" font-weight="900" fill="#1d4ed8">−</text>
+    <text x="330" y="320" font-size="11.5" font-weight="800" fill="#475569" text-anchor="end">电容器 C</text>
+
+    <line x1="250" y1="372" x2="250" y2="408" stroke="#334155" stroke-width="5"/>
+    <line x1="266" y1="378" x2="266" y2="402" stroke="#334155" stroke-width="5"/>
+    <text x="258" y="430" font-size="11.5" fill="#64748b" text-anchor="middle">电源</text>
+
+    <polygon points="300,164 312,170 300,176" fill="#1d4ed8"/>
+    <polygon points="339,300 345,312 351,300" fill="#1d4ed8"/>
+    <polygon points="180,384 168,390 180,396" fill="#1d4ed8"/>
+    <polygon points="84,250 90,238 96,250" fill="#1d4ed8"/>
+    <text x="165" y="156" font-size="11.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">充电电流</text>
+    <text x="72" y="444" font-size="11.5" fill="#64748b">充电后两极板带等量异种电荷</text>
+  </g>
+
+  <g class="s47-card s47-cardB">
+    <rect x="460" y="104" width="390" height="348" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="482" y="130" font-size="13" font-weight="800" fill="#1e3a8a">② 放电：电荷中和，释放能量</text>
+
+    <path class="s47-flow" d="M500 170 H780 V390 H500 Z" fill="none" stroke="#1d4ed8" stroke-width="7" opacity=".22"/>
+    <path d="M500 170 H780 V390 H500 V276 M500 252 V170" fill="none" stroke="#334155" stroke-width="4" stroke-linejoin="round"/>
+    <line class="s47-charge" x1="472" y1="252" x2="528" y2="252" stroke="#dc2626" stroke-width="5" stroke-linecap="round"/>
+    <line class="s47-charge" x1="472" y1="276" x2="528" y2="276" stroke="#1d4ed8" stroke-width="5" stroke-linecap="round"/>
+    <text x="545" y="260" font-size="16" font-weight="900" fill="#dc2626">+</text>
+    <text x="545" y="292" font-size="18" font-weight="900" fill="#1d4ed8">−</text>
+    <text x="560" y="330" font-size="11.5" font-weight="800" fill="#475569">电容器</text>
+
+    <circle cx="780" cy="245" r="25" fill="#fef3c7" stroke="#d97706" stroke-width="3"/>
+    <line x1="767" y1="232" x2="793" y2="258" stroke="#d97706" stroke-width="2"/>
+    <line x1="793" y1="232" x2="767" y2="258" stroke="#d97706" stroke-width="2"/>
+    <text x="780" y="292" font-size="11.5" fill="#92400e" text-anchor="middle">用电器</text>
+
+    <polygon points="650,164 662,170 650,176" fill="#1d4ed8"/>
+    <polygon points="774,330 780,342 786,330" fill="#1d4ed8"/>
+    <polygon points="650,384 638,390 650,396" fill="#1d4ed8"/>
+    <polygon points="494,330 500,318 506,330" fill="#1d4ed8"/>
+    <text x="640" y="158" font-size="11.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">放电电流</text>
+    <text x="650" y="215" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">正、负电荷中和</text>
+    <text x="650" y="240" font-size="11" fill="#64748b" text-anchor="middle">电能 → 内能、光能</text>
+    <text x="482" y="444" font-size="11.5" fill="#64748b">放电时电容器相当于临时电源</text>
+  </g>
+
+  <rect x="50" y="468" width="800" height="40" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="493" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">充电储存电荷，放电释放能量：充、放电都是电荷定向移动的过程</text>
+
+  <text x="80" y="576" font-size="12" fill="#64748b">电容器的两个导体叫极板，极板间的绝缘物质叫电介质</text>
+</g>
+
+<!-- 第二步：电容的定义式 -->
+<g class="s47-step2" data-zone="2">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 2 步 · 电容：描述电容器容纳电荷的本领</text>
+
+  <g class="s47-card">
+    <rect x="60" y="104" width="380" height="350" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="250" y="132" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电容的定义式</text>
+    <text x="250" y="200" font-size="30" font-weight="900" fill="#b45309" text-anchor="middle">C = Q / U</text>
+    <line x1="90" y1="226" x2="410" y2="226" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="250" y="254" font-size="12" fill="#334155" text-anchor="middle">C：电容，单位法拉（F）</text>
+    <text x="250" y="280" font-size="12" fill="#334155" text-anchor="middle">Q：一个极板所带电荷量（C）</text>
+    <text x="250" y="306" font-size="12" fill="#334155" text-anchor="middle">U：两极板间电势差（V）</text>
+    <line x1="90" y1="326" x2="410" y2="326" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="250" y="356" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">1 F = 1 C/V</text>
+    <text x="250" y="386" font-size="11.5" fill="#334155" text-anchor="middle">1 μF = 10⁻⁶ F　1 pF = 10⁻¹² F</text>
+    <text x="250" y="424" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">电容由电容器本身决定，与是否带电无关</text>
+  </g>
+
+  <g class="s47-card">
+    <rect x="470" y="104" width="370" height="350" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="655" y="132" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">Q–U 图像：斜率表示电容 C</text>
+    <line x1="530" y1="400" x2="800" y2="400" stroke="#334155" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+    <line x1="530" y1="400" x2="530" y2="180" stroke="#334155" stroke-width="2.5" marker-end="url(#arrBlue)"/>
+    <line class="s47-line" x1="530" y1="400" x2="610" y2="200" stroke="#1d4ed8" stroke-width="3.5"/>
+    <line class="s47-line" x1="530" y1="400" x2="780" y2="240" stroke="#d97706" stroke-width="3.5"/>
+    <text x="618" y="214" font-size="13" font-weight="800" fill="#1d4ed8">C 大</text>
+    <text x="770" y="288" font-size="13" font-weight="800" fill="#b45309">C 小</text>
+    <text x="808" y="422" font-size="13" font-weight="800" fill="#334155" text-anchor="end">U</text>
+    <text x="516" y="174" font-size="13" font-weight="800" fill="#334155" text-anchor="end">Q</text>
+    <text x="518" y="420" font-size="11.5" fill="#64748b">O</text>
+    <text x="655" y="440" font-size="11.5" fill="#64748b" text-anchor="middle">同一电压下，电荷量 Q 越大，电容 C 越大</text>
+  </g>
+
+  <rect x="60" y="468" width="780" height="40" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="493" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">C = Q/U 是定义式，不是决定式：不能用它说 C 与 Q 成正比</text>
+
+  <text x="80" y="576" font-size="12" fill="#64748b">电容越大，同样的电势差下能储存的电荷越多，充放电也越慢</text>
+</g>
+
+<!-- 第三步：平行板电容器的决定因素 -->
+<g class="s47-step3" data-zone="3">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 3 步 · 平行板电容器：C 由什么决定</text>
+
+  <rect x="220" y="92" width="460" height="74" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="450" y="126" font-size="22" font-weight="900" fill="#b45309" text-anchor="middle">C = εrS / (4πkd)</text>
+  <text x="450" y="152" font-size="11.5" fill="#64748b" text-anchor="middle">εr：相对介电常数　k：静电力常量</text>
+
+  <line x1="270" y1="190" x2="630" y2="190" stroke="#475569" stroke-width="2" marker-start="url(#arrBlue)" marker-end="url(#arrBlue)"/>
+  <text x="450" y="184" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">S：两极板正对面积</text>
+  <rect x="250" y="204" width="400" height="12" rx="3" fill="#94a3b8"/>
+  <rect class="s47-dielectric" x="280" y="218" width="340" height="92" fill="#dbeafe" stroke="#60a5fa" stroke-width="2" stroke-dasharray="7 5" opacity=".75"/>
+  <text x="450" y="272" font-size="13" font-weight="800" fill="#1e40af" text-anchor="middle">电介质 εr</text>
+  <rect x="250" y="324" width="400" height="12" rx="3" fill="#94a3b8"/>
+  <line x1="690" y1="210" x2="690" y2="318" stroke="#475569" stroke-width="2" marker-start="url(#arrBlue)" marker-end="url(#arrBlue)"/>
+  <text x="704" y="268" font-size="13" font-weight="800" fill="#1e3a8a">d</text>
+  <text x="450" y="352" font-size="11.5" fill="#64748b" text-anchor="middle">d：两极板间的距离</text>
+
+  <g class="s47-card1">
+    <rect x="50" y="366" width="240" height="86" rx="12" fill="#f0fdf4" stroke="#86efac" stroke-width="2"/>
+    <text x="170" y="396" font-size="14" font-weight="900" fill="#047857" text-anchor="middle">S 增大</text>
+    <text x="170" y="420" font-size="11.5" fill="#334155" text-anchor="middle">正对面积变大</text>
+    <text x="170" y="442" font-size="12" font-weight="800" fill="#047857" text-anchor="middle">C 增大 ↑</text>
+  </g>
+  <g class="s47-card2">
+    <rect x="330" y="366" width="240" height="86" rx="12" fill="#fef2f2" stroke="#fca5a5" stroke-width="2"/>
+    <text x="450" y="396" font-size="14" font-weight="900" fill="#b91c1c" text-anchor="middle">d 增大</text>
+    <text x="450" y="420" font-size="11.5" fill="#334155" text-anchor="middle">板间距离变大</text>
+    <text x="450" y="442" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">C 减小 ↓</text>
+  </g>
+  <g class="s47-card3">
+    <rect x="610" y="366" width="240" height="86" rx="12" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+    <text x="730" y="396" font-size="14" font-weight="900" fill="#1e40af" text-anchor="middle">插入电介质</text>
+    <text x="730" y="420" font-size="11.5" fill="#334155" text-anchor="middle">εr 变大</text>
+    <text x="730" y="442" font-size="12" font-weight="800" fill="#1e40af" text-anchor="middle">C 增大 ↑</text>
+  </g>
+
+  <rect x="50" y="462" width="800" height="40" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="450" y="487" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">接电源：U 不变；断开电源：Q 不变 —— 再用 C = Q/U 联立分析</text>
+
+  <text x="80" y="576" font-size="12" fill="#64748b">口诀：面积大、间距小、插介质，电容都变大</text>
+</g>
+</svg>

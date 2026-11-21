@@ -1,0 +1,185 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="光的折射：折射定律 n 等于 sin i 比 sin r、光路特点、视深变浅">
+<style>
+[data-scene="ps-78"] .s78-s1,[data-scene="ps-78"] .s78-s2,[data-scene="ps-78"] .s78-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="ps-78"].s1 .s78-s1,[data-scene="ps-78"].s2 .s78-s2,[data-scene="ps-78"].s3 .s78-s3{opacity:1;visibility:visible}
+@keyframes s78draw{to{stroke-dashoffset:0}}
+@keyframes s78fade{from{opacity:0}to{opacity:1}}
+@keyframes s78flow{to{stroke-dashoffset:-32}}
+@keyframes s78pop{0%{transform:scale(.86);opacity:0}70%{transform:scale(1.05);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s78glow{0%,100%{opacity:.55}50%{opacity:1}}
+[data-scene="ps-78"].s1 .s78-ray{stroke-dasharray:300;stroke-dashoffset:300;animation:s78draw 1.1s ease .2s forwards}
+[data-scene="ps-78"].s1 .s78-ray2{animation-delay:.45s}
+[data-scene="ps-78"].s1 .s78-arc{opacity:0;animation:s78fade .5s ease .9s forwards}
+[data-scene="ps-78"].s1 .s78-eq{transform-box:fill-box;transform-origin:center;animation:s78pop .55s ease .6s both}
+[data-scene="ps-78"].s2 .s78-ray{stroke-dasharray:10 7;animation:s78flow 1.3s linear infinite}
+[data-scene="ps-78"].s2 .s78-card{transform-box:fill-box;transform-origin:center;animation:s78pop .5s ease both}
+[data-scene="ps-78"].s2 .s78-card2{animation-delay:.15s}
+[data-scene="ps-78"].s2 .s78-card3{animation-delay:.3s}
+[data-scene="ps-78"].s3 .s78-ray{stroke-dasharray:10 7;animation:s78flow 1.4s linear infinite}
+[data-scene="ps-78"].s3 .s78-ghost{animation:s78glow 2.4s ease-in-out infinite}
+[data-scene="ps-78"].s3 .s78-coin{transform-box:fill-box;transform-origin:center;animation:s78pop .6s ease .3s both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">光的折射：n = sin i / sin r</text>
+
+<!-- 第一步：折射定律 -->
+<g class="s78-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">入射光线、折射光线、法线三线共面，入射光线与折射光线分居法线两侧</text>
+
+  <rect x="60" y="100" width="780" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+
+  <rect x="80" y="280" width="740" height="140" fill="#cfebff" opacity=".85"/>
+  <line x1="80" y1="280" x2="820" y2="280" stroke="#60a5fa" stroke-width="3"/>
+  <text x="104" y="192" font-size="12.5" font-weight="800" fill="#64748b">空气</text>
+  <text x="104" y="330" font-size="12.5" font-weight="800" fill="#1d4ed8">水</text>
+  <text x="798" y="268" font-size="11.5" fill="#64748b" text-anchor="end">界面</text>
+
+  <line x1="450" y1="132" x2="450" y2="420" stroke="#64748b" stroke-width="2" stroke-dasharray="9 7"/>
+  <text x="462" y="150" font-size="12" font-weight="700" fill="#475569">法线</text>
+  <circle cx="450" cy="280" r="5.5" fill="#334155"/>
+  <text x="430" y="302" font-size="13" font-weight="900" fill="#334155" text-anchor="end">O</text>
+
+  <line class="s78-ray" x1="300" y1="130" x2="450" y2="280" stroke="#dc2626" stroke-width="4" stroke-linecap="round" marker-end="url(#arrRed)"/>
+  <text x="250" y="160" font-size="12.5" font-weight="800" fill="#b91c1c" text-anchor="end">入射光线</text>
+
+  <line class="s78-ray s78-ray2" x1="450" y1="280" x2="535" y2="416" stroke="#1d4ed8" stroke-width="4" stroke-linecap="round" marker-end="url(#arrBlue)"/>
+  <text x="556" y="404" font-size="12.5" font-weight="800" fill="#1e40af">折射光线</text>
+
+  <path class="s78-arc" d="M450 200 A80 80 0 0 0 393 223" fill="none" stroke="#dc2626" stroke-width="2.4"/>
+  <text x="415" y="243" font-size="16" font-weight="900" fill="#b91c1c">i</text>
+  <text x="376" y="212" font-size="12" font-weight="800" fill="#b91c1c">45°</text>
+
+  <path class="s78-arc" d="M450 360 A80 80 0 0 1 492 348" fill="none" stroke="#1d4ed8" stroke-width="2.4"/>
+  <text x="474" y="344" font-size="16" font-weight="900" fill="#1e40af">r</text>
+  <text x="506" y="338" font-size="12" font-weight="800" fill="#1e40af">32°</text>
+
+  <g class="s78-eq">
+    <rect x="620" y="132" width="200" height="68" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="720" y="166" font-size="19" font-weight="900" fill="#1e3a8a" text-anchor="middle">n = sin i / sin r</text>
+    <text x="720" y="188" font-size="11" fill="#475569" text-anchor="middle">n 为这种介质的折射率</text>
+  </g>
+
+  <text x="450" y="410" font-size="11.5" font-weight="700" fill="#1e40af" text-anchor="middle">光从空气斜射入水中，折射角小于入射角，折射光线向法线偏折</text>
+</g>
+
+<!-- 第二步：光路特点 -->
+<g class="s78-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">空气到水折射角变小，水到空气折射角变大，垂直入射时方向不变</text>
+
+  <rect class="s78-card" x="36" y="100" width="260" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="166" y="148" font-size="13.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">空气 → 水</text>
+  <rect x="56" y="300" width="220" height="116" fill="#cfebff" opacity=".85"/>
+  <line x1="56" y1="300" x2="276" y2="300" stroke="#60a5fa" stroke-width="2.5"/>
+  <line x1="166" y1="190" x2="166" y2="410" stroke="#64748b" stroke-width="1.8" stroke-dasharray="8 6"/>
+  <text x="64" y="286" font-size="11" fill="#64748b">空气</text>
+  <text x="64" y="330" font-size="11" font-weight="800" fill="#1d4ed8">水</text>
+
+  <line class="s78-ray" x1="92" y1="226" x2="166" y2="300" stroke="#dc2626" stroke-width="3" marker-end="url(#arrRed)"/>
+  <line class="s78-ray" x1="166" y1="300" x2="208" y2="368" stroke="#1d4ed8" stroke-width="3" marker-end="url(#arrBlue)"/>
+  <text x="134" y="272" font-size="14" font-weight="900" fill="#b91c1c">i</text>
+  <text x="186" y="352" font-size="14" font-weight="900" fill="#1e40af">r</text>
+
+  <rect x="196" y="170" width="82" height="28" rx="14" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="237" y="189" font-size="12" font-weight="900" fill="#b45309" text-anchor="middle">r &lt; i</text>
+  <text x="166" y="410" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">折射角变小，靠近法线</text>
+
+  <rect class="s78-card s78-card2" x="320" y="100" width="260" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="450" y="148" font-size="13.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">水 → 空气</text>
+  <rect x="340" y="300" width="220" height="116" fill="#cfebff" opacity=".85"/>
+  <line x1="340" y1="300" x2="560" y2="300" stroke="#60a5fa" stroke-width="2.5"/>
+  <line x1="450" y1="190" x2="450" y2="410" stroke="#64748b" stroke-width="1.8" stroke-dasharray="8 6"/>
+  <text x="536" y="286" font-size="11" fill="#64748b">空气</text>
+  <text x="348" y="330" font-size="11" font-weight="800" fill="#1d4ed8">水</text>
+
+  <line class="s78-ray" x1="382" y1="370" x2="450" y2="300" stroke="#dc2626" stroke-width="3" marker-end="url(#arrRed)"/>
+  <line class="s78-ray" x1="450" y1="300" x2="561" y2="255" stroke="#1d4ed8" stroke-width="3" marker-end="url(#arrBlue)"/>
+  <text x="524" y="292" font-size="14" font-weight="900" fill="#1d4ed8">r</text>
+  <text x="410" y="346" font-size="14" font-weight="900" fill="#b91c1c">i</text>
+
+  <rect x="380" y="200" width="82" height="28" rx="14" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="421" y="219" font-size="12" font-weight="900" fill="#1e40af" text-anchor="middle">r &gt; i</text>
+  <text x="450" y="410" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">折射角变大，远离法线</text>
+
+  <rect class="s78-card s78-card3" x="604" y="100" width="260" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="734" y="148" font-size="13.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">垂直入射</text>
+  <rect x="624" y="300" width="220" height="116" fill="#cfebff" opacity=".85"/>
+  <line x1="624" y1="300" x2="844" y2="300" stroke="#60a5fa" stroke-width="2.5"/>
+  <text x="632" y="286" font-size="11" fill="#64748b">空气</text>
+  <text x="632" y="330" font-size="11" font-weight="800" fill="#1d4ed8">水</text>
+
+  <line x1="734" y1="190" x2="734" y2="410" stroke="#dc2626" stroke-width="3" marker-end="url(#arrRed)"/>
+  <line x1="734" y1="300" x2="734" y2="410" stroke="#1d4ed8" stroke-width="3" marker-end="url(#arrBlue)"/>
+  <text x="754" y="252" font-size="11.5" font-weight="800" fill="#b91c1c">i = 0°</text>
+  <text x="754" y="354" font-size="11.5" font-weight="800" fill="#1e40af">r = 0°</text>
+  <text x="734" y="410" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">传播方向不改变</text>
+</g>
+
+<!-- 第三步：视深 -->
+<g class="s78-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">池底看起来变浅：看到的不是物体本身，而是折射形成的虚像</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="70" y="230" width="450" height="186" fill="#cfebff" opacity=".85"/>
+  <line x1="70" y1="230" x2="520" y2="230" stroke="#60a5fa" stroke-width="3"/>
+  <line x1="70" y1="230" x2="70" y2="416" stroke="#93c5fd" stroke-width="2.5"/>
+  <line x1="70" y1="416" x2="520" y2="416" stroke="#93c5fd" stroke-width="2.5"/>
+  <text x="86" y="214" font-size="11.5" fill="#64748b">空气</text>
+  <text x="86" y="262" font-size="11.5" font-weight="800" fill="#1d4ed8">水</text>
+
+  <ellipse class="s78-coin" cx="300" cy="404" rx="15" ry="6.5" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
+  <text x="300" y="430" font-size="11" font-weight="800" fill="#b45309" text-anchor="middle">实际位置</text>
+
+  <line class="s78-ray" x1="300" y1="404" x2="360" y2="230" stroke="#d97706" stroke-width="2.4"/>
+  <line class="s78-ray" x1="360" y1="230" x2="470" y2="144" stroke="#d97706" stroke-width="2.4"/>
+  <line class="s78-ray" x1="300" y1="404" x2="390" y2="230" stroke="#d97706" stroke-width="2.4"/>
+  <line class="s78-ray" x1="390" y1="230" x2="475" y2="175" stroke="#d97706" stroke-width="2.4"/>
+
+  <line x1="360" y1="230" x2="220" y2="340" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="6 5"/>
+  <line x1="390" y1="230" x2="220" y2="340" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="6 5"/>
+
+  <g class="s78-ghost">
+    <ellipse cx="220" cy="340" rx="14" ry="6" fill="#fde68a" opacity=".6" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="5 4"/>
+  </g>
+  <text x="220" y="316" font-size="11.5" font-weight="800" fill="#1e40af" text-anchor="middle">看到的虚像</text>
+
+  <line x1="120" y1="230" x2="120" y2="404" stroke="#475569" stroke-width="1.5"/>
+  <line x1="114" y1="230" x2="126" y2="230" stroke="#475569" stroke-width="1.5"/>
+  <line x1="114" y1="404" x2="126" y2="404" stroke="#475569" stroke-width="1.5"/>
+  <text x="132" y="322" font-size="12" font-weight="800" fill="#475569">h</text>
+  <line x1="250" y1="230" x2="250" y2="340" stroke="#1d4ed8" stroke-width="1.5"/>
+  <line x1="244" y1="230" x2="256" y2="230" stroke="#1d4ed8" stroke-width="1.5"/>
+  <line x1="244" y1="340" x2="256" y2="340" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="262" y="290" font-size="12" font-weight="800" fill="#1e40af">h′</text>
+
+  <ellipse cx="485" cy="158" rx="18" ry="11" fill="#ffffff" stroke="#334155" stroke-width="2"/>
+  <circle cx="485" cy="158" r="4" fill="#334155"/>
+  <text x="485" y="186" font-size="11" fill="#64748b" text-anchor="middle">眼睛</text>
+
+  <text x="296" y="128" font-size="11.5" font-weight="700" fill="#64748b" text-anchor="middle">光线进入眼睛，反向延长线的交点就是虚像</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="196" height="28" rx="14" fill="#e8effc"/>
+  <text x="694" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">视深变浅</text>
+
+  <rect x="596" y="162" width="248" height="70" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="720" y="196" font-size="20" font-weight="900" fill="#1e3a8a" text-anchor="middle">h′ = h / n</text>
+  <text x="720" y="218" font-size="11" fill="#475569" text-anchor="middle">h 为实际深度，n 为水的折射率</text>
+
+  <text x="600" y="262" font-size="11.5" font-weight="800" fill="#1e3a8a">水 n ≈ 1.33</text>
+  <text x="600" y="284" font-size="11.5" fill="#334155">视深约为实际深度的 3/4</text>
+  <text x="600" y="312" font-size="11.5" fill="#334155">看到的鱼、硬币位置偏高</text>
+  <text x="600" y="340" font-size="11.5" fill="#334155">所以叉鱼要瞄准鱼的下方</text>
+  <text x="600" y="374" font-size="11" fill="#64748b">池水、河底看起来都比实际浅</text>
+
+  <rect x="596" y="390" width="248" height="30" rx="8" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="410" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">折射成像：虚像，位置偏高</text>
+</g>
+
+<rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+<text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">折射时光路可逆；水中物体看起来变浅，视深 h′ = h / n</text>
+</svg>

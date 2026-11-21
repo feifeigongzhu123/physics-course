@@ -1,0 +1,270 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="密度与社会生活：温度对密度的影响、材料选择、盐水选种与风的形成">
+  <style>
+    [data-scene="pj-27"] .p27-step{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility 0s linear .45s}
+    [data-scene="pj-27"].s1 .p27-step1,
+    [data-scene="pj-27"].s2 .p27-step2,
+    [data-scene="pj-27"].s3 .p27-step3{opacity:1;visibility:visible;transition:opacity .45s ease,visibility 0s}
+    @keyframes p27draw{to{stroke-dashoffset:0}}
+    @keyframes p27pop{0%{transform:scale(.72);opacity:0}72%{transform:scale(1.06);opacity:1}100%{transform:scale(1);opacity:1}}
+    @keyframes p27fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+    @keyframes p27pulse{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:1;transform:scale(1.1)}}
+    @keyframes p27float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+    @keyframes p27dash{to{stroke-dashoffset:-36}}
+    @keyframes p27flicker{0%,100%{opacity:.85;transform:scaleY(1)}50%{opacity:1;transform:scaleY(1.08)}}
+    @keyframes p27bob{0%,100%{transform:translateY(0)}50%{transform:translateY(3px)}}
+    [data-scene="pj-27"].s1 .p27-block{transform-box:fill-box;transform-origin:center;animation:p27pop .5s ease both}
+    [data-scene="pj-27"].s1 .p27-hot{animation-delay:.15s}
+    [data-scene="pj-27"].s1 .p27-arrow{animation:p27pulse 1.7s ease-in-out infinite}
+    [data-scene="pj-27"].s1 .p27-curve{stroke-dasharray:420;stroke-dashoffset:420;animation:p27draw 1.1s ease .2s forwards}
+    [data-scene="pj-27"].s1 .p27-peak{transform-box:fill-box;transform-origin:center;animation:p27pop .5s ease 1.15s both}
+    [data-scene="pj-27"].s1 .p27-bullet{animation:p27fade .45s ease both}
+    [data-scene="pj-27"].s1 .p27-b2{animation-delay:.1s}
+    [data-scene="pj-27"].s2 .p27-panel{transform-box:fill-box;transform-origin:center;animation:p27pop .55s ease both}
+    [data-scene="pj-27"].s2 .p27-p2{animation-delay:.12s}
+    [data-scene="pj-27"].s2 .p27-p3{animation-delay:.24s}
+    [data-scene="pj-27"].s2 .p27-plane{animation:p27float 2.6s ease-in-out infinite}
+    [data-scene="pj-27"].s2 .p27-seed{animation:p27bob 2.2s ease-in-out infinite}
+    [data-scene="pj-27"].s2 .p27-seed2{animation-delay:.4s}
+    [data-scene="pj-27"].s2 .p27-snow{transform-box:fill-box;transform-origin:center;animation:p27pulse 2.4s ease-in-out infinite}
+    [data-scene="pj-27"].s3 .p27-room{animation:p27fade .5s ease both}
+    [data-scene="pj-27"].s3 .p27-hotflow{stroke-dasharray:10 8;animation:p27dash 1.2s linear infinite}
+    [data-scene="pj-27"].s3 .p27-coolflow{stroke-dasharray:9 7;animation:p27dash 1.4s linear infinite}
+    [data-scene="pj-27"].s3 .p27-heater{transform-box:fill-box;transform-origin:bottom;animation:p27flicker 1.3s ease-in-out infinite}
+    [data-scene="pj-27"].s3 .p27-wind{animation:p27dash 1.6s linear infinite}
+  </style>
+
+  <rect width="900" height="620" fill="url(#gBg)"/>
+  <rect width="900" height="620" fill="url(#dotsPat)"/>
+  <rect y="500" width="900" height="120" fill="url(#gBench)"/>
+  <line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+  <text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">密度与社会生活：温度、材料与风</text>
+
+  <!-- 第一步：密度与温度 -->
+  <g class="p27-step p27-step1" data-zone="1">
+    <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">密度与温度：一般热胀冷缩，水在 4℃ 密度最大</text>
+
+    <rect x="50" y="105" width="340" height="350" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="220" y="135" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">一般规律</text>
+
+    <g class="p27-block p27-cold">
+      <rect x="90" y="190" width="60" height="60" rx="6" fill="#93c5fd" stroke="#1d4ed8" stroke-width="2.5"/>
+      <text x="120" y="226" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">冷</text>
+    </g>
+    <g class="p27-block p27-hot">
+      <rect x="220" y="175" width="90" height="90" rx="8" fill="#fca5a5" stroke="#dc2626" stroke-width="2.5"/>
+      <text x="265" y="226" font-size="13" font-weight="800" fill="#991b1b" text-anchor="middle">热</text>
+    </g>
+    <line class="p27-arrow" x1="154" y1="220" x2="214" y2="220" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arrRed)"/>
+    <text x="180" y="208" font-size="11.5" font-weight="700" fill="#b91c1c" text-anchor="middle">受热</text>
+    <text x="120" y="272" font-size="12" font-weight="700" fill="#1e3a8a" text-anchor="middle">V 小</text>
+    <text x="120" y="294" font-size="12" font-weight="700" fill="#1e3a8a" text-anchor="middle">ρ 大</text>
+    <text x="265" y="288" font-size="12" font-weight="700" fill="#b91c1c" text-anchor="middle">V 大</text>
+    <text x="265" y="310" font-size="12" font-weight="700" fill="#b91c1c" text-anchor="middle">ρ 小</text>
+
+    <g class="p27-bullet p27-b1">
+      <text x="70" y="338" font-size="11.5" font-weight="700" fill="#334155">温度升高 → 体积膨胀 → 密度变小</text>
+    </g>
+    <g class="p27-bullet p27-b2">
+      <text x="70" y="360" font-size="11.5" font-weight="700" fill="#334155">温度降低 → 体积收缩 → 密度变大</text>
+    </g>
+
+    <rect x="95" y="382" width="80" height="58" rx="6" fill="#ffffff" stroke="#38bdf8" stroke-width="2.5"/>
+    <path d="M98 402 L98 434 Q98 438 104 438 L166 438 Q172 438 172 434 L172 402 Z" fill="#bfdbfe" opacity=".8"/>
+    <line x1="98" y1="402" x2="172" y2="402" stroke="#1d4ed8" stroke-width="1.8"/>
+    <rect x="112" y="388" width="34" height="30" rx="4" fill="#e0f2fe" stroke="#60a5fa" stroke-width="2"/>
+    <text x="196" y="402" font-size="11.5" font-weight="800" fill="#1d4ed8">冰浮水面</text>
+    <text x="196" y="424" font-size="11.5" fill="#64748b">ρ冰 小于 ρ水</text>
+
+    <rect x="415" y="105" width="430" height="350" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="630" y="135" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">水的密度随温度变化</text>
+
+    <line x1="470" y1="390" x2="805" y2="390" stroke="#475569" stroke-width="2" marker-end="url(#arrBlue)"/>
+    <line x1="470" y1="390" x2="470" y2="155" stroke="#475569" stroke-width="2" marker-end="url(#arrBlue)"/>
+    <text x="800" y="432" font-size="11.5" font-weight="700" fill="#475569" text-anchor="end">T/℃</text>
+    <text x="452" y="172" font-size="12" font-weight="700" fill="#475569" text-anchor="end">ρ</text>
+
+    <line x1="620" y1="390" x2="620" y2="188" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <line x1="470" y1="188" x2="620" y2="188" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <path class="p27-curve" d="M480 255 Q550 200 620 188 Q700 190 800 260" fill="none" stroke="#dc2626" stroke-width="3.5" stroke-linecap="round"/>
+    <circle class="p27-peak" cx="620" cy="188" r="6" fill="#dc2626"/>
+    <text x="620" y="170" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">4℃ 密度最大</text>
+
+    <g font-size="11" fill="#475569" text-anchor="middle">
+      <text x="480" y="410">0</text>
+      <text x="550" y="410">2</text>
+      <text x="620" y="410">4</text>
+      <text x="690" y="410">6</text>
+      <text x="745" y="410">8</text>
+      <text x="800" y="410">10</text>
+    </g>
+    <text x="630" y="450" font-size="11.5" fill="#64748b" text-anchor="middle">0~4℃：温度升高，密度变大（反常膨胀）</text>
+
+    <text x="450" y="478" font-size="12.5" font-weight="700" fill="#334155" text-anchor="middle">水在 4℃ 时密度最大；结成冰后体积变大、密度变小，所以冰浮在水面上</text>
+
+    <g>
+      <rect x="60" y="512" width="780" height="74" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <text x="450" y="541" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">一般物体：温度升高，体积膨胀，密度变小；温度降低，密度变大</text>
+      <text x="450" y="565" font-size="11.5" fill="#64748b" text-anchor="middle">气体热胀冷缩最明显，液体和固体不明显；水在 0~4℃ 之间反常</text>
+    </g>
+  </g>
+
+  <!-- 第二步：密度与材料 -->
+  <g class="p27-step p27-step2" data-zone="2">
+    <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">密度与材料：按需选材，盐水选种，食品冷冻</text>
+
+    <g class="p27-panel p27-p1">
+      <rect x="50" y="105" width="270" height="325" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <text x="185" y="140" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">航空材料</text>
+      <g class="p27-plane">
+        <ellipse cx="185" cy="215" rx="62" ry="13" fill="#cbd5e1" stroke="#64748b" stroke-width="2.5"/>
+        <polygon points="160,215 220,215 200,245 172,245" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
+        <polygon points="225,215 252,198 252,214 232,220" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+        <polygon points="145,215 120,205 120,215 140,220" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+        <circle cx="200" cy="212" r="4" fill="#60a5fa"/>
+      </g>
+      <text x="185" y="280" font-size="11.5" fill="#334155" text-anchor="middle">选密度小、强度高的合金</text>
+      <text x="185" y="302" font-size="11.5" fill="#334155" text-anchor="middle">如铝合金、钛合金</text>
+      <rect x="85" y="330" width="200" height="34" rx="17" fill="#e8effc"/>
+      <text x="185" y="352" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">减轻自重，节省燃料</text>
+      <text x="185" y="398" font-size="13" font-weight="800" fill="#b45309" text-anchor="middle">ρ 小 · 强度高</text>
+    </g>
+
+    <g class="p27-panel p27-p2">
+      <rect x="330" y="105" width="270" height="325" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <text x="465" y="140" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">盐水选种</text>
+      <path d="M390 190 L390 342 Q390 356 406 356 L524 356 Q540 356 540 342 L540 190" fill="#ffffff" stroke="#38bdf8" stroke-width="3"/>
+      <path d="M394 225 L394 342 Q394 352 406 352 L524 352 Q536 352 536 342 L536 225 Z" fill="#bfdbfe" opacity=".85"/>
+      <line x1="394" y1="225" x2="536" y2="225" stroke="#1d4ed8" stroke-width="2"/>
+      <g class="p27-seed">
+        <circle cx="425" cy="242" r="7" fill="#fcd34d" stroke="#d97706" stroke-width="1.5"/>
+        <circle cx="465" cy="238" r="7" fill="#fcd34d" stroke="#d97706" stroke-width="1.5"/>
+        <circle cx="505" cy="244" r="7" fill="#fcd34d" stroke="#d97706" stroke-width="1.5"/>
+      </g>
+      <g class="p27-seed p27-seed2" fill="#475569" stroke="#334155" stroke-width="1.2">
+        <circle cx="415" cy="336" r="6"/>
+        <circle cx="440" cy="340" r="6"/>
+        <circle cx="465" cy="334" r="6"/>
+        <circle cx="490" cy="340" r="6"/>
+        <circle cx="515" cy="334" r="6"/>
+      </g>
+      <text x="465" y="384" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">饱满种子 ρ大 → 沉底</text>
+      <text x="465" y="406" font-size="11.5" font-weight="700" fill="#64748b" text-anchor="middle">瘪种子 ρ小 → 漂浮</text>
+      <text x="465" y="422" font-size="11.5" fill="#64748b" text-anchor="middle">好种子留下来</text>
+    </g>
+
+    <g class="p27-panel p27-p3">
+      <rect x="610" y="105" width="270" height="325" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <text x="745" y="140" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">食品冷冻</text>
+      <rect x="680" y="168" width="130" height="165" rx="10" fill="#e0f2fe" stroke="#38bdf8" stroke-width="2.5"/>
+      <line x1="684" y1="225" x2="806" y2="225" stroke="#93c5fd" stroke-width="2"/>
+      <line x1="684" y1="282" x2="806" y2="282" stroke="#93c5fd" stroke-width="2"/>
+      <g class="p27-snow" stroke="#1d4ed8" stroke-width="2" stroke-linecap="round">
+        <line x1="745" y1="188" x2="745" y2="208"/>
+        <line x1="736" y1="193" x2="754" y2="203"/>
+        <line x1="736" y1="203" x2="754" y2="193"/>
+      </g>
+      <rect x="694" y="240" width="42" height="30" rx="4" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+      <rect x="748" y="240" width="46" height="30" rx="4" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
+      <rect x="700" y="296" width="38" height="28" rx="4" fill="#86efac" stroke="#059669" stroke-width="1.5"/>
+      <rect x="750" y="296" width="42" height="28" rx="4" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1.5"/>
+      <text x="745" y="362" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">低温抑制细菌繁殖</text>
+      <text x="745" y="384" font-size="11.5" fill="#334155" text-anchor="middle">冷冻食品保质期更长</text>
+      <text x="745" y="406" font-size="11.5" fill="#64748b" text-anchor="middle">水结冰体积变大，包装留空隙</text>
+    </g>
+
+    <text x="450" y="455" font-size="12.5" font-weight="700" fill="#334155" text-anchor="middle">密度是选材的重要依据，还要综合考虑强度、价格、加工等因素</text>
+
+    <g>
+      <rect x="60" y="512" width="780" height="74" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <text x="450" y="541" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">应用：航空选轻材料、盐水选种看沉浮、食品冷冻保鲜</text>
+      <text x="450" y="565" font-size="11.5" fill="#64748b" text-anchor="middle">选材料不能只看密度，还要看强度、耐腐蚀性、价格等</text>
+    </g>
+  </g>
+
+  <!-- 第三步：风的形成 -->
+  <g class="p27-step p27-step3" data-zone="3">
+    <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">风的形成：热空气上升，冷空气补充</text>
+
+    <g class="p27-room">
+      <rect x="50" y="105" width="500" height="350" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <rect x="80" y="135" width="440" height="290" rx="12" fill="#f8fbff" stroke="#cbd5e1" stroke-width="2"/>
+      <line x1="80" y1="405" x2="520" y2="405" stroke="#94a3b8" stroke-width="2.5"/>
+
+      <rect x="440" y="155" width="60" height="50" rx="3" fill="#dbeafe" stroke="#64748b" stroke-width="2"/>
+      <line x1="440" y1="180" x2="500" y2="180" stroke="#64748b" stroke-width="1.5"/>
+      <line x1="470" y1="155" x2="470" y2="205" stroke="#64748b" stroke-width="1.5"/>
+      <g class="p27-wind" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-dasharray="8 6">
+        <line x1="510" y1="166" x2="548" y2="166"/>
+        <line x1="510" y1="182" x2="540" y2="182"/>
+        <line x1="510" y1="198" x2="552" y2="198"/>
+      </g>
+
+      <g class="p27-heater">
+        <rect x="250" y="370" width="100" height="35" rx="6" fill="#f97316" stroke="#c2410c" stroke-width="2"/>
+        <g stroke="#fff7ed" stroke-width="2">
+          <line x1="265" y1="378" x2="265" y2="397"/>
+          <line x1="280" y1="378" x2="280" y2="397"/>
+          <line x1="295" y1="378" x2="295" y2="397"/>
+          <line x1="310" y1="378" x2="310" y2="397"/>
+          <line x1="325" y1="378" x2="325" y2="397"/>
+        </g>
+      </g>
+      <text x="300" y="428" font-size="11.5" font-weight="700" fill="#b45309" text-anchor="middle">热源</text>
+
+      <g fill="none" stroke="#dc2626" stroke-width="3" stroke-linecap="round">
+        <path class="p27-hotflow" d="M270 365 C255 330 260 260 270 205" marker-end="url(#arrRed)"/>
+        <path class="p27-hotflow" d="M300 360 C300 320 300 250 300 185" marker-end="url(#arrRed)"/>
+        <path class="p27-hotflow" d="M330 365 C345 330 340 260 330 205" marker-end="url(#arrRed)"/>
+      </g>
+      <text x="300" y="168" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">热空气上升</text>
+
+      <g fill="none" stroke="#1d4ed8" stroke-width="2.8" stroke-linecap="round">
+        <path class="p27-coolflow" d="M140 200 C160 260 180 335 225 375" marker-end="url(#arrBlue)"/>
+        <path class="p27-coolflow" d="M460 200 C440 260 420 335 375 375" marker-end="url(#arrBlue)"/>
+      </g>
+      <text x="135" y="232" font-size="11.5" font-weight="700" fill="#1e40af">冷空气下沉</text>
+      <text x="465" y="232" font-size="11.5" font-weight="700" fill="#1e40af">冷空气下沉</text>
+      <text x="300" y="445" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">空气流动形成风</text>
+    </g>
+
+    <rect x="570" y="105" width="270" height="350" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="705" y="138" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">生活中的应用</text>
+
+    <g class="p27-app p27-a1">
+      <polygon points="600,185 640,185 630,205 610,205" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
+      <rect x="613" y="205" width="14" height="20" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
+      <line x1="620" y1="230" x2="620" y2="215" stroke="#dc2626" stroke-width="2" marker-end="url(#arrRed)"/>
+      <text x="650" y="194" font-size="12.5" font-weight="800" fill="#1e3a8a">抽油烟机</text>
+      <text x="650" y="216" font-size="11.5" fill="#475569">热油烟上升被吸走</text>
+    </g>
+    <g class="p27-app p27-a2">
+      <rect x="595" y="252" width="42" height="58" rx="4" fill="#fca5a5" stroke="#dc2626" stroke-width="2"/>
+      <g stroke="#dc2626" stroke-width="1.5">
+        <line x1="605" y1="258" x2="605" y2="304"/>
+        <line x1="616" y1="258" x2="616" y2="304"/>
+        <line x1="627" y1="258" x2="627" y2="304"/>
+      </g>
+      <text x="650" y="272" font-size="12.5" font-weight="800" fill="#1e3a8a">暖气片</text>
+      <text x="650" y="294" font-size="11.5" fill="#475569">热空气上升，形成对流</text>
+    </g>
+    <g class="p27-app p27-a3">
+      <rect x="595" y="332" width="44" height="26" rx="4" fill="#e0f2fe" stroke="#1d4ed8" stroke-width="2"/>
+      <g stroke="#1d4ed8" stroke-width="1.5">
+        <line x1="602" y1="340" x2="632" y2="340"/>
+        <line x1="602" y1="348" x2="632" y2="348"/>
+      </g>
+      <text x="650" y="345" font-size="12.5" font-weight="800" fill="#1e3a8a">空调制冷</text>
+      <text x="650" y="367" font-size="11.5" fill="#475569">冷空气下沉，房间对流</text>
+    </g>
+    <line x1="590" y1="392" x2="820" y2="392" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="705" y="416" font-size="11.5" fill="#64748b" text-anchor="middle">暖气片装低处，空调装高处</text>
+    <text x="705" y="438" font-size="11.5" fill="#64748b" text-anchor="middle">都是利用空气密度随温度变化</text>
+
+    <g>
+      <rect x="60" y="512" width="780" height="74" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+      <text x="450" y="541" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">风是空气的流动：受热上升，冷空气从周围流过来补充</text>
+      <text x="450" y="565" font-size="11.5" fill="#64748b" text-anchor="middle">抽油烟机、暖气片、空调都利用了空气密度随温度变化</text>
+    </g>
+  </g>
+</svg>

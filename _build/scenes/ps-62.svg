@@ -1,0 +1,135 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="动量：p 等于 m 乘 v、动量的变化量、动量与动能的区别">
+<style>
+[data-scene="ps-62"] .s62-step1,[data-scene="ps-62"] .s62-step2,[data-scene="ps-62"] .s62-step3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility 0s linear .45s}
+[data-scene="ps-62"].s1 .s62-step1,[data-scene="ps-62"].s2 .s62-step2,[data-scene="ps-62"].s3 .s62-step3{opacity:1;visibility:visible;transition:opacity .45s ease,visibility 0s}
+@keyframes s62draw{to{stroke-dashoffset:0}}
+@keyframes s62pop{0%{transform:scale(.86);opacity:0}70%{transform:scale(1.05);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s62slide{0%{transform:translateX(-16px);opacity:0}100%{transform:none;opacity:1}}
+@keyframes s62pulse{0%,100%{opacity:.55}50%{opacity:1}}
+[data-scene="ps-62"].s1 .s62-vec{stroke-dasharray:160;stroke-dashoffset:160;animation:s62draw .7s ease .25s forwards}
+[data-scene="ps-62"].s1 .s62-vec2{animation-delay:.45s}
+[data-scene="ps-62"].s1 .s62-card{transform-box:fill-box;transform-origin:center;animation:s62pop .5s ease .35s both}
+[data-scene="ps-62"].s1 .s62-ball{animation:s62pulse 2s ease-in-out infinite}
+[data-scene="ps-62"].s2 .s62-vec{stroke-dasharray:160;stroke-dashoffset:160;animation:s62draw .6s ease .2s forwards}
+[data-scene="ps-62"].s2 .s62-vec2{animation-delay:.4s}
+[data-scene="ps-62"].s2 .s62-dp{stroke-dasharray:170;stroke-dashoffset:170;animation:s62draw .7s ease .7s forwards}
+[data-scene="ps-62"].s2 .s62-card{transform-box:fill-box;transform-origin:center;animation:s62pop .5s ease .3s both}
+[data-scene="ps-62"].s3 .s62-card{transform-box:fill-box;transform-origin:center;animation:s62pop .5s ease both}
+[data-scene="ps-62"].s3 .s62-card:nth-of-type(2){animation-delay:.15s}
+[data-scene="ps-62"].s3 .s62-rel{animation:s62slide .6s ease .5s both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="532" width="900" height="88" fill="url(#gBench)"/>
+<line x1="0" y1="532" x2="900" y2="532" stroke="#cbd5e1" stroke-width="2.5"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">动量：p = mv，矢量性与动能的区别</text>
+
+<!-- 第一步：p = mv -->
+<g class="s62-step1" data-zone="1">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 1 步 · 动量的定义：p = mv（矢量）</text>
+
+  <line x1="70" y1="420" x2="540" y2="420" stroke="#cbd5e1" stroke-width="2.5"/>
+  <circle class="s62-ball" cx="180" cy="375" r="34" fill="#ffedd5" stroke="#f97316" stroke-width="2.5"/>
+  <text x="180" y="383" font-size="16" font-weight="900" fill="#c2410c" text-anchor="middle">m</text>
+
+  <line class="s62-vec" x1="220" y1="330" x2="310" y2="330" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrRed)"/>
+  <text x="265" y="318" font-size="13" font-weight="800" fill="#b91c1c" text-anchor="middle">v</text>
+
+  <line class="s62-vec s62-vec2" x1="220" y1="295" x2="370" y2="295" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrBlue)"/>
+  <text x="382" y="301" font-size="14" font-weight="900" fill="#6d28d9">p = mv</text>
+
+  <text x="305" y="452" font-size="13" font-weight="700" fill="#475569" text-anchor="middle">质量 m、速度 v 的物体，动量 p = mv</text>
+
+  <g class="s62-card">
+    <rect x="580" y="110" width="290" height="300" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="725" y="140" font-size="14" font-weight="800" fill="#1e3a8a" text-anchor="middle">动量的定义</text>
+    <text x="725" y="184" font-size="22" font-weight="900" fill="#b45309" text-anchor="middle">p = m v</text>
+    <text x="720" y="220" font-size="12" fill="#334155" text-anchor="middle">p：动量（kg·m/s）</text>
+    <text x="720" y="246" font-size="12" fill="#334155" text-anchor="middle">m：质量（kg）</text>
+    <text x="720" y="272" font-size="12" fill="#334155" text-anchor="middle">v：速度（m/s）</text>
+    <line x1="610" y1="294" x2="840" y2="294" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="725" y="322" font-size="12.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">动量是矢量</text>
+    <text x="720" y="348" font-size="12" fill="#334155" text-anchor="middle">方向与速度 v 的方向相同</text>
+    <text x="725" y="378" font-size="11.5" fill="#64748b" text-anchor="middle">1 kg·m/s = 1 N·s</text>
+  </g>
+
+  <rect x="60" y="474" width="800" height="40" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="460" y="499" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">动量是状态量，描述物体在某一时刻的运动状态</text>
+</g>
+
+<!-- 第二步：动量变化量 -->
+<g class="s62-step2" data-zone="2">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 2 步 · 动量的变化量：Δp = p₂ − p₁</text>
+
+  <rect x="468" y="140" width="20" height="300" rx="4" fill="#cbd5e1"/>
+  <text x="478" y="126" font-size="12" font-weight="800" fill="#475569" text-anchor="middle">墙</text>
+
+  <text x="80" y="160" font-size="12.5" font-weight="800" fill="#64748b">碰前</text>
+  <circle cx="200" cy="210" r="24" fill="#ffedd5" stroke="#f97316" stroke-width="2.5"/>
+  <line class="s62-vec" x1="230" y1="210" x2="380" y2="210" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrRed)"/>
+  <text x="305" y="198" font-size="13" font-weight="800" fill="#b91c1c" text-anchor="middle">v₁</text>
+  <text x="200" y="258" font-size="12" fill="#64748b" text-anchor="middle">p₁ = mv₁</text>
+
+  <text x="80" y="320" font-size="12.5" font-weight="800" fill="#64748b">碰后</text>
+  <circle cx="200" cy="370" r="24" fill="#ffedd5" stroke="#f97316" stroke-width="2.5" opacity=".55"/>
+  <line class="s62-vec s62-vec2" x1="170" y1="370" x2="52" y2="370" stroke="#1d4ed8" stroke-width="3.5" marker-end="url(#arrBlue)"/>
+  <text x="105" y="358" font-size="13" font-weight="800" fill="#1d4ed8" text-anchor="middle">v₂</text>
+  <text x="200" y="418" font-size="12" fill="#64748b" text-anchor="middle">p₂ = mv₂</text>
+
+  <line class="s62-dp" x1="340" y1="290" x2="190" y2="290" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrBlue)"/>
+  <text x="300" y="276" font-size="14" font-weight="900" fill="#6d28d9" text-anchor="middle">Δp</text>
+
+  <g class="s62-card">
+    <rect x="580" y="120" width="290" height="300" rx="14" fill="#ffffff" stroke="#ddd6fe" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="725" y="150" font-size="14" font-weight="800" fill="#6d28d9" text-anchor="middle">动量的变化量</text>
+    <text x="725" y="192" font-size="18" font-weight="900" fill="#b45309" text-anchor="middle">Δp = p₂ − p₁</text>
+    <text x="725" y="226" font-size="16" font-weight="900" fill="#b45309" text-anchor="middle">Δp = m v₂ − m v₁</text>
+    <line x1="610" y1="246" x2="840" y2="246" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="725" y="274" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">先规定正方向</text>
+    <text x="720" y="300" font-size="12" fill="#334155" text-anchor="middle">与正方向同向为正</text>
+    <text x="720" y="324" font-size="12" fill="#334155" text-anchor="middle">反向为负</text>
+    <text x="725" y="358" font-size="12" fill="#334155" text-anchor="middle">Δp 是矢量，方向由 Δv 决定</text>
+    <text x="725" y="388" font-size="11.5" fill="#64748b" text-anchor="middle">大小等于 |p₂ − p₁|</text>
+  </g>
+
+  <rect x="60" y="460" width="800" height="48" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="460" y="489" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">取向右为正：碰前 p₁ 为正，碰后 p₂ 为负，动量变化量 Δp 方向向左</text>
+</g>
+
+<!-- 第三步：动量与动能 -->
+<g class="s62-step3" data-zone="3">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 3 步 · 动量与动能的区别</text>
+
+  <g class="s62-card">
+    <rect x="60" y="112" width="380" height="250" rx="14" fill="#ffffff" stroke="#bfdbfe" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="250" y="148" font-size="15" font-weight="800" fill="#1e3a8a" text-anchor="middle">动量 p（矢量）</text>
+    <text x="250" y="192" font-size="20" font-weight="900" fill="#1d4ed8" text-anchor="middle">p = m v</text>
+    <text x="250" y="228" font-size="12.5" fill="#334155" text-anchor="middle">方向与速度 v 相同</text>
+    <text x="250" y="256" font-size="12.5" fill="#334155" text-anchor="middle">单位：kg·m/s</text>
+    <text x="250" y="284" font-size="12" fill="#64748b" text-anchor="middle">矢量，比较时要考虑方向</text>
+    <text x="250" y="326" font-size="12" font-weight="700" fill="#1d4ed8" text-anchor="middle">p² = 2mEk</text>
+  </g>
+
+  <g class="s62-card">
+    <rect x="460" y="112" width="380" height="250" rx="14" fill="#ffffff" stroke="#bbf7d0" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="650" y="148" font-size="15" font-weight="800" fill="#047857" text-anchor="middle">动能 Ek（标量）</text>
+    <text x="650" y="192" font-size="20" font-weight="900" fill="#059669" text-anchor="middle">Ek = ½ m v²</text>
+    <text x="650" y="228" font-size="12.5" fill="#334155" text-anchor="middle">只有大小，没有方向</text>
+    <text x="650" y="256" font-size="12.5" fill="#334155" text-anchor="middle">单位：J</text>
+    <text x="650" y="284" font-size="12" fill="#64748b" text-anchor="middle">标量，直接比较大小</text>
+    <text x="650" y="326" font-size="12" font-weight="700" fill="#059669" text-anchor="middle">Ek = p² / (2m)</text>
+  </g>
+
+  <g class="s62-rel">
+    <rect x="60" y="382" width="780" height="64" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="450" y="409" font-size="15" font-weight="900" fill="#1e3a8a" text-anchor="middle">p = √(2mEk)：已知动量和质量，可求动能</text>
+    <text x="450" y="433" font-size="12.5" fill="#334155" text-anchor="middle">动量与动能从不同角度描述物体的运动，不能相互代替</text>
+  </g>
+
+  <rect x="60" y="458" width="780" height="58" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+  <text x="450" y="482" font-size="12.5" font-weight="700" fill="#b45309" text-anchor="middle">动量大小相等时，质量大的物体动能小</text>
+  <text x="450" y="505" font-size="12.5" font-weight="700" fill="#b45309" text-anchor="middle">动能相等时，质量大的物体动量大</text>
+</g>
+</svg>

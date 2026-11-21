@@ -1,0 +1,147 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="共点力的平衡：合力为零、正交分解、三力平衡">
+<style>
+[data-scene="ps-16"] .s16-step{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="ps-16"].s1 .s16-step1,[data-scene="ps-16"].s2 .s16-step2,[data-scene="ps-16"].s3 .s16-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes s16draw{to{stroke-dashoffset:0}}
+@keyframes s16pop{0%{transform:scale(.88);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes s16grow{from{opacity:0}to{opacity:1}}
+@keyframes s16pulse{0%,100%{opacity:.5}50%{opacity:1}}
+[data-scene="ps-16"].s1 .s16-ribbon{transform-box:fill-box;transform-origin:center;animation:s16pop .5s ease .1s both}
+[data-scene="ps-16"].s1 .s16-n,[data-scene="ps-16"].s1 .s16-g{stroke-dasharray:100;stroke-dashoffset:100;animation:s16draw .6s ease .5s forwards}
+[data-scene="ps-16"].s1 .s16-g{animation-delay:.7s}
+[data-scene="ps-16"].s1 .s16-eq{animation:s16pulse 1.8s ease-in-out .6s infinite}
+[data-scene="ps-16"].s2 .s16-axis{stroke-dasharray:420;stroke-dashoffset:420;animation:s16draw .7s ease .1s forwards}
+[data-scene="ps-16"].s2 .s16-f1{stroke-dasharray:130;stroke-dashoffset:130;animation:s16draw .5s ease .6s forwards}
+[data-scene="ps-16"].s2 .s16-f2{stroke-dasharray:130;stroke-dashoffset:130;animation:s16draw .5s ease .8s forwards}
+[data-scene="ps-16"].s2 .s16-f3{stroke-dasharray:125;stroke-dashoffset:125;animation:s16draw .5s ease 1s forwards}
+[data-scene="ps-16"].s2 .s16-proj{animation:s16grow .5s ease 1.4s both}
+[data-scene="ps-16"].s2 .s16-card{transform-box:fill-box;transform-origin:center;animation:s16pop .5s ease .9s both}
+[data-scene="ps-16"].s3 .s16-tri{stroke-dasharray:180;stroke-dashoffset:180;animation:s16draw .55s ease .2s forwards}
+[data-scene="ps-16"].s3 .s16-tri2{stroke-dasharray:180;stroke-dashoffset:180;animation:s16draw .55s ease .6s forwards}
+[data-scene="ps-16"].s3 .s16-tri3{stroke-dasharray:180;stroke-dashoffset:180;animation:s16draw .55s ease 1s forwards}
+[data-scene="ps-16"].s3 .s16-l{stroke-dasharray:130;stroke-dashoffset:130;animation:s16draw .5s ease .25s forwards}
+[data-scene="ps-16"].s3 .s16-l2{stroke-dasharray:130;stroke-dashoffset:130;animation:s16draw .5s ease .45s forwards}
+[data-scene="ps-16"].s3 .s16-l3{stroke-dasharray:145;stroke-dashoffset:145;animation:s16draw .5s ease .65s forwards}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="532" width="900" height="88" fill="url(#gBench)"/>
+<line x1="0" y1="532" x2="900" y2="532" stroke="#cbd5e1" stroke-width="2.5"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">共点力的平衡：合力为零</text>
+
+<!-- 第一步：平衡状态 -->
+<g class="s16-step s16-step1" data-zone="1">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">第 1 步 · 平衡状态：静止或匀速直线运动</text>
+
+  <rect class="s16-ribbon" x="120" y="96" width="660" height="40" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.6"/>
+  <text x="450" y="122" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">物体在共点力作用下保持静止，或做匀速直线运动</text>
+
+  <!-- 静止 -->
+  <text x="250" y="156" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">静止的书</text>
+  <line x1="100" y1="340" x2="430" y2="340" stroke="#94a3b8" stroke-width="3"/>
+  <rect x="180" y="260" width="140" height="80" rx="6" fill="#cbd5e1" stroke="#475569" stroke-width="2.2"/>
+  <line class="s16-n" x1="250" y1="260" x2="250" y2="190" stroke="#059669" stroke-width="3.6" marker-end="url(#arrGreen)"/>
+  <text x="262" y="186" font-size="13" font-weight="900" fill="#047857">N</text>
+  <line class="s16-g" x1="250" y1="340" x2="250" y2="414" stroke="#7c3aed" stroke-width="3.6" marker-end="url(#arrBlue)"/>
+  <text x="238" y="418" font-size="13" font-weight="900" fill="#6d28d9" text-anchor="end">G</text>
+  <text class="s16-eq" x="368" y="304" font-size="13" font-weight="900" fill="#1e3a8a" text-anchor="middle">N = G</text>
+  <text x="250" y="452" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">静止：a = 0，合力为零</text>
+
+  <!-- 匀速直线运动 -->
+  <text x="665" y="156" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">冰面上匀速滑行</text>
+  <rect x="480" y="336" width="370" height="7" rx="3" fill="#bfdbfe"/>
+  <rect x="600" y="280" width="130" height="60" rx="6" fill="#cbd5e1" stroke="#475569" stroke-width="2.2"/>
+  <line class="s16-n" x1="665" y1="280" x2="665" y2="210" stroke="#059669" stroke-width="3.6" marker-end="url(#arrGreen)"/>
+  <text x="677" y="206" font-size="13" font-weight="900" fill="#047857">N</text>
+  <line class="s16-g" x1="665" y1="340" x2="665" y2="414" stroke="#7c3aed" stroke-width="3.6" marker-end="url(#arrBlue)"/>
+  <text x="653" y="418" font-size="13" font-weight="900" fill="#6d28d9" text-anchor="end">G</text>
+  <line x1="730" y1="310" x2="820" y2="310" stroke="#1d4ed8" stroke-width="3.6" marker-end="url(#arrBlue)"/>
+  <text x="830" y="304" font-size="13" font-weight="900" fill="#1e40af">v</text>
+  <text x="665" y="452" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">匀速直线运动：合力也为零</text>
+
+  <rect x="90" y="464" width="720" height="58" rx="12" fill="#ffffff" stroke="#dbe6f2" stroke-width="1.8"/>
+  <text x="450" y="488" font-size="14" font-weight="900" fill="#1e3a8a" text-anchor="middle">平衡条件：合力 F合 = 0，加速度 a = 0</text>
+  <text x="450" y="510" font-size="11.5" fill="#475569" text-anchor="middle">静止和匀速直线运动都是平衡状态，运动状态不再改变</text>
+</g>
+
+<!-- 第二步：正交分解 -->
+<g class="s16-step s16-step2" data-zone="2">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">第 2 步 · 平衡条件：两个方向的合力都为零</text>
+
+  <line class="s16-axis" x1="120" y1="360" x2="480" y2="360" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <line class="s16-axis" x1="300" y1="494" x2="300" y2="116" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <text x="488" y="364" font-size="12.5" font-weight="800" fill="#475569">x</text>
+  <text x="306" y="112" font-size="12.5" font-weight="800" fill="#475569">y</text>
+
+  <line class="s16-f1" x1="300" y1="360" x2="404" y2="300" stroke="#dc2626" stroke-width="4" marker-end="url(#arrRed)"/>
+  <line class="s16-f2" x1="300" y1="360" x2="196" y2="300" stroke="#059669" stroke-width="4" marker-end="url(#arrGreen)"/>
+  <line class="s16-f3" x1="300" y1="360" x2="300" y2="482" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrBlue)"/>
+  <circle cx="300" cy="360" r="15" fill="#f59e0b" stroke="#b45309" stroke-width="2"/>
+
+  <text x="412" y="296" font-size="13.5" font-weight="800" fill="#b91c1c">F₁</text>
+  <text x="188" y="296" font-size="13.5" font-weight="800" fill="#047857" text-anchor="end">F₂</text>
+  <text x="312" y="474" font-size="13.5" font-weight="800" fill="#6d28d9">F₃</text>
+
+  <g class="s16-proj">
+    <line x1="404" y1="300" x2="404" y2="356" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="6 5"/>
+    <line x1="196" y1="300" x2="196" y2="356" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="6 5"/>
+    <line x1="196" y1="300" x2="404" y2="300" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="5 5"/>
+    <circle cx="404" cy="360" r="4" fill="#dc2626"/>
+    <circle cx="196" cy="360" r="4" fill="#059669"/>
+    <text x="404" y="382" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">F₁x</text>
+    <text x="196" y="382" font-size="11.5" font-weight="800" fill="#047857" text-anchor="middle">F₂x</text>
+    <text x="120" y="404" font-size="11.5" font-weight="800" fill="#64748b">两个方向的合力都为零</text>
+  </g>
+
+  <rect class="s16-card" x="510" y="110" width="340" height="376" rx="16" fill="#ffffff" stroke="#c7d7f5" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="510" y="110" width="340" height="8" rx="4" fill="#1d4ed8"/>
+  <text x="680" y="152" font-size="16" font-weight="900" fill="#1e3a8a" text-anchor="middle">正交分解法</text>
+  <text x="680" y="176" font-size="11.5" fill="#64748b" text-anchor="middle">把力沿两个互相垂直的方向分解</text>
+  <text x="680" y="212" font-size="16" font-weight="900" fill="#b91c1c" text-anchor="middle">ΣFx = 0</text>
+  <text x="680" y="242" font-size="16" font-weight="900" fill="#047857" text-anchor="middle">ΣFy = 0</text>
+  <line x1="530" y1="264" x2="830" y2="264" stroke="#e8eef7" stroke-width="1.5"/>
+  <text x="530" y="292" font-size="11.5" fill="#334155">1 画受力图，确定研究对象</text>
+  <text x="530" y="318" font-size="11.5" fill="#334155">2 建坐标系，让更多力落在轴上</text>
+  <text x="530" y="344" font-size="11.5" fill="#334155">3 把不在轴上的力投影到两轴</text>
+  <text x="530" y="370" font-size="11.5" fill="#334155">4 两个方向分别列平衡方程</text>
+  <text x="530" y="396" font-size="11.5" fill="#334155">5 解方程，检验结果是否合理</text>
+  <rect x="530" y="416" width="300" height="52" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.4"/>
+  <text x="680" y="438" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">三个力也可直接用合成法：</text>
+  <text x="680" y="458" font-size="11.5" fill="#475569" text-anchor="middle">任意两力合成后与第三力等大反向</text>
+</g>
+
+<!-- 第三步：三力平衡 -->
+<g class="s16-step s16-step3" data-zone="3">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">第 3 步 · 三力平衡：任两力的合力与第三力等大反向</text>
+
+  <text x="240" y="140" font-size="15" font-weight="900" fill="#1e3a8a" text-anchor="middle">F₁ + F₂ + F₃ = 0</text>
+  <text x="240" y="170" font-size="11.5" fill="#64748b" text-anchor="middle">三个力作用在同一点</text>
+
+  <line class="s16-l" x1="240" y1="285" x2="338" y2="216" stroke="#dc2626" stroke-width="4" marker-end="url(#arrRed)"/>
+  <line class="s16-l2" x1="240" y1="285" x2="142" y2="216" stroke="#059669" stroke-width="4" marker-end="url(#arrGreen)"/>
+  <line class="s16-l3" x1="240" y1="285" x2="240" y2="423" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrBlue)"/>
+  <circle cx="240" cy="285" r="12" fill="#f59e0b" stroke="#b45309" stroke-width="2"/>
+  <text x="348" y="208" font-size="13" font-weight="800" fill="#b91c1c">F₁</text>
+  <text x="132" y="208" font-size="13" font-weight="800" fill="#047857" text-anchor="end">F₂</text>
+  <text x="252" y="420" font-size="13" font-weight="800" fill="#6d28d9">F₃</text>
+
+  <line x1="400" y1="150" x2="400" y2="430" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <text x="650" y="164" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">三力首尾相接，回到起点</text>
+  <text x="650" y="188" font-size="12.5" fill="#475569" text-anchor="middle">闭合三角形 ⇒ 合力为零</text>
+
+  <line class="s16-tri" x1="560" y1="390" x2="730" y2="390" stroke="#dc2626" stroke-width="3.6" marker-end="url(#arrRed)"/>
+  <line class="s16-tri2" x1="730" y1="390" x2="645" y2="250" stroke="#059669" stroke-width="3.6" marker-end="url(#arrGreen)"/>
+  <line class="s16-tri3" x1="645" y1="250" x2="560" y2="390" stroke="#7c3aed" stroke-width="3.6" marker-end="url(#arrBlue)"/>
+  <text x="645" y="414" font-size="12.5" font-weight="800" fill="#b91c1c" text-anchor="middle">F₁</text>
+  <text x="700" y="318" font-size="12.5" font-weight="800" fill="#047857">F₂</text>
+  <text x="590" y="316" font-size="12.5" font-weight="800" fill="#6d28d9" text-anchor="end">F₃</text>
+  <text x="650" y="440" font-size="11.5" fill="#64748b" text-anchor="middle">把 F₁、F₂ 平移后与 F₃ 构成三角形</text>
+
+  <rect x="70" y="452" width="760" height="54" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="450" y="476" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">三力平衡：任意两个力的合力，一定与第三个力等大、反向</text>
+  <text x="450" y="497" font-size="11.5" fill="#475569" text-anchor="middle">解题顺序：受力分析 → 合成或正交分解 → 列平衡方程 → 求解</text>
+</g>
+</svg>

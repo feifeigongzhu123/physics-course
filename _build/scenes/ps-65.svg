@@ -1,0 +1,183 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="实验验证动量守恒：气垫导轨与光电门、滑块碰撞、数据验证">
+<style>
+[data-scene="ps-65"] .s65-step1,[data-scene="ps-65"] .s65-step2,[data-scene="ps-65"] .s65-step3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility 0s linear .45s}
+[data-scene="ps-65"].s1 .s65-step1,[data-scene="ps-65"].s2 .s65-step2,[data-scene="ps-65"].s3 .s65-step3{opacity:1;visibility:visible;transition:opacity .45s ease,visibility 0s}
+@keyframes s65draw{to{stroke-dashoffset:0}}
+@keyframes s65pop{0%{transform:scale(.88);opacity:0}70%{transform:scale(1.04);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s65pulse{0%,100%{opacity:.4}50%{opacity:1}}
+@keyframes s65slide{0%{transform:translateX(-12px);opacity:0}100%{transform:none;opacity:1}}
+[data-scene="ps-65"].s1 .s65-gate{animation:s65pop .5s ease both;transform-box:fill-box;transform-origin:center}
+[data-scene="ps-65"].s1 .s65-gate:nth-of-type(2){animation-delay:.15s}
+[data-scene="ps-65"].s1 .s65-beam{stroke-dasharray:90;stroke-dashoffset:90;animation:s65draw .6s ease .5s forwards}
+[data-scene="ps-65"].s1 .s65-card{transform-box:fill-box;transform-origin:center;animation:s65pop .5s ease .5s both}
+[data-scene="ps-65"].s2 .s65-g{stroke-dasharray:140;stroke-dashoffset:140;animation:s65draw .55s ease .2s forwards}
+[data-scene="ps-65"].s2 .s65-g2{animation-delay:.35s}
+[data-scene="ps-65"].s2 .s65-g3{animation-delay:.5s}
+[data-scene="ps-65"].s2 .s65-g4{animation-delay:.65s}
+[data-scene="ps-65"].s2 .s65-photogate{animation:s65pulse 1.6s ease-in-out infinite}
+[data-scene="ps-65"].s3 .s65-row{animation:s65slide .45s ease both}
+[data-scene="ps-65"].s3 .s65-row:nth-of-type(2){animation-delay:.1s}
+[data-scene="ps-65"].s3 .s65-row:nth-of-type(3){animation-delay:.2s}
+[data-scene="ps-65"].s3 .s65-card{transform-box:fill-box;transform-origin:center;animation:s65pop .5s ease .55s both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="532" width="900" height="88" fill="url(#gBench)"/>
+<line x1="0" y1="532" x2="900" y2="532" stroke="#cbd5e1" stroke-width="2.5"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">实验：验证动量守恒定律（气垫导轨与光电门）</text>
+
+<!-- 第一步：装置 -->
+<g class="s65-step1" data-zone="1">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 1 步 · 气垫导轨与光电门</text>
+
+  <text x="785" y="110" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">数字计时器</text>
+  <rect x="710" y="118" width="150" height="86" rx="10" fill="#ffffff" stroke="#1d4ed8" stroke-width="2"/>
+  <rect x="726" y="132" width="118" height="34" rx="6" fill="#e0f2fe" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="785" y="155" font-size="14" font-weight="900" fill="#1e3a8a" text-anchor="middle">v = d/Δt</text>
+  <text x="785" y="186" font-size="11.5" fill="#64748b" text-anchor="middle">显示挡光时间 Δt</text>
+
+  <rect x="80" y="300" width="620" height="18" rx="9" fill="#cbd5e1" stroke="#94a3b8" stroke-width="2"/>
+  <g fill="#94a3b8">
+    <circle cx="120" cy="309" r="2.4"/><circle cx="180" cy="309" r="2.4"/>
+    <circle cx="240" cy="309" r="2.4"/><circle cx="300" cy="309" r="2.4"/>
+    <circle cx="360" cy="309" r="2.4"/><circle cx="420" cy="309" r="2.4"/>
+    <circle cx="480" cy="309" r="2.4"/><circle cx="540" cy="309" r="2.4"/>
+    <circle cx="600" cy="309" r="2.4"/><circle cx="660" cy="309" r="2.4"/>
+  </g>
+  <rect x="150" y="318" width="16" height="86" fill="#94a3b8"/>
+  <rect x="600" y="318" width="16" height="86" fill="#94a3b8"/>
+  <line x1="120" y1="404" x2="660" y2="404" stroke="#cbd5e1" stroke-width="2"/>
+
+  <rect x="230" y="268" width="92" height="30" rx="6" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="276" y="288" font-size="12.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">滑块 A</text>
+  <rect x="478" y="268" width="92" height="30" rx="6" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+  <text x="524" y="288" font-size="12.5" font-weight="900" fill="#047857" text-anchor="middle">滑块 B</text>
+
+  <g class="s65-gate">
+    <rect x="356" y="240" width="8" height="64" fill="#7c3aed"/>
+    <rect x="394" y="240" width="8" height="64" fill="#7c3aed"/>
+    <line x1="356" y1="240" x2="402" y2="240" stroke="#7c3aed" stroke-width="5"/>
+    <line class="s65-beam" x1="364" y1="304" x2="394" y2="304" stroke="#a78bfa" stroke-width="4"/>
+  </g>
+  <text x="379" y="228" font-size="11.5" font-weight="800" fill="#6d28d9" text-anchor="middle">光电门 1</text>
+
+  <g class="s65-gate">
+    <rect x="626" y="240" width="8" height="64" fill="#7c3aed"/>
+    <rect x="664" y="240" width="8" height="64" fill="#7c3aed"/>
+    <line x1="626" y1="240" x2="672" y2="240" stroke="#7c3aed" stroke-width="5"/>
+    <line class="s65-beam" x1="634" y1="304" x2="664" y2="304" stroke="#a78bfa" stroke-width="4"/>
+  </g>
+  <text x="649" y="228" font-size="11.5" font-weight="800" fill="#6d28d9" text-anchor="middle">光电门 2</text>
+
+  <path d="M402 240 L710 200" fill="none" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <path d="M672 240 L712 214" fill="none" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="5 4"/>
+
+  <text x="390" y="352" font-size="12.5" font-weight="700" fill="#475569" text-anchor="middle">气垫导轨：气孔喷气，滑块与导轨间摩擦力可忽略</text>
+
+  <g class="s65-card">
+    <rect x="70" y="384" width="760" height="66" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="450" y="410" font-size="16" font-weight="900" fill="#1e3a8a" text-anchor="middle">速度测量：v = d / Δt</text>
+    <text x="450" y="434" font-size="12" fill="#334155" text-anchor="middle">d：遮光条宽度　　Δt：滑块通过光电门的挡光时间</text>
+  </g>
+
+  <rect x="70" y="468" width="760" height="40" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+  <text x="450" y="493" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">滑块近似做匀速直线运动，速度由遮光条宽度和挡光时间算出</text>
+</g>
+
+<!-- 第二步：滑块碰撞 -->
+<g class="s65-step2" data-zone="2">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 2 步 · 滑块碰撞：测碰前、碰后的速度</text>
+
+  <text x="70" y="150" font-size="12.5" font-weight="800" fill="#64748b">碰前</text>
+  <line x1="80" y1="240" x2="820" y2="240" stroke="#cbd5e1" stroke-width="2.5"/>
+  <rect x="150" y="208" width="92" height="30" rx="6" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="196" y="228" font-size="12.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">A</text>
+  <line class="s65-g" x1="246" y1="192" x2="346" y2="192" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrRed)"/>
+  <text x="296" y="180" font-size="13" font-weight="800" fill="#b91c1c" text-anchor="middle">v₁</text>
+  <rect x="480" y="208" width="72" height="30" rx="6" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+  <text x="516" y="228" font-size="12.5" font-weight="900" fill="#047857" text-anchor="middle">B</text>
+  <text x="516" y="196" font-size="12" font-weight="700" fill="#047857" text-anchor="middle">v₂ = 0</text>
+
+  <text x="70" y="312" font-size="12.5" font-weight="800" fill="#64748b">碰后</text>
+  <line x1="80" y1="400" x2="820" y2="400" stroke="#cbd5e1" stroke-width="2.5"/>
+  <rect x="190" y="368" width="92" height="30" rx="6" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="236" y="388" font-size="12.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">A</text>
+  <line class="s65-g s65-g3" x1="286" y1="352" x2="346" y2="352" stroke="#1d4ed8" stroke-width="3.5" marker-end="url(#arrBlue)"/>
+  <text x="316" y="340" font-size="13" font-weight="800" fill="#1d4ed8" text-anchor="middle">v₁′</text>
+  <rect x="560" y="368" width="72" height="30" rx="6" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+  <text x="596" y="388" font-size="12.5" font-weight="900" fill="#047857" text-anchor="middle">B</text>
+  <line class="s65-g s65-g4" x1="636" y1="352" x2="746" y2="352" stroke="#059669" stroke-width="3.5" marker-end="url(#arrGreen)"/>
+  <text x="691" y="340" font-size="13" font-weight="800" fill="#047857" text-anchor="middle">v₂′</text>
+
+  <line class="s65-photogate" x1="400" y1="180" x2="400" y2="410" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <line class="s65-photogate" x1="700" y1="180" x2="700" y2="410" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <text x="400" y="428" font-size="11" font-weight="700" fill="#6d28d9" text-anchor="middle">光电门</text>
+  <text x="700" y="428" font-size="11" font-weight="700" fill="#6d28d9" text-anchor="middle">光电门</text>
+
+  <rect x="70" y="448" width="760" height="68" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="472" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">用 v = d/Δt 测出碰前 v₁、v₂（可让 v₂ = 0）和碰后 v₁′、v₂′</text>
+  <text x="450" y="498" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">比较 m₁v₁ + m₂v₂ 与 m₁v₁′ + m₂v₂′ 是否相等</text>
+</g>
+
+<!-- 第三步：数据验证 -->
+<g class="s65-step3" data-zone="3">
+  <text x="70" y="84" font-size="14" font-weight="800" fill="#1e3a8a">第 3 步 · 数据记录与验证</text>
+
+  <rect x="70" y="126" width="480" height="174" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="70" y="126" width="480" height="42" rx="10" fill="#e8effc"/>
+  <rect x="70" y="150" width="480" height="18" fill="#e8effc"/>
+  <g font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">
+    <text x="130" y="153">次数</text>
+    <text x="260" y="153">p前 / (kg·m/s)</text>
+    <text x="390" y="153">p后 / (kg·m/s)</text>
+    <text x="490" y="153">相对误差</text>
+  </g>
+  <line x1="70" y1="168" x2="550" y2="168" stroke="#cbd5e1" stroke-width="1.5"/>
+  <line x1="70" y1="212" x2="550" y2="212" stroke="#e2e8f0" stroke-width="1.5"/>
+  <line x1="70" y1="256" x2="550" y2="256" stroke="#e2e8f0" stroke-width="1.5"/>
+  <line x1="70" y1="300" x2="550" y2="300" stroke="#cbd5e1" stroke-width="1.5"/>
+  <line x1="190" y1="126" x2="190" y2="300" stroke="#e2e8f0" stroke-width="1.5"/>
+  <line x1="320" y1="126" x2="320" y2="300" stroke="#e2e8f0" stroke-width="1.5"/>
+  <line x1="440" y1="126" x2="440" y2="300" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <g class="s65-row" font-size="12" fill="#334155" text-anchor="middle">
+    <text x="130" y="195">1</text>
+    <text x="260" y="195">6.00</text>
+    <text x="390" y="195">5.98</text>
+    <text x="490" y="195">0.3%</text>
+  </g>
+  <g class="s65-row" font-size="12" fill="#334155" text-anchor="middle">
+    <text x="130" y="239">2</text>
+    <text x="260" y="239">4.50</text>
+    <text x="390" y="239">4.53</text>
+    <text x="490" y="239">0.7%</text>
+  </g>
+  <g class="s65-row" font-size="12" fill="#334155" text-anchor="middle">
+    <text x="130" y="283">3</text>
+    <text x="260" y="283">7.20</text>
+    <text x="390" y="283">7.16</text>
+    <text x="490" y="283">0.6%</text>
+  </g>
+
+  <g class="s65-card">
+    <rect x="580" y="126" width="280" height="174" rx="12" fill="#ffffff" stroke="#bbf7d0" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="720" y="158" font-size="14" font-weight="800" fill="#047857" text-anchor="middle">结论</text>
+    <text x="720" y="194" font-size="12.5" fill="#334155" text-anchor="middle">在误差允许范围内</text>
+    <text x="720" y="224" font-size="16" font-weight="900" fill="#047857" text-anchor="middle">p前 = p后</text>
+    <text x="720" y="254" font-size="12.5" fill="#334155" text-anchor="middle">系统的总动量守恒</text>
+    <text x="720" y="282" font-size="11.5" fill="#64748b" text-anchor="middle">误差来自摩擦、导轨不水平等</text>
+  </g>
+
+  <rect x="70" y="320" width="790" height="100" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="465" y="346" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">实验要点</text>
+  <text x="465" y="374" font-size="12" fill="#334155" text-anchor="middle">导轨调水平：轻推滑块，看它是否做匀速运动</text>
+  <text x="465" y="398" font-size="12" fill="#334155" text-anchor="middle">碰撞前后速度在同一直线上，避免斜碰</text>
+  <text x="465" y="416" font-size="12" fill="#334155" text-anchor="middle">多次测量取平均值，减小偶然误差</text>
+
+  <rect x="70" y="436" width="790" height="66" rx="12" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+  <text x="465" y="462" font-size="13.5" font-weight="900" fill="#b45309" text-anchor="middle">在误差允许范围内，碰撞前后系统总动量相等</text>
+  <text x="465" y="486" font-size="12" fill="#334155" text-anchor="middle">动量守恒定律得到验证</text>
+</g>
+</svg>

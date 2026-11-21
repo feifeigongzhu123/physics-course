@@ -1,0 +1,199 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="普朗克黑体辐射理论：黑体、辐射强度随波长分布的曲线、普朗克能量子">
+<style>
+[data-scene="ps-115"] .s115-s1,[data-scene="ps-115"] .s115-s2,[data-scene="ps-115"] .s115-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="ps-115"].s1 .s115-s1,[data-scene="ps-115"].s2 .s115-s2,[data-scene="ps-115"].s3 .s115-s3{opacity:1;visibility:visible}
+@keyframes s115fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+@keyframes s115draw{to{stroke-dashoffset:0}}
+@keyframes s115pop{0%{transform:scale(.88);opacity:0}70%{transform:scale(1.04);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s115pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes s115flow{to{stroke-dashoffset:-30}}
+@keyframes s115rise{0%{transform:translate(0,0);opacity:0}20%{opacity:1}100%{transform:translate(42px,-12px);opacity:0}}
+[data-scene="ps-115"].s1 .s115-ray{stroke-dasharray:7 5;animation:s115flow 1.1s linear infinite}
+[data-scene="ps-115"].s1 .s115-hole{animation:s115pulse 2.2s ease-in-out infinite}
+[data-scene="ps-115"].s1 .s115-card{transform-box:fill-box;transform-origin:center;animation:s115pop .55s ease .4s both}
+[data-scene="ps-115"].s2 .s115-curve{stroke-dasharray:520;stroke-dashoffset:520;animation:s115draw 1.3s ease .2s forwards}
+[data-scene="ps-115"].s2 .s115-curve2{animation-delay:.35s}
+[data-scene="ps-115"].s2 .s115-curve3{animation-delay:.5s}
+[data-scene="ps-115"].s2 .s115-card{animation:s115fade .5s ease .6s both}
+[data-scene="ps-115"].s3 .s115-level{animation:s115fade .45s ease both}
+[data-scene="ps-115"].s3 .s115-level2{animation-delay:.1s}
+[data-scene="ps-115"].s3 .s115-level3{animation-delay:.2s}
+[data-scene="ps-115"].s3 .s115-level4{animation-delay:.3s}
+[data-scene="ps-115"].s3 .s115-eq{transform-box:fill-box;transform-origin:center;animation:s115pop .6s ease .45s both}
+[data-scene="ps-115"].s3 .s115-photon{transform-box:fill-box;animation:s115rise 2s ease-in-out infinite}
+[data-scene="ps-115"].s3 .s115-card{animation:s115fade .5s ease .6s both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">黑体辐射：普朗克能量子</text>
+
+<!-- 第一步：黑体 -->
+<g class="s115-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">黑体：完全吸收入射电磁波而不反射的理想物体</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="250" height="28" rx="14" fill="#e8effc"/>
+  <text x="181" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">黑体空腔模型</text>
+
+  <text x="260" y="152" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">带小孔的空腔</text>
+
+  <rect x="120" y="160" width="280" height="180" rx="10" fill="#e2e8f0" stroke="#475569" stroke-width="3"/>
+  <rect x="150" y="190" width="190" height="120" fill="#0f172a"/>
+  <circle class="s115-hole" cx="150" cy="250" r="16" fill="#020617" stroke="#64748b" stroke-width="2"/>
+  <text x="250" y="252" font-size="12.5" font-weight="800" fill="#f8fafc" text-anchor="middle">完全吸收</text>
+  <text x="250" y="274" font-size="11" fill="#cbd5e1" text-anchor="middle">没有反射</text>
+
+  <line class="s115-ray" x1="60" y1="212" x2="138" y2="238" stroke="#d97706" stroke-width="2.5" marker-end="url(#arrAmber)"/>
+  <line class="s115-ray" x1="60" y1="250" x2="136" y2="250" stroke="#d97706" stroke-width="2.5" marker-end="url(#arrAmber)"/>
+  <line class="s115-ray" x1="60" y1="288" x2="138" y2="262" stroke="#d97706" stroke-width="2.5" marker-end="url(#arrAmber)"/>
+  <text x="70" y="200" font-size="11" font-weight="800" fill="#b45309">入射电磁波</text>
+  <text x="150" y="316" font-size="11" fill="#334155" text-anchor="middle">小孔</text>
+
+  <text x="296" y="376" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">入射的各种波长电磁波全部被吸收</text>
+  <text x="296" y="402" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">黑体不反射，但仍会向外辐射电磁波</text>
+  <text x="296" y="428" font-size="11" fill="#64748b" text-anchor="middle">黑体是理想模型，太阳和炉腔小孔近似黑体</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">黑体的特点</text>
+
+  <g class="s115-card">
+    <rect x="590" y="156" width="260" height="70" rx="10" fill="#e8effc" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="720" y="182" font-size="12" font-weight="900" fill="#1e3a8a" text-anchor="middle">吸收全部入射电磁波</text>
+    <text x="720" y="206" font-size="11" fill="#1e40af" text-anchor="middle">各种波长都吸收，不发生反射</text>
+  </g>
+
+  <text x="596" y="266" font-size="11.5" fill="#334155">黑体不反射，但会向外辐射</text>
+  <text x="596" y="292" font-size="11.5" fill="#334155">辐射强度按波长分布</text>
+  <text x="596" y="318" font-size="11.5" fill="#334155">辐射强度只与温度有关</text>
+  <text x="596" y="344" font-size="11.5" fill="#334155">温度越高，辐射越强</text>
+
+  <rect x="590" y="366" width="260" height="54" rx="9" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="390" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">黑体辐射的强度按波长分布</text>
+  <text x="720" y="410" font-size="11" fill="#92400e" text-anchor="middle">这是研究热辐射的理想模型</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">黑体完全吸收入射电磁波而不反射，它的辐射只与温度有关</text>
+</g>
+
+<!-- 第二步：辐射强度-波长曲线 -->
+<g class="s115-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">辐射强度—波长曲线：温度升高，辐射增强，峰值向短波移动</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="250" height="28" rx="14" fill="#e8effc"/>
+  <text x="181" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">不同温度的黑体辐射</text>
+
+  <line x1="100" y1="380" x2="520" y2="380" stroke="#64748b" stroke-width="1.8" marker-end="url(#arrBlue)"/>
+  <line x1="100" y1="380" x2="100" y2="150" stroke="#64748b" stroke-width="1.8" marker-end="url(#arrBlue)"/>
+  <text x="524" y="384" font-size="12" font-weight="800" fill="#475569">λ</text>
+  <text x="106" y="144" font-size="11.5" font-weight="800" fill="#475569">辐射强度</text>
+
+  <path class="s115-curve" d="M110 380 C160 368 192 300 212 230 C224 190 240 190 254 230 C280 310 330 360 400 374 L500 379" fill="none" stroke="#dc2626" stroke-width="2.6"/>
+  <path class="s115-curve s115-curve2" d="M110 380 C170 372 220 330 250 290 C270 262 292 270 310 300 C350 348 410 370 470 377 L500 378" fill="none" stroke="#d97706" stroke-width="2.6"/>
+  <path class="s115-curve s115-curve3" d="M110 380 C180 374 250 355 290 335 C315 322 335 330 355 350 C390 374 440 379 480 380 L500 380" fill="none" stroke="#1d4ed8" stroke-width="2.6"/>
+
+  <text x="238" y="182" font-size="11.5" font-weight="800" fill="#b91c1c">T₃</text>
+  <text x="284" y="252" font-size="11.5" font-weight="800" fill="#b45309">T₂</text>
+  <text x="325" y="322" font-size="11.5" font-weight="800" fill="#1d4ed8">T₁</text>
+  <text x="150" y="172" font-size="11" fill="#64748b">T₁ &lt; T₂ &lt; T₃</text>
+
+  <line x1="225" y1="380" x2="225" y2="200" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="5 5"/>
+  <text x="225" y="400" font-size="11" fill="#64748b" text-anchor="middle">峰值波长</text>
+  <text x="296" y="424" font-size="11.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">温度升高，峰值波长变短</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">曲线的规律</text>
+
+  <g class="s115-card">
+    <circle cx="610" cy="172" r="11" fill="#fee2e2"/>
+    <text x="610" y="176" font-size="11" font-weight="900" fill="#b91c1c" text-anchor="middle">1</text>
+    <text x="630" y="168" font-size="11.5" font-weight="800" fill="#334155">温度升高，辐射强度增大</text>
+    <text x="630" y="188" font-size="11" fill="#64748b">各个波长的辐射都增强</text>
+
+    <circle cx="610" cy="222" r="11" fill="#fef3c7"/>
+    <text x="610" y="226" font-size="11" font-weight="900" fill="#92400e" text-anchor="middle">2</text>
+    <text x="630" y="218" font-size="11.5" font-weight="800" fill="#334155">峰值向短波方向移动</text>
+    <text x="630" y="238" font-size="11" fill="#64748b">曲线整体变得更陡更高</text>
+
+    <circle cx="610" cy="272" r="11" fill="#dbeafe"/>
+    <text x="610" y="276" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">3</text>
+    <text x="630" y="268" font-size="11.5" font-weight="800" fill="#334155">温度越高，峰值波长越短</text>
+    <text x="630" y="288" font-size="11" fill="#64748b">峰值波长与温度成反比</text>
+  </g>
+
+  <rect x="590" y="306" width="260" height="72" rx="9" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="330" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">经典理论：短波区辐射强度</text>
+  <text x="720" y="350" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">趋于无穷大 → 紫外灾难</text>
+  <text x="720" y="370" font-size="11" fill="#92400e" text-anchor="middle">经典电磁理论对此无能为力</text>
+
+  <text x="720" y="404" font-size="11" fill="#64748b" text-anchor="middle">实验曲线是一条有限的光滑曲线</text>
+  <text x="720" y="426" font-size="11.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">需要全新的能量观念来解释</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">温度越高，黑体辐射越强，辐射强度的峰值波长越短</text>
+</g>
+
+<!-- 第三步：能量子 -->
+<g class="s115-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">普朗克的能量子：能量只能一份一份地吸收和辐射</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="250" height="28" rx="14" fill="#e8effc"/>
+  <text x="181" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">分立的能量状态</text>
+
+  <g class="s115-level">
+    <line x1="100" y1="350" x2="250" y2="350" stroke="#1d4ed8" stroke-width="4"/>
+    <text x="262" y="355" font-size="11.5" font-weight="800" fill="#1e3a8a">0</text>
+    <line x1="100" y1="310" x2="250" y2="310" stroke="#1d4ed8" stroke-width="4"/>
+    <text x="262" y="315" font-size="11.5" font-weight="800" fill="#1e3a8a">hν</text>
+    <line x1="100" y1="270" x2="250" y2="270" stroke="#1d4ed8" stroke-width="4"/>
+    <text x="262" y="275" font-size="11.5" font-weight="800" fill="#1e3a8a">2hν</text>
+    <line x1="100" y1="230" x2="250" y2="230" stroke="#1d4ed8" stroke-width="4"/>
+    <text x="262" y="235" font-size="11.5" font-weight="800" fill="#1e3a8a">3hν</text>
+  </g>
+
+  <line x1="178" y1="348" x2="178" y2="232" stroke="#059669" stroke-width="2.5" marker-end="url(#arrGreen)"/>
+  <text x="190" y="330" font-size="11" font-weight="800" fill="#047857">吸收 ε</text>
+  <line x1="210" y1="232" x2="210" y2="348" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arrRed)"/>
+  <text x="222" y="290" font-size="11" font-weight="800" fill="#b91c1c">辐射 ε</text>
+
+  <g class="s115-eq">
+    <text x="388" y="238" font-size="24" font-weight="900" fill="#1e3a8a" text-anchor="middle">ε = hν</text>
+    <text x="388" y="264" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">每一份最小能量叫能量子</text>
+    <text x="388" y="292" font-size="11" fill="#64748b" text-anchor="middle">h = 6.63×10⁻³⁴ J·s</text>
+    <text x="388" y="316" font-size="11" fill="#64748b" text-anchor="middle">ν：振动带电微粒的频率</text>
+  </g>
+
+  <text x="296" y="386" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">能量只能一份一份地吸收或辐射</text>
+  <text x="296" y="410" font-size="11" fill="#64748b" text-anchor="middle">能量不能连续变化</text>
+  <text x="296" y="430" font-size="11.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">n 只能取正整数 1、2、3……</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="596" y="116" width="248" height="28" rx="14" fill="#e8effc"/>
+  <text x="720" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">普朗克假设（1900 年）</text>
+
+  <g class="s115-card">
+    <text x="720" y="190" font-size="22" font-weight="900" fill="#1e3a8a" text-anchor="middle">ε = hν</text>
+    <text x="720" y="214" font-size="11" fill="#64748b" text-anchor="middle">能量子与频率成正比</text>
+
+    <line x1="590" y1="232" x2="834" y2="232" stroke="#e2e8f0" stroke-width="1.5"/>
+    <text x="596" y="258" font-size="11.5" fill="#334155">振动带电微粒的能量只能取分立值</text>
+    <text x="596" y="284" font-size="11.5" fill="#334155">吸收和辐射能量都是一份一份的</text>
+    <text x="596" y="310" font-size="11.5" fill="#334155">频率越高，每一份能量越大</text>
+    <text x="596" y="336" font-size="11.5" fill="#334155">能量不能连续变化</text>
+  </g>
+
+  <rect x="590" y="356" width="260" height="64" rx="9" fill="#ecfdf5" stroke="#86efac" stroke-width="1.5"/>
+  <text x="720" y="380" font-size="11.5" font-weight="800" fill="#047857" text-anchor="middle">成功解释了黑体辐射曲线</text>
+  <text x="720" y="400" font-size="11" fill="#065f46" text-anchor="middle">开创了量子理论</text>
+
+  <rect x="36" y="446" width="828" height="46" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="475" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">普朗克提出能量量子化：能量只能一份一份地吸收和辐射</text>
+</g>
+</svg>

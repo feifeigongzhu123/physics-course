@@ -1,0 +1,116 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="串联与并联电路对比：路径、电流、电压关系">
+  <rect width="900" height="620" fill="url(#gBg)"/>
+  <rect width="900" height="620" fill="url(#dotsPat)"/>
+
+  <text x="450" y="44" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">串联和并联：看电流有几条路</text>
+
+  <!-- 左：串联 -->
+  <g class="p3-left" data-zone="1">
+    <rect x="40" y="72" width="400" height="312" rx="18" fill="#ffffff" stroke="#dbe6f2" stroke-width="2"/>
+    <text x="240" y="102" font-size="16" font-weight="900" fill="#1e3a8a" text-anchor="middle">串联电路</text>
+
+    <path d="M90 160 H390 V320 H242 M228 320 H90 V160" fill="none" stroke="#334155" stroke-width="4" stroke-linejoin="round"/>
+    <!-- 电池 -->
+    <line x1="228" y1="306" x2="228" y2="334" stroke="#334155" stroke-width="4"/>
+    <line x1="242" y1="312" x2="242" y2="328" stroke="#334155" stroke-width="4"/>
+    <text x="235" y="352" font-size="11.5" fill="#64748b" text-anchor="middle">电源</text>
+    <!-- 开关 -->
+    <line x1="326" y1="320" x2="352" y2="304" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="326" cy="320" r="4" fill="#334155"/><circle cx="354" cy="320" r="4" fill="#334155"/>
+    <text x="340" y="292" font-size="12" font-weight="700" fill="#64748b">S</text>
+
+    <!-- 灯泡 L1 / L2 -->
+    <g>
+      <circle cx="170" cy="160" r="24" fill="#fef3c7" stroke="#d97706" stroke-width="3"/>
+      <line x1="158" y1="148" x2="182" y2="172" stroke="#d97706" stroke-width="2"/>
+      <line x1="182" y1="148" x2="158" y2="172" stroke="#d97706" stroke-width="2"/>
+      <text x="170" y="126" font-size="12.5" font-weight="800" fill="#92400e" text-anchor="middle">L₁</text>
+      <circle cx="310" cy="160" r="24" fill="#fef3c7" stroke="#d97706" stroke-width="3"/>
+      <line x1="298" y1="148" x2="322" y2="172" stroke="#d97706" stroke-width="2"/>
+      <line x1="322" y1="148" x2="298" y2="172" stroke="#d97706" stroke-width="2"/>
+      <text x="310" y="126" font-size="12.5" font-weight="800" fill="#92400e" text-anchor="middle">L₂</text>
+    </g>
+
+    <!-- 电流方向 -->
+    <g fill="#1d4ed8">
+      <path d="M240 152 L252 160 L240 168 Z"/>
+      <path d="M382 240 L390 252 L398 240 Z"/>
+      <path d="M150 312 L138 320 L150 328 Z"/>
+      <path d="M82 240 L90 228 L98 240 Z"/>
+    </g>
+    <path class="p3-flow p3-flowS" d="M90 160 H390 V320 H242 M228 320 H90 V160" fill="none" stroke="#1d4ed8" stroke-width="5" stroke-dasharray="12 12" opacity="0"/>
+    <text x="240" y="218" font-size="12.5" font-weight="700" fill="#1d4ed8" text-anchor="middle">只有一条路径</text>
+  </g>
+
+  <!-- 右：并联 -->
+  <g class="p3-right" data-zone="2">
+    <rect x="460" y="72" width="400" height="312" rx="18" fill="#ffffff" stroke="#dbe6f2" stroke-width="2"/>
+    <text x="660" y="102" font-size="16" font-weight="900" fill="#1e3a8a" text-anchor="middle">并联电路</text>
+
+    <path d="M510 160 H810 V320 H666 M650 320 H510 V160" fill="none" stroke="#334155" stroke-width="4" stroke-linejoin="round"/>
+    <line x1="590" y1="160" x2="590" y2="320" stroke="#334155" stroke-width="4"/>
+    <line x1="730" y1="160" x2="730" y2="320" stroke="#334155" stroke-width="4"/>
+    <!-- 电池 -->
+    <line x1="650" y1="306" x2="650" y2="334" stroke="#334155" stroke-width="4"/>
+    <line x1="666" y1="312" x2="666" y2="328" stroke="#334155" stroke-width="4"/>
+    <text x="658" y="352" font-size="11.5" fill="#64748b" text-anchor="middle">电源</text>
+    <!-- 开关（干路） -->
+    <line x1="744" y1="320" x2="770" y2="304" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="744" cy="320" r="4" fill="#334155"/><circle cx="772" cy="320" r="4" fill="#334155"/>
+    <text x="758" y="292" font-size="12" font-weight="700" fill="#64748b">S</text>
+
+    <!-- 灯泡 -->
+    <g>
+      <circle cx="590" cy="240" r="24" fill="#fef3c7" stroke="#d97706" stroke-width="3"/>
+      <line x1="578" y1="228" x2="602" y2="252" stroke="#d97706" stroke-width="2"/>
+      <line x1="602" y1="228" x2="578" y2="252" stroke="#d97706" stroke-width="2"/>
+      <text x="590" y="208" font-size="12.5" font-weight="800" fill="#92400e" text-anchor="middle">L₁</text>
+      <circle cx="730" cy="240" r="24" fill="#fef3c7" stroke="#d97706" stroke-width="3"/>
+      <line x1="718" y1="228" x2="742" y2="252" stroke="#d97706" stroke-width="2"/>
+      <line x1="742" y1="228" x2="718" y2="252" stroke="#d97706" stroke-width="2"/>
+      <text x="730" y="208" font-size="12.5" font-weight="800" fill="#92400e" text-anchor="middle">L₂</text>
+    </g>
+
+    <g fill="#1d4ed8">
+      <path d="M540 152 L552 160 L540 168 Z"/>
+      <path d="M582 300 L590 312 L598 300 Z"/>
+      <path d="M722 300 L730 312 L738 300 Z"/>
+      <path d="M790 240 L798 252 L806 240 Z"/>
+    </g>
+    <path class="p3-flow p3-flowP" d="M510 160 H810 V320 H666 M650 320 H510 V160" fill="none" stroke="#1d4ed8" stroke-width="5" stroke-dasharray="12 12" opacity="0"/>
+    <path class="p3-flowP2" d="M590 160 V320 M730 160 V320" fill="none" stroke="#059669" stroke-width="5" stroke-dasharray="12 12" opacity="0"/>
+    <text x="660" y="140" font-size="12" font-weight="700" fill="#1d4ed8" text-anchor="middle">干路 I = I₁ + I₂</text>
+    <text x="660" y="356" font-size="12" font-weight="700" fill="#059669" text-anchor="middle">两条支路 · U₁ = U₂</text>
+  </g>
+
+  <!-- 第一、二步角标 -->
+  <g class="p3-stateS">
+    <text x="240" y="410" font-size="13" font-weight="800" fill="#1e40af" text-anchor="middle">串联：一条路，电流处处相等</text>
+  </g>
+  <g class="p3-stateP">
+    <text x="660" y="410" font-size="13" font-weight="800" fill="#047857" text-anchor="middle">并联：多条路，各支路互不影响</text>
+  </g>
+
+  <!-- 第三步：对比表 -->
+  <g class="p3-panel" data-zone="3">
+    <rect x="40" y="400" width="820" height="192" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="450" y="426" font-size="15" font-weight="800" fill="#1e3a8a" text-anchor="middle">串联与并联对比</text>
+    <g font-size="12.5" fill="#334155">
+      <rect x="60" y="438" width="150" height="30" fill="#eef2f7"/><text x="135" y="458" text-anchor="middle" font-weight="800">项目</text>
+      <rect x="210" y="438" width="320" height="30" fill="#e8effc"/><text x="370" y="458" text-anchor="middle" font-weight="800" fill="#1e3a8a">串联</text>
+      <rect x="530" y="438" width="310" height="30" fill="#e6f7f1"/><text x="685" y="458" text-anchor="middle" font-weight="800" fill="#047857">并联</text>
+
+      <line x1="60" y1="468" x2="840" y2="468" stroke="#e2e8f0"/>
+      <text x="135" y="489" text-anchor="middle">电流路径</text><text x="370" y="489" text-anchor="middle">只有一条</text><text x="685" y="489" text-anchor="middle">两条或多条</text>
+
+      <line x1="60" y1="500" x2="840" y2="500" stroke="#e2e8f0"/>
+      <text x="135" y="521" text-anchor="middle">电流关系</text><text x="370" y="521" text-anchor="middle">I = I₁ = I₂</text><text x="685" y="521" text-anchor="middle">I = I₁ + I₂</text>
+
+      <line x1="60" y1="532" x2="840" y2="532" stroke="#e2e8f0"/>
+      <text x="135" y="553" text-anchor="middle">电压关系</text><text x="370" y="553" text-anchor="middle">U = U₁ + U₂</text><text x="685" y="553" text-anchor="middle">U = U₁ = U₂</text>
+
+      <line x1="60" y1="564" x2="840" y2="564" stroke="#e2e8f0"/>
+      <text x="135" y="585" text-anchor="middle">相互影响</text><text x="370" y="585" text-anchor="middle">一个断路，全部停止</text><text x="685" y="585" text-anchor="middle">互不影响</text>
+    </g>
+  </g>
+</svg>

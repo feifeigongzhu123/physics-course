@@ -1,0 +1,187 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="圆周运动：线速度、角速度与周期、同轴传动和皮带传动">
+<style>
+[data-scene="ps-26"] .s26-step{opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+[data-scene="ps-26"].s1 .s26-step1,[data-scene="ps-26"].s2 .s26-step2,[data-scene="ps-26"].s3 .s26-step3{opacity:1;visibility:visible;transition:opacity .4s ease,visibility 0s}
+@keyframes s26draw{to{stroke-dashoffset:0}}
+@keyframes s26pop{0%{transform:scale(.78);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes s26grow{from{opacity:0}to{opacity:1}}
+@keyframes s26spin{to{transform:rotate(360deg)}}
+@keyframes s26pulse{0%,100%{opacity:.45}50%{opacity:1}}
+[data-scene="ps-26"].s1 .s26-arc{stroke-dasharray:190;stroke-dashoffset:190;animation:s26draw 1s ease .2s both}
+[data-scene="ps-26"].s1 .s26-v{animation:s26grow .5s ease .8s both}
+[data-scene="ps-26"].s2 .s26-sector{animation:s26grow .6s ease .1s both}
+[data-scene="ps-26"].s2 .s26-omega{animation:s26pop .5s ease .7s both}
+[data-scene="ps-26"].s2 .s26-angle{animation:s26pulse 1.5s ease-in-out infinite}
+[data-scene="ps-26"].s3 .s26-big{transform-box:fill-box;transform-origin:center;animation:s26spin 6s linear infinite}
+[data-scene="ps-26"].s3 .s26-small{transform-box:fill-box;transform-origin:center;animation:s26spin 6s linear infinite}
+[data-scene="ps-26"].s3 .s26-fast{transform-box:fill-box;transform-origin:center;animation:s26spin 3.9s linear infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">圆周运动：线速度、角速度与传动关系</text>
+
+<!-- 第一步：线速度 -->
+<g class="s26-step s26-step1" data-zone="1">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">线速度：v = Δs/Δt，方向沿圆周在该点的切线</text>
+
+  <circle cx="320" cy="300" r="170" fill="#f8fafc" stroke="#1d4ed8" stroke-width="3"/>
+  <line x1="320" y1="300" x2="490" y2="300" stroke="#64748b" stroke-width="1.8" stroke-dasharray="6 5"/>
+  <text x="405" y="290" font-size="12.5" font-weight="800" fill="#475569" text-anchor="middle">r</text>
+  <circle cx="320" cy="300" r="5" fill="#334155"/>
+  <text x="304" y="320" font-size="13" font-weight="800" fill="#334155" text-anchor="end">O</text>
+
+  <path class="s26-arc" d="M490 300 A170 170 0 0 0 405 153" fill="none" stroke="#dc2626" stroke-width="6" stroke-linecap="round"/>
+  <text x="486" y="192" font-size="14" font-weight="900" fill="#b91c1c">Δs</text>
+
+  <g class="s26-v">
+    <line x1="490" y1="300" x2="490" y2="168" stroke="#dc2626" stroke-width="4" marker-end="url(#arrRed)"/>
+    <text x="504" y="178" font-size="15" font-weight="900" fill="#b91c1c">v</text>
+    <line x1="320" y1="470" x2="452" y2="470" stroke="#dc2626" stroke-width="4" marker-end="url(#arrRed)"/>
+    <text x="458" y="446" font-size="15" font-weight="900" fill="#b91c1c">v</text>
+    <circle cx="490" cy="300" r="6" fill="#334155"/>
+    <circle cx="320" cy="470" r="6" fill="#334155"/>
+  </g>
+  <text x="504" y="320" font-size="12" font-weight="800" fill="#334155">P</text>
+  <text x="334" y="446" font-size="12" font-weight="800" fill="#334155">Q</text>
+  <text x="320" y="142" font-size="12" font-weight="800" fill="#1e40af" text-anchor="middle">转一圈弧长 2πr</text>
+
+  <rect x="570" y="100" width="300" height="344" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="570" y="100" width="300" height="8" rx="4" fill="#dc2626"/>
+  <text x="720" y="138" font-size="16" font-weight="900" fill="#b91c1c" text-anchor="middle">线速度 v</text>
+  <text x="720" y="168" font-size="12.5" fill="#475569" text-anchor="middle">描述沿圆弧运动的快慢</text>
+  <line x1="600" y1="186" x2="840" y2="186" stroke="#e8eef7" stroke-width="1.5"/>
+  <text x="720" y="216" font-size="17" font-weight="900" fill="#1e3a8a" text-anchor="middle">v = Δs / Δt</text>
+  <text x="720" y="250" font-size="17" font-weight="900" fill="#1e3a8a" text-anchor="middle">v = 2πr / T</text>
+  <text x="720" y="282" font-size="12.5" fill="#334155" text-anchor="middle">方向：沿圆周的切线方向</text>
+  <text x="720" y="306" font-size="12.5" fill="#334155" text-anchor="middle">单位：米每秒（m/s）</text>
+  <text x="720" y="330" font-size="12.5" fill="#334155" text-anchor="middle">线速度的大小也叫速率</text>
+  <text x="720" y="362" font-size="12" fill="#64748b" text-anchor="middle">线速度是矢量</text>
+  <text x="720" y="384" font-size="12" fill="#64748b" text-anchor="middle">不同位置的速度方向不同</text>
+  <rect x="600" y="398" width="240" height="30" rx="8" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.2"/>
+  <text x="720" y="418" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">v 越大，物体沿圆弧运动越快</text>
+
+  <text x="450" y="490" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">速度方向沿切线且时刻改变，所以圆周运动是变速运动</text>
+</g>
+
+<!-- 第二步：角速度与周期 -->
+<g class="s26-step s26-step2" data-zone="2">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">角速度与周期：ω = Δθ/Δt = 2π/T</text>
+
+  <circle cx="300" cy="300" r="170" fill="#f8fafc" stroke="#1d4ed8" stroke-width="3"/>
+  <path class="s26-sector" d="M300 300 L470 300 A170 170 0 0 0 371.8 146 Z" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.5"/>
+  <line x1="300" y1="300" x2="470" y2="300" stroke="#1d4ed8" stroke-width="2.5"/>
+  <line x1="300" y1="300" x2="371.8" y2="146" stroke="#1d4ed8" stroke-width="2.5"/>
+  <circle cx="300" cy="300" r="5" fill="#334155"/>
+  <text x="284" y="320" font-size="13" font-weight="800" fill="#334155" text-anchor="end">O</text>
+
+  <path class="s26-angle" d="M360 300 A60 60 0 0 0 325.4 245.6" fill="none" stroke="#7c3aed" stroke-width="3"/>
+  <text x="344" y="268" font-size="14" font-weight="900" fill="#6d28d9">Δθ</text>
+  <text x="480" y="320" font-size="12" font-weight="800" fill="#334155">P</text>
+  <text x="384" y="140" font-size="12" font-weight="800" fill="#334155">Q</text>
+
+  <g class="s26-omega">
+    <path d="M396.6 274.1 A100 100 0 0 0 357.4 218.1" fill="none" stroke="#059669" stroke-width="3" marker-end="url(#arrGreen)"/>
+    <text x="414" y="226" font-size="16" font-weight="900" fill="#047857">ω</text>
+  </g>
+
+  <rect x="560" y="96" width="310" height="350" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="560" y="96" width="310" height="8" rx="4" fill="#7c3aed"/>
+  <text x="715" y="134" font-size="16" font-weight="900" fill="#6d28d9" text-anchor="middle">角速度与周期</text>
+  <line x1="590" y1="152" x2="840" y2="152" stroke="#e8eef7" stroke-width="1.5"/>
+  <text x="715" y="182" font-size="17" font-weight="900" fill="#1e3a8a" text-anchor="middle">ω = Δθ / Δt</text>
+  <text x="715" y="214" font-size="16" font-weight="900" fill="#1e3a8a" text-anchor="middle">ω = 2π / T = 2πn</text>
+  <text x="715" y="242" font-size="12.5" fill="#334155" text-anchor="middle">单位：弧度每秒（rad/s）</text>
+  <line x1="590" y1="260" x2="840" y2="260" stroke="#e8eef7" stroke-width="1.5"/>
+  <text x="590" y="286" font-size="12.5" fill="#334155">周期 T：转一圈的时间（s）</text>
+  <text x="590" y="310" font-size="12.5" fill="#334155">转速 n：每秒转过的圈数（r/s）</text>
+  <text x="590" y="334" font-size="12.5" fill="#334155">三者都描述转动的快慢</text>
+  <text x="590" y="358" font-size="12.5" fill="#334155">换算关系：T = 1 / n</text>
+  <rect x="590" y="374" width="250" height="54" rx="10" fill="#f3e8ff" stroke="#d8b4fe" stroke-width="1.4"/>
+  <text x="715" y="396" font-size="12" font-weight="800" fill="#6d28d9" text-anchor="middle">转一圈 Δθ = 2π</text>
+  <text x="715" y="418" font-size="12" fill="#6d28d9" text-anchor="middle">所以 ω = 2π / T</text>
+
+  <text x="450" y="490" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">角速度、周期、转速都能反映转动的快慢，它们之间可以互相换算</text>
+</g>
+
+<!-- 第三步：同轴与皮带传动 -->
+<g class="s26-step s26-step3" data-zone="3">
+  <text x="70" y="82" font-size="14" font-weight="800" fill="#1e3a8a">传动关系：同轴转动角速度相同，皮带传动边缘线速度相同</text>
+
+  <rect x="62" y="104" width="368" height="324" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2"/>
+  <text x="246" y="132" font-size="14" font-weight="900" fill="#1e3a8a" text-anchor="middle">同轴转动</text>
+  <g class="s26-big">
+    <circle cx="235" cy="285" r="85" fill="#f8fafc" stroke="#1d4ed8" stroke-width="3"/>
+    <g stroke="#93c5fd" stroke-width="2">
+      <line x1="235" y1="285" x2="320" y2="285"/>
+      <line x1="235" y1="285" x2="192.5" y2="211.4"/>
+      <line x1="235" y1="285" x2="192.5" y2="358.6"/>
+    </g>
+  </g>
+  <g class="s26-small">
+    <circle cx="235" cy="285" r="50" fill="#f8fafc" stroke="#7c3aed" stroke-width="2.5"/>
+    <g stroke="#c4b5fd" stroke-width="1.8">
+      <line x1="235" y1="285" x2="285" y2="285"/>
+      <line x1="235" y1="285" x2="210" y2="241.7"/>
+      <line x1="235" y1="285" x2="210" y2="328.3"/>
+    </g>
+  </g>
+  <circle cx="235" cy="285" r="9" fill="#64748b"/>
+  <text x="222" y="308" font-size="11.5" font-weight="800" fill="#475569" text-anchor="end">O</text>
+
+  <line x1="320" y1="285" x2="320" y2="222" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrRed)"/>
+  <text x="330" y="236" font-size="12.5" font-weight="900" fill="#b91c1c">vA</text>
+  <line x1="285" y1="285" x2="285" y2="252" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrRed)"/>
+  <text x="294" y="262" font-size="12" font-weight="900" fill="#b91c1c">vB</text>
+  <text x="324" y="306" font-size="11.5" font-weight="800" fill="#334155">A</text>
+  <text x="276" y="278" font-size="11.5" font-weight="800" fill="#6d28d9" text-anchor="end">B</text>
+
+  <path d="M306 218 A100 100 0 0 1 336 264" fill="none" stroke="#059669" stroke-width="2.5" marker-end="url(#arrGreen)"/>
+  <text x="342" y="216" font-size="14" font-weight="900" fill="#047857">ω</text>
+
+  <text x="246" y="392" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">ωA = ωB（角速度相同）</text>
+  <text x="246" y="414" font-size="12" fill="#475569" text-anchor="middle">v = ωr，半径越大线速度越大</text>
+
+  <rect x="470" y="104" width="368" height="324" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2"/>
+  <text x="654" y="132" font-size="14" font-weight="900" fill="#1e3a8a" text-anchor="middle">皮带传动</text>
+
+  <g class="s26-big">
+    <circle cx="600" cy="285" r="65" fill="#f8fafc" stroke="#1d4ed8" stroke-width="3"/>
+    <g stroke="#93c5fd" stroke-width="2">
+      <line x1="600" y1="285" x2="665" y2="285"/>
+      <line x1="600" y1="285" x2="567.5" y2="228.7"/>
+      <line x1="600" y1="285" x2="567.5" y2="341.3"/>
+    </g>
+  </g>
+  <g class="s26-fast">
+    <circle cx="790" cy="285" r="42" fill="#f8fafc" stroke="#7c3aed" stroke-width="2.5"/>
+    <g stroke="#c4b5fd" stroke-width="1.8">
+      <line x1="790" y1="285" x2="832" y2="285"/>
+      <line x1="790" y1="285" x2="769" y2="248.6"/>
+      <line x1="790" y1="285" x2="769" y2="321.4"/>
+    </g>
+  </g>
+  <path d="M600 220 L790 243" fill="none" stroke="#f59e0b" stroke-width="5"/>
+  <path d="M600 350 L790 327" fill="none" stroke="#f59e0b" stroke-width="5"/>
+  <path d="M600 220 A65 65 0 1 0 600 350" fill="none" stroke="#f59e0b" stroke-width="5"/>
+  <path d="M790 327 A42 42 0 1 0 790 243" fill="none" stroke="#f59e0b" stroke-width="5"/>
+  <line x1="668" y1="229" x2="740" y2="238" stroke="#d97706" stroke-width="2.2" marker-end="url(#arrAmber)"/>
+  <line x1="740" y1="333" x2="668" y2="342" stroke="#d97706" stroke-width="2.2" marker-end="url(#arrAmber)"/>
+  <text x="695" y="210" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">皮带</text>
+
+  <path d="M632 232 A80 80 0 0 1 652 260" fill="none" stroke="#059669" stroke-width="2.2" marker-end="url(#arrGreen)"/>
+  <text x="656" y="230" font-size="12.5" font-weight="900" fill="#047857">ω1</text>
+  <path d="M812 258 A55 55 0 0 1 822 285" fill="none" stroke="#6d28d9" stroke-width="2.2" marker-end="url(#arrBlue)"/>
+  <text x="814" y="256" font-size="12.5" font-weight="900" fill="#6d28d9">ω2</text>
+
+  <text x="700" y="372" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">边缘线速度相同：v1 = v2</text>
+  <text x="700" y="394" font-size="12" fill="#475569" text-anchor="middle">ω1r1 = ω2r2，半径小的轮转得快</text>
+  <text x="700" y="416" font-size="11.5" fill="#64748b" text-anchor="middle">皮带不打滑时，两轮边缘速度大小相等</text>
+
+  <rect x="70" y="466" width="760" height="28" rx="9" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.4"/>
+  <text x="450" y="485" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">同轴 ω 相同、v ∝ r；皮带 v 相同、ω ∝ 1/r；v = ωr 是连接的桥梁</text>
+</g>
+</svg>

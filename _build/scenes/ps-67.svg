@@ -1,0 +1,236 @@
+<svg class="s67-root" viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="反冲现象与火箭：反冲分裂、火箭喷气、多级火箭">
+<style>
+[data-scene="ps-67"] .s67-s1,[data-scene="ps-67"] .s67-s2,[data-scene="ps-67"] .s67-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility 0s linear .45s}
+[data-scene="ps-67"].s1 .s67-s1,[data-scene="ps-67"].s2 .s67-s2,[data-scene="ps-67"].s3 .s67-s3{opacity:1;visibility:visible;transition:opacity .45s ease,visibility 0s}
+@keyframes s67fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes s67pop{0%{transform:scale(.86);opacity:0}70%{transform:scale(1.05);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes s67draw{to{stroke-dashoffset:0}}
+@keyframes s67burst{0%,100%{transform:scale(.85);opacity:.5}50%{transform:scale(1.18);opacity:1}}
+@keyframes s67jet{to{stroke-dashoffset:-64}}
+@keyframes s67flame{0%,100%{transform:scaleY(.86);opacity:.85}50%{transform:scaleY(1.08);opacity:1}}
+@keyframes s67pulse{0%,100%{opacity:.55}50%{opacity:1}}
+[data-scene="ps-67"].s1 .s67-pop{transform-box:fill-box;transform-origin:center;animation:s67pop .5s ease both}
+[data-scene="ps-67"].s1 .s67-p2{animation-delay:.18s}
+[data-scene="ps-67"].s1 .s67-p3{animation-delay:.36s}
+[data-scene="ps-67"].s1 .s67-p4{animation-delay:.54s}
+[data-scene="ps-67"].s1 .s67-burst{transform-box:fill-box;transform-origin:center;animation:s67burst 1.5s ease-in-out infinite}
+[data-scene="ps-67"].s1 .s67-arr{stroke-dasharray:130;stroke-dashoffset:130;animation:s67draw .65s ease .45s forwards}
+[data-scene="ps-67"].s1 .s67-arr2{stroke-dasharray:130;stroke-dashoffset:130;animation:s67draw .65s ease .6s forwards}
+[data-scene="ps-67"].s2 .s67-jet line{stroke-dasharray:9 9;animation:s67jet .9s linear infinite}
+[data-scene="ps-67"].s2 .s67-flame{transform-box:fill-box;transform-origin:center top;animation:s67flame .5s ease-in-out infinite}
+[data-scene="ps-67"].s2 .s67-lift{stroke-dasharray:130;stroke-dashoffset:130;animation:s67draw .7s ease .25s forwards}
+[data-scene="ps-67"].s2 .s67-f{animation:s67pulse 1.5s ease-in-out infinite}
+[data-scene="ps-67"].s2 .s67-pop{transform-box:fill-box;transform-origin:center;animation:s67pop .5s ease both}
+[data-scene="ps-67"].s3 .s67-app{transform-box:fill-box;transform-origin:center;animation:s67pop .45s ease both}
+[data-scene="ps-67"].s3 .s67-a2{animation-delay:.1s}
+[data-scene="ps-67"].s3 .s67-a3{animation-delay:.2s}
+[data-scene="ps-67"].s3 .s67-stage{transform-box:fill-box;transform-origin:center;animation:s67pop .45s ease both}
+[data-scene="ps-67"].s3 .s67-st2{animation-delay:.12s}
+[data-scene="ps-67"].s3 .s67-st3{animation-delay:.24s}
+[data-scene="ps-67"].s3 .s67-sep line{stroke-dasharray:8 7;animation:s67jet 1s linear infinite}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="500" width="900" height="120" fill="url(#gBench)"/>
+<line x1="0" y1="500" x2="900" y2="500" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">反冲现象 火箭：内力作用下的动量守恒</text>
+
+<!-- 第一步：反冲现象 -->
+<g class="s67-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">反冲：系统在内力作用下分成两部分，两部分向相反方向运动</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="56" y="132" font-size="13.5" font-weight="800" fill="#1e3a8a">原来静止的系统发生分裂</text>
+
+  <text x="296" y="186" font-size="12" font-weight="700" fill="#64748b" text-anchor="middle">分裂前总动量为零</text>
+  <line x1="296" y1="202" x2="296" y2="330" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="6 6"/>
+
+  <g class="s67-burst">
+    <circle cx="296" cy="252" r="16" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <g stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round">
+      <line x1="296" y1="226" x2="296" y2="214"/>
+      <line x1="296" y1="278" x2="296" y2="290"/>
+      <line x1="270" y1="252" x2="258" y2="252"/>
+      <line x1="322" y1="252" x2="334" y2="252"/>
+    </g>
+  </g>
+
+  <g class="s67-pop">
+    <rect x="148" y="220" width="88" height="64" rx="10" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2.5"/>
+    <text x="192" y="260" font-size="17" font-weight="900" fill="#1e3a8a" text-anchor="middle">A</text>
+  </g>
+  <g class="s67-pop s67-p2">
+    <rect x="356" y="220" width="88" height="64" rx="10" fill="#fde68a" stroke="#b45309" stroke-width="2.5"/>
+    <text x="400" y="260" font-size="17" font-weight="900" fill="#7c2d12" text-anchor="middle">B</text>
+  </g>
+
+  <line class="s67-arr" x1="144" y1="252" x2="82" y2="252" stroke="#dc2626" stroke-width="4" marker-end="url(#arrRed)"/>
+  <line class="s67-arr2" x1="448" y1="252" x2="510" y2="252" stroke="#1d4ed8" stroke-width="4" marker-end="url(#arrBlue)"/>
+  <text x="112" y="236" font-size="12.5" font-weight="800" fill="#b91c1c" text-anchor="middle">vA</text>
+  <text x="480" y="236" font-size="12.5" font-weight="800" fill="#1e40af" text-anchor="middle">vB</text>
+  <text x="112" y="286" font-size="11.5" fill="#b91c1c" text-anchor="middle">A 向左</text>
+  <text x="480" y="286" font-size="11.5" fill="#1e40af" text-anchor="middle">B 向右</text>
+
+  <rect x="56" y="344" width="480" height="72" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="296" y="374" font-size="15" font-weight="900" fill="#1e3a8a" text-anchor="middle">m₁v₁ = m₂v₂</text>
+  <text x="296" y="400" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">两部分动量大小相等、方向相反，总动量仍为零</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="720" y="132" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">为什么动量守恒</text>
+
+  <circle cx="606" cy="172" r="11" fill="#dbeafe"/>
+  <text x="606" y="176" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">1</text>
+  <text x="628" y="176" font-size="12" font-weight="700" fill="#334155">内力远大于外力</text>
+
+  <circle cx="606" cy="216" r="11" fill="#dbeafe"/>
+  <text x="606" y="220" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">2</text>
+  <text x="628" y="220" font-size="12" font-weight="700" fill="#334155">系统总动量保持不变</text>
+
+  <circle cx="606" cy="260" r="11" fill="#dbeafe"/>
+  <text x="606" y="264" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">3</text>
+  <text x="628" y="264" font-size="12" font-weight="700" fill="#334155">反冲是内力作用的结果</text>
+
+  <rect x="596" y="294" width="248" height="70" rx="12" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+  <text x="720" y="322" font-size="15" font-weight="900" fill="#166534" text-anchor="middle">p总 = 0</text>
+  <text x="720" y="346" font-size="12" font-weight="700" fill="#166534" text-anchor="middle">m₁v₁ − m₂v₂ = 0</text>
+
+  <text x="720" y="398" font-size="12" fill="#475569" text-anchor="middle">喷水、章鱼游动都是反冲</text>
+  <text x="720" y="420" font-size="11.5" fill="#64748b" text-anchor="middle">反冲不违反动量守恒</text>
+
+  <rect x="36" y="446" width="828" height="44" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="474" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">反冲的本质：系统内部作用力把一部分动量转移给另一部分物体</text>
+</g>
+
+<!-- 第二步：火箭的原理 -->
+<g class="s67-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">火箭：向后高速喷气，靠反作用获得向前的推力</text>
+
+  <rect x="36" y="100" width="520" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="56" y="132" font-size="13.5" font-weight="800" fill="#1e3a8a">喷气式反冲</text>
+
+  <line x1="230" y1="120" x2="230" y2="300" stroke="#cbd5e1" stroke-width="1.6" stroke-dasharray="6 7"/>
+
+  <g class="s67-pop">
+    <polygon points="230,140 262,182 262,300 198,300 198,182" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+    <circle cx="230" cy="210" r="11" fill="#60a5fa" stroke="#1d4ed8" stroke-width="2"/>
+    <polygon points="204,300 256,300 246,322 214,322" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
+  </g>
+
+  <g class="s67-flame">
+    <path d="M214 324 C218 352 226 368 230 386 C234 368 242 352 246 324 Z" fill="#f97316" stroke="#c2410c" stroke-width="1.5"/>
+    <path d="M222 324 C225 344 229 356 230 368 C231 356 235 344 238 324 Z" fill="#fde68a"/>
+  </g>
+
+  <g class="s67-jet" stroke="#dc2626" stroke-width="3" marker-end="url(#arrRed)">
+    <line x1="204" y1="396" x2="204" y2="432"/>
+    <line x1="230" y1="396" x2="230" y2="432"/>
+    <line x1="256" y1="396" x2="256" y2="432"/>
+  </g>
+
+  <line class="s67-lift" x1="300" y1="282" x2="300" y2="184" stroke="#1d4ed8" stroke-width="4" marker-end="url(#arrBlue)"/>
+  <text class="s67-f" x="310" y="238" font-size="13" font-weight="900" fill="#1e40af">F 推力</text>
+
+  <text x="332" y="168" font-size="12.5" font-weight="800" fill="#b91c1c">气体向后喷出</text>
+  <text x="332" y="190" font-size="12.5" font-weight="800" fill="#1e40af">火箭向前加速</text>
+
+  <rect x="332" y="214" width="204" height="58" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="434" y="238" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">喷气速度越大</text>
+  <text x="434" y="258" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">火箭获得的速度越大</text>
+
+  <rect x="332" y="286" width="204" height="70" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="434" y="314" font-size="15" font-weight="900" fill="#1e3a8a" text-anchor="middle">M v = m v′</text>
+  <text x="434" y="338" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">火箭与气体的动量等大反向</text>
+
+  <text x="96" y="420" font-size="12" font-weight="700" fill="#64748b" text-anchor="middle">高温气体向下喷出</text>
+
+  <rect x="576" y="100" width="288" height="336" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <text x="720" y="132" font-size="13.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">为什么能在真空中飞行</text>
+
+  <circle cx="606" cy="176" r="11" fill="#dbeafe"/>
+  <text x="606" y="180" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">1</text>
+  <text x="628" y="180" font-size="12" font-weight="700" fill="#334155">靠喷出气体获得反作用力</text>
+
+  <circle cx="606" cy="222" r="11" fill="#dbeafe"/>
+  <text x="606" y="226" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">2</text>
+  <text x="628" y="226" font-size="12" font-weight="700" fill="#334155">不依赖空气的支持力</text>
+
+  <circle cx="606" cy="268" r="11" fill="#dbeafe"/>
+  <text x="606" y="272" font-size="11" font-weight="900" fill="#1e3a8a" text-anchor="middle">3</text>
+  <text x="628" y="272" font-size="12" font-weight="700" fill="#334155">与飞机依靠空气完全不同</text>
+
+  <rect x="596" y="300" width="248" height="100" rx="12" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="720" y="326" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">飞机：靠空气的升力</text>
+  <text x="720" y="350" font-size="12" font-weight="800" fill="#b45309" text-anchor="middle">火箭：靠喷气的反冲</text>
+  <text x="720" y="378" font-size="11.5" fill="#92400e" text-anchor="middle">所以火箭能在真空中飞行</text>
+
+  <rect x="36" y="446" width="828" height="44" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="474" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">火箭喷气不是“推空气”，而是把气体向后抛出，自己获得相反方向的动量</text>
+</g>
+
+<!-- 第三步：反冲的应用 -->
+<g class="s67-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">反冲的应用：火箭、喷气式飞机与多级火箭</text>
+
+  <g class="s67-app">
+    <rect x="36" y="110" width="264" height="110" rx="14" fill="#ffffff" stroke="#bfdbfe" stroke-width="2"/>
+    <polygon points="120,140 132,156 132,186 108,186 108,156" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+    <path d="M112 186 L128 186 L124 196 L116 196 Z" fill="#93c5fd"/>
+    <path d="M116 198 L120 210 L124 198 Z" fill="#f97316"/>
+    <text x="200" y="166" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">火箭发射</text>
+  </g>
+
+  <g class="s67-app s67-a2">
+    <rect x="312" y="110" width="264" height="110" rx="14" fill="#ffffff" stroke="#fde68a" stroke-width="2"/>
+    <path d="M376 176 L430 156 L430 176 L410 176 L410 186 L392 186 L392 176 Z" fill="#fde68a" stroke="#b45309" stroke-width="2"/>
+    <line x1="392" y1="192" x2="376" y2="204" stroke="#b45309" stroke-width="2"/>
+    <text x="468" y="166" font-size="13" font-weight="800" fill="#92400e" text-anchor="middle">喷气式飞机</text>
+  </g>
+
+  <g class="s67-app s67-a3">
+    <rect x="588" y="110" width="264" height="110" rx="14" fill="#ffffff" stroke="#bbf7d0" stroke-width="2"/>
+    <path d="M636 178 L704 178 L692 194 L648 194 Z" fill="#bbf7d0" stroke="#047857" stroke-width="2"/>
+    <line x1="668" y1="178" x2="664" y2="150" stroke="#047857" stroke-width="3"/>
+    <path d="M652 196 C644 206 646 216 650 224 M684 196 C692 206 690 216 686 224" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <text x="720" y="166" font-size="13" font-weight="800" fill="#047857" text-anchor="middle">水上飞行器</text>
+  </g>
+
+  <rect x="36" y="238" width="828" height="190" rx="14" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+
+  <g class="s67-stage">
+    <rect x="120" y="252" width="64" height="28" rx="8" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="152" y="271" font-size="11" font-weight="800" fill="#1e3a8a" text-anchor="middle">载荷</text>
+  </g>
+  <g class="s67-stage s67-st2">
+    <rect x="120" y="284" width="64" height="38" rx="5" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+    <text x="152" y="308" font-size="11" font-weight="800" fill="#92400e" text-anchor="middle">一级</text>
+    <rect x="120" y="326" width="64" height="38" rx="5" fill="#fde68a" stroke="#b45309" stroke-width="2"/>
+    <text x="152" y="350" font-size="11" font-weight="800" fill="#92400e" text-anchor="middle">二级</text>
+    <rect x="120" y="368" width="64" height="38" rx="5" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+    <text x="152" y="392" font-size="11" font-weight="800" fill="#92400e" text-anchor="middle">三级</text>
+    <path d="M130 406 L174 406 L166 422 L138 422 Z" fill="#94a3b8"/>
+  </g>
+
+  <g class="s67-sep" stroke="#dc2626" stroke-width="2" marker-end="url(#arrRed)">
+    <line x1="188" y1="300" x2="242" y2="300"/>
+    <line x1="188" y1="342" x2="242" y2="342"/>
+    <line x1="188" y1="384" x2="242" y2="384"/>
+  </g>
+  <g fill="#b91c1c" font-size="11" font-weight="700">
+    <text x="250" y="304">抛掉空壳</text>
+    <text x="250" y="346">抛掉空壳</text>
+    <text x="250" y="388">抛掉空壳</text>
+  </g>
+
+  <text x="280" y="272" font-size="13.5" font-weight="800" fill="#1e3a8a">多级火箭：抛掉已经用完的空壳，减轻质量</text>
+  <text x="280" y="306" font-size="12" fill="#334155">• 增大喷气速度 v′，可以提高火箭的末速度</text>
+  <text x="280" y="334" font-size="12" fill="#334155">• 增大质量比 M/m，同样能提高末速度</text>
+  <text x="280" y="362" font-size="12" fill="#334155">• 多级结构让“死重”及时脱离，效率更高</text>
+  <rect x="280" y="380" width="520" height="34" rx="9" fill="#e8effc"/>
+  <text x="540" y="402" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">质量比越大，火箭最终获得的速度越大</text>
+
+  <rect x="36" y="446" width="828" height="44" rx="12" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="450" y="474" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">反冲现象告诉我们：动量可以在系统内部两部分之间转移，但总量保持不变</text>
+</g>
+</svg>

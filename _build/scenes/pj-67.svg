@@ -1,0 +1,185 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="电功率：P 等于 W 除以 t 等于 UI、额定电压与额定功率、实际功率的计算">
+<style>
+.p67-s1,.p67-s2,.p67-s3{opacity:0;visibility:hidden}
+.p67-s1{opacity:1;visibility:visible}
+[data-scene="pj-67"] .p67-s1,[data-scene="pj-67"] .p67-s2,[data-scene="pj-67"] .p67-s3{opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+[data-scene="pj-67"].s1 .p67-s1,[data-scene="pj-67"].s2 .p67-s2,[data-scene="pj-67"].s3 .p67-s3{opacity:1;visibility:visible}
+@keyframes p67pop{0%{transform:scale(.82);opacity:0}72%{transform:scale(1.04);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes p67slide{0%{transform:translateY(8px);opacity:0}100%{transform:translateY(0);opacity:1}}
+@keyframes p67glow{0%,100%{opacity:.55}50%{opacity:1}}
+@keyframes p67pulse{0%,100%{opacity:.45}50%{opacity:1}}
+[data-scene="pj-67"].s1 .p67-formula{transform-box:fill-box;transform-origin:center;animation:p67pop .6s ease both}
+[data-scene="pj-67"].s1 .p67-row{animation:p67slide .5s ease both}
+[data-scene="pj-67"].s1 .p67-row2{animation-delay:.14s}
+[data-scene="pj-67"].s1 .p67-row3{animation-delay:.28s}
+[data-scene="pj-67"].s2 .p67-bulb{animation:p67glow 1.9s ease-in-out infinite}
+[data-scene="pj-67"].s2 .p67-plate{transform-box:fill-box;transform-origin:center;animation:p67pop .55s ease .3s both}
+[data-scene="pj-67"].s2 .p67-state{animation:p67pulse 2s ease-in-out infinite}
+[data-scene="pj-67"].s3 .p67-calc{animation:p67slide .5s ease both}
+[data-scene="pj-67"].s3 .p67-calc2{animation-delay:.12s}
+[data-scene="pj-67"].s3 .p67-calc3{animation-delay:.24s}
+[data-scene="pj-67"].s3 .p67-warn{transform-box:fill-box;transform-origin:center;animation:p67pop .55s ease .3s both}
+</style>
+
+<rect width="900" height="620" fill="url(#gBg)"/>
+<rect width="900" height="620" fill="url(#dotsPat)"/>
+<rect y="470" width="900" height="150" fill="url(#gBench)"/>
+<line x1="0" y1="470" x2="900" y2="470" stroke="#cfd9e8" stroke-width="2"/>
+
+<text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">电功率：P = W/t = UI，额定功率与实际功率</text>
+
+<!-- 第一步：电功率 -->
+<g class="p67-s1" data-zone="1">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">电功率表示电流做功的快慢：P = W / t，P = UI</text>
+
+  <rect x="36" y="100" width="450" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="180" height="28" rx="14" fill="#e8effc"/>
+  <text x="146" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电功率公式</text>
+
+  <g class="p67-formula">
+    <text x="261" y="194" font-size="30" font-weight="900" fill="#1e3a8a" text-anchor="middle">P = W / t = UI</text>
+  </g>
+  <text x="261" y="222" font-size="12.5" font-weight="700" fill="#475569" text-anchor="middle">电功率等于电功除以时间，也等于电压乘电流</text>
+
+  <g class="p67-row">
+    <rect x="60" y="242" width="402" height="40" rx="9" fill="#e8effc"/>
+    <text x="74" y="268" font-size="11.5" font-weight="800" fill="#1e3a8a">P = W / t</text>
+    <text x="448" y="268" font-size="11.5" font-weight="700" fill="#1e40af" text-anchor="end">定义式，普遍适用</text>
+  </g>
+  <g class="p67-row p67-row2">
+    <rect x="60" y="290" width="402" height="40" rx="9" fill="#e6f7f1"/>
+    <text x="74" y="316" font-size="11.5" font-weight="800" fill="#047857">P = UI</text>
+    <text x="448" y="316" font-size="11.5" font-weight="700" fill="#047857" text-anchor="end">计算式，普遍适用</text>
+  </g>
+
+  <text x="261" y="358" font-size="15" font-weight="900" fill="#1e3a8a" text-anchor="middle">1 W = 1 J/s = 1 V·A</text>
+  <text x="261" y="386" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">1 kW = 1000 W</text>
+
+  <rect x="486" y="100" width="378" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="506" y="116" width="150" height="28" rx="14" fill="#e6f7f1"/>
+  <text x="581" y="135" font-size="12.5" font-weight="800" fill="#047857" text-anchor="middle">物理意义</text>
+
+  <g class="p67-row">
+    <text x="675" y="176" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">P 越大，电流做功越快，消耗电能越快</text>
+    <rect x="506" y="194" width="338" height="76" rx="10" fill="#e8effc" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="675" y="222" font-size="14" font-weight="900" fill="#1e3a8a" text-anchor="middle">40 W 灯泡</text>
+    <text x="675" y="248" font-size="11.5" font-weight="700" fill="#1e40af" text-anchor="middle">工作 1 小时耗电约 0.04 kW·h</text>
+  </g>
+  <g class="p67-row p67-row2">
+    <rect x="506" y="286" width="338" height="76" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+    <text x="675" y="314" font-size="14" font-weight="900" fill="#b45309" text-anchor="middle">1000 W 空调</text>
+    <text x="675" y="340" font-size="11.5" font-weight="700" fill="#b45309" text-anchor="middle">工作 1 小时耗电约 1 kW·h</text>
+  </g>
+
+  <text x="675" y="388" font-size="11" fill="#64748b" text-anchor="middle">功率大不等于消耗电能多，还要看通电时间</text>
+</g>
+
+<!-- 第二步：额定电压与额定功率 -->
+<g class="p67-s2" data-zone="2">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">额定电压：用电器正常工作时的电压；额定功率：额定电压下的功率</text>
+
+  <rect x="36" y="100" width="500" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="180" height="28" rx="14" fill="#fff7ed"/>
+  <text x="146" y="135" font-size="12.5" font-weight="800" fill="#b45309" text-anchor="middle">灯泡铭牌</text>
+
+  <g class="p67-bulb">
+    <circle cx="150" cy="224" r="52" fill="#fef3c7" stroke="#d97706" stroke-width="3"/>
+    <path d="M128 240 Q138 206 150 240 Q162 274 172 240" fill="none" stroke="#b45309" stroke-width="2.5"/>
+    <rect x="130" y="272" width="40" height="20" rx="3" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5"/>
+    <line x1="134" y1="292" x2="134" y2="302" stroke="#64748b" stroke-width="2"/>
+    <line x1="150" y1="292" x2="150" y2="302" stroke="#64748b" stroke-width="2"/>
+    <line x1="166" y1="292" x2="166" y2="302" stroke="#64748b" stroke-width="2"/>
+  </g>
+  <text x="150" y="330" font-size="14" font-weight="900" fill="#b45309" text-anchor="middle">PZ220-40</text>
+
+  <g class="p67-plate">
+    <rect x="250" y="162" width="250" height="150" rx="12" fill="#fff7ed" stroke="#b45309" stroke-width="2"/>
+    <text x="375" y="200" font-size="20" font-weight="900" fill="#b45309" text-anchor="middle">PZ 220-40</text>
+    <text x="375" y="236" font-size="13" font-weight="700" fill="#334155" text-anchor="middle">额定电压 220 V</text>
+    <text x="375" y="266" font-size="13" font-weight="700" fill="#334155" text-anchor="middle">额定功率 40 W</text>
+    <text x="375" y="296" font-size="12" font-weight="700" fill="#047857" text-anchor="middle">正常工作</text>
+  </g>
+
+  <text x="286" y="358" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">220 V 是额定电压，40 W 是额定功率</text>
+  <text x="286" y="384" font-size="11.5" fill="#475569" text-anchor="middle">正常发光：I = P/U ≈ 0.18 A，R = U²/P = 1210 Ω</text>
+
+  <rect x="556" y="100" width="308" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="576" y="116" width="150" height="28" rx="14" fill="#e6f7f1"/>
+  <text x="651" y="135" font-size="12.5" font-weight="800" fill="#047857" text-anchor="middle">额定与实际</text>
+
+  <rect x="576" y="158" width="268" height="34" fill="#e8effc"/>
+  <text x="620" y="180" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">状态</text>
+  <text x="700" y="180" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电压</text>
+  <text x="790" y="180" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">功率</text>
+
+  <rect x="576" y="192" width="268" height="40" fill="#f8fbff"/>
+  <text x="620" y="217" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">正常</text>
+  <text x="700" y="217" font-size="11.5" fill="#334155" text-anchor="middle">220 V</text>
+  <text x="790" y="217" font-size="11.5" font-weight="700" fill="#047857" text-anchor="middle">40 W</text>
+
+  <rect x="576" y="232" width="268" height="40" fill="#ffffff"/>
+  <text x="620" y="257" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">偏低</text>
+  <text x="700" y="257" font-size="11.5" fill="#334155" text-anchor="middle">200 V</text>
+  <text x="790" y="257" font-size="11.5" font-weight="700" fill="#b45309" text-anchor="middle">低于 40 W</text>
+
+  <rect x="576" y="272" width="268" height="40" fill="#f8fbff"/>
+  <text x="620" y="297" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">偏高</text>
+  <text x="700" y="297" font-size="11.5" fill="#334155" text-anchor="middle">240 V</text>
+  <text x="790" y="297" font-size="11.5" font-weight="700" fill="#b91c1c" text-anchor="middle">高于 40 W</text>
+
+  <text class="p67-state" x="690" y="340" font-size="12" font-weight="800" fill="#1e3a8a" text-anchor="middle">实际功率由实际电压决定</text>
+  <text x="690" y="366" font-size="11.5" fill="#334155" text-anchor="middle">实际电压改变，实际功率也改变</text>
+  <text x="690" y="392" font-size="11.5" font-weight="700" fill="#b45309" text-anchor="middle">额定功率只有一个值</text>
+</g>
+
+<!-- 第三步：实际功率计算 -->
+<g class="p67-s3" data-zone="3">
+  <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">实际功率计算：P = UI = I²R = U²/R，同一状态对应同一组量</text>
+
+  <rect x="36" y="100" width="500" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="56" y="116" width="180" height="28" rx="14" fill="#e8effc"/>
+  <text x="146" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">实际功率计算</text>
+
+  <g class="p67-calc">
+    <rect x="60" y="150" width="452" height="72" rx="10" fill="#e8effc"/>
+    <text x="286" y="178" font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">“6 V 3 W”小灯泡</text>
+    <text x="286" y="204" font-size="12" font-weight="700" fill="#1e40af" text-anchor="middle">额定：U额 = 6 V，P额 = 3 W</text>
+  </g>
+
+  <g class="p67-calc p67-calc2">
+    <text x="70" y="252" font-size="13" font-weight="800" fill="#047857">正常发光：I额 = P额 / U额 = 3 W ÷ 6 V = 0.5 A</text>
+    <text x="70" y="284" font-size="13" font-weight="800" fill="#047857">灯丝电阻：R = U额² / P额 = 36 ÷ 3 = 12 Ω</text>
+  </g>
+
+  <g class="p67-calc p67-calc3">
+    <text x="70" y="318" font-size="13" font-weight="800" fill="#b45309">接 3 V：P实 = U实² / R = 9 ÷ 12 = 0.75 W</text>
+    <text x="70" y="348" font-size="13" font-weight="800" fill="#b45309">接 6 V：P实 = 3 W，正常发光</text>
+  </g>
+
+  <text x="286" y="380" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">实际电压低于额定电压，实际功率变小，灯变暗</text>
+
+  <rect x="556" y="100" width="308" height="304" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+  <rect x="576" y="116" width="150" height="28" rx="14" fill="#e6f7f1"/>
+  <text x="651" y="135" font-size="12.5" font-weight="800" fill="#047857" text-anchor="middle">三个公式</text>
+
+  <rect x="576" y="158" width="268" height="46" rx="9" fill="#e8effc"/>
+  <text x="710" y="187" font-size="13.5" font-weight="900" fill="#1e3a8a" text-anchor="middle">P = UI　普遍适用</text>
+
+  <rect x="576" y="212" width="268" height="46" rx="9" fill="#e6f7f1"/>
+  <text x="710" y="241" font-size="13.5" font-weight="900" fill="#047857" text-anchor="middle">P = I²R　纯电阻电路</text>
+
+  <rect x="576" y="266" width="268" height="46" rx="9" fill="#fff7ed"/>
+  <text x="710" y="295" font-size="13.5" font-weight="900" fill="#b45309" text-anchor="middle">P = U²/R　纯电阻电路</text>
+
+  <g class="p67-warn">
+    <rect x="576" y="324" width="268" height="54" rx="10" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+    <text x="710" y="346" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">同一状态：U、I、R、P 必须对应</text>
+    <text x="710" y="366" font-size="11" font-weight="700" fill="#b91c1c" text-anchor="middle">不能把不同状态的量混用</text>
+  </g>
+
+  <text x="710" y="398" font-size="11.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">额定功率 ≠ 实际功率</text>
+
+  <rect x="60" y="416" width="780" height="40" rx="12" fill="#eef6ff" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="450" y="441" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">P = W/t = UI：额定值看铭牌，实际值看当下电压</text>
+</g>
+</svg>

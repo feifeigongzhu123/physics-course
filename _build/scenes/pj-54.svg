@@ -1,0 +1,232 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="两种电荷：摩擦起电、验电器与电荷量">
+  <style>
+    [data-scene="pj-54"] .p54-s1,[data-scene="pj-54"] .p54-s2,[data-scene="pj-54"] .p54-s3{opacity:0;visibility:hidden}
+    [data-scene="pj-54"].s1 .p54-s1,[data-scene="pj-54"].s2 .p54-s2,[data-scene="pj-54"].s3 .p54-s3{opacity:1;visibility:visible;animation:p54fade .45s ease both}
+    @keyframes p54fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+    @keyframes p54pulse{0%,100%{opacity:.45}50%{opacity:1}}
+    @keyframes p54foilL{0%,100%{transform:rotate(0)}50%{transform:rotate(-4deg)}}
+    @keyframes p54foilR{0%,100%{transform:rotate(0)}50%{transform:rotate(4deg)}}
+    @keyframes p54move{0%{transform:translateX(0);opacity:0}18%{opacity:1}82%{opacity:1}100%{transform:translateX(52px);opacity:0}}
+    [data-scene="pj-54"].s1 .p54-charge{animation:p54pulse 2.2s ease-in-out infinite}
+    [data-scene="pj-54"].s2 .p54-ball{animation:p54pulse 2s ease-in-out infinite}
+    [data-scene="pj-54"].s2 .p54-foilL{transform-box:view-box;transform-origin:246px 332px;animation:p54foilL 2.4s ease-in-out infinite}
+    [data-scene="pj-54"].s2 .p54-foilR{transform-box:view-box;transform-origin:246px 332px;animation:p54foilR 2.4s ease-in-out infinite}
+    [data-scene="pj-54"].s3 .p54-e{animation:p54move 1.8s linear infinite}
+    [data-scene="pj-54"].s3 .p54-e2{animation-delay:.6s}
+    [data-scene="pj-54"].s3 .p54-e3{animation-delay:1.2s}
+  </style>
+
+  <rect width="900" height="620" fill="url(#gBg)"/>
+  <rect width="900" height="620" fill="url(#dotsPat)"/>
+  <rect y="470" width="900" height="150" fill="url(#gBench)"/>
+  <line x1="0" y1="470" x2="900" y2="470" stroke="#cfd9e8" stroke-width="2"/>
+
+  <text x="450" y="46" font-size="19" font-weight="800" fill="#1d4ed8" text-anchor="middle">两种电荷：摩擦起电与电荷间的相互作用</text>
+
+  <!-- 第一步：摩擦起电与正负电荷 -->
+  <g class="p54-s1" data-zone="1">
+    <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">摩擦起电：不同物质束缚电子的本领不同，得失电子而带电</text>
+
+    <rect x="36" y="100" width="402" height="340" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="56" y="116" width="208" height="28" rx="14" fill="#e8effc"/>
+    <text x="160" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">丝绸摩擦玻璃棒</text>
+
+    <g transform="rotate(-10 220 205)">
+      <rect x="80" y="196" width="280" height="18" rx="9" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/>
+      <line x1="92" y1="201" x2="344" y2="201" stroke="#ffffff" stroke-width="3" opacity=".85"/>
+      <g class="p54-charge" font-size="14" font-weight="900" fill="#dc2626" text-anchor="middle">
+        <circle cx="125" cy="174" r="11" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/><text x="125" y="179">+</text>
+        <circle cx="185" cy="170" r="11" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/><text x="185" y="175">+</text>
+        <circle cx="245" cy="174" r="11" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/><text x="245" y="179">+</text>
+        <circle cx="305" cy="170" r="11" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/><text x="305" y="175">+</text>
+      </g>
+    </g>
+
+    <rect x="70" y="250" width="300" height="86" rx="16" fill="#fce7f3" stroke="#f472b6" stroke-width="2"/>
+    <path d="M90 270 q30 14 60 0 t60 0 t60 0 t60 0" fill="none" stroke="#f9a8d4" stroke-width="2"/>
+    <path d="M90 304 q30 14 60 0 t60 0 t60 0 t60 0" fill="none" stroke="#f9a8d4" stroke-width="2"/>
+    <text x="220" y="296" font-size="16" font-weight="800" fill="#9d174d" text-anchor="middle">丝绸</text>
+
+    <line x1="185" y1="238" x2="255" y2="238" stroke="#d97706" stroke-width="2.5" marker-start="url(#arrAmber)" marker-end="url(#arrAmber)"/>
+    <text x="220" y="230" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">摩擦</text>
+
+    <text x="220" y="362" font-size="13" font-weight="800" fill="#b91c1c" text-anchor="middle">玻璃棒失去电子 → 带正电</text>
+    <text x="220" y="386" font-size="12" fill="#64748b" text-anchor="middle">丝绸得到电子 → 带负电</text>
+
+    <rect x="462" y="100" width="402" height="340" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="482" y="116" width="208" height="28" rx="14" fill="#e8effc"/>
+    <text x="586" y="135" font-size="12.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">毛皮摩擦橡胶棒</text>
+
+    <g transform="rotate(10 676 205)">
+      <rect x="536" y="196" width="280" height="18" rx="9" fill="#475569" stroke="#1e293b" stroke-width="2"/>
+      <line x1="548" y1="200" x2="800" y2="200" stroke="#94a3b8" stroke-width="2" opacity=".8"/>
+      <g class="p54-charge" font-size="14" font-weight="900" fill="#1d4ed8" text-anchor="middle">
+        <circle cx="581" cy="174" r="11" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/><text x="581" y="179">−</text>
+        <circle cx="641" cy="170" r="11" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/><text x="641" y="175">−</text>
+        <circle cx="701" cy="174" r="11" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/><text x="701" y="179">−</text>
+        <circle cx="761" cy="170" r="11" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/><text x="761" y="175">−</text>
+      </g>
+    </g>
+
+    <rect x="526" y="250" width="300" height="86" rx="16" fill="#fde68a" stroke="#d97706" stroke-width="2"/>
+    <path d="M546 268 l14 -8 l14 8 l14 -8 l14 8 l14 -8 l14 8 l14 -8 l14 8 l14 -8 l14 8 l14 -8 l14 8 l14 -8 l14 8" fill="none" stroke="#b45309" stroke-width="2"/>
+    <path d="M546 312 l14 8 l14 -8 l14 8 l14 -8 l14 8 l14 -8 l14 8 l14 -8 l14 8 l14 -8 l14 8 l14 -8 l14 8 l14 -8" fill="none" stroke="#b45309" stroke-width="2"/>
+    <text x="676" y="296" font-size="16" font-weight="800" fill="#92400e" text-anchor="middle">毛皮</text>
+
+    <line x1="641" y1="238" x2="711" y2="238" stroke="#d97706" stroke-width="2.5" marker-start="url(#arrAmber)" marker-end="url(#arrAmber)"/>
+    <text x="676" y="230" font-size="11.5" font-weight="800" fill="#b45309" text-anchor="middle">摩擦</text>
+
+    <text x="676" y="362" font-size="13" font-weight="800" fill="#1e40af" text-anchor="middle">橡胶棒得到电子 → 带负电</text>
+    <text x="676" y="386" font-size="12" fill="#64748b" text-anchor="middle">毛皮失去电子 → 带正电</text>
+
+    <rect x="36" y="486" width="828" height="100" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="450" y="514" font-size="14.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">电荷间的相互作用 · 三个要点</text>
+    <g font-size="13" font-weight="800" fill="#1e3a8a" text-anchor="middle">
+      <rect x="58" y="528" width="244" height="42" rx="10" fill="#e8effc"/>
+      <text x="180" y="555">① 同种电荷相互排斥</text>
+      <rect x="328" y="528" width="244" height="42" rx="10" fill="#e8effc"/>
+      <text x="450" y="555">② 异种电荷相互吸引</text>
+      <rect x="598" y="528" width="244" height="42" rx="10" fill="#e8effc"/>
+      <text x="720" y="555">③ 带电体吸引轻小物体</text>
+    </g>
+  </g>
+
+  <!-- 第二步：验电器 -->
+  <g class="p54-s2" data-zone="2">
+    <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">验电器：金属箔张开说明带电，张角越大电荷量越多</text>
+
+    <rect x="36" y="100" width="420" height="350" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <rect x="120" y="118" width="252" height="286" rx="22" fill="#f8fbff" fill-opacity=".55" stroke="#cbd5e1" stroke-width="2"/>
+    <line x1="134" y1="136" x2="134" y2="386" stroke="#ffffff" stroke-width="4" opacity=".9"/>
+
+    <rect x="156" y="414" width="180" height="14" rx="7" fill="#94a3b8"/>
+    <rect x="232" y="386" width="28" height="30" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.5"/>
+    <line x1="246" y1="330" x2="246" y2="388" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
+
+    <g class="p54-ball">
+      <circle cx="246" cy="154" r="27" fill="#e2e8f0" stroke="#64748b" stroke-width="3"/>
+      <circle cx="238" cy="146" r="8" fill="#ffffff" opacity=".8"/>
+      <text x="246" y="162" font-size="20" font-weight="900" fill="#dc2626" text-anchor="middle">+</text>
+    </g>
+
+    <g class="p54-foilL">
+      <path d="M246 332 L239 332 L207 399 L218 403 Z" fill="#fbbf24" stroke="#b45309" stroke-width="1.5"/>
+      <text x="219" y="379" font-size="12" font-weight="900" fill="#92400e" text-anchor="middle">+</text>
+    </g>
+    <g class="p54-foilR">
+      <path d="M246 332 L253 332 L285 399 L274 403 Z" fill="#fbbf24" stroke="#b45309" stroke-width="1.5"/>
+      <text x="273" y="379" font-size="12" font-weight="900" fill="#92400e" text-anchor="middle">+</text>
+    </g>
+
+    <g font-size="12" font-weight="700" fill="#475569">
+      <line x1="273" y1="154" x2="374" y2="132" stroke="#94a3b8" stroke-width="1.2"/>
+      <text x="380" y="128" text-anchor="start">金属球</text>
+      <line x1="250" y1="300" x2="374" y2="272" stroke="#94a3b8" stroke-width="1.2"/>
+      <text x="380" y="268" text-anchor="start">金属杆</text>
+      <line x1="278" y1="380" x2="374" y2="358" stroke="#94a3b8" stroke-width="1.2"/>
+      <text x="380" y="354" text-anchor="start">两片金属箔</text>
+      <line x1="266" y1="414" x2="374" y2="410" stroke="#94a3b8" stroke-width="1.2"/>
+      <text x="380" y="414" text-anchor="start">绝缘底座</text>
+    </g>
+
+    <rect x="480" y="100" width="384" height="350" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="672" y="132" font-size="15" font-weight="800" fill="#1e3a8a" text-anchor="middle">验电器怎么用</text>
+
+    <g font-size="13">
+      <circle cx="508" cy="170" r="13" fill="#e8effc"/><text x="508" y="175" font-size="12" font-weight="900" fill="#1e3a8a" text-anchor="middle">1</text>
+      <text x="530" y="175" font-weight="800" fill="#334155">带电体接触金属球</text>
+      <text x="530" y="196" font-size="11.5" fill="#64748b">电荷转移到金属杆</text>
+
+      <circle cx="508" cy="235" r="13" fill="#e8effc"/><text x="508" y="240" font-size="12" font-weight="900" fill="#1e3a8a" text-anchor="middle">2</text>
+      <text x="530" y="240" font-weight="800" fill="#334155">电荷传到两片金属箔</text>
+      <text x="530" y="261" font-size="11.5" fill="#64748b">两箔片带上同种电荷</text>
+
+      <circle cx="508" cy="300" r="13" fill="#e8effc"/><text x="508" y="305" font-size="12" font-weight="900" fill="#1e3a8a" text-anchor="middle">3</text>
+      <text x="530" y="305" font-weight="800" fill="#334155">同种电荷相斥 → 张开</text>
+      <text x="530" y="326" font-size="11.5" fill="#64748b">张角越大，电荷量越多</text>
+    </g>
+
+    <rect x="500" y="348" width="344" height="78" rx="12" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+    <text x="672" y="376" font-size="14" font-weight="900" fill="#b45309" text-anchor="middle">张角↑ ⇒ 电荷量↑</text>
+    <text x="672" y="402" font-size="12" fill="#7c5a30" text-anchor="middle">验电器可以检验物体是否带电</text>
+
+    <rect x="36" y="486" width="828" height="100" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="450" y="516" font-size="14.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">验电器原理：同种电荷相互排斥</text>
+    <text x="450" y="548" font-size="12.5" fill="#334155" text-anchor="middle">带电体接触金属球 → 电荷传到金属箔 → 两箔片张开</text>
+    <text x="450" y="572" font-size="11.5" fill="#64748b" text-anchor="middle">箔片张开角度越大，说明物体所带电荷量越多</text>
+  </g>
+
+  <!-- 第三步：电荷量与电子转移 -->
+  <g class="p54-s3" data-zone="3">
+    <text x="60" y="84" font-size="14" font-weight="800" fill="#1e3a8a">电荷量 Q：电荷的多少，单位库仑（C）；摩擦起电的实质是电子转移</text>
+
+    <rect x="36" y="100" width="430" height="350" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="60" y="132" font-size="14" font-weight="800" fill="#1e3a8a">摩擦起电的微观过程</text>
+
+    <rect x="76" y="176" width="128" height="168" rx="16" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+    <text x="140" y="166" font-size="12" font-weight="800" fill="#0c4a6e" text-anchor="middle">物体 A（玻璃）</text>
+    <g font-size="21" font-weight="900" text-anchor="middle">
+      <text x="106" y="222" fill="#b91c1c">+</text>
+      <text x="150" y="222" fill="#b91c1c">+</text>
+      <text x="106" y="270" fill="#b91c1c">+</text>
+      <text x="150" y="270" fill="#b91c1c">+</text>
+      <text x="128" y="318" fill="#b91c1c">+</text>
+      <text x="128" y="232" fill="#1d4ed8" font-size="19">−</text>
+      <text x="128" y="292" fill="#1d4ed8" font-size="19">−</text>
+    </g>
+
+    <rect x="286" y="176" width="128" height="168" rx="16" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="350" y="166" font-size="12" font-weight="800" fill="#92400e" text-anchor="middle">物体 B（丝绸）</text>
+    <g font-size="21" font-weight="900" text-anchor="middle">
+      <text x="318" y="222" fill="#b91c1c">+</text>
+      <text x="362" y="222" fill="#b91c1c">+</text>
+      <text x="340" y="206" fill="#1d4ed8" font-size="19">−</text>
+      <text x="318" y="270" fill="#1d4ed8" font-size="19">−</text>
+      <text x="362" y="270" fill="#1d4ed8" font-size="19">−</text>
+      <text x="340" y="238" fill="#1d4ed8" font-size="19">−</text>
+      <text x="340" y="316" fill="#1d4ed8" font-size="19">−</text>
+    </g>
+
+    <line x1="208" y1="300" x2="280" y2="300" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrBlue)"/>
+    <text x="244" y="288" font-size="13" font-weight="900" fill="#1d4ed8" text-anchor="middle">e⁻</text>
+    <g class="p54-e">
+      <circle cx="218" cy="320" r="8" fill="#1d4ed8"/>
+      <text x="218" y="324" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">−</text>
+    </g>
+    <g class="p54-e p54-e2">
+      <circle cx="238" cy="320" r="8" fill="#1d4ed8"/>
+      <text x="238" y="324" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">−</text>
+    </g>
+    <g class="p54-e p54-e3">
+      <circle cx="258" cy="320" r="8" fill="#1d4ed8"/>
+      <text x="258" y="324" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">−</text>
+    </g>
+
+    <text x="140" y="378" font-size="11.5" font-weight="800" fill="#b91c1c" text-anchor="middle">A 失去电子 → 带正电</text>
+    <text x="350" y="378" font-size="11.5" font-weight="800" fill="#1e40af" text-anchor="middle">B 得到电子 → 带负电</text>
+
+    <rect x="486" y="100" width="378" height="350" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="512" y="132" font-size="15" font-weight="800" fill="#1e3a8a">电荷量 Q</text>
+    <g font-size="13" fill="#334155">
+      <text x="512" y="172" font-weight="700">Q 表示电荷的多少</text>
+      <text x="512" y="204" font-weight="700">单位：库仑，符号 C</text>
+      <text x="512" y="236" font-size="12.5">元电荷 e = 1.6×10⁻¹⁹ C</text>
+    </g>
+    <line x1="510" y1="256" x2="840" y2="256" stroke="#e2e8f0" stroke-width="1.5"/>
+
+    <rect x="506" y="272" width="338" height="74" rx="12" fill="#e8effc"/>
+    <text x="675" y="300" font-size="14" font-weight="900" fill="#1e3a8a" text-anchor="middle">摩擦起电不是创造电荷</text>
+    <text x="675" y="326" font-size="12" fill="#334155" text-anchor="middle">只是电子从一个物体转移到另一个物体</text>
+
+    <rect x="506" y="364" width="160" height="40" rx="10" fill="#fee2e2"/>
+    <text x="586" y="389" font-size="12" font-weight="800" fill="#b91c1c" text-anchor="middle">失去 e⁻ → 正电</text>
+    <rect x="684" y="364" width="160" height="40" rx="10" fill="#dbeafe"/>
+    <text x="764" y="389" font-size="12" font-weight="800" fill="#1e40af" text-anchor="middle">得到 e⁻ → 负电</text>
+    <text x="675" y="432" font-size="11.5" fill="#64748b" text-anchor="middle">电荷总量保持不变（电荷守恒）</text>
+
+    <rect x="36" y="486" width="828" height="100" rx="16" fill="#ffffff" stroke="#dbe6f2" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="450" y="516" font-size="14.5" font-weight="800" fill="#1e3a8a" text-anchor="middle">摩擦起电的本质：电子转移</text>
+    <text x="450" y="548" font-size="12.5" fill="#334155" text-anchor="middle">电荷既不会凭空产生，也不会凭空消失，只是从一个物体转移到另一个物体</text>
+    <text x="450" y="572" font-size="12" font-weight="800" fill="#1e40af" text-anchor="middle">电荷总量不变 · 电荷守恒</text>
+  </g>
+</svg>
