@@ -37,6 +37,15 @@
 
 讲稿/语音层全量：209 个点、627 段 MP3、85.9 MB（WAV 约 590 MB）。
 
+## 高考真题加练（v1.2.0）
+
+- 来源：2021–2025 辽宁 / 黑吉辽蒙高考物理 5 套 PDF，共 50 道选择题（35 单选 + 15 多选）全部收录；每套另有实验/计算非选择题，暂未纳入选择题模式。
+- 挂载：50 道题分配到 29 个高中知识点；做完基础 5 题后出现“继续做真题”，可展开加练。
+- 真题标识：每道真题显示红色“真题”徽标，并标注年份与来源（如“2021年辽宁高考物理”）。
+- 带图题：30 道依赖原题图/图像选项的题，已从 PDF 裁出题目与选项图（`real/<id>.png`），页面直接显示；图像选项用 A/B/C/D 按钮选择。
+- 交互：单选直接判，多选勾选后提交；正确答案和每个错误选项都给出原因；支持单题重做、重做全部真题、重做基础 5 题。
+- 数据：`data/real_questions.json`；题目图：`real/`。
+
 ## 语音批进度（2026-11-21）
 
 - 第一批：50 个知识点、150 段 MP3、18.3 MB。[试听](voice-bank.html)
@@ -96,6 +105,8 @@ _build/
   voice_bank_batch3.py      # 第三批 52 点装配
   voice_bank_batch4.py      # 第四批 51 点装配
   run_remaining.py          # 自动跑第三、四批音频与页面
+  real/*.png                # 30 道带图真题的原题图
+data/real_questions.json   # 50 道高考真题与逐项解析
   scenes/pj-*.svg           # 初中 85 个三步动画场景
   scenes/ps-*.svg           # 高中 124 个三步动画场景
   app.js / base_app.css / scenes.css / template.html
@@ -151,6 +162,8 @@ python check_scenes.py     # 初中 85 个 SVG 的 XML、三步、data-zone 检�
 python cdp_check.py        # 原 6 个样例页深链、答题、音频
 python cdp_full_check.py   # 初中 85 点：场景切换、读数、5 题、MP3、截图
 python cdp_senior_check.py # 高中 124 点：场景切换、读数、5 题、MP3、截图
+python cdp_real_check.py   # 真题加练、单选/多选、逐项错因、重做
+python cdp_real_image.py   # 真题图、真题徽标、多选提交
 python cdp_shots.py        # 逐步截图 + 390px 手机布局与自动定位
 ```
 
